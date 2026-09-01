@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ja" data-title-ja="Galuchat GIS SDK — 世界行政区域地図" data-title-en="Galuchat GIS SDK — Worldwide Administrative Map">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="地図データの初回取得後は、通信せず回数制限なく世界の行政区域地図と逆ジオコーディングを利用できます。" data-description-ja="地図データの初回取得後は、通信せず回数制限なく世界の行政区域地図と逆ジオコーディングを利用できます。" data-description-en="After the initial data download, explore worldwide administrative areas and run unlimited reverse-geocoding lookups without further network requests.">
+    <title>Galuchat GIS SDK — 世界行政区域地図</title>
+    <link rel="stylesheet" href="../assets/map-page.css?v=3">
+    <link rel="stylesheet" href="../assets/machml-switch.css">
+    <script src="../assets/machml.min.js"></script>
+    <script src="../assets/machml-switch.js"></script>
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <a class="brand" href="../">Galuchat <span>GIS SDK</span></a>
+        <div class="header-actions">
+          <nav class="page-nav" aria-label="Page navigation">
+            <a href="../"><ml-text ja="概要" en="Overview"></ml-text></a>
+            <a href="../ksj-n03/"><ml-text ja="日本地図 →" en="Japan map →"></ml-text></a>
+          </nav>
+          <nav class="language-switch" aria-label="Language / 言語">
+            <button type="button" data-machml-locale="ja">日本語</button>
+            <button type="button" data-machml-locale="en">English</button>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="map-intro">
+          <div class="intro-copy">
+            <p class="eyebrow">CGAZ · LOCAL MAP EXPERIENCE</p>
+            <h1><ml-block><span data-lang="ja">世界の行政区域を<wbr><span class="title-tail">ローカルで参照</span></span><span data-lang="en">Explore worldwide administrative areas locally</span></ml-block></h1>
+            <p class="lead"><ml-text ja="geoBoundaries CGAZの地図データを一度読み込みます。準備後は、地図操作も逆ジオコーディングも、追加通信・回数制限なしでブラウザ内に完結します。" en="Load the geoBoundaries CGAZ map data once, then explore the map and reverse geocode entirely in the browser—without further network requests or usage limits."></ml-text></p>
+          </div>
+
+        </section>
+
+        <section class="demo-card" aria-labelledby="demo-title">
+          <div class="demo-header">
+            <div>
+              <p id="demo-title" class="demo-label">LOCAL MAP + REVERSE GEOCODING</p>
+              <p id="place-name" class="place-name" aria-live="polite"><ml-text ja="約24 MBの地図データを読み込んでいます…" en="Loading approximately 24 MB of map data…"></ml-text></p>
+            </div>
+            <span id="runtime-state" class="runtime-state" aria-live="polite">DOWNLOADING DATA</span>
+          </div>
+          <div class="map-stage">
+            <div class="toolbar" aria-label="地図操作" data-aria-ja="地図操作" data-aria-en="Map controls">
+              <button id="zoom-out" type="button" disabled aria-label="縮小" data-aria-ja="縮小" data-aria-en="Zoom out">−</button>
+              <button id="zoom-in" type="button" disabled aria-label="拡大" data-aria-ja="拡大" data-aria-en="Zoom in">＋</button>
+              <button id="home" type="button" disabled><ml-text ja="初期位置" en="Home"></ml-text></button>
+            </div>
+            <div id="map-shell" class="map-shell"></div>
+          </div>
+          <div class="demo-meta">
+            <div class="demo-help">
+              <span><ml-text ja="ドラッグで移動 · クリックで地域選択" en="Drag to move · click to select a region"></ml-text></span>
+              <span><ml-text ja="ホイール／＋−でズーム" en="Use the wheel or +/− to zoom"></ml-text></span>
+            </div>
+            <span id="zoom-label"><ml-text ja="解像度を準備中" en="Preparing resolutions"></ml-text></span>
+          </div>
+          <div class="location-list" aria-label="移動先の例" data-aria-ja="移動先の例" data-aria-en="Sample locations">
+            <span><ml-text ja="移動先:" en="Jump to:"></ml-text></span>
+            <button class="location" type="button" data-lon="2.3522" data-lat="48.8566" disabled>Paris</button>
+            <button class="location" type="button" data-lon="-74.0060" data-lat="40.7128" disabled>New York</button>
+            <button class="location" type="button" data-lon="139.6917" data-lat="35.6895" disabled>Tokyo</button>
+            <button class="location" type="button" data-lon="151.2093" data-lat="-33.8688" disabled>Sydney</button>
+            <button class="location" type="button" data-lon="18.4241" data-lat="-33.9249" disabled>Cape Town</button>
+            <button class="location" type="button" data-lon="-46.6333" data-lat="-23.5505" disabled>São Paulo</button>
+          </div>
+          <div class="data-credit"><ml-block>
+            <span data-lang="ja">データ: William &amp; Mary geoLabおよびgeoBoundariesコミュニティによるgeoBoundaries · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · Galuchat向けに加工。<a href="../../data/world-geoboundaries-cgaz/NOTICE.md">帰属表示の詳細</a></span>
+            <span data-lang="en">Data: geoBoundaries, produced by the William &amp; Mary geoLab and the geoBoundaries community · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · adapted for Galuchat. <a href="../../data/world-geoboundaries-cgaz/NOTICE.md">Attribution details</a></span>
+          </ml-block></div>
+        </section>
+
+        <section class="about" aria-labelledby="about-title">
+          <div class="about-head">
+            <div>
+              <p class="section-kicker">WHAT RUNS LOCALLY</p>
+              <h2 id="about-title"><ml-text ja="準備完了後は、すべて端末内で" en="Everything stays local once ready"></ml-text></h2>
+            </div>
+            <p><ml-text ja="地図の描画と逆ジオコーディングは同じ圧縮ラスタを参照します。外部の地図APIや検索データベースへの問い合わせは行いません。" en="Map rendering and reverse geocoding use the same compact rasters, without querying an external map API or lookup database."></ml-text></p>
+          </div>
+          <div class="features">
+            <article class="feature">
+              <span class="feature-number">01</span>
+              <h3><ml-text ja="2解像度の内蔵世界地図" en="Two local worldwide resolutions"></ml-text></h3>
+              <p><ml-text ja="100・1,000 px/度の地図を表示倍率に応じて切り替えます。" en="Switch between maps at 100 and 1,000 pixels per degree as you zoom."></ml-text></p>
+            </article>
+            <article class="feature">
+              <span class="feature-number">02</span>
+              <h3><ml-text ja="通信しない地図操作" en="Map interaction without network calls"></ml-text></h3>
+              <p><ml-text ja="都市間の移動、ズーム、再描画は読み込み済みデータだけで処理します。" en="Move between cities, zoom, and redraw using only the data already loaded in the browser."></ml-text></p>
+            </article>
+            <article class="feature">
+              <span class="feature-number">03</span>
+              <h3><ml-text ja="回数制限のない逆ジオコーディング" en="Unmetered reverse geocoding"></ml-text></h3>
+              <p><ml-text ja="画素の地域コードとCodeMapから、国コード・境界レベル・地名をローカルに復元します。" en="Resolve country codes, boundary levels, and place names locally from raster region codes and the CodeMap."></ml-text></p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p><ml-text ja="SDK・ソースコード: " en="SDK and source code: "></ml-text><a href="https://github.com/nyatla/galuchat-gis-sdk">GitHub — galuchat-gis-sdk</a></p>
+        <p><ml-text ja="Galuchatソフトウェアは" en="Galuchat software is licensed under the "></ml-text><a href="../LICENSE">Apache License 2.0</a><ml-text ja="で提供されます。" en=". "></ml-text><a href="../NOTICE">NOTICE</a></p>
+        <p><ml-text ja="William &amp; Mary geoLabおよびgeoBoundariesコミュニティによるgeoBoundariesの情報（CC BY 4.0）を含み、Galuchat向けに加工しています。" en="Contains information from geoBoundaries, produced by the William &amp; Mary geoLab and the geoBoundaries community, licensed under CC BY 4.0. Adapted for Galuchat. "></ml-text><a href="../../data/world-geoboundaries-cgaz/NOTICE.md"><ml-text ja="データの帰属表示と利用条件" en="Data attribution and terms"></ml-text></a></p>
+        <p><ml-text ja="行政界と地名は、すべての法域における公式見解を示すものではありません。係争地域の扱いはCGAZソースの方針に基づきます。" en="Administrative boundaries and names are not authoritative for every jurisdiction. The CGAZ source reflects its stated treatment of disputed areas."></ml-text></p>
+      </footer>
+    </div>
+
+    <script src="../assets/galuchat.min.js"></script>
+    <script src="./app.js?v=6"></script>
+  </body>
+</html>

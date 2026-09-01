@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "owner": "galuchat-core/deploy/mcp",
+  "datasets": [
+    "jp-admin-n03-2026",
+    "jp-estat-r2ka-2020",
+    "world-geoboundaries-cgaz"
+  ]
+}

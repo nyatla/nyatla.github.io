@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ja" data-title-ja="Galuchat GIS SDK — 丁目レベルの逆ジオコーディング" data-title-en="Galuchat GIS SDK — Neighborhood-level reverse geocoding">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="e-Statの町丁・字等境界データを使い、丁目レベルの地図参照と逆ジオコーディングをブラウザ内で実行します。" data-description-ja="e-Statの町丁・字等境界データを使い、丁目レベルの地図参照と逆ジオコーディングをブラウザ内で実行します。" data-description-en="Explore neighborhood-level boundaries and run reverse geocoding entirely in the browser using e-Stat data.">
+    <title>Galuchat GIS SDK — 丁目レベルの逆ジオコーディング</title>
+    <link rel="stylesheet" href="../assets/map-page.css?v=3">
+    <link rel="stylesheet" href="../assets/machml-switch.css">
+    <script src="../assets/machml.min.js"></script>
+    <script src="../assets/machml-switch.js"></script>
+  </head>
+  <body class="detail-map-page">
+    <div class="page">
+      <header class="site-header">
+        <a class="brand" href="../">Galuchat <span>GIS SDK</span></a>
+        <div class="header-actions">
+          <nav class="page-nav" aria-label="Page navigation">
+            <a href="../"><ml-text ja="概要" en="Overview"></ml-text></a>
+            <a href="../ksj-n03/"><ml-text ja="日本地図 →" en="Japan map →"></ml-text></a>
+          </nav>
+          <nav class="language-switch" aria-label="Language / 言語">
+            <button type="button" data-machml-locale="ja">日本語</button>
+            <button type="button" data-machml-locale="en">English</button>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="map-intro">
+          <div class="intro-copy">
+            <p class="eyebrow">e-STAT 2020 · LOCAL DETAIL MAP</p>
+            <h1><ml-block><span data-lang="ja">丁目レベルの<wbr><span class="title-tail">逆ジオコーディング</span></span><span data-lang="en">Neighborhood-level reverse geocoding</span></ml-block></h1>
+            <p class="lead"><ml-text ja="e-Statの町丁・字等境界データを一度読み込み、地図参照と逆ジオコーディングを追加通信・回数制限なしで実行します。" en="Load the e-Stat neighborhood-boundary data once, then explore the map and reverse geocode without further network requests or usage limits."></ml-text></p>
+          </div>
+        </section>
+
+        <section class="demo-card" aria-labelledby="demo-title">
+          <div class="demo-header">
+            <div>
+              <p id="demo-title" class="demo-label">LOCAL DETAIL MAP + REVERSE GEOCODING</p>
+              <p id="place-name" class="place-name" aria-live="polite"><ml-text ja="約26 MBの地図データを読み込んでいます…" en="Loading approximately 26 MB of map data…"></ml-text></p>
+            </div>
+            <span id="runtime-state" class="runtime-state" aria-live="polite">DOWNLOADING DATA</span>
+          </div>
+          <div class="map-stage">
+            <div class="toolbar" aria-label="地図操作" data-aria-ja="地図操作" data-aria-en="Map controls">
+              <button id="zoom-out" type="button" disabled aria-label="縮小" data-aria-ja="縮小" data-aria-en="Zoom out">−</button>
+              <button id="zoom-in" type="button" disabled aria-label="拡大" data-aria-ja="拡大" data-aria-en="Zoom in">＋</button>
+              <button id="home" type="button" disabled><ml-text ja="初期位置" en="Home"></ml-text></button>
+            </div>
+            <div id="map-shell" class="map-shell"></div>
+          </div>
+          <div class="demo-meta">
+            <div class="demo-help">
+              <span><ml-text ja="ドラッグで移動 · クリックで地域選択" en="Drag to move · click to select a region"></ml-text></span>
+              <span><ml-text ja="ホイール／＋−でズーム" en="Use the wheel or +/− to zoom"></ml-text></span>
+            </div>
+            <span id="zoom-label"><ml-text ja="詳細地図を準備中" en="Preparing the detail map"></ml-text></span>
+          </div>
+          <div class="location-list">
+            <span><ml-text ja="移動先:" en="Go to:"></ml-text></span>
+            <button class="location" type="button" disabled data-lon="140.0206" data-lat="35.6911"><ml-text ja="津田沼駅" en="Tsudanuma"></ml-text></button>
+            <button class="location" type="button" disabled data-lon="139.7671" data-lat="35.6812"><ml-text ja="東京駅" en="Tokyo"></ml-text></button>
+            <button class="location" type="button" disabled data-lon="135.7588" data-lat="34.9858"><ml-text ja="京都駅" en="Kyoto"></ml-text></button>
+          </div>
+          <p class="data-credit">
+            <ml-block><span data-lang="ja">出典：「令和2年国勢調査 町丁・字等境界データ」（総務省統計局、政府統計の総合窓口（e-Stat））をGaluchat用に加工して作成。<a href="https://www.e-stat.go.jp/terms-of-use">e-Stat利用規約</a> · <a href="../../data/jp-estat-r2ka-2020/NOTICE.md">出典・利用条件の詳細</a></span><span data-lang="en">Source: 2020 Population Census neighborhood-boundary data, Statistics Bureau of Japan and e-Stat · adapted for Galuchat. <a href="https://www.e-stat.go.jp/en/terms-of-use">e-Stat terms of use</a> · <a href="../../data/jp-estat-r2ka-2020/NOTICE.md">Attribution details</a></span></ml-block>
+          </p>
+        </section>
+
+        <section class="about" aria-labelledby="about-title">
+          <div class="about-head">
+            <div>
+              <p class="section-kicker">WHAT RUNS LOCALLY</p>
+              <h2 id="about-title"><ml-text ja="町丁・字等まで、すべて端末内で" en="Neighborhood detail, entirely on-device"></ml-text></h2>
+            </div>
+            <p><ml-text ja="地図とCodeMapを端末内で直接参照するため、外部の住所検索APIや地図サーバーへ問い合わせません。" en="The map and CodeMap are read directly on-device, without querying an address API or map server."></ml-text></p>
+          </div>
+          <div class="features">
+            <article class="feature">
+              <span class="feature-number">01</span>
+              <h3><ml-text ja="町丁・字等まで検索" en="Neighborhood-level lookup"></ml-text></h3>
+              <p><ml-text ja="都道府県・市区町村に加え、小地区と下位地区の名称をローカルに復元します。" en="Resolve prefecture, municipality, small-area, and lower-area names locally."></ml-text></p>
+            </article>
+            <article class="feature">
+              <span class="feature-number">02</span>
+              <h3><ml-text ja="1/10000度の詳細ラスタ" en="Detailed 1/10000-degree raster"></ml-text></h3>
+              <p><ml-text ja="詳細地図と逆ジオコーディングが、同じ圧縮ラスタを参照します。" en="The detail map and reverse geocoder use the same compact raster."></ml-text></p>
+            </article>
+            <article class="feature">
+              <span class="feature-number">03</span>
+              <h3><ml-text ja="統計調査用の地域区分" en="Statistical survey boundaries"></ml-text></h3>
+              <p><ml-text ja="町丁・字等境界は統計調査用であり、住居表示や行政区域とは一致しない場合があります。" en="These statistical boundaries may differ from postal addresses and administrative areas."></ml-text></p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p><ml-text ja="SDK・ソースコード：" en="SDK and source code: "></ml-text><a href="https://github.com/nyatla/galuchat-gis-sdk">GitHub — galuchat-gis-sdk</a></p>
+        <p><ml-text ja="Galuchatソフトウェアは" en="Galuchat software is licensed under the "></ml-text><a href="../LICENSE">Apache License 2.0</a><ml-text ja="で提供されます。" en=". "></ml-text><a href="../NOTICE">NOTICE</a></p>
+        <p><ml-block><span data-lang="ja">出典：「令和2年国勢調査 町丁・字等境界データ」（総務省統計局、政府統計の総合窓口（e-Stat））をGaluchat用に加工して作成。<a href="../../data/jp-estat-r2ka-2020/NOTICE.md">データの出典・利用条件</a></span><span data-lang="en">Adapted for Galuchat from the 2020 Population Census neighborhood-boundary data by the Statistics Bureau of Japan and e-Stat. <a href="../../data/jp-estat-r2ka-2020/NOTICE.md">Data attribution and terms</a></span></ml-block></p>
+      </footer>
+    </div>
+
+    <script src="../assets/galuchat.min.js"></script>
+    <script src="./app.js?v=1"></script>
+  </body>
+</html>

@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="ja" data-title-ja="Galuchat GIS SDK — サーバーレス逆ジオコーディング" data-title-en="Galuchat GIS SDK — Serverless Reverse Geocoding">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Webと組込機器で動く、サーバーレス逆ジオコーディングのSDKとブラウザ体験です。" data-description-ja="Webと組込機器で動く、サーバーレス逆ジオコーディングのSDKとブラウザ体験です。" data-description-en="A serverless reverse geocoding SDK and browser experience for web and embedded devices.">
+    <title>Galuchat GIS SDK — サーバーレス逆ジオコーディング</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #102237;
+        --muted: #607184;
+        --line: #d8e2ea;
+        --paper: #f4f8fa;
+        --blue: #075ccf;
+        --blue-dark: #073b83;
+        --cyan: #008d99;
+        --mint: #dff5f1;
+      }
+
+      * { box-sizing: border-box; }
+
+      html { scroll-behavior: smooth; }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 8% 0%, rgb(16 172 177 / 12%), transparent 30rem),
+          linear-gradient(180deg, #fbfdfe 0, var(--paper) 48rem);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.65;
+      }
+
+      a { color: var(--blue); }
+
+      a:focus-visible,
+      button:focus-visible {
+        outline: 3px solid rgb(23 168 184 / 42%);
+        outline-offset: 3px;
+      }
+
+      .page {
+        width: min(1160px, calc(100% - 48px));
+        margin: 0 auto;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        min-height: 76px;
+        border-bottom: 1px solid rgb(216 226 234 / 72%);
+      }
+
+      .brand {
+        color: var(--ink);
+        font-size: 18px;
+        font-weight: 800;
+        letter-spacing: -0.025em;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+
+      .brand span { color: var(--blue); }
+
+      .site-nav {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin-left: auto;
+      }
+
+      .site-nav a {
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .site-nav a:hover { color: var(--ink); }
+
+      .header-actions {
+        margin-left: 30px;
+      }
+
+      main { padding-bottom: 104px; }
+
+      .hero {
+        min-height: 0;
+        padding: 100px 0 112px;
+      }
+
+      .eyebrow,
+      .section-kicker {
+        margin: 0 0 14px;
+        color: var(--cyan);
+        font: 760 12px/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 700px;
+        margin: 0;
+        font-size: clamp(44px, 5vw, 60px);
+        line-height: 1.08;
+        letter-spacing: -0.055em;
+        text-wrap: balance;
+      }
+
+      .hero-line { display: block; }
+
+      .lead {
+        margin: 24px 0 30px;
+        color: var(--muted);
+        font-size: 18px;
+        line-height: 1.8;
+        word-break: auto-phrase;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px;
+        padding: 0 20px;
+        border: 1px solid var(--line);
+        border-radius: 11px;
+        color: var(--ink);
+        background: rgb(255 255 255 / 78%);
+        font-size: 14px;
+        font-weight: 760;
+        text-decoration: none;
+        transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
+      }
+
+      .button:hover {
+        border-color: #a9bac8;
+        background: #fff;
+        transform: translateY(-1px);
+      }
+
+      .button.primary {
+        border-color: var(--blue);
+        color: #fff;
+        background: var(--blue);
+      }
+
+      .button.primary:hover {
+        border-color: var(--blue-dark);
+        background: var(--blue-dark);
+      }
+
+      .section-heading {
+        margin-bottom: 30px;
+      }
+
+      .section-heading h2,
+      .embedded-copy h2 {
+        margin: 0;
+        font-size: clamp(32px, 3.2vw, 40px);
+        line-height: 1.15;
+        letter-spacing: -0.04em;
+      }
+
+      .section-heading > p {
+        margin: 14px 0 0;
+        color: var(--muted);
+        font-size: 16px;
+        line-height: 1.8;
+        word-break: auto-phrase;
+      }
+
+      .map-links {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+      }
+
+      #basic,
+      #embedded,
+      #sdk { scroll-margin-top: 30px; }
+
+      .path-section { margin-top: 100px; }
+
+      .map-link {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        min-height: 270px;
+        padding: 26px;
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        color: inherit;
+        background: rgb(255 255 255 / 82%);
+        box-shadow: 0 18px 48px rgb(17 33 52 / 8%);
+        text-decoration: none;
+        transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+      }
+
+      .map-link:hover {
+        border-color: #9bb4ca;
+        box-shadow: 0 22px 56px rgb(17 33 52 / 13%);
+        transform: translateY(-2px);
+      }
+
+      .source-id {
+        color: var(--cyan);
+        font: 740 11px/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        letter-spacing: 0.07em;
+      }
+
+      .map-link h3 {
+        margin: 11px 0 8px;
+        font-size: 27px;
+        line-height: 1.22;
+        letter-spacing: -0.03em;
+        word-break: auto-phrase;
+      }
+
+      .map-link p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 16px;
+        line-height: 1.7;
+        word-break: auto-phrase;
+      }
+
+      .open {
+        display: inline-block;
+        margin-top: auto;
+        padding-top: 22px;
+        color: var(--blue);
+        font-size: 14px;
+        font-weight: 760;
+      }
+
+      .platform-links {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .platform-card {
+        display: block;
+        min-height: 240px;
+        padding: 42px;
+        border: 1px solid #cbd9e2;
+        border-radius: 20px;
+        color: inherit;
+        background: rgb(255 255 255 / 82%);
+        box-shadow: 0 18px 48px rgb(17 33 52 / 8%);
+        text-decoration: none;
+        transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+      }
+
+      .platform-card:hover {
+        border-color: #9bb4ca;
+        box-shadow: 0 22px 56px rgb(17 33 52 / 13%);
+        transform: translateY(-2px);
+      }
+
+      .platform-card .section-kicker { margin-bottom: 18px; }
+
+      .platform-card h2 {
+        margin: 0;
+        font-size: clamp(28px, 3.2vw, 40px);
+        line-height: 1.15;
+        letter-spacing: -0.04em;
+      }
+
+      .platform-card > p:not(.section-kicker) {
+        margin: 15px 0 0;
+        color: var(--muted);
+        font-size: 16px;
+        line-height: 1.8;
+        word-break: auto-phrase;
+      }
+
+      .platform-open {
+        display: block;
+        padding-top: 34px;
+        color: var(--blue);
+        font-size: 14px;
+        font-weight: 760;
+      }
+
+      footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+        padding: 26px 0 42px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      footer p { margin: 5px 0; }
+
+      @media (max-width: 900px) {
+        .site-nav { display: none; }
+        .hero { padding-top: 74px; }
+        .hero-copy { max-width: 760px; }
+        .map-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      }
+
+      @media (max-width: 680px) {
+        .page { width: min(100% - 28px, 1160px); }
+        header { min-height: 68px; }
+        .brand { font-size: 16px; }
+        .header-actions { margin-left: auto; }
+        main { padding-bottom: 72px; }
+        .hero { padding: 54px 0 72px; }
+        h1 { font-size: clamp(40px, 13vw, 58px); }
+        .map-links { grid-template-columns: 1fr; }
+        .map-link { min-height: 250px; }
+        .platform-links { grid-template-columns: 1fr; }
+        .platform-card { min-height: 260px; padding: 30px 24px; }
+        .path-section { margin-top: 76px; }
+        footer { flex-direction: column; gap: 4px; }
+      }
+
+      @media (max-width: 420px) {
+        .hero-actions .button { width: 100%; }
+      }
+    </style>
+    <link rel="stylesheet" href="./assets/machml-switch.css">
+    <script src="./assets/machml.min.js"></script>
+    <script src="./assets/machml-switch.js"></script>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <a class="brand" href="./">Galuchat <span>GIS SDK</span></a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#basic"><ml-text ja="基本機能" en="Core features"></ml-text></a>
+          <a href="#embedded"><ml-text ja="組込機器" en="Embedded"></ml-text></a>
+          <a href="#sdk"><ml-text ja="SDK" en="SDK"></ml-text></a>
+        </nav>
+        <div class="header-actions">
+          <nav class="language-switch" aria-label="Language / 言語">
+            <button type="button" data-machml-locale="ja">日本語</button>
+            <button type="button" data-machml-locale="en">English</button>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">SERVERLESS REVERSE GEOCODING</p>
+            <h1><ml-block><span data-lang="ja"><span class="hero-line">逆ジオコーディングを</span><span class="hero-line">サーバーなしで</span></span><span data-lang="en"><span class="hero-line">Reverse geocoding,</span><span class="hero-line">without a server</span></span></ml-block></h1>
+            <p class="lead"><ml-text ja="地図データと検索機能を端末に持たせ、Webでも組込機器でもローカルに処理します。外部APIへの通信、利用回数、レート制限を気にせず使えます。" en="Keep the map data and lookup engine on the device. Run locally on the web or embedded hardware without external API calls, usage quotas, or rate limits."></ml-text></p>
+            <div class="hero-actions">
+              <a class="button primary" href="#basic"><ml-text ja="基本機能を試す →" en="Try the core features →"></ml-text></a>
+              <a class="button" href="https://github.com/nyatla/galuchat-gis-sdk"><ml-text ja="SDKを見る" en="View the SDK"></ml-text></a>
+            </div>
+          </div>
+
+        </section>
+
+        <section id="basic">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">01 · CORE EXPERIENCES</p>
+              <h2><ml-text ja="基本機能を、ブラウザで試す" en="Try the core features in the browser"></ml-text></h2>
+            </div>
+            <p><ml-text ja="逆ジオコーディングと行政区域地図を、まず画面で確認できます。必要なデータを最初に読み込んだ後は、検索も地図操作もブラウザ内で実行します。" en="Start by trying reverse geocoding and administrative maps on screen. After the initial data load, lookups and map interactions run in the browser."></ml-text></p>
+          </div>
+
+          <div class="map-links">
+            <a class="map-link" href="../mcp/">
+              <span class="source-id">WEB UI · WEBMCP · UP TO 10,000 POINTS</span>
+              <h3><ml-text ja="逆ジオコーディング" en="Reverse geocoding"></ml-text></h3>
+              <p><ml-text ja="回数制限のないローカル検索です。人間は画面から、AIはWebMCPから同じ機能を利用できます。" en="Unmetered local lookups through the page for people and through WebMCP for AI agents."></ml-text></p>
+              <span class="open"><ml-text ja="逆ジオコーディングを開く →" en="Open reverse geocoding →"></ml-text></span>
+            </a>
+
+            <a class="map-link" href="./estat-r2ka/">
+              <span class="source-id">e-STAT 2020 · 1/10000 DEGREE</span>
+              <h3><ml-text ja="丁目レベルの逆ジオコーディング" en="Neighborhood-level reverse geocoding"></ml-text></h3>
+              <p><ml-text ja="町丁・字等境界を使い、丁目などの小地域まで地図表示とローカル検索を行います。" en="Map and resolve neighborhoods locally using e-Stat small-area boundaries."></ml-text></p>
+              <span class="open"><ml-text ja="丁目レベルの地図を開く →" en="Open the neighborhood map →"></ml-text></span>
+            </a>
+
+            <a class="map-link" href="./ksj-n03/">
+              <span class="source-id">JAPAN · 3 RESOLUTIONS</span>
+              <h3><ml-text ja="日本の行政区域" en="Administrative areas of Japan"></ml-text></h3>
+              <p><ml-text ja="国土数値情報N03による、都道府県・市区町村の詳細な行政区域地図です。" en="A detailed map of Japanese prefectures and municipalities based on the N03 dataset."></ml-text></p>
+              <span class="open"><ml-text ja="日本地図を開く →" en="Open the Japan map →"></ml-text></span>
+            </a>
+
+            <a class="map-link" href="./geoboundaries-cgaz/">
+              <span class="source-id">WORLD · 2 RESOLUTIONS</span>
+              <h3><ml-text ja="世界の行政区域" en="Administrative areas worldwide"></ml-text></h3>
+              <p><ml-text ja="geoBoundaries CGAZによる、世界各国の行政区域を収録した地図です。" en="A worldwide administrative-area map based on the geoBoundaries CGAZ dataset."></ml-text></p>
+              <span class="open"><ml-text ja="世界地図を開く →" en="Open the world map →"></ml-text></span>
+            </a>
+          </div>
+        </section>
+
+        <section id="embedded" class="path-section">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">02 · EMBEDDED EXPERIENCE</p>
+              <h2><ml-text ja="逆ジオコーディングを組込機器へ" en="Bring reverse geocoding to embedded devices"></ml-text></h2>
+            </div>
+            <p><ml-text ja="ブラウザで試したものと同じ地図データと検索処理を、小さなマイコンへ持ち込みます。" en="Take the same map data and lookup process you tried in the browser onto small microcontrollers."></ml-text></p>
+          </div>
+          <div class="platform-links">
+            <a class="platform-card embedded" href="./embedded/">
+              <p class="section-kicker">RP2040 · RP2350 · ESP32</p>
+              <h2><ml-text ja="対応ボードですぐ動かす" en="Run it on supported boards"></ml-text></h2>
+              <p><ml-text ja="Wokwiで実行できるプロジェクト、Arduinoソースコード、書き込み用のUF2・BINを用意しています。通信環境に依存せず、端末内の地図を参照できます。" en="Run ready-made projects in Wokwi, inspect the Arduino source, or use prebuilt UF2 and BIN firmware. Query maps on-device without relying on connectivity."></ml-text></p>
+              <span class="platform-open"><ml-text ja="組込向けプロジェクトを見る →" en="View embedded projects →"></ml-text></span>
+            </a>
+          </div>
+        </section>
+
+        <section id="sdk" class="path-section">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">03 · SDK</p>
+              <h2><ml-text ja="自分のアプリへ組み込む" en="Build it into your application"></ml-text></h2>
+            </div>
+            <p><ml-text ja="体験した地図参照と逆ジオコーディングを、各言語のSDKから利用できます。" en="Use the map access and reverse-geocoding features from SDKs for each supported language."></ml-text></p>
+          </div>
+          <div class="platform-links">
+            <a class="platform-card sdk" href="https://github.com/nyatla/galuchat-gis-sdk">
+              <p class="section-kicker">JAVASCRIPT · JAVA · C++ · PYTHON</p>
+              <h2>Galuchat GIS SDK</h2>
+              <p><ml-text ja="各言語のランタイム、Get Started、API仕様、データセットをまとめて公開しています。Webアプリから組込機器まで、同じデータ形式と考え方で実装できます。" en="Get runtimes, Get Started examples, API specifications, and datasets for each supported language, using the same data format and model from web applications to embedded devices."></ml-text></p>
+              <span class="platform-open"><ml-text ja="SDKをGitHubで見る →" en="View the SDK on GitHub →"></ml-text></span>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p><ml-text ja="SDK・ソースコード：" en="SDK and source code: "></ml-text><a href="https://github.com/nyatla/galuchat-gis-sdk">GitHub — galuchat-gis-sdk</a></p>
+        <p><ml-text ja="Galuchatソフトウェアは" en="Galuchat software is licensed under the "></ml-text><a href="./LICENSE">Apache License 2.0</a><ml-text ja="で提供されます。" en=". "></ml-text> <a href="./NOTICE">NOTICE</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
