@@ -5,6 +5,7 @@ const DATA_ROOT = "../data";
 const SYSTEM_LIMITS = Object.freeze({
   positionsPerRequest: 10000,
   codesPerRequest: 10000,
+  codeMapCellsPerRequest: 10000,
 });
 
 const datasets = {
@@ -845,6 +846,14 @@ async function ensureWordbookLoaded(datasetId, signal = undefined) {
   return wordbookReaders.get(datasetId);
 }
 
+async function ensureMapLoaded(datasetId, map, signal = undefined) {
+  const key = mapResourceKey(datasetId, map.id);
+  if (mapReaders.has(key)) return mapReaders.get(key);
+  const dataset = datasets[datasetId];
+  await loadResources(dataset, [mapResource(datasetId, map)], signal);
+  return mapReaders.get(key);
+}
+
 function mapResource(datasetId, map) {
   return {
     key: mapResourceKey(datasetId, map.id),
@@ -970,6 +979,7 @@ const WEBMCP_TOOL_NAMES = Object.freeze([
   "galuchat_resolve_positions",
   "galuchat_resolve_code",
   "galuchat_resolve_codes",
+  "galuchat_get_code_map",
 ]);
 
 const positionSchema = Object.freeze({
@@ -1003,6 +1013,30 @@ const mapSchema = Object.freeze({
   description: "Map ID for the selected dataset. The highest resolution is used when omitted.",
 });
 
+const boundsSchema = Object.freeze({
+  type: "object",
+  properties: {
+    west: { type: "number", minimum: -180, maximum: 180 },
+    south: { type: "number", minimum: -90, maximum: 90 },
+    east: { type: "number", minimum: -180, maximum: 180 },
+    north: { type: "number", minimum: -90, maximum: 90 },
+  },
+  required: ["west", "south", "east", "north"],
+  additionalProperties: false,
+  description: "WGS84 bounding rectangle. Bounds select pixel centers and do not represent pixel edges.",
+});
+
+const codeMapSizeSchema = Object.freeze({
+  type: "object",
+  properties: {
+    width: { type: "integer", minimum: 1, maximum: SYSTEM_LIMITS.codeMapCellsPerRequest },
+    height: { type: "integer", minimum: 1, maximum: SYSTEM_LIMITS.codeMapCellsPerRequest },
+  },
+  required: ["width", "height"],
+  additionalProperties: false,
+  description: "Code-map width and height in cells. Their product must not exceed the per-request cell limit.",
+});
+
 async function registerWebMcpTools() {
   if (document.modelContext?.registerTool === undefined) {
     setWebMcpStatus("WebMCP UNAVAILABLE", "is-unavailable", "このブラウザではWebMCPを利用できません");
@@ -1013,14 +1047,14 @@ async function registerWebMcpTools() {
     {
       name: "galuchat_get_api_spec",
       title: "Galuchat API仕様を取得",
-      description: "Call this first when the dataset or map is unclear. Returns available datasets, map resolutions, CodeMaps, licenses, tool names, and the semantics of Galuchat dataset-local map codes.",
+      description: "Call this first when the dataset or map is unclear. Returns available datasets, map resolutions, CodeMaps, licenses, tool names, and the semantics of Galuchat dataset-local map codes. When presenting data obtained from Galuchat, include the returned source attribution and license. Also include approval when present; for N03 this means the GSI approval statement and number. Never invent an approval number when none is supplied.",
       inputSchema: { type: "object", properties: {}, additionalProperties: false },
       execute: (input, options) => executeWebMcpTool(() => buildApiSpec(), input, options),
     },
     {
       name: "galuchat_resolve_position",
       title: "1地点を逆ジオコーディング",
-      description: "Reverse-geocodes one position specified by longitude and latitude. For multiple positions, use galuchat_resolve_positions to resolve them in a single call. The returned code is a dataset-local Galuchat map code, not an official administrative code. The result is also added to the visible page history.",
+      description: "Reverse-geocodes one position specified by longitude and latitude. For multiple positions, use galuchat_resolve_positions to resolve them in a single call. The returned code is a dataset-local Galuchat map code, not an official administrative code. The result includes license information: cite its attribution and license when presenting the data, and also cite approval when present (required for N03). Never invent an approval number. The result is also added to the visible page history.",
       inputSchema: {
         type: "object",
         properties: { position: positionSchema, dataset: datasetSchema, codemaps: codemapsSchema, map: mapSchema },
@@ -1032,7 +1066,7 @@ async function registerWebMcpTools() {
     {
       name: "galuchat_resolve_positions",
       title: "複数地点を逆ジオコーディング",
-      description: `Reverse-geocodes up to ${SYSTEM_LIMITS.positionsPerRequest} positions specified by longitude and latitude in a single call. Use this tool when resolving multiple positions. Returned codes are dataset-local Galuchat map codes, not official administrative codes. Input order and duplicate codes are preserved, and results are added to the visible page history.`,
+      description: `Reverse-geocodes up to ${SYSTEM_LIMITS.positionsPerRequest} positions specified by longitude and latitude in a single call. Use this tool when resolving multiple positions. Returned codes are dataset-local Galuchat map codes, not official administrative codes. The result includes license information: cite its attribution and license when presenting the data, and also cite approval when present (required for N03). Never invent an approval number. Input order and duplicate codes are preserved, and results are added to the visible page history.`,
       inputSchema: {
         type: "object",
         properties: {
@@ -1055,7 +1089,7 @@ async function registerWebMcpTools() {
     {
       name: "galuchat_resolve_code",
       title: "1地図内部コードの地名を取得",
-      description: "Resolves one dataset-local Galuchat map code to CodeMap metadata. For multiple codes, use galuchat_resolve_codes to resolve them in a single call. Use a code returned by a resolve-position tool with the exact same dataset; it is not an official administrative code.",
+      description: "Resolves one dataset-local Galuchat map code to CodeMap metadata. For multiple codes, use galuchat_resolve_codes to resolve them in a single call. Use a code returned by a resolve-position tool with the exact same dataset; it is not an official administrative code. Cite the result's attribution and license when presenting the data, and also cite approval when present (required for N03). Never invent an approval number.",
       inputSchema: {
         type: "object",
         properties: {
@@ -1076,7 +1110,7 @@ async function registerWebMcpTools() {
     {
       name: "galuchat_resolve_codes",
       title: "複数の地図内部コードから地名を取得",
-      description: `Resolves up to ${SYSTEM_LIMITS.codesPerRequest} dataset-local Galuchat map codes to CodeMap metadata in a single call. Use this tool when resolving multiple codes. Codes must come from the exact same dataset and are not official administrative codes. Input order and duplicates are preserved.`,
+      description: `Resolves up to ${SYSTEM_LIMITS.codesPerRequest} dataset-local Galuchat map codes to CodeMap metadata in a single call. Use this tool when resolving multiple codes. Codes must come from the exact same dataset and are not official administrative codes. Cite the result's attribution and license when presenting the data, and also cite approval when present (required for N03). Never invent an approval number. Input order and duplicates are preserved.`,
       inputSchema: {
         type: "object",
         properties: {
@@ -1099,6 +1133,34 @@ async function registerWebMcpTools() {
         additionalProperties: false,
       },
       execute: (input, options) => executeWebMcpTool(() => resolveCodesTool(input, options?.signal), input, options),
+    },
+    {
+      name: "galuchat_get_code_map",
+      title: "矩形領域の二次元コードマップを取得",
+      description: `Returns a rectangular 2D array of dataset-local Galuchat map codes for up to ${SYSTEM_LIMITS.codeMapCellsPerRequest} cells. Specify either area, or base with size and an optional anchor. Rows run north to south and columns west to east. The result is rectangular, but it can be trimmed or masked into a polygon, circle, route buffer, or other irregular shape: first request the shape's bounding rectangle, then keep only cells whose center lies inside the desired geometry. Codes are not official administrative codes. Cite the result's attribution and license when presenting the data, and also cite approval when present (required for N03). Never invent an approval number.`,
+      inputSchema: {
+        type: "object",
+        properties: {
+          area: boundsSchema,
+          base: positionSchema,
+          size: codeMapSizeSchema,
+          anchor: {
+            type: "string",
+            enum: ["northwest", "north", "northeast", "west", "center", "east", "southwest", "south", "southeast"],
+            default: "center",
+            description: "Position of base relative to the requested rectangle. Used only with base and size.",
+          },
+          dataset: datasetSchema,
+          map: mapSchema,
+        },
+        required: ["dataset"],
+        oneOf: [
+          { required: ["area"] },
+          { required: ["base", "size"] },
+        ],
+        additionalProperties: false,
+      },
+      execute: (input, options) => executeWebMcpTool(() => getCodeMapTool(input, options?.signal), input, options),
     },
   ];
 
@@ -1228,6 +1290,7 @@ async function resolveCodeTool(input, signal) {
     dataset: datasetId,
     code: input.code,
     values: codeValues(wordbook, input.code, codemaps),
+    license: datasetLicense(datasetId),
   };
 }
 
@@ -1248,7 +1311,143 @@ async function resolveCodesTool(input, signal) {
     const resolved = codeValues(wordbook, code, codemaps);
     for (const codemap of codemaps) values[codemap][String(code)] = resolved[codemap];
   }
-  return { dataset: datasetId, codes: [...input.codes], values };
+  return { dataset: datasetId, codes: [...input.codes], values, license: datasetLicense(datasetId) };
+}
+
+async function getCodeMapTool(input, signal) {
+  const { datasetId, map, rect } = validateGetCodeMapInput(input);
+  const reader = await ensureMapLoaded(datasetId, map, signal);
+  const raster = reader.readWgsRect(rect);
+  const codes = [];
+  for (let outputY = 0; outputY < rect.height; outputY += 1) {
+    const sourceY = rect.height - 1 - outputY;
+    const row = [];
+    for (let x = 0; x < rect.width; x += 1) row.push(raster.get(x, sourceY));
+    codes.push(row);
+  }
+  return {
+    dataset: datasetId,
+    map: map.id,
+    resolution: { ...map.resolution },
+    area: {
+      west: rect.x / reader.unitInvX,
+      south: rect.y / reader.unitInvY,
+      east: (rect.x + rect.width) / reader.unitInvX,
+      north: (rect.y + rect.height) / reader.unitInvY,
+    },
+    width: rect.width,
+    height: rect.height,
+    codes,
+    license: datasetLicense(datasetId),
+    trimming: {
+      possible: true,
+      description: "For a polygon, circle, route buffer, or another irregular shape, request its bounding rectangle and keep only cells whose center lies inside the desired geometry.",
+      cell_centers: "Column x is west + x * resolution.lon. Row y is north - (y + 1) * resolution.lat.",
+    },
+  };
+}
+
+function validateGetCodeMapInput(input) {
+  requireObject(input, "input");
+  if (typeof input.dataset !== "string" || datasets[input.dataset] === undefined) {
+    throw new GaluchatToolError("dataset_not_found", `dataset is not available: ${String(input.dataset)}`, { field: "dataset" });
+  }
+  const map = selectToolMap(input.dataset, input.map);
+  const hasArea = input.area !== undefined;
+  const hasBase = input.base !== undefined;
+  const hasSize = input.size !== undefined;
+  if (hasArea === (hasBase || hasSize) || hasBase !== hasSize) {
+    throw new GaluchatToolError(
+      "invalid_argument",
+      "specify either area, or base together with size",
+      { fields: ["area", "base", "size"] },
+    );
+  }
+  if (hasArea && input.anchor !== undefined) {
+    throw new GaluchatToolError("invalid_argument", "anchor can only be used with base and size", { field: "anchor" });
+  }
+
+  let rect;
+  if (hasArea) {
+    rect = rectFromArea(input.area, map);
+  } else {
+    validatePosition(input.base, "base");
+    validateCodeMapSize(input.size);
+    rect = rectFromBase(input.base, input.size, input.anchor ?? "center", map);
+  }
+  validateCodeMapCellCount(rect.width, rect.height);
+  return { datasetId: input.dataset, map, rect };
+}
+
+function rectFromArea(area, map) {
+  requireObject(area, "area");
+  for (const field of ["west", "south", "east", "north"]) {
+    if (!Number.isFinite(area[field])) {
+      throw new GaluchatToolError("invalid_argument", `area.${field} must be a finite number`, { field: `area.${field}` });
+    }
+  }
+  if (area.west < -180 || area.east > 180 || area.south < -90 || area.north > 90
+    || area.west >= area.east || area.south >= area.north) {
+    throw new GaluchatToolError(
+      "invalid_argument",
+      "area must satisfy -180 <= west < east <= 180 and -90 <= south < north <= 90",
+      { field: "area" },
+    );
+  }
+  const left = Math.round(area.west / map.resolution.lon);
+  const bottom = Math.round(area.south / map.resolution.lat);
+  const right = Math.round(area.east / map.resolution.lon);
+  const top = Math.round(area.north / map.resolution.lat);
+  if (left >= right || bottom >= top) {
+    throw new GaluchatToolError(
+      "invalid_argument",
+      "area does not contain a cell-center interval at the selected map resolution",
+      { field: "area", resolution: map.resolution },
+    );
+  }
+  return { x: left, y: bottom, width: right - left, height: top - bottom };
+}
+
+function validateCodeMapSize(size) {
+  requireObject(size, "size");
+  for (const field of ["width", "height"]) {
+    if (!Number.isInteger(size[field]) || size[field] < 1) {
+      throw new GaluchatToolError("invalid_argument", `size.${field} must be a positive integer`, { field: `size.${field}` });
+    }
+  }
+}
+
+function rectFromBase(base, size, anchor, map) {
+  const anchors = new Set(["northwest", "north", "northeast", "west", "center", "east", "southwest", "south", "southeast"]);
+  if (!anchors.has(anchor)) {
+    throw new GaluchatToolError("invalid_argument", `unsupported anchor: ${String(anchor)}`, { field: "anchor" });
+  }
+  const baseX = Math.round(base.lon / map.resolution.lon);
+  const baseY = Math.round(base.lat / map.resolution.lat);
+  const horizontal = anchor.includes("west") ? "west" : anchor.includes("east") ? "east" : "center";
+  const vertical = anchor.includes("north") ? "north" : anchor.includes("south") ? "south" : "center";
+  const x = horizontal === "west"
+    ? baseX
+    : horizontal === "east"
+      ? baseX - size.width
+      : baseX - Math.floor(size.width / 2);
+  const y = vertical === "south"
+    ? baseY
+    : vertical === "north"
+      ? baseY - size.height
+      : baseY - Math.floor(size.height / 2);
+  return { x, y, width: size.width, height: size.height };
+}
+
+function validateCodeMapCellCount(width, height) {
+  const cells = width * height;
+  if (!Number.isSafeInteger(cells) || cells > SYSTEM_LIMITS.codeMapCellsPerRequest) {
+    throw new GaluchatToolError(
+      "limit_exceeded",
+      `code map must contain at most ${SYSTEM_LIMITS.codeMapCellsPerRequest} cells`,
+      { width, height, cells, limit: SYSTEM_LIMITS.codeMapCellsPerRequest },
+    );
+  }
 }
 
 function validateResolvePositionInput(input) {
@@ -1320,6 +1519,7 @@ function positionToolResult(datasetId, map, codemaps, resolved) {
     resolution: map.resolution,
     code: resolved.found ? resolved.code : null,
     values: Object.fromEntries(codemaps.map((codemap) => [codemap, resolved.found ? placeValue(resolved.path) : null])),
+    license: datasetLicense(datasetId),
   };
 }
 
@@ -1331,6 +1531,7 @@ function positionsToolResult(datasetId, map, codemaps, resolvedItems) {
     resolution: map.resolution,
     codes,
     values: valuesByCodes(codemaps, codes, resolvedItems),
+    license: datasetLicense(datasetId),
   };
 }
 
@@ -1378,6 +1579,10 @@ function serializeLicense(license) {
     ...(license.approval === undefined ? {} : { approval: license.approval }),
     notice_url: new URL(license.noticeUrl, location.href).href,
   };
+}
+
+function datasetLicense(datasetId) {
+  return serializeLicense(datasets[datasetId].license);
 }
 
 function loadHistory() {

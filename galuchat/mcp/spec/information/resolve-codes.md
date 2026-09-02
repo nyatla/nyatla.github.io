@@ -50,6 +50,7 @@ func(codes[], dataset, codemaps[])
 - CodeMapにコードがない場合、そのコードの値は`null`とする。
 - `codemaps`には、対象データセットのAPI仕様に記載されたCodeMap名を指定する。
 - `codes[]`には、同じDatasetの位置解決APIが返したGaluchat地図内部コードだけを指定する。自治体コード、統計地域コード、ISOコードなどを直接指定してはならない。
+- 応答には共通型の`license`も1件含む。AIは結果を提示するときに出典とライセンスを併記し、`approval`がある場合は承認番号を含む全文も併記する。
 
 ## Errors
 

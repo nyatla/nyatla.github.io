@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="ja" data-title-ja="Galuchat GIS SDK — Codexでローカル逆ジオコーディング" data-title-en="Galuchat GIS SDK — Local reverse geocoding with Codex">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="WebMCPを通して、CodexからGaluchatのローカル逆ジオコーディングを利用する方法を紹介します。" data-description-ja="WebMCPを通して、CodexからGaluchatのローカル逆ジオコーディングを利用する方法を紹介します。" data-description-en="Learn how to use Galuchat local reverse geocoding from Codex through WebMCP.">
+    <title>Galuchat GIS SDK — Codexでローカル逆ジオコーディング</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #102237;
+        --muted: #607184;
+        --line: #d8e2ea;
+        --paper: #f4f8fa;
+        --blue: #075ccf;
+        --blue-dark: #073b83;
+        --cyan: #008d99;
+        --mint: #e4f6f2;
+        --code: #102a45;
+      }
+
+      * { box-sizing: border-box; }
+
+      html { scroll-behavior: smooth; }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 8% 0%, rgb(16 172 177 / 12%), transparent 30rem),
+          linear-gradient(180deg, #fbfdfe 0, var(--paper) 48rem);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.65;
+      }
+
+      a { color: var(--blue); }
+
+      a:focus-visible,
+      button:focus-visible {
+        outline: 3px solid rgb(23 168 184 / 42%);
+        outline-offset: 3px;
+      }
+
+      .page {
+        width: min(1160px, calc(100% - 48px));
+        margin: 0 auto;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        min-height: 76px;
+        border-bottom: 1px solid rgb(216 226 234 / 72%);
+      }
+
+      .brand {
+        color: var(--ink);
+        font-size: 18px;
+        font-weight: 800;
+        letter-spacing: -0.025em;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+
+      .brand span { color: var(--blue); }
+
+      .page-nav {
+        display: flex;
+        gap: 22px;
+        margin-left: auto;
+      }
+
+      .page-nav a {
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .page-nav a:hover { color: var(--ink); }
+
+      .header-actions { margin-left: 28px; }
+
+      main { padding-bottom: 104px; }
+
+      .hero { padding: 92px 0 104px; }
+
+      .eyebrow,
+      .section-kicker {
+        margin: 0 0 14px;
+        color: var(--cyan);
+        font: 760 12px/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 1000px;
+        margin: 0;
+        font-size: clamp(44px, 5vw, 64px);
+        line-height: 1.08;
+        letter-spacing: -0.055em;
+        text-wrap: balance;
+      }
+
+      .lead {
+        max-width: 970px;
+        margin: 26px 0 32px;
+        color: var(--muted);
+        font-size: 18px;
+        line-height: 1.85;
+        word-break: auto-phrase;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .webmcp-preview {
+        margin: 0;
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: rgb(255 255 255 / 88%);
+        box-shadow: 0 18px 48px rgb(17 33 52 / 8%);
+      }
+
+      .webmcp-preview img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border: 1px solid #c9d2da;
+        border-radius: 10px;
+        background: #fff;
+      }
+
+      .webmcp-preview figcaption {
+        margin: 14px 6px 2px;
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.7;
+        word-break: auto-phrase;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px;
+        padding: 0 20px;
+        border: 1px solid var(--line);
+        border-radius: 11px;
+        color: var(--ink);
+        background: rgb(255 255 255 / 78%);
+        font-size: 14px;
+        font-weight: 760;
+        text-decoration: none;
+      }
+
+      .button.primary {
+        border-color: var(--blue);
+        color: #fff;
+        background: var(--blue);
+      }
+
+      .button.primary:hover { background: var(--blue-dark); }
+
+      .guide-section { margin-top: 96px; }
+
+      .guide-section:first-of-type { margin-top: 0; }
+
+      .section-heading {
+        max-width: 1000px;
+        margin-bottom: 30px;
+      }
+
+      .section-heading h2 {
+        margin: 0;
+        font-size: clamp(32px, 3.2vw, 42px);
+        line-height: 1.15;
+        letter-spacing: -0.04em;
+      }
+
+      .section-heading > p:last-child {
+        margin: 14px 0 0;
+        color: var(--muted);
+        font-size: 16px;
+        line-height: 1.8;
+        word-break: auto-phrase;
+      }
+
+      .notice {
+        padding: 22px 24px;
+        border: 1px solid #b9ded8;
+        border-radius: 16px;
+        background: var(--mint);
+      }
+
+      .notice strong { display: block; margin-bottom: 5px; }
+      .notice p { margin: 0; color: #345267; }
+
+      .endpoint {
+        margin-bottom: 20px;
+        padding: 20px 24px;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: rgb(255 255 255 / 82%);
+      }
+
+      .endpoint span {
+        display: block;
+        margin-bottom: 7px;
+        color: var(--cyan);
+        font: 760 11px/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        letter-spacing: 0.08em;
+      }
+
+      .endpoint a {
+        font: 700 clamp(14px, 2vw, 18px)/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        overflow-wrap: anywhere;
+      }
+
+      .steps {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 20px;
+      }
+
+      .step,
+      .tool,
+      .example {
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: rgb(255 255 255 / 82%);
+        box-shadow: 0 16px 42px rgb(17 33 52 / 7%);
+      }
+
+      .step { min-height: 190px; padding: 24px; }
+
+      .number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        color: #006f78;
+        background: var(--mint);
+        font: 760 12px/1 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      }
+
+      .step h3,
+      .tool h3,
+      .example h3 {
+        margin: 16px 0 7px;
+        font-size: 20px;
+        line-height: 1.3;
+        letter-spacing: -0.025em;
+      }
+
+      .step p,
+      .tool p,
+      .example > p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.75;
+        word-break: auto-phrase;
+      }
+
+      .tools {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .tool { padding: 22px 24px; }
+
+      .tool:first-child { grid-column: 1 / -1; }
+
+      .tool.code-map-tool { grid-column: 1 / -1; }
+
+      .tool code {
+        color: #006f78;
+        font: 720 13px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      }
+
+      .tool h3 { margin-top: 8px; }
+
+      .examples {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .example {
+        display: flex;
+        flex-direction: column;
+        min-height: 330px;
+        padding: 24px;
+      }
+
+      .example h3 { margin-top: 0; }
+
+      .example > .prompt {
+        flex: 1;
+        margin: 18px 0 0;
+        padding: 20px;
+        border-radius: 12px;
+        color: #f4f8fc;
+        background: var(--code);
+        font: 600 14px/1.85 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        white-space: pre-line;
+        overflow-wrap: anywhere;
+      }
+
+      .limits {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1px;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: var(--line);
+      }
+
+      .limit { padding: 24px; background: rgb(255 255 255 / 88%); }
+
+      .limit strong {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 16px;
+      }
+
+      .limit p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.7;
+      }
+
+      footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+        padding: 26px 0 42px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      footer p { margin: 5px 0; }
+
+      @media (max-width: 900px) {
+        .hero { padding-top: 74px; }
+        .examples { grid-template-columns: 1fr; }
+        .example { min-height: 0; }
+      }
+
+      @media (max-width: 680px) {
+        .page { width: min(100% - 28px, 1160px); }
+        header { min-height: 68px; }
+        .brand { font-size: 16px; }
+        .page-nav { display: none; }
+        .header-actions { margin-left: auto; }
+        main { padding-bottom: 72px; }
+        .hero { padding: 54px 0 76px; }
+        .webmcp-preview { padding: 8px; }
+        .webmcp-preview figcaption { margin: 10px 4px 2px; }
+        h1 { font-size: clamp(40px, 12vw, 58px); }
+        .guide-section { margin-top: 76px; }
+        .steps,
+        .tools,
+        .limits { grid-template-columns: 1fr; }
+        .tool:first-child { grid-column: auto; }
+        footer { flex-direction: column; gap: 4px; }
+      }
+
+      @media (max-width: 420px) {
+        .hero-actions .button { width: 100%; }
+      }
+    </style>
+    <link rel="stylesheet" href="../assets/machml-switch.css">
+    <script src="../assets/machml.min.js"></script>
+    <script src="../assets/machml-switch.js"></script>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <a class="brand" href="../">Galuchat <span>GIS SDK</span></a>
+        <nav class="page-nav" aria-label="Page navigation">
+          <a href="#connect"><ml-text ja="接続方法" en="Setup"></ml-text></a>
+          <a href="#tools"><ml-text ja="ツール" en="Tools"></ml-text></a>
+          <a href="#examples"><ml-text ja="使用例" en="Examples"></ml-text></a>
+          <a href="https://nyatla.github.io/galuchat/mcp/"><ml-text ja="実際に試す →" en="Try it →"></ml-text></a>
+        </nav>
+        <div class="header-actions">
+          <nav class="language-switch" aria-label="Language / 言語">
+            <button type="button" data-machml-locale="ja">日本語</button>
+            <button type="button" data-machml-locale="en">English</button>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <p class="eyebrow">WEBMCP · CODEX · BROWSER LOCAL</p>
+          <h1><ml-text ja="Codexでローカル逆ジオコーディング" en="Local reverse geocoding with Codex"></ml-text></h1>
+          <p class="lead"><ml-text ja="Galuchatの逆ジオコーディングページは、人が操作する画面と同じ機能をWebMCPのサイトツールとして提供します。Codexは開いているページからツールを見つけ、単一地点または複数地点をブラウザ内で検索できます。" en="Galuchat exposes the same functions used by its human interface as WebMCP site tools. Codex can discover those tools from the open page and resolve one or many positions directly in the browser."></ml-text></p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://nyatla.github.io/galuchat/mcp/"><ml-text ja="逆ジオコーディングを開く →" en="Open reverse geocoding →"></ml-text></a>
+            <a class="button" href="#connect"><ml-text ja="接続方法を見る" en="View setup"></ml-text></a>
+          </div>
+        </section>
+
+        <section aria-labelledby="preview-title">
+          <div class="section-heading">
+            <p class="section-kicker">WEBMCP IN ACTION</p>
+            <h2 id="preview-title"><ml-text ja="Codexから地理データを使う" en="Use geographic data from Codex"></ml-text></h2>
+            <p><ml-text ja="WebMCPで逆ジオコーディングを呼び出し、その結果をCSV・GeoJSON・地図・グラフなどの成果物へ展開できます。" en="Call reverse geocoding through WebMCP, then turn the results into CSV, GeoJSON, maps, charts, and other deliverables."></ml-text></p>
+          </div>
+          <figure class="webmcp-preview">
+            <img src="./asset/chatgpt_run.png" width="1379" height="894" alt="CodexがGaluchat WebMCPで山手線沿線を逆ジオコーディングし、集計CSV、GeoJSON、地図、グラフを作成した画面" data-alt-ja="CodexがGaluchat WebMCPで山手線沿線を逆ジオコーディングし、集計CSV、GeoJSON、地図、グラフを作成した画面" data-alt-en="Codex using Galuchat WebMCP to reverse-geocode the Yamanote Line and create summary CSV, GeoJSON, map, and chart outputs">
+            <figcaption><ml-block><span data-lang="ja">山手線の軌道を10m間隔で検索し、通過区域の集計と成果物を作成した例です。画像はローカル開発環境での実行例ですが、公開版は <a href="https://nyatla.github.io/galuchat/mcp/">https://nyatla.github.io/galuchat/mcp/</a> から利用できます。</span><span data-lang="en">This example resolves the Yamanote Line at 10-meter intervals and produces area summaries and output files. The image shows a local development run; use the published version at <a href="https://nyatla.github.io/galuchat/mcp/">https://nyatla.github.io/galuchat/mcp/</a>.</span></ml-block></figcaption>
+          </figure>
+        </section>
+
+        <section id="connect" class="guide-section">
+          <div class="section-heading">
+            <p class="section-kicker">01 · CONNECT</p>
+            <h2><ml-text ja="ページを開くだけで接続" en="Connect by opening the page"></ml-text></h2>
+            <p><ml-text ja="通常のMCPサーバーとは異なり、config.tomlへの登録や別プロセスの起動は不要です。ChatGPTデスクトップアプリの内蔵ブラウザでページを開くと、Codexがそのページのサイトツールを発見します。" en="Unlike a conventional MCP server, WebMCP requires no config.toml entry or separate process. Open the page in the ChatGPT desktop app's built-in browser and Codex can discover its site tools."></ml-text></p>
+          </div>
+
+          <div class="endpoint">
+            <span>WEBMCP ENDPOINT</span>
+            <a href="https://nyatla.github.io/galuchat/mcp/">https://nyatla.github.io/galuchat/mcp/</a>
+          </div>
+
+          <div class="notice">
+            <strong><ml-text ja="利用環境" en="Availability"></ml-text></strong>
+            <p><ml-block><span data-lang="ja">最新のChatGPTデスクトップアプリと、サイトツールが有効なモデルを使用してください。OpenAIの現行案内ではGPT-5.6 SolまたはGPT-5.6 Terraが対象です。提供状況はロールアウトやワークスペースによって異なるため、<a href="https://learn.chatgpt.com/docs/webmcp">OpenAI公式のサイトツール案内</a>も確認してください。</span><span data-lang="en">Use the latest ChatGPT desktop app and a model with site tools enabled. OpenAI currently lists GPT-5.6 Sol and GPT-5.6 Terra. Availability can vary by rollout and workspace; see the <a href="https://learn.chatgpt.com/docs/webmcp">official OpenAI site-tools guide</a>.</span></ml-block></p>
+          </div>
+
+          <div class="steps">
+            <article class="step">
+              <span class="number">01</span>
+              <h3><ml-text ja="Codexを選ぶ" en="Select Codex"></ml-text></h3>
+              <p><ml-text ja="ChatGPTデスクトップアプリを開き、Codexとサイトツール対応モデルを選択します。" en="Open the ChatGPT desktop app and select Codex with a model that supports site tools."></ml-text></p>
+            </article>
+            <article class="step">
+              <span class="number">02</span>
+              <h3><ml-text ja="ページを開く" en="Open the page"></ml-text></h3>
+              <p><ml-block><span data-lang="ja">内蔵ブラウザで <a href="https://nyatla.github.io/galuchat/mcp/">https://nyatla.github.io/galuchat/mcp/</a> を開きます。初回はデータ一覧を読み込みます。</span><span data-lang="en">Open <a href="https://nyatla.github.io/galuchat/mcp/">https://nyatla.github.io/galuchat/mcp/</a> in the built-in browser. The dataset index loads on the first visit.</span></ml-block></p>
+            </article>
+            <article class="step">
+              <span class="number">03</span>
+              <h3><ml-text ja="サイトツールを確認" en="Inspect site tools"></ml-text></h3>
+              <p><ml-text ja="アドレスバーの「Site tools」から、Galuchatが提供する6個のツールを確認できます。" en="Use Site tools in the address bar to inspect the six tools provided by Galuchat."></ml-text></p>
+            </article>
+            <article class="step">
+              <span class="number">04</span>
+              <h3><ml-text ja="そのまま依頼する" en="Ask for a lookup"></ml-text></h3>
+              <p><ml-text ja="座標、データセット、希望する出力形式をCodexへ伝えます。実行結果はページの検索履歴にも追加されます。" en="Tell Codex the coordinates, dataset, and desired output. Results are also added to the visible page history."></ml-text></p>
+            </article>
+          </div>
+        </section>
+
+        <section id="tools" class="guide-section">
+          <div class="section-heading">
+            <p class="section-kicker">02 · AVAILABLE TOOLS</p>
+            <h2><ml-text ja="Codexが利用できる機能" en="Tools available to Codex"></ml-text></h2>
+            <p><ml-text ja="データセットが不明な場合はAPI仕様を先に取得し、座標の数に応じて単数形または複数形のツールを使います。" en="When the dataset is unclear, inspect the API specification first, then use the singular or plural tool that matches the number of inputs."></ml-text></p>
+          </div>
+          <div class="tools">
+            <article class="tool">
+              <code>galuchat_get_api_spec</code>
+              <h3><ml-text ja="利用可能なデータを確認" en="Inspect available data"></ml-text></h3>
+              <p><ml-text ja="データセット、地図解像度、CodeMap、ライセンスとツール仕様を取得します。" en="Returns datasets, map resolutions, CodeMaps, licenses, and tool specifications."></ml-text></p>
+            </article>
+            <article class="tool">
+              <code>galuchat_resolve_position</code>
+              <h3><ml-text ja="1地点を検索" en="Resolve one position"></ml-text></h3>
+              <p><ml-text ja="1組の経度・緯度から地域コードと地名を取得します。" en="Returns a region code and place metadata for one longitude-latitude pair."></ml-text></p>
+            </article>
+            <article class="tool">
+              <code>galuchat_resolve_positions</code>
+              <h3><ml-text ja="複数地点を一括検索" en="Resolve positions in a batch"></ml-text></h3>
+              <p><ml-text ja="最大10,000地点を入力順のまま一括で逆ジオコーディングします。" en="Reverse-geocodes up to 10,000 positions in one call while preserving input order."></ml-text></p>
+            </article>
+            <article class="tool">
+              <code>galuchat_resolve_code</code>
+              <h3><ml-text ja="1コードの情報を取得" en="Resolve one map code"></ml-text></h3>
+              <p><ml-text ja="地図検索で得たGaluchat内部コードをCodeMapのメタデータへ変換します。" en="Converts one Galuchat dataset-local map code into CodeMap metadata."></ml-text></p>
+            </article>
+            <article class="tool">
+              <code>galuchat_resolve_codes</code>
+              <h3><ml-text ja="複数コードを一括変換" en="Resolve map codes in a batch"></ml-text></h3>
+              <p><ml-text ja="同じデータセットの内部コードを最大10,000件まとめて変換します。" en="Resolves up to 10,000 dataset-local map codes from the same dataset."></ml-text></p>
+            </article>
+            <article class="tool code-map-tool">
+              <code>galuchat_get_code_map</code>
+              <h3><ml-text ja="範囲を二次元コードマップで取得" en="Read a rectangular 2D code map"></ml-text></h3>
+              <p><ml-text ja="矩形範囲を最大10,000セルの二次元配列として取得します。多角形、円、経路沿いなどでは、外接矩形を取得してからセル中心を使って不要部分をマスクできます。" en="Returns a rectangular array of up to 10,000 cells. For polygons, circles, route buffers, or other irregular shapes, request the bounding rectangle and mask cells by their center positions."></ml-text></p>
+            </article>
+          </div>
+        </section>
+
+        <section id="examples" class="guide-section">
+          <div class="section-heading">
+            <p class="section-kicker">03 · EXAMPLES</p>
+            <h2><ml-text ja="そのまま使える依頼例" en="Prompts you can use directly"></ml-text></h2>
+            <p><ml-text ja="座標と目的を明示すると、Codexが適切なデータセットと単数・複数ツールを選びやすくなります。" en="Specify the coordinates and your goal so Codex can more easily select the appropriate dataset and single-point or batch tool."></ml-text></p>
+          </div>
+
+          <div class="examples">
+            <article class="example">
+              <h3><ml-text ja="経度と緯度から地名を調べる" en="Look up location(s) from longitude and latitude"></ml-text></h3>
+              <p><ml-text ja="行政区域を簡潔に確認します。" en="Quickly check the administrative area."></ml-text></p>
+              <p class="prompt"><ml-block><span data-lang="ja">経度139.7671、緯度35.6812をN03 2026で逆ジオコーディングしてください。</span><span data-lang="en">Reverse-geocode longitude 139.7671 and latitude 35.6812 using N03 2026.</span></ml-block></p>
+            </article>
+
+            <article class="example">
+              <h3><ml-text ja="経路の通過点を調べる" en="Check locations along a route"></ml-text></h3>
+              <p><ml-text ja="経緯度パスから通過地点と距離を概算" en="Estimate the locations and distances traveled along a longitude-latitude path."></ml-text></p>
+              <p class="prompt"><ml-block><span data-lang="ja">山手線の軌道上を10m間隔で逆ジオコーディングして通過する町名・丁目等を一覧化し、区域・区別の通過距離を集計したCSV、GeoJSON、地図、グラフ画像を作成して。</span><span data-lang="en">Reverse-geocode points along the Yamanote Line tracks at 10-meter intervals, list the towns, chome, and other areas it passes through, calculate the distance traveled through each area and ward, and create a CSV, GeoJSON, map, and graph image.</span></ml-block></p>
+            </article>
+
+            <article class="example">
+              <h3><ml-text ja="範囲にある地域を調べる" en="Check areas within a range"></ml-text></h3>
+              <p><ml-text ja="地点と形状を指定して地名の一覧を取得" en="Specify a location and shape to get a list of place names."></ml-text></p>
+              <p class="prompt"><ml-block><span data-lang="ja">蘇我駅から1km以内にある丁目をすべて列挙して。</span><span data-lang="en">List all chome within 1 km of Soga Station.</span></ml-block></p>
+            </article>
+          </div>
+        </section>
+
+        <section class="guide-section">
+          <div class="section-heading">
+            <p class="section-kicker">04 · SCOPE</p>
+            <h2><ml-text ja="ローカル処理の範囲" en="What runs locally"></ml-text></h2>
+            <p><ml-text ja="「制限なし」はGaluchatの逆ジオコーディング処理についての説明です。Codexや利用環境自体の契約・モデル・利用上限を意味するものではありません。" en="Unmetered refers to Galuchat's reverse-geocoding operation. It does not override subscription, model, or usage limits of Codex or the surrounding environment."></ml-text></p>
+          </div>
+          <div class="limits">
+            <div class="limit">
+              <strong><ml-text ja="検索回数の制限なし" en="No lookup quota"></ml-text></strong>
+              <p><ml-text ja="地図の読み込み後、検索ごとに外部の逆ジオコーディングAPIへ問い合わせません。" en="After data loading, lookups do not call an external reverse-geocoding API."></ml-text></p>
+            </div>
+            <div class="limit">
+              <strong><ml-text ja="最大10,000地点／回" en="Up to 10,000 points per call"></ml-text></strong>
+              <p><ml-text ja="大量の座標にはgaluchat_resolve_positionsを使用します。" en="Use galuchat_resolve_positions for batches of coordinates."></ml-text></p>
+            </div>
+            <div class="limit">
+              <strong><ml-text ja="コードはデータセット固有" en="Codes are dataset-local"></ml-text></strong>
+              <p><ml-text ja="返される地図内部コードは自治体コードではありません。データセットをまたいで再利用しません。" en="Returned map codes are not official administrative codes and must not be reused across datasets."></ml-text></p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p><a href="../"><ml-text ja="Galuchat GIS SDKの概要へ" en="Back to Galuchat GIS SDK"></ml-text></a></p>
+        <p><a href="https://learn.chatgpt.com/docs/webmcp"><ml-text ja="OpenAI公式：サイトツール（WebMCP）" en="Official OpenAI guide: Site tools (WebMCP)"></ml-text></a></p>
+      </footer>
+    </div>
+  </body>
+</html>

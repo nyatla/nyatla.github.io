@@ -37,6 +37,8 @@ func(code, dataset, codemaps[])
 
 CodeMapにコードがない場合、そのCodeMapの値は`null`とする。
 
+応答には共通型の`license`も含む。AIは結果を提示するときに出典とライセンスを併記し、`approval`がある場合は承認番号を含む全文も併記する。
+
 入力`code`には、同じDatasetを指定した`galuchat_resolve_position`または`galuchat_resolve_positions`が返したGaluchat地図内部コードだけを指定する。自治体コード、統計地域コード、ISOコードなどを直接指定してはならない。
 
 ## Errors

@@ -1,4 +1,4 @@
-const DATA_ROOT = "../../data/jp-estat-r2ka-2020";
+const DATA_ROOT = "../data/jp-estat-r2ka-2020";
 const DEFAULT_CENTER = Object.freeze({ lon: 140.0206, lat: 35.6911 });
 const MAPSET_ID = "10000";
 const MAPSET_URL = `${DATA_ROOT}/estat-r2ka-jgd2011-2020-grid-8192-10000.wgsmapset.glc`;

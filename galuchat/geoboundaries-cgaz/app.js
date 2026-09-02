@@ -1,15 +1,12 @@
-const DATA_ROOT = "../../data/jp-admin-n03-2026";
+const DATA_ROOT = "../data/world-geoboundaries-cgaz";
 const DEFAULT_CENTER = Object.freeze({ lon: 140.0267, lat: 35.6810 });
-const RESOLVER_MAPSET_ID = "10000";
+const RESOLVER_MAPSET_ID = "1000";
+const DEFAULT_LEVEL_INDEX = 3;
 const MAPSETS = Object.freeze({
-  "10000": `${DATA_ROOT}/N03-20260101-grid-8192-10000.remap.wgsmapset.glc`,
-  "1000": `${DATA_ROOT}/N03-20260101-grid-4096-1000.remap.wgsmapset.glc`,
-  "100": `${DATA_ROOT}/N03-20260101-grid-512-100.remap.wgsmapset.glc`,
+  "1000": `${DATA_ROOT}/geoboundaries-cgaz-best-admin-grid-8192-1000.wgsmapset.glc`,
+  "100": `${DATA_ROOT}/geoboundaries-cgaz-best-admin-grid-1024-100.wgsmapset.glc`,
 });
 const ZOOM_LEVELS = Object.freeze([
-  { id: "10000", mapset: "10000", scale: 1 },
-  { id: "10000 / 2", mapset: "10000", scale: 2 },
-  { id: "10000 / 4", mapset: "10000", scale: 4 },
   { id: "1000", mapset: "1000", scale: 1 },
   { id: "1000 / 2", mapset: "1000", scale: 2 },
   { id: "1000 / 4", mapset: "1000", scale: 4 },
@@ -24,6 +21,7 @@ const zoomLabel = document.getElementById("zoom-label");
 const zoomOutButton = document.getElementById("zoom-out");
 const zoomInButton = document.getElementById("zoom-in");
 const homeButton = document.getElementById("home");
+const locationButtons = [...document.querySelectorAll(".location")];
 const runtimeState = document.getElementById("runtime-state");
 
 let interactiveMap = null;
@@ -43,7 +41,7 @@ main().catch(showFatalError);
 async function main() {
   const [displayReaders, wordbookBytes] = await Promise.all([
     loadMapsets(MAPSETS),
-    fetchBinary(`${DATA_ROOT}/N03-20260101.giswordbook`),
+    fetchBinary(`${DATA_ROOT}/geoboundaries-cgaz-best-admin.giswordbook`),
   ]);
   const wordbookReader = Galuchat.GaluchatGisWordBookReader.fromUint8Array(wordbookBytes);
   source = new Galuchat.MultiZoomMapSource({
@@ -53,9 +51,10 @@ async function main() {
     levels: ZOOM_LEVELS,
     padding: 160,
   });
+  source.setZoomLevelIndex(DEFAULT_LEVEL_INDEX);
 
   interactiveMap = new Galuchat.GaluchatInteractiveMap(shell, source, {
-    center: source.snapCenter(DEFAULT_CENTER),
+    center: source.snapCenter(DEFAULT_CENTER, DEFAULT_LEVEL_INDEX),
     maxWidth: 640,
     maxHeight: 480,
     controls: { status: false },
@@ -69,13 +68,12 @@ async function main() {
 
   zoomOutButton.addEventListener("click", () => interactiveMap.zoomOut());
   zoomInButton.addEventListener("click", () => interactiveMap.zoomIn());
-  homeButton.addEventListener("click", () => {
-    source.setZoomLevelIndex(3);
-    interactiveMap.setView({
-      center: source.snapCenter(DEFAULT_CENTER, 3),
-      selectedCode: null,
+  homeButton.addEventListener("click", () => moveTo(DEFAULT_CENTER));
+  for (const button of locationButtons) {
+    button.addEventListener("click", () => {
+      moveTo({ lon: Number(button.dataset.lon), lat: Number(button.dataset.lat) });
     });
-  });
+  }
   interactiveMap.canvas.addEventListener(
     "wheel",
     (event) => interactiveMap.zoomByWheel(event),
@@ -86,14 +84,20 @@ async function main() {
     interactiveMap.zoomIn(interactiveMap.eventToCanvasPoint(event));
   });
 
-  source.setZoomLevelIndex(3);
-  for (const button of [zoomOutButton, zoomInButton, homeButton]) {
+  for (const button of [zoomOutButton, zoomInButton, homeButton, ...locationButtons]) {
     button.disabled = false;
   }
   updateControls();
   await interactiveMap.render();
   runtimeState.classList.add("is-ready");
   runtimeState.textContent = "LOCAL READY · NO FURTHER NETWORK";
+}
+
+function moveTo(center) {
+  interactiveMap.setView({
+    center: source.snapCenter(center),
+    selectedCode: null,
+  });
 }
 
 function updateControls() {

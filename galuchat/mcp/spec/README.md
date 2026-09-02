@@ -2,11 +2,11 @@
 
 このディレクトリは、`/galuchat/mcp/`で公開する逆ジオコーディングサービスの設計上の正本である。
 
-逆ジオコーディングの5ツールは`/galuchat/mcp/`の通常UIと同じブラウザ内サービスを使って実装している。APIバージョン`galuchat-webmcp/0`はDraftであり、互換性を保証しない。
+逆ジオコーディングと二次元コードマップ取得の6ツールは、`/galuchat/mcp/`のブラウザ内サービスを使って実装している。APIバージョン`galuchat-webmcp/0`はDraftであり、互換性を保証しない。
 
 ## 対象範囲
 
-初期版は、経緯度から地図コードとメタデータを取得する機能に集中する。
+初期版は、経緯度から地図コードとメタデータを取得する機能と、指定範囲の地図コードを二次元配列で取得する機能に集中する。
 
 ```text
 WGS84経緯度
@@ -26,7 +26,7 @@ Galuchat地図内部コード
 - 単一入力と複数入力は、戻り値の形を明確にするため別APIにする。
 - 複数の地点またはコードを処理するときは、単件APIを繰り返さず複数入力APIの1回の呼び出しにまとめる。
 
-二次元コードマップ、地図画像生成、Canvas操作、Map Studioは初期版に含めない。既存文書は検討を再開する場合の保留資料として残すが、公開API一覧には含めない。
+地図画像生成、Canvas操作、Map Studioは初期版に含めない。既存文書は検討を再開する場合の保留資料として残すが、公開API一覧には含めない。
 
 ## APIセット
 
@@ -37,6 +37,7 @@ Galuchat地図内部コード
 | [`galuchat_resolve_positions`](./information/resolve-positions.md) | 複数地点を一括変換する |
 | [`galuchat_resolve_code`](./information/resolve-code.md) | 1個のコードからメタデータを取得する |
 | [`galuchat_resolve_codes`](./information/resolve-codes.md) | 複数のコードからメタデータを一括取得する |
+| [`galuchat_get_code_map`](./information/get-code-map.md) | 指定範囲の地図内部コードを二次元配列で取得する |
 
 ## 共通仕様
 
@@ -49,6 +50,7 @@ galuchat_resolve_position(position, dataset, codemaps[], map?)
 galuchat_resolve_positions(positions[], dataset, codemaps[], map?)
 galuchat_resolve_code(code, dataset, codemaps[])
 galuchat_resolve_codes(codes[], dataset, codemaps[])
+galuchat_get_code_map(area|base+size, dataset, map?)
 ```
 
 `map`を省略した場合は、データセットで利用可能な地図のうち最も高い解像度のものを選ぶ。

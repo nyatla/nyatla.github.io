@@ -4,7 +4,7 @@ Status: Implemented
 
 ## 目的
 
-Galuchat逆ジオコーディングサービスが提供するAPIバージョン、ツール、データセットを返す。
+Galuchat WebMCPサービスが提供するAPIバージョン、ツール、データセットを返す。
 
 旧Galuchat Web APIの`/apispec`に相当する発見APIである。
 
@@ -35,7 +35,8 @@ HTTP:   GET /galuchat/mcp/apispec.json
   "default_dataset_id": "jp-admin-n03-2026",
   "limits": {
     "positionsPerRequest": 10000,
-    "codesPerRequest": 10000
+    "codesPerRequest": 10000,
+    "codeMapCellsPerRequest": 10000
   },
   "datasets": [
     {
@@ -188,7 +189,8 @@ HTTP:   GET /galuchat/mcp/apispec.json
     "galuchat_resolve_position",
     "galuchat_resolve_positions",
     "galuchat_resolve_code",
-    "galuchat_resolve_codes"
+    "galuchat_resolve_codes",
+    "galuchat_get_code_map"
   ]
 }
 ```
@@ -215,6 +217,7 @@ galuchat-webmcp/0;GaluchatJavaScript/0.5.2
 | --- | --- |
 | `positionsPerRequest` | `galuchat_resolve_positions`で指定できる地点数。1以上10000以下 |
 | `codesPerRequest` | `galuchat_resolve_codes`で指定できるコード数。1以上10000以下 |
+| `codeMapCellsPerRequest` | `galuchat_get_code_map`で返せる`width * height`。1以上10000以下 |
 
 ### `datasets`
 

@@ -100,15 +100,13 @@
       }
 
       h1 {
-        max-width: 700px;
+        max-width: none;
         margin: 0;
         font-size: clamp(44px, 5vw, 60px);
         line-height: 1.08;
         letter-spacing: -0.055em;
         text-wrap: balance;
       }
-
-      .hero-line { display: block; }
 
       .lead {
         margin: 24px 0 30px;
@@ -184,6 +182,7 @@
       }
 
       #basic,
+      #webmcp,
       #embedded,
       #sdk { scroll-margin-top: 30px; }
 
@@ -341,6 +340,7 @@
         <a class="brand" href="./">Galuchat <span>GIS SDK</span></a>
         <nav class="site-nav" aria-label="Primary navigation">
           <a href="#basic"><ml-text ja="基本機能" en="Core features"></ml-text></a>
+          <a href="#webmcp">WebMCP</a>
           <a href="#embedded"><ml-text ja="組込機器" en="Embedded"></ml-text></a>
           <a href="#sdk"><ml-text ja="SDK" en="SDK"></ml-text></a>
         </nav>
@@ -356,7 +356,7 @@
         <section class="hero">
           <div class="hero-copy">
             <p class="eyebrow">SERVERLESS REVERSE GEOCODING</p>
-            <h1><ml-block><span data-lang="ja"><span class="hero-line">逆ジオコーディングを</span><span class="hero-line">サーバーなしで</span></span><span data-lang="en"><span class="hero-line">Reverse geocoding,</span><span class="hero-line">without a server</span></span></ml-block></h1>
+            <h1><ml-text ja="サーバーなしの逆ジオコーディング" en="Serverless reverse geocoding"></ml-text></h1>
             <p class="lead"><ml-text ja="地図データと検索機能を端末に持たせ、Webでも組込機器でもローカルに処理します。外部APIへの通信、利用回数、レート制限を気にせず使えます。" en="Keep the map data and lookup engine on the device. Run locally on the web or embedded hardware without external API calls, usage quotas, or rate limits."></ml-text></p>
             <div class="hero-actions">
               <a class="button primary" href="#basic"><ml-text ja="基本機能を試す →" en="Try the core features →"></ml-text></a>
@@ -376,7 +376,7 @@
           </div>
 
           <div class="map-links">
-            <a class="map-link" href="../mcp/">
+            <a class="map-link" href="./mcp/">
               <span class="source-id">WEB UI · WEBMCP · UP TO 10,000 POINTS</span>
               <h3><ml-text ja="逆ジオコーディング" en="Reverse geocoding"></ml-text></h3>
               <p><ml-text ja="回数制限のないローカル検索です。人間は画面から、AIはWebMCPから同じ機能を利用できます。" en="Unmetered local lookups through the page for people and through WebMCP for AI agents."></ml-text></p>
@@ -406,10 +406,28 @@
           </div>
         </section>
 
+        <section id="webmcp" class="path-section">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">02 · WEBMCP EXPERIENCE</p>
+              <h2><ml-text ja="AIから使う、ローカル逆ジオコーディング" en="Local reverse geocoding for AI agents"></ml-text></h2>
+            </div>
+            <p><ml-text ja="画面で利用できる逆ジオコーディング機能を、WebMCPを通してCodexからも呼び出せます。データの読み込み後はブラウザ内で処理するため、検索回数やサーバー側のレート制限はありません。" en="Use the same reverse-geocoding functions from Codex through WebMCP. Once the data is loaded, lookups run in the browser without server-side quotas or rate limits."></ml-text></p>
+          </div>
+          <div class="platform-links">
+            <a class="platform-card" href="./webmcp/">
+              <p class="section-kicker">WEBMCP · CODEX · BROWSER LOCAL</p>
+              <h2><ml-text ja="Codexで逆ジオコーディングを使う" en="Use reverse geocoding with Codex"></ml-text></h2>
+              <p><ml-text ja="Codexでページを開く方法、利用できるツール、単一地点・複数地点の問い合わせ例を紹介します。逆ジオコーディングは1リクエスト最大10,000地点に対応します。" en="See how to open the page with Codex, inspect its tools, and run single- or multiple-point lookups with up to 10,000 positions per request."></ml-text></p>
+              <span class="platform-open"><ml-text ja="接続方法と使用例を見る →" en="View setup and examples →"></ml-text></span>
+            </a>
+          </div>
+        </section>
+
         <section id="embedded" class="path-section">
           <div class="section-heading">
             <div>
-              <p class="section-kicker">02 · EMBEDDED EXPERIENCE</p>
+              <p class="section-kicker">03 · EMBEDDED EXPERIENCE</p>
               <h2><ml-text ja="逆ジオコーディングを組込機器へ" en="Bring reverse geocoding to embedded devices"></ml-text></h2>
             </div>
             <p><ml-text ja="ブラウザで試したものと同じ地図データと検索処理を、小さなマイコンへ持ち込みます。" en="Take the same map data and lookup process you tried in the browser onto small microcontrollers."></ml-text></p>
@@ -427,7 +445,7 @@
         <section id="sdk" class="path-section">
           <div class="section-heading">
             <div>
-              <p class="section-kicker">03 · SDK</p>
+              <p class="section-kicker">04 · SDK</p>
               <h2><ml-text ja="自分のアプリへ組み込む" en="Build it into your application"></ml-text></h2>
             </div>
             <p><ml-text ja="体験した地図参照と逆ジオコーディングを、各言語のSDKから利用できます。" en="Use the map access and reverse-geocoding features from SDKs for each supported language."></ml-text></p>

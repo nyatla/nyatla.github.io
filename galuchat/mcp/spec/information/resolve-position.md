@@ -44,6 +44,7 @@ func(position, dataset, codemaps[], map?)
 - 地図コードに対応するCodeMapの値がない場合、そのCodeMapの値は`null`とする。
 - 応答の`resolution`は、選択した地図の解像度を度/画素で表す。
 - `code`はDataset固有のGaluchat地図内部コードであり、自治体コードなどの公的識別子ではない。
+- 応答には共通型の`license`も含む。AIは結果を提示するときに出典とライセンスを併記し、`approval`がある場合は承認番号を含む全文も併記する。
 
 ## Errors
 

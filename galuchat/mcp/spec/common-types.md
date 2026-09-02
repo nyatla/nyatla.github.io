@@ -47,6 +47,28 @@ API入力の`dataset`には、API仕様の`datasets[].id`を指定する。
 - 自治体コード、全国地方公共団体コード、e-Stat地域コード、ISO国コードなどの公的識別子ではない。
 - `galuchat_resolve_code`と`galuchat_resolve_codes`には、同じDatasetの位置解決APIが返したコードだけを渡す。
 
+## License
+
+データを返す各APIは、結果のルートに使用データセットの`license`を含める。
+
+```json
+{
+  "name": "CC BY 4.0",
+  "url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_name": "国土数値情報 行政区域データ N03-2026",
+  "source_url": "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03.html",
+  "attribution": "「国土数値情報（行政区域データ）」（国土交通省）をもとにGaluchat用に加工して作成",
+  "approval": "測量法に基づく国土地理院長承認（使用）R 8JHs 319",
+  "notice_url": "https://nyatla.github.io/galuchat/data/jp-admin-n03-2026/NOTICE.md"
+}
+```
+
+- AIは取得結果を人に提示するとき、`attribution`と`name`を併記する。
+- `approval`が返された場合は承認番号を含む全文を省略しない。N03系データでは必須とする。
+- N03以外でも`approval`が定義されていれば同様に併記する。
+- `approval`がないデータセットについて、AIが承認・許諾番号を推測または生成してはならない。
+- 詳細な利用条件が必要な場合は`notice_url`を案内する。
+
 ## エラー応答
 
 ```json

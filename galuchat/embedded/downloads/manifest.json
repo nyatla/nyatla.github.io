@@ -3,7 +3,7 @@
   "type": "galuchat-embedded-demo-publication",
   "galuchatCore": {
     "version": "0.5.2",
-    "commit": "c714c4c72068a39c1c13072111b801f088dca387",
+    "commit": "49821bffb82a95839e5559827727af1af72ad3c0",
     "readersDirty": false,
     "readers": {
       "wgsmap3_reader.hpp": "d5ddc9818febd14e62a4d083a939a00dd7a2e88db51338bf21e40fca2c92bb75",
@@ -66,7 +66,7 @@
       "coreVersion": "3.3.7",
       "url": "firmware/galuchat-n03-1000-esp32-4mb.bin",
       "size": 4194304,
-      "sha256": "6a50f8ce7ddd0c72a028d1c77eb313ace3ad70d374da565a36b65cab52efe2d2"
+      "sha256": "d7bd1073930a45a8aa476d89cbf9d8917a955f6e9bc1b207e78710babd2453e7"
     },
     {
       "target": "esp32_4mb",
@@ -79,7 +79,7 @@
       "coreVersion": "3.3.7",
       "url": "firmware/galuchat-geoboundaries-100-esp32-4mb.bin",
       "size": 4194304,
-      "sha256": "ddc0f15b5b617ba4ce307a17fc03f20e0d5384cb60e6de9b1e01d504b667587e"
+      "sha256": "4ee7984f4d17b9e3757ed09bd3706dd6ac7fe24d3560c425a68ed6c0f92ef374"
     },
     {
       "target": "esp32_8mb",
@@ -92,7 +92,7 @@
       "coreVersion": "3.3.7",
       "url": "firmware/galuchat-n03-10000-esp32-8mb.bin",
       "size": 8388608,
-      "sha256": "0168f5e00d10400c6c8eb83dd7e92f2c3082f67706b1d4b52ae218433d61e45f"
+      "sha256": "371413a40973e8111a72ef8af373af96e22028bd61129421b4c13d75c731e5e2"
     },
     {
       "target": "esp32_8mb",
@@ -105,7 +105,7 @@
       "coreVersion": "3.3.7",
       "url": "firmware/galuchat-geoboundaries-100-esp32-8mb.bin",
       "size": 8388608,
-      "sha256": "2446a533d3f41b37db56a1c37d2e6745502c59adc248d21c7d362a61335fb9bc"
+      "sha256": "d7c4cb04d0ddd9c139656a8b8dcd0d268b290f5d9c23c45f75a24024ce7885ec"
     },
     {
       "target": "esp32s3_8mb",
@@ -118,7 +118,7 @@
       "coreVersion": "3.3.7",
       "url": "firmware/galuchat-n03-10000-esp32s3-8mb.bin",
       "size": 8388608,
-      "sha256": "cf59beb946ed8277a1da7f91b261767158d1be8b016198cabd83e1b6450e3a08"
+      "sha256": "14de9bd57553f4b9369241187bdaed31a208eacdddf3e634eff1eac72aaa6f48"
     },
     {
       "target": "esp32s3_8mb",
@@ -131,7 +131,7 @@
       "coreVersion": "3.3.7",
       "url": "firmware/galuchat-geoboundaries-100-esp32s3-8mb.bin",
       "size": 8388608,
-      "sha256": "8ef489a76fad167791482ba5770df716bea9c027ec29f3ff853817b64dd89351"
+      "sha256": "0575abdb186e82f16dfdf3c2aa60e2e2c8613f1d37bf78a4da64851bc29dce33"
     }
   ],
   "arduinoProjects": [
@@ -142,7 +142,7 @@
       "datasetLabel": "N03 2026 / 1/1000 degree",
       "url": "arduino/galuchat-arduino-n03-1000-rp2040.zip",
       "size": 711962,
-      "sha256": "2707584e613652439bce082fbdf0d0c07cceb5c62620c109d28f1064acebd05d"
+      "sha256": "404b2400613210fae199fc9a27ea1786b8cde74405810bdad6798d573a9708ed"
     },
     {
       "target": "esp32_4mb",
@@ -151,7 +151,7 @@
       "datasetLabel": "geoBoundaries CGAZ / 1/100 degree",
       "url": "arduino/galuchat-arduino-geoboundaries-100-esp32.zip",
       "size": 4679961,
-      "sha256": "25a80fc42e8d9c926dc106d37f271fc06b3b989398042f9dd977493ffacc7749"
+      "sha256": "1d8ebeb3c61b7f55323440f6f51bc8215a8774bfa41da489cadcd55c6de3e906"
     }
   ],
   "wokwi": [

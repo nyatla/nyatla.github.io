@@ -1,10 +1,14 @@
 # `galuchat_get_code_map`
 
+Status: Implemented
+
 ## 目的
 
 指定した矩形領域について、各セルが地図コードを持つ二次元コードマップを取得する。
 
 着色、境界線、CodeMapのメタデータは含めない。
+
+返却値は矩形だが、矩形以外の形状にも利用できる。多角形、円、経路のバッファなどを扱う場合は、まず対象形状の外接矩形を取得し、各セル中心が対象形状に含まれるかを判定して、不要なセルをマスクまたはトリミングする。
 
 ## Input: 経緯度範囲
 
@@ -110,7 +114,12 @@ north:  bottom = base.y - height
   "codes": [
     [12204, 12204, 0],
     [12204, 12216, 12216]
-  ]
+  ],
+  "trimming": {
+    "possible": true,
+    "description": "For a polygon, circle, route buffer, or another irregular shape, request its bounding rectangle and keep only cells whose center lies inside the desired geometry.",
+    "cell_centers": "Column x is west + x * resolution.lon. Row y is north - (y + 1) * resolution.lat."
+  }
 }
 ```
 
@@ -121,6 +130,25 @@ north:  bottom = base.y - height
 - `codes[0]`は`area.north - resolution.lat`の中心緯度に対応し、最後の行は`area.south`の中心緯度に対応する。
 - `codes`の行数は`height`、各行の要素数は`width`と一致する。
 - `0`は地図コードが割り当てられていないセルを表す。
+- `width * height`はAPI仕様の`limits.codeMapCellsPerRequest`以下とする。現在の上限は10000セル。
+- 応答には共通型の`license`も1件含む。AIは結果を提示するときに出典とライセンスを併記し、`approval`がある場合は承認番号を含む全文も併記する。
+
+## 矩形以外の形状への利用
+
+AIには、二次元コードマップを矩形のまま使う必要がないことを説明する。任意形状を得る基本手順は次の通り。
+
+1. 対象形状の外接矩形を`area`として指定する。
+2. `codes[y][x]`に対応するセル中心を計算する。
+3. セル中心が対象形状の内側にある要素だけを残す。
+
+セル中心は次の式で復元できる。
+
+```text
+lon = area.west + x * resolution.lon
+lat = area.north - (y + 1) * resolution.lat
+```
+
+この方法で、多角形、円、経路沿い、行政区域の概形などに合わせて結果をマスクできる。境界と交差するセルを含める必要がある用途では、中心点包含だけでなく、利用側でセル領域と対象形状の交差判定を行う。
 
 ## Errors
 
