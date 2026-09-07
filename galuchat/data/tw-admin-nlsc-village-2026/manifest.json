@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "tw-admin-nlsc-village-2026",
+  "version": "2026.08.17+galuchat.1",
+  "sourceVersion": "VILLAGE_NLSC_1150817",
+  "sdkVersion": "0.1.2",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "default": false,
+        "path": "VILLAGE_NLSC_1150817_PREPARED_WGS84-grid-8192-10000.remap.wgsmapset.glc",
+        "size": 1333264,
+        "sha256": "7a6e19e01a01d2bb7da92ea8b976ee5e17ae30f6f1c555185f53e3d2fc02a2c6"
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "default": true,
+        "path": "VILLAGE_NLSC_1150817_PREPARED_WGS84-grid-4096-1000.remap.wgsmapset.glc",
+        "size": 206551,
+        "sha256": "43d4e65f623bf95822b5356a645297f5fcf41d741c97376f0c04c3b667cd9eab"
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "default": false,
+        "path": "VILLAGE_NLSC_1150817_PREPARED_WGS84-grid-512-100.remap.wgsmapset.glc",
+        "size": 26289,
+        "sha256": "3d354fefa2743c370c191c6d4488831738df80e4086fad770b31b631b4e20804"
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "VILLAGE_NLSC_1150817.giswordbook",
+        "size": 58445,
+        "sha256": "7d2df93f5d31015e93260e010f63c64abdc07c0b7e0feff606f9acf37de571bc"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 2961,
+      "sha256": "5c3071892d2fc3f8d3c337478c13eaa1f0bb27bae7fc5ec18bbd0ad71856e797"
+    }
+  }
+}

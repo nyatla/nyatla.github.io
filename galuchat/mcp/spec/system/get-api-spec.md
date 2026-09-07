@@ -139,6 +139,86 @@ HTTP:   GET /galuchat/mcp/apispec.json
       }
     },
     {
+      "id": "tw-admin-nlsc-village-2026",
+      "title": "台湾 村里界（NLSC / 2026）",
+      "description": "內政部國土測繪中心の村里界圖をGaluchat用に加工した行政区域データ",
+      "area": { "west": 114.3593, "south": 10.3713, "east": 124.5613, "north": 26.3854 },
+      "code_semantics": {
+        "type": "uint32",
+        "scope": "dataset",
+        "description": "Dataset固有のGaluchat地図内部コード。公的識別子ではない"
+      },
+      "maps": [
+        {
+          "id": "unit-inv-10000",
+          "resolution": { "lon": 0.0001, "lat": 0.0001 },
+          "size_bytes": 1333264
+        }
+      ],
+      "codemaps": [
+        {
+          "name": "place-name-utf8",
+          "description": "地域コードに対応する地名階層",
+          "format": "GisWordBook/0",
+          "code_type": "uint32",
+          "text_encoding": "utf8",
+          "metadata": [
+            { "name": "path", "type": "string[]", "description": "縣市、鄉鎮市區、村里の地名階層" },
+            { "name": "name", "type": "string", "description": "地名階層から生成する表示名" }
+          ],
+          "size_bytes": 58445
+        }
+      ],
+      "license": {
+        "name": "政府資料開放授權條款－第1版",
+        "url": "https://data.gov.tw/license",
+        "source_name": "內政部國土測繪中心 村里界圖(TWD97經緯度)",
+        "source_url": "https://data.gov.tw/dataset/7438",
+        "attribution": "內政部國土測繪中心 2026 村里界圖(TWD97經緯度)（2026-08-17版）。此開放資料依政府資料開放授權條款第1版進行公眾釋出。",
+        "notice_url": "/galuchat/data/tw-admin-nlsc-village-2026/NOTICE.md"
+      }
+    },
+    {
+      "id": "uk-admin-ons-lad-2025",
+      "title": "英国 Local Authority Districts（ONS / 2025）",
+      "description": "ONS Local Authority Districts (December 2025) UK BFCをGaluchat用に加工した行政区域データ",
+      "area": { "west": -8.65, "south": 49.8647, "east": 1.7638, "north": 60.8609 },
+      "code_semantics": {
+        "type": "uint32",
+        "scope": "dataset",
+        "description": "Dataset固有のGaluchat地図内部コード。公的識別子ではない"
+      },
+      "maps": [
+        {
+          "id": "unit-inv-10000",
+          "resolution": { "lon": 0.0001, "lat": 0.0001 },
+          "size_bytes": 2340613
+        }
+      ],
+      "codemaps": [
+        {
+          "name": "place-name-utf8",
+          "description": "地域コードに対応する地名階層",
+          "format": "GisWordBook/0",
+          "code_type": "uint32",
+          "text_encoding": "utf8",
+          "metadata": [
+            { "name": "path", "type": "string[]", "description": "構成国、カウンティ、Local Authority Districtの地名階層" },
+            { "name": "name", "type": "string", "description": "地名階層から生成する表示名" }
+          ],
+          "size_bytes": 6379
+        }
+      ],
+      "license": {
+        "name": "Open Government Licence v3.0",
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+        "source_name": "ONS Local Authority Districts (December 2025) Boundaries UK BFC",
+        "source_url": "https://www.data.gov.uk/dataset/aa5a9ccf-fbea-43cb-81cc-fdc04d89f128/local-authority-districts-december-2025-boundaries-uk-bfc",
+        "attribution": "Source: Office for National Statistics licensed under the Open Government Licence v.3.0. Contains OS data © Crown copyright and database right 2026.",
+        "notice_url": "/galuchat/data/uk-admin-ons-lad-2025/NOTICE.md"
+      }
+    },
+    {
       "id": "world-geoboundaries-cgaz",
       "title": "世界行政区域（geoBoundaries CGAZ）",
       "description": "geoBoundaries CGAZ ADM2 global compositeをGaluchat用に加工した世界行政区域データ",

@@ -4,28 +4,28 @@
   "id": "world-geoboundaries-cgaz",
   "version": "2024.04.20+galuchat.3",
   "sourceVersion": "CGAZ-ADM2-main-snapshot-2024-04-20",
-  "sdkVersion": "0.1.1",
+  "sdkVersion": "0.1.2",
   "formats": {
-    "gisWordBook": 0,
+    "wgsmapset": 3,
     "imageChunk": "GI01",
-    "wgsmapset": 3
+    "gisWordBook": 0
   },
   "files": {
     "maps": [
       {
-        "cellSize": 8192,
-        "default": true,
         "id": "unit-inv-1000",
         "unitInv": 1000,
+        "cellSize": 8192,
+        "default": true,
         "path": "geoboundaries-cgaz-best-admin-grid-8192-1000.wgsmapset.glc",
         "size": 21438850,
         "sha256": "dcc0363ed0237c853b3060c58a57b3f74657554f7dc5ffe6b4398b2d975f0ea5"
       },
       {
-        "cellSize": 1024,
-        "default": false,
         "id": "unit-inv-100",
         "unitInv": 100,
+        "cellSize": 1024,
+        "default": false,
         "path": "geoboundaries-cgaz-best-admin-grid-1024-100.wgsmapset.glc",
         "size": 2945858,
         "sha256": "e7c64bc6a81d22f4a93c94d9db91a46a72dc949656b2ed466db5d15911543609"
@@ -33,10 +33,10 @@
     ],
     "wordbooks": [
       {
-        "default": true,
         "id": "utf8",
         "textEncoding": "utf8",
         "tokenEncoding": "utf-8",
+        "default": true,
         "path": "geoboundaries-cgaz-best-admin.giswordbook",
         "size": 574680,
         "sha256": "e30fb58e6cb536a8ab945ee1dda60d1a659681c11f0c02e988d11bef8c9953c1"

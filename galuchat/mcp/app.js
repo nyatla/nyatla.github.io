@@ -15,6 +15,11 @@ const datasets = {
     description: "国土数値情報N03をGaluchat用に加工した行政区域データ",
     area: { west: 122.9326, south: 20.4227, east: 153.9868, north: 45.5573 },
     codemaps: ["place-name-utf8"],
+    samples: [
+      { label: "津田沼駅", lon: 140.0206, lat: 35.6911 },
+      { label: "東京駅", lon: 139.7671, lat: 35.6812 },
+      { label: "京都駅", lon: 135.7588, lat: 34.9858 },
+    ],
     license: {
       name: "CC BY 4.0",
       url: "https://creativecommons.org/licenses/by/4.0/",
@@ -34,6 +39,11 @@ const datasets = {
     description: "e-Statの町丁・字等境界をGaluchat用に加工した境界データ",
     area: { west: 122.9338, south: 20.425, east: 153.9829, north: 45.5231 },
     codemaps: ["place-name-utf8"],
+    samples: [
+      { label: "津田沼駅", lon: 140.0206, lat: 35.6911 },
+      { label: "東京駅", lon: 139.7671, lat: 35.6812 },
+      { label: "京都駅", lon: 135.7588, lat: 34.9858 },
+    ],
     license: {
       name: "政府標準利用規約2.0（CC BY 4.0互換）",
       url: "https://www.e-stat.go.jp/terms-of-use",
@@ -46,12 +56,64 @@ const datasets = {
       { id: "unit-inv-10000", label: "1/10000度", resolution: { lon: 0.0001, lat: 0.0001 }, note: "約10 m/px" },
     ],
   },
+  "tw-admin-nlsc-village-2026": {
+    manifestUrl: `${DATA_ROOT}/tw-admin-nlsc-village-2026/manifest.json`,
+    title: "台湾 村里界（NLSC / 2026）",
+    description: "內政部國土測繪中心の村里界圖をGaluchat用に加工した行政区域データ",
+    area: { west: 114.3593, south: 10.3713, east: 124.5613, north: 26.3854 },
+    codemaps: ["place-name-utf8"],
+    samples: [
+      { label: "台北101", lon: 121.5645, lat: 25.0339 },
+      { label: "台中駅", lon: 120.6853, lat: 24.1368 },
+      { label: "高雄駅", lon: 120.3027, lat: 22.6398 },
+    ],
+    license: {
+      name: "政府資料開放授權條款－第1版",
+      url: "https://data.gov.tw/license",
+      sourceName: "內政部國土測繪中心 村里界圖(TWD97經緯度)",
+      sourceUrl: "https://data.gov.tw/dataset/7438",
+      attribution: "內政部國土測繪中心 2026 村里界圖(TWD97經緯度)（2026-08-17版）。此開放資料依政府資料開放授權條款第1版進行公眾釋出。",
+      noticeUrl: `${DATA_ROOT}/tw-admin-nlsc-village-2026/NOTICE.md`,
+    },
+    maps: [
+      { id: "unit-inv-10000", label: "1/10000度", resolution: { lon: 0.0001, lat: 0.0001 }, note: "約10 m/px" },
+    ],
+  },
+  "uk-admin-ons-lad-2025": {
+    manifestUrl: `${DATA_ROOT}/uk-admin-ons-lad-2025/manifest.json`,
+    title: "英国 Local Authority Districts（ONS / 2025）",
+    description: "ONS Local Authority Districts (December 2025) UK BFCをGaluchat用に加工した行政区域データ",
+    area: { west: -8.65, south: 49.8647, east: 1.7638, north: 60.8609 },
+    codemaps: ["place-name-utf8"],
+    samples: [
+      { label: "London", lon: -0.1276, lat: 51.5072 },
+      { label: "Edinburgh", lon: -3.1883, lat: 55.9533 },
+      { label: "Cardiff", lon: -3.1791, lat: 51.4816 },
+      { label: "Belfast", lon: -5.9301, lat: 54.5973 },
+    ],
+    license: {
+      name: "Open Government Licence v3.0",
+      url: "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      sourceName: "ONS Local Authority Districts (December 2025) Boundaries UK BFC",
+      sourceUrl: "https://www.data.gov.uk/dataset/aa5a9ccf-fbea-43cb-81cc-fdc04d89f128/local-authority-districts-december-2025-boundaries-uk-bfc",
+      attribution: "Source: Office for National Statistics licensed under the Open Government Licence v.3.0. Contains OS data © Crown copyright and database right 2026.",
+      noticeUrl: `${DATA_ROOT}/uk-admin-ons-lad-2025/NOTICE.md`,
+    },
+    maps: [
+      { id: "unit-inv-10000", label: "1/10000度", resolution: { lon: 0.0001, lat: 0.0001 }, note: "約10 m/px" },
+    ],
+  },
   "world-geoboundaries-cgaz": {
     manifestUrl: `${DATA_ROOT}/world-geoboundaries-cgaz/manifest.json`,
     title: "世界行政区域（geoBoundaries CGAZ）",
     description: "geoBoundaries CGAZ ADM2 global compositeをGaluchat用に加工した世界行政区域データ",
     area: { west: -180, south: -89.999, east: 180.001, north: 83.617 },
     codemaps: ["place-name-utf8"],
+    samples: [
+      { label: "Paris", lon: 2.3522, lat: 48.8566 },
+      { label: "New York", lon: -74.006, lat: 40.7128 },
+      { label: "Tokyo", lon: 139.6917, lat: 35.6895 },
+    ],
     license: {
       name: "CC BY 4.0",
       url: "https://creativecommons.org/licenses/by/4.0/",
@@ -80,6 +142,7 @@ const clearCoordinatesButton = document.querySelector("#clear-coordinates");
 const coordinateCount = document.querySelector("#coordinate-count");
 const coordinateError = document.querySelector("#coordinate-error");
 const coordinateNotice = document.querySelector("#coordinate-notice");
+const samplePoints = document.querySelector(".sample-points");
 const datasetSelect = document.querySelector("#dataset");
 const mapSelect = document.querySelector("#map");
 const mapMeta = document.querySelector("#map-meta");
@@ -232,21 +295,21 @@ applyCoordinatePasteButton.addEventListener("click", () => {
   }
 });
 
-for (const sampleButton of document.querySelectorAll("[data-sample-lon][data-sample-lat]")) {
-  sampleButton.addEventListener("click", () => {
-    try {
-      appendCoordinatePositions([{
-        lon: Number(sampleButton.dataset.sampleLon),
-        lat: Number(sampleButton.dataset.sampleLat),
-      }]);
-      coordinateError.textContent = "";
-      updateDuplicateNotice(readValidCoordinateRows());
-      showToast(`${sampleButton.textContent}を追加しました`);
-    } catch (error) {
-      coordinateError.textContent = error instanceof Error ? error.message : String(error);
-    }
-  });
-}
+samplePoints.addEventListener("click", (event) => {
+  const sampleButton = event.target.closest("[data-sample-lon][data-sample-lat]");
+  if (sampleButton === null) return;
+  try {
+    appendCoordinatePositions([{
+      lon: Number(sampleButton.dataset.sampleLon),
+      lat: Number(sampleButton.dataset.sampleLat),
+    }]);
+    coordinateError.textContent = "";
+    updateDuplicateNotice(readValidCoordinateRows());
+    showToast(`${sampleButton.textContent}を追加しました`);
+  } catch (error) {
+    coordinateError.textContent = error instanceof Error ? error.message : String(error);
+  }
+});
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
@@ -587,6 +650,15 @@ function updateDatasetMeta() {
   codemapList.replaceChildren();
   for (const name of dataset.codemaps) {
     codemapList.append(textElement("code", name));
+  }
+
+  samplePoints.replaceChildren(textElement("span", "サンプルを追加"));
+  for (const sample of dataset.samples) {
+    const button = textElement("button", sample.label);
+    button.type = "button";
+    button.dataset.sampleLon = sample.lon;
+    button.dataset.sampleLat = sample.lat;
+    samplePoints.append(button);
   }
 }
 

@@ -4,6 +4,8 @@
   "datasets": [
     "jp-admin-n03-2026",
     "jp-estat-r2ka-2020",
-    "world-geoboundaries-cgaz"
+    "world-geoboundaries-cgaz",
+    "tw-admin-nlsc-village-2026",
+    "uk-admin-ons-lad-2025"
   ]
 }

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "uk-admin-ons-lad-2025",
+  "version": "2025.12.0+galuchat.1",
+  "sourceVersion": "LAD_DEC_2025_UK_BFC",
+  "sdkVersion": "0.1.2",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "default": false,
+        "path": "LAD_DEC_2025_UK_BFC_WGS84-grid-8192-10000.remap.wgsmapset.glc",
+        "size": 2340613,
+        "sha256": "e7da1e1634839833397818ad4fccd828484cdd79b2d34ca2390cc492d55dad95"
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "default": true,
+        "path": "LAD_DEC_2025_UK_BFC_WGS84-grid-4096-1000.remap.wgsmapset.glc",
+        "size": 215899,
+        "sha256": "5f5d6c8d1fab4f45cee224738f023a8beb629440d0ef4bdc3de6f0e2433a1f4d"
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "default": false,
+        "path": "LAD_DEC_2025_UK_BFC_WGS84-grid-512-100.remap.wgsmapset.glc",
+        "size": 20414,
+        "sha256": "ce65b19179c0133da75847bae900e28937589af999e2c706ad3c84954ea73fb3"
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "LAD_DEC_2025_UK_BFC.giswordbook",
+        "size": 6379,
+        "sha256": "28b7bbf991a8cec4b85293855192ba86cb649936f6aa2602b606a56087ba5759"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 4177,
+      "sha256": "8acd0b7f3342ecf8d814585574df59d55a0d95f66e25f3754d20444fb28e74eb"
+    }
+  }
+}

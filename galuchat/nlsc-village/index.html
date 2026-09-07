@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ja" data-title-ja="Galuchat GIS SDK — 台湾村里界地図" data-title-en="Galuchat GIS SDK — Taiwan Village Boundary Map">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="台湾NLSCの村里界地図をブラウザ内で閲覧し、ローカルに逆ジオコーディングできます。" data-description-ja="台湾NLSCの村里界地図をブラウザ内で閲覧し、ローカルに逆ジオコーディングできます。" data-description-en="Explore Taiwan NLSC village boundaries and reverse geocode locally in your browser.">
+    <title>Galuchat GIS SDK — 台湾村里界地図</title>
+    <link rel="stylesheet" href="../assets/map-page.css?v=3">
+    <link rel="stylesheet" href="../assets/machml-switch.css">
+    <script src="../assets/machml.min.js"></script>
+    <script src="../assets/machml-switch.js"></script>
+  </head>
+  <body class="detail-map-page">
+    <div class="page">
+      <header class="site-header">
+        <a class="brand" href="../">Galuchat <span>GIS SDK</span></a>
+        <div class="header-actions">
+          <nav class="page-nav" aria-label="Page navigation">
+            <a href="../"><ml-text ja="概要" en="Overview"></ml-text></a>
+            <a href="../mcp/"><ml-text ja="逆ジオコーディング →" en="Reverse geocoding →"></ml-text></a>
+          </nav>
+          <nav class="language-switch" aria-label="Language / 言語">
+            <button type="button" data-machml-locale="ja">日本語</button>
+            <button type="button" data-machml-locale="en">English</button>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="map-intro">
+          <div class="intro-copy">
+            <p class="eyebrow">NLSC 2026 · LOCAL MAP EXPERIENCE</p>
+            <h1><ml-block><span data-lang="ja">台湾の村里界を<wbr><span class="title-tail">ローカルで参照</span></span><span data-lang="en">Explore Taiwan's village boundaries locally</span></ml-block></h1>
+            <p class="lead"><ml-text ja="內政部國土測繪中心の村里界データを一度読み込みます。準備後は、地図操作も逆ジオコーディングも追加通信・回数制限なしでブラウザ内に完結します。" en="Load the National Land Surveying and Mapping Center village-boundary data once, then explore and reverse geocode entirely in the browser without further network requests or usage limits."></ml-text></p>
+          </div>
+        </section>
+
+        <section class="demo-card" aria-labelledby="demo-title">
+          <div class="demo-header">
+            <div>
+              <p id="demo-title" class="demo-label">LOCAL MAP + REVERSE GEOCODING</p>
+              <p id="place-name" class="place-name" aria-live="polite"><ml-text ja="約1.6 MBの地図データを読み込んでいます…" en="Loading approximately 1.6 MB of map data…"></ml-text></p>
+            </div>
+            <span id="runtime-state" class="runtime-state" aria-live="polite">DOWNLOADING DATA</span>
+          </div>
+          <div class="map-stage">
+            <div class="toolbar" aria-label="地図操作" data-aria-ja="地図操作" data-aria-en="Map controls">
+              <button id="zoom-out" type="button" disabled aria-label="縮小" data-aria-ja="縮小" data-aria-en="Zoom out">−</button>
+              <button id="zoom-in" type="button" disabled aria-label="拡大" data-aria-ja="拡大" data-aria-en="Zoom in">＋</button>
+              <button id="home" type="button" disabled><ml-text ja="初期位置" en="Home"></ml-text></button>
+            </div>
+            <div id="map-shell" class="map-shell"></div>
+          </div>
+          <div class="demo-meta">
+            <div class="demo-help">
+              <span><ml-text ja="ドラッグで移動 · クリックで地域選択" en="Drag to move · click to select a region"></ml-text></span>
+              <span><ml-text ja="ホイール／＋−でズーム" en="Use the wheel or +/− to zoom"></ml-text></span>
+            </div>
+            <span id="zoom-label"><ml-text ja="解像度を準備中" en="Preparing resolutions"></ml-text></span>
+          </div>
+          <div class="location-list" aria-label="移動先の例" data-aria-ja="移動先の例" data-aria-en="Sample locations">
+            <span><ml-text ja="移動先:" en="Jump to:"></ml-text></span>
+            <button class="location" type="button" data-lon="121.5645" data-lat="25.0339" disabled>Taipei</button>
+            <button class="location" type="button" data-lon="120.6853" data-lat="24.1368" disabled>Taichung</button>
+            <button class="location" type="button" data-lon="120.3027" data-lat="22.6398" disabled>Kaohsiung</button>
+          </div>
+          <div class="data-credit"><ml-block>
+            <span data-lang="ja">出典：內政部國土測繪中心 2026 村里界圖(TWD97經緯度)（2026-08-17版） · <a href="https://data.gov.tw/license">政府資料開放授權條款－第1版</a> · Galuchat向けに加工。<a href="../data/tw-admin-nlsc-village-2026/NOTICE.md">出典・利用条件の詳細</a></span>
+            <span data-lang="en">Source: National Land Surveying and Mapping Center 2026 Village Boundary Map (TWD97 geographic coordinates), 2026-08-17 edition · <a href="https://data.gov.tw/license">Open Government Data License, version 1.0</a> · adapted for Galuchat. <a href="../data/tw-admin-nlsc-village-2026/NOTICE.md">Attribution details</a></span>
+          </ml-block></div>
+        </section>
+
+        <section class="about" aria-labelledby="about-title">
+          <div class="about-head">
+            <div><p class="section-kicker">WHAT RUNS LOCALLY</p><h2 id="about-title"><ml-text ja="準備完了後は、すべて端末内で" en="Everything stays local once ready"></ml-text></h2></div>
+            <p><ml-text ja="地図の描画と逆ジオコーディングは同じ圧縮ラスタを参照し、外部の地図APIへ問い合わせません。" en="Map rendering and reverse geocoding use the same compact rasters without querying an external map API."></ml-text></p>
+          </div>
+          <div class="features">
+            <article class="feature"><span class="feature-number">01</span><h3><ml-text ja="3解像度の内蔵地図" en="Three local resolutions"></ml-text></h3><p><ml-text ja="100・1,000・10,000 px/度を表示倍率に応じて切り替えます。" en="Switch among 100, 1,000, and 10,000 pixels per degree as you zoom."></ml-text></p></article>
+            <article class="feature"><span class="feature-number">02</span><h3><ml-text ja="村里までの地名階層" en="Names down to village level"></ml-text></h3><p><ml-text ja="縣市、鄉鎮市區、村里の階層をローカルに取得します。" en="Resolve county or city, township or district, and village locally."></ml-text></p></article>
+            <article class="feature"><span class="feature-number">03</span><h3><ml-text ja="回数制限なし" en="Unmetered lookups"></ml-text></h3><p><ml-text ja="読み込み後の操作と検索はブラウザ内だけで処理します。" en="After loading, interaction and lookup happen entirely in your browser."></ml-text></p></article>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p><ml-text ja="SDK・ソースコード：" en="SDK and source code: "></ml-text><a href="https://github.com/nyatla/galuchat-gis-sdk">GitHub — galuchat-gis-sdk</a></p>
+        <p><ml-text ja="Galuchatソフトウェアは" en="Galuchat software is licensed under the "></ml-text><a href="../LICENSE">Apache License 2.0</a><ml-text ja="で提供されます。" en=". "></ml-text><a href="../NOTICE">NOTICE</a></p>
+        <p><ml-block><span data-lang="ja">內政部國土測繪中心の村里界圖をGaluchat用に加工。<a href="../data/tw-admin-nlsc-village-2026/NOTICE.md">データの出典・利用条件</a></span><span data-lang="en">Adapted for Galuchat from NLSC Village Boundary Map data. <a href="../data/tw-admin-nlsc-village-2026/NOTICE.md">Data attribution and terms</a></span></ml-block></p>
+      </footer>
+    </div>
+
+    <script src="../assets/galuchat.min.js"></script>
+    <script>window.GALUCHAT_COUNTRY_MAP={center:{lon:121.5654,lat:25.033},initialLevelIndex:3,mapsets:{"10000":"../data/tw-admin-nlsc-village-2026/VILLAGE_NLSC_1150817_PREPARED_WGS84-grid-8192-10000.remap.wgsmapset.glc","1000":"../data/tw-admin-nlsc-village-2026/VILLAGE_NLSC_1150817_PREPARED_WGS84-grid-4096-1000.remap.wgsmapset.glc","100":"../data/tw-admin-nlsc-village-2026/VILLAGE_NLSC_1150817_PREPARED_WGS84-grid-512-100.remap.wgsmapset.glc"},wordbook:"../data/tw-admin-nlsc-village-2026/VILLAGE_NLSC_1150817.giswordbook"};</script>
+    <script src="../assets/country-map-app.js?v=1"></script>
+  </body>
+</html>

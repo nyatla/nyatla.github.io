@@ -507,6 +507,10 @@
               <p><ml-text ja="矩形範囲を最大10,000セルの二次元配列として取得します。多角形、円、経路沿いなどでは、外接矩形を取得してからセル中心を使って不要部分をマスクできます。" en="Returns a rectangular array of up to 10,000 cells. For polygons, circles, route buffers, or other irregular shapes, request the bounding rectangle and mask cells by their center positions."></ml-text></p>
             </article>
           </div>
+          <div class="notice">
+            <strong><ml-text ja="利用可能な地域データ" en="Available regional datasets"></ml-text></strong>
+            <p><ml-block><span data-lang="ja"><code>jp-admin-n03-2026</code>、<code>jp-estat-r2ka-2020</code>、<code>tw-admin-nlsc-village-2026</code>、<code>uk-admin-ons-lad-2025</code>、<code>world-geoboundaries-cgaz</code>を選択できます。</span><span data-lang="en">Choose from <code>jp-admin-n03-2026</code>, <code>jp-estat-r2ka-2020</code>, <code>tw-admin-nlsc-village-2026</code>, <code>uk-admin-ons-lad-2025</code>, and <code>world-geoboundaries-cgaz</code>.</span></ml-block></p>
+          </div>
         </section>
 
         <section id="examples" class="guide-section">
@@ -527,6 +531,18 @@
               <h3><ml-text ja="経路の通過点を調べる" en="Check locations along a route"></ml-text></h3>
               <p><ml-text ja="経緯度パスから通過地点と距離を概算" en="Estimate the locations and distances traveled along a longitude-latitude path."></ml-text></p>
               <p class="prompt"><ml-block><span data-lang="ja">山手線の軌道上を10m間隔で逆ジオコーディングして通過する町名・丁目等を一覧化し、区域・区別の通過距離を集計したCSV、GeoJSON、地図、グラフ画像を作成して。</span><span data-lang="en">Reverse-geocode points along the Yamanote Line tracks at 10-meter intervals, list the towns, chome, and other areas it passes through, calculate the distance traveled through each area and ward, and create a CSV, GeoJSON, map, and graph image.</span></ml-block></p>
+            </article>
+
+            <article class="example">
+              <h3><ml-text ja="台湾の村里を調べる" en="Look up a village in Taiwan"></ml-text></h3>
+              <p><ml-text ja="NLSCデータで縣市・鄉鎮市區・村里を取得します。" en="Resolve county or city, township or district, and village using NLSC data."></ml-text></p>
+              <p class="prompt"><ml-block><span data-lang="ja">経度121.5654、緯度25.0330をtw-admin-nlsc-village-2026で逆ジオコーディングしてください。</span><span data-lang="en">Reverse-geocode longitude 121.5654 and latitude 25.0330 using tw-admin-nlsc-village-2026.</span></ml-block></p>
+            </article>
+
+            <article class="example">
+              <h3><ml-text ja="英国のLADを調べる" en="Look up a UK local authority district"></ml-text></h3>
+              <p><ml-text ja="ONSデータで構成国・カウンティ・Local Authority Districtを取得します。" en="Resolve constituent country, county, and Local Authority District using ONS data."></ml-text></p>
+              <p class="prompt"><ml-block><span data-lang="ja">ロンドンの経度-0.1276、緯度51.5072をuk-admin-ons-lad-2025で逆ジオコーディングしてください。</span><span data-lang="en">Reverse-geocode London at longitude -0.1276 and latitude 51.5072 using uk-admin-ons-lad-2025.</span></ml-block></p>
             </article>
 
             <article class="example">
