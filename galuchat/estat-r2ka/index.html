@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="e-Statの町丁・字等境界データを使い、丁目レベルの地図参照と逆ジオコーディングをブラウザ内で実行します。" data-description-ja="e-Statの町丁・字等境界データを使い、丁目レベルの地図参照と逆ジオコーディングをブラウザ内で実行します。" data-description-en="Explore neighborhood-level boundaries and run reverse geocoding entirely in the browser using e-Stat data.">
     <title>Galuchat GIS SDK — 丁目レベルの逆ジオコーディング</title>
-    <link rel="stylesheet" href="../assets/map-page.css?v=3">
+    <link rel="stylesheet" href="../assets/map-page.css?v=4">
     <link rel="stylesheet" href="../assets/machml-switch.css">
     <script src="../assets/machml.min.js"></script>
     <script src="../assets/machml-switch.js"></script>
@@ -72,16 +72,15 @@
         <section class="data-spec" aria-labelledby="data-spec-title">
           <div class="data-spec-head"><p class="section-kicker">DATA SPECIFICATION</p><h2 id="data-spec-title"><ml-text ja="データ仕様" en="Data specification"></ml-text></h2></div>
           <dl class="data-spec-summary">
-            <div><dt><ml-text ja="データセット" en="Dataset"></ml-text></dt><dd><ml-text ja="令和2年国勢調査 町丁・字等境界データ" en="2020 Population Census town-block and small-area boundaries"></ml-text></dd></div>
+            <div><dt><ml-text ja="データセット" en="Dataset"></ml-text></dt><dd><a href="https://www.e-stat.go.jp/gis/statmap-search?page=1&amp;type=2&amp;aggregateUnitForBoundary=A&amp;toukeiCode=00200521&amp;toukeiYear=2020&amp;serveyId=A002005212020&amp;coordsys=1&amp;format=shape&amp;datum=2011"><ml-text ja="令和2年国勢調査 町丁・字等境界データ" en="2020 Population Census town-block and small-area boundaries"></ml-text></a></dd></div>
             <div><dt><ml-text ja="対象範囲" en="Coverage"></ml-text></dt><dd><ml-text ja="日本全国" en="Japan"></ml-text></dd></div>
-            <div><dt><ml-text ja="地名階層" en="Name hierarchy"></ml-text></dt><dd><ml-text ja="都道府県 / 市区町村 / 町丁・字等 / 下位地区" en="Prefecture / municipality / small area / lower area"></ml-text></dd></div>
-            <div><dt><ml-text ja="収録形式" en="Formats"></ml-text></dt><dd>WGSMapSet/3 · GisWordBook/0 (UTF-8)</dd></div>
             <div><dt><ml-text ja="境界の性質" en="Boundary type"></ml-text></dt><dd><ml-text ja="統計調査用の地域区分。住居表示・行政区域とは一致しない場合がある" en="Statistical survey boundaries; may differ from postal and administrative areas"></ml-text></dd></div>
             <div><dt><ml-text ja="基準年" en="Reference year"></ml-text></dt><dd>2020</dd></div>
           </dl>
-          <div class="data-spec-resolution"><h3><ml-text ja="解像度とデータサイズ" en="Resolution and data size"></ml-text></h3><table><thead><tr><th><ml-text ja="解像度" en="Resolution"></ml-text></th><th><ml-text ja="南北距離の目安" en="Approx. north-south"></ml-text></th><th><ml-text ja="サイズ" en="Size"></ml-text></th></tr></thead><tbody>
-            <tr><td>10,000 px/<ml-text ja="度（既定）" en="degree (default)"></ml-text></td><td><ml-text ja="約11 m/px" en="about 11 m/px"></ml-text></td><td>22.70 MiB</td></tr><tr><td>UTF-8 WordBook</td><td><ml-text ja="地名・逆ジオコーディング" en="names and reverse geocoding"></ml-text></td><td>1.63 MiB</td></tr>
-          </tbody></table><p class="data-spec-note"><ml-text ja="初回読込量: 約24.33 MiB。配布ZIP: 約37.09 MiB。" en="Initial page load: about 24.33 MiB. Release ZIP: about 37.09 MiB."></ml-text></p></div>
+          <div class="data-spec-wordbook"><h3>GisWordBook/0 <ml-text ja="仕様" en="specification"></ml-text></h3><dl><div><dt><ml-text ja="地名階層" en="Name hierarchy"></ml-text></dt><dd><ml-text ja="都道府県 / 市区町村 / 町丁・字等 / 下位地区" en="Prefecture / municipality / small area / lower area"></ml-text></dd></div><div><dt><ml-text ja="文字コード" en="Encoding"></ml-text></dt><dd>UTF-8</dd></div><div><dt><ml-text ja="用途" en="Purpose"></ml-text></dt><dd><ml-text ja="地名取得・逆ジオコーディング" en="place names and reverse geocoding"></ml-text></dd></div><div><dt><ml-text ja="サイズ" en="Size"></ml-text></dt><dd>1.63 MiB</dd></div></dl></div>
+          <div class="data-spec-mapset"><h3>WGSMapSet/3 <ml-text ja="仕様" en="specification"></ml-text></h3><table><thead><tr><th><ml-text ja="解像度" en="Resolution"></ml-text></th><th><ml-text ja="南北距離の目安" en="Approx. north-south"></ml-text></th><th><ml-text ja="サイズ" en="Size"></ml-text></th></tr></thead><tbody>
+            <tr><td>10,000 px/<ml-text ja="度" en="degree"></ml-text></td><td><ml-text ja="約11 m/px" en="about 11 m/px"></ml-text></td><td>22.70 MiB</td></tr>
+          </tbody></table><p class="data-spec-note"><ml-text ja="WGSMapSet合計: 約22.70 MiB。配布ZIP: 約37.09 MiB。" en="WGSMapSet total: about 22.70 MiB. Release ZIP: about 37.09 MiB."></ml-text></p></div>
         </section>
       </main>
 
@@ -93,6 +92,6 @@
     </div>
 
     <script src="../assets/galuchat.min.js"></script>
-    <script src="./app.js?v=1"></script>
+    <script src="./app.js?v=2"></script>
   </body>
 </html>

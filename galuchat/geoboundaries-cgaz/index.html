@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="地図データの初回取得後は、通信せず回数制限なく世界の行政区域地図と逆ジオコーディングを利用できます。" data-description-ja="地図データの初回取得後は、通信せず回数制限なく世界の行政区域地図と逆ジオコーディングを利用できます。" data-description-en="After the initial data download, explore worldwide administrative areas and run unlimited reverse-geocoding lookups without further network requests.">
     <title>Galuchat GIS SDK — 世界行政区域地図</title>
-    <link rel="stylesheet" href="../assets/map-page.css?v=3">
+    <link rel="stylesheet" href="../assets/map-page.css?v=4">
     <link rel="stylesheet" href="../assets/machml-switch.css">
     <script src="../assets/machml.min.js"></script>
     <script src="../assets/machml-switch.js"></script>
@@ -77,13 +77,13 @@
         <section class="data-spec" aria-labelledby="data-spec-title">
           <div class="data-spec-head"><p class="section-kicker">DATA SPECIFICATION</p><h2 id="data-spec-title"><ml-text ja="データ仕様" en="Data specification"></ml-text></h2></div>
           <dl class="data-spec-summary">
-            <div><dt><ml-text ja="データセット" en="Dataset"></ml-text></dt><dd>geoBoundaries CGAZ</dd></div><div><dt><ml-text ja="対象範囲" en="Coverage"></ml-text></dt><dd><ml-text ja="世界" en="Worldwide"></ml-text></dd></div>
-            <div><dt><ml-text ja="地名階層" en="Name hierarchy"></ml-text></dt><dd><ml-text ja="国・行政区域。地域ごとに利用可能な最詳細レベル" en="Country and administrative area at the most detailed available level"></ml-text></dd></div><div><dt><ml-text ja="収録形式" en="Formats"></ml-text></dt><dd>WGSMapSet/3 · GisWordBook/0 (UTF-8)</dd></div>
+            <div><dt><ml-text ja="データセット" en="Dataset"></ml-text></dt><dd><a href="https://www.geoboundaries.org/globalDownloads.html">geoBoundaries CGAZ</a></dd></div><div><dt><ml-text ja="対象範囲" en="Coverage"></ml-text></dt><dd><ml-text ja="世界" en="Worldwide"></ml-text></dd></div>
             <div><dt><ml-text ja="原典スナップショット" en="Source snapshot"></ml-text></dt><dd>CGAZ ADM2 main, 2024-04-20</dd></div><div><dt><ml-text ja="境界の性質" en="Boundary type"></ml-text></dt><dd><ml-text ja="ADM2、ADM1、ADM0または係争地域のうち最詳細の境界" en="Most detailed available ADM2, ADM1, ADM0, or disputed-area boundary"></ml-text></dd></div>
           </dl>
-          <div class="data-spec-resolution"><h3><ml-text ja="解像度とデータサイズ" en="Resolution and data size"></ml-text></h3><table><thead><tr><th><ml-text ja="解像度" en="Resolution"></ml-text></th><th><ml-text ja="南北距離の目安" en="Approx. north-south"></ml-text></th><th><ml-text ja="サイズ" en="Size"></ml-text></th></tr></thead><tbody>
-            <tr><td>100 px/<ml-text ja="度" en="degree"></ml-text></td><td><ml-text ja="約1.1 km/px" en="about 1.1 km/px"></ml-text></td><td>2.81 MiB</td></tr><tr><td>1,000 px/<ml-text ja="度（既定）" en="degree (default)"></ml-text></td><td><ml-text ja="約111 m/px" en="about 111 m/px"></ml-text></td><td>20.45 MiB</td></tr><tr><td>UTF-8 WordBook</td><td><ml-text ja="地名・逆ジオコーディング" en="names and reverse geocoding"></ml-text></td><td>561 KiB</td></tr>
-          </tbody></table><p class="data-spec-note"><ml-text ja="初回読込量: 約23.80 MiB（全解像度とUTF-8 WordBook）。配布ZIP: 約22.92 MiB。" en="Initial page load: about 23.80 MiB for all resolutions and the UTF-8 WordBook. Release ZIP: about 22.92 MiB."></ml-text></p></div>
+          <div class="data-spec-wordbook"><h3>GisWordBook/0 <ml-text ja="仕様" en="specification"></ml-text></h3><dl><div><dt><ml-text ja="地名階層" en="Name hierarchy"></ml-text></dt><dd><ml-text ja="国・行政区域。地域ごとに利用可能な最詳細レベル" en="Country and administrative area at the most detailed available level"></ml-text></dd></div><div><dt><ml-text ja="文字コード" en="Encoding"></ml-text></dt><dd>UTF-8</dd></div><div><dt><ml-text ja="用途" en="Purpose"></ml-text></dt><dd><ml-text ja="地名取得・逆ジオコーディング" en="place names and reverse geocoding"></ml-text></dd></div><div><dt><ml-text ja="サイズ" en="Size"></ml-text></dt><dd>561 KiB</dd></div></dl></div>
+          <div class="data-spec-mapset"><h3>WGSMapSet/3 <ml-text ja="仕様" en="specification"></ml-text></h3><table><thead><tr><th><ml-text ja="解像度" en="Resolution"></ml-text></th><th><ml-text ja="南北距離の目安" en="Approx. north-south"></ml-text></th><th><ml-text ja="サイズ" en="Size"></ml-text></th></tr></thead><tbody>
+            <tr><td>100 px/<ml-text ja="度（既定）" en="degree (default)"></ml-text></td><td><ml-text ja="約1.1 km/px" en="about 1.1 km/px"></ml-text></td><td>2.81 MiB</td></tr><tr><td>1,000 px/<ml-text ja="度" en="degree"></ml-text></td><td><ml-text ja="約111 m/px" en="about 111 m/px"></ml-text></td><td>20.45 MiB</td></tr>
+          </tbody></table><p class="data-spec-note"><ml-text ja="WGSMapSet合計: 約23.26 MiB。配布ZIP: 約22.92 MiB。" en="WGSMapSet total: about 23.26 MiB. Release ZIP: about 22.92 MiB."></ml-text></p></div>
         </section>
       </main>
 

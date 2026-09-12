@@ -70,9 +70,9 @@ async function main() {
   zoomOutButton.addEventListener("click", () => interactiveMap.zoomOut());
   zoomInButton.addEventListener("click", () => interactiveMap.zoomIn());
   homeButton.addEventListener("click", () => {
-    source.setZoomLevelIndex(3);
+    source.setZoomLevelIndex(6);
     interactiveMap.setView({
-      center: source.snapCenter(DEFAULT_CENTER, 3),
+      center: source.snapCenter(DEFAULT_CENTER, 6),
       selectedCode: null,
     });
   });
@@ -86,7 +86,7 @@ async function main() {
     interactiveMap.zoomIn(interactiveMap.eventToCanvasPoint(event));
   });
 
-  source.setZoomLevelIndex(3);
+  source.setZoomLevelIndex(6);
   for (const button of [zoomOutButton, zoomInButton, homeButton]) {
     button.disabled = false;
   }

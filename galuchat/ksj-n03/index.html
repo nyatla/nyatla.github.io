@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="地図データの初回取得後は、通信せず回数制限なく日本の行政区域地図と逆ジオコーディングを利用できます。" data-description-ja="地図データの初回取得後は、通信せず回数制限なく日本の行政区域地図と逆ジオコーディングを利用できます。" data-description-en="After the initial data download, explore Japan's administrative map and run unlimited reverse-geocoding lookups without further network requests.">
     <title>Galuchat GIS SDK — 日本行政区域地図</title>
-    <link rel="stylesheet" href="../assets/map-page.css?v=3">
+    <link rel="stylesheet" href="../assets/map-page.css?v=4">
     <link rel="stylesheet" href="../assets/machml-switch.css">
     <script src="../assets/machml.min.js"></script>
     <script src="../assets/machml-switch.js"></script>
@@ -68,16 +68,15 @@
         <section class="data-spec" aria-labelledby="data-spec-title">
           <div class="data-spec-head"><p class="section-kicker">DATA SPECIFICATION</p><h2 id="data-spec-title"><ml-text ja="データ仕様" en="Data specification"></ml-text></h2></div>
           <dl class="data-spec-summary">
-            <div><dt><ml-text ja="データセット" en="Dataset"></ml-text></dt><dd><ml-text ja="国土数値情報 行政区域データ N03-20260101" en="National Land Numerical Information Administrative Area Data N03-20260101"></ml-text></dd></div>
+            <div><dt><ml-text ja="データセット" en="Dataset"></ml-text></dt><dd><a href="https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03.html"><ml-text ja="国土数値情報 行政区域データ N03-20260101" en="National Land Numerical Information Administrative Area Data N03-20260101"></ml-text></a></dd></div>
             <div><dt><ml-text ja="対象範囲" en="Coverage"></ml-text></dt><dd><ml-text ja="日本全国" en="Japan"></ml-text></dd></div>
-            <div><dt><ml-text ja="地名階層" en="Name hierarchy"></ml-text></dt><dd><ml-text ja="都道府県 / 市区町村（政令市区を含む）" en="Prefecture / municipality, including designated-city wards"></ml-text></dd></div>
-            <div><dt><ml-text ja="収録形式" en="Formats"></ml-text></dt><dd>WGSMapSet/3 · GisWordBook/0 (UTF-8)</dd></div>
             <div><dt><ml-text ja="境界の基準日" en="Boundary reference date"></ml-text></dt><dd>2026-01-01</dd></div>
             <div><dt><ml-text ja="追加情報" en="Additional metadata"></ml-text></dt><dd><ml-text ja="国土地理院長承認（使用）R 8JHs 319" en="GSI approval for use: R 8JHs 319"></ml-text></dd></div>
           </dl>
-          <div class="data-spec-resolution"><h3><ml-text ja="解像度とデータサイズ" en="Resolution and data size"></ml-text></h3><table><thead><tr><th><ml-text ja="解像度" en="Resolution"></ml-text></th><th><ml-text ja="南北距離の目安" en="Approx. north-south"></ml-text></th><th><ml-text ja="サイズ" en="Size"></ml-text></th></tr></thead><tbody>
-            <tr><td>100 px/<ml-text ja="度" en="degree"></ml-text></td><td><ml-text ja="約1.1 km/px" en="about 1.1 km/px"></ml-text></td><td>52 KiB</td></tr><tr><td>1,000 px/<ml-text ja="度（既定）" en="degree (default)"></ml-text></td><td><ml-text ja="約111 m/px" en="about 111 m/px"></ml-text></td><td>479 KiB</td></tr><tr><td>10,000 px/<ml-text ja="度" en="degree"></ml-text></td><td><ml-text ja="約11 m/px" en="about 11 m/px"></ml-text></td><td>4.47 MiB</td></tr><tr><td>UTF-8 WordBook</td><td><ml-text ja="地名・逆ジオコーディング" en="names and reverse geocoding"></ml-text></td><td>31 KiB</td></tr>
-          </tbody></table><p class="data-spec-note"><ml-text ja="初回読込量: 約5.02 MiB（全解像度とUTF-8 WordBook）。配布ZIP: 約8.47 MiB。" en="Initial page load: about 5.02 MiB for all resolutions and the UTF-8 WordBook. Release ZIP: about 8.47 MiB."></ml-text></p></div>
+          <div class="data-spec-wordbook"><h3>GisWordBook/0 <ml-text ja="仕様" en="specification"></ml-text></h3><dl><div><dt><ml-text ja="地名階層" en="Name hierarchy"></ml-text></dt><dd><ml-text ja="都道府県 / 市区町村（政令市区を含む）" en="Prefecture / municipality, including designated-city wards"></ml-text></dd></div><div><dt><ml-text ja="文字コード" en="Encoding"></ml-text></dt><dd>UTF-8</dd></div><div><dt><ml-text ja="用途" en="Purpose"></ml-text></dt><dd><ml-text ja="地名取得・逆ジオコーディング" en="place names and reverse geocoding"></ml-text></dd></div><div><dt><ml-text ja="サイズ" en="Size"></ml-text></dt><dd>31 KiB</dd></div></dl></div>
+          <div class="data-spec-mapset"><h3>WGSMapSet/3 <ml-text ja="仕様" en="specification"></ml-text></h3><table><thead><tr><th><ml-text ja="解像度" en="Resolution"></ml-text></th><th><ml-text ja="南北距離の目安" en="Approx. north-south"></ml-text></th><th><ml-text ja="サイズ" en="Size"></ml-text></th></tr></thead><tbody>
+            <tr><td>100 px/<ml-text ja="度（既定）" en="degree (default)"></ml-text></td><td><ml-text ja="約1.1 km/px" en="about 1.1 km/px"></ml-text></td><td>52 KiB</td></tr><tr><td>1,000 px/<ml-text ja="度" en="degree"></ml-text></td><td><ml-text ja="約111 m/px" en="about 111 m/px"></ml-text></td><td>479 KiB</td></tr><tr><td>10,000 px/<ml-text ja="度" en="degree"></ml-text></td><td><ml-text ja="約11 m/px" en="about 11 m/px"></ml-text></td><td>4.47 MiB</td></tr>
+          </tbody></table><p class="data-spec-note"><ml-text ja="WGSMapSet合計: 約4.99 MiB。配布ZIP: 約8.47 MiB。" en="WGSMapSet total: about 4.99 MiB. Release ZIP: about 8.47 MiB."></ml-text></p></div>
         </section>
       </main>
 
@@ -89,6 +88,6 @@
     </div>
 
     <script src="../assets/galuchat.min.js"></script>
-    <script src="./app.js?v=5"></script>
+    <script src="./app.js?v=6"></script>
   </body>
 </html>

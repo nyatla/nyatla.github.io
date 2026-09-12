@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="米国国勢調査局TIGER/LineのCountyおよびCounty Equivalentをブラウザ内で閲覧し、ローカルに逆ジオコーディングできます。" data-description-ja="米国国勢調査局TIGER/LineのCountyおよびCounty Equivalentをブラウザ内で閲覧し、ローカルに逆ジオコーディングできます。" data-description-en="Explore U.S. Census TIGER/Line counties and equivalents and reverse geocode locally in your browser.">
     <title>Galuchat GIS SDK — 米国County境界地図</title>
-    <link rel="stylesheet" href="../assets/map-page.css?v=3">
+    <link rel="stylesheet" href="../assets/map-page.css?v=4">
     <link rel="stylesheet" href="../assets/machml-switch.css">
     <script src="../assets/machml.min.js"></script>
     <script src="../assets/machml-switch.js"></script>
@@ -61,19 +61,17 @@
         <section class="data-spec" aria-labelledby="data-spec-title">
           <div class="data-spec-head"><p class="section-kicker">DATA SPECIFICATION</p><h2 id="data-spec-title"><ml-text ja="データ仕様" en="Data specification"></ml-text></h2></div>
           <dl class="data-spec-summary">
-            <div><dt><ml-text ja="データセット" en="Dataset"></ml-text></dt><dd>U.S. Census Bureau 2025 TIGER/Line® County and Equivalent Entities</dd></div>
+            <div><dt><ml-text ja="データセット" en="Dataset"></ml-text></dt><dd><a href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.2025.html">U.S. Census Bureau 2025 TIGER/Line® County and Equivalent Entities</a></dd></div>
             <div><dt><ml-text ja="対象範囲" en="Coverage"></ml-text></dt><dd><ml-text ja="50州・District of Columbia、3,144区域" en="50 states and the District of Columbia; 3,144 areas"></ml-text></dd></div>
-            <div><dt><ml-text ja="地名階層" en="Name hierarchy"></ml-text></dt><dd><ml-text ja="州 / County・Parish・Borough・Census Area・Independent City等" en="State / county, parish, borough, census area, independent city, and equivalents"></ml-text></dd></div>
-            <div><dt><ml-text ja="収録形式" en="Formats"></ml-text></dt><dd>WGSMapSet/3 · GisWordBook/0 (UTF-8)</dd></div>
             <div><dt><ml-text ja="境界の性質" en="Boundary type"></ml-text></dt><dd><ml-text ja="TIGER/Lineの法定・統計境界。物理的な海岸線では未クリップ" en="TIGER/Line legal and statistical boundaries; not clipped to a physical coastline"></ml-text></dd></div>
             <div><dt><ml-text ja="除外範囲" en="Exclusions"></ml-text></dt><dd>Puerto Rico <ml-text ja="および" en="and"></ml-text> Island Areas</dd></div>
           </dl>
-          <div class="data-spec-resolution"><h3><ml-text ja="解像度とデータサイズ" en="Resolution and data size"></ml-text></h3><table><thead><tr><th><ml-text ja="解像度" en="Resolution"></ml-text></th><th><ml-text ja="南北距離の目安" en="Approx. north-south"></ml-text></th><th><ml-text ja="サイズ" en="Size"></ml-text></th></tr></thead><tbody>
-            <tr><td>100 px/<ml-text ja="度" en="degree"></ml-text></td><td><ml-text ja="約1.1 km/px" en="about 1.1 km/px"></ml-text></td><td>166 KiB</td></tr>
-            <tr><td>1,000 px/<ml-text ja="度（既定）" en="degree (default)"></ml-text></td><td><ml-text ja="約111 m/px" en="about 111 m/px"></ml-text></td><td>979 KiB</td></tr>
+          <div class="data-spec-wordbook"><h3>GisWordBook/0 <ml-text ja="仕様" en="specification"></ml-text></h3><dl><div><dt><ml-text ja="地名階層" en="Name hierarchy"></ml-text></dt><dd><ml-text ja="州 / County・Parish・Borough・Census Area・Independent City等" en="State / county, parish, borough, census area, independent city, and equivalents"></ml-text></dd></div><div><dt><ml-text ja="文字コード" en="Encoding"></ml-text></dt><dd>UTF-8</dd></div><div><dt><ml-text ja="用途" en="Purpose"></ml-text></dt><dd><ml-text ja="地名取得・逆ジオコーディング" en="place names and reverse geocoding"></ml-text></dd></div><div><dt><ml-text ja="サイズ" en="Size"></ml-text></dt><dd>22 KiB</dd></div></dl></div>
+          <div class="data-spec-mapset"><h3>WGSMapSet/3 <ml-text ja="仕様" en="specification"></ml-text></h3><table><thead><tr><th><ml-text ja="解像度" en="Resolution"></ml-text></th><th><ml-text ja="南北距離の目安" en="Approx. north-south"></ml-text></th><th><ml-text ja="サイズ" en="Size"></ml-text></th></tr></thead><tbody>
+            <tr><td>100 px/<ml-text ja="度（既定）" en="degree (default)"></ml-text></td><td><ml-text ja="約1.1 km/px" en="about 1.1 km/px"></ml-text></td><td>166 KiB</td></tr>
+            <tr><td>1,000 px/<ml-text ja="度" en="degree"></ml-text></td><td><ml-text ja="約111 m/px" en="about 111 m/px"></ml-text></td><td>979 KiB</td></tr>
             <tr><td>10,000 px/<ml-text ja="度" en="degree"></ml-text></td><td><ml-text ja="約11 m/px" en="about 11 m/px"></ml-text></td><td>7.11 MiB</td></tr>
-            <tr><td>UTF-8 WordBook</td><td><ml-text ja="地名・逆ジオコーディング" en="names and reverse geocoding"></ml-text></td><td>22 KiB</td></tr>
-          </tbody></table><p class="data-spec-note"><ml-text ja="初回読込量: 約8.25 MiB（全解像度とUTF-8 WordBook）。配布ZIP: 約7.47 MiB。" en="Initial page load: about 8.25 MiB for all resolutions and the UTF-8 WordBook. Release ZIP: about 7.47 MiB."></ml-text></p></div>
+          </tbody></table><p class="data-spec-note"><ml-text ja="WGSMapSet合計: 約8.23 MiB。配布ZIP: 約7.47 MiB。" en="WGSMapSet total: about 8.23 MiB. Release ZIP: about 7.47 MiB."></ml-text></p></div>
         </section>
       </main>
 
@@ -86,7 +84,7 @@
     </div>
 
     <script src="../assets/galuchat.min.js"></script>
-    <script>window.GALUCHAT_COUNTRY_MAP={center:{lon:-98.5795,lat:39.8283},initialLevelIndex:3,mapsets:{"10000":"../data/us-admin-census-county-2025/tl_2025_us_county_WGS84-grid-16384-10000.remap.wgsmapset.glc","1000":"../data/us-admin-census-county-2025/tl_2025_us_county_WGS84-grid-8192-1000.remap.wgsmapset.glc","100":"../data/us-admin-census-county-2025/tl_2025_us_county_WGS84-grid-512-100.remap.wgsmapset.glc"},wordbook:"../data/us-admin-census-county-2025/tl_2025_us_county.giswordbook"};</script>
-    <script src="../assets/country-map-app.js?v=1"></script>
+    <script>window.GALUCHAT_COUNTRY_MAP={center:{lon:-98.5795,lat:39.8283},initialLevelIndex:6,mapsets:{"10000":"../data/us-admin-census-county-2025/tl_2025_us_county_WGS84-grid-16384-10000.remap.wgsmapset.glc","1000":"../data/us-admin-census-county-2025/tl_2025_us_county_WGS84-grid-8192-1000.remap.wgsmapset.glc","100":"../data/us-admin-census-county-2025/tl_2025_us_county_WGS84-grid-512-100.remap.wgsmapset.glc"},wordbook:"../data/us-admin-census-county-2025/tl_2025_us_county.giswordbook"};</script>
+    <script src="../assets/country-map-app.js?v=2"></script>
   </body>
 </html>

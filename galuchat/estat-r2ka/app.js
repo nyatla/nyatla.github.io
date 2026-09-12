@@ -3,11 +3,12 @@ const DEFAULT_CENTER = Object.freeze({ lon: 140.0206, lat: 35.6911 });
 const MAPSET_ID = "10000";
 const MAPSET_URL = `${DATA_ROOT}/estat-r2ka-jgd2011-2020-grid-8192-10000.wgsmapset.glc`;
 const WORDBOOK_URL = `${DATA_ROOT}/estat-r2ka-jgd2011-2020.giswordbook`;
-const DEFAULT_LEVEL_INDEX = 2;
+const DEFAULT_LEVEL_INDEX = 3;
 const ZOOM_LEVELS = Object.freeze([
   { id: "10000", mapset: MAPSET_ID, scale: 1 },
   { id: "10000 / 2", mapset: MAPSET_ID, scale: 2 },
   { id: "10000 / 4", mapset: MAPSET_ID, scale: 4 },
+  { id: "100", mapset: MAPSET_ID, scale: 100 },
 ]);
 
 const shell = document.getElementById("map-shell");
