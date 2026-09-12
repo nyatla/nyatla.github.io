@@ -114,6 +114,7 @@ const datasets = {
       { label: "Los Angeles", lon: -118.2437, lat: 34.0522 },
       { label: "Chicago", lon: -87.6298, lat: 41.8781 },
       { label: "New Orleans", lon: -90.0715, lat: 29.9511 },
+      { label: "Honolulu", lon: -157.8583, lat: 21.3069 },
     ],
     license: {
       name: "U.S. Census Bureau TIGER/Line terms",
