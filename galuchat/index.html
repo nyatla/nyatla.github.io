@@ -181,12 +181,33 @@
         gap: 20px;
       }
 
-      #basic,
+      .map-links.single-link { grid-template-columns: minmax(0, 1fr); }
+
+      #reverse-geocoding,
+      #maps,
       #webmcp,
       #embedded,
       #sdk { scroll-margin-top: 30px; }
 
       .path-section { margin-top: 100px; }
+
+      .reverse-flow {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 10px;
+        margin: 24px 0 30px;
+      }
+
+      .reverse-flow span {
+        padding: 13px 16px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        color: var(--muted);
+        background: rgb(255 255 255 / 68%);
+        font-size: 13px;
+        font-weight: 700;
+        text-align: center;
+      }
 
       .map-link {
         position: relative;
@@ -291,6 +312,8 @@
         font-weight: 760;
       }
 
+      .map-catalog-card { min-height: 250px; }
+
       footer {
         display: flex;
         justify-content: space-between;
@@ -320,6 +343,7 @@
         h1 { font-size: clamp(40px, 13vw, 58px); }
         .map-links { grid-template-columns: 1fr; }
         .map-link { min-height: 250px; }
+        .reverse-flow { grid-template-columns: 1fr 1fr; }
         .platform-links { grid-template-columns: 1fr; }
         .platform-card { min-height: 260px; padding: 30px 24px; }
         .path-section { margin-top: 76px; }
@@ -328,6 +352,7 @@
 
       @media (max-width: 420px) {
         .hero-actions .button { width: 100%; }
+        .reverse-flow { grid-template-columns: 1fr; }
       }
     </style>
     <link rel="stylesheet" href="./assets/machml-switch.css">
@@ -339,7 +364,8 @@
       <header>
         <a class="brand" href="./">Galuchat <span>GIS SDK</span></a>
         <nav class="site-nav" aria-label="Primary navigation">
-          <a href="#basic"><ml-text ja="基本機能" en="Core features"></ml-text></a>
+          <a href="#reverse-geocoding"><ml-text ja="逆ジオコーディング" en="Reverse geocoding"></ml-text></a>
+          <a href="#maps"><ml-text ja="地図" en="Maps"></ml-text></a>
           <a href="#webmcp">WebMCP</a>
           <a href="#embedded"><ml-text ja="組込機器" en="Embedded"></ml-text></a>
           <a href="#sdk"><ml-text ja="SDK" en="SDK"></ml-text></a>
@@ -359,70 +385,52 @@
             <h1><ml-text ja="サーバーなしの逆ジオコーディング" en="Serverless reverse geocoding"></ml-text></h1>
             <p class="lead"><ml-text ja="地図データと検索機能を端末に持たせ、Webでも組込機器でもローカルに処理します。外部APIへの通信、利用回数、レート制限を気にせず使えます。" en="Keep the map data and lookup engine on the device. Run locally on the web or embedded hardware without external API calls, usage quotas, or rate limits."></ml-text></p>
             <div class="hero-actions">
-              <a class="button primary" href="#basic"><ml-text ja="基本機能を試す →" en="Try the core features →"></ml-text></a>
-              <a class="button" href="https://github.com/nyatla/galuchat-gis-sdk"><ml-text ja="SDKを見る" en="View the SDK"></ml-text></a>
+              <a class="button primary" href="#reverse-geocoding"><ml-text ja="逆ジオコーディングを試す →" en="Try reverse geocoding →"></ml-text></a>
+              <a class="button" href="./maps/"><ml-text ja="地図を見る →" en="Browse maps →"></ml-text></a>
             </div>
           </div>
 
         </section>
 
-        <section id="basic">
+        <section id="reverse-geocoding">
           <div class="section-heading">
             <div>
-              <p class="section-kicker">01 · CORE EXPERIENCES</p>
-              <h2><ml-text ja="基本機能を、ブラウザで試す" en="Try the core features in the browser"></ml-text></h2>
+              <p class="section-kicker">01 · REVERSE GEOCODING</p>
+              <h2><ml-text ja="座標から、地域名を調べる" en="Find a place name from coordinates"></ml-text></h2>
             </div>
-            <p><ml-text ja="逆ジオコーディングと行政区域地図を、まず画面で確認できます。必要なデータを最初に読み込んだ後は、検索も地図操作もブラウザ内で実行します。" en="Start by trying reverse geocoding and administrative maps on screen. After the initial data load, lookups and map interactions run in the browser."></ml-text></p>
+            <p><ml-text ja="緯度・経度から、その地点を含む行政区域と地名階層を取得します。データセットを選べるため、日本の市区町村・町丁、台湾の村里、英国・米国・世界の行政区域を同じ操作で調べられます。" en="Resolve the administrative area and name hierarchy containing a latitude and longitude. Choose a dataset to use the same workflow for Japanese municipalities and neighborhoods, Taiwanese villages, and administrative areas in the UK, United States, and worldwide."></ml-text></p>
           </div>
 
-          <div class="map-links">
+          <div class="map-links single-link">
             <a class="map-link" href="./mcp/">
               <span class="source-id">WEB UI · WEBMCP · UP TO 10,000 POINTS</span>
               <h3><ml-text ja="逆ジオコーディング" en="Reverse geocoding"></ml-text></h3>
-              <p><ml-text ja="回数制限のないローカル検索です。人間は画面から、AIはWebMCPから同じ機能を利用できます。" en="Unmetered local lookups through the page for people and through WebMCP for AI agents."></ml-text></p>
+              <p><ml-text ja="日本行政区域 N03、e-Stat 小地域、台湾 村里界、英国 LAD、米国 County、世界行政区域から選んで検索できます。必要なデータの読込後は、検索をブラウザ内で実行します。" en="Choose from Japan N03, e-Stat small areas, Taiwanese villages, UK LADs, U.S. counties, and worldwide administrative areas. After loading the selected data, lookups run in the browser."></ml-text></p>
               <span class="open"><ml-text ja="逆ジオコーディングを開く →" en="Open reverse geocoding →"></ml-text></span>
             </a>
+          </div>
+        </section>
 
-            <a class="map-link" href="./estat-r2ka/">
-              <span class="source-id">e-STAT 2020 · 1/10000 DEGREE</span>
-              <h3><ml-text ja="丁目レベルの逆ジオコーディング" en="Neighborhood-level reverse geocoding"></ml-text></h3>
-              <p><ml-text ja="町丁・字等境界を使い、丁目などの小地域まで地図表示とローカル検索を行います。" en="Map and resolve neighborhoods locally using e-Stat small-area boundaries."></ml-text></p>
-              <span class="open"><ml-text ja="丁目レベルの地図を開く →" en="Open the neighborhood map →"></ml-text></span>
-            </a>
-
-            <a class="map-link" href="./ksj-n03/">
-              <span class="source-id">JAPAN · 3 RESOLUTIONS</span>
-              <h3><ml-text ja="日本の行政区域" en="Administrative areas of Japan"></ml-text></h3>
-              <p><ml-text ja="国土数値情報N03による、都道府県・市区町村の詳細な行政区域地図です。" en="A detailed map of Japanese prefectures and municipalities based on the N03 dataset."></ml-text></p>
-              <span class="open"><ml-text ja="日本地図を開く →" en="Open the Japan map →"></ml-text></span>
-            </a>
-
-            <a class="map-link" href="./nlsc-village/">
-              <span class="source-id">TAIWAN · NLSC 2026 · 3 RESOLUTIONS</span>
-              <h3><ml-text ja="台湾の村里界" en="Village boundaries of Taiwan"></ml-text></h3>
-              <p><ml-text ja="內政部國土測繪中心の村里界圖を使い、縣市・鄉鎮市區・村里まで地図表示とローカル検索を行います。" en="Map and resolve county or city, township or district, and village names using NLSC Village Boundary Map data."></ml-text></p>
-              <span class="open"><ml-text ja="台湾地図を開く →" en="Open the Taiwan map →"></ml-text></span>
-            </a>
-
-            <a class="map-link" href="./ons-lad/">
-              <span class="source-id">UNITED KINGDOM · ONS 2025 · 3 RESOLUTIONS</span>
-              <h3><ml-text ja="英国の行政区域" en="Local authority districts of the UK"></ml-text></h3>
-              <p><ml-text ja="ONSのLocal Authority Districtsを使い、英国の構成国・カウンティ・LADを地図表示してローカル検索します。" en="Map and resolve constituent countries, counties, and Local Authority Districts using ONS boundaries."></ml-text></p>
-              <span class="open"><ml-text ja="英国地図を開く →" en="Open the UK map →"></ml-text></span>
-            </a>
-
-            <a class="map-link" href="./us-census-county/">
-              <span class="source-id">UNITED STATES · CENSUS TIGER/LINE 2025 · 3 RESOLUTIONS</span>
-              <h3><ml-text ja="米国のCounty境界" en="U.S. county boundaries"></ml-text></h3>
-              <p><ml-text ja="米国国勢調査局のTIGER/Lineを使い、州とCounty、Parish、Boroughなどを地図表示してローカル検索します。" en="Map and resolve states and counties, parishes, boroughs, and other equivalents using U.S. Census TIGER/Line boundaries."></ml-text></p>
-              <span class="open"><ml-text ja="米国地図を開く →" en="Open the U.S. map →"></ml-text></span>
-            </a>
-
-            <a class="map-link" href="./geoboundaries-cgaz/">
-              <span class="source-id">WORLD · 2 RESOLUTIONS</span>
-              <h3><ml-text ja="世界の行政区域" en="Administrative areas worldwide"></ml-text></h3>
-              <p><ml-text ja="geoBoundaries CGAZによる、世界各国の行政区域を収録した地図です。" en="A worldwide administrative-area map based on the geoBoundaries CGAZ dataset."></ml-text></p>
-              <span class="open"><ml-text ja="世界地図を開く →" en="Open the world map →"></ml-text></span>
+        <section id="maps" class="path-section">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">02 · MAP DATA</p>
+              <h2><ml-text ja="逆ジオコーディングを、地図で使う" en="Use reverse geocoding as a map"></ml-text></h2>
+            </div>
+            <p><ml-text ja="Galuchatの地図は、地点から行政区域を逆引きする仕組みを表示に応用したものです。各地点は区域コードに対応し、クリックすると地名階層を取得できます。" en="Galuchat maps apply the same reverse-geocoding mechanism to display. Each location corresponds to an area code; click it to retrieve the name hierarchy."></ml-text></p>
+          </div>
+          <div class="reverse-flow" aria-label="地図と逆ジオコーディングの流れ" data-aria-ja="地図と逆ジオコーディングの流れ" data-aria-en="Map and reverse-geocoding flow">
+            <span><ml-text ja="座標" en="Coordinates"></ml-text></span>
+            <span><ml-text ja="区域コード" en="Area code"></ml-text></span>
+            <span>GisWordBook</span>
+            <span><ml-text ja="地図表示・地点検索" en="Map display and lookup"></ml-text></span>
+          </div>
+          <div class="platform-links">
+            <a class="platform-card map-catalog-card" href="./maps/">
+              <p class="section-kicker">MAP DATA CATALOG</p>
+              <h2><ml-text ja="地図データ一覧" en="Map data catalog"></ml-text></h2>
+              <p><ml-text ja="地域、地名階層、原典、解像度を比較して、使いたい地図を選べます。地図データはこの一覧へ順次追加します。" en="Compare coverage, name hierarchy, source data, and resolution to choose a map. New map datasets will be added here over time."></ml-text></p>
+              <span class="platform-open"><ml-text ja="地図データ一覧を見る →" en="Browse map data →"></ml-text></span>
             </a>
           </div>
         </section>
@@ -430,7 +438,7 @@
         <section id="webmcp" class="path-section">
           <div class="section-heading">
             <div>
-              <p class="section-kicker">02 · WEBMCP EXPERIENCE</p>
+              <p class="section-kicker">03 · WEBMCP EXPERIENCE</p>
               <h2><ml-text ja="AIから使う、ローカル逆ジオコーディング" en="Local reverse geocoding for AI agents"></ml-text></h2>
             </div>
             <p><ml-text ja="画面で利用できる逆ジオコーディング機能を、WebMCPを通してCodexからも呼び出せます。データの読み込み後はブラウザ内で処理するため、検索回数やサーバー側のレート制限はありません。" en="Use the same reverse-geocoding functions from Codex through WebMCP. Once the data is loaded, lookups run in the browser without server-side quotas or rate limits."></ml-text></p>
@@ -448,7 +456,7 @@
         <section id="embedded" class="path-section">
           <div class="section-heading">
             <div>
-              <p class="section-kicker">03 · EMBEDDED EXPERIENCE</p>
+              <p class="section-kicker">04 · EMBEDDED EXPERIENCE</p>
               <h2><ml-text ja="逆ジオコーディングを組込機器へ" en="Bring reverse geocoding to embedded devices"></ml-text></h2>
             </div>
             <p><ml-text ja="ブラウザで試したものと同じ地図データと検索処理を、小さなマイコンへ持ち込みます。" en="Take the same map data and lookup process you tried in the browser onto small microcontrollers."></ml-text></p>
@@ -466,7 +474,7 @@
         <section id="sdk" class="path-section">
           <div class="section-heading">
             <div>
-              <p class="section-kicker">04 · SDK</p>
+              <p class="section-kicker">05 · SDK</p>
               <h2><ml-text ja="自分のアプリへ組み込む" en="Build it into your application"></ml-text></h2>
             </div>
             <p><ml-text ja="体験した地図参照と逆ジオコーディングを、各言語のSDKから利用できます。" en="Use the map access and reverse-geocoding features from SDKs for each supported language."></ml-text></p>
