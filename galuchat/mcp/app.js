@@ -103,6 +103,30 @@ const datasets = {
       { id: "unit-inv-10000", label: "1/10000度", resolution: { lon: 0.0001, lat: 0.0001 }, note: "約10 m/px" },
     ],
   },
+  "us-admin-census-county-2025": {
+    manifestUrl: `${DATA_ROOT}/us-admin-census-county-2025/manifest.json`,
+    title: "米国 County and Equivalent Entities（Census TIGER/Line / 2025）",
+    description: "U.S. Census Bureau 2025 TIGER/Line County and Equivalent EntitiesをGaluchat用に加工した行政区域データ",
+    area: { west: -179.2, south: 18.9, east: -65.7, north: 71.4 },
+    codemaps: ["place-name-utf8"],
+    samples: [
+      { label: "New York", lon: -74.006, lat: 40.7128 },
+      { label: "Los Angeles", lon: -118.2437, lat: 34.0522 },
+      { label: "Chicago", lon: -87.6298, lat: 41.8781 },
+      { label: "New Orleans", lon: -90.0715, lat: 29.9511 },
+    ],
+    license: {
+      name: "U.S. Census Bureau TIGER/Line terms",
+      url: "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.2025.html",
+      sourceName: "U.S. Census Bureau 2025 TIGER/Line County and Equivalent Entities",
+      sourceUrl: "https://www2.census.gov/geo/tiger/TIGER2025/COUNTY/tl_2025_us_county.zip",
+      attribution: "Source: U.S. Census Bureau, 2025 TIGER/Line® Shapefiles, County and Equivalent Entities. Derived and processed by the Galuchat project; not endorsed by the U.S. Census Bureau.",
+      noticeUrl: `${DATA_ROOT}/us-admin-census-county-2025/NOTICE.md`,
+    },
+    maps: [
+      { id: "unit-inv-10000", label: "1/10000度", resolution: { lon: 0.0001, lat: 0.0001 }, note: "約10 m/px" },
+    ],
+  },
   "world-geoboundaries-cgaz": {
     manifestUrl: `${DATA_ROOT}/world-geoboundaries-cgaz/manifest.json`,
     title: "世界行政区域（geoBoundaries CGAZ）",
