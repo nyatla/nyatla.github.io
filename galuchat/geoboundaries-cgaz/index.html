@@ -74,31 +74,16 @@
           </ml-block></div>
         </section>
 
-        <section class="about" aria-labelledby="about-title">
-          <div class="about-head">
-            <div>
-              <p class="section-kicker">WHAT RUNS LOCALLY</p>
-              <h2 id="about-title"><ml-text ja="準備完了後は、すべて端末内で" en="Everything stays local once ready"></ml-text></h2>
-            </div>
-            <p><ml-text ja="地図の描画と逆ジオコーディングは同じ圧縮ラスタを参照します。外部の地図APIや検索データベースへの問い合わせは行いません。" en="Map rendering and reverse geocoding use the same compact rasters, without querying an external map API or lookup database."></ml-text></p>
-          </div>
-          <div class="features">
-            <article class="feature">
-              <span class="feature-number">01</span>
-              <h3><ml-text ja="2解像度の内蔵世界地図" en="Two local worldwide resolutions"></ml-text></h3>
-              <p><ml-text ja="100・1,000 px/度の地図を表示倍率に応じて切り替えます。" en="Switch between maps at 100 and 1,000 pixels per degree as you zoom."></ml-text></p>
-            </article>
-            <article class="feature">
-              <span class="feature-number">02</span>
-              <h3><ml-text ja="通信しない地図操作" en="Map interaction without network calls"></ml-text></h3>
-              <p><ml-text ja="都市間の移動、ズーム、再描画は読み込み済みデータだけで処理します。" en="Move between cities, zoom, and redraw using only the data already loaded in the browser."></ml-text></p>
-            </article>
-            <article class="feature">
-              <span class="feature-number">03</span>
-              <h3><ml-text ja="回数制限のない逆ジオコーディング" en="Unmetered reverse geocoding"></ml-text></h3>
-              <p><ml-text ja="画素の地域コードとCodeMapから、国コード・境界レベル・地名をローカルに復元します。" en="Resolve country codes, boundary levels, and place names locally from raster region codes and the CodeMap."></ml-text></p>
-            </article>
-          </div>
+        <section class="data-spec" aria-labelledby="data-spec-title">
+          <div class="data-spec-head"><p class="section-kicker">DATA SPECIFICATION</p><h2 id="data-spec-title"><ml-text ja="データ仕様" en="Data specification"></ml-text></h2></div>
+          <dl class="data-spec-summary">
+            <div><dt><ml-text ja="データセット" en="Dataset"></ml-text></dt><dd>geoBoundaries CGAZ</dd></div><div><dt><ml-text ja="対象範囲" en="Coverage"></ml-text></dt><dd><ml-text ja="世界" en="Worldwide"></ml-text></dd></div>
+            <div><dt><ml-text ja="地名階層" en="Name hierarchy"></ml-text></dt><dd><ml-text ja="国・行政区域。地域ごとに利用可能な最詳細レベル" en="Country and administrative area at the most detailed available level"></ml-text></dd></div><div><dt><ml-text ja="収録形式" en="Formats"></ml-text></dt><dd>WGSMapSet/3 · GisWordBook/0 (UTF-8)</dd></div>
+            <div><dt><ml-text ja="原典スナップショット" en="Source snapshot"></ml-text></dt><dd>CGAZ ADM2 main, 2024-04-20</dd></div><div><dt><ml-text ja="境界の性質" en="Boundary type"></ml-text></dt><dd><ml-text ja="ADM2、ADM1、ADM0または係争地域のうち最詳細の境界" en="Most detailed available ADM2, ADM1, ADM0, or disputed-area boundary"></ml-text></dd></div>
+          </dl>
+          <div class="data-spec-resolution"><h3><ml-text ja="解像度とデータサイズ" en="Resolution and data size"></ml-text></h3><table><thead><tr><th><ml-text ja="解像度" en="Resolution"></ml-text></th><th><ml-text ja="南北距離の目安" en="Approx. north-south"></ml-text></th><th><ml-text ja="サイズ" en="Size"></ml-text></th></tr></thead><tbody>
+            <tr><td>100 px/<ml-text ja="度" en="degree"></ml-text></td><td><ml-text ja="約1.1 km/px" en="about 1.1 km/px"></ml-text></td><td>2.81 MiB</td></tr><tr><td>1,000 px/<ml-text ja="度（既定）" en="degree (default)"></ml-text></td><td><ml-text ja="約111 m/px" en="about 111 m/px"></ml-text></td><td>20.45 MiB</td></tr><tr><td>UTF-8 WordBook</td><td><ml-text ja="地名・逆ジオコーディング" en="names and reverse geocoding"></ml-text></td><td>561 KiB</td></tr>
+          </tbody></table><p class="data-spec-note"><ml-text ja="初回読込量: 約23.80 MiB（全解像度とUTF-8 WordBook）。配布ZIP: 約22.92 MiB。" en="Initial page load: about 23.80 MiB for all resolutions and the UTF-8 WordBook. Release ZIP: about 22.92 MiB."></ml-text></p></div>
         </section>
       </main>
 

@@ -58,11 +58,23 @@
           </ml-block></div>
         </section>
 
-        <section class="about" aria-labelledby="about-title"><div class="about-head"><div><p class="section-kicker">WHAT RUNS LOCALLY</p><h2 id="about-title"><ml-text ja="準備完了後は、すべて端末内で" en="Everything stays local once ready"></ml-text></h2></div><p><ml-text ja="地図の描画と逆ジオコーディングは同じ圧縮ラスタを参照し、外部の地図APIへ問い合わせません。" en="Map rendering and reverse geocoding use the same compact rasters without querying an external map API."></ml-text></p></div><div class="features">
-          <article class="feature"><span class="feature-number">01</span><h3><ml-text ja="3解像度の内蔵地図" en="Three local resolutions"></ml-text></h3><p><ml-text ja="100・1,000・10,000 px/度を表示倍率に応じて切り替えます。" en="Switch among 100, 1,000, and 10,000 pixels per degree as you zoom."></ml-text></p></article>
-          <article class="feature"><span class="feature-number">02</span><h3><ml-text ja="County Equivalentを含む地名階層" en="Names including county equivalents"></ml-text></h3><p><ml-text ja="州とCounty、Parish、Borough、Independent Cityなどをローカルに取得します。" en="Resolve states and counties, parishes, boroughs, independent cities, and other equivalents locally.</ml-text></p></article>
-          <article class="feature"><span class="feature-number">03</span><h3><ml-text ja="回数制限なし" en="Unmetered lookups"></ml-text></h3><p><ml-text ja="読み込み後の操作と検索はブラウザ内だけで処理します。" en="After loading, interaction and lookup happen entirely in your browser.</ml-text></p></article>
-        </div></section>
+        <section class="data-spec" aria-labelledby="data-spec-title">
+          <div class="data-spec-head"><p class="section-kicker">DATA SPECIFICATION</p><h2 id="data-spec-title"><ml-text ja="データ仕様" en="Data specification"></ml-text></h2></div>
+          <dl class="data-spec-summary">
+            <div><dt><ml-text ja="データセット" en="Dataset"></ml-text></dt><dd>U.S. Census Bureau 2025 TIGER/Line® County and Equivalent Entities</dd></div>
+            <div><dt><ml-text ja="対象範囲" en="Coverage"></ml-text></dt><dd><ml-text ja="50州・District of Columbia、3,144区域" en="50 states and the District of Columbia; 3,144 areas"></ml-text></dd></div>
+            <div><dt><ml-text ja="地名階層" en="Name hierarchy"></ml-text></dt><dd><ml-text ja="州 / County・Parish・Borough・Census Area・Independent City等" en="State / county, parish, borough, census area, independent city, and equivalents"></ml-text></dd></div>
+            <div><dt><ml-text ja="収録形式" en="Formats"></ml-text></dt><dd>WGSMapSet/3 · GisWordBook/0 (UTF-8)</dd></div>
+            <div><dt><ml-text ja="境界の性質" en="Boundary type"></ml-text></dt><dd><ml-text ja="TIGER/Lineの法定・統計境界。物理的な海岸線では未クリップ" en="TIGER/Line legal and statistical boundaries; not clipped to a physical coastline"></ml-text></dd></div>
+            <div><dt><ml-text ja="除外範囲" en="Exclusions"></ml-text></dt><dd>Puerto Rico <ml-text ja="および" en="and"></ml-text> Island Areas</dd></div>
+          </dl>
+          <div class="data-spec-resolution"><h3><ml-text ja="解像度とデータサイズ" en="Resolution and data size"></ml-text></h3><table><thead><tr><th><ml-text ja="解像度" en="Resolution"></ml-text></th><th><ml-text ja="南北距離の目安" en="Approx. north-south"></ml-text></th><th><ml-text ja="サイズ" en="Size"></ml-text></th></tr></thead><tbody>
+            <tr><td>100 px/<ml-text ja="度" en="degree"></ml-text></td><td><ml-text ja="約1.1 km/px" en="about 1.1 km/px"></ml-text></td><td>166 KiB</td></tr>
+            <tr><td>1,000 px/<ml-text ja="度（既定）" en="degree (default)"></ml-text></td><td><ml-text ja="約111 m/px" en="about 111 m/px"></ml-text></td><td>979 KiB</td></tr>
+            <tr><td>10,000 px/<ml-text ja="度" en="degree"></ml-text></td><td><ml-text ja="約11 m/px" en="about 11 m/px"></ml-text></td><td>7.11 MiB</td></tr>
+            <tr><td>UTF-8 WordBook</td><td><ml-text ja="地名・逆ジオコーディング" en="names and reverse geocoding"></ml-text></td><td>22 KiB</td></tr>
+          </tbody></table><p class="data-spec-note"><ml-text ja="初回読込量: 約8.25 MiB（全解像度とUTF-8 WordBook）。配布ZIP: 約7.47 MiB。" en="Initial page load: about 8.25 MiB for all resolutions and the UTF-8 WordBook. Release ZIP: about 7.47 MiB."></ml-text></p></div>
+        </section>
       </main>
 
       <footer>
