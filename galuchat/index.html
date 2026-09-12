@@ -191,24 +191,6 @@
 
       .path-section { margin-top: 100px; }
 
-      .reverse-flow {
-        display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 10px;
-        margin: 24px 0 30px;
-      }
-
-      .reverse-flow span {
-        padding: 13px 16px;
-        border: 1px solid var(--line);
-        border-radius: 12px;
-        color: var(--muted);
-        background: rgb(255 255 255 / 68%);
-        font-size: 13px;
-        font-weight: 700;
-        text-align: center;
-      }
-
       .map-link {
         position: relative;
         overflow: hidden;
@@ -312,8 +294,6 @@
         font-weight: 760;
       }
 
-      .map-catalog-card { min-height: 250px; }
-
       footer {
         display: flex;
         justify-content: space-between;
@@ -343,7 +323,6 @@
         h1 { font-size: clamp(40px, 13vw, 58px); }
         .map-links { grid-template-columns: 1fr; }
         .map-link { min-height: 250px; }
-        .reverse-flow { grid-template-columns: 1fr 1fr; }
         .platform-links { grid-template-columns: 1fr; }
         .platform-card { min-height: 260px; padding: 30px 24px; }
         .path-section { margin-top: 76px; }
@@ -352,7 +331,6 @@
 
       @media (max-width: 420px) {
         .hero-actions .button { width: 100%; }
-        .reverse-flow { grid-template-columns: 1fr; }
       }
     </style>
     <link rel="stylesheet" href="./assets/machml-switch.css">
@@ -386,7 +364,7 @@
             <p class="lead"><ml-text ja="地図データと検索機能を端末に持たせ、Webでも組込機器でもローカルに処理します。外部APIへの通信、利用回数、レート制限を気にせず使えます。" en="Keep the map data and lookup engine on the device. Run locally on the web or embedded hardware without external API calls, usage quotas, or rate limits."></ml-text></p>
             <div class="hero-actions">
               <a class="button primary" href="#reverse-geocoding"><ml-text ja="逆ジオコーディングを試す →" en="Try reverse geocoding →"></ml-text></a>
-              <a class="button" href="./maps/"><ml-text ja="地図を見る →" en="Browse maps →"></ml-text></a>
+              <a class="button" href="#maps"><ml-text ja="地図を見る →" en="Browse maps →"></ml-text></a>
             </div>
           </div>
 
@@ -414,25 +392,12 @@
         <section id="maps" class="path-section">
           <div class="section-heading">
             <div>
-              <p class="section-kicker">02 · MAP DATA</p>
+              <p class="section-kicker">02 · MAP EXPERIENCE</p>
               <h2><ml-text ja="逆ジオコーディングを、地図で使う" en="Use reverse geocoding as a map"></ml-text></h2>
             </div>
-            <p><ml-text ja="Galuchatの地図は、地点から行政区域を逆引きする仕組みを表示に応用したものです。各地点は区域コードに対応し、クリックすると地名階層を取得できます。" en="Galuchat maps apply the same reverse-geocoding mechanism to display. Each location corresponds to an area code; click it to retrieve the name hierarchy."></ml-text></p>
+            <p><ml-text ja="この地図は、行政区域などの面データを逆ジオコーディングする仕組みを、そのまま表示に使っています。地図上の地点をクリックすると、その地点を含む面を特定し、地名階層を取得できます。" en="These maps use the same reverse-geocoding mechanism for polygon data. Click a location to identify the area containing it and retrieve its name hierarchy."></ml-text></p>
           </div>
-          <div class="reverse-flow" aria-label="地図と逆ジオコーディングの流れ" data-aria-ja="地図と逆ジオコーディングの流れ" data-aria-en="Map and reverse-geocoding flow">
-            <span><ml-text ja="座標" en="Coordinates"></ml-text></span>
-            <span><ml-text ja="区域コード" en="Area code"></ml-text></span>
-            <span>GisWordBook</span>
-            <span><ml-text ja="地図表示・地点検索" en="Map display and lookup"></ml-text></span>
-          </div>
-          <div class="platform-links">
-            <a class="platform-card map-catalog-card" href="./maps/">
-              <p class="section-kicker">MAP DATA CATALOG</p>
-              <h2><ml-text ja="地図データ一覧" en="Map data catalog"></ml-text></h2>
-              <p><ml-text ja="地域、地名階層、原典、解像度を比較して、使いたい地図を選べます。地図データはこの一覧へ順次追加します。" en="Compare coverage, name hierarchy, source data, and resolution to choose a map. New map datasets will be added here over time."></ml-text></p>
-              <span class="platform-open"><ml-text ja="地図データ一覧を見る →" en="Browse map data →"></ml-text></span>
-            </a>
-          </div>
+          <div id="map-catalog" class="map-links"></div>
         </section>
 
         <section id="webmcp" class="path-section">
@@ -495,5 +460,6 @@
         <p><ml-text ja="Galuchatソフトウェアは" en="Galuchat software is licensed under the "></ml-text><a href="./LICENSE">Apache License 2.0</a><ml-text ja="で提供されます。" en=". "></ml-text> <a href="./NOTICE">NOTICE</a></p>
       </footer>
     </div>
+    <script src="./assets/map-catalog.js?v=1"></script>
   </body>
 </html>
