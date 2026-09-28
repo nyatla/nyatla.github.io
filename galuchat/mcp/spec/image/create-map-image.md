@@ -27,7 +27,7 @@ Status: Draft
       "height": 150
     },
     "anchor": "center",
-    "dataset": "jp-admin-n03-2026",
+    "dataset": "jp-2026-mlit-go-jp-n03-adm",
     "map": "unit-inv-10000"
   },
   "palette": {
@@ -167,7 +167,7 @@ ROPは、写像後のラスタへ適用する画像処理である。初期版�
     "base": { "lon": 140.027, "lat": 35.68 },
     "size": { "width": 200, "height": 150 },
     "anchor": "center",
-    "dataset": "jp-admin-n03-2026",
+    "dataset": "jp-2026-mlit-go-jp-n03-adm",
     "map": "unit-inv-10000"
   },
   "palette": {

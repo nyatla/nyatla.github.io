@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "jp-2026-nyatla-jp-estat-coastline",
+  "sourceArchive": "jp-2026-nyatla-jp-estat-coastline.zip",
+  "sdkVersion": "0.2.1",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "gis-estat-integrated-grid-8192-10000.wgsmapset.glc",
+        "size": 25237707,
+        "sha256": "9084e0af4c32a4a325aa4e34521b5db74650246d79ab081107438639cd93f54b",
+        "default": true
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "gis-estat-integrated.giswordbook",
+        "size": 1738553,
+        "sha256": "97f75ca8c975f9f4b306b157b2e6e0473262ff33a06a9ab31790a9966af2cf21"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 6509,
+      "sha256": "37a0f8a9c0126ce56fabc6d0fd11e0c2490706ffdab226e5179db376a16be80b"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 7861,
+      "sha256": "55586cbf32be2af252c2b4186b6fc002f1b7aaf0c8943cd3a1bba1e6e13b81ff"
+    },
+    "metadata": {
+      "path": "X7115_metadata.xml",
+      "size": 7898,
+      "sha256": "6f13d317b01c0613dd72af5888337f2a6414b5bfdb25f3e4563e1abe9c85fa28"
+    }
+  }
+}

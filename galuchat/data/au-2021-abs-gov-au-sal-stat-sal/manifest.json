@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "au-2021-abs-gov-au-sal-stat-sal",
+  "sourceArchive": "au-2021-abs-gov-au-sal-stat-sal.zip",
+  "sdkVersion": "0.2.1",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 16384,
+        "path": "abs-asgs-2021-sal-wgs84-grid-16384-10000.wgsmapset.glc",
+        "size": 14123355,
+        "sha256": "cc8043d8cf18cae8a733ac702beb738ab23655dbefe65f3724a255f538a555ed",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "abs-asgs-2021-sal-wgs84-grid-4096-1000.wgsmapset.glc",
+        "size": 2122207,
+        "sha256": "b5f9ed83851880a371fde530c38800351753d9ce137e7bad68297bc3a05ff3a4",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "abs-asgs-2021-sal-wgs84-grid-512-100.wgsmapset.glc",
+        "size": 323511,
+        "sha256": "02b78b622738f1cfe75841d00faa07f540814051ae76c59ed68060aeb0269fd1",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "abs-asgs-2021-sal.giswordbook",
+        "size": 184069,
+        "sha256": "b43d062b24e4c39a14815c51cd1bc4132e9d0986e4a117860d946d01425ed97f"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 4539,
+      "sha256": "315f0c9fa658c074147ae05981ef16f263254acd19dfcf5766ffd928572f7bc0"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 8727,
+      "sha256": "31b3f20d65f868ecb658b2a6ae1819728cc633f79de9d97b6216fc12c50f19d5"
+    }
+  }
+}

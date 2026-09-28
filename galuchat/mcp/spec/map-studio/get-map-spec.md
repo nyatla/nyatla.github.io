@@ -18,7 +18,7 @@ WebMCP annotation: `readOnlyHint: true`
 
 ```json
 {
-  "dataset_id": "jp-admin-n03-2026",
+  "dataset_id": "jp-2026-mlit-go-jp-n03-adm",
   "viewport": {
     "mode": "center",
     "center": { "lon": 140.0267, "lat": 35.681 },
@@ -51,7 +51,7 @@ fit_points: points と padding で指定
   "state_revision": 12,
   "ready": true,
   "map_spec": {
-    "dataset_id": "jp-admin-n03-2026",
+    "dataset_id": "jp-2026-mlit-go-jp-n03-adm",
     "viewport": {
       "mode": "center",
       "center": { "lon": 140.0267, "lat": 35.681 },

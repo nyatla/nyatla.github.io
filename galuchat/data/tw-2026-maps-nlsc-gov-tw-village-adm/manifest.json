@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "tw-2026-maps-nlsc-gov-tw-village-adm",
+  "sourceArchive": "tw-2026-maps-nlsc-gov-tw-village-adm.zip",
+  "sdkVersion": "0.2.1",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "VILLAGE_NLSC_1150817_PREPARED_WGS84-grid-8192-10000.wgsmapset.glc",
+        "size": 1333304,
+        "sha256": "161415680084ae2151ae9281edcb32cc8e65d35709eb4168ab52283b8de90ae8",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "VILLAGE_NLSC_1150817_PREPARED_WGS84-grid-4096-1000.wgsmapset.glc",
+        "size": 206591,
+        "sha256": "56a6241ed0d83d5852be9db310e2c95e6d8dce0931b2062be7e3ac2719c11d37",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "VILLAGE_NLSC_1150817_PREPARED_WGS84-grid-512-100.wgsmapset.glc",
+        "size": 26329,
+        "sha256": "a4c986b6d7b533eb5af9111b9e6aee2ad6e95b907f22d90fc6ca4d7b642a8498",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "VILLAGE_NLSC_1150817.giswordbook",
+        "size": 58445,
+        "sha256": "7d2df93f5d31015e93260e010f63c64abdc07c0b7e0feff606f9acf37de571bc"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 4209,
+      "sha256": "4fb072b5fd87810cbd7c5d222a7aa98a1ab42682b5611ce93670d884e89c940c"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 9152,
+      "sha256": "50c496186b64d11828de3281bfdafc2a65e0baab5477cc1332301afcaee0f122"
+    },
+    "names": {
+      "path": "VILLAGE_NLSC_1150817.names.csv",
+      "size": 687385,
+      "sha256": "ee326d6b6fe1e9b3254c2aa55214a3c98ebb87491d1988f11d9db710cf51867f"
+    }
+  }
+}

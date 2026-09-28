@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "nl-2026-cbs-nl-wijkbuurtkaart-adm",
+  "sourceArchive": "nl-2026-cbs-nl-wijkbuurtkaart-adm.zip",
+  "sdkVersion": "0.2.1",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "netherlands_municipality_2026-grid-8192-10000.wgsmapset.glc",
+        "size": 580369,
+        "sha256": "46f90413792ca6ddc58bd3982a2c0b831a90360eadf11138ffdf3b500d02e1da",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 1024,
+        "path": "netherlands_municipality_2026-grid-1024-1000.wgsmapset.glc",
+        "size": 70300,
+        "sha256": "2e8e4bd0b410814c2591cbdaa51d4ea95223409e1cda21850180f1383fb534b5",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "netherlands_municipality_2026-grid-512-100.wgsmapset.glc",
+        "size": 9004,
+        "sha256": "c704dd59280a51931ce06e78676ae4d231de6d922b8f3aff81ade06d433c19e3",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "netherlands_municipality_2026.giswordbook",
+        "size": 6860,
+        "sha256": "da7579d3f73aaef55aa3ffe34bfe8460c2938a3ed72311fc654603bcb2ee392b"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 8024,
+      "sha256": "12b3c23bffdf930ccf433e39ab9f289cf0247305adf1d0f8e0bd5ddc7f57d5ae"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 10363,
+      "sha256": "e9e297b30e4e75684bdf09079b647c048fed943497887bccfc27edb723324683"
+    }
+  }
+}

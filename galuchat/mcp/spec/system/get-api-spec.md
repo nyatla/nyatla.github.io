@@ -32,7 +32,7 @@ HTTP:   GET /galuchat/mcp/apispec.json
 {
   "ok": true,
   "version": "galuchat-webmcp/0;GaluchatJavaScript/0.5.2",
-  "default_dataset_id": "jp-admin-n03-2026",
+  "default_dataset_id": "jp-2026-mlit-go-jp-n03-adm",
   "limits": {
     "positionsPerRequest": 10000,
     "codesPerRequest": 10000,
@@ -40,7 +40,7 @@ HTTP:   GET /galuchat/mcp/apispec.json
   },
   "datasets": [
     {
-      "id": "jp-admin-n03-2026",
+      "id": "jp-2026-mlit-go-jp-n03-adm",
       "title": "日本行政区域（国土数値情報 N03 / 2026）",
       "description": "国土数値情報N03をGaluchat用に加工した行政区域データ",
       "area": {
@@ -58,7 +58,7 @@ HTTP:   GET /galuchat/mcp/apispec.json
         {
           "id": "unit-inv-10000",
           "resolution": { "lon": 0.0001, "lat": 0.0001 },
-          "size_bytes": 4691858
+          "size_bytes": 4691841
         }
       ],
       "codemaps": [
@@ -87,14 +87,14 @@ HTTP:   GET /galuchat/mcp/apispec.json
         "name": "Creative Commons Attribution 4.0 International",
         "url": "https://creativecommons.org/licenses/by/4.0/",
         "source_name": "国土数値情報 行政区域データ N03-2026",
-        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03.html",
+        "source_url": "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2026.html",
         "attribution": "「国土数値情報（行政区域データ）」（国土交通省）をもとにGaluchat用に加工して作成",
         "approval": "測量法に基づく国土地理院長承認（使用）R 8JHs 319",
-        "notice_url": "/galuchat/data/jp-admin-n03-2026/NOTICE.md"
+        "notice_url": "/galuchat/data/jp-2026-mlit-go-jp-n03-adm/NOTICE.md"
       }
     },
     {
-      "id": "jp-estat-r2ka-2020",
+      "id": "jp-2020-e-stat-go-jp-a002005212020-stat-small-area",
       "title": "e-Stat 令和2年国勢調査 町丁・字等境界",
       "description": "e-Statの町丁・字等境界をGaluchat用に加工した境界データ",
       "area": {
@@ -112,7 +112,7 @@ HTTP:   GET /galuchat/mcp/apispec.json
         {
           "id": "unit-inv-10000",
           "resolution": { "lon": 0.0001, "lat": 0.0001 },
-          "size_bytes": 23800329
+          "size_bytes": 23800183
         }
       ],
       "codemaps": [
@@ -135,11 +135,11 @@ HTTP:   GET /galuchat/mcp/apispec.json
         "source_name": "令和2年国勢調査 町丁・字等境界データ",
         "source_url": "https://www.e-stat.go.jp/gis/statmap-search?page=1&type=2&aggregateUnitForBoundary=A&toukeiCode=00200521&toukeiYear=2020&serveyId=A002005212020&coordsys=1&format=shape&datum=2011",
         "attribution": "「令和2年国勢調査 町丁・字等境界データ」（総務省統計局、e-Stat）をGaluchat用に加工して作成",
-        "notice_url": "/galuchat/data/jp-estat-r2ka-2020/NOTICE.md"
+        "notice_url": "/galuchat/data/jp-2020-e-stat-go-jp-a002005212020-stat-small-area/NOTICE.md"
       }
     },
     {
-      "id": "tw-admin-nlsc-village-2026",
+      "id": "tw-2026-maps-nlsc-gov-tw-village-adm",
       "title": "台湾 村里界（NLSC / 2026）",
       "description": "內政部國土測繪中心の村里界圖をGaluchat用に加工した行政区域データ",
       "area": { "west": 114.3593, "south": 10.3713, "east": 124.5613, "north": 26.3854 },
@@ -152,7 +152,7 @@ HTTP:   GET /galuchat/mcp/apispec.json
         {
           "id": "unit-inv-10000",
           "resolution": { "lon": 0.0001, "lat": 0.0001 },
-          "size_bytes": 1333264
+          "size_bytes": 1333304
         }
       ],
       "codemaps": [
@@ -175,11 +175,11 @@ HTTP:   GET /galuchat/mcp/apispec.json
         "source_name": "內政部國土測繪中心 村里界圖(TWD97經緯度)",
         "source_url": "https://data.gov.tw/dataset/7438",
         "attribution": "內政部國土測繪中心 2026 村里界圖(TWD97經緯度)（2026-08-17版）。此開放資料依政府資料開放授權條款第1版進行公眾釋出。",
-        "notice_url": "/galuchat/data/tw-admin-nlsc-village-2026/NOTICE.md"
+        "notice_url": "/galuchat/data/tw-2026-maps-nlsc-gov-tw-village-adm/NOTICE.md"
       }
     },
     {
-      "id": "uk-admin-ons-lad-2025",
+      "id": "gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc",
       "title": "英国 Local Authority Districts（ONS / 2025）",
       "description": "ONS Local Authority Districts (December 2025) UK BFCをGaluchat用に加工した行政区域データ",
       "area": { "west": -8.65, "south": 49.8647, "east": 1.7638, "north": 60.8609 },
@@ -192,7 +192,7 @@ HTTP:   GET /galuchat/mcp/apispec.json
         {
           "id": "unit-inv-10000",
           "resolution": { "lon": 0.0001, "lat": 0.0001 },
-          "size_bytes": 2340613
+          "size_bytes": 2340486
         }
       ],
       "codemaps": [
@@ -215,13 +215,13 @@ HTTP:   GET /galuchat/mcp/apispec.json
         "source_name": "ONS Local Authority Districts (December 2025) Boundaries UK BFC",
         "source_url": "https://www.data.gov.uk/dataset/aa5a9ccf-fbea-43cb-81cc-fdc04d89f128/local-authority-districts-december-2025-boundaries-uk-bfc",
         "attribution": "Source: Office for National Statistics licensed under the Open Government Licence v.3.0. Contains OS data © Crown copyright and database right 2026.",
-        "notice_url": "/galuchat/data/uk-admin-ons-lad-2025/NOTICE.md"
+        "notice_url": "/galuchat/data/gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc/NOTICE.md"
       }
     },
     {
-      "id": "world-geoboundaries-cgaz",
+      "id": "world-2024-geoboundaries-org-cgaz-adm",
       "title": "世界行政区域（geoBoundaries CGAZ）",
-      "description": "geoBoundaries CGAZ ADM2 global compositeをGaluchat用に加工した世界行政区域データ",
+      "description": "geoBoundaries CGAZの利用可能な最詳細行政区域をGaluchat用に加工した世界行政区域データ",
       "area": {
         "west": -180,
         "south": -90,
@@ -237,7 +237,7 @@ HTTP:   GET /galuchat/mcp/apispec.json
         {
           "id": "unit-inv-1000",
           "resolution": { "lon": 0.001, "lat": 0.001 },
-          "size_bytes": 21438850
+          "size_bytes": 21438685
         }
       ],
       "codemaps": [
@@ -257,10 +257,10 @@ HTTP:   GET /galuchat/mcp/apispec.json
       "license": {
         "name": "Creative Commons Attribution 4.0 International",
         "url": "https://creativecommons.org/licenses/by/4.0/",
-        "source_name": "geoBoundaries CGAZ ADM2 global composite",
+        "source_name": "geoBoundaries CGAZ best-available administrative areas",
         "source_url": "https://www.geoboundaries.org/globalDownloads.html",
-        "attribution": "Contains information from geoBoundaries, adapted for Galuchat.",
-        "notice_url": "/galuchat/data/world-geoboundaries-cgaz/NOTICE.md"
+        "attribution": "Contains information from geoBoundaries, produced by the William & Mary geoLab and the geoBoundaries community, licensed under CC BY 4.0. Adapted for Galuchat.",
+        "notice_url": "/galuchat/data/world-2024-geoboundaries-org-cgaz-adm/NOTICE.md"
       }
     }
   ],

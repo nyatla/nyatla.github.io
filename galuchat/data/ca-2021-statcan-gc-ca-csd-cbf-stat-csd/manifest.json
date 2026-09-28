@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "ca-2021-statcan-gc-ca-csd-cbf-stat-csd",
+  "sourceArchive": "ca-2021-statcan-gc-ca-csd-cbf-stat-csd.zip",
+  "sdkVersion": "0.2.1",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 16384,
+        "path": "statcan-csd-2021-wgs84-grid-16384-10000.wgsmapset.glc",
+        "size": 25471687,
+        "sha256": "1fd7318b05a5af5dc434b31f11927c0cfc1c9d8017eb42b378ca16723188e831",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "statcan-csd-2021-wgs84-grid-4096-1000.wgsmapset.glc",
+        "size": 2678390,
+        "sha256": "687c2d669f99132f30d2a279dd188864c826540dbd2ed5c2df4a08904f22fe14",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "statcan-csd-2021-wgs84-grid-512-100.wgsmapset.glc",
+        "size": 256077,
+        "sha256": "0169d609c25ce0edcd19ec5458c432b953c651994a2c3f128d40faf57213779a",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "statcan-csd-2021.giswordbook",
+        "size": 113114,
+        "sha256": "edd4c2b15951ef270e6687d8cdb420792fa6a95adaae9217245272429c397365"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 4291,
+      "sha256": "e1590b95bd9ad6d0ab159ca3819b5897b19c84f7573428a571ac147b54b1893e"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 9367,
+      "sha256": "5b3738cefba131eb84ebdf4859221a25048383aa857b2cf6e318813cce1b0edd"
+    }
+  }
+}

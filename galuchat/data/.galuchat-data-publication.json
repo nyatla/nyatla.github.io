@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "owner": "galuchat-core/deploy/mcp",
   "datasets": [
-    "jp-admin-n03-2026",
-    "jp-estat-r2ka-2020",
-    "world-geoboundaries-cgaz",
-    "tw-admin-nlsc-village-2026",
-    "uk-admin-ons-lad-2025",
-    "us-admin-census-county-2025"
+    "jp-2026-mlit-go-jp-n03-adm",
+    "jp-2020-e-stat-go-jp-a002005212020-stat-small-area",
+    "tw-2026-maps-nlsc-gov-tw-village-adm",
+    "gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc",
+    "us-2025-census-gov-tl-county-adm2",
+    "world-2024-geoboundaries-org-cgaz-adm"
   ]
 }

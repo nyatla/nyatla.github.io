@@ -1,465 +1,145 @@
 <!doctype html>
-<html lang="ja" data-title-ja="Galuchat GIS SDK — サーバーレス逆ジオコーディング" data-title-en="Galuchat GIS SDK — Serverless Reverse Geocoding">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Webと組込機器で動く、サーバーレス逆ジオコーディングのSDKとブラウザ体験です。" data-description-ja="Webと組込機器で動く、サーバーレス逆ジオコーディングのSDKとブラウザ体験です。" data-description-en="A serverless reverse geocoding SDK and browser experience for web and embedded devices.">
-    <title>Galuchat GIS SDK — サーバーレス逆ジオコーディング</title>
-    <style>
-      :root {
-        color-scheme: light;
-        --ink: #102237;
-        --muted: #607184;
-        --line: #d8e2ea;
-        --paper: #f4f8fa;
-        --blue: #075ccf;
-        --blue-dark: #073b83;
-        --cyan: #008d99;
-        --mint: #dff5f1;
-      }
-
-      * { box-sizing: border-box; }
-
-      html { scroll-behavior: smooth; }
-
-      body {
-        margin: 0;
-        color: var(--ink);
-        background:
-          radial-gradient(circle at 8% 0%, rgb(16 172 177 / 12%), transparent 30rem),
-          linear-gradient(180deg, #fbfdfe 0, var(--paper) 48rem);
-        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        line-height: 1.65;
-      }
-
-      a { color: var(--blue); }
-
-      a:focus-visible,
-      button:focus-visible {
-        outline: 3px solid rgb(23 168 184 / 42%);
-        outline-offset: 3px;
-      }
-
-      .page {
-        width: min(1160px, calc(100% - 48px));
-        margin: 0 auto;
-      }
-
-      header {
-        display: flex;
-        align-items: center;
-        min-height: 76px;
-        border-bottom: 1px solid rgb(216 226 234 / 72%);
-      }
-
-      .brand {
-        color: var(--ink);
-        font-size: 18px;
-        font-weight: 800;
-        letter-spacing: -0.025em;
-        text-decoration: none;
-        white-space: nowrap;
-      }
-
-      .brand span { color: var(--blue); }
-
-      .site-nav {
-        display: flex;
-        align-items: center;
-        gap: 24px;
-        margin-left: auto;
-      }
-
-      .site-nav a {
-        color: var(--muted);
-        font-size: 13px;
-        font-weight: 700;
-        text-decoration: none;
-      }
-
-      .site-nav a:hover { color: var(--ink); }
-
-      .header-actions {
-        margin-left: 30px;
-      }
-
-      main { padding-bottom: 104px; }
-
-      .hero {
-        min-height: 0;
-        padding: 100px 0 112px;
-      }
-
-      .eyebrow,
-      .section-kicker {
-        margin: 0 0 14px;
-        color: var(--cyan);
-        font: 760 12px/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-        letter-spacing: 0.09em;
-        text-transform: uppercase;
-      }
-
-      h1 {
-        max-width: none;
-        margin: 0;
-        font-size: clamp(44px, 5vw, 60px);
-        line-height: 1.08;
-        letter-spacing: -0.055em;
-        text-wrap: balance;
-      }
-
-      .lead {
-        margin: 24px 0 30px;
-        color: var(--muted);
-        font-size: 18px;
-        line-height: 1.8;
-        word-break: auto-phrase;
-      }
-
-      .hero-actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-
-      .button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 48px;
-        padding: 0 20px;
-        border: 1px solid var(--line);
-        border-radius: 11px;
-        color: var(--ink);
-        background: rgb(255 255 255 / 78%);
-        font-size: 14px;
-        font-weight: 760;
-        text-decoration: none;
-        transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
-      }
-
-      .button:hover {
-        border-color: #a9bac8;
-        background: #fff;
-        transform: translateY(-1px);
-      }
-
-      .button.primary {
-        border-color: var(--blue);
-        color: #fff;
-        background: var(--blue);
-      }
-
-      .button.primary:hover {
-        border-color: var(--blue-dark);
-        background: var(--blue-dark);
-      }
-
-      .section-heading {
-        margin-bottom: 30px;
-      }
-
-      .section-heading h2,
-      .embedded-copy h2 {
-        margin: 0;
-        font-size: clamp(32px, 3.2vw, 40px);
-        line-height: 1.15;
-        letter-spacing: -0.04em;
-      }
-
-      .section-heading > p {
-        margin: 14px 0 0;
-        color: var(--muted);
-        font-size: 16px;
-        line-height: 1.8;
-        word-break: auto-phrase;
-      }
-
-      .map-links {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 20px;
-      }
-
-      .map-links.single-link { grid-template-columns: minmax(0, 1fr); }
-
-      #reverse-geocoding,
-      #maps,
-      #webmcp,
-      #embedded,
-      #sdk { scroll-margin-top: 30px; }
-
-      .path-section { margin-top: 100px; }
-
-      .map-link {
-        position: relative;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        min-height: 270px;
-        padding: 26px;
-        border: 1px solid var(--line);
-        border-radius: 20px;
-        color: inherit;
-        background: rgb(255 255 255 / 82%);
-        box-shadow: 0 18px 48px rgb(17 33 52 / 8%);
-        text-decoration: none;
-        transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
-      }
-
-      .map-link:hover {
-        border-color: #9bb4ca;
-        box-shadow: 0 22px 56px rgb(17 33 52 / 13%);
-        transform: translateY(-2px);
-      }
-
-      .source-id {
-        color: var(--cyan);
-        font: 740 11px/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-        letter-spacing: 0.07em;
-      }
-
-      .map-link h3 {
-        margin: 11px 0 8px;
-        font-size: 27px;
-        line-height: 1.22;
-        letter-spacing: -0.03em;
-        word-break: auto-phrase;
-      }
-
-      .map-link p {
-        margin: 0;
-        color: var(--muted);
-        font-size: 16px;
-        line-height: 1.7;
-        word-break: auto-phrase;
-      }
-
-      .open {
-        display: inline-block;
-        margin-top: auto;
-        padding-top: 22px;
-        color: var(--blue);
-        font-size: 14px;
-        font-weight: 760;
-      }
-
-      .platform-links {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-
-      .platform-card {
-        display: block;
-        min-height: 240px;
-        padding: 42px;
-        border: 1px solid #cbd9e2;
-        border-radius: 20px;
-        color: inherit;
-        background: rgb(255 255 255 / 82%);
-        box-shadow: 0 18px 48px rgb(17 33 52 / 8%);
-        text-decoration: none;
-        transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
-      }
-
-      .platform-card:hover {
-        border-color: #9bb4ca;
-        box-shadow: 0 22px 56px rgb(17 33 52 / 13%);
-        transform: translateY(-2px);
-      }
-
-      .platform-card .section-kicker { margin-bottom: 18px; }
-
-      .platform-card h2 {
-        margin: 0;
-        font-size: clamp(28px, 3.2vw, 40px);
-        line-height: 1.15;
-        letter-spacing: -0.04em;
-      }
-
-      .platform-card > p:not(.section-kicker) {
-        margin: 15px 0 0;
-        color: var(--muted);
-        font-size: 16px;
-        line-height: 1.8;
-        word-break: auto-phrase;
-      }
-
-      .platform-open {
-        display: block;
-        padding-top: 34px;
-        color: var(--blue);
-        font-size: 14px;
-        font-weight: 760;
-      }
-
-      footer {
-        display: flex;
-        justify-content: space-between;
-        gap: 32px;
-        padding: 26px 0 42px;
-        border-top: 1px solid var(--line);
-        color: var(--muted);
-        font-size: 12px;
-      }
-
-      footer p { margin: 5px 0; }
-
-      @media (max-width: 900px) {
-        .site-nav { display: none; }
-        .hero { padding-top: 74px; }
-        .hero-copy { max-width: 760px; }
-        .map-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      }
-
-      @media (max-width: 680px) {
-        .page { width: min(100% - 28px, 1160px); }
-        header { min-height: 68px; }
-        .brand { font-size: 16px; }
-        .header-actions { margin-left: auto; }
-        main { padding-bottom: 72px; }
-        .hero { padding: 54px 0 72px; }
-        h1 { font-size: clamp(40px, 13vw, 58px); }
-        .map-links { grid-template-columns: 1fr; }
-        .map-link { min-height: 250px; }
-        .platform-links { grid-template-columns: 1fr; }
-        .platform-card { min-height: 260px; padding: 30px 24px; }
-        .path-section { margin-top: 76px; }
-        footer { flex-direction: column; gap: 4px; }
-      }
-
-      @media (max-width: 420px) {
-        .hero-actions .button { width: 100%; }
-      }
-    </style>
-    <link rel="stylesheet" href="./assets/machml-switch.css">
-    <script src="./assets/machml.min.js"></script>
-    <script src="./assets/machml-switch.js"></script>
-  </head>
-  <body>
-    <div class="page">
-      <header>
-        <a class="brand" href="./">Galuchat <span>GIS SDK</span></a>
-        <nav class="site-nav" aria-label="Primary navigation">
-          <a href="#reverse-geocoding"><ml-text ja="逆ジオコーディング" en="Reverse geocoding"></ml-text></a>
-          <a href="#maps"><ml-text ja="地図" en="Maps"></ml-text></a>
-          <a href="#webmcp">WebMCP</a>
-          <a href="#embedded"><ml-text ja="組込機器" en="Embedded"></ml-text></a>
-          <a href="#sdk"><ml-text ja="SDK" en="SDK"></ml-text></a>
+<html lang="ja" data-title-ja="Galuchat GIS SDK — 地理データを端末内で使う" data-title-en="Galuchat GIS SDK — Use geographic data locally">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Galuchat GIS SDKで、経緯度から地域コードと地名を取得。実動デモと利用可能なデータを紹介します。" data-description-ja="Galuchat GIS SDKで、経緯度から地域コードと地名を取得。実動デモと利用可能なデータを紹介します。" data-description-en="Use Galuchat GIS SDK to resolve coordinates to region codes and place names. Explore live demos and available datasets.">
+  <title>Galuchat GIS SDK — 地理データを端末内で使う</title>
+  <link rel="stylesheet" href="./assets/machml-switch.css">
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: #20262d; background: #fff; font: 16px/1.75 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    a { color: #175582; text-underline-offset: 3px; }
+    a:hover { color: #103e60; }
+    a:focus-visible, button:focus-visible { outline: 2px solid #175582; outline-offset: 3px; }
+    .page { width: min(100% - 40px, 860px); margin: 0 auto; }
+    .site-header { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 28px; padding: 20px 0; border-bottom: 1px solid #d6dce1; }
+    .brand { color: inherit; font-weight: 700; text-decoration: none; }
+    .site-nav { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-left: auto; }
+    .site-nav a { color: inherit; font-size: 14px; }
+    .header-actions { margin: 0; }
+    .language-switch { gap: 10px; margin: 0; padding: 0; border: 0; border-radius: 0; background: none; }
+    .language-switch button { padding: 2px 0; border-radius: 0; border-bottom: 1px solid transparent; color: #4a535b; background: none; font: inherit; font-size: 13px; font-weight: 400; }
+    .language-switch button:hover, .language-switch button.active { color: #20262d; background: none; border-bottom-color: currentColor; }
+    .intro { padding: 58px 0 44px; }
+    h1, h2, h3 { line-height: 1.35; }
+    h1 { max-width: 18em; margin: 0 0 20px; font-size: clamp(32px, 5vw, 44px); letter-spacing: -0.03em; }
+    h2 { margin: 0 0 18px; font-size: 25px; }
+    .about-subsection { margin-top: 30px; }
+    h3 { margin: 0 0 8px; font-size: 19px; }
+    p { margin: 0 0 16px; }
+    .lead { max-width: 45em; font-size: 18px; }
+    section { padding: 36px 0 40px; border-top: 1px solid #d6dce1; }
+    section > p { max-width: 48em; }
+    .demo + .demo { margin-top: 30px; }
+    .demo p { margin-bottom: 8px; }
+    .dataset-list { margin: 22px 0 0; padding: 0; list-style: none; border-top: 1px solid #e1e5e8; }
+    .dataset-list li { padding: 8px 0; border-bottom: 1px solid #e1e5e8; }
+    .section-link { margin: 22px 0 0; }
+    footer { padding: 24px 0 48px; border-top: 1px solid #d6dce1; color: #4a535b; font-size: 13px; }
+    footer p { margin-bottom: 4px; }
+    @media (max-width: 620px) {
+      .page { width: min(100% - 32px, 860px); }
+      .site-header { gap: 8px 16px; }
+      .site-nav { order: 3; width: 100%; margin: 0; }
+      .header-actions { margin-left: auto; }
+      .intro { padding: 42px 0 36px; }
+      section { padding: 30px 0 34px; }
+      h1 { font-size: 34px; }
+      h2 { font-size: 23px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+  <script src="./assets/machml.min.js"></script>
+  <script src="./assets/machml-switch.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <a class="brand" href="./">Galuchat GIS SDK</a>
+      <nav class="site-nav" aria-label="ページ内の案内" data-aria-ja="ページ内の案内" data-aria-en="On this page">
+        <a href="#about"><ml-text ja="概要" en="Overview"></ml-text></a>
+        <a href="#try"><ml-text ja="試す" en="Try it"></ml-text></a>
+        <a href="#datasets"><ml-text ja="データ" en="Datasets"></ml-text></a>
+      </nav>
+      <div class="header-actions">
+        <nav class="language-switch" aria-label="Language / 言語">
+          <button type="button" data-machml-locale="ja">日本語</button>
+          <button type="button" data-machml-locale="en">English</button>
         </nav>
-        <div class="header-actions">
-          <nav class="language-switch" aria-label="Language / 言語">
-            <button type="button" data-machml-locale="ja">日本語</button>
-            <button type="button" data-machml-locale="en">English</button>
-          </nav>
+      </div>
+    </header>
+    <main>
+      <div class="intro">
+        <h1><ml-text ja="ローカルで動く、軽量な逆ジオコーディングSDK" en="A lightweight reverse geocoding SDK that runs locally"></ml-text></h1>
+        <p class="lead"><ml-text ja="Galuchat GIS SDKは、軽量な地理データをアプリや端末に配置し、少ない計算資源で経緯度から地域コードと地名を調べられます。指定範囲の区域も地図画像として読み出せます。" en="With Galuchat GIS SDK, you can keep lightweight geographic data in your app or on your device and look up region codes and place names from coordinates using modest computing resources. You can also render regions in a specified area as a map image."></ml-text></p>
+      </div>
+      <section id="about">
+        <h2><ml-text ja="概要" en="Overview"></ml-text></h2>
+        <h3><ml-text ja="何を解決するのか" en="The problem it solves"></ml-text></h3>
+        <p><ml-text ja="逆ジオコーディングにおける通信環境と外部GISサービスへの依存をなくします。座標を外部へ送信せずに処理できるため、オフライン環境や閉域ネットワークでも運用できます。" en="Galuchat GIS SDK removes reverse geocoding's dependence on network connectivity and external GIS services. It processes coordinates without sending them outside the device, enabling use in offline and closed-network environments."></ml-text></p>
+        <h3 class="about-subsection"><ml-text ja="どのように実現しているのか" en="How it works"></ml-text></h3>
+        <p><ml-text ja="区域コードを記録した地図を圧縮して保存します。地点を調べるときは、経緯度に対応するコードを読み出し、地名辞書で地名に変換します。指定した範囲の区域も画像として読み出せるため、地図全体をメモリに展開せずに区域の形を表示できます。" en="The SDK stores a compressed map of region codes. To look up a point, it reads the code at the given coordinates and converts it to a place name using a name dictionary. It can also read regions in a specified area as an image, so you can display their shapes without loading the entire map into memory."></ml-text></p>
+        <h3 class="about-subsection"><ml-text ja="精度はどのくらいなのか" en="How accurate is it?"></ml-text></h3>
+        <p><ml-text ja="逆ジオコーディングのデータとして使用した場合、ラスタ化による区域判定のずれは境界付近で最大約1画素です。高解像度版では1画素が緯度・経度とも0.0001度で、緯度方向の約11mに相当します。" en="For reverse geocoding, rasterization can cause region-classification differences of up to about one pixel near boundaries. In the high-resolution version, one pixel is 0.0001 degrees in both latitude and longitude, or about 11 m in the latitude direction."></ml-text></p>
+      </section>
+      <section id="try">
+        <h2><ml-text ja="実際に試す" en="Try it for yourself"></ml-text></h2>
+        <div class="demo">
+          <h3><ml-text ja="座標から地名を調べる" en="Look up a place from coordinates"></ml-text></h3>
+          <p><ml-text ja="データを選び、緯度・経度を入力すると、該当する区域と地名を確認できます。WebMCPを通じて、対応するAIからもこのツールを利用できます。" en="Choose a dataset and enter a latitude and longitude to see the matching region and place name. Compatible AI clients can also use this tool through WebMCP."></ml-text></p>
+          <p><ml-text ja="入力した座標をブラウザ内で逆ジオコーディングしています。Galuchat GIS SDKのJavaScript版のReverseGeocoderを使っています。" en="The browser reverse-geocodes the coordinates you enter. It uses ReverseGeocoder from the JavaScript version of Galuchat GIS SDK."></ml-text></p>
+          <p><a href="./mcp/"><ml-text ja="逆ジオコーディングツールを開く" en="Open the reverse geocoding tool"></ml-text></a></p>
+          <p><a href="./webmcp/"><ml-text ja="WebMCPでAIから利用する方法を見る" en="Learn how to use it from AI via WebMCP"></ml-text></a></p>
         </div>
-      </header>
-
-      <main>
-        <section class="hero">
-          <div class="hero-copy">
-            <p class="eyebrow">SERVERLESS REVERSE GEOCODING</p>
-            <h1><ml-text ja="サーバーなしの逆ジオコーディング" en="Serverless reverse geocoding"></ml-text></h1>
-            <p class="lead"><ml-text ja="地図データと検索機能を端末に持たせ、Webでも組込機器でもローカルに処理します。外部APIへの通信、利用回数、レート制限を気にせず使えます。" en="Keep the map data and lookup engine on the device. Run locally on the web or embedded hardware without external API calls, usage quotas, or rate limits."></ml-text></p>
-            <div class="hero-actions">
-              <a class="button primary" href="#reverse-geocoding"><ml-text ja="逆ジオコーディングを試す →" en="Try reverse geocoding →"></ml-text></a>
-              <a class="button" href="#maps"><ml-text ja="地図を見る →" en="Browse maps →"></ml-text></a>
-            </div>
-          </div>
-
-        </section>
-
-        <section id="reverse-geocoding">
-          <div class="section-heading">
-            <div>
-              <p class="section-kicker">01 · REVERSE GEOCODING</p>
-              <h2><ml-text ja="座標から、地域名を調べる" en="Find a place name from coordinates"></ml-text></h2>
-            </div>
-            <p><ml-text ja="緯度・経度から、その地点を含む行政区域と地名階層を取得します。データセットを選べるため、日本の市区町村・町丁、台湾の村里、英国・米国・世界の行政区域を同じ操作で調べられます。" en="Resolve the administrative area and name hierarchy containing a latitude and longitude. Choose a dataset to use the same workflow for Japanese municipalities and neighborhoods, Taiwanese villages, and administrative areas in the UK, United States, and worldwide."></ml-text></p>
-          </div>
-
-          <div class="map-links single-link">
-            <a class="map-link" href="./mcp/">
-              <span class="source-id">WEB UI · WEBMCP · UP TO 10,000 POINTS</span>
-              <h3><ml-text ja="逆ジオコーディング" en="Reverse geocoding"></ml-text></h3>
-              <p><ml-text ja="日本行政区域 N03、e-Stat 小地域、台湾 村里界、英国 LAD、米国 County、世界行政区域から選んで検索できます。必要なデータの読込後は、検索をブラウザ内で実行します。" en="Choose from Japan N03, e-Stat small areas, Taiwanese villages, UK LADs, U.S. counties, and worldwide administrative areas. After loading the selected data, lookups run in the browser."></ml-text></p>
-              <span class="open"><ml-text ja="逆ジオコーディングを開く →" en="Open reverse geocoding →"></ml-text></span>
-            </a>
-          </div>
-        </section>
-
-        <section id="maps" class="path-section">
-          <div class="section-heading">
-            <div>
-              <p class="section-kicker">02 · MAP EXPERIENCE</p>
-              <h2><ml-text ja="逆ジオコーディングを、地図で使う" en="Use reverse geocoding as a map"></ml-text></h2>
-            </div>
-            <p><ml-text ja="この地図は、行政区域などの面データを逆ジオコーディングする仕組みを、そのまま表示に使っています。地図上の地点をクリックすると、その地点を含む面を特定し、地名階層を取得できます。" en="These maps use the same reverse-geocoding mechanism for polygon data. Click a location to identify the area containing it and retrieve its name hierarchy."></ml-text></p>
-          </div>
-          <div id="map-catalog" class="map-links"></div>
-        </section>
-
-        <section id="webmcp" class="path-section">
-          <div class="section-heading">
-            <div>
-              <p class="section-kicker">03 · WEBMCP EXPERIENCE</p>
-              <h2><ml-text ja="AIから使う、ローカル逆ジオコーディング" en="Local reverse geocoding for AI agents"></ml-text></h2>
-            </div>
-            <p><ml-text ja="画面で利用できる逆ジオコーディング機能を、WebMCPを通してCodexからも呼び出せます。データの読み込み後はブラウザ内で処理するため、検索回数やサーバー側のレート制限はありません。" en="Use the same reverse-geocoding functions from Codex through WebMCP. Once the data is loaded, lookups run in the browser without server-side quotas or rate limits."></ml-text></p>
-          </div>
-          <div class="platform-links">
-            <a class="platform-card" href="./webmcp/">
-              <p class="section-kicker">WEBMCP · CODEX · BROWSER LOCAL</p>
-              <h2><ml-text ja="Codexで逆ジオコーディングを使う" en="Use reverse geocoding with Codex"></ml-text></h2>
-              <p><ml-text ja="Codexでページを開く方法、利用できるツール、単一地点・複数地点の問い合わせ例を紹介します。逆ジオコーディングは1リクエスト最大10,000地点に対応します。" en="See how to open the page with Codex, inspect its tools, and run single- or multiple-point lookups with up to 10,000 positions per request."></ml-text></p>
-              <span class="platform-open"><ml-text ja="接続方法と使用例を見る →" en="View setup and examples →"></ml-text></span>
-            </a>
-          </div>
-        </section>
-
-        <section id="embedded" class="path-section">
-          <div class="section-heading">
-            <div>
-              <p class="section-kicker">04 · EMBEDDED EXPERIENCE</p>
-              <h2><ml-text ja="逆ジオコーディングを組込機器へ" en="Bring reverse geocoding to embedded devices"></ml-text></h2>
-            </div>
-            <p><ml-text ja="ブラウザで試したものと同じ地図データと検索処理を、小さなマイコンへ持ち込みます。" en="Take the same map data and lookup process you tried in the browser onto small microcontrollers."></ml-text></p>
-          </div>
-          <div class="platform-links">
-            <a class="platform-card embedded" href="./embedded/">
-              <p class="section-kicker">RP2040 · RP2350 · ESP32</p>
-              <h2><ml-text ja="対応ボードですぐ動かす" en="Run it on supported boards"></ml-text></h2>
-              <p><ml-text ja="Wokwiで実行できるプロジェクト、Arduinoソースコード、書き込み用のUF2・BINを用意しています。通信環境に依存せず、端末内の地図を参照できます。" en="Run ready-made projects in Wokwi, inspect the Arduino source, or use prebuilt UF2 and BIN firmware. Query maps on-device without relying on connectivity."></ml-text></p>
-              <span class="platform-open"><ml-text ja="組込向けプロジェクトを見る →" en="View embedded projects →"></ml-text></span>
-            </a>
-          </div>
-        </section>
-
-        <section id="sdk" class="path-section">
-          <div class="section-heading">
-            <div>
-              <p class="section-kicker">05 · SDK</p>
-              <h2><ml-text ja="自分のアプリへ組み込む" en="Build it into your application"></ml-text></h2>
-            </div>
-            <p><ml-text ja="体験した地図参照と逆ジオコーディングを、各言語のSDKから利用できます。" en="Use the map access and reverse-geocoding features from SDKs for each supported language."></ml-text></p>
-          </div>
-          <div class="platform-links">
-            <a class="platform-card sdk" href="https://github.com/nyatla/galuchat-gis-sdk">
-              <p class="section-kicker">JAVASCRIPT · JAVA · C++ · PYTHON</p>
-              <h2>Galuchat GIS SDK</h2>
-              <p><ml-text ja="各言語のランタイム、Get Started、API仕様、データセットをまとめて公開しています。Webアプリから組込機器まで、同じデータ形式と考え方で実装できます。" en="Get runtimes, Get Started examples, API specifications, and datasets for each supported language, using the same data format and model from web applications to embedded devices."></ml-text></p>
-              <span class="platform-open"><ml-text ja="SDKをGitHubで見る →" en="View the SDK on GitHub →"></ml-text></span>
-            </a>
-          </div>
-        </section>
-      </main>
-
-      <footer>
-        <p><ml-text ja="SDK・ソースコード：" en="SDK and source code: "></ml-text><a href="https://github.com/nyatla/galuchat-gis-sdk">GitHub — galuchat-gis-sdk</a></p>
-        <p><ml-text ja="Galuchatソフトウェアは" en="Galuchat software is licensed under the "></ml-text><a href="./LICENSE">Apache License 2.0</a><ml-text ja="で提供されます。" en=". "></ml-text> <a href="./NOTICE">NOTICE</a></p>
-      </footer>
-    </div>
-    <script src="./assets/map-catalog.js?v=1"></script>
-  </body>
+        <div class="demo">
+          <h3><ml-text ja="地図で区域を見る" en="Explore regions on a map"></ml-text></h3>
+          <p><ml-text ja="地図上の地点を選び、その場所を含む区域と地名を調べられます。表示したい地域を選んでください。" en="Choose a point on a map to inspect the region and place name at that location. Select the area you want to explore."></ml-text></p>
+          <p><ml-text ja="選んだデータの区域を地図上に描画しています。Galuchat GIS SDKのJavaScript版の地図表示部品を使っています。" en="The selected dataset's regions are drawn on the map. It uses the map display components from the JavaScript version of Galuchat GIS SDK."></ml-text></p>
+          <a href="./maps/"><ml-text ja="地図ページを開く" en="Open the map page"></ml-text></a>
+        </div>
+        <div class="demo">
+          <h3><ml-text ja="組込機器で動かす" en="Run it on embedded devices"></ml-text></h3>
+          <p><ml-text ja="Raspberry Pi Pico / Pico 2やESP32系向けのファームウェアを用意しています。対応ボードに書き込み、シリアル端末から経緯度を入力すると、地域コードと地名を確認できます。" en="Firmware is available for Raspberry Pi Pico / Pico 2 and ESP32 boards. Flash a compatible board and enter coordinates in a serial terminal to see the region code and place name."></ml-text></p>
+          <p><ml-text ja="入力した座標を機器内のデータで検索しています。Galuchat GIS SDKのC++/Arduino版を使っています。" en="The device looks up the coordinates you enter using data stored on it. It uses the C++/Arduino version of Galuchat GIS SDK."></ml-text></p>
+          <a href="./embedded/"><ml-text ja="組込機器向けデモと書き込み手順を見る" en="View embedded demos and flashing instructions"></ml-text></a>
+        </div>
+        <div class="demo">
+          <h3><ml-text ja="SDKを使ってソフトウェアを開発する" en="Build software with the SDK"></ml-text></h3>
+          <p><ml-text ja="JavaScript、Java、Python、C++の導入手順とサンプルを用意しています。地域コードと地名の取得を、自分のソフトウェアに組み込めます。" en="Get started with guides and samples for JavaScript, Java, Python, and C++. Add region-code and place-name lookups to your own software."></ml-text></p>
+          <p><ml-text ja="各言語のサンプルで地図データを読み込み、座標から地域コードと地名を取得しています。Galuchat GIS SDKのJavaScript・Java・Python・C++版を使っています。" en="The samples in each language load map data and resolve coordinates to region codes and place names. They use the JavaScript, Java, Python, and C++ versions of Galuchat GIS SDK."></ml-text></p>
+          <ml-block><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/README.ja.md">SDKの導入手順を見る</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/README.md">View the SDK getting started guide</a></span></ml-block>
+        </div>
+      </section>
+      <section id="datasets">
+        <h2><ml-text ja="利用できるデータ" en="Available datasets"></ml-text></h2>
+        <p><ml-text ja="行政区域、町丁・字等の小地域、村里界など、地域と区域の細かさが異なる16種類のデータセットがあります。用途に合う地域と年版を選べます。" en="Explore 16 datasets covering administrative areas, town blocks, village boundaries, and other levels of geographic detail. Choose the region and edition that fit your use."></ml-text></p>
+        <ul class="dataset-list">
+          <li><ml-text ja="日本の行政区域 — 2024年版" en="Japan administrative areas — 2024"></ml-text></li>
+          <li><ml-text ja="日本の行政区域 — 2025年版" en="Japan administrative areas — 2025"></ml-text></li>
+          <li><ml-text ja="日本の行政区域 — 2026年版" en="Japan administrative areas — 2026"></ml-text></li>
+          <li><ml-text ja="日本の町丁・字等境界 — 2020年版" en="Japan town-block and small-area boundaries — 2020"></ml-text></li>
+          <li><ml-text ja="日本の海岸線反映区域 — 2026年・2020年" en="Japan coastline-adjusted areas — 2026 and 2020"></ml-text></li>
+          <li><ml-text ja="台湾の村里界 — 2026年版" en="Taiwan village boundaries — 2026"></ml-text></li>
+          <li><ml-text ja="英国の地方自治体地区 — 2025年版" en="UK local authority districts — 2025"></ml-text></li>
+          <li><ml-text ja="米国のCounty境界 — 2025年版" en="U.S. county boundaries — 2025"></ml-text></li>
+          <li><ml-text ja="米国のState境界 — 2025年版" en="U.S. state boundaries — 2025"></ml-text></li>
+          <li><ml-text ja="カナダのCensus Subdivision — 2021年版" en="Canada census subdivisions — 2021"></ml-text></li>
+          <li><ml-text ja="世界の行政区域 — 2024年版" en="Administrative areas worldwide — 2024"></ml-text></li>
+          <li><ml-text ja="オーストラリアのSuburb・Locality — 2021年版" en="Australia suburbs and localities — 2021"></ml-text></li>
+          <li><ml-text ja="ドイツの行政区域 — 2026年版" en="Germany administrative areas — 2026"></ml-text></li>
+          <li><ml-text ja="フランスの行政区域 — 2026年版" en="France administrative areas — 2026"></ml-text></li>
+          <li><ml-text ja="オランダの自治体区域 — 2026年版" en="Netherlands municipalities — 2026"></ml-text></li>
+          <li><ml-text ja="オランダのWijk・Buurt — 2026年版" en="Netherlands Wijk and Buurt areas — 2026"></ml-text></li>
+        </ul>
+        <p class="section-link"><ml-block><span data-lang="ja">各データの範囲、解像度、ファイルサイズ、出典と利用条件は <a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/datasets/README.ja.md">データセットガイド</a>で確認できます。</span><span data-lang="en">See the <a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/datasets/README.md">dataset guide</a> for coverage, resolution, file sizes, sources, and terms.</span></ml-block></p>
+      </section>
+    </main>
+    <footer>
+      <p><ml-text ja="Galuchatのソフトウェアは" en="Galuchat software is licensed under the "></ml-text><a href="./LICENSE">Apache License 2.0</a><ml-text ja="で提供されます。" en="."></ml-text> <a href="./NOTICE">NOTICE</a></p>
+    </footer>
+  </div>
+</body>
 </html>

@@ -1,0 +1,20 @@
+/* Reusable map display component. Page layout belongs in maps/page.css. */
+.map-view { padding: 18px 0 10px; border-top: 1px solid #d6dce1; }
+.map-view__result { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 18px; }
+.map-view__result p { margin: 0 0 10px; }
+#place-name { font-size: 19px; font-weight: 700; overflow-wrap: anywhere; }
+#place-name.error { color: #a12e24; }
+#runtime-state { color: #4a535b; font-size: 13px; }
+#runtime-state.error { color: #a12e24; }
+.map-view__toolbar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+.map-view__toolbar button, .map-view__locations button { min-height: 36px; padding: 4px 11px; border: 1px solid #98a4af; border-radius: 3px; background: #fff; color: inherit; font: inherit; cursor: pointer; }
+.map-view__toolbar button:disabled, .map-view__locations button:disabled { opacity: .5; cursor: wait; }
+.map-view__toolbar button[hidden] { display: none; }
+.map-view__shell { position: relative; overflow: hidden; width: min(100%, 640px); aspect-ratio: 4 / 3; background: #dbe3e8; touch-action: none; user-select: none; }
+.map-view__shell .galuchat-interactive-map-canvas { display: block; max-width: 100%; cursor: grab; touch-action: none; }
+.map-view__shell .galuchat-interactive-map-canvas.dragging { cursor: grabbing; }
+.map-view__shell .galuchat-interactive-map-crosshair { position: absolute; top: 50%; left: 50%; width: 18px; height: 18px; border: 2px solid #fff; border-radius: 50%; box-shadow: 0 0 0 2px #263645; transform: translate(-50%, -50%); pointer-events: none; }
+.map-view__help, .map-view__zoom { margin: 10px 0 0; color: #4a535b; font-size: 13px; }
+.map-view__locations { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; margin-top: 14px; }
+.map-view__locations:empty { display: none; }
+.map-view__locations button { min-height: 32px; font-size: 13px; }

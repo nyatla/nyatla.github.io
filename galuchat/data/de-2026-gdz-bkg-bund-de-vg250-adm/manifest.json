@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "de-2026-gdz-bkg-bund-de-vg250-adm",
+  "sourceArchive": "de-2026-gdz-bkg-bund-de-vg250-adm.zip",
+  "sdkVersion": "0.2.1",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "germany_vg250_2026-grid-8192-10000.wgsmapset.glc",
+        "size": 7252797,
+        "sha256": "1b44a0e45eae64008b336b728d797d6e75929a9d8e2dce528fdad8a7b1c27fb5",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 1024,
+        "path": "germany_vg250_2026-grid-1024-1000.wgsmapset.glc",
+        "size": 1039923,
+        "sha256": "a61ae35f0fa3d63c78455e9db37046a16423e1af194a381641b99cc1031faa77",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "germany_vg250_2026-grid-512-100.wgsmapset.glc",
+        "size": 127652,
+        "sha256": "321c7e68c9355d4208a16615089492e9a7348db021361a03e69919af7a90fcd1",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "germany_vg250_2026.giswordbook",
+        "size": 198303,
+        "sha256": "22f57366dca30c5c9957246d8ba40b6a477a8436993e5682f5fc1992eb0ba5ab"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 5794,
+      "sha256": "0277c79cbeddb7251b1fc8c3474c04a1e351346e3a023b5306f5772419536a62"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 11223,
+      "sha256": "89cc50c177c3a7a871aecc545910c6c97bf3715f0bc4bc1140c6bde8cc1def16"
+    }
+  }
+}

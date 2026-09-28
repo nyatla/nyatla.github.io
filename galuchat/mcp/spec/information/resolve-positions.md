@@ -19,7 +19,7 @@ func(positions[], dataset, codemaps[], map?)
     { "lon": 139.7675, "lat": 35.6814 },
     { "lon": 135.5023, "lat": 34.6937 }
   ],
-  "dataset": "jp-admin-n03-2026",
+  "dataset": "jp-2026-mlit-go-jp-n03-adm",
   "codemaps": ["place-name-utf8"],
   "map": "unit-inv-10000"
 }
@@ -33,7 +33,7 @@ func(positions[], dataset, codemaps[], map?)
 
 ```json
 {
-  "dataset": "jp-admin-n03-2026",
+  "dataset": "jp-2026-mlit-go-jp-n03-adm",
   "map": "unit-inv-10000",
   "resolution": { "lon": 0.0001, "lat": 0.0001 },
   "codes": [672, 672, 1226],

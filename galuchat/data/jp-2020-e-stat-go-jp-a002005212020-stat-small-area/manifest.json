@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "jp-2020-e-stat-go-jp-a002005212020-stat-small-area",
+  "sourceArchive": "jp-2020-e-stat-go-jp-a002005212020-stat-small-area.zip",
+  "sdkVersion": "0.2.1",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "estat-r2ka-jgd2011-2020-grid-8192-10000.wgsmapset.glc",
+        "size": 23800183,
+        "sha256": "e22a9cac7fb0b7376ca0134576093878bc1cdf484a3d72ed96e7478feb9e4cb4",
+        "default": true
+      },
+      {
+        "id": "unit-inv-5000",
+        "unitInv": 5000,
+        "cellSize": 4096,
+        "path": "estat-r2ka-jgd2011-2020-grid-4096-5000.wgsmapset.glc",
+        "size": 13574152,
+        "sha256": "8ffb824345f0f1be55bd0b83f02ec18536a52a5cbc8075e0904ee9474e6a51fc",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "estat-r2ka-jgd2011-2020.giswordbook",
+        "size": 1713832,
+        "sha256": "c54c01d08841fa26a4096cfba2a94ff94fbca7d1f04af83a7429e0abac39955e"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 3936,
+      "sha256": "0af9c5449ee033037e508d2fd9e6fd193b7fe0c11ef126455b16b425124ba48c"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 7733,
+      "sha256": "429e350c8abe6b0f4ca20d75367b27cdc0fc401b4bea3ffb0e99827cfe29c5d4"
+    }
+  }
+}

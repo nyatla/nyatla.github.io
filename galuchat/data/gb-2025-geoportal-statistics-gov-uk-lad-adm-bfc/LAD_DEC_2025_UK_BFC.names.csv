@@ -1,0 +1,362 @@
+wordbook_code,direct_value,LAD25CD,country_code,country_name,area_type,LAD25NM,LAD25NMW,county_code,county_name
+1,106000001,E06000001,E,England,Unitary Authority,Hartlepool,,,
+2,106000002,E06000002,E,England,Unitary Authority,Middlesbrough,,,
+3,106000003,E06000003,E,England,Unitary Authority,Redcar and Cleveland,,,
+4,106000004,E06000004,E,England,Unitary Authority,Stockton-on-Tees,,,
+5,106000005,E06000005,E,England,Unitary Authority,Darlington,,,
+6,106000006,E06000006,E,England,Unitary Authority,Halton,,,
+7,106000007,E06000007,E,England,Unitary Authority,Warrington,,,
+8,106000008,E06000008,E,England,Unitary Authority,Blackburn with Darwen,,,
+9,106000009,E06000009,E,England,Unitary Authority,Blackpool,,,
+10,106000010,E06000010,E,England,Unitary Authority,"Kingston upon Hull, City of",,,
+11,106000011,E06000011,E,England,Unitary Authority,East Riding of Yorkshire,,,
+12,106000012,E06000012,E,England,Unitary Authority,North East Lincolnshire,,,
+13,106000013,E06000013,E,England,Unitary Authority,North Lincolnshire,,,
+14,106000014,E06000014,E,England,Unitary Authority,York,,,
+15,106000015,E06000015,E,England,Unitary Authority,Derby,,,
+16,106000016,E06000016,E,England,Unitary Authority,Leicester,,,
+17,106000017,E06000017,E,England,Unitary Authority,Rutland,,,
+18,106000018,E06000018,E,England,Unitary Authority,Nottingham,,,
+19,106000019,E06000019,E,England,Unitary Authority,"Herefordshire, County of",,,
+20,106000020,E06000020,E,England,Unitary Authority,Telford and Wrekin,,,
+21,106000021,E06000021,E,England,Unitary Authority,Stoke-on-Trent,,,
+22,106000022,E06000022,E,England,Unitary Authority,Bath and North East Somerset,,,
+23,106000023,E06000023,E,England,Unitary Authority,"Bristol, City of",,,
+24,106000024,E06000024,E,England,Unitary Authority,North Somerset,,,
+25,106000025,E06000025,E,England,Unitary Authority,South Gloucestershire,,,
+26,106000026,E06000026,E,England,Unitary Authority,Plymouth,,,
+27,106000027,E06000027,E,England,Unitary Authority,Torbay,,,
+28,106000030,E06000030,E,England,Unitary Authority,Swindon,,,
+29,106000031,E06000031,E,England,Unitary Authority,Peterborough,,,
+30,106000032,E06000032,E,England,Unitary Authority,Luton,,,
+31,106000033,E06000033,E,England,Unitary Authority,Southend-on-Sea,,,
+32,106000034,E06000034,E,England,Unitary Authority,Thurrock,,,
+33,106000035,E06000035,E,England,Unitary Authority,Medway,,,
+34,106000036,E06000036,E,England,Unitary Authority,Bracknell Forest,,,
+35,106000037,E06000037,E,England,Unitary Authority,West Berkshire,,,
+36,106000038,E06000038,E,England,Unitary Authority,Reading,,,
+37,106000039,E06000039,E,England,Unitary Authority,Slough,,,
+38,106000040,E06000040,E,England,Unitary Authority,Windsor and Maidenhead,,,
+39,106000041,E06000041,E,England,Unitary Authority,Wokingham,,,
+40,106000042,E06000042,E,England,Unitary Authority,Milton Keynes,,,
+41,106000043,E06000043,E,England,Unitary Authority,Brighton and Hove,,,
+42,106000044,E06000044,E,England,Unitary Authority,Portsmouth,,,
+43,106000045,E06000045,E,England,Unitary Authority,Southampton,,,
+44,106000046,E06000046,E,England,Unitary Authority,Isle of Wight,,,
+45,106000047,E06000047,E,England,Unitary Authority,County Durham,,,
+46,106000049,E06000049,E,England,Unitary Authority,Cheshire East,,,
+47,106000050,E06000050,E,England,Unitary Authority,Cheshire West and Chester,,,
+48,106000051,E06000051,E,England,Unitary Authority,Shropshire,,,
+49,106000052,E06000052,E,England,Unitary Authority,Cornwall,,,
+50,106000053,E06000053,E,England,Unitary Authority,Isles of Scilly,,,
+51,106000054,E06000054,E,England,Unitary Authority,Wiltshire,,,
+52,106000055,E06000055,E,England,Unitary Authority,Bedford,,,
+53,106000056,E06000056,E,England,Unitary Authority,Central Bedfordshire,,,
+54,106000057,E06000057,E,England,Unitary Authority,Northumberland,,,
+55,106000058,E06000058,E,England,Unitary Authority,"Bournemouth, Christchurch and Poole",,,
+56,106000059,E06000059,E,England,Unitary Authority,Dorset,,,
+57,106000060,E06000060,E,England,Unitary Authority,Buckinghamshire,,,
+58,106000061,E06000061,E,England,Unitary Authority,North Northamptonshire,,,
+59,106000062,E06000062,E,England,Unitary Authority,West Northamptonshire,,,
+60,106000063,E06000063,E,England,Unitary Authority,Cumberland,,,
+61,106000064,E06000064,E,England,Unitary Authority,Westmorland and Furness,,,
+62,106000065,E06000065,E,England,Unitary Authority,North Yorkshire,,,
+63,106000066,E06000066,E,England,Unitary Authority,Somerset,,,
+64,107000008,E07000008,E,England,Non-metropolitan District,Cambridge,,E10000003,Cambridgeshire
+65,107000009,E07000009,E,England,Non-metropolitan District,East Cambridgeshire,,E10000003,Cambridgeshire
+66,107000010,E07000010,E,England,Non-metropolitan District,Fenland,,E10000003,Cambridgeshire
+67,107000011,E07000011,E,England,Non-metropolitan District,Huntingdonshire,,E10000003,Cambridgeshire
+68,107000012,E07000012,E,England,Non-metropolitan District,South Cambridgeshire,,E10000003,Cambridgeshire
+69,107000032,E07000032,E,England,Non-metropolitan District,Amber Valley,,E10000007,Derbyshire
+70,107000033,E07000033,E,England,Non-metropolitan District,Bolsover,,E10000007,Derbyshire
+71,107000034,E07000034,E,England,Non-metropolitan District,Chesterfield,,E10000007,Derbyshire
+72,107000035,E07000035,E,England,Non-metropolitan District,Derbyshire Dales,,E10000007,Derbyshire
+73,107000036,E07000036,E,England,Non-metropolitan District,Erewash,,E10000007,Derbyshire
+74,107000037,E07000037,E,England,Non-metropolitan District,High Peak,,E10000007,Derbyshire
+75,107000038,E07000038,E,England,Non-metropolitan District,North East Derbyshire,,E10000007,Derbyshire
+76,107000039,E07000039,E,England,Non-metropolitan District,South Derbyshire,,E10000007,Derbyshire
+77,107000040,E07000040,E,England,Non-metropolitan District,East Devon,,E10000008,Devon
+78,107000041,E07000041,E,England,Non-metropolitan District,Exeter,,E10000008,Devon
+79,107000042,E07000042,E,England,Non-metropolitan District,Mid Devon,,E10000008,Devon
+80,107000043,E07000043,E,England,Non-metropolitan District,North Devon,,E10000008,Devon
+81,107000044,E07000044,E,England,Non-metropolitan District,South Hams,,E10000008,Devon
+82,107000045,E07000045,E,England,Non-metropolitan District,Teignbridge,,E10000008,Devon
+83,107000046,E07000046,E,England,Non-metropolitan District,Torridge,,E10000008,Devon
+84,107000047,E07000047,E,England,Non-metropolitan District,West Devon,,E10000008,Devon
+85,107000061,E07000061,E,England,Non-metropolitan District,Eastbourne,,E10000011,East Sussex
+86,107000062,E07000062,E,England,Non-metropolitan District,Hastings,,E10000011,East Sussex
+87,107000063,E07000063,E,England,Non-metropolitan District,Lewes,,E10000011,East Sussex
+88,107000064,E07000064,E,England,Non-metropolitan District,Rother,,E10000011,East Sussex
+89,107000065,E07000065,E,England,Non-metropolitan District,Wealden,,E10000011,East Sussex
+90,107000066,E07000066,E,England,Non-metropolitan District,Basildon,,E10000012,Essex
+91,107000067,E07000067,E,England,Non-metropolitan District,Braintree,,E10000012,Essex
+92,107000068,E07000068,E,England,Non-metropolitan District,Brentwood,,E10000012,Essex
+93,107000069,E07000069,E,England,Non-metropolitan District,Castle Point,,E10000012,Essex
+94,107000070,E07000070,E,England,Non-metropolitan District,Chelmsford,,E10000012,Essex
+95,107000071,E07000071,E,England,Non-metropolitan District,Colchester,,E10000012,Essex
+96,107000072,E07000072,E,England,Non-metropolitan District,Epping Forest,,E10000012,Essex
+97,107000073,E07000073,E,England,Non-metropolitan District,Harlow,,E10000012,Essex
+98,107000074,E07000074,E,England,Non-metropolitan District,Maldon,,E10000012,Essex
+99,107000075,E07000075,E,England,Non-metropolitan District,Rochford,,E10000012,Essex
+100,107000076,E07000076,E,England,Non-metropolitan District,Tendring,,E10000012,Essex
+101,107000077,E07000077,E,England,Non-metropolitan District,Uttlesford,,E10000012,Essex
+102,107000078,E07000078,E,England,Non-metropolitan District,Cheltenham,,E10000013,Gloucestershire
+103,107000079,E07000079,E,England,Non-metropolitan District,Cotswold,,E10000013,Gloucestershire
+104,107000080,E07000080,E,England,Non-metropolitan District,Forest of Dean,,E10000013,Gloucestershire
+105,107000081,E07000081,E,England,Non-metropolitan District,Gloucester,,E10000013,Gloucestershire
+106,107000082,E07000082,E,England,Non-metropolitan District,Stroud,,E10000013,Gloucestershire
+107,107000083,E07000083,E,England,Non-metropolitan District,Tewkesbury,,E10000013,Gloucestershire
+108,107000084,E07000084,E,England,Non-metropolitan District,Basingstoke and Deane,,E10000014,Hampshire
+109,107000085,E07000085,E,England,Non-metropolitan District,East Hampshire,,E10000014,Hampshire
+110,107000086,E07000086,E,England,Non-metropolitan District,Eastleigh,,E10000014,Hampshire
+111,107000087,E07000087,E,England,Non-metropolitan District,Fareham,,E10000014,Hampshire
+112,107000088,E07000088,E,England,Non-metropolitan District,Gosport,,E10000014,Hampshire
+113,107000089,E07000089,E,England,Non-metropolitan District,Hart,,E10000014,Hampshire
+114,107000090,E07000090,E,England,Non-metropolitan District,Havant,,E10000014,Hampshire
+115,107000091,E07000091,E,England,Non-metropolitan District,New Forest,,E10000014,Hampshire
+116,107000092,E07000092,E,England,Non-metropolitan District,Rushmoor,,E10000014,Hampshire
+117,107000093,E07000093,E,England,Non-metropolitan District,Test Valley,,E10000014,Hampshire
+118,107000094,E07000094,E,England,Non-metropolitan District,Winchester,,E10000014,Hampshire
+119,107000095,E07000095,E,England,Non-metropolitan District,Broxbourne,,E10000015,Hertfordshire
+120,107000096,E07000096,E,England,Non-metropolitan District,Dacorum,,E10000015,Hertfordshire
+121,107000098,E07000098,E,England,Non-metropolitan District,Hertsmere,,E10000015,Hertfordshire
+122,107000099,E07000099,E,England,Non-metropolitan District,North Hertfordshire,,E10000015,Hertfordshire
+123,107000102,E07000102,E,England,Non-metropolitan District,Three Rivers,,E10000015,Hertfordshire
+124,107000103,E07000103,E,England,Non-metropolitan District,Watford,,E10000015,Hertfordshire
+125,107000105,E07000105,E,England,Non-metropolitan District,Ashford,,E10000016,Kent
+126,107000106,E07000106,E,England,Non-metropolitan District,Canterbury,,E10000016,Kent
+127,107000107,E07000107,E,England,Non-metropolitan District,Dartford,,E10000016,Kent
+128,107000108,E07000108,E,England,Non-metropolitan District,Dover,,E10000016,Kent
+129,107000109,E07000109,E,England,Non-metropolitan District,Gravesham,,E10000016,Kent
+130,107000110,E07000110,E,England,Non-metropolitan District,Maidstone,,E10000016,Kent
+131,107000111,E07000111,E,England,Non-metropolitan District,Sevenoaks,,E10000016,Kent
+132,107000112,E07000112,E,England,Non-metropolitan District,Folkestone and Hythe,,E10000016,Kent
+133,107000113,E07000113,E,England,Non-metropolitan District,Swale,,E10000016,Kent
+134,107000114,E07000114,E,England,Non-metropolitan District,Thanet,,E10000016,Kent
+135,107000115,E07000115,E,England,Non-metropolitan District,Tonbridge and Malling,,E10000016,Kent
+136,107000116,E07000116,E,England,Non-metropolitan District,Tunbridge Wells,,E10000016,Kent
+137,107000117,E07000117,E,England,Non-metropolitan District,Burnley,,E10000017,Lancashire
+138,107000118,E07000118,E,England,Non-metropolitan District,Chorley,,E10000017,Lancashire
+139,107000119,E07000119,E,England,Non-metropolitan District,Fylde,,E10000017,Lancashire
+140,107000120,E07000120,E,England,Non-metropolitan District,Hyndburn,,E10000017,Lancashire
+141,107000121,E07000121,E,England,Non-metropolitan District,Lancaster,,E10000017,Lancashire
+142,107000122,E07000122,E,England,Non-metropolitan District,Pendle,,E10000017,Lancashire
+143,107000123,E07000123,E,England,Non-metropolitan District,Preston,,E10000017,Lancashire
+144,107000124,E07000124,E,England,Non-metropolitan District,Ribble Valley,,E10000017,Lancashire
+145,107000125,E07000125,E,England,Non-metropolitan District,Rossendale,,E10000017,Lancashire
+146,107000126,E07000126,E,England,Non-metropolitan District,South Ribble,,E10000017,Lancashire
+147,107000127,E07000127,E,England,Non-metropolitan District,West Lancashire,,E10000017,Lancashire
+148,107000128,E07000128,E,England,Non-metropolitan District,Wyre,,E10000017,Lancashire
+149,107000129,E07000129,E,England,Non-metropolitan District,Blaby,,E10000018,Leicestershire
+150,107000130,E07000130,E,England,Non-metropolitan District,Charnwood,,E10000018,Leicestershire
+151,107000131,E07000131,E,England,Non-metropolitan District,Harborough,,E10000018,Leicestershire
+152,107000132,E07000132,E,England,Non-metropolitan District,Hinckley and Bosworth,,E10000018,Leicestershire
+153,107000133,E07000133,E,England,Non-metropolitan District,Melton,,E10000018,Leicestershire
+154,107000134,E07000134,E,England,Non-metropolitan District,North West Leicestershire,,E10000018,Leicestershire
+155,107000135,E07000135,E,England,Non-metropolitan District,Oadby and Wigston,,E10000018,Leicestershire
+156,107000136,E07000136,E,England,Non-metropolitan District,Boston,,E10000019,Lincolnshire
+157,107000137,E07000137,E,England,Non-metropolitan District,East Lindsey,,E10000019,Lincolnshire
+158,107000138,E07000138,E,England,Non-metropolitan District,Lincoln,,E10000019,Lincolnshire
+159,107000139,E07000139,E,England,Non-metropolitan District,North Kesteven,,E10000019,Lincolnshire
+160,107000140,E07000140,E,England,Non-metropolitan District,South Holland,,E10000019,Lincolnshire
+161,107000141,E07000141,E,England,Non-metropolitan District,South Kesteven,,E10000019,Lincolnshire
+162,107000142,E07000142,E,England,Non-metropolitan District,West Lindsey,,E10000019,Lincolnshire
+163,107000143,E07000143,E,England,Non-metropolitan District,Breckland,,E10000020,Norfolk
+164,107000144,E07000144,E,England,Non-metropolitan District,Broadland,,E10000020,Norfolk
+165,107000145,E07000145,E,England,Non-metropolitan District,Great Yarmouth,,E10000020,Norfolk
+166,107000146,E07000146,E,England,Non-metropolitan District,King's Lynn and West Norfolk,,E10000020,Norfolk
+167,107000147,E07000147,E,England,Non-metropolitan District,North Norfolk,,E10000020,Norfolk
+168,107000148,E07000148,E,England,Non-metropolitan District,Norwich,,E10000020,Norfolk
+169,107000149,E07000149,E,England,Non-metropolitan District,South Norfolk,,E10000020,Norfolk
+170,107000170,E07000170,E,England,Non-metropolitan District,Ashfield,,E10000024,Nottinghamshire
+171,107000171,E07000171,E,England,Non-metropolitan District,Bassetlaw,,E10000024,Nottinghamshire
+172,107000172,E07000172,E,England,Non-metropolitan District,Broxtowe,,E10000024,Nottinghamshire
+173,107000173,E07000173,E,England,Non-metropolitan District,Gedling,,E10000024,Nottinghamshire
+174,107000174,E07000174,E,England,Non-metropolitan District,Mansfield,,E10000024,Nottinghamshire
+175,107000175,E07000175,E,England,Non-metropolitan District,Newark and Sherwood,,E10000024,Nottinghamshire
+176,107000176,E07000176,E,England,Non-metropolitan District,Rushcliffe,,E10000024,Nottinghamshire
+177,107000177,E07000177,E,England,Non-metropolitan District,Cherwell,,E10000025,Oxfordshire
+178,107000178,E07000178,E,England,Non-metropolitan District,Oxford,,E10000025,Oxfordshire
+179,107000179,E07000179,E,England,Non-metropolitan District,South Oxfordshire,,E10000025,Oxfordshire
+180,107000180,E07000180,E,England,Non-metropolitan District,Vale of White Horse,,E10000025,Oxfordshire
+181,107000181,E07000181,E,England,Non-metropolitan District,West Oxfordshire,,E10000025,Oxfordshire
+182,107000192,E07000192,E,England,Non-metropolitan District,Cannock Chase,,E10000028,Staffordshire
+183,107000193,E07000193,E,England,Non-metropolitan District,East Staffordshire,,E10000028,Staffordshire
+184,107000194,E07000194,E,England,Non-metropolitan District,Lichfield,,E10000028,Staffordshire
+185,107000195,E07000195,E,England,Non-metropolitan District,Newcastle-under-Lyme,,E10000028,Staffordshire
+186,107000196,E07000196,E,England,Non-metropolitan District,South Staffordshire,,E10000028,Staffordshire
+187,107000197,E07000197,E,England,Non-metropolitan District,Stafford,,E10000028,Staffordshire
+188,107000198,E07000198,E,England,Non-metropolitan District,Staffordshire Moorlands,,E10000028,Staffordshire
+189,107000199,E07000199,E,England,Non-metropolitan District,Tamworth,,E10000028,Staffordshire
+190,107000200,E07000200,E,England,Non-metropolitan District,Babergh,,E10000029,Suffolk
+191,107000202,E07000202,E,England,Non-metropolitan District,Ipswich,,E10000029,Suffolk
+192,107000203,E07000203,E,England,Non-metropolitan District,Mid Suffolk,,E10000029,Suffolk
+193,107000207,E07000207,E,England,Non-metropolitan District,Elmbridge,,E10000030,Surrey
+194,107000208,E07000208,E,England,Non-metropolitan District,Epsom and Ewell,,E10000030,Surrey
+195,107000209,E07000209,E,England,Non-metropolitan District,Guildford,,E10000030,Surrey
+196,107000210,E07000210,E,England,Non-metropolitan District,Mole Valley,,E10000030,Surrey
+197,107000211,E07000211,E,England,Non-metropolitan District,Reigate and Banstead,,E10000030,Surrey
+198,107000212,E07000212,E,England,Non-metropolitan District,Runnymede,,E10000030,Surrey
+199,107000213,E07000213,E,England,Non-metropolitan District,Spelthorne,,E10000030,Surrey
+200,107000214,E07000214,E,England,Non-metropolitan District,Surrey Heath,,E10000030,Surrey
+201,107000215,E07000215,E,England,Non-metropolitan District,Tandridge,,E10000030,Surrey
+202,107000216,E07000216,E,England,Non-metropolitan District,Waverley,,E10000030,Surrey
+203,107000217,E07000217,E,England,Non-metropolitan District,Woking,,E10000030,Surrey
+204,107000218,E07000218,E,England,Non-metropolitan District,North Warwickshire,,E10000031,Warwickshire
+205,107000219,E07000219,E,England,Non-metropolitan District,Nuneaton and Bedworth,,E10000031,Warwickshire
+206,107000220,E07000220,E,England,Non-metropolitan District,Rugby,,E10000031,Warwickshire
+207,107000221,E07000221,E,England,Non-metropolitan District,Stratford-on-Avon,,E10000031,Warwickshire
+208,107000222,E07000222,E,England,Non-metropolitan District,Warwick,,E10000031,Warwickshire
+209,107000223,E07000223,E,England,Non-metropolitan District,Adur,,E10000032,West Sussex
+210,107000224,E07000224,E,England,Non-metropolitan District,Arun,,E10000032,West Sussex
+211,107000225,E07000225,E,England,Non-metropolitan District,Chichester,,E10000032,West Sussex
+212,107000226,E07000226,E,England,Non-metropolitan District,Crawley,,E10000032,West Sussex
+213,107000227,E07000227,E,England,Non-metropolitan District,Horsham,,E10000032,West Sussex
+214,107000228,E07000228,E,England,Non-metropolitan District,Mid Sussex,,E10000032,West Sussex
+215,107000229,E07000229,E,England,Non-metropolitan District,Worthing,,E10000032,West Sussex
+216,107000234,E07000234,E,England,Non-metropolitan District,Bromsgrove,,E10000034,Worcestershire
+217,107000235,E07000235,E,England,Non-metropolitan District,Malvern Hills,,E10000034,Worcestershire
+218,107000236,E07000236,E,England,Non-metropolitan District,Redditch,,E10000034,Worcestershire
+219,107000237,E07000237,E,England,Non-metropolitan District,Worcester,,E10000034,Worcestershire
+220,107000238,E07000238,E,England,Non-metropolitan District,Wychavon,,E10000034,Worcestershire
+221,107000239,E07000239,E,England,Non-metropolitan District,Wyre Forest,,E10000034,Worcestershire
+222,107000240,E07000240,E,England,Non-metropolitan District,St Albans,,E10000015,Hertfordshire
+223,107000241,E07000241,E,England,Non-metropolitan District,Welwyn Hatfield,,E10000015,Hertfordshire
+224,107000242,E07000242,E,England,Non-metropolitan District,East Hertfordshire,,E10000015,Hertfordshire
+225,107000243,E07000243,E,England,Non-metropolitan District,Stevenage,,E10000015,Hertfordshire
+226,107000244,E07000244,E,England,Non-metropolitan District,East Suffolk,,E10000029,Suffolk
+227,107000245,E07000245,E,England,Non-metropolitan District,West Suffolk,,E10000029,Suffolk
+228,108000001,E08000001,E,England,Metropolitan District,Bolton,,,
+229,108000002,E08000002,E,England,Metropolitan District,Bury,,,
+230,108000003,E08000003,E,England,Metropolitan District,Manchester,,,
+231,108000004,E08000004,E,England,Metropolitan District,Oldham,,,
+232,108000005,E08000005,E,England,Metropolitan District,Rochdale,,,
+233,108000006,E08000006,E,England,Metropolitan District,Salford,,,
+234,108000007,E08000007,E,England,Metropolitan District,Stockport,,,
+235,108000008,E08000008,E,England,Metropolitan District,Tameside,,,
+236,108000009,E08000009,E,England,Metropolitan District,Trafford,,,
+237,108000010,E08000010,E,England,Metropolitan District,Wigan,,,
+238,108000011,E08000011,E,England,Metropolitan District,Knowsley,,,
+239,108000012,E08000012,E,England,Metropolitan District,Liverpool,,,
+240,108000013,E08000013,E,England,Metropolitan District,St. Helens,,,
+241,108000014,E08000014,E,England,Metropolitan District,Sefton,,,
+242,108000015,E08000015,E,England,Metropolitan District,Wirral,,,
+243,108000017,E08000017,E,England,Metropolitan District,Doncaster,,,
+244,108000018,E08000018,E,England,Metropolitan District,Rotherham,,,
+245,108000021,E08000021,E,England,Metropolitan District,Newcastle upon Tyne,,,
+246,108000022,E08000022,E,England,Metropolitan District,North Tyneside,,,
+247,108000023,E08000023,E,England,Metropolitan District,South Tyneside,,,
+248,108000024,E08000024,E,England,Metropolitan District,Sunderland,,,
+249,108000025,E08000025,E,England,Metropolitan District,Birmingham,,,
+250,108000026,E08000026,E,England,Metropolitan District,Coventry,,,
+251,108000027,E08000027,E,England,Metropolitan District,Dudley,,,
+252,108000028,E08000028,E,England,Metropolitan District,Sandwell,,,
+253,108000029,E08000029,E,England,Metropolitan District,Solihull,,,
+254,108000030,E08000030,E,England,Metropolitan District,Walsall,,,
+255,108000031,E08000031,E,England,Metropolitan District,Wolverhampton,,,
+256,108000032,E08000032,E,England,Metropolitan District,Bradford,,,
+257,108000033,E08000033,E,England,Metropolitan District,Calderdale,,,
+258,108000034,E08000034,E,England,Metropolitan District,Kirklees,,,
+259,108000035,E08000035,E,England,Metropolitan District,Leeds,,,
+260,108000036,E08000036,E,England,Metropolitan District,Wakefield,,,
+261,108000037,E08000037,E,England,Metropolitan District,Gateshead,,,
+262,108000038,E08000038,E,England,Metropolitan District,Barnsley,,,
+263,108000039,E08000039,E,England,Metropolitan District,Sheffield,,,
+264,109000001,E09000001,E,England,London Borough,City of London,,,
+265,109000002,E09000002,E,England,London Borough,Barking and Dagenham,,,
+266,109000003,E09000003,E,England,London Borough,Barnet,,,
+267,109000004,E09000004,E,England,London Borough,Bexley,,,
+268,109000005,E09000005,E,England,London Borough,Brent,,,
+269,109000006,E09000006,E,England,London Borough,Bromley,,,
+270,109000007,E09000007,E,England,London Borough,Camden,,,
+271,109000008,E09000008,E,England,London Borough,Croydon,,,
+272,109000009,E09000009,E,England,London Borough,Ealing,,,
+273,109000010,E09000010,E,England,London Borough,Enfield,,,
+274,109000011,E09000011,E,England,London Borough,Greenwich,,,
+275,109000012,E09000012,E,England,London Borough,Hackney,,,
+276,109000013,E09000013,E,England,London Borough,Hammersmith and Fulham,,,
+277,109000014,E09000014,E,England,London Borough,Haringey,,,
+278,109000015,E09000015,E,England,London Borough,Harrow,,,
+279,109000016,E09000016,E,England,London Borough,Havering,,,
+280,109000017,E09000017,E,England,London Borough,Hillingdon,,,
+281,109000018,E09000018,E,England,London Borough,Hounslow,,,
+282,109000019,E09000019,E,England,London Borough,Islington,,,
+283,109000020,E09000020,E,England,London Borough,Kensington and Chelsea,,,
+284,109000021,E09000021,E,England,London Borough,Kingston upon Thames,,,
+285,109000022,E09000022,E,England,London Borough,Lambeth,,,
+286,109000023,E09000023,E,England,London Borough,Lewisham,,,
+287,109000024,E09000024,E,England,London Borough,Merton,,,
+288,109000025,E09000025,E,England,London Borough,Newham,,,
+289,109000026,E09000026,E,England,London Borough,Redbridge,,,
+290,109000027,E09000027,E,England,London Borough,Richmond upon Thames,,,
+291,109000028,E09000028,E,England,London Borough,Southwark,,,
+292,109000029,E09000029,E,England,London Borough,Sutton,,,
+293,109000030,E09000030,E,England,London Borough,Tower Hamlets,,,
+294,109000031,E09000031,E,England,London Borough,Waltham Forest,,,
+295,109000032,E09000032,E,England,London Borough,Wandsworth,,,
+296,109000033,E09000033,E,England,London Borough,Westminster,,,
+297,212000005,S12000005,S,Scotland,Council Area,Clackmannanshire,,,
+298,212000006,S12000006,S,Scotland,Council Area,Dumfries and Galloway,,,
+299,212000008,S12000008,S,Scotland,Council Area,East Ayrshire,,,
+300,212000010,S12000010,S,Scotland,Council Area,East Lothian,,,
+301,212000011,S12000011,S,Scotland,Council Area,East Renfrewshire,,,
+302,212000013,S12000013,S,Scotland,Council Area,Na h-Eileanan Siar,,,
+303,212000014,S12000014,S,Scotland,Council Area,Falkirk,,,
+304,212000017,S12000017,S,Scotland,Council Area,Highland,,,
+305,212000018,S12000018,S,Scotland,Council Area,Inverclyde,,,
+306,212000019,S12000019,S,Scotland,Council Area,Midlothian,,,
+307,212000020,S12000020,S,Scotland,Council Area,Moray,,,
+308,212000021,S12000021,S,Scotland,Council Area,North Ayrshire,,,
+309,212000023,S12000023,S,Scotland,Council Area,Orkney Islands,,,
+310,212000026,S12000026,S,Scotland,Council Area,Scottish Borders,,,
+311,212000027,S12000027,S,Scotland,Council Area,Shetland Islands,,,
+312,212000028,S12000028,S,Scotland,Council Area,South Ayrshire,,,
+313,212000029,S12000029,S,Scotland,Council Area,South Lanarkshire,,,
+314,212000030,S12000030,S,Scotland,Council Area,Stirling,,,
+315,212000033,S12000033,S,Scotland,Council Area,Aberdeen City,,,
+316,212000034,S12000034,S,Scotland,Council Area,Aberdeenshire,,,
+317,212000035,S12000035,S,Scotland,Council Area,Argyll and Bute,,,
+318,212000036,S12000036,S,Scotland,Council Area,City of Edinburgh,,,
+319,212000038,S12000038,S,Scotland,Council Area,Renfrewshire,,,
+320,212000039,S12000039,S,Scotland,Council Area,West Dunbartonshire,,,
+321,212000040,S12000040,S,Scotland,Council Area,West Lothian,,,
+322,212000041,S12000041,S,Scotland,Council Area,Angus,,,
+323,212000042,S12000042,S,Scotland,Council Area,Dundee City,,,
+324,212000045,S12000045,S,Scotland,Council Area,East Dunbartonshire,,,
+325,212000047,S12000047,S,Scotland,Council Area,Fife,,,
+326,212000048,S12000048,S,Scotland,Council Area,Perth and Kinross,,,
+327,212000049,S12000049,S,Scotland,Council Area,Glasgow City,,,
+328,212000050,S12000050,S,Scotland,Council Area,North Lanarkshire,,,
+329,306000001,W06000001,W,Wales,Unitary Authority,Isle of Anglesey,Ynys Môn,,
+330,306000002,W06000002,W,Wales,Unitary Authority,Gwynedd,Gwynedd,,
+331,306000003,W06000003,W,Wales,Unitary Authority,Conwy,Conwy,,
+332,306000004,W06000004,W,Wales,Unitary Authority,Denbighshire,Sir Ddinbych,,
+333,306000005,W06000005,W,Wales,Unitary Authority,Flintshire,Sir y Fflint,,
+334,306000006,W06000006,W,Wales,Unitary Authority,Wrexham,Wrecsam,,
+335,306000008,W06000008,W,Wales,Unitary Authority,Ceredigion,Ceredigion,,
+336,306000009,W06000009,W,Wales,Unitary Authority,Pembrokeshire,Sir Benfro,,
+337,306000010,W06000010,W,Wales,Unitary Authority,Carmarthenshire,Sir Gaerfyrddin,,
+338,306000011,W06000011,W,Wales,Unitary Authority,Swansea,Abertawe,,
+339,306000012,W06000012,W,Wales,Unitary Authority,Neath Port Talbot,Castell-nedd Port Talbot,,
+340,306000013,W06000013,W,Wales,Unitary Authority,Bridgend,Pen-y-bont ar Ogwr,,
+341,306000014,W06000014,W,Wales,Unitary Authority,Vale of Glamorgan,Bro Morgannwg,,
+342,306000015,W06000015,W,Wales,Unitary Authority,Cardiff,Caerdydd,,
+343,306000016,W06000016,W,Wales,Unitary Authority,Rhondda Cynon Taf,Rhondda Cynon Taf,,
+344,306000018,W06000018,W,Wales,Unitary Authority,Caerphilly,Caerffili,,
+345,306000019,W06000019,W,Wales,Unitary Authority,Blaenau Gwent,Blaenau Gwent,,
+346,306000020,W06000020,W,Wales,Unitary Authority,Torfaen,Torfaen,,
+347,306000021,W06000021,W,Wales,Unitary Authority,Monmouthshire,Sir Fynwy,,
+348,306000022,W06000022,W,Wales,Unitary Authority,Newport,Casnewydd,,
+349,306000023,W06000023,W,Wales,Unitary Authority,Powys,Powys,,
+350,306000024,W06000024,W,Wales,Unitary Authority,Merthyr Tydfil,Merthyr Tudful,,
+351,409000001,N09000001,N,Northern Ireland,Local Government District,Antrim and Newtownabbey,,,
+352,409000002,N09000002,N,Northern Ireland,Local Government District,"Armagh City, Banbridge and Craigavon",,,
+353,409000003,N09000003,N,Northern Ireland,Local Government District,Belfast,,,
+354,409000004,N09000004,N,Northern Ireland,Local Government District,Causeway Coast and Glens,,,
+355,409000005,N09000005,N,Northern Ireland,Local Government District,Derry City and Strabane,,,
+356,409000006,N09000006,N,Northern Ireland,Local Government District,Fermanagh and Omagh,,,
+357,409000007,N09000007,N,Northern Ireland,Local Government District,Lisburn and Castlereagh,,,
+358,409000008,N09000008,N,Northern Ireland,Local Government District,Mid and East Antrim,,,
+359,409000009,N09000009,N,Northern Ireland,Local Government District,Mid Ulster,,,
+360,409000010,N09000010,N,Northern Ireland,Local Government District,"Newry, Mourne and Down",,,
+361,409000011,N09000011,N,Northern Ireland,Local Government District,Ards and North Down,,,

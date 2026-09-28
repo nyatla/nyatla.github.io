@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "world-2024-geoboundaries-org-cgaz-adm",
+  "sourceArchive": "world-2024-geoboundaries-org-cgaz-adm.zip",
+  "sdkVersion": "0.2.1",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 8192,
+        "path": "geoboundaries-cgaz-best-admin-grid-8192-1000.wgsmapset.glc",
+        "size": 21438685,
+        "sha256": "b0757aaefb25559f3bf0bf5e7ed0d32844cd678a1f9b4ad1c8f14616df37e250",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 1024,
+        "path": "geoboundaries-cgaz-best-admin-grid-1024-100.wgsmapset.glc",
+        "size": 2945679,
+        "sha256": "0c9e1d6edf425161a51901aaf1575d06b2be5a4cb646243e81db66099c34f7aa",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "geoboundaries-cgaz-best-admin.giswordbook",
+        "size": 574680,
+        "sha256": "e30fb58e6cb536a8ab945ee1dda60d1a659681c11f0c02e988d11bef8c9953c1"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 3875,
+      "sha256": "fe71b719ed2afcb682e6490e2b74ae3c70133e0839e1f5394936a9d2c7a2fb00"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 6980,
+      "sha256": "be00395441a0e45041cd47c3a4e7bf2869fa933ae8e7744af5c8ee9e8f965eb4"
+    }
+  }
+}

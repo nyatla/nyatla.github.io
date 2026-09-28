@@ -1,0 +1,37 @@
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body { margin: 0; color: #20262d; background: #fff; font: 16px/1.7 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+a { color: #175582; text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible, select:focus-visible { outline: 2px solid #175582; outline-offset: 3px; }
+.page { width: min(100% - 40px, 860px); margin: 0 auto; }
+.site-header { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 26px; padding: 20px 0; border-bottom: 1px solid #d6dce1; }
+.brand { color: inherit; font-weight: 700; text-decoration: none; }
+.site-nav { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-left: auto; }
+.site-nav a { color: inherit; font-size: 14px; }
+.header-actions { margin: 0; }
+.language-switch { gap: 10px; margin: 0; padding: 0; border: 0; border-radius: 0; background: none; }
+.language-switch button { padding: 2px 0; border-radius: 0; border-bottom: 1px solid transparent; color: #4a535b; background: none; font: inherit; font-size: 13px; }
+.language-switch button:hover, .language-switch button.active { color: #20262d; background: none; border-bottom-color: currentColor; }
+main { padding: 42px 0 58px; }
+h1 { margin: 0 0 12px; font-size: clamp(30px, 4vw, 38px); line-height: 1.35; }
+h2 { margin: 0 0 12px; font-size: 22px; }
+p { margin: 0 0 12px; }
+.intro { max-width: 44em; }
+.dataset-control { margin: 30px 0 28px; }
+.dataset-control label { display: block; margin-bottom: 8px; font-weight: 700; }
+.dataset-control select { width: min(100%, 480px); min-height: 42px; padding: 7px 10px; border: 1px solid #98a4af; border-radius: 3px; background: #fff; color: inherit; font: inherit; }
+#dataset-description { max-width: 44em; margin: 10px 0 0; color: #4a535b; }
+.data-info { margin-top: 32px; padding-top: 26px; border-top: 1px solid #d6dce1; }
+.data-info p { max-width: 55em; }
+.data-info p[hidden] { display: none; }
+.data-links { margin-top: 16px; }
+footer { padding: 22px 0 38px; border-top: 1px solid #d6dce1; color: #4a535b; font-size: 13px; }
+footer p { margin: 0; }
+@media (max-width: 620px) {
+  .page { width: min(100% - 32px, 860px); }
+  .site-header { gap: 8px 16px; }
+  .site-nav { order: 3; width: 100%; margin: 0; }
+  .header-actions { margin-left: auto; }
+  main { padding-top: 32px; }
+  h1 { font-size: 30px; }
+}

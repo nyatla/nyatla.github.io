@@ -14,7 +14,7 @@ WebMCP annotation: `readOnlyHint: false`
 {
   "if_revision": 12,
   "map_spec": {
-    "dataset_id": "jp-admin-n03-2026",
+    "dataset_id": "jp-2026-mlit-go-jp-n03-adm",
     "viewport": {
       "mode": "bounds",
       "west": 139.95,

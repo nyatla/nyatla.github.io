@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "fr-2026-cartes-gouv-fr-admin-express-cog-adm",
+  "sourceArchive": "fr-2026-cartes-gouv-fr-admin-express-cog-adm.zip",
+  "sdkVersion": "0.2.1",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "france_admin_2026-grid-8192-10000.wgsmapset.glc",
+        "size": 16357916,
+        "sha256": "34a3aaca35526967daf9e4bf478f8aa3c755365730baa6e8fb6940327b83d4d4",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 1024,
+        "path": "france_admin_2026-grid-1024-1000.wgsmapset.glc",
+        "size": 2323490,
+        "sha256": "850ed67843c8479d45a287d7df06115b9483f955f0e4c217d266e4072ee909a9",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "france_admin_2026-grid-512-100.wgsmapset.glc",
+        "size": 307747,
+        "sha256": "c34312d3cf3384e5e4cc09ad9959199dcdc832b8183608da105a1d217c2409de",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "france_admin_2026.giswordbook",
+        "size": 592406,
+        "sha256": "19fa594810046d13639df473427f25619099d22bdf22995f47b208c20acf1ab1"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 7586,
+      "sha256": "9d1b52308ca6aa27534b11c323a321c195ff2e34a000a94c63f48ad94e846263"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 10221,
+      "sha256": "88149a19a4a1e51c733696015523191b2531d22d696c90c43be84dd146f0278d"
+    }
+  }
+}

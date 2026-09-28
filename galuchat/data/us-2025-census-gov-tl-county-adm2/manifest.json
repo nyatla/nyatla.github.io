@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "us-2025-census-gov-tl-county-adm2",
+  "sourceArchive": "us-2025-census-gov-tl-county-adm2.zip",
+  "sdkVersion": "0.2.1",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 16384,
+        "path": "tl_2025_us_county_WGS84-grid-16384-10000.wgsmapset.glc",
+        "size": 7457348,
+        "sha256": "3958a4d2a66f8ba28c1e19264e92e059fb99aa44f65ae65639ee6a9c91400afb",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 8192,
+        "path": "tl_2025_us_county_WGS84-grid-8192-1000.wgsmapset.glc",
+        "size": 1002021,
+        "sha256": "49e3004e71a1d3a6d8d461a966faa0f75dc08dd63a88158549434df80be76a6a",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "tl_2025_us_county_WGS84-grid-512-100.wgsmapset.glc",
+        "size": 170120,
+        "sha256": "c03ffe0843420b8dd899a47581f5a8db8e666b8d469343bb385095d84b962c10",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "tl_2025_us_county.giswordbook",
+        "size": 22276,
+        "sha256": "509e4b57fc97e38788f7b576dbcaee71f0452a92304fc74bfa3688ad4770daf2"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 4719,
+      "sha256": "1cc22b8cb95ce99377fcb43fe851cbffad9bac2ec7745be26bf8983dfd3686ad"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 8700,
+      "sha256": "e656b01a5a819ee249dfd400b18ee1e90301953cc69561bb2e7698df6ba59344"
+    },
+    "names": {
+      "path": "tl_2025_us_county.names.csv",
+      "size": 228869,
+      "sha256": "a72a15c4f741854223c860eb59f2bca30eb57eb0d278ba25413555c70168ee70"
+    }
+  }
+}

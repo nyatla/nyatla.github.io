@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc",
+  "sourceArchive": "gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc.zip",
+  "sdkVersion": "0.2.1",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "LAD_DEC_2025_UK_BFC_WGS84-grid-8192-10000.wgsmapset.glc",
+        "size": 2340486,
+        "sha256": "934118f315342847071c7a40334b316d83ac8928baf7c05a3bc3b636204d6dbf",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "LAD_DEC_2025_UK_BFC_WGS84-grid-4096-1000.wgsmapset.glc",
+        "size": 215772,
+        "sha256": "8e7141c93c6eb989b9ba727357f3f987e30f1487648b1023a1e26e17bfe78b11",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "LAD_DEC_2025_UK_BFC_WGS84-grid-512-100.wgsmapset.glc",
+        "size": 20290,
+        "sha256": "7a9894ad06c6c6294f2b6064c5ffab1aa47bf41e7477da4e462e01d13bd8f350",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "LAD_DEC_2025_UK_BFC.giswordbook",
+        "size": 6379,
+        "sha256": "28b7bbf991a8cec4b85293855192ba86cb649936f6aa2602b606a56087ba5759"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 5851,
+      "sha256": "3b2ac177fcfe188b7d1eee6567379c0a3c82e199e96cc9ef74f1b221824134a7"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 8435,
+      "sha256": "f3b0496da75facb3022e3442441ba8e69807dabcefc142de452f6d92193ce9ca"
+    },
+    "names": {
+      "path": "LAD_DEC_2025_UK_BFC.names.csv",
+      "size": 29450,
+      "sha256": "3bfd7e13010d7a01c76e675bd54baa12ecdc3178cfeefc7aa431690caeb230a2"
+    }
+  }
+}

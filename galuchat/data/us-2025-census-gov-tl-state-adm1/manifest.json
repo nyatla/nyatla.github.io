@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "us-2025-census-gov-tl-state-adm1",
+  "sourceArchive": "us-2025-census-gov-tl-state-adm1.zip",
+  "sdkVersion": "0.2.1",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 16384,
+        "path": "tl_2025_us_state_WGS84-grid-16384-10000.wgsmapset.glc",
+        "size": 2075732,
+        "sha256": "460aa05dc3afc765ff0bd0d4f6923993c0c443a35077f728044fe2285ee8856a",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 8192,
+        "path": "tl_2025_us_state_WGS84-grid-8192-1000.wgsmapset.glc",
+        "size": 216731,
+        "sha256": "cd06d59a25292652bd8dbe78fa168c206f325f0a215366c093b7a4845c90f384",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "tl_2025_us_state_WGS84-grid-512-100.wgsmapset.glc",
+        "size": 28148,
+        "sha256": "cadf27ea6048520aa55792f25870561e3b9d9bd97a12f3bc2c8cec106823a7ee",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "tl_2025_us_state.giswordbook",
+        "size": 1283,
+        "sha256": "30adc1e795bbfd1c960133f7cfd9bc9e7a12b5e04925f6e767104a86f13c6217"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 4659,
+      "sha256": "98b1b306ca76ea039b63fbb93de2ce94dedf0117b2e1e731ea8b782782e2e7f6"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 8137,
+      "sha256": "0061ef7f67f26a501db0e4865519645b8e4a6007c0359d57b895a0c09624c03b"
+    }
+  }
+}

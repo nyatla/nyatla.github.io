@@ -2,6 +2,7 @@
 
 const STORAGE_KEY = "galuchat-reverse-geocoding-history-v3";
 const DATA_ROOT = "../data";
+const GITHUB_DOCS_ROOT = "https://github.com/nyatla/nyatla.github.io/blob/master/galuchat";
 const SYSTEM_LIMITS = Object.freeze({
   positionsPerRequest: 10000,
   codesPerRequest: 10000,
@@ -9,8 +10,8 @@ const SYSTEM_LIMITS = Object.freeze({
 });
 
 const datasets = {
-  "jp-admin-n03-2026": {
-    manifestUrl: `${DATA_ROOT}/jp-admin-n03-2026/manifest.json`,
+  "jp-2026-mlit-go-jp-n03-adm": {
+    manifestUrl: `${DATA_ROOT}/jp-2026-mlit-go-jp-n03-adm/manifest.json`,
     title: "日本行政区域（国土数値情報 N03 / 2026）",
     description: "国土数値情報N03をGaluchat用に加工した行政区域データ",
     area: { west: 122.9326, south: 20.4227, east: 153.9868, north: 45.5573 },
@@ -24,17 +25,17 @@ const datasets = {
       name: "CC BY 4.0",
       url: "https://creativecommons.org/licenses/by/4.0/",
       sourceName: "国土数値情報 行政区域データ N03-2026",
-      sourceUrl: "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03.html",
+      sourceUrl: "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2026.html",
       attribution: "「国土数値情報（行政区域データ）」（国土交通省）をもとにGaluchat用に加工して作成",
       approval: "測量法に基づく国土地理院長承認（使用）R 8JHs 319",
-      noticeUrl: `${DATA_ROOT}/jp-admin-n03-2026/NOTICE.md`,
+      noticeUrl: `${DATA_ROOT}/jp-2026-mlit-go-jp-n03-adm/NOTICE.md`,
     },
     maps: [
       { id: "unit-inv-10000", label: "1/10000度", resolution: { lon: 0.0001, lat: 0.0001 }, note: "約10 m/px" },
     ],
   },
-  "jp-estat-r2ka-2020": {
-    manifestUrl: `${DATA_ROOT}/jp-estat-r2ka-2020/manifest.json`,
+  "jp-2020-e-stat-go-jp-a002005212020-stat-small-area": {
+    manifestUrl: `${DATA_ROOT}/jp-2020-e-stat-go-jp-a002005212020-stat-small-area/manifest.json`,
     title: "e-Stat 令和2年国勢調査 町丁・字等境界",
     description: "e-Statの町丁・字等境界をGaluchat用に加工した境界データ",
     area: { west: 122.9338, south: 20.425, east: 153.9829, north: 45.5231 },
@@ -50,14 +51,14 @@ const datasets = {
       sourceName: "令和2年国勢調査 町丁・字等境界データ",
       sourceUrl: "https://www.e-stat.go.jp/gis/statmap-search?page=1&type=2&aggregateUnitForBoundary=A&toukeiCode=00200521&toukeiYear=2020&serveyId=A002005212020&coordsys=1&format=shape&datum=2011",
       attribution: "「令和2年国勢調査 町丁・字等境界データ」（総務省統計局、e-Stat）をGaluchat用に加工して作成",
-      noticeUrl: `${DATA_ROOT}/jp-estat-r2ka-2020/NOTICE.md`,
+      noticeUrl: `${DATA_ROOT}/jp-2020-e-stat-go-jp-a002005212020-stat-small-area/NOTICE.md`,
     },
     maps: [
       { id: "unit-inv-10000", label: "1/10000度", resolution: { lon: 0.0001, lat: 0.0001 }, note: "約10 m/px" },
     ],
   },
-  "tw-admin-nlsc-village-2026": {
-    manifestUrl: `${DATA_ROOT}/tw-admin-nlsc-village-2026/manifest.json`,
+  "tw-2026-maps-nlsc-gov-tw-village-adm": {
+    manifestUrl: `${DATA_ROOT}/tw-2026-maps-nlsc-gov-tw-village-adm/manifest.json`,
     title: "台湾 村里界（NLSC / 2026）",
     description: "內政部國土測繪中心の村里界圖をGaluchat用に加工した行政区域データ",
     area: { west: 114.3593, south: 10.3713, east: 124.5613, north: 26.3854 },
@@ -73,14 +74,14 @@ const datasets = {
       sourceName: "內政部國土測繪中心 村里界圖(TWD97經緯度)",
       sourceUrl: "https://data.gov.tw/dataset/7438",
       attribution: "內政部國土測繪中心 2026 村里界圖(TWD97經緯度)（2026-08-17版）。此開放資料依政府資料開放授權條款第1版進行公眾釋出。",
-      noticeUrl: `${DATA_ROOT}/tw-admin-nlsc-village-2026/NOTICE.md`,
+      noticeUrl: `${DATA_ROOT}/tw-2026-maps-nlsc-gov-tw-village-adm/NOTICE.md`,
     },
     maps: [
       { id: "unit-inv-10000", label: "1/10000度", resolution: { lon: 0.0001, lat: 0.0001 }, note: "約10 m/px" },
     ],
   },
-  "uk-admin-ons-lad-2025": {
-    manifestUrl: `${DATA_ROOT}/uk-admin-ons-lad-2025/manifest.json`,
+  "gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc": {
+    manifestUrl: `${DATA_ROOT}/gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc/manifest.json`,
     title: "英国 Local Authority Districts（ONS / 2025）",
     description: "ONS Local Authority Districts (December 2025) UK BFCをGaluchat用に加工した行政区域データ",
     area: { west: -8.65, south: 49.8647, east: 1.7638, north: 60.8609 },
@@ -97,14 +98,14 @@ const datasets = {
       sourceName: "ONS Local Authority Districts (December 2025) Boundaries UK BFC",
       sourceUrl: "https://www.data.gov.uk/dataset/aa5a9ccf-fbea-43cb-81cc-fdc04d89f128/local-authority-districts-december-2025-boundaries-uk-bfc",
       attribution: "Source: Office for National Statistics licensed under the Open Government Licence v.3.0. Contains OS data © Crown copyright and database right 2026.",
-      noticeUrl: `${DATA_ROOT}/uk-admin-ons-lad-2025/NOTICE.md`,
+      noticeUrl: `${DATA_ROOT}/gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc/NOTICE.md`,
     },
     maps: [
       { id: "unit-inv-10000", label: "1/10000度", resolution: { lon: 0.0001, lat: 0.0001 }, note: "約10 m/px" },
     ],
   },
-  "us-admin-census-county-2025": {
-    manifestUrl: `${DATA_ROOT}/us-admin-census-county-2025/manifest.json`,
+  "us-2025-census-gov-tl-county-adm2": {
+    manifestUrl: `${DATA_ROOT}/us-2025-census-gov-tl-county-adm2/manifest.json`,
     title: "米国 County and Equivalent Entities（Census TIGER/Line / 2025）",
     description: "U.S. Census Bureau 2025 TIGER/Line County and Equivalent EntitiesをGaluchat用に加工した行政区域データ",
     area: { west: -179.2, south: 18.9, east: -65.7, north: 71.4 },
@@ -122,16 +123,16 @@ const datasets = {
       sourceName: "U.S. Census Bureau 2025 TIGER/Line County and Equivalent Entities",
       sourceUrl: "https://www2.census.gov/geo/tiger/TIGER2025/COUNTY/tl_2025_us_county.zip",
       attribution: "Source: U.S. Census Bureau, 2025 TIGER/Line® Shapefiles, County and Equivalent Entities. Derived and processed by the Galuchat project; not endorsed by the U.S. Census Bureau.",
-      noticeUrl: `${DATA_ROOT}/us-admin-census-county-2025/NOTICE.md`,
+      noticeUrl: `${DATA_ROOT}/us-2025-census-gov-tl-county-adm2/NOTICE.md`,
     },
     maps: [
       { id: "unit-inv-10000", label: "1/10000度", resolution: { lon: 0.0001, lat: 0.0001 }, note: "約10 m/px" },
     ],
   },
-  "world-geoboundaries-cgaz": {
-    manifestUrl: `${DATA_ROOT}/world-geoboundaries-cgaz/manifest.json`,
+  "world-2024-geoboundaries-org-cgaz-adm": {
+    manifestUrl: `${DATA_ROOT}/world-2024-geoboundaries-org-cgaz-adm/manifest.json`,
     title: "世界行政区域（geoBoundaries CGAZ）",
-    description: "geoBoundaries CGAZ ADM2 global compositeをGaluchat用に加工した世界行政区域データ",
+    description: "geoBoundaries CGAZの利用可能な最詳細行政区域をGaluchat用に加工した世界行政区域データ",
     area: { west: -180, south: -89.999, east: 180.001, north: 83.617 },
     codemaps: ["place-name-utf8"],
     samples: [
@@ -142,10 +143,10 @@ const datasets = {
     license: {
       name: "CC BY 4.0",
       url: "https://creativecommons.org/licenses/by/4.0/",
-      sourceName: "geoBoundaries CGAZ ADM2 global composite",
+      sourceName: "geoBoundaries CGAZ best-available administrative areas",
       sourceUrl: "https://www.geoboundaries.org/globalDownloads.html",
-      attribution: "Contains information from geoBoundaries, adapted for Galuchat.",
-      noticeUrl: `${DATA_ROOT}/world-geoboundaries-cgaz/NOTICE.md`,
+      attribution: "Contains information from geoBoundaries, produced by the William & Mary geoLab and the geoBoundaries community, licensed under CC BY 4.0. Adapted for Galuchat.",
+      noticeUrl: `${DATA_ROOT}/world-2024-geoboundaries-org-cgaz-adm/NOTICE.md`,
     },
     maps: [
       { id: "unit-inv-1000", label: "1/1000度", resolution: { lon: 0.001, lat: 0.001 }, note: "約100 m/px" },
@@ -175,6 +176,7 @@ const licenseLink = document.querySelector("#license-link");
 const sourceLink = document.querySelector("#source-link");
 const attribution = document.querySelector("#attribution");
 const approval = document.querySelector("#approval");
+const dataSpecLink = document.querySelector("#data-spec-link");
 const noticeLink = document.querySelector("#notice-link");
 const codemapList = document.querySelector("#codemap-list");
 const submitButton = document.querySelector("#submit-button");
@@ -217,7 +219,7 @@ async function initialize() {
     datasetSelect.append(option);
   }
 
-  datasetSelect.value = "jp-admin-n03-2026";
+  datasetSelect.value = "jp-2026-mlit-go-jp-n03-adm";
   updateMapOptions("unit-inv-10000");
 
   renderHistory();
@@ -574,7 +576,9 @@ downloadCsvButton.addEventListener("click", () => {
 });
 
 function historyCsvRows(record) {
-  const license = datasets[record.input.dataset]?.license ?? {};
+  const license = record.result.license ?? (datasets[record.input.dataset]
+    ? serializeLicense(datasets[record.input.dataset].license)
+    : {});
   const common = (position, status, code, name, inputCount, inputIndex) => [
     record.timestamp,
     isMultipleRecord(record) ? "multiple" : "single",
@@ -590,13 +594,13 @@ function historyCsvRows(record) {
     code ?? "",
     name ?? "",
     record.elapsed_ms,
-    license.sourceName ?? "",
-    license.sourceUrl ?? "",
+    license.source_name ?? "",
+    license.source_url ?? "",
     license.name ?? "",
     license.url ?? "",
     license.attribution ?? "",
     license.approval ?? "",
-    license.noticeUrl ?? "",
+    license.notice_url ?? "",
   ];
 
   if (!isMultipleRecord(record)) {
@@ -670,7 +674,9 @@ function updateDatasetMeta() {
   attribution.textContent = license.attribution;
   approval.textContent = license.approval ?? "";
   approval.hidden = license.approval === undefined;
-  noticeLink.href = license.noticeUrl;
+  dataSpecLink.href = `${GITHUB_DOCS_ROOT}/data/${datasetSelect.value}/data-spec.md`;
+  // The UI opens GitHub's Markdown view; the API still exposes the raw site NOTICE URL.
+  noticeLink.href = `${GITHUB_DOCS_ROOT}/data/${datasetSelect.value}/NOTICE.md`;
 
   codemapList.replaceChildren();
   for (const name of dataset.codemaps) {
@@ -1308,7 +1314,7 @@ function buildApiSpec() {
   return {
     ok: true,
     version: "galuchat-webmcp/0;GaluchatJavaScript/0.5.2",
-    default_dataset_id: "jp-admin-n03-2026",
+    default_dataset_id: "jp-2026-mlit-go-jp-n03-adm",
     limits: { ...SYSTEM_LIMITS },
     datasets: Object.entries(datasets).map(([id, dataset]) => ({
       id,
@@ -1716,19 +1722,12 @@ function exportedDatasets() {
   const ids = [...new Set(history.map((record) => record.input.dataset))];
   return ids.map((id) => {
     const dataset = datasets[id];
-    const license = dataset?.license;
+    const license = history.find((record) => record.input.dataset === id)?.result?.license
+      ?? (dataset ? serializeLicense(dataset.license) : null);
     return {
       id,
       title: dataset?.title ?? id,
-      license: license ? {
-        name: license.name,
-        url: license.url,
-        source_name: license.sourceName,
-        source_url: license.sourceUrl,
-        attribution: license.attribution,
-        approval: license.approval ?? null,
-        notice_url: license.noticeUrl,
-      } : null,
+      license,
     };
   });
 }

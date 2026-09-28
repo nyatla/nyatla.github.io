@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "jp-2026-mlit-go-jp-n03-adm",
+  "sourceArchive": "jp-2026-mlit-go-jp-n03-adm.zip",
+  "sdkVersion": "0.2.1",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "N03-20260101-grid-8192-10000.wgsmapset.glc",
+        "size": 4691841,
+        "sha256": "08a76c42b714f411a30749444da8e691cd0fc615d3f770bbd27fccbafab5e89c",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "N03-20260101-grid-4096-1000.wgsmapset.glc",
+        "size": 490333,
+        "sha256": "cedd668c3b07cbc3b50e5968e2bf7fafb5ce5ecce6bc3f55afa9f81c9325678b",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "N03-20260101-grid-512-100.wgsmapset.glc",
+        "size": 52958,
+        "sha256": "8592248d56a095a172b49fbbc09489e41e87580861fa5575827cdf16a5f9f9b2",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "N03-20260101.giswordbook",
+        "size": 31922,
+        "sha256": "84512bf7f7f1fa004da6379ea7eb560eaa75806f08020a27c175e93691004449"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 3845,
+      "sha256": "091fa6c30ccdc3694d960259a8b798775e43b4b5169077063b27a35b72ab445d"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 8722,
+      "sha256": "8c3520db3d90f7dd864df57d965f197af4c4b44089f3b4e833f4d4e3b02e9cac"
+    },
+    "metadata": {
+      "path": "X7115_metadata.xml",
+      "size": 6741,
+      "sha256": "fc9c29f0b6933cfeaf0ed3efd0fa4acf3238faad486234cf302b13148ad88f84"
+    }
+  }
+}

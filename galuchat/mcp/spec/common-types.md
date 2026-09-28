@@ -31,7 +31,7 @@ Status: Draft
 
 ```json
 {
-  "id": "jp-admin-n03-2026",
+  "id": "jp-2026-mlit-go-jp-n03-adm",
   "title": "日本行政区域 2026"
 }
 ```
@@ -59,7 +59,7 @@ API入力の`dataset`には、API仕様の`datasets[].id`を指定する。
   "source_url": "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03.html",
   "attribution": "「国土数値情報（行政区域データ）」（国土交通省）をもとにGaluchat用に加工して作成",
   "approval": "測量法に基づく国土地理院長承認（使用）R 8JHs 319",
-  "notice_url": "https://nyatla.github.io/galuchat/data/jp-admin-n03-2026/NOTICE.md"
+  "notice_url": "https://nyatla.github.io/galuchat/data/jp-2026-mlit-go-jp-n03-adm/NOTICE.md"
 }
 ```
 

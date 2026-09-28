@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja" data-title-ja="Galuchat GIS SDK — 地図" data-title-en="Galuchat GIS SDK — Maps">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Galuchat GIS SDKの地図データを切り替えて、区域と地名をブラウザで調べます。" data-description-ja="Galuchat GIS SDKの地図データを切り替えて、区域と地名をブラウザで調べます。" data-description-en="Switch Galuchat GIS SDK datasets and explore regions and place names in your browser.">
+  <title>Galuchat GIS SDK — 地図</title>
+  <link rel="stylesheet" href="../assets/machml-switch.css">
+  <link rel="stylesheet" href="./page.css">
+  <link rel="stylesheet" href="../assets/map-view.css">
+  <script src="../assets/machml.min.js"></script>
+  <script src="../assets/machml-switch.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <a class="brand" href="../">Galuchat GIS SDK</a>
+      <nav class="site-nav" aria-label="ページの案内" data-aria-ja="ページの案内" data-aria-en="Page navigation">
+        <a href="../"><ml-text ja="概要" en="Overview"></ml-text></a>
+        <a href="../mcp/"><ml-text ja="逆ジオコーディング" en="Reverse geocoding"></ml-text></a>
+      </nav>
+      <div class="header-actions">
+        <nav class="language-switch" aria-label="Language / 言語">
+          <button type="button" data-machml-locale="ja">日本語</button>
+          <button type="button" data-machml-locale="en">English</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1><ml-text ja="地図で区域と地名を調べる" en="Explore regions and place names on a map"></ml-text></h1>
+      <p class="intro"><ml-text ja="データを選び、地図をドラッグして移動します。地点をクリックすると、その場所を含む区域と地名を確認できます。地図画像は、区域を画素単位で記録したデータから再構成して描画しています。" en="Choose a dataset and drag the map to move around. Click a location to see the region and place name there. The map image is reconstructed and rendered from data that records regions pixel by pixel."></ml-text></p>
+
+      <div class="dataset-control">
+        <label for="dataset-select"><ml-text ja="表示するデータ" en="Dataset to display"></ml-text></label>
+        <select id="dataset-select" aria-describedby="dataset-description"></select>
+        <p id="dataset-description"></p>
+      </div>
+
+      <section class="map-view" aria-label="地図" data-aria-ja="地図" data-aria-en="Map">
+        <div class="map-view__result">
+          <p id="place-name" aria-live="polite"><ml-text ja="地図データを読み込んでいます…" en="Loading map data…"></ml-text></p>
+          <p id="runtime-state" role="status" aria-live="polite"></p>
+        </div>
+        <div class="map-view__toolbar" aria-label="地図操作" data-aria-ja="地図操作" data-aria-en="Map controls">
+          <button id="zoom-out" type="button" disabled aria-label="縮小" data-aria-ja="縮小" data-aria-en="Zoom out">−</button>
+          <button id="zoom-in" type="button" disabled aria-label="拡大" data-aria-ja="拡大" data-aria-en="Zoom in">＋</button>
+          <button id="home" type="button" disabled><ml-text ja="初期位置" en="Home"></ml-text></button>
+          <button id="retry" type="button" hidden><ml-text ja="再試行" en="Retry"></ml-text></button>
+        </div>
+        <div id="map-shell" class="map-view__shell"></div>
+        <p class="map-view__help"><ml-text ja="ドラッグで移動 · クリックで区域選択 · ホイールまたは＋−で拡大縮小" en="Drag to move · click to select a region · use the wheel or +/− to zoom"></ml-text></p>
+        <p id="zoom-label" class="map-view__zoom"></p>
+        <div id="sample-locations" class="map-view__locations"></div>
+      </section>
+
+      <section class="data-info" aria-labelledby="data-info-title">
+        <h2 id="data-info-title"><ml-text ja="選択中のデータ" en="Selected dataset"></ml-text></h2>
+        <p id="data-area"></p>
+        <p id="source-credit"></p>
+        <p id="approval" hidden></p>
+        <p id="data-caveat" hidden></p>
+        <p class="data-links"><a id="data-spec-link" href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2026-mlit-go-jp-n03-adm/data-spec.md"><ml-text ja="データ仕様（data-spec）" en="Dataset specification (data-spec)"></ml-text></a><span aria-hidden="true"> · </span><a id="notice-link" href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2026-mlit-go-jp-n03-adm/NOTICE.md"><ml-text ja="この地図のNOTICE（出典・利用条件）" en="NOTICE for this map (source and terms)"></ml-text></a><span aria-hidden="true"> · </span><a id="license-link" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p><ml-text ja="Galuchatのソフトウェアは" en="Galuchat software is licensed under the "></ml-text><a href="../LICENSE">Apache License 2.0</a><ml-text ja="で提供されます。" en="."></ml-text> <a href="../NOTICE">NOTICE</a></p>
+    </footer>
+  </div>
+  <script src="../assets/galuchat.min.js"></script>
+  <script src="./config.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
