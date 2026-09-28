@@ -1,25 +1,33 @@
 <!doctype html>
-<html lang="ja">
+<html lang="ja" data-title-ja="Galuchat GIS SDK — 逆ジオコーディング" data-title-en="Galuchat GIS SDK — Reverse Geocoding">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="サーバーAPIを使わず、Web UIとWebMCPから回数制限なく利用できるGaluchatの逆ジオコーディングです。">
-    <title>Galuchat GIS SDK — Reverse Geocoding</title>
+    <meta name="description" content="サーバーAPIを使わず、Web UIとWebMCPから回数制限なく利用できるGaluchatの逆ジオコーディングです。" data-description-ja="サーバーAPIを使わず、Web UIとWebMCPから回数制限なく利用できるGaluchatの逆ジオコーディングです。" data-description-en="Reverse geocode in your browser via the web UI or WebMCP, without a server API or request limits.">
+    <title>Galuchat GIS SDK — 逆ジオコーディング</title>
+    <link rel="stylesheet" href="../assets/machml-switch.css">
     <link rel="stylesheet" href="./styles.css?v=19">
+    <script src="../assets/machml.min.js"></script>
+    <script src="../assets/machml-switch.js"></script>
     <script src="../assets/galuchat.min.js?v=1" defer></script>
-    <script src="./app.js?v=23" defer></script>
+    <script src="../maps/config.js" defer></script>
+    <script src="./app.js?v=24" defer></script>
   </head>
   <body>
     <header class="site-header">
       <div class="header-inner">
-        <a class="brand" href="../" aria-label="Galuchat GIS SDK トップ">
+        <a class="brand" href="../" aria-label="Galuchat GIS SDK トップ" data-aria-ja="Galuchat GIS SDK トップ" data-aria-en="Galuchat GIS SDK home">
           Galuchat <span>GIS SDK</span>
         </a>
         <div class="product-name">/ Reverse Geocoding</div>
         <div class="header-actions">
-          <a class="header-home-link" href="../">概要</a>
-          <a class="header-spec-link" href="./spec/README.md">API仕様</a>
+          <a class="header-home-link" href="../"><ml-text ja="概要" en="Overview"></ml-text></a>
+          <a class="header-spec-link" href="./spec/README.md"><ml-text ja="API仕様" en="API specification"></ml-text></a>
           <span id="webmcp-status" class="webmcp-status" role="status" aria-live="polite" title="WebMCPの対応状況を確認中">WebMCP CHECKING</span>
+          <nav class="language-switch" aria-label="Language / 言語">
+            <button type="button" data-machml-locale="ja">日本語</button>
+            <button type="button" data-machml-locale="en">English</button>
+          </nav>
         </div>
       </div>
     </header>
@@ -28,8 +36,8 @@
       <section class="service-overview" aria-labelledby="page-title">
         <div class="page-title-block">
           <p class="eyebrow">WEBMCP · REVERSE GEOCODING</p>
-          <h1 id="page-title">逆ジオコーディング</h1>
-          <p class="service-description">経度・緯度を、行政区域コードと地域情報に変換します。処理はブラウザ内で完結するため、サーバーAPIの検索回数やレート制限を気にせず利用できます。</p>
+          <h1 id="page-title"><ml-text ja="逆ジオコーディング" en="Reverse geocoding"></ml-text></h1>
+          <p class="service-description"><ml-text ja="経度・緯度を、行政区域コードと地域情報に変換します。処理はブラウザ内で完結するため、サーバーAPIの検索回数やレート制限を気にせず利用できます。" en="Convert longitude and latitude into a region code and place information. Processing stays in your browser, with no server API request or rate limits."></ml-text></p>
         </div>
       </section>
 
@@ -38,46 +46,46 @@
           <div class="card-heading">
             <div>
               <p class="card-kicker">INPUT</p>
-              <h2 id="query-title">座標を検索</h2>
-              <p class="card-subtitle">1地点から10,000地点まで</p>
+              <h2 id="query-title"><ml-text ja="座標を検索" en="Search coordinates"></ml-text></h2>
+              <p class="card-subtitle"><ml-text ja="1地点から10,000地点まで" en="From 1 to 10,000 points"></ml-text></p>
             </div>
             <span class="runtime-badge">BROWSER LOCAL</span>
           </div>
 
           <form id="geocode-form" novalidate>
             <fieldset class="dataset-fieldset">
-              <legend>検索データ</legend>
+              <legend><ml-text ja="検索データ" en="Search data"></ml-text></legend>
               <label class="select-label">
-                <span>データセット</span>
+                <span><ml-text ja="データセット" en="Dataset"></ml-text></span>
                 <select id="dataset" name="dataset"></select>
               </label>
-              <select id="map" name="map" aria-label="使用する地図解像度" hidden></select>
+              <select id="map" name="map" aria-label="使用する地図解像度" data-aria-ja="使用する地図解像度" data-aria-en="Map resolution used" hidden></select>
             </fieldset>
 
             <fieldset>
-              <legend class="visually-hidden">検索する座標</legend>
+              <legend class="visually-hidden"><ml-text ja="検索する座標" en="Coordinates to search"></ml-text></legend>
               <div class="coordinate-heading">
                 <div>
-                  <strong>座標</strong>
-                  <span>経度・緯度を入力</span>
+                  <strong><ml-text ja="座標" en="Coordinates"></ml-text></strong>
+                  <span><ml-text ja="経度・緯度を入力" en="Enter longitude and latitude"></ml-text></span>
                 </div>
                 <span id="coordinate-count">0地点</span>
               </div>
               <div id="coordinate-list-header" class="coordinate-list-header" aria-hidden="true">
                 <span></span>
-                <span>経度 <small>Lon</small></span>
-                <span>緯度 <small>Lat</small></span>
+                <span><ml-text ja="経度" en="Longitude"></ml-text> <small>Lon</small></span>
+                <span><ml-text ja="緯度" en="Latitude"></ml-text> <small>Lat</small></span>
                 <span></span>
               </div>
               <div id="coordinate-list" class="coordinate-list">
                 <div class="coordinate-row" data-coordinate-row>
                   <span class="coordinate-index">01</span>
                   <label>
-                  <span class="visually-hidden">1地点目の経度</span>
+                  <span class="visually-hidden"><ml-text ja="1地点目の経度" en="Longitude of point 1"></ml-text></span>
                     <input class="longitude-input" name="longitude" type="number" inputmode="decimal" min="-180" max="180" step="0.0001" value="" required>
                   </label>
                   <label>
-                    <span class="visually-hidden">1地点目の緯度</span>
+                    <span class="visually-hidden"><ml-text ja="1地点目の緯度" en="Latitude of point 1"></ml-text></span>
                     <input class="latitude-input" name="latitude" type="number" inputmode="decimal" min="-90" max="90" step="0.0001" value="" required>
                   </label>
                   <button class="remove-coordinate" type="button" aria-label="1地点目を削除" title="この地点を削除">
@@ -87,27 +95,27 @@
                 </div>
               </div>
               <div class="coordinate-actions">
-                <button id="add-coordinate" class="coordinate-action is-add" type="button">＋ 地点を追加</button>
-                <button id="paste-coordinates" class="coordinate-action" type="button" aria-expanded="false" aria-controls="coordinate-paste-panel">複数地点を追加</button>
-                <button id="clear-coordinates" class="coordinate-action is-clear" type="button">クリア</button>
+                <button id="add-coordinate" class="coordinate-action is-add" type="button"><ml-text ja="＋ 地点を追加" en="＋ Add point"></ml-text></button>
+                <button id="paste-coordinates" class="coordinate-action" type="button" aria-expanded="false" aria-controls="coordinate-paste-panel"><ml-text ja="複数地点を追加" en="Add multiple points"></ml-text></button>
+                <button id="clear-coordinates" class="coordinate-action is-clear" type="button"><ml-text ja="クリア" en="Clear"></ml-text></button>
               </div>
-              <div class="sample-points" aria-label="サンプル地点">
-                <span>サンプルを追加</span>
-                <button type="button" data-sample-lon="140.0206" data-sample-lat="35.6911">津田沼駅</button>
-                <button type="button" data-sample-lon="139.7671" data-sample-lat="35.6812">東京駅</button>
-                <button type="button" data-sample-lon="135.7588" data-sample-lat="34.9858">京都駅</button>
+              <div class="sample-points" aria-label="サンプル地点" data-aria-ja="サンプル地点" data-aria-en="Sample points">
+                <span><ml-text ja="サンプルを追加" en="Add a sample"></ml-text></span>
+                <button type="button" data-sample-lon="140.0206" data-sample-lat="35.6911"><ml-text ja="津田沼駅" en="Tsudanuma"></ml-text></button>
+                <button type="button" data-sample-lon="139.7671" data-sample-lat="35.6812"><ml-text ja="東京駅" en="Tokyo"></ml-text></button>
+                <button type="button" data-sample-lon="135.7588" data-sample-lat="34.9858"><ml-text ja="京都駅" en="Kyoto"></ml-text></button>
               </div>
               <div id="coordinate-paste-panel" class="coordinate-paste-panel" hidden>
-                <label for="coordinate-paste-input">追加する座標</label>
+                <label for="coordinate-paste-input"><ml-text ja="追加する座標" en="Coordinates to add"></ml-text></label>
                 <textarea id="coordinate-paste-input" rows="5" spellcheck="false" aria-describedby="coordinate-paste-help"></textarea>
                 <div class="coordinate-paste-example">
-                  <span>入力例</span>
+                  <span><ml-text ja="入力例" en="Example"></ml-text></span>
                   <code>139.7671, 35.6812</code>
                 </div>
-                <p id="coordinate-paste-help">1行に「経度, 緯度」の順で入力します。カンマ、タブ、空白区切りに対応し、入力済みの座標は残ります。</p>
+                <p id="coordinate-paste-help"><ml-text ja="1行に「経度, 緯度」の順で入力します。カンマ、タブ、空白区切りに対応し、入力済みの座標は残ります。" en="Enter one longitude, latitude pair per line. Commas, tabs, and spaces are accepted. Existing coordinates are kept."></ml-text></p>
                 <div class="paste-actions">
-                  <button id="apply-coordinate-paste" type="button">リストへ追加</button>
-                  <button id="cancel-coordinate-paste" type="button">キャンセル</button>
+                  <button id="apply-coordinate-paste" type="button"><ml-text ja="リストへ追加" en="Add to list"></ml-text></button>
+                  <button id="cancel-coordinate-paste" type="button"><ml-text ja="キャンセル" en="Cancel"></ml-text></button>
                 </div>
               </div>
               <p id="coordinate-error" class="field-error" role="alert"></p>
@@ -115,24 +123,24 @@
             </fieldset>
 
             <button id="submit-button" class="primary-button" type="submit" disabled>
-              <span>座標を入力してください</span>
+              <span><ml-text ja="座標を入力してください" en="Enter coordinates"></ml-text></span>
               <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4"/></svg>
             </button>
 
             <div id="load-panel" class="load-panel" hidden aria-live="polite">
               <div class="load-panel-heading">
                 <span class="load-spinner" aria-hidden="true"></span>
-                <strong>地図データを読み込み中</strong>
+                <strong><ml-text ja="地図データを読み込み中" en="Loading map data"></ml-text></strong>
                 <span id="load-progress-text">0%</span>
               </div>
               <p id="load-resource"></p>
               <div class="load-progress" aria-hidden="true"><span id="load-progress-bar"></span></div>
             </div>
 
-            <div class="data-reference" aria-label="使用データの詳細">
+            <div class="data-reference" aria-label="使用データの詳細" data-aria-ja="使用データの詳細" data-aria-en="Dataset details">
               <div id="map-meta" class="map-meta" aria-live="polite"></div>
               <div class="codemap-note">
-                <span>取得する情報</span>
+                <span><ml-text ja="取得する情報" en="Information returned"></ml-text></span>
                 <div id="codemap-list"></div>
               </div>
               <div id="license-panel" class="license-panel">
@@ -144,8 +152,8 @@
                 <p id="attribution"></p>
                 <p id="approval" class="approval-note" hidden></p>
                 <div class="document-links">
-                  <a id="data-spec-link" href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2026-mlit-go-jp-n03-adm/data-spec.md">データ仕様（data-spec）</a>
-                  <a id="notice-link" href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2026-mlit-go-jp-n03-adm/NOTICE.md">NOTICE（出典・利用条件）</a>
+                  <a id="data-spec-link" href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2026-mlit-go-jp-n03-adm/data-spec.md"><ml-text ja="データ仕様（data-spec）" en="Dataset specification (data-spec)"></ml-text></a>
+                  <a id="notice-link" href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2026-mlit-go-jp-n03-adm/NOTICE.md"><ml-text ja="NOTICE（出典・利用条件）" en="NOTICE (sources and terms)"></ml-text></a>
                 </div>
               </div>
             </div>
@@ -157,14 +165,14 @@
             <div class="history-title-wrap">
               <div>
                 <p class="card-kicker">OUTPUT</p>
-                <h2 id="history-title">結果履歴</h2>
-                <p><span id="history-count">0</span>件の検索 · このブラウザに最大100件保存</p>
+                <h2 id="history-title"><ml-text ja="結果履歴" en="Result history"></ml-text></h2>
+                <p><span id="history-count">0</span><ml-text ja="件の検索 · このブラウザに最大100件保存" en=" searches · up to 100 saved in this browser"></ml-text></p>
               </div>
             </div>
             <div class="history-actions">
               <button id="download-json" class="quiet-button" type="button">JSON</button>
               <button id="download-csv" class="quiet-button" type="button">CSV</button>
-              <button id="clear-history" class="icon-button" type="button" aria-label="検索結果を消去" title="検索結果を消去">
+              <button id="clear-history" class="icon-button" type="button" aria-label="検索結果を消去" title="検索結果を消去" data-aria-ja="検索結果を消去" data-aria-en="Clear search results">
                 <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4.5 6h11M8 3.5h4M6.5 6l.6 10h5.8l.6-10M8.5 8.5v5M11.5 8.5v5"/></svg>
               </button>
             </div>
@@ -172,8 +180,8 @@
 
           <div id="empty-state" class="empty-state" hidden>
             <span aria-hidden="true">＋</span>
-            <h3>まだ検索結果はありません</h3>
-            <p>座標を追加して検索すると、ここに結果が時系列で表示されます。</p>
+            <h3><ml-text ja="まだ検索結果はありません" en="No results yet"></ml-text></h3>
+            <p><ml-text ja="座標を追加して検索すると、ここに結果が時系列で表示されます。" en="Add coordinates and search to see results here in chronological order."></ml-text></p>
           </div>
           <ol id="timeline" class="timeline" aria-live="polite"></ol>
         </section>

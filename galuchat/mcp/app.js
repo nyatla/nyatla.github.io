@@ -3,6 +3,11 @@
 const STORAGE_KEY = "galuchat-reverse-geocoding-history-v3";
 const DATA_ROOT = "../data";
 const GITHUB_DOCS_ROOT = "https://github.com/nyatla/nyatla.github.io/blob/master/galuchat";
+const mapConfigById = new Map(window.GaluchatMapDatasets.map((config) => [config.id, config]));
+const localize = (ja, en) => GaluchatLocale.locale === "ja" ? ja : en;
+const datasetTitle = (id) => GaluchatLocale.locale === "ja"
+  ? datasets[id].title
+  : mapConfigById.get(id)?.title[1] ?? datasets[id].title;
 const SYSTEM_LIMITS = Object.freeze({
   positionsPerRequest: 10000,
   codesPerRequest: 10000,
@@ -30,9 +35,7 @@ const datasets = {
       approval: "測量法に基づく国土地理院長承認（使用）R 8JHs 319",
       noticeUrl: `${DATA_ROOT}/jp-2026-mlit-go-jp-n03-adm/NOTICE.md`,
     },
-    maps: [
-      { id: "unit-inv-10000", label: "1/10000度", resolution: { lon: 0.0001, lat: 0.0001 }, note: "約10 m/px" },
-    ],
+    maps: [],
   },
   "jp-2020-e-stat-go-jp-a002005212020-stat-small-area": {
     manifestUrl: `${DATA_ROOT}/jp-2020-e-stat-go-jp-a002005212020-stat-small-area/manifest.json`,
@@ -53,9 +56,7 @@ const datasets = {
       attribution: "「令和2年国勢調査 町丁・字等境界データ」（総務省統計局、e-Stat）をGaluchat用に加工して作成",
       noticeUrl: `${DATA_ROOT}/jp-2020-e-stat-go-jp-a002005212020-stat-small-area/NOTICE.md`,
     },
-    maps: [
-      { id: "unit-inv-10000", label: "1/10000度", resolution: { lon: 0.0001, lat: 0.0001 }, note: "約10 m/px" },
-    ],
+    maps: [],
   },
   "tw-2026-maps-nlsc-gov-tw-village-adm": {
     manifestUrl: `${DATA_ROOT}/tw-2026-maps-nlsc-gov-tw-village-adm/manifest.json`,
@@ -76,9 +77,7 @@ const datasets = {
       attribution: "內政部國土測繪中心 2026 村里界圖(TWD97經緯度)（2026-08-17版）。此開放資料依政府資料開放授權條款第1版進行公眾釋出。",
       noticeUrl: `${DATA_ROOT}/tw-2026-maps-nlsc-gov-tw-village-adm/NOTICE.md`,
     },
-    maps: [
-      { id: "unit-inv-10000", label: "1/10000度", resolution: { lon: 0.0001, lat: 0.0001 }, note: "約10 m/px" },
-    ],
+    maps: [],
   },
   "gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc": {
     manifestUrl: `${DATA_ROOT}/gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc/manifest.json`,
@@ -100,15 +99,13 @@ const datasets = {
       attribution: "Source: Office for National Statistics licensed under the Open Government Licence v.3.0. Contains OS data © Crown copyright and database right 2026.",
       noticeUrl: `${DATA_ROOT}/gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc/NOTICE.md`,
     },
-    maps: [
-      { id: "unit-inv-10000", label: "1/10000度", resolution: { lon: 0.0001, lat: 0.0001 }, note: "約10 m/px" },
-    ],
+    maps: [],
   },
   "us-2025-census-gov-tl-county-adm2": {
     manifestUrl: `${DATA_ROOT}/us-2025-census-gov-tl-county-adm2/manifest.json`,
     title: "米国 County and Equivalent Entities（Census TIGER/Line / 2025）",
     description: "U.S. Census Bureau 2025 TIGER/Line County and Equivalent EntitiesをGaluchat用に加工した行政区域データ",
-    area: { west: -179.2, south: 18.9, east: -65.7, north: 71.4 },
+    area: { west: -179.2311, south: 18.8655, east: 179.8598, north: 71.4399 },
     codemaps: ["place-name-utf8"],
     samples: [
       { label: "New York", lon: -74.006, lat: 40.7128 },
@@ -125,9 +122,7 @@ const datasets = {
       attribution: "Source: U.S. Census Bureau, 2025 TIGER/Line® Shapefiles, County and Equivalent Entities. Derived and processed by the Galuchat project; not endorsed by the U.S. Census Bureau.",
       noticeUrl: `${DATA_ROOT}/us-2025-census-gov-tl-county-adm2/NOTICE.md`,
     },
-    maps: [
-      { id: "unit-inv-10000", label: "1/10000度", resolution: { lon: 0.0001, lat: 0.0001 }, note: "約10 m/px" },
-    ],
+    maps: [],
   },
   "world-2024-geoboundaries-org-cgaz-adm": {
     manifestUrl: `${DATA_ROOT}/world-2024-geoboundaries-org-cgaz-adm/manifest.json`,
@@ -148,11 +143,92 @@ const datasets = {
       attribution: "Contains information from geoBoundaries, produced by the William & Mary geoLab and the geoBoundaries community, licensed under CC BY 4.0. Adapted for Galuchat.",
       noticeUrl: `${DATA_ROOT}/world-2024-geoboundaries-org-cgaz-adm/NOTICE.md`,
     },
-    maps: [
-      { id: "unit-inv-1000", label: "1/1000度", resolution: { lon: 0.001, lat: 0.001 }, note: "約100 m/px" },
-    ],
+    maps: [],
   },
 };
+
+// The map page owns the published dataset list. Keep the reverse-geocoder's
+// existing detailed metadata, and add the remaining datasets from that list.
+const additionalDatasetDetails = {
+  "jp-2024-mlit-go-jp-n03-adm": {
+    area: { west: 122.9326, south: 20.4227, east: 153.9868, north: 45.5573 },
+    sourceName: "国土数値情報 行政区域データ N03-2024",
+    sourceUrl: "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2024.html",
+  },
+  "jp-2025-mlit-go-jp-n03-adm": {
+    area: { west: 122.9326, south: 20.4227, east: 153.9868, north: 45.5573 },
+    sourceName: "国土数値情報 行政区域データ N03-2025",
+    sourceUrl: "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
+  },
+  "jp-2026-nyatla-jp-estat-coastline": {
+    area: { west: 122.9326, south: 20.4227, east: 153.9868, north: 45.5573 },
+    sourceName: "国土数値情報 行政区域データ N03-2026",
+    sourceUrl: "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2026.html",
+    attribution: "国土交通省の行政区域データと総務省統計局・e-Statの町丁・字等境界データをGaluchat用に加工・統合。利用条件と承認表示の適用範囲はNOTICEを参照してください。",
+  },
+  "us-2025-census-gov-tl-state-adm1": {
+    area: { west: -179.2311, south: 18.8655, east: 179.8598, north: 71.4399 },
+    sourceName: "U.S. Census Bureau 2025 TIGER/Line State and Equivalent Entities",
+    sourceUrl: "https://www2.census.gov/geo/tiger/TIGER2025/STATE/tl_2025_us_state.zip",
+  },
+  "ca-2021-statcan-gc-ca-csd-cbf-stat-csd": {
+    area: { west: -141.0181, south: 41.6813, east: -52.6193, north: 83.1372 },
+    sourceName: "Statistics Canada 2021 Census Subdivision Cartographic Boundary File",
+    sourceUrl: "https://www12.statcan.gc.ca/census-recensement/2021/geo/sip-pis/boundary-limites/index2021-eng.cfm?year=21",
+  },
+  "au-2021-abs-gov-au-sal-stat-sal": {
+    area: { west: 96.817, south: -43.7405, east: 167.9981, north: -9.1421 },
+    sourceName: "ABS ASGS Edition 3 Suburbs and Localities 2021",
+    sourceUrl: "https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs/edition-3-july-2021-june-2026/access-and-downloads/digital-boundary-files",
+  },
+  "de-2026-gdz-bkg-bund-de-vg250-adm": {
+    area: { west: 5.8663, south: 47.2701, east: 15.0419, north: 55.0589 },
+    sourceName: "BKG Verwaltungsgebiete 1:250 000 VG250",
+    sourceUrl: "https://gdz.bkg.bund.de/index.php/default/open-data/verwaltungsgebiete-1-250-000-stand-01-01-vg250-01-01.html",
+    attribution: "© BKG 2026 dl-de/by-2-0, Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_vg_nuts.pdf. Derived and processed by Galuchat. Not endorsed by BKG.",
+  },
+  "fr-2026-cartes-gouv-fr-admin-express-cog-adm": {
+    area: { west: -61.8098, south: -21.3896, east: 55.8368, north: 51.0893 },
+    sourceName: "IGN ADMIN EXPRESS COG 4.0 (2026-01-01)",
+    sourceUrl: "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS",
+    attribution: "Source: IGN, ADMIN EXPRESS COG 4.0, edition 2026-01-01. Derived and processed by Galuchat. Not endorsed by IGN or INSEE.",
+  },
+  "nl-2026-cbs-nl-wijkbuurtkaart-adm": {
+    area: { west: 3.3079, south: 50.7504, east: 7.2276, north: 53.5765 },
+    sourceName: "CBS・Kadaster Wijk- en Buurtkaart 2026 (Gemeenten)",
+    sourceUrl: "https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2026",
+  },
+  "nl-2026-cbs-nl-wijkbuurtkaart-stat-buurt": {
+    area: { west: 3.3079, south: 50.7504, east: 7.2276, north: 53.5765 },
+    sourceName: "CBS・Kadaster Wijk- en Buurtkaart 2026 (Buurten)",
+    sourceUrl: "https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2026",
+  },
+};
+
+for (const config of window.GaluchatMapDatasets) {
+  if (datasets[config.id]) continue;
+  const detail = additionalDatasetDetails[config.id];
+  if (!detail) throw new Error(`reverse-geocoding metadata is missing: ${config.id}`);
+  datasets[config.id] = {
+    manifestUrl: `${DATA_ROOT}/${config.id}/manifest.json`,
+    title: config.title[0],
+    description: config.description[0],
+    area: detail.area,
+    codemaps: ["place-name-utf8"],
+    samples: config.samples.map(([label, lon, lat]) => ({ label, lon, lat })),
+    license: {
+      name: config.license[0],
+      url: config.license[2],
+      sourceName: detail.sourceName,
+      sourceUrl: detail.sourceUrl,
+      attribution: detail.attribution ?? config.credit[0],
+      ...(config.approval ? { approval: config.approval[0] } : {}),
+      noticeUrl: `${DATA_ROOT}/${config.id}/NOTICE.md`,
+    },
+    maps: [],
+  };
+}
+for (const [id, dataset] of Object.entries(datasets)) dataset.id = id;
 
 const form = document.querySelector("#geocode-form");
 const coordinateList = document.querySelector("#coordinate-list");
@@ -203,8 +279,8 @@ const wordbookReaders = new Map();
 const geocoders = new Map();
 
 initialize().catch((error) => {
-  coordinateError.textContent = "データ一覧を読み込めませんでした。ページを再読み込みしてください。";
-  setWebMcpStatus("WebMCP ERROR", "is-error", "データ一覧を読み込めないためWebMCPを利用できません");
+  coordinateError.textContent = localize("データ一覧を読み込めませんでした。ページを再読み込みしてください。", "Could not load the dataset list. Reload this page.");
+  setWebMcpStatus("WebMCP ERROR", "is-error", localize("データ一覧を読み込めないためWebMCPを利用できません", "WebMCP is unavailable because the dataset list could not be loaded"));
   console.error(error);
 });
 
@@ -215,7 +291,7 @@ async function initialize() {
   for (const [id, dataset] of Object.entries(datasets)) {
     const option = document.createElement("option");
     option.value = id;
-    option.textContent = dataset.title;
+    option.textContent = datasetTitle(id);
     datasetSelect.append(option);
   }
 
@@ -226,6 +302,21 @@ async function initialize() {
   isInitialized = true;
   refreshCoordinateRows();
   registerWebMcpTools();
+  updateLocale();
+}
+
+window.addEventListener("machml:localechange", updateLocale);
+
+function updateLocale() {
+  clearHistoryButton.title = localize("検索結果を消去", "Clear search results");
+  for (const option of datasetSelect.options) option.textContent = datasetTitle(option.value);
+  refreshCoordinateRows();
+  renderHistory();
+  if (isInitialized) {
+    updateMapOptions(mapSelect.value);
+  }
+  if (busyState !== null) setBusy(busyState);
+  refreshWebMcpStatus();
 }
 
 async function loadDatasetManifests() {
@@ -237,12 +328,20 @@ async function loadDatasetManifests() {
       throw new Error(`unexpected dataset manifest: ${dataset.manifestUrl}`);
     }
     const baseUrl = new URL(".", response.url);
-    const mapRecords = new Map(manifest.files.maps.map((record) => [record.id, record]));
-    dataset.maps = dataset.maps.map((map) => {
-      const record = mapRecords.get(map.id);
-      if (!record) throw new Error(`map is missing from subset manifest: ${datasetId}/${map.id}`);
-      return { ...map, size: record.size, url: new URL(record.path, baseUrl).href };
-    });
+    const mapRecord = manifest.files.maps.reduce((highest, record) =>
+      !highest || record.unitInv > highest.unitInv ? record : highest, null);
+    if (!mapRecord || !Number.isInteger(mapRecord.unitInv) || mapRecord.unitInv <= 0) {
+      throw new Error(`valid map is missing from subset manifest: ${datasetId}`);
+    }
+    const resolution = 1 / mapRecord.unitInv;
+    dataset.maps = [{
+      id: mapRecord.id,
+      label: `1/${mapRecord.unitInv}度`,
+      resolution: { lon: resolution, lat: resolution },
+      note: `緯度方向 約${Math.round(111000 / mapRecord.unitInv)} m/px`,
+      size: mapRecord.size,
+      url: new URL(mapRecord.path, baseUrl).href,
+    }];
     const wordbook = manifest.files.wordbooks.find((record) => record.default)
       ?? manifest.files.wordbooks[0];
     if (!wordbook) throw new Error(`wordbook is missing from subset manifest: ${datasetId}`);
@@ -316,7 +415,7 @@ applyCoordinatePasteButton.addEventListener("click", () => {
     coordinateError.textContent = "";
     updateDuplicateNotice(readValidCoordinateRows());
     closeCoordinatePastePanel();
-    showToast(`${positions.length}地点を追加しました`);
+    showToast(localize(`${positions.length}地点を追加しました`, `Added ${positions.length} point(s)`));
   } catch (error) {
     coordinateError.textContent = error instanceof Error ? error.message : String(error);
   }
@@ -332,7 +431,7 @@ samplePoints.addEventListener("click", (event) => {
     }]);
     coordinateError.textContent = "";
     updateDuplicateNotice(readValidCoordinateRows());
-    showToast(`${sampleButton.textContent}を追加しました`);
+    showToast(localize(`${sampleButton.textContent}を追加しました`, `Added ${sampleButton.textContent}`));
   } catch (error) {
     coordinateError.textContent = error instanceof Error ? error.message : String(error);
   }
@@ -364,11 +463,13 @@ form.addEventListener("submit", async (event) => {
       ...execution,
     });
     prependHistoryEntry(entry);
-    showToast(positions.length === 1 ? "検索結果を追加しました" : `${positions.length}地点の検索結果を追加しました`);
+    showToast(positions.length === 1
+      ? localize("検索結果を追加しました", "Search result added")
+      : localize(`${positions.length}地点の検索結果を追加しました`, `Added results for ${positions.length} points`));
   } catch (error) {
     coordinateError.textContent = operation === "loading"
-      ? "地図データを読み込めませんでした。通信状態を確認して、もう一度お試しください。"
-      : "検索中にエラーが発生しました。入力内容を確認して、もう一度お試しください。";
+      ? localize("地図データを読み込めませんでした。通信状態を確認して、もう一度お試しください。", "Could not load map data. Check your connection and try again.")
+      : localize("検索中にエラーが発生しました。入力内容を確認して、もう一度お試しください。", "The search failed. Check your input and try again.");
     console.error(error);
   } finally {
     loadPanel.hidden = true;
@@ -428,7 +529,7 @@ function appendCoordinatePositions(positions) {
   const occupiedCount = rows.length - emptyRows.length;
   const availableCount = SYSTEM_LIMITS.positionsPerRequest - occupiedCount;
   if (positions.length > availableCount) {
-    throw new Error(`追加できる座標は残り${availableCount}地点です。`);
+    throw new Error(localize(`追加できる座標は残り${availableCount}地点です。`, `You can add ${availableCount} more point(s).`));
   }
 
   positions.forEach((position, index) => {
@@ -461,13 +562,14 @@ function refreshCoordinateRows() {
     const displayIndex = index + 1;
     const fields = coordinateRowFields(row);
     row.querySelector(".coordinate-index").textContent = String(displayIndex).padStart(2, "0");
-    fields.longitude.setAttribute("aria-label", `${displayIndex}地点目の経度`);
-    fields.latitude.setAttribute("aria-label", `${displayIndex}地点目の緯度`);
+    fields.longitude.setAttribute("aria-label", localize(`${displayIndex}地点目の経度`, `Longitude of point ${displayIndex}`));
+    fields.latitude.setAttribute("aria-label", localize(`${displayIndex}地点目の緯度`, `Latitude of point ${displayIndex}`));
     const removeButton = row.querySelector(".remove-coordinate");
     removeButton.disabled = busyState !== null;
-    removeButton.setAttribute("aria-label", `${displayIndex}地点目を削除`);
+    removeButton.setAttribute("aria-label", localize(`${displayIndex}地点目を削除`, `Remove point ${displayIndex}`));
+    removeButton.title = localize("この地点を削除", "Remove this point");
   });
-  coordinateCount.textContent = `${enteredCount} / ${SYSTEM_LIMITS.positionsPerRequest}地点`;
+  coordinateCount.textContent = localize(`${enteredCount} / ${SYSTEM_LIMITS.positionsPerRequest}地点`, `${enteredCount} / ${SYSTEM_LIMITS.positionsPerRequest} points`);
   addCoordinateButton.disabled = rows.length >= SYSTEM_LIMITS.positionsPerRequest || busyState !== null;
   clearCoordinatesButton.disabled = rows.length === 0 || busyState !== null;
   if (busyState === null) {
@@ -478,7 +580,7 @@ function refreshCoordinateRows() {
 
 function readCoordinateRows() {
   if (coordinateRows().length === 0) {
-    coordinateError.textContent = "検索する座標を追加してください。";
+    coordinateError.textContent = localize("検索する座標を追加してください。", "Add coordinates to search.");
     return null;
   }
   const positions = [];
@@ -489,16 +591,16 @@ function readCoordinateRows() {
     let message = "";
     if (lonText === "" || !Number.isFinite(lon) || lon < -180 || lon > 180) {
       fields.longitude.classList.add("is-invalid");
-      message = "経度は−180〜180の数値で入力してください。";
+      message = localize("経度は−180〜180の数値で入力してください。", "Enter a longitude between −180 and 180.");
     }
     if (latText === "" || !Number.isFinite(lat) || lat < -90 || lat > 90) {
       fields.latitude.classList.add("is-invalid");
       message = message === ""
-        ? "緯度は−90〜90の数値で入力してください。"
-        : "経度は−180〜180、緯度は−90〜90の数値で入力してください。";
+        ? localize("緯度は−90〜90の数値で入力してください。", "Enter a latitude between −90 and 90.")
+        : localize("経度は−180〜180、緯度は−90〜90の数値で入力してください。", "Enter a longitude between −180 and 180 and a latitude between −90 and 90.");
     }
     if (message !== "") {
-      fields.error.textContent = `${index + 1}地点目：${message}`;
+      fields.error.textContent = localize(`${index + 1}地点目：${message}`, `Point ${index + 1}: ${message}`);
       hasError = true;
     } else {
       const position = { lon: roundCoordinate(lon), lat: roundCoordinate(lat) };
@@ -507,7 +609,7 @@ function readCoordinateRows() {
       positions.push(position);
     }
   }
-  coordinateError.textContent = hasError ? "入力内容を確認してください。" : "";
+  coordinateError.textContent = hasError ? localize("入力内容を確認してください。", "Check your input.") : "";
   coordinateNotice.textContent = "";
   return hasError ? null : positions;
 }
@@ -521,20 +623,20 @@ function clearCoordinateRowError(row) {
 
 function parseCoordinatePaste(text) {
   const lines = text.split(/\r?\n/).map((line) => line.trim()).filter(Boolean);
-  if (lines.length === 0) throw new Error("貼り付ける座標を入力してください。");
+  if (lines.length === 0) throw new Error(localize("貼り付ける座標を入力してください。", "Enter coordinates to paste."));
   if (lines.length > SYSTEM_LIMITS.positionsPerRequest) {
-    throw new Error(`入力できる座標は最大${SYSTEM_LIMITS.positionsPerRequest}地点です（現在${lines.length}行）。`);
+    throw new Error(localize(`入力できる座標は最大${SYSTEM_LIMITS.positionsPerRequest}地点です（現在${lines.length}行）。`, `You can enter up to ${SYSTEM_LIMITS.positionsPerRequest} points (${lines.length} lines entered).`));
   }
   return lines.map((line, index) => {
     const parts = line.split(/[\s,，;；]+/).filter(Boolean);
-    if (parts.length !== 2) throw new Error(`${index + 1}行目を「経度, 緯度」の形式で入力してください。`);
+    if (parts.length !== 2) throw new Error(localize(`${index + 1}行目を「経度, 緯度」の形式で入力してください。`, `Enter line ${index + 1} as "longitude, latitude".`));
     const lon = Number(parts[0]);
     const lat = Number(parts[1]);
     if (!Number.isFinite(lon) || lon < -180 || lon > 180) {
-      throw new Error(`${index + 1}行目の経度は−180〜180の数値で入力してください。`);
+      throw new Error(localize(`${index + 1}行目の経度は−180〜180の数値で入力してください。`, `Longitude on line ${index + 1} must be between −180 and 180.`));
     }
     if (!Number.isFinite(lat) || lat < -90 || lat > 90) {
-      throw new Error(`${index + 1}行目の緯度は−90〜90の数値で入力してください。`);
+      throw new Error(localize(`${index + 1}行目の緯度は−90〜90の数値で入力してください。`, `Latitude on line ${index + 1} must be between −90 and 90.`));
     }
     return { lon: roundCoordinate(lon), lat: roundCoordinate(lat) };
   });
@@ -545,7 +647,7 @@ function updateDuplicateNotice(positions) {
   const duplicateCount = positions.length - unique.size;
   coordinateNotice.textContent = duplicateCount === 0
     ? ""
-    : `同じ座標が${duplicateCount}件あります。そのまま検索します。`;
+    : localize(`同じ座標が${duplicateCount}件あります。そのまま検索します。`, `${duplicateCount} coordinates are duplicates. They will still be searched.`);
 }
 
 function closeCoordinatePastePanel() {
@@ -559,7 +661,7 @@ downloadJsonButton.addEventListener("click", () => {
     JSON.stringify({ exported_at: new Date().toISOString(), datasets: exportedDatasets(), records: history }, null, 2),
     "application/json",
   );
-  showToast("JSONをダウンロードしました");
+  showToast(localize("JSONをダウンロードしました", "JSON downloaded"));
 });
 
 downloadCsvButton.addEventListener("click", () => {
@@ -572,7 +674,7 @@ downloadCsvButton.addEventListener("click", () => {
   const rows = history.flatMap(historyCsvRows);
   const csv = [header, ...rows].map((row) => row.map(csvCell).join(",")).join("\n");
   downloadFile(`galuchat-geocoding-${dateStamp()}.csv`, `\ufeff${csv}`, "text/csv;charset=utf-8");
-  showToast("CSVをダウンロードしました");
+  showToast(localize("CSVをダウンロードしました", "CSV downloaded"));
 });
 
 function historyCsvRows(record) {
@@ -634,7 +736,7 @@ clearHistoryButton.addEventListener("click", () => {
   history = [];
   saveHistory();
   renderHistory();
-  showToast("検索結果を消去しました");
+  showToast(localize("検索結果を消去しました", "Search results cleared"));
 });
 
 function updateMapOptions(preferredMap = null) {
@@ -643,7 +745,7 @@ function updateMapOptions(preferredMap = null) {
   for (const map of dataset.maps) {
     const option = document.createElement("option");
     option.value = map.id;
-    option.textContent = `${map.label}（${map.note}）`;
+    option.textContent = `${map.label} (${map.note})`;
     mapSelect.append(option);
   }
   if (preferredMap && dataset.maps.some((map) => map.id === preferredMap)) {
@@ -657,10 +759,10 @@ function updateMapMeta() {
   const map = selectedMap(datasetSelect.value, mapSelect.value);
   const isLoaded = loadedResources.has(mapResourceKey(datasetSelect.value, map.id));
   mapMeta.replaceChildren(
-    metaCell("解像度", `${map.resolution.lon}° × ${map.resolution.lat}°`),
-    metaCell("地上解像度", map.note),
-    metaCell("データ容量", formatBytes(map.size)),
-    metaCell("読み込み", isLoaded ? "完了" : "未読込", isLoaded ? "is-loaded" : "is-pending"),
+    metaCell(localize("解像度", "Resolution"), `${map.resolution.lon}° × ${map.resolution.lat}°`),
+    metaCell(localize("地上解像度", "Ground resolution"), localize(map.note, `About ${Math.round(111000 * map.resolution.lat)} m/px north–south`)),
+    metaCell(localize("データ容量", "Data size"), formatBytes(map.size)),
+    metaCell(localize("読み込み", "Loaded"), isLoaded ? localize("完了", "Yes") : localize("未読込", "No"), isLoaded ? "is-loaded" : "is-pending"),
   );
 }
 
@@ -683,9 +785,12 @@ function updateDatasetMeta() {
     codemapList.append(textElement("code", name));
   }
 
-  samplePoints.replaceChildren(textElement("span", "サンプルを追加"));
-  for (const sample of dataset.samples) {
-    const button = textElement("button", sample.label);
+  samplePoints.replaceChildren(textElement("span", localize("サンプルを追加", "Add a sample")));
+  for (const [index, sample] of dataset.samples.entries()) {
+    const englishLabel = datasetSelect.value.startsWith("jp-")
+      ? ["Tsudanuma", "Tokyo", "Kyoto"][index] ?? sample.label
+      : mapConfigById.get(datasetSelect.value)?.samples[index]?.[0] ?? sample.label;
+    const button = textElement("button", localize(sample.label, englishLabel));
     button.type = "button";
     button.dataset.sampleLon = sample.lon;
     button.dataset.sampleLat = sample.lat;
@@ -795,14 +900,14 @@ function createSingleTimelineItem(record, runNumber) {
   const panel = document.createElement("div");
   panel.className = "io-panel";
   panel.append(createRequestBlock(record), createResultBlock(record));
-  return createTimelineItemFrame(record, runNumber, "検索", panel);
+  return createTimelineItemFrame(record, runNumber, localize("検索", "Search"), panel);
 }
 
 function createMultipleTimelineItem(record, runNumber) {
   const panel = document.createElement("div");
   panel.className = "io-panel multiple-io-panel";
   panel.append(createMultipleRequestBlock(record), createMultipleResultBlock(record));
-  return createTimelineItemFrame(record, runNumber, "複数検索", panel, "is-multiple");
+  return createTimelineItemFrame(record, runNumber, localize("複数検索", "Batch search"), panel, "is-multiple");
 }
 
 function createTimelineItemFrame(record, runNumber, label, panel, className = "") {
@@ -830,7 +935,7 @@ function createTimelineItemFrame(record, runNumber, label, panel, className = ""
 function createRequestBlock(record) {
   const block = document.createElement("div");
   block.className = "request-block";
-  block.append(textElement("div", "入力座標", "request-title"));
+  block.append(textElement("div", localize("入力座標", "Input coordinates"), "request-title"));
   const coords = document.createElement("p");
   coords.className = "coordinates";
   coords.append(
@@ -845,20 +950,20 @@ function createRequestBlock(record) {
 function createResultBlock(record) {
   const block = document.createElement("div");
   block.className = "result-block";
-  block.append(textElement("div", "逆ジオコーディング結果", "result-title"));
+  block.append(textElement("div", localize("逆ジオコーディング結果", "Reverse geocoding result"), "result-title"));
 
   if (record.result.status !== "found") {
     const message = record.result.status === "out_of_range"
-      ? "データの収録範囲外です"
-      : "地域情報がない地点です（海上など）";
+      ? localize("データの収録範囲外です", "Outside this dataset's coverage")
+      : localize("地域情報がない地点です（海上など）", "No region information at this point (for example, at sea)");
     block.append(textElement("p", message, "not-found"));
   } else {
     const place = record.result.values["place-name-utf8"];
     block.append(textElement("p", place.name, "place-path"));
     const facts = document.createElement("div");
     facts.className = "result-facts";
-    facts.append(fact("地図内部コード", record.result.code));
-    facts.append(fact("解像度", `${record.result.resolution.lon}°`));
+    facts.append(fact(localize("地図内部コード", "Internal map code"), record.result.code));
+    facts.append(fact(localize("解像度", "Resolution"), `${record.result.resolution.lon}°`));
     block.append(facts);
   }
 
@@ -871,9 +976,9 @@ function createMultipleRequestBlock(record) {
   const block = document.createElement("div");
   block.className = "request-block multiple-request-block";
   block.append(
-    textElement("div", "入力座標", "request-title"),
-    textElement("p", `${positions.length}地点`, "multiple-count"),
-    textElement("p", "入力順を保持して一括検索", "multiple-caption"),
+    textElement("div", localize("入力座標", "Input coordinates"), "request-title"),
+    textElement("p", localize(`${positions.length}地点`, `${positions.length} points`), "multiple-count"),
+    textElement("p", localize("入力順を保持して一括検索", "Batch search in input order"), "multiple-caption"),
     textElement("p", `${record.input.dataset} / ${record.input.map}`, "source-detail"),
   );
   return block;
@@ -886,25 +991,25 @@ function createMultipleResultBlock(record) {
   const uniqueCodeCount = new Set(codes.filter((code) => code !== null)).size;
   const block = document.createElement("div");
   block.className = "result-block multiple-result-block";
-  block.append(textElement("div", "逆ジオコーディング結果", "result-title"));
+  block.append(textElement("div", localize("逆ジオコーディング結果", "Reverse geocoding result"), "result-title"));
   block.append(textElement(
     "p",
     foundCount === inputCount
-      ? `全${inputCount}地点の地域情報を取得`
-      : `${inputCount}地点中${foundCount}地点の地域情報を取得`,
+      ? localize(`全${inputCount}地点の地域情報を取得`, `Region information found for all ${inputCount} points`)
+      : localize(`${inputCount}地点中${foundCount}地点の地域情報を取得`, `Region information found for ${foundCount} of ${inputCount} points`),
     "multiple-result-summary",
   ));
   const facts = document.createElement("div");
   facts.className = "result-facts multiple-facts";
-  facts.append(fact("入力数", inputCount));
-  facts.append(fact("取得", foundCount));
-  facts.append(fact("該当なし", inputCount - foundCount));
-  facts.append(fact("地域コード", uniqueCodeCount));
-  block.append(facts, createJsonDetails(record.result, "複数検索JSONを表示"));
+  facts.append(fact(localize("入力数", "Input"), inputCount));
+  facts.append(fact(localize("取得", "Found"), foundCount));
+  facts.append(fact(localize("該当なし", "Not found"), inputCount - foundCount));
+  facts.append(fact(localize("地域コード", "Region codes"), uniqueCodeCount));
+  block.append(facts, createJsonDetails(record.result, localize("複数検索JSONを表示", "Show batch JSON")));
   return block;
 }
 
-function createJsonDetails(value, label = "JSONを表示") {
+function createJsonDetails(value, label = localize("JSONを表示", "Show JSON")) {
   const details = document.createElement("details");
   details.append(textElement("summary", label));
   const pre = document.createElement("pre");
@@ -985,7 +1090,7 @@ async function loadResources(dataset, resources, signal) {
     const labels = missing.map((resource) => resource.label).join(" / ");
     const progress = new Map(missing.map((resource) => [resource.key, 0]));
     loadPanel.hidden = false;
-    loadResource.textContent = `${dataset.title} · ${labels} · ${formatBytes(totalBytes)}`;
+    loadResource.textContent = `${datasetTitle(dataset.id)} · ${labels} · ${formatBytes(totalBytes)}`;
     setLoadProgress(0);
 
     try {
@@ -1054,9 +1159,9 @@ function setBusy(state) {
   for (const control of form.elements) control.disabled = busy;
   submitButton.classList.toggle("is-busy", busy);
   if (state === "loading") {
-    submitButton.querySelector("span").textContent = "地図データを読み込み中…";
+    submitButton.querySelector("span").textContent = localize("地図データを読み込み中…", "Loading map data…");
   } else if (state === "resolving") {
-    submitButton.querySelector("span").textContent = "検索中…";
+    submitButton.querySelector("span").textContent = localize("検索中…", "Searching…");
   } else {
     refreshCoordinateRows();
   }
@@ -1064,10 +1169,10 @@ function setBusy(state) {
 
 function updateSubmitLabel(count = coordinateRows().length) {
   submitButton.querySelector("span").textContent = count === 0
-    ? "座標を入力してください"
+    ? localize("座標を入力してください", "Enter coordinates")
     : count === 1
-      ? "この位置を検索"
-      : `${count}地点を検索`;
+      ? localize("この位置を検索", "Search this point")
+      : localize(`${count}地点を検索`, `Search ${count} points`);
 }
 
 function formatBytes(bytes) {
@@ -1142,7 +1247,7 @@ const codeMapSizeSchema = Object.freeze({
 
 async function registerWebMcpTools() {
   if (document.modelContext?.registerTool === undefined) {
-    setWebMcpStatus("WebMCP UNAVAILABLE", "is-unavailable", "このブラウザではWebMCPを利用できません");
+    setWebMcpStatus("WebMCP UNAVAILABLE", "is-unavailable", localize("このブラウザではWebMCPを利用できません", "WebMCP is unavailable in this browser"));
     return;
   }
 
@@ -1269,9 +1374,9 @@ async function registerWebMcpTools() {
 
   try {
     await Promise.all(tools.map((tool) => document.modelContext.registerTool(tool)));
-    setWebMcpStatus("WebMCP READY", "is-ready", `WebMCP対応: AIエージェントから${tools.length}個のツールを利用できます`);
+    setWebMcpStatus("WebMCP READY", "is-ready", localize(`WebMCP対応: AIエージェントから${tools.length}個のツールを利用できます`, `WebMCP ready: AI agents can use ${tools.length} tools`));
   } catch (error) {
-    setWebMcpStatus("WebMCP ERROR", "is-error", "WebMCPツールを登録できませんでした");
+    setWebMcpStatus("WebMCP ERROR", "is-error", localize("WebMCPツールを登録できませんでした", "Could not register WebMCP tools"));
     console.error("Failed to register WebMCP tools", error);
   }
 }
@@ -1279,8 +1384,22 @@ async function registerWebMcpTools() {
 function setWebMcpStatus(message, className, detail = message) {
   webMcpStatus.textContent = message;
   webMcpStatus.className = `webmcp-status ${className}`;
+  webMcpStatus.dataset.state = className;
   webMcpStatus.title = detail;
   webMcpStatus.setAttribute("aria-label", detail);
+}
+
+function refreshWebMcpStatus() {
+  const state = webMcpStatus.dataset.state;
+  if (state === "is-ready") {
+    setWebMcpStatus("WebMCP READY", state, localize(`WebMCP対応: AIエージェントから${WEBMCP_TOOL_NAMES.length}個のツールを利用できます`, `WebMCP ready: AI agents can use ${WEBMCP_TOOL_NAMES.length} tools`));
+  } else if (state === "is-unavailable") {
+    setWebMcpStatus("WebMCP UNAVAILABLE", state, localize("このブラウザではWebMCPを利用できません", "WebMCP is unavailable in this browser"));
+  } else if (state === "is-error") {
+    setWebMcpStatus("WebMCP ERROR", state, localize("WebMCPを利用できません", "WebMCP is unavailable"));
+  } else {
+    setWebMcpStatus("WebMCP CHECKING", "is-checking", localize("WebMCPの対応状況を確認中", "Checking WebMCP support"));
+  }
 }
 
 async function executeWebMcpTool(execute, input, options) {
@@ -1669,7 +1788,9 @@ function addWebMcpHistory(record, datasetId, mapId, positions) {
   setCoordinateRows(positions);
   coordinateError.textContent = "";
   updateDuplicateNotice(positions);
-  showToast(positions.length === 1 ? "WebMCPから検索しました" : `WebMCPから${positions.length}地点を検索しました`);
+  showToast(positions.length === 1
+    ? localize("WebMCPから検索しました", "Searched via WebMCP")
+    : localize(`WebMCPから${positions.length}地点を検索しました`, `Searched ${positions.length} points via WebMCP`));
 }
 
 function serializeLicense(license) {
@@ -1738,7 +1859,7 @@ function csvCell(value) {
 }
 
 function formatDate(value) {
-  return new Intl.DateTimeFormat("ja-JP", {
+  return new Intl.DateTimeFormat(localize("ja-JP", "en-US"), {
     month: "2-digit",
     day: "2-digit",
     hour: "2-digit",

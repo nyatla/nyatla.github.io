@@ -22,8 +22,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .brand { color: inherit; font-weight: 700; text-decoration: none; }
 .brand span { color: inherit; }
 .product-name, .eyebrow, .runtime-badge { display: none; }
-.header-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 18px; margin-left: auto; }
+.header-actions { display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; gap: 8px 18px; margin-left: auto; }
 .header-actions a { color: inherit; font-size: 14px; }
+.language-switch { gap: 10px; margin: 0; padding: 0; border: 0; border-radius: 0; background: none; }
+.language-switch button { padding: 2px 0; border-radius: 0; border-bottom: 1px solid transparent; color: var(--muted); background: none; font: inherit; font-size: 13px; font-weight: 400; }
+.language-switch button:hover, .language-switch button.active { color: var(--ink); background: none; border-bottom-color: currentColor; }
 .webmcp-status { padding: 3px 7px; border: 1px solid var(--line); color: var(--muted); font-size: 12px; }
 .webmcp-status.is-ready { color: #216243; }
 .webmcp-status.is-unavailable { color: #805d18; }
@@ -152,7 +155,7 @@ pre { max-height: 260px; overflow: auto; margin: 10px 0 0; padding: 12px; backgr
 
 @media (max-width: 620px) {
   .header-inner, .page-shell, .site-footer { width: min(100% - 32px, 860px); }
-  .header-actions { width: 100%; margin-left: 0; }
+  .header-actions { width: 100%; flex-direction: row; align-items: center; gap: 8px 16px; margin-left: 0; }
   .service-overview { padding: 34px 0; }
   h1 { font-size: 32px; }
   .query-card, .history-card { padding: 18px; }
