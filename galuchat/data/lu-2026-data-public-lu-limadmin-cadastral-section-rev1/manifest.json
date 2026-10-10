@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "lu-2026-data-public-lu-limadmin-cadastral-section-rev1",
+  "sourceArchive": "lu-2026-data-public-lu-limadmin-cadastral-section-rev1.zip",
+  "sdkVersion": "0.2.4",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "luxembourg_limadmin_2026-grid-8192-10000.wgsmapset.glc",
+        "size": 173111,
+        "sha256": "08196c6dfeee249d7ec150667fdfee53a434d733b384b992eafc7eed7480af4c",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "luxembourg_limadmin_2026-grid-4096-1000.wgsmapset.glc",
+        "size": 24264,
+        "sha256": "4e339bdbbbfa8ba30fe2aa7ccce0a483fce45e6eda6d122ab0869d8877ff7328",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "luxembourg_limadmin_2026-grid-512-100.wgsmapset.glc",
+        "size": 3243,
+        "sha256": "5a91afc8a704e9460a7dec3bb493efa7fbc0b54f8c5e67a156b315c1056fa004",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "luxembourg_limadmin_2026.giswordbook",
+        "size": 7507,
+        "sha256": "bf21860287de5f6c91945c6e35f5aca8d5dec189d8bbba1598cbcd916d78f3ef"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 4370,
+      "sha256": "ec71ba8dde2e6fef22dec96bc59b5dbb308402d9d210476a476b96fa8c635fac"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 12114,
+      "sha256": "ec60583886b7da9f4717c7a451e26f162fe54f3df4e846059d62b094601cc4ec"
+    },
+    "names": {
+      "path": "luxembourg_limadmin_2026.names.csv",
+      "size": 49406,
+      "sha256": "815dcc055a3d899db3944e74140786f47936e0feeb0eeb78b5111d86934d6220"
+    }
+  }
+}

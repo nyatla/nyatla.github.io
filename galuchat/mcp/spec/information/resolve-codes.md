@@ -15,7 +15,7 @@ func(codes[], dataset, codemaps[])
 ```json
 {
   "codes": [672, 672, 1226],
-  "dataset": "jp-2026-mlit-go-jp-n03-adm",
+  "dataset": "jp-2026-mlit-go-jp-n03-adm-rev1",
   "codemaps": ["place-name-utf8"]
 }
 ```
@@ -26,7 +26,7 @@ func(codes[], dataset, codemaps[])
 
 ```json
 {
-  "dataset": "jp-2026-mlit-go-jp-n03-adm",
+  "dataset": "jp-2026-mlit-go-jp-n03-adm-rev1",
   "codes": [672, 672, 1226],
   "values": {
     "place-name-utf8": {

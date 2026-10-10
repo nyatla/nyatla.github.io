@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "is-2022-natt-is-is-au-lmi-adm1-rev1",
+  "sourceArchive": "is-2022-natt-is-is-au-lmi-adm1-rev1.zip",
+  "sdkVersion": "0.2.4",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "iceland_inspire_au_2022-grid-8192-10000.wgsmapset.glc",
+        "size": 639621,
+        "sha256": "d2ff008ab46d39000e6c02487eee676bbca320fba113ce07002b63d3248b537e",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "iceland_inspire_au_2022-grid-4096-1000.wgsmapset.glc",
+        "size": 68977,
+        "sha256": "a6f58884cc8b68072bb275790eaec2980aa6eade4b25dc17dfc0062ddc5995ee",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "iceland_inspire_au_2022-grid-512-100.wgsmapset.glc",
+        "size": 7058,
+        "sha256": "a5d7f8e6b51dd1439afb0cc5b478e8663f08ef257e0c286df19998109a831826",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "iceland_inspire_au_2022.giswordbook",
+        "size": 1910,
+        "sha256": "b1ab068d5a7e64a0f1ecf93f252d82ed1481608e6f73d436d20d5ace9a4e6c04"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 4794,
+      "sha256": "358b591f7978530d5a963b192cf0d6469aafee8cc2ed4b9e1fdff227532d1faf"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 10186,
+      "sha256": "6eb431bbbf69aca47513ac22c75cd4253b1855f24f8b14670722093994052bd9"
+    },
+    "names": {
+      "path": "iceland_inspire_au_2022.names.csv",
+      "size": 6666,
+      "sha256": "0cbc526fd5b0830b9595be6cf2d6149e1aecd5e3e19d9bb0d0852e81506756aa"
+    }
+  }
+}

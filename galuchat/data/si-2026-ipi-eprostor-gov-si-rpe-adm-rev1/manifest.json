@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "si-2026-ipi-eprostor-gov-si-rpe-adm-rev1",
+  "sourceArchive": "si-2026-ipi-eprostor-gov-si-rpe-adm-rev1.zip",
+  "sdkVersion": "0.2.4",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "slovenia_rpe_2026-grid-8192-10000.wgsmapset.glc",
+        "size": 1395568,
+        "sha256": "7ea4a9c88b9d218f8ee373e4d7aec0808f9fa67ceb35c1cafdce2c11e66eb6e7",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "slovenia_rpe_2026-grid-4096-1000.wgsmapset.glc",
+        "size": 201947,
+        "sha256": "50714134151d55dc9b17e4efa8cff21bb328798ce8ec4c5a80e34b5f68320ec5",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "slovenia_rpe_2026-grid-512-100.wgsmapset.glc",
+        "size": 30387,
+        "sha256": "680cc4582d76618a35b52d655246230e9c1ed220233c5bddf861b778ac04c630",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "slovenia_rpe_2026.giswordbook",
+        "size": 65963,
+        "sha256": "509444d1101cad3c0d4c249b65f1a8abbd3f7a1742430f613cbe9ebda252a4e9"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 5255,
+      "sha256": "11d6d0f8531d35cfda57e8742358f372f43249b79817690254a798fbef088a28"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 11008,
+      "sha256": "f0d845a7747e8c9a5957b0030ae40f8e470fb6ffa5b2a40cf1e3e6f32fa0923a"
+    },
+    "names": {
+      "path": "slovenia_rpe_2026.names.csv",
+      "size": 485192,
+      "sha256": "5642dad3eff9d3cba53370ead39f07f1404398971a83d7b58550a1299bcd1631"
+    }
+  }
+}

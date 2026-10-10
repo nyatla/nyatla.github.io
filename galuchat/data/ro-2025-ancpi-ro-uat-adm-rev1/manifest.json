@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "ro-2025-ancpi-ro-uat-adm-rev1",
+  "sourceArchive": "ro-2025-ancpi-ro-uat-adm-rev1.zip",
+  "sdkVersion": "0.2.4",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "romania_uat_2025-grid-8192-10000.wgsmapset.glc",
+        "size": 3244617,
+        "sha256": "cf7420bf525005ac50582cf37ce0cf047546668d91b6e4d6bee06396e7e4fcaf",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "romania_uat_2025-grid-4096-1000.wgsmapset.glc",
+        "size": 448554,
+        "sha256": "3416fcd22d2b74cfd5eca494c6fff33faaea76dfc0509674204d874571fab5e2",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "romania_uat_2025-grid-512-100.wgsmapset.glc",
+        "size": 58934,
+        "sha256": "e4aa861b7ce8a12ebbbf724772810445463aca0397a66c643d14d8b444ba28dc",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "romania_uat_2025.giswordbook",
+        "size": 38236,
+        "sha256": "0109b1f07a677a4d6a64b407ff7e7693f920fad0ed44702d0fa2491279189a80"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 6799,
+      "sha256": "31c0b0f5c732aef6a7a28374aee0b676e74e6b57dd3b21b07645baf0149b2542"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 12234,
+      "sha256": "358fae998036643858ea64fa1179dda195fc8f54a3cd6eaac3e616de4f683d8f"
+    },
+    "names": {
+      "path": "romania_uat_2025.names.csv",
+      "size": 190043,
+      "sha256": "7e943ea45d6e651f37ee5bfc6657f916f06261f0b68effbc748a847f01170c9a"
+    }
+  }
+}

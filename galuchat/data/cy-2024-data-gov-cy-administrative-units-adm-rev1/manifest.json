@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "cy-2024-data-gov-cy-administrative-units-adm-rev1",
+  "sourceArchive": "cy-2024-data-gov-cy-administrative-units-adm-rev1.zip",
+  "sdkVersion": "0.2.4",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "cyprus_admin_2024-grid-8192-10000.wgsmapset.glc",
+        "size": 379203,
+        "sha256": "d2aee616fae088c1650a9488ae19ded5609ee056aef961fd3ef5071e8f7fd503",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "cyprus_admin_2024-grid-4096-1000.wgsmapset.glc",
+        "size": 44969,
+        "sha256": "dfa7437b23346bcb60ce5ec3896a8a93f56e7ba5f0731d358c52b78e140fab0e",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "cyprus_admin_2024-grid-512-100.wgsmapset.glc",
+        "size": 5554,
+        "sha256": "ea86ceddfc202a3cf1fbaf3cddd8e09a3075431157f0360eeada857a239bd66a",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "cyprus_admin_2024.giswordbook",
+        "size": 12021,
+        "sha256": "36de27f75487edbff805523ce60fe0d4a9ebb9df915dfd9f98435caa0a35922f"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 5962,
+      "sha256": "a63d8273a40c8f8eb97549166298801bf22182886ba2787d23e32e8386f03ec6"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 14676,
+      "sha256": "20ad388af03643a6c2eddfdaab38e1a636e63c25d55a72f34bb0a9c2ee790e11"
+    },
+    "names": {
+      "path": "cyprus_admin_2024.names.csv",
+      "size": 91131,
+      "sha256": "2970394e1b0a6f67b6bd22641db21258442ab04a9f2cbf40f6ec23aa0797e832"
+    }
+  }
+}

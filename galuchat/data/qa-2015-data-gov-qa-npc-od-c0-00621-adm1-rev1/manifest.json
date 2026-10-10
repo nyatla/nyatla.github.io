@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "qa-2015-data-gov-qa-npc-od-c0-00621-adm1-rev1",
+  "sourceArchive": "qa-2015-data-gov-qa-npc-od-c0-00621-adm1-rev1.zip",
+  "sdkVersion": "0.2.4",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "qatar_municipalities_2015-grid-8192-10000.wgsmapset.glc",
+        "size": 58516,
+        "sha256": "5807848fc770352beb2b6cc8558a9c1f987e3c7c47f4666a3fe94e527adc6d9c",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "qatar_municipalities_2015-grid-4096-1000.wgsmapset.glc",
+        "size": 6755,
+        "sha256": "cff08c0253b69c40adea9a95993b2dca39b01ec731dc04cdf5de6bd6aac82da1",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "qatar_municipalities_2015-grid-512-100.wgsmapset.glc",
+        "size": 959,
+        "sha256": "587399c052775d34c3ca92619832b3e3f4ec319c5f6c08e80768b40fef105e31",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "qatar_municipalities_2015.giswordbook",
+        "size": 431,
+        "sha256": "6e9372d9c64c9ec4f9614c7800f60e25f9bc2129800fa57b916589bc787ff054"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 7046,
+      "sha256": "a8f5d1402f5761f6d69a80af23a5d838785dff2b3ce5a7a183409ab20e3799bc"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 10510,
+      "sha256": "8e6593d235f40e85d094229523eedd6a26da9630556293e20999e9f1e979135d"
+    },
+    "names": {
+      "path": "qatar_municipalities_2015.names.csv",
+      "size": 168,
+      "sha256": "c9cf4b71646474cd5b04fba48aadc0eac6f0e59479a2c15714d30f72f72b43df"
+    }
+  }
+}

@@ -1,0 +1,2115 @@
+wordbook_code,GRVALUE,BUNDESLAND_CODE,BUNDESLAND_NAME,AREA_CODE,AREA_NAME,AREA_TYPE
+1,10101,1,Burgenland,10101,Eisenstadt,MUNICIPALITY
+2,10201,1,Burgenland,10201,Rust,MUNICIPALITY
+3,10301,1,Burgenland,10301,Breitenbrunn am Neusiedler See,MUNICIPALITY
+4,10302,1,Burgenland,10302,Donnerskirchen,MUNICIPALITY
+5,10303,1,Burgenland,10303,Großhöflein,MUNICIPALITY
+6,10304,1,Burgenland,10304,Hornstein,MUNICIPALITY
+7,10305,1,Burgenland,10305,Klingenbach,MUNICIPALITY
+8,10306,1,Burgenland,10306,Leithaprodersdorf,MUNICIPALITY
+9,10307,1,Burgenland,10307,Mörbisch am See,MUNICIPALITY
+10,10308,1,Burgenland,10308,Müllendorf,MUNICIPALITY
+11,10309,1,Burgenland,10309,Neufeld an der Leitha,MUNICIPALITY
+12,10310,1,Burgenland,10310,Oggau am Neusiedler See,MUNICIPALITY
+13,10311,1,Burgenland,10311,Oslip,MUNICIPALITY
+14,10312,1,Burgenland,10312,Purbach am Neusiedler See,MUNICIPALITY
+15,10313,1,Burgenland,10313,Sankt Margarethen im Burgenland,MUNICIPALITY
+16,10314,1,Burgenland,10314,Schützen am Gebirge,MUNICIPALITY
+17,10315,1,Burgenland,10315,Siegendorf,MUNICIPALITY
+18,10316,1,Burgenland,10316,Steinbrunn,MUNICIPALITY
+19,10317,1,Burgenland,10317,Trausdorf an der Wulka,MUNICIPALITY
+20,10318,1,Burgenland,10318,Wimpassing an der Leitha,MUNICIPALITY
+21,10319,1,Burgenland,10319,Wulkaprodersdorf,MUNICIPALITY
+22,10320,1,Burgenland,10320,Loretto,MUNICIPALITY
+23,10321,1,Burgenland,10321,Stotzing,MUNICIPALITY
+24,10322,1,Burgenland,10322,Zillingtal,MUNICIPALITY
+25,10323,1,Burgenland,10323,Zagersdorf,MUNICIPALITY
+26,10401,1,Burgenland,10401,Bocksdorf,MUNICIPALITY
+27,10402,1,Burgenland,10402,Burgauberg-Neudauberg,MUNICIPALITY
+28,10403,1,Burgenland,10403,Eberau,MUNICIPALITY
+29,10404,1,Burgenland,10404,Gerersdorf-Sulz,MUNICIPALITY
+30,10405,1,Burgenland,10405,Güssing,MUNICIPALITY
+31,10406,1,Burgenland,10406,Güttenbach,MUNICIPALITY
+32,10407,1,Burgenland,10407,Heiligenbrunn,MUNICIPALITY
+33,10408,1,Burgenland,10408,Kukmirn,MUNICIPALITY
+34,10409,1,Burgenland,10409,Neuberg im Burgenland,MUNICIPALITY
+35,10410,1,Burgenland,10410,Neustift bei Güssing,MUNICIPALITY
+36,10411,1,Burgenland,10411,Olbendorf,MUNICIPALITY
+37,10412,1,Burgenland,10412,Ollersdorf im Burgenland,MUNICIPALITY
+38,10413,1,Burgenland,10413,Sankt Michael im Burgenland,MUNICIPALITY
+39,10414,1,Burgenland,10414,Stegersbach,MUNICIPALITY
+40,10415,1,Burgenland,10415,Stinatz,MUNICIPALITY
+41,10416,1,Burgenland,10416,Strem,MUNICIPALITY
+42,10417,1,Burgenland,10417,Tobaj,MUNICIPALITY
+43,10418,1,Burgenland,10418,Hackerberg,MUNICIPALITY
+44,10419,1,Burgenland,10419,Wörterberg,MUNICIPALITY
+45,10420,1,Burgenland,10420,Großmürbisch,MUNICIPALITY
+46,10421,1,Burgenland,10421,Inzenhof,MUNICIPALITY
+47,10422,1,Burgenland,10422,Kleinmürbisch,MUNICIPALITY
+48,10423,1,Burgenland,10423,Tschanigraben,MUNICIPALITY
+49,10424,1,Burgenland,10424,Heugraben,MUNICIPALITY
+50,10425,1,Burgenland,10425,Rohr im Burgenland,MUNICIPALITY
+51,10426,1,Burgenland,10426,Bildein,MUNICIPALITY
+52,10427,1,Burgenland,10427,Rauchwart,MUNICIPALITY
+53,10428,1,Burgenland,10428,Moschendorf,MUNICIPALITY
+54,10501,1,Burgenland,10501,Deutsch Kaltenbrunn,MUNICIPALITY
+55,10502,1,Burgenland,10502,Eltendorf,MUNICIPALITY
+56,10503,1,Burgenland,10503,Heiligenkreuz im Lafnitztal,MUNICIPALITY
+57,10504,1,Burgenland,10504,Jennersdorf,MUNICIPALITY
+58,10505,1,Burgenland,10505,Minihof-Liebau,MUNICIPALITY
+59,10506,1,Burgenland,10506,Mogersdorf,MUNICIPALITY
+60,10507,1,Burgenland,10507,Neuhaus am Klausenbach,MUNICIPALITY
+61,10508,1,Burgenland,10508,Rudersdorf,MUNICIPALITY
+62,10509,1,Burgenland,10509,Sankt Martin an der Raab,MUNICIPALITY
+63,10510,1,Burgenland,10510,Weichselbaum,MUNICIPALITY
+64,10511,1,Burgenland,10511,Königsdorf,MUNICIPALITY
+65,10512,1,Burgenland,10512,Mühlgraben,MUNICIPALITY
+66,10601,1,Burgenland,10601,Draßburg,MUNICIPALITY
+67,10602,1,Burgenland,10602,Forchtenstein,MUNICIPALITY
+68,10603,1,Burgenland,10603,Hirm,MUNICIPALITY
+69,10604,1,Burgenland,10604,Loipersbach im Burgenland,MUNICIPALITY
+70,10605,1,Burgenland,10605,Marz,MUNICIPALITY
+71,10606,1,Burgenland,10606,Mattersburg,MUNICIPALITY
+72,10607,1,Burgenland,10607,Neudörfl,MUNICIPALITY
+73,10608,1,Burgenland,10608,Pöttelsdorf,MUNICIPALITY
+74,10609,1,Burgenland,10609,Pöttsching,MUNICIPALITY
+75,10610,1,Burgenland,10610,Rohrbach bei Mattersburg,MUNICIPALITY
+76,10611,1,Burgenland,10611,Bad Sauerbrunn,MUNICIPALITY
+77,10612,1,Burgenland,10612,Schattendorf,MUNICIPALITY
+78,10613,1,Burgenland,10613,Sieggraben,MUNICIPALITY
+79,10614,1,Burgenland,10614,Sigleß,MUNICIPALITY
+80,10615,1,Burgenland,10615,Wiesen,MUNICIPALITY
+81,10616,1,Burgenland,10616,Antau,MUNICIPALITY
+82,10617,1,Burgenland,10617,Baumgarten,MUNICIPALITY
+83,10618,1,Burgenland,10618,Zemendorf-Stöttera,MUNICIPALITY
+84,10619,1,Burgenland,10619,Krensdorf,MUNICIPALITY
+85,10701,1,Burgenland,10701,Andau,MUNICIPALITY
+86,10702,1,Burgenland,10702,Apetlon,MUNICIPALITY
+87,10703,1,Burgenland,10703,Bruckneudorf,MUNICIPALITY
+88,10704,1,Burgenland,10704,Deutsch Jahrndorf,MUNICIPALITY
+89,10705,1,Burgenland,10705,Frauenkirchen,MUNICIPALITY
+90,10706,1,Burgenland,10706,Gattendorf,MUNICIPALITY
+91,10707,1,Burgenland,10707,Gols,MUNICIPALITY
+92,10708,1,Burgenland,10708,Halbturn,MUNICIPALITY
+93,10709,1,Burgenland,10709,Illmitz,MUNICIPALITY
+94,10710,1,Burgenland,10710,Jois,MUNICIPALITY
+95,10711,1,Burgenland,10711,Kittsee,MUNICIPALITY
+96,10712,1,Burgenland,10712,Mönchhof,MUNICIPALITY
+97,10713,1,Burgenland,10713,Neusiedl am See,MUNICIPALITY
+98,10714,1,Burgenland,10714,Nickelsdorf,MUNICIPALITY
+99,10715,1,Burgenland,10715,Pama,MUNICIPALITY
+100,10716,1,Burgenland,10716,Pamhagen,MUNICIPALITY
+101,10717,1,Burgenland,10717,Parndorf,MUNICIPALITY
+102,10718,1,Burgenland,10718,Podersdorf am See,MUNICIPALITY
+103,10719,1,Burgenland,10719,Sankt Andrä am Zicksee,MUNICIPALITY
+104,10720,1,Burgenland,10720,Tadten,MUNICIPALITY
+105,10721,1,Burgenland,10721,Wallern im Burgenland,MUNICIPALITY
+106,10722,1,Burgenland,10722,Weiden am See,MUNICIPALITY
+107,10723,1,Burgenland,10723,Winden am See,MUNICIPALITY
+108,10724,1,Burgenland,10724,Zurndorf,MUNICIPALITY
+109,10725,1,Burgenland,10725,Neudorf,MUNICIPALITY
+110,10726,1,Burgenland,10726,Potzneusiedl,MUNICIPALITY
+111,10727,1,Burgenland,10727,Edelstal,MUNICIPALITY
+112,10801,1,Burgenland,10801,Deutschkreutz,MUNICIPALITY
+113,10802,1,Burgenland,10802,Draßmarkt,MUNICIPALITY
+114,10803,1,Burgenland,10803,Frankenau-Unterpullendorf,MUNICIPALITY
+115,10804,1,Burgenland,10804,Großwarasdorf,MUNICIPALITY
+116,10805,1,Burgenland,10805,Horitschon,MUNICIPALITY
+117,10806,1,Burgenland,10806,Kaisersdorf,MUNICIPALITY
+118,10807,1,Burgenland,10807,Kobersdorf,MUNICIPALITY
+119,10808,1,Burgenland,10808,Lackenbach,MUNICIPALITY
+120,10809,1,Burgenland,10809,Lockenhaus,MUNICIPALITY
+121,10810,1,Burgenland,10810,Lutzmannsburg,MUNICIPALITY
+122,10811,1,Burgenland,10811,Mannersdorf an der Rabnitz,MUNICIPALITY
+123,10812,1,Burgenland,10812,Markt Sankt Martin,MUNICIPALITY
+124,10813,1,Burgenland,10813,Neckenmarkt,MUNICIPALITY
+125,10814,1,Burgenland,10814,Neutal,MUNICIPALITY
+126,10815,1,Burgenland,10815,Nikitsch,MUNICIPALITY
+127,10816,1,Burgenland,10816,Oberpullendorf,MUNICIPALITY
+128,10817,1,Burgenland,10817,Pilgersdorf,MUNICIPALITY
+129,10818,1,Burgenland,10818,Piringsdorf,MUNICIPALITY
+130,10819,1,Burgenland,10819,Raiding,MUNICIPALITY
+131,10820,1,Burgenland,10820,Ritzing,MUNICIPALITY
+132,10821,1,Burgenland,10821,Steinberg-Dörfl,MUNICIPALITY
+133,10822,1,Burgenland,10822,Stoob,MUNICIPALITY
+134,10823,1,Burgenland,10823,Weppersdorf,MUNICIPALITY
+135,10824,1,Burgenland,10824,Lackendorf,MUNICIPALITY
+136,10825,1,Burgenland,10825,Unterfrauenhaid,MUNICIPALITY
+137,10826,1,Burgenland,10826,Unterrabnitz-Schwendgraben,MUNICIPALITY
+138,10827,1,Burgenland,10827,Weingraben,MUNICIPALITY
+139,10828,1,Burgenland,10828,Oberloisdorf,MUNICIPALITY
+140,10901,1,Burgenland,10901,Bad Tatzmannsdorf,MUNICIPALITY
+141,10902,1,Burgenland,10902,Bernstein,MUNICIPALITY
+142,10903,1,Burgenland,10903,Deutsch Schützen-Eisenberg,MUNICIPALITY
+143,10904,1,Burgenland,10904,Grafenschachen,MUNICIPALITY
+144,10905,1,Burgenland,10905,Großpetersdorf,MUNICIPALITY
+145,10906,1,Burgenland,10906,Hannersdorf,MUNICIPALITY
+146,10907,1,Burgenland,10907,Kemeten,MUNICIPALITY
+147,10908,1,Burgenland,10908,Kohfidisch,MUNICIPALITY
+148,10909,1,Burgenland,10909,Litzelsdorf,MUNICIPALITY
+149,10910,1,Burgenland,10910,Loipersdorf-Kitzladen,MUNICIPALITY
+150,10911,1,Burgenland,10911,Mariasdorf,MUNICIPALITY
+151,10912,1,Burgenland,10912,Markt Allhau,MUNICIPALITY
+152,10913,1,Burgenland,10913,Markt Neuhodis,MUNICIPALITY
+153,10914,1,Burgenland,10914,Mischendorf,MUNICIPALITY
+154,10915,1,Burgenland,10915,Oberdorf im Burgenland,MUNICIPALITY
+155,10916,1,Burgenland,10916,Oberschützen,MUNICIPALITY
+156,10917,1,Burgenland,10917,Oberwart,MUNICIPALITY
+157,10918,1,Burgenland,10918,Pinkafeld,MUNICIPALITY
+158,10919,1,Burgenland,10919,Rechnitz,MUNICIPALITY
+159,10920,1,Burgenland,10920,Riedlingsdorf,MUNICIPALITY
+160,10921,1,Burgenland,10921,Rotenturm an der Pinka,MUNICIPALITY
+161,10922,1,Burgenland,10922,Schachendorf,MUNICIPALITY
+162,10923,1,Burgenland,10923,Stadtschlaining,MUNICIPALITY
+163,10924,1,Burgenland,10924,Unterkohlstätten,MUNICIPALITY
+164,10925,1,Burgenland,10925,Unterwart,MUNICIPALITY
+165,10926,1,Burgenland,10926,Weiden bei Rechnitz,MUNICIPALITY
+166,10927,1,Burgenland,10927,Wiesfleck,MUNICIPALITY
+167,10928,1,Burgenland,10928,Wolfau,MUNICIPALITY
+168,10929,1,Burgenland,10929,Neustift an der Lafnitz,MUNICIPALITY
+169,10930,1,Burgenland,10930,Jabing,MUNICIPALITY
+170,10931,1,Burgenland,10931,Badersdorf,MUNICIPALITY
+171,10932,1,Burgenland,10932,Schandorf,MUNICIPALITY
+172,20101,2,Kärnten,20101,Klagenfurt am Wörthersee,MUNICIPALITY
+173,20201,2,Kärnten,20201,Villach,MUNICIPALITY
+174,20302,2,Kärnten,20302,Dellach,MUNICIPALITY
+175,20305,2,Kärnten,20305,Hermagor-Pressegger See,MUNICIPALITY
+176,20306,2,Kärnten,20306,Kirchbach,MUNICIPALITY
+177,20307,2,Kärnten,20307,Kötschach-Mauthen,MUNICIPALITY
+178,20316,2,Kärnten,20316,St. Stefan im Gailtal,MUNICIPALITY
+179,20320,2,Kärnten,20320,Gitschtal,MUNICIPALITY
+180,20321,2,Kärnten,20321,Lesachtal,MUNICIPALITY
+181,20402,2,Kärnten,20402,Ebenthal in Kärnten,MUNICIPALITY
+182,20403,2,Kärnten,20403,Feistritz im Rosental,MUNICIPALITY
+183,20405,2,Kärnten,20405,Ferlach,MUNICIPALITY
+184,20409,2,Kärnten,20409,Grafenstein,MUNICIPALITY
+185,20412,2,Kärnten,20412,Keutschach am See,MUNICIPALITY
+186,20414,2,Kärnten,20414,Köttmannsdorf,MUNICIPALITY
+187,20415,2,Kärnten,20415,Krumpendorf am Wörthersee,MUNICIPALITY
+188,20416,2,Kärnten,20416,Ludmannsdorf,MUNICIPALITY
+189,20417,2,Kärnten,20417,Maria Rain,MUNICIPALITY
+190,20418,2,Kärnten,20418,Maria Saal,MUNICIPALITY
+191,20419,2,Kärnten,20419,Maria Wörth,MUNICIPALITY
+192,20421,2,Kärnten,20421,Moosburg,MUNICIPALITY
+193,20424,2,Kärnten,20424,Pörtschach am Wörther See,MUNICIPALITY
+194,20425,2,Kärnten,20425,Poggersdorf,MUNICIPALITY
+195,20428,2,Kärnten,20428,St. Margareten im Rosental,MUNICIPALITY
+196,20432,2,Kärnten,20432,Schiefling am Wörthersee,MUNICIPALITY
+197,20435,2,Kärnten,20435,Techelsberg am Wörther See,MUNICIPALITY
+198,20441,2,Kärnten,20441,Zell,MUNICIPALITY
+199,20442,2,Kärnten,20442,Magdalensberg,MUNICIPALITY
+200,20501,2,Kärnten,20501,Althofen,MUNICIPALITY
+201,20502,2,Kärnten,20502,Brückl,MUNICIPALITY
+202,20503,2,Kärnten,20503,Deutsch-Griffen,MUNICIPALITY
+203,20504,2,Kärnten,20504,Eberstein,MUNICIPALITY
+204,20505,2,Kärnten,20505,Friesach,MUNICIPALITY
+205,20506,2,Kärnten,20506,Glödnitz,MUNICIPALITY
+206,20508,2,Kärnten,20508,Gurk,MUNICIPALITY
+207,20509,2,Kärnten,20509,Guttaring,MUNICIPALITY
+208,20511,2,Kärnten,20511,Hüttenberg,MUNICIPALITY
+209,20512,2,Kärnten,20512,Kappel am Krappfeld,MUNICIPALITY
+210,20513,2,Kärnten,20513,Klein St. Paul,MUNICIPALITY
+211,20515,2,Kärnten,20515,Liebenfels,MUNICIPALITY
+212,20518,2,Kärnten,20518,Metnitz,MUNICIPALITY
+213,20519,2,Kärnten,20519,Micheldorf,MUNICIPALITY
+214,20520,2,Kärnten,20520,Mölbling,MUNICIPALITY
+215,20523,2,Kärnten,20523,St. Georgen am Längsee,MUNICIPALITY
+216,20527,2,Kärnten,20527,St. Veit an der Glan,MUNICIPALITY
+217,20530,2,Kärnten,20530,Straßburg,MUNICIPALITY
+218,20531,2,Kärnten,20531,Weitensfeld im Gurktal,MUNICIPALITY
+219,20534,2,Kärnten,20534,Frauenstein,MUNICIPALITY
+220,20601,2,Kärnten,20601,Bad Kleinkirchheim,MUNICIPALITY
+221,20602,2,Kärnten,20602,Baldramsdorf,MUNICIPALITY
+222,20603,2,Kärnten,20603,Berg im Drautal,MUNICIPALITY
+223,20604,2,Kärnten,20604,Dellach im Drautal,MUNICIPALITY
+224,20605,2,Kärnten,20605,Großkirchheim,MUNICIPALITY
+225,20607,2,Kärnten,20607,Flattach,MUNICIPALITY
+226,20608,2,Kärnten,20608,Gmünd in Kärnten,MUNICIPALITY
+227,20609,2,Kärnten,20609,Greifenburg,MUNICIPALITY
+228,20610,2,Kärnten,20610,Heiligenblut am Großglockner,MUNICIPALITY
+229,20611,2,Kärnten,20611,Irschen,MUNICIPALITY
+230,20613,2,Kärnten,20613,Kleblach-Lind,MUNICIPALITY
+231,20616,2,Kärnten,20616,Lendorf,MUNICIPALITY
+232,20618,2,Kärnten,20618,Mallnitz,MUNICIPALITY
+233,20619,2,Kärnten,20619,Malta,MUNICIPALITY
+234,20620,2,Kärnten,20620,Millstatt am See,MUNICIPALITY
+235,20622,2,Kärnten,20622,Mörtschach,MUNICIPALITY
+236,20624,2,Kärnten,20624,Mühldorf,MUNICIPALITY
+237,20625,2,Kärnten,20625,Oberdrauburg,MUNICIPALITY
+238,20627,2,Kärnten,20627,Obervellach,MUNICIPALITY
+239,20630,2,Kärnten,20630,Radenthein,MUNICIPALITY
+240,20631,2,Kärnten,20631,Rangersdorf,MUNICIPALITY
+241,20632,2,Kärnten,20632,Rennweg am Katschberg,MUNICIPALITY
+242,20633,2,Kärnten,20633,Sachsenburg,MUNICIPALITY
+243,20634,2,Kärnten,20634,Seeboden am Millstätter See,MUNICIPALITY
+244,20635,2,Kärnten,20635,Spittal an der Drau,MUNICIPALITY
+245,20636,2,Kärnten,20636,Stall,MUNICIPALITY
+246,20637,2,Kärnten,20637,Steinfeld,MUNICIPALITY
+247,20638,2,Kärnten,20638,Trebesing,MUNICIPALITY
+248,20639,2,Kärnten,20639,Weißensee,MUNICIPALITY
+249,20640,2,Kärnten,20640,Winklern,MUNICIPALITY
+250,20642,2,Kärnten,20642,Krems in Kärnten,MUNICIPALITY
+251,20643,2,Kärnten,20643,Lurnfeld,MUNICIPALITY
+252,20644,2,Kärnten,20644,Reißeck,MUNICIPALITY
+253,20701,2,Kärnten,20701,Afritz am See,MUNICIPALITY
+254,20702,2,Kärnten,20702,Arnoldstein,MUNICIPALITY
+255,20703,2,Kärnten,20703,Arriach,MUNICIPALITY
+256,20705,2,Kärnten,20705,Bad Bleiberg,MUNICIPALITY
+257,20707,2,Kärnten,20707,Feistritz an der Gail,MUNICIPALITY
+258,20708,2,Kärnten,20708,Feld am See,MUNICIPALITY
+259,20710,2,Kärnten,20710,Ferndorf,MUNICIPALITY
+260,20711,2,Kärnten,20711,Finkenstein am Faaker See,MUNICIPALITY
+261,20712,2,Kärnten,20712,Fresach,MUNICIPALITY
+262,20713,2,Kärnten,20713,Hohenthurn,MUNICIPALITY
+263,20719,2,Kärnten,20719,Nötsch im Gailtal,MUNICIPALITY
+264,20720,2,Kärnten,20720,Paternion,MUNICIPALITY
+265,20721,2,Kärnten,20721,Rosegg,MUNICIPALITY
+266,20722,2,Kärnten,20722,St. Jakob im Rosental,MUNICIPALITY
+267,20723,2,Kärnten,20723,Stockenboi,MUNICIPALITY
+268,20724,2,Kärnten,20724,Treffen am Ossiacher See,MUNICIPALITY
+269,20725,2,Kärnten,20725,Velden am Wörther See,MUNICIPALITY
+270,20726,2,Kärnten,20726,Weißenstein,MUNICIPALITY
+271,20727,2,Kärnten,20727,Wernberg,MUNICIPALITY
+272,20801,2,Kärnten,20801,Bleiburg,MUNICIPALITY
+273,20802,2,Kärnten,20802,Diex,MUNICIPALITY
+274,20803,2,Kärnten,20803,Eberndorf,MUNICIPALITY
+275,20804,2,Kärnten,20804,Eisenkappel-Vellach,MUNICIPALITY
+276,20805,2,Kärnten,20805,Feistritz ob Bleiburg,MUNICIPALITY
+277,20806,2,Kärnten,20806,Gallizien,MUNICIPALITY
+278,20807,2,Kärnten,20807,Globasnitz,MUNICIPALITY
+279,20808,2,Kärnten,20808,Griffen,MUNICIPALITY
+280,20810,2,Kärnten,20810,Neuhaus,MUNICIPALITY
+281,20812,2,Kärnten,20812,Ruden,MUNICIPALITY
+282,20813,2,Kärnten,20813,St. Kanzian am Klopeiner See,MUNICIPALITY
+283,20815,2,Kärnten,20815,Sittersdorf,MUNICIPALITY
+284,20817,2,Kärnten,20817,Völkermarkt,MUNICIPALITY
+285,20901,2,Kärnten,20901,Bad St. Leonhard im Lavanttal,MUNICIPALITY
+286,20905,2,Kärnten,20905,Frantschach-St. Gertraud,MUNICIPALITY
+287,20909,2,Kärnten,20909,Lavamünd,MUNICIPALITY
+288,20911,2,Kärnten,20911,Preitenegg,MUNICIPALITY
+289,20912,2,Kärnten,20912,Reichenfels,MUNICIPALITY
+290,20913,2,Kärnten,20913,St. Andrä,MUNICIPALITY
+291,20914,2,Kärnten,20914,St. Georgen im Lavanttal,MUNICIPALITY
+292,20918,2,Kärnten,20918,St. Paul im Lavanttal,MUNICIPALITY
+293,20923,2,Kärnten,20923,Wolfsberg,MUNICIPALITY
+294,21001,2,Kärnten,21001,Albeck,MUNICIPALITY
+295,21002,2,Kärnten,21002,Feldkirchen in Kärnten,MUNICIPALITY
+296,21003,2,Kärnten,21003,Glanegg,MUNICIPALITY
+297,21004,2,Kärnten,21004,Gnesau,MUNICIPALITY
+298,21005,2,Kärnten,21005,Himmelberg,MUNICIPALITY
+299,21006,2,Kärnten,21006,Ossiach,MUNICIPALITY
+300,21007,2,Kärnten,21007,Reichenau,MUNICIPALITY
+301,21008,2,Kärnten,21008,St. Urban,MUNICIPALITY
+302,21009,2,Kärnten,21009,Steindorf am Ossiacher See,MUNICIPALITY
+303,21010,2,Kärnten,21010,Steuerberg,MUNICIPALITY
+304,30101,3,Niederösterreich,30101,Krems an der Donau,MUNICIPALITY
+305,30201,3,Niederösterreich,30201,St. Pölten,MUNICIPALITY
+306,30301,3,Niederösterreich,30301,Waidhofen an der Ybbs,MUNICIPALITY
+307,30401,3,Niederösterreich,30401,Wiener Neustadt,MUNICIPALITY
+308,30501,3,Niederösterreich,30501,Allhartsberg,MUNICIPALITY
+309,30502,3,Niederösterreich,30502,Amstetten,MUNICIPALITY
+310,30503,3,Niederösterreich,30503,Ardagger,MUNICIPALITY
+311,30504,3,Niederösterreich,30504,Aschbach-Markt,MUNICIPALITY
+312,30506,3,Niederösterreich,30506,Behamberg,MUNICIPALITY
+313,30507,3,Niederösterreich,30507,Biberbach,MUNICIPALITY
+314,30508,3,Niederösterreich,30508,Ennsdorf,MUNICIPALITY
+315,30509,3,Niederösterreich,30509,Ernsthofen,MUNICIPALITY
+316,30510,3,Niederösterreich,30510,Ertl,MUNICIPALITY
+317,30511,3,Niederösterreich,30511,Euratsfeld,MUNICIPALITY
+318,30512,3,Niederösterreich,30512,Ferschnitz,MUNICIPALITY
+319,30514,3,Niederösterreich,30514,Haag,MUNICIPALITY
+320,30515,3,Niederösterreich,30515,Haidershofen,MUNICIPALITY
+321,30516,3,Niederösterreich,30516,Hollenstein an der Ybbs,MUNICIPALITY
+322,30517,3,Niederösterreich,30517,Kematen an der Ybbs,MUNICIPALITY
+323,30520,3,Niederösterreich,30520,Neuhofen an der Ybbs,MUNICIPALITY
+324,30521,3,Niederösterreich,30521,Neustadtl an der Donau,MUNICIPALITY
+325,30522,3,Niederösterreich,30522,Oed-Oehling,MUNICIPALITY
+326,30524,3,Niederösterreich,30524,Opponitz,MUNICIPALITY
+327,30526,3,Niederösterreich,30526,St. Georgen am Reith,MUNICIPALITY
+328,30527,3,Niederösterreich,30527,St. Georgen am Ybbsfelde,MUNICIPALITY
+329,30529,3,Niederösterreich,30529,St. Pantaleon-Erla,MUNICIPALITY
+330,30530,3,Niederösterreich,30530,St. Peter in der Au,MUNICIPALITY
+331,30531,3,Niederösterreich,30531,St. Valentin,MUNICIPALITY
+332,30532,3,Niederösterreich,30532,Seitenstetten,MUNICIPALITY
+333,30533,3,Niederösterreich,30533,Sonntagberg,MUNICIPALITY
+334,30534,3,Niederösterreich,30534,Strengberg,MUNICIPALITY
+335,30536,3,Niederösterreich,30536,Viehdorf,MUNICIPALITY
+336,30538,3,Niederösterreich,30538,Wallsee-Sindelburg,MUNICIPALITY
+337,30539,3,Niederösterreich,30539,Weistrach,MUNICIPALITY
+338,30541,3,Niederösterreich,30541,Winklarn,MUNICIPALITY
+339,30542,3,Niederösterreich,30542,Wolfsbach,MUNICIPALITY
+340,30543,3,Niederösterreich,30543,Ybbsitz,MUNICIPALITY
+341,30544,3,Niederösterreich,30544,Zeillern,MUNICIPALITY
+342,30601,3,Niederösterreich,30601,Alland,MUNICIPALITY
+343,30602,3,Niederösterreich,30602,Altenmarkt an der Triesting,MUNICIPALITY
+344,30603,3,Niederösterreich,30603,Bad Vöslau,MUNICIPALITY
+345,30604,3,Niederösterreich,30604,Baden,MUNICIPALITY
+346,30605,3,Niederösterreich,30605,Berndorf,MUNICIPALITY
+347,30607,3,Niederösterreich,30607,Ebreichsdorf,MUNICIPALITY
+348,30608,3,Niederösterreich,30608,Enzesfeld-Lindabrunn,MUNICIPALITY
+349,30609,3,Niederösterreich,30609,Furth an der Triesting,MUNICIPALITY
+350,30612,3,Niederösterreich,30612,Günselsdorf,MUNICIPALITY
+351,30613,3,Niederösterreich,30613,Heiligenkreuz,MUNICIPALITY
+352,30614,3,Niederösterreich,30614,Hernstein,MUNICIPALITY
+353,30615,3,Niederösterreich,30615,Hirtenberg,MUNICIPALITY
+354,30616,3,Niederösterreich,30616,Klausen-Leopoldsdorf,MUNICIPALITY
+355,30618,3,Niederösterreich,30618,Kottingbrunn,MUNICIPALITY
+356,30620,3,Niederösterreich,30620,Leobersdorf,MUNICIPALITY
+357,30621,3,Niederösterreich,30621,Mitterndorf an der Fischa,MUNICIPALITY
+358,30623,3,Niederösterreich,30623,Oberwaltersdorf,MUNICIPALITY
+359,30625,3,Niederösterreich,30625,Pfaffstätten,MUNICIPALITY
+360,30626,3,Niederösterreich,30626,Pottendorf,MUNICIPALITY
+361,30627,3,Niederösterreich,30627,Pottenstein,MUNICIPALITY
+362,30629,3,Niederösterreich,30629,Reisenberg,MUNICIPALITY
+363,30631,3,Niederösterreich,30631,Schönau an der Triesting,MUNICIPALITY
+364,30633,3,Niederösterreich,30633,Seibersdorf,MUNICIPALITY
+365,30635,3,Niederösterreich,30635,Sooß,MUNICIPALITY
+366,30636,3,Niederösterreich,30636,Tattendorf,MUNICIPALITY
+367,30637,3,Niederösterreich,30637,Teesdorf,MUNICIPALITY
+368,30639,3,Niederösterreich,30639,Traiskirchen,MUNICIPALITY
+369,30641,3,Niederösterreich,30641,Trumau,MUNICIPALITY
+370,30645,3,Niederösterreich,30645,Weissenbach an der Triesting,MUNICIPALITY
+371,30646,3,Niederösterreich,30646,Blumau-Neurißhof,MUNICIPALITY
+372,30701,3,Niederösterreich,30701,Au am Leithaberge,MUNICIPALITY
+373,30702,3,Niederösterreich,30702,Bad Deutsch-Altenburg,MUNICIPALITY
+374,30703,3,Niederösterreich,30703,Berg,MUNICIPALITY
+375,30704,3,Niederösterreich,30704,Bruck an der Leitha,MUNICIPALITY
+376,30706,3,Niederösterreich,30706,Enzersdorf an der Fischa,MUNICIPALITY
+377,30708,3,Niederösterreich,30708,Göttlesbrunn-Arbesthal,MUNICIPALITY
+378,30709,3,Niederösterreich,30709,Götzendorf an der Leitha,MUNICIPALITY
+379,30710,3,Niederösterreich,30710,Hainburg a.d. Donau,MUNICIPALITY
+380,30711,3,Niederösterreich,30711,Haslau-Maria Ellend,MUNICIPALITY
+381,30712,3,Niederösterreich,30712,Höflein,MUNICIPALITY
+382,30713,3,Niederösterreich,30713,Hof am Leithaberge,MUNICIPALITY
+383,30715,3,Niederösterreich,30715,Hundsheim,MUNICIPALITY
+384,30716,3,Niederösterreich,30716,Mannersdorf am Leithagebirge,MUNICIPALITY
+385,30718,3,Niederösterreich,30718,Petronell-Carnuntum,MUNICIPALITY
+386,30719,3,Niederösterreich,30719,Prellenkirchen,MUNICIPALITY
+387,30721,3,Niederösterreich,30721,Rohrau,MUNICIPALITY
+388,30722,3,Niederösterreich,30722,Scharndorf,MUNICIPALITY
+389,30724,3,Niederösterreich,30724,Sommerein,MUNICIPALITY
+390,30726,3,Niederösterreich,30726,Trautmannsdorf an der Leitha,MUNICIPALITY
+391,30728,3,Niederösterreich,30728,Wolfsthal,MUNICIPALITY
+392,30729,3,Niederösterreich,30729,Ebergassing,MUNICIPALITY
+393,30730,3,Niederösterreich,30730,Fischamend,MUNICIPALITY
+394,30731,3,Niederösterreich,30731,Gramatneusiedl,MUNICIPALITY
+395,30732,3,Niederösterreich,30732,Himberg,MUNICIPALITY
+396,30733,3,Niederösterreich,30733,Klein-Neusiedl,MUNICIPALITY
+397,30734,3,Niederösterreich,30734,Lanzendorf,MUNICIPALITY
+398,30735,3,Niederösterreich,30735,Leopoldsdorf,MUNICIPALITY
+399,30736,3,Niederösterreich,30736,Maria-Lanzendorf,MUNICIPALITY
+400,30737,3,Niederösterreich,30737,Moosbrunn,MUNICIPALITY
+401,30738,3,Niederösterreich,30738,Rauchenwarth,MUNICIPALITY
+402,30739,3,Niederösterreich,30739,Schwadorf,MUNICIPALITY
+403,30740,3,Niederösterreich,30740,Schwechat,MUNICIPALITY
+404,30741,3,Niederösterreich,30741,Zwölfaxing,MUNICIPALITY
+405,30801,3,Niederösterreich,30801,Aderklaa,MUNICIPALITY
+406,30802,3,Niederösterreich,30802,Andlersdorf,MUNICIPALITY
+407,30803,3,Niederösterreich,30803,Angern an der March,MUNICIPALITY
+408,30804,3,Niederösterreich,30804,Auersthal,MUNICIPALITY
+409,30805,3,Niederösterreich,30805,Bad Pirawarth,MUNICIPALITY
+410,30808,3,Niederösterreich,30808,Deutsch-Wagram,MUNICIPALITY
+411,30810,3,Niederösterreich,30810,Drösing,MUNICIPALITY
+412,30811,3,Niederösterreich,30811,Dürnkrut,MUNICIPALITY
+413,30812,3,Niederösterreich,30812,Ebenthal,MUNICIPALITY
+414,30813,3,Niederösterreich,30813,Eckartsau,MUNICIPALITY
+415,30814,3,Niederösterreich,30814,Engelhartstetten,MUNICIPALITY
+416,30817,3,Niederösterreich,30817,Gänserndorf,MUNICIPALITY
+417,30819,3,Niederösterreich,30819,Glinzendorf,MUNICIPALITY
+418,30821,3,Niederösterreich,30821,Groß-Enzersdorf,MUNICIPALITY
+419,30822,3,Niederösterreich,30822,Großhofen,MUNICIPALITY
+420,30824,3,Niederösterreich,30824,Groß-Schweinbarth,MUNICIPALITY
+421,30825,3,Niederösterreich,30825,Haringsee,MUNICIPALITY
+422,30826,3,Niederösterreich,30826,Hauskirchen,MUNICIPALITY
+423,30827,3,Niederösterreich,30827,Hohenau an der March,MUNICIPALITY
+424,30828,3,Niederösterreich,30828,Hohenruppersdorf,MUNICIPALITY
+425,30829,3,Niederösterreich,30829,Jedenspeigen,MUNICIPALITY
+426,30830,3,Niederösterreich,30830,Lassee,MUNICIPALITY
+427,30831,3,Niederösterreich,30831,Leopoldsdorf im Marchfeld,MUNICIPALITY
+428,30834,3,Niederösterreich,30834,Mannsdorf an der Donau,MUNICIPALITY
+429,30835,3,Niederösterreich,30835,Marchegg,MUNICIPALITY
+430,30836,3,Niederösterreich,30836,Markgrafneusiedl,MUNICIPALITY
+431,30838,3,Niederösterreich,30838,Matzen-Raggendorf,MUNICIPALITY
+432,30841,3,Niederösterreich,30841,Neusiedl an der Zaya,MUNICIPALITY
+433,30842,3,Niederösterreich,30842,Obersiebenbrunn,MUNICIPALITY
+434,30844,3,Niederösterreich,30844,Orth an der Donau,MUNICIPALITY
+435,30845,3,Niederösterreich,30845,Palterndorf-Dobermannsdorf,MUNICIPALITY
+436,30846,3,Niederösterreich,30846,Parbasdorf,MUNICIPALITY
+437,30848,3,Niederösterreich,30848,Prottes,MUNICIPALITY
+438,30849,3,Niederösterreich,30849,Raasdorf,MUNICIPALITY
+439,30850,3,Niederösterreich,30850,Ringelsdorf-Niederabsdorf,MUNICIPALITY
+440,30852,3,Niederösterreich,30852,Schönkirchen-Reyersdorf,MUNICIPALITY
+441,30854,3,Niederösterreich,30854,Spannberg,MUNICIPALITY
+442,30856,3,Niederösterreich,30856,Strasshof an der Nordbahn,MUNICIPALITY
+443,30857,3,Niederösterreich,30857,Sulz im Weinviertel,MUNICIPALITY
+444,30858,3,Niederösterreich,30858,Untersiebenbrunn,MUNICIPALITY
+445,30859,3,Niederösterreich,30859,Velm-Götzendorf,MUNICIPALITY
+446,30860,3,Niederösterreich,30860,Weikendorf,MUNICIPALITY
+447,30863,3,Niederösterreich,30863,Zistersdorf,MUNICIPALITY
+448,30865,3,Niederösterreich,30865,Weiden an der March,MUNICIPALITY
+449,30902,3,Niederösterreich,30902,Amaliendorf-Aalfang,MUNICIPALITY
+450,30903,3,Niederösterreich,30903,Brand-Nagelberg,MUNICIPALITY
+451,30904,3,Niederösterreich,30904,Eggern,MUNICIPALITY
+452,30906,3,Niederösterreich,30906,Eisgarn,MUNICIPALITY
+453,30908,3,Niederösterreich,30908,Gmünd,MUNICIPALITY
+454,30909,3,Niederösterreich,30909,Großdietmanns,MUNICIPALITY
+455,30910,3,Niederösterreich,30910,Bad Großpertholz,MUNICIPALITY
+456,30912,3,Niederösterreich,30912,Großschönau,MUNICIPALITY
+457,30913,3,Niederösterreich,30913,Moorbad Harbach,MUNICIPALITY
+458,30915,3,Niederösterreich,30915,Haugschlag,MUNICIPALITY
+459,30916,3,Niederösterreich,30916,Heidenreichstein,MUNICIPALITY
+460,30917,3,Niederösterreich,30917,Hirschbach,MUNICIPALITY
+461,30920,3,Niederösterreich,30920,Hoheneich,MUNICIPALITY
+462,30921,3,Niederösterreich,30921,Kirchberg am Walde,MUNICIPALITY
+463,30925,3,Niederösterreich,30925,Litschau,MUNICIPALITY
+464,30929,3,Niederösterreich,30929,Reingers,MUNICIPALITY
+465,30932,3,Niederösterreich,30932,St. Martin,MUNICIPALITY
+466,30935,3,Niederösterreich,30935,Schrems,MUNICIPALITY
+467,30939,3,Niederösterreich,30939,Unserfrau-Altweitra,MUNICIPALITY
+468,30940,3,Niederösterreich,30940,Waldenstein,MUNICIPALITY
+469,30942,3,Niederösterreich,30942,Weitra,MUNICIPALITY
+470,31001,3,Niederösterreich,31001,Alberndorf im Pulkautal,MUNICIPALITY
+471,31008,3,Niederösterreich,31008,Göllersdorf,MUNICIPALITY
+472,31009,3,Niederösterreich,31009,Grabern,MUNICIPALITY
+473,31014,3,Niederösterreich,31014,Guntersdorf,MUNICIPALITY
+474,31015,3,Niederösterreich,31015,Hadres,MUNICIPALITY
+475,31016,3,Niederösterreich,31016,Hardegg,MUNICIPALITY
+476,31018,3,Niederösterreich,31018,Haugsdorf,MUNICIPALITY
+477,31019,3,Niederösterreich,31019,Heldenberg,MUNICIPALITY
+478,31021,3,Niederösterreich,31021,Hohenwarth-Mühlbach a.M.,MUNICIPALITY
+479,31022,3,Niederösterreich,31022,Hollabrunn,MUNICIPALITY
+480,31025,3,Niederösterreich,31025,Mailberg,MUNICIPALITY
+481,31026,3,Niederösterreich,31026,Maissau,MUNICIPALITY
+482,31028,3,Niederösterreich,31028,Nappersdorf-Kammersdorf,MUNICIPALITY
+483,31033,3,Niederösterreich,31033,Pernersdorf,MUNICIPALITY
+484,31035,3,Niederösterreich,31035,Pulkau,MUNICIPALITY
+485,31036,3,Niederösterreich,31036,Ravelsbach,MUNICIPALITY
+486,31037,3,Niederösterreich,31037,Retz,MUNICIPALITY
+487,31038,3,Niederösterreich,31038,Retzbach,MUNICIPALITY
+488,31041,3,Niederösterreich,31041,Schrattenthal,MUNICIPALITY
+489,31042,3,Niederösterreich,31042,Seefeld-Kadolz,MUNICIPALITY
+490,31043,3,Niederösterreich,31043,Sitzendorf an der Schmida,MUNICIPALITY
+491,31051,3,Niederösterreich,31051,Wullersdorf,MUNICIPALITY
+492,31052,3,Niederösterreich,31052,Zellerndorf,MUNICIPALITY
+493,31053,3,Niederösterreich,31053,Ziersdorf,MUNICIPALITY
+494,31101,3,Niederösterreich,31101,Altenburg,MUNICIPALITY
+495,31102,3,Niederösterreich,31102,Brunn an der Wild,MUNICIPALITY
+496,31103,3,Niederösterreich,31103,Burgschleinitz-Kühnring,MUNICIPALITY
+497,31104,3,Niederösterreich,31104,Drosendorf-Zissersdorf,MUNICIPALITY
+498,31105,3,Niederösterreich,31105,Eggenburg,MUNICIPALITY
+499,31106,3,Niederösterreich,31106,Gars am Kamp,MUNICIPALITY
+500,31107,3,Niederösterreich,31107,Geras,MUNICIPALITY
+501,31109,3,Niederösterreich,31109,Horn,MUNICIPALITY
+502,31110,3,Niederösterreich,31110,Irnfritz-Messern,MUNICIPALITY
+503,31111,3,Niederösterreich,31111,Japons,MUNICIPALITY
+504,31113,3,Niederösterreich,31113,Langau,MUNICIPALITY
+505,31114,3,Niederösterreich,31114,Meiseldorf,MUNICIPALITY
+506,31117,3,Niederösterreich,31117,Pernegg,MUNICIPALITY
+507,31119,3,Niederösterreich,31119,Röhrenbach,MUNICIPALITY
+508,31120,3,Niederösterreich,31120,Röschitz,MUNICIPALITY
+509,31121,3,Niederösterreich,31121,Rosenburg-Mold,MUNICIPALITY
+510,31123,3,Niederösterreich,31123,St. Bernhard-Frauenhofen,MUNICIPALITY
+511,31124,3,Niederösterreich,31124,Sigmundsherberg,MUNICIPALITY
+512,31129,3,Niederösterreich,31129,Weitersfeld,MUNICIPALITY
+513,31130,3,Niederösterreich,31130,Straning-Grafenberg,MUNICIPALITY
+514,31201,3,Niederösterreich,31201,Bisamberg,MUNICIPALITY
+515,31202,3,Niederösterreich,31202,Enzersfeld im Weinviertel,MUNICIPALITY
+516,31203,3,Niederösterreich,31203,Ernstbrunn,MUNICIPALITY
+517,31204,3,Niederösterreich,31204,Großmugl,MUNICIPALITY
+518,31205,3,Niederösterreich,31205,Großrußbach,MUNICIPALITY
+519,31206,3,Niederösterreich,31206,Hagenbrunn,MUNICIPALITY
+520,31207,3,Niederösterreich,31207,Harmannsdorf,MUNICIPALITY
+521,31208,3,Niederösterreich,31208,Hausleiten,MUNICIPALITY
+522,31213,3,Niederösterreich,31213,Korneuburg,MUNICIPALITY
+523,31214,3,Niederösterreich,31214,Langenzersdorf,MUNICIPALITY
+524,31215,3,Niederösterreich,31215,Leitzersdorf,MUNICIPALITY
+525,31216,3,Niederösterreich,31216,Leobendorf,MUNICIPALITY
+526,31224,3,Niederösterreich,31224,Rußbach,MUNICIPALITY
+527,31226,3,Niederösterreich,31226,Sierndorf,MUNICIPALITY
+528,31227,3,Niederösterreich,31227,Spillern,MUNICIPALITY
+529,31228,3,Niederösterreich,31228,Stetteldorf am Wagram,MUNICIPALITY
+530,31229,3,Niederösterreich,31229,Stetten,MUNICIPALITY
+531,31230,3,Niederösterreich,31230,Stockerau,MUNICIPALITY
+532,31234,3,Niederösterreich,31234,Niederhollabrunn,MUNICIPALITY
+533,31235,3,Niederösterreich,31235,Gerasdorf bei Wien,MUNICIPALITY
+534,31301,3,Niederösterreich,31301,Aggsbach,MUNICIPALITY
+535,31302,3,Niederösterreich,31302,Albrechtsberg an der Großen Krems,MUNICIPALITY
+536,31303,3,Niederösterreich,31303,Bergern im Dunkelsteinerwald,MUNICIPALITY
+537,31304,3,Niederösterreich,31304,Dürnstein,MUNICIPALITY
+538,31308,3,Niederösterreich,31308,Grafenegg,MUNICIPALITY
+539,31309,3,Niederösterreich,31309,Furth bei Göttweig,MUNICIPALITY
+540,31310,3,Niederösterreich,31310,Gedersdorf,MUNICIPALITY
+541,31311,3,Niederösterreich,31311,Gföhl,MUNICIPALITY
+542,31315,3,Niederösterreich,31315,Hadersdorf-Kammern,MUNICIPALITY
+543,31319,3,Niederösterreich,31319,Jaidhof,MUNICIPALITY
+544,31321,3,Niederösterreich,31321,Krumau am Kamp,MUNICIPALITY
+545,31322,3,Niederösterreich,31322,Langenlois,MUNICIPALITY
+546,31323,3,Niederösterreich,31323,Lengenfeld,MUNICIPALITY
+547,31324,3,Niederösterreich,31324,Lichtenau im Waldviertel,MUNICIPALITY
+548,31326,3,Niederösterreich,31326,Maria Laach am Jauerling,MUNICIPALITY
+549,31327,3,Niederösterreich,31327,Mautern an der Donau,MUNICIPALITY
+550,31330,3,Niederösterreich,31330,Mühldorf,MUNICIPALITY
+551,31333,3,Niederösterreich,31333,Paudorf,MUNICIPALITY
+552,31336,3,Niederösterreich,31336,Rastenfeld,MUNICIPALITY
+553,31337,3,Niederösterreich,31337,Rohrendorf bei Krems,MUNICIPALITY
+554,31338,3,Niederösterreich,31338,Rossatz-Arnsdorf,MUNICIPALITY
+555,31340,3,Niederösterreich,31340,St. Leonhard am Hornerwald,MUNICIPALITY
+556,31343,3,Niederösterreich,31343,Senftenberg,MUNICIPALITY
+557,31344,3,Niederösterreich,31344,Spitz,MUNICIPALITY
+558,31346,3,Niederösterreich,31346,Straß im Straßertale,MUNICIPALITY
+559,31347,3,Niederösterreich,31347,Stratzing,MUNICIPALITY
+560,31350,3,Niederösterreich,31350,Weinzierl am Walde,MUNICIPALITY
+561,31351,3,Niederösterreich,31351,Weißenkirchen in der Wachau,MUNICIPALITY
+562,31355,3,Niederösterreich,31355,Schönberg am Kamp,MUNICIPALITY
+563,31356,3,Niederösterreich,31356,Droß,MUNICIPALITY
+564,31401,3,Niederösterreich,31401,Annaberg,MUNICIPALITY
+565,31402,3,Niederösterreich,31402,Eschenau,MUNICIPALITY
+566,31403,3,Niederösterreich,31403,Hainfeld,MUNICIPALITY
+567,31404,3,Niederösterreich,31404,Hohenberg,MUNICIPALITY
+568,31405,3,Niederösterreich,31405,Kaumberg,MUNICIPALITY
+569,31406,3,Niederösterreich,31406,Kleinzell,MUNICIPALITY
+570,31407,3,Niederösterreich,31407,Lilienfeld,MUNICIPALITY
+571,31408,3,Niederösterreich,31408,Mitterbach am Erlaufsee,MUNICIPALITY
+572,31409,3,Niederösterreich,31409,Ramsau,MUNICIPALITY
+573,31410,3,Niederösterreich,31410,Rohrbach an der Gölsen,MUNICIPALITY
+574,31411,3,Niederösterreich,31411,St. Aegyd am Neuwalde,MUNICIPALITY
+575,31412,3,Niederösterreich,31412,St. Veit an der Gölsen,MUNICIPALITY
+576,31413,3,Niederösterreich,31413,Traisen,MUNICIPALITY
+577,31414,3,Niederösterreich,31414,Türnitz,MUNICIPALITY
+578,31502,3,Niederösterreich,31502,Artstetten-Pöbring,MUNICIPALITY
+579,31503,3,Niederösterreich,31503,Bergland,MUNICIPALITY
+580,31504,3,Niederösterreich,31504,Bischofstetten,MUNICIPALITY
+581,31505,3,Niederösterreich,31505,Blindenmarkt,MUNICIPALITY
+582,31506,3,Niederösterreich,31506,Dorfstetten,MUNICIPALITY
+583,31507,3,Niederösterreich,31507,Dunkelsteinerwald,MUNICIPALITY
+584,31508,3,Niederösterreich,31508,Erlauf,MUNICIPALITY
+585,31509,3,Niederösterreich,31509,Golling an der Erlauf,MUNICIPALITY
+586,31511,3,Niederösterreich,31511,Hofamt Priel,MUNICIPALITY
+587,31513,3,Niederösterreich,31513,Hürm,MUNICIPALITY
+588,31514,3,Niederösterreich,31514,Kilb,MUNICIPALITY
+589,31515,3,Niederösterreich,31515,Kirnberg an der Mank,MUNICIPALITY
+590,31516,3,Niederösterreich,31516,Klein-Pöchlarn,MUNICIPALITY
+591,31517,3,Niederösterreich,31517,Krummnußbaum,MUNICIPALITY
+592,31519,3,Niederösterreich,31519,Leiben,MUNICIPALITY
+593,31520,3,Niederösterreich,31520,Loosdorf,MUNICIPALITY
+594,31521,3,Niederösterreich,31521,Mank,MUNICIPALITY
+595,31522,3,Niederösterreich,31522,Marbach an der Donau,MUNICIPALITY
+596,31523,3,Niederösterreich,31523,Maria Taferl,MUNICIPALITY
+597,31524,3,Niederösterreich,31524,Melk,MUNICIPALITY
+598,31525,3,Niederösterreich,31525,Münichreith-Laimbach,MUNICIPALITY
+599,31527,3,Niederösterreich,31527,Neumarkt an der Ybbs,MUNICIPALITY
+600,31528,3,Niederösterreich,31528,Nöchling,MUNICIPALITY
+601,31530,3,Niederösterreich,31530,Persenbeug-Gottsdorf,MUNICIPALITY
+602,31531,3,Niederösterreich,31531,Petzenkirchen,MUNICIPALITY
+603,31533,3,Niederösterreich,31533,Pöchlarn,MUNICIPALITY
+604,31534,3,Niederösterreich,31534,Pöggstall,MUNICIPALITY
+605,31535,3,Niederösterreich,31535,Raxendorf,MUNICIPALITY
+606,31537,3,Niederösterreich,31537,Ruprechtshofen,MUNICIPALITY
+607,31539,3,Niederösterreich,31539,St. Leonhard am Forst,MUNICIPALITY
+608,31540,3,Niederösterreich,31540,St. Martin-Karlsbach,MUNICIPALITY
+609,31541,3,Niederösterreich,31541,St. Oswald,MUNICIPALITY
+610,31542,3,Niederösterreich,31542,Schönbühel-Aggsbach,MUNICIPALITY
+611,31543,3,Niederösterreich,31543,Schollach,MUNICIPALITY
+612,31546,3,Niederösterreich,31546,Weiten,MUNICIPALITY
+613,31549,3,Niederösterreich,31549,Ybbs an der Donau,MUNICIPALITY
+614,31550,3,Niederösterreich,31550,Zelking-Matzleinsdorf,MUNICIPALITY
+615,31551,3,Niederösterreich,31551,Texingtal,MUNICIPALITY
+616,31552,3,Niederösterreich,31552,Yspertal,MUNICIPALITY
+617,31553,3,Niederösterreich,31553,Emmersdorf an der Donau,MUNICIPALITY
+618,31601,3,Niederösterreich,31601,Altlichtenwarth,MUNICIPALITY
+619,31603,3,Niederösterreich,31603,Asparn an der Zaya,MUNICIPALITY
+620,31604,3,Niederösterreich,31604,Bernhardsthal,MUNICIPALITY
+621,31605,3,Niederösterreich,31605,Bockfließ,MUNICIPALITY
+622,31606,3,Niederösterreich,31606,Drasenhofen,MUNICIPALITY
+623,31608,3,Niederösterreich,31608,Falkenstein,MUNICIPALITY
+624,31609,3,Niederösterreich,31609,Fallbach,MUNICIPALITY
+625,31611,3,Niederösterreich,31611,Gaubitsch,MUNICIPALITY
+626,31612,3,Niederösterreich,31612,Gaweinstal,MUNICIPALITY
+627,31613,3,Niederösterreich,31613,Gnadendorf,MUNICIPALITY
+628,31614,3,Niederösterreich,31614,Großebersdorf,MUNICIPALITY
+629,31615,3,Niederösterreich,31615,Großengersdorf,MUNICIPALITY
+630,31616,3,Niederösterreich,31616,Großharras,MUNICIPALITY
+631,31617,3,Niederösterreich,31617,Großkrut,MUNICIPALITY
+632,31620,3,Niederösterreich,31620,Hausbrunn,MUNICIPALITY
+633,31621,3,Niederösterreich,31621,Herrnbaumgarten,MUNICIPALITY
+634,31622,3,Niederösterreich,31622,Hochleithen,MUNICIPALITY
+635,31627,3,Niederösterreich,31627,Kreuttal,MUNICIPALITY
+636,31628,3,Niederösterreich,31628,Kreuzstetten,MUNICIPALITY
+637,31629,3,Niederösterreich,31629,Laa an der Thaya,MUNICIPALITY
+638,31630,3,Niederösterreich,31630,Ladendorf,MUNICIPALITY
+639,31633,3,Niederösterreich,31633,Mistelbach,MUNICIPALITY
+640,31634,3,Niederösterreich,31634,Neudorf im Weinviertel,MUNICIPALITY
+641,31636,3,Niederösterreich,31636,Niederleis,MUNICIPALITY
+642,31642,3,Niederösterreich,31642,Pillichsdorf,MUNICIPALITY
+643,31644,3,Niederösterreich,31644,Poysdorf,MUNICIPALITY
+644,31645,3,Niederösterreich,31645,Rabensburg,MUNICIPALITY
+645,31646,3,Niederösterreich,31646,Schrattenberg,MUNICIPALITY
+646,31649,3,Niederösterreich,31649,Staatz,MUNICIPALITY
+647,31650,3,Niederösterreich,31650,Stronsdorf,MUNICIPALITY
+648,31651,3,Niederösterreich,31651,Ulrichskirchen-Schleinbach,MUNICIPALITY
+649,31652,3,Niederösterreich,31652,Unterstinkenbrunn,MUNICIPALITY
+650,31653,3,Niederösterreich,31653,Wildendürnbach,MUNICIPALITY
+651,31654,3,Niederösterreich,31654,Wilfersdorf,MUNICIPALITY
+652,31655,3,Niederösterreich,31655,Wolkersdorf im Weinviertel,MUNICIPALITY
+653,31658,3,Niederösterreich,31658,Ottenthal,MUNICIPALITY
+654,31701,3,Niederösterreich,31701,Achau,MUNICIPALITY
+655,31702,3,Niederösterreich,31702,Biedermannsdorf,MUNICIPALITY
+656,31703,3,Niederösterreich,31703,Breitenfurt bei Wien,MUNICIPALITY
+657,31704,3,Niederösterreich,31704,Brunn am Gebirge,MUNICIPALITY
+658,31706,3,Niederösterreich,31706,Gaaden,MUNICIPALITY
+659,31707,3,Niederösterreich,31707,Gießhübl,MUNICIPALITY
+660,31709,3,Niederösterreich,31709,Gumpoldskirchen,MUNICIPALITY
+661,31710,3,Niederösterreich,31710,Guntramsdorf,MUNICIPALITY
+662,31711,3,Niederösterreich,31711,Hennersdorf,MUNICIPALITY
+663,31712,3,Niederösterreich,31712,Hinterbrühl,MUNICIPALITY
+664,31713,3,Niederösterreich,31713,Kaltenleutgeben,MUNICIPALITY
+665,31714,3,Niederösterreich,31714,Laab im Walde,MUNICIPALITY
+666,31715,3,Niederösterreich,31715,Laxenburg,MUNICIPALITY
+667,31716,3,Niederösterreich,31716,Maria Enzersdorf,MUNICIPALITY
+668,31717,3,Niederösterreich,31717,Mödling,MUNICIPALITY
+669,31718,3,Niederösterreich,31718,Münchendorf,MUNICIPALITY
+670,31719,3,Niederösterreich,31719,Perchtoldsdorf,MUNICIPALITY
+671,31723,3,Niederösterreich,31723,Vösendorf,MUNICIPALITY
+672,31725,3,Niederösterreich,31725,Wiener Neudorf,MUNICIPALITY
+673,31726,3,Niederösterreich,31726,Wienerwald,MUNICIPALITY
+674,31801,3,Niederösterreich,31801,Altendorf,MUNICIPALITY
+675,31802,3,Niederösterreich,31802,Aspang-Markt,MUNICIPALITY
+676,31803,3,Niederösterreich,31803,Aspangberg-St. Peter,MUNICIPALITY
+677,31804,3,Niederösterreich,31804,Breitenau,MUNICIPALITY
+678,31805,3,Niederösterreich,31805,Breitenstein,MUNICIPALITY
+679,31806,3,Niederösterreich,31806,Buchbach,MUNICIPALITY
+680,31807,3,Niederösterreich,31807,Edlitz,MUNICIPALITY
+681,31808,3,Niederösterreich,31808,Enzenreith,MUNICIPALITY
+682,31809,3,Niederösterreich,31809,Feistritz am Wechsel,MUNICIPALITY
+683,31810,3,Niederösterreich,31810,Gloggnitz,MUNICIPALITY
+684,31811,3,Niederösterreich,31811,Grafenbach-St. Valentin,MUNICIPALITY
+685,31812,3,Niederösterreich,31812,Grimmenstein,MUNICIPALITY
+686,31813,3,Niederösterreich,31813,Grünbach am Schneeberg,MUNICIPALITY
+687,31814,3,Niederösterreich,31814,Kirchberg am Wechsel,MUNICIPALITY
+688,31815,3,Niederösterreich,31815,Mönichkirchen,MUNICIPALITY
+689,31817,3,Niederösterreich,31817,Natschbach-Loipersbach,MUNICIPALITY
+690,31818,3,Niederösterreich,31818,Neunkirchen,MUNICIPALITY
+691,31820,3,Niederösterreich,31820,Otterthal,MUNICIPALITY
+692,31821,3,Niederösterreich,31821,Payerbach,MUNICIPALITY
+693,31823,3,Niederösterreich,31823,Pitten,MUNICIPALITY
+694,31825,3,Niederösterreich,31825,Prigglitz,MUNICIPALITY
+695,31826,3,Niederösterreich,31826,Puchberg am Schneeberg,MUNICIPALITY
+696,31827,3,Niederösterreich,31827,Raach am Hochgebirge,MUNICIPALITY
+697,31829,3,Niederösterreich,31829,Reichenau an der Rax,MUNICIPALITY
+698,31830,3,Niederösterreich,31830,St. Corona am Wechsel,MUNICIPALITY
+699,31831,3,Niederösterreich,31831,St. Egyden am Steinfeld,MUNICIPALITY
+700,31832,3,Niederösterreich,31832,Scheiblingkirchen-Thernberg,MUNICIPALITY
+701,31833,3,Niederösterreich,31833,Schottwien,MUNICIPALITY
+702,31834,3,Niederösterreich,31834,Schrattenbach,MUNICIPALITY
+703,31835,3,Niederösterreich,31835,Schwarzau am Steinfeld,MUNICIPALITY
+704,31836,3,Niederösterreich,31836,Schwarzau im Gebirge,MUNICIPALITY
+705,31837,3,Niederösterreich,31837,Seebenstein,MUNICIPALITY
+706,31838,3,Niederösterreich,31838,Semmering,MUNICIPALITY
+707,31839,3,Niederösterreich,31839,Ternitz,MUNICIPALITY
+708,31840,3,Niederösterreich,31840,Thomasberg,MUNICIPALITY
+709,31841,3,Niederösterreich,31841,Trattenbach,MUNICIPALITY
+710,31842,3,Niederösterreich,31842,Bürg-Vöstenhof,MUNICIPALITY
+711,31843,3,Niederösterreich,31843,Warth,MUNICIPALITY
+712,31844,3,Niederösterreich,31844,Wartmannstetten,MUNICIPALITY
+713,31845,3,Niederösterreich,31845,Willendorf,MUNICIPALITY
+714,31846,3,Niederösterreich,31846,Wimpassing im Schwarzatale,MUNICIPALITY
+715,31847,3,Niederösterreich,31847,Würflach,MUNICIPALITY
+716,31848,3,Niederösterreich,31848,Zöbern,MUNICIPALITY
+717,31849,3,Niederösterreich,31849,Höflein an der Hohen Wand,MUNICIPALITY
+718,31901,3,Niederösterreich,31901,Altlengbach,MUNICIPALITY
+719,31902,3,Niederösterreich,31902,Asperhofen,MUNICIPALITY
+720,31903,3,Niederösterreich,31903,Böheimkirchen,MUNICIPALITY
+721,31904,3,Niederösterreich,31904,Brand-Laaben,MUNICIPALITY
+722,31905,3,Niederösterreich,31905,Eichgraben,MUNICIPALITY
+723,31906,3,Niederösterreich,31906,Frankenfels,MUNICIPALITY
+724,31907,3,Niederösterreich,31907,Gerersdorf,MUNICIPALITY
+725,31909,3,Niederösterreich,31909,Hofstetten-Grünau,MUNICIPALITY
+726,31910,3,Niederösterreich,31910,Hafnerbach,MUNICIPALITY
+727,31911,3,Niederösterreich,31911,Haunoldstein,MUNICIPALITY
+728,31912,3,Niederösterreich,31912,Herzogenburg,MUNICIPALITY
+729,31913,3,Niederösterreich,31913,Inzersdorf-Getzersdorf,MUNICIPALITY
+730,31915,3,Niederösterreich,31915,Kapelln,MUNICIPALITY
+731,31916,3,Niederösterreich,31916,Karlstetten,MUNICIPALITY
+732,31917,3,Niederösterreich,31917,Kasten bei Böheimkirchen,MUNICIPALITY
+733,31918,3,Niederösterreich,31918,Kirchberg an der Pielach,MUNICIPALITY
+734,31919,3,Niederösterreich,31919,Kirchstetten,MUNICIPALITY
+735,31920,3,Niederösterreich,31920,Loich,MUNICIPALITY
+736,31921,3,Niederösterreich,31921,Maria Anzbach,MUNICIPALITY
+737,31922,3,Niederösterreich,31922,Markersdorf-Haindorf,MUNICIPALITY
+738,31923,3,Niederösterreich,31923,Michelbach,MUNICIPALITY
+739,31925,3,Niederösterreich,31925,Neidling,MUNICIPALITY
+740,31926,3,Niederösterreich,31926,Neulengbach,MUNICIPALITY
+741,31927,3,Niederösterreich,31927,Neustift-Innermanzing,MUNICIPALITY
+742,31928,3,Niederösterreich,31928,Nußdorf ob der Traisen,MUNICIPALITY
+743,31929,3,Niederösterreich,31929,Ober-Grafendorf,MUNICIPALITY
+744,31930,3,Niederösterreich,31930,Obritzberg-Rust,MUNICIPALITY
+745,31932,3,Niederösterreich,31932,Prinzersdorf,MUNICIPALITY
+746,31934,3,Niederösterreich,31934,Pyhra,MUNICIPALITY
+747,31935,3,Niederösterreich,31935,Rabenstein an der Pielach,MUNICIPALITY
+748,31938,3,Niederösterreich,31938,St. Margarethen an der Sierning,MUNICIPALITY
+749,31939,3,Niederösterreich,31939,Schwarzenbach an der Pielach,MUNICIPALITY
+750,31940,3,Niederösterreich,31940,Statzendorf,MUNICIPALITY
+751,31941,3,Niederösterreich,31941,Stössing,MUNICIPALITY
+752,31943,3,Niederösterreich,31943,Traismauer,MUNICIPALITY
+753,31945,3,Niederösterreich,31945,Weinburg,MUNICIPALITY
+754,31946,3,Niederösterreich,31946,Perschling,MUNICIPALITY
+755,31947,3,Niederösterreich,31947,Wilhelmsburg,MUNICIPALITY
+756,31948,3,Niederösterreich,31948,Wölbling,MUNICIPALITY
+757,31949,3,Niederösterreich,31949,Gablitz,MUNICIPALITY
+758,31950,3,Niederösterreich,31950,Mauerbach,MUNICIPALITY
+759,31951,3,Niederösterreich,31951,Pressbaum,MUNICIPALITY
+760,31952,3,Niederösterreich,31952,Purkersdorf,MUNICIPALITY
+761,31953,3,Niederösterreich,31953,Tullnerbach,MUNICIPALITY
+762,31954,3,Niederösterreich,31954,Wolfsgraben,MUNICIPALITY
+763,32001,3,Niederösterreich,32001,Gaming,MUNICIPALITY
+764,32002,3,Niederösterreich,32002,Göstling an der Ybbs,MUNICIPALITY
+765,32003,3,Niederösterreich,32003,Gresten,MUNICIPALITY
+766,32004,3,Niederösterreich,32004,Gresten-Land,MUNICIPALITY
+767,32005,3,Niederösterreich,32005,Lunz am See,MUNICIPALITY
+768,32006,3,Niederösterreich,32006,Oberndorf an der Melk,MUNICIPALITY
+769,32007,3,Niederösterreich,32007,Puchenstuben,MUNICIPALITY
+770,32008,3,Niederösterreich,32008,Purgstall an der Erlauf,MUNICIPALITY
+771,32009,3,Niederösterreich,32009,Randegg,MUNICIPALITY
+772,32010,3,Niederösterreich,32010,Reinsberg,MUNICIPALITY
+773,32011,3,Niederösterreich,32011,St. Anton an der Jeßnitz,MUNICIPALITY
+774,32012,3,Niederösterreich,32012,St. Georgen an der Leys,MUNICIPALITY
+775,32013,3,Niederösterreich,32013,Scheibbs,MUNICIPALITY
+776,32014,3,Niederösterreich,32014,Steinakirchen am Forst,MUNICIPALITY
+777,32015,3,Niederösterreich,32015,Wang,MUNICIPALITY
+778,32016,3,Niederösterreich,32016,Wieselburg,MUNICIPALITY
+779,32017,3,Niederösterreich,32017,Wieselburg-Land,MUNICIPALITY
+780,32018,3,Niederösterreich,32018,Wolfpassing,MUNICIPALITY
+781,32101,3,Niederösterreich,32101,Absdorf,MUNICIPALITY
+782,32104,3,Niederösterreich,32104,Atzenbrugg,MUNICIPALITY
+783,32106,3,Niederösterreich,32106,Fels am Wagram,MUNICIPALITY
+784,32107,3,Niederösterreich,32107,Grafenwörth,MUNICIPALITY
+785,32109,3,Niederösterreich,32109,Großriedenthal,MUNICIPALITY
+786,32110,3,Niederösterreich,32110,Großweikersdorf,MUNICIPALITY
+787,32112,3,Niederösterreich,32112,Judenau-Baumgarten,MUNICIPALITY
+788,32114,3,Niederösterreich,32114,Kirchberg am Wagram,MUNICIPALITY
+789,32115,3,Niederösterreich,32115,Königsbrunn am Wagram,MUNICIPALITY
+790,32116,3,Niederösterreich,32116,Königstetten,MUNICIPALITY
+791,32119,3,Niederösterreich,32119,Langenrohr,MUNICIPALITY
+792,32120,3,Niederösterreich,32120,Michelhausen,MUNICIPALITY
+793,32131,3,Niederösterreich,32131,Sieghartskirchen,MUNICIPALITY
+794,32132,3,Niederösterreich,32132,Sitzenberg-Reidling,MUNICIPALITY
+795,32134,3,Niederösterreich,32134,Tulbing,MUNICIPALITY
+796,32135,3,Niederösterreich,32135,Tulln an der Donau,MUNICIPALITY
+797,32139,3,Niederösterreich,32139,Würmla,MUNICIPALITY
+798,32140,3,Niederösterreich,32140,Zeiselmauer-Wolfpassing,MUNICIPALITY
+799,32141,3,Niederösterreich,32141,Zwentendorf an der Donau,MUNICIPALITY
+800,32142,3,Niederösterreich,32142,St. Andrä-Wördern,MUNICIPALITY
+801,32143,3,Niederösterreich,32143,Muckendorf-Wipfing,MUNICIPALITY
+802,32144,3,Niederösterreich,32144,Klosterneuburg,MUNICIPALITY
+803,32202,3,Niederösterreich,32202,Dietmanns,MUNICIPALITY
+804,32203,3,Niederösterreich,32203,Dobersberg,MUNICIPALITY
+805,32206,3,Niederösterreich,32206,Gastern,MUNICIPALITY
+806,32207,3,Niederösterreich,32207,Groß-Siegharts,MUNICIPALITY
+807,32209,3,Niederösterreich,32209,Karlstein an der Thaya,MUNICIPALITY
+808,32210,3,Niederösterreich,32210,Kautzen,MUNICIPALITY
+809,32212,3,Niederösterreich,32212,Ludweis-Aigen,MUNICIPALITY
+810,32214,3,Niederösterreich,32214,Pfaffenschlag bei Waidhofen a.d.Thaya,MUNICIPALITY
+811,32216,3,Niederösterreich,32216,Raabs an der Thaya,MUNICIPALITY
+812,32217,3,Niederösterreich,32217,Thaya,MUNICIPALITY
+813,32219,3,Niederösterreich,32219,Vitis,MUNICIPALITY
+814,32220,3,Niederösterreich,32220,Waidhofen an der Thaya,MUNICIPALITY
+815,32221,3,Niederösterreich,32221,Waidhofen an der Thaya-Land,MUNICIPALITY
+816,32222,3,Niederösterreich,32222,Waldkirchen an der Thaya,MUNICIPALITY
+817,32223,3,Niederösterreich,32223,Windigsteig,MUNICIPALITY
+818,32301,3,Niederösterreich,32301,Bad Fischau-Brunn,MUNICIPALITY
+819,32302,3,Niederösterreich,32302,Bad Schönau,MUNICIPALITY
+820,32304,3,Niederösterreich,32304,Ebenfurth,MUNICIPALITY
+821,32305,3,Niederösterreich,32305,Eggendorf,MUNICIPALITY
+822,32306,3,Niederösterreich,32306,Bad Erlach,MUNICIPALITY
+823,32307,3,Niederösterreich,32307,Felixdorf,MUNICIPALITY
+824,32308,3,Niederösterreich,32308,Gutenstein,MUNICIPALITY
+825,32309,3,Niederösterreich,32309,Hochneukirchen-Gschaidt,MUNICIPALITY
+826,32310,3,Niederösterreich,32310,Hochwolkersdorf,MUNICIPALITY
+827,32311,3,Niederösterreich,32311,Hohe Wand,MUNICIPALITY
+828,32312,3,Niederösterreich,32312,Hollenthon,MUNICIPALITY
+829,32313,3,Niederösterreich,32313,Katzelsdorf,MUNICIPALITY
+830,32314,3,Niederösterreich,32314,Kirchschlag in der Buckligen Welt,MUNICIPALITY
+831,32315,3,Niederösterreich,32315,Krumbach,MUNICIPALITY
+832,32316,3,Niederösterreich,32316,Lanzenkirchen,MUNICIPALITY
+833,32317,3,Niederösterreich,32317,Lichtenegg,MUNICIPALITY
+834,32318,3,Niederösterreich,32318,Lichtenwörth,MUNICIPALITY
+835,32319,3,Niederösterreich,32319,Markt Piesting,MUNICIPALITY
+836,32320,3,Niederösterreich,32320,Matzendorf-Hölles,MUNICIPALITY
+837,32321,3,Niederösterreich,32321,Miesenbach,MUNICIPALITY
+838,32322,3,Niederösterreich,32322,Muggendorf,MUNICIPALITY
+839,32323,3,Niederösterreich,32323,Pernitz,MUNICIPALITY
+840,32324,3,Niederösterreich,32324,Rohr im Gebirge,MUNICIPALITY
+841,32325,3,Niederösterreich,32325,Bromberg,MUNICIPALITY
+842,32326,3,Niederösterreich,32326,Schwarzenbach,MUNICIPALITY
+843,32327,3,Niederösterreich,32327,Sollenau,MUNICIPALITY
+844,32330,3,Niederösterreich,32330,Theresienfeld,MUNICIPALITY
+845,32331,3,Niederösterreich,32331,Waidmannsfeld,MUNICIPALITY
+846,32332,3,Niederösterreich,32332,Waldegg,MUNICIPALITY
+847,32333,3,Niederösterreich,32333,Walpersbach,MUNICIPALITY
+848,32334,3,Niederösterreich,32334,Weikersdorf am Steinfelde,MUNICIPALITY
+849,32335,3,Niederösterreich,32335,Wiesmath,MUNICIPALITY
+850,32336,3,Niederösterreich,32336,Winzendorf-Muthmannsdorf,MUNICIPALITY
+851,32337,3,Niederösterreich,32337,Wöllersdorf-Steinabrückl,MUNICIPALITY
+852,32338,3,Niederösterreich,32338,Zillingdorf,MUNICIPALITY
+853,32501,3,Niederösterreich,32501,Allentsteig,MUNICIPALITY
+854,32502,3,Niederösterreich,32502,Arbesbach,MUNICIPALITY
+855,32503,3,Niederösterreich,32503,Bärnkopf,MUNICIPALITY
+856,32504,3,Niederösterreich,32504,Echsenbach,MUNICIPALITY
+857,32505,3,Niederösterreich,32505,Göpfritz an der Wild,MUNICIPALITY
+858,32506,3,Niederösterreich,32506,Grafenschlag,MUNICIPALITY
+859,32508,3,Niederösterreich,32508,Groß Gerungs,MUNICIPALITY
+860,32509,3,Niederösterreich,32509,Großgöttfritz,MUNICIPALITY
+861,32511,3,Niederösterreich,32511,Gutenbrunn,MUNICIPALITY
+862,32514,3,Niederösterreich,32514,Kirchschlag,MUNICIPALITY
+863,32515,3,Niederösterreich,32515,Kottes-Purk,MUNICIPALITY
+864,32516,3,Niederösterreich,32516,Langschlag,MUNICIPALITY
+865,32517,3,Niederösterreich,32517,Martinsberg,MUNICIPALITY
+866,32518,3,Niederösterreich,32518,Ottenschlag,MUNICIPALITY
+867,32519,3,Niederösterreich,32519,Altmelon,MUNICIPALITY
+868,32520,3,Niederösterreich,32520,Pölla,MUNICIPALITY
+869,32521,3,Niederösterreich,32521,Rappottenstein,MUNICIPALITY
+870,32522,3,Niederösterreich,32522,Sallingberg,MUNICIPALITY
+871,32523,3,Niederösterreich,32523,Schönbach,MUNICIPALITY
+872,32524,3,Niederösterreich,32524,Schwarzenau,MUNICIPALITY
+873,32525,3,Niederösterreich,32525,Schweiggers,MUNICIPALITY
+874,32528,3,Niederösterreich,32528,Bad Traunstein,MUNICIPALITY
+875,32529,3,Niederösterreich,32529,Waldhausen,MUNICIPALITY
+876,32530,3,Niederösterreich,32530,Zwettl-Niederösterreich,MUNICIPALITY
+877,40101,4,Oberösterreich,40101,Linz,MUNICIPALITY
+878,40201,4,Oberösterreich,40201,Steyr,MUNICIPALITY
+879,40301,4,Oberösterreich,40301,Wels,MUNICIPALITY
+880,40401,4,Oberösterreich,40401,Altheim,MUNICIPALITY
+881,40402,4,Oberösterreich,40402,Aspach,MUNICIPALITY
+882,40403,4,Oberösterreich,40403,Auerbach,MUNICIPALITY
+883,40404,4,Oberösterreich,40404,Braunau am Inn,MUNICIPALITY
+884,40405,4,Oberösterreich,40405,Burgkirchen,MUNICIPALITY
+885,40406,4,Oberösterreich,40406,Eggelsberg,MUNICIPALITY
+886,40407,4,Oberösterreich,40407,Feldkirchen bei Mattighofen,MUNICIPALITY
+887,40408,4,Oberösterreich,40408,Franking,MUNICIPALITY
+888,40409,4,Oberösterreich,40409,Geretsberg,MUNICIPALITY
+889,40410,4,Oberösterreich,40410,Gilgenberg am Weilhart,MUNICIPALITY
+890,40411,4,Oberösterreich,40411,Haigermoos,MUNICIPALITY
+891,40412,4,Oberösterreich,40412,Handenberg,MUNICIPALITY
+892,40413,4,Oberösterreich,40413,Helpfau-Uttendorf,MUNICIPALITY
+893,40414,4,Oberösterreich,40414,Hochburg-Ach,MUNICIPALITY
+894,40415,4,Oberösterreich,40415,Höhnhart,MUNICIPALITY
+895,40416,4,Oberösterreich,40416,Jeging,MUNICIPALITY
+896,40417,4,Oberösterreich,40417,Kirchberg bei Mattighofen,MUNICIPALITY
+897,40418,4,Oberösterreich,40418,Lengau,MUNICIPALITY
+898,40419,4,Oberösterreich,40419,Lochen am See,MUNICIPALITY
+899,40420,4,Oberösterreich,40420,Maria Schmolln,MUNICIPALITY
+900,40421,4,Oberösterreich,40421,Mattighofen,MUNICIPALITY
+901,40422,4,Oberösterreich,40422,Mauerkirchen,MUNICIPALITY
+902,40423,4,Oberösterreich,40423,Mining,MUNICIPALITY
+903,40424,4,Oberösterreich,40424,Moosbach,MUNICIPALITY
+904,40425,4,Oberösterreich,40425,Moosdorf,MUNICIPALITY
+905,40426,4,Oberösterreich,40426,Munderfing,MUNICIPALITY
+906,40427,4,Oberösterreich,40427,Neukirchen an der Enknach,MUNICIPALITY
+907,40428,4,Oberösterreich,40428,Ostermiething,MUNICIPALITY
+908,40429,4,Oberösterreich,40429,Palting,MUNICIPALITY
+909,40430,4,Oberösterreich,40430,Perwang am Grabensee,MUNICIPALITY
+910,40431,4,Oberösterreich,40431,Pfaffstätt,MUNICIPALITY
+911,40432,4,Oberösterreich,40432,Pischelsdorf am Engelbach,MUNICIPALITY
+912,40433,4,Oberösterreich,40433,Polling im Innkreis,MUNICIPALITY
+913,40434,4,Oberösterreich,40434,Roßbach,MUNICIPALITY
+914,40435,4,Oberösterreich,40435,St. Georgen am Fillmannsbach,MUNICIPALITY
+915,40436,4,Oberösterreich,40436,St. Johann am Walde,MUNICIPALITY
+916,40437,4,Oberösterreich,40437,St. Pantaleon,MUNICIPALITY
+917,40438,4,Oberösterreich,40438,St. Peter am Hart,MUNICIPALITY
+918,40439,4,Oberösterreich,40439,St. Radegund,MUNICIPALITY
+919,40440,4,Oberösterreich,40440,St. Veit im Innkreis,MUNICIPALITY
+920,40441,4,Oberösterreich,40441,Schalchen,MUNICIPALITY
+921,40442,4,Oberösterreich,40442,Schwand im Innkreis,MUNICIPALITY
+922,40443,4,Oberösterreich,40443,Tarsdorf,MUNICIPALITY
+923,40444,4,Oberösterreich,40444,Treubach,MUNICIPALITY
+924,40445,4,Oberösterreich,40445,Überackern,MUNICIPALITY
+925,40446,4,Oberösterreich,40446,Weng im Innkreis,MUNICIPALITY
+926,40501,4,Oberösterreich,40501,Alkoven,MUNICIPALITY
+927,40502,4,Oberösterreich,40502,Aschach an der Donau,MUNICIPALITY
+928,40503,4,Oberösterreich,40503,Eferding,MUNICIPALITY
+929,40504,4,Oberösterreich,40504,Fraham,MUNICIPALITY
+930,40505,4,Oberösterreich,40505,Haibach ob der Donau,MUNICIPALITY
+931,40506,4,Oberösterreich,40506,Hartkirchen,MUNICIPALITY
+932,40507,4,Oberösterreich,40507,Hinzenbach,MUNICIPALITY
+933,40508,4,Oberösterreich,40508,Prambachkirchen,MUNICIPALITY
+934,40509,4,Oberösterreich,40509,Pupping,MUNICIPALITY
+935,40510,4,Oberösterreich,40510,St. Marienkirchen an der Polsenz,MUNICIPALITY
+936,40511,4,Oberösterreich,40511,Scharten,MUNICIPALITY
+937,40512,4,Oberösterreich,40512,Stroheim,MUNICIPALITY
+938,40601,4,Oberösterreich,40601,Freistadt,MUNICIPALITY
+939,40602,4,Oberösterreich,40602,Grünbach,MUNICIPALITY
+940,40603,4,Oberösterreich,40603,Gutau,MUNICIPALITY
+941,40604,4,Oberösterreich,40604,Hagenberg im Mühlkreis,MUNICIPALITY
+942,40605,4,Oberösterreich,40605,Hirschbach im Mühlkreis,MUNICIPALITY
+943,40606,4,Oberösterreich,40606,Kaltenberg,MUNICIPALITY
+944,40607,4,Oberösterreich,40607,Kefermarkt,MUNICIPALITY
+945,40608,4,Oberösterreich,40608,Königswiesen,MUNICIPALITY
+946,40609,4,Oberösterreich,40609,Lasberg,MUNICIPALITY
+947,40610,4,Oberösterreich,40610,Leopoldschlag,MUNICIPALITY
+948,40611,4,Oberösterreich,40611,Liebenau,MUNICIPALITY
+949,40612,4,Oberösterreich,40612,Neumarkt im Mühlkreis,MUNICIPALITY
+950,40613,4,Oberösterreich,40613,Pierbach,MUNICIPALITY
+951,40614,4,Oberösterreich,40614,Pregarten,MUNICIPALITY
+952,40615,4,Oberösterreich,40615,Rainbach im Mühlkreis,MUNICIPALITY
+953,40616,4,Oberösterreich,40616,Sandl,MUNICIPALITY
+954,40617,4,Oberösterreich,40617,St. Leonhard bei Freistadt,MUNICIPALITY
+955,40618,4,Oberösterreich,40618,St. Oswald bei Freistadt,MUNICIPALITY
+956,40619,4,Oberösterreich,40619,Schönau im Mühlkreis,MUNICIPALITY
+957,40620,4,Oberösterreich,40620,Tragwein,MUNICIPALITY
+958,40621,4,Oberösterreich,40621,Unterweißenbach,MUNICIPALITY
+959,40622,4,Oberösterreich,40622,Unterweitersdorf,MUNICIPALITY
+960,40623,4,Oberösterreich,40623,Waldburg,MUNICIPALITY
+961,40624,4,Oberösterreich,40624,Wartberg ob der Aist,MUNICIPALITY
+962,40625,4,Oberösterreich,40625,Weitersfelden,MUNICIPALITY
+963,40626,4,Oberösterreich,40626,Windhaag bei Freistadt,MUNICIPALITY
+964,40627,4,Oberösterreich,40627,Bad Zell,MUNICIPALITY
+965,40701,4,Oberösterreich,40701,Altmünster,MUNICIPALITY
+966,40702,4,Oberösterreich,40702,Bad Goisern am Hallstättersee,MUNICIPALITY
+967,40703,4,Oberösterreich,40703,Bad Ischl,MUNICIPALITY
+968,40704,4,Oberösterreich,40704,Ebensee am Traunsee,MUNICIPALITY
+969,40705,4,Oberösterreich,40705,Gmunden,MUNICIPALITY
+970,40706,4,Oberösterreich,40706,Gosau,MUNICIPALITY
+971,40707,4,Oberösterreich,40707,Grünau im Almtal,MUNICIPALITY
+972,40708,4,Oberösterreich,40708,Gschwandt,MUNICIPALITY
+973,40709,4,Oberösterreich,40709,Hallstatt,MUNICIPALITY
+974,40710,4,Oberösterreich,40710,Kirchham,MUNICIPALITY
+975,40711,4,Oberösterreich,40711,Laakirchen,MUNICIPALITY
+976,40712,4,Oberösterreich,40712,Obertraun,MUNICIPALITY
+977,40713,4,Oberösterreich,40713,Ohlsdorf,MUNICIPALITY
+978,40714,4,Oberösterreich,40714,Pinsdorf,MUNICIPALITY
+979,40715,4,Oberösterreich,40715,Roitham am Traunfall,MUNICIPALITY
+980,40716,4,Oberösterreich,40716,St. Konrad,MUNICIPALITY
+981,40717,4,Oberösterreich,40717,St. Wolfgang im Salzkammergut,MUNICIPALITY
+982,40718,4,Oberösterreich,40718,Traunkirchen,MUNICIPALITY
+983,40719,4,Oberösterreich,40719,Scharnstein,MUNICIPALITY
+984,40720,4,Oberösterreich,40720,Vorchdorf,MUNICIPALITY
+985,40801,4,Oberösterreich,40801,Aistersheim,MUNICIPALITY
+986,40802,4,Oberösterreich,40802,Bad Schallerbach,MUNICIPALITY
+987,40804,4,Oberösterreich,40804,Eschenau im Hausruckkreis,MUNICIPALITY
+988,40805,4,Oberösterreich,40805,Gallspach,MUNICIPALITY
+989,40806,4,Oberösterreich,40806,Gaspoltshofen,MUNICIPALITY
+990,40807,4,Oberösterreich,40807,Geboltskirchen,MUNICIPALITY
+991,40808,4,Oberösterreich,40808,Grieskirchen,MUNICIPALITY
+992,40809,4,Oberösterreich,40809,Haag am Hausruck,MUNICIPALITY
+993,40810,4,Oberösterreich,40810,Heiligenberg,MUNICIPALITY
+994,40811,4,Oberösterreich,40811,Hofkirchen an der Trattnach,MUNICIPALITY
+995,40812,4,Oberösterreich,40812,Kallham,MUNICIPALITY
+996,40813,4,Oberösterreich,40813,Kematen am Innbach,MUNICIPALITY
+997,40814,4,Oberösterreich,40814,Meggenhofen,MUNICIPALITY
+998,40815,4,Oberösterreich,40815,Michaelnbach,MUNICIPALITY
+999,40816,4,Oberösterreich,40816,Natternbach,MUNICIPALITY
+1000,40817,4,Oberösterreich,40817,Neukirchen am Walde,MUNICIPALITY
+1001,40818,4,Oberösterreich,40818,Neumarkt im Hausruckkreis,MUNICIPALITY
+1002,40820,4,Oberösterreich,40820,Pötting,MUNICIPALITY
+1003,40821,4,Oberösterreich,40821,Pollham,MUNICIPALITY
+1004,40822,4,Oberösterreich,40822,Pram,MUNICIPALITY
+1005,40823,4,Oberösterreich,40823,Rottenbach,MUNICIPALITY
+1006,40824,4,Oberösterreich,40824,St. Agatha,MUNICIPALITY
+1007,40825,4,Oberösterreich,40825,St. Georgen bei Grieskirchen,MUNICIPALITY
+1008,40826,4,Oberösterreich,40826,St. Thomas,MUNICIPALITY
+1009,40827,4,Oberösterreich,40827,Schlüßlberg,MUNICIPALITY
+1010,40828,4,Oberösterreich,40828,Steegen,MUNICIPALITY
+1011,40829,4,Oberösterreich,40829,Taufkirchen an der Trattnach,MUNICIPALITY
+1012,40830,4,Oberösterreich,40830,Tollet,MUNICIPALITY
+1013,40831,4,Oberösterreich,40831,Waizenkirchen,MUNICIPALITY
+1014,40832,4,Oberösterreich,40832,Wallern an der Trattnach,MUNICIPALITY
+1015,40833,4,Oberösterreich,40833,Weibern,MUNICIPALITY
+1016,40834,4,Oberösterreich,40834,Wendling,MUNICIPALITY
+1017,40835,4,Oberösterreich,40835,Peuerbach,MUNICIPALITY
+1018,40901,4,Oberösterreich,40901,Edlbach,MUNICIPALITY
+1019,40902,4,Oberösterreich,40902,Grünburg,MUNICIPALITY
+1020,40903,4,Oberösterreich,40903,Hinterstoder,MUNICIPALITY
+1021,40904,4,Oberösterreich,40904,Inzersdorf im Kremstal,MUNICIPALITY
+1022,40905,4,Oberösterreich,40905,Kirchdorf an der Krems,MUNICIPALITY
+1023,40906,4,Oberösterreich,40906,Klaus an der Pyhrnbahn,MUNICIPALITY
+1024,40907,4,Oberösterreich,40907,Kremsmünster,MUNICIPALITY
+1025,40908,4,Oberösterreich,40908,Micheldorf in Oberösterreich,MUNICIPALITY
+1026,40909,4,Oberösterreich,40909,Molln,MUNICIPALITY
+1027,40910,4,Oberösterreich,40910,Nußbach,MUNICIPALITY
+1028,40911,4,Oberösterreich,40911,Oberschlierbach,MUNICIPALITY
+1029,40912,4,Oberösterreich,40912,Pettenbach,MUNICIPALITY
+1030,40913,4,Oberösterreich,40913,Ried im Traunkreis,MUNICIPALITY
+1031,40914,4,Oberösterreich,40914,Rosenau am Hengstpaß,MUNICIPALITY
+1032,40915,4,Oberösterreich,40915,Roßleithen,MUNICIPALITY
+1033,40916,4,Oberösterreich,40916,St. Pankraz,MUNICIPALITY
+1034,40917,4,Oberösterreich,40917,Schlierbach,MUNICIPALITY
+1035,40918,4,Oberösterreich,40918,Spital am Pyhrn,MUNICIPALITY
+1036,40919,4,Oberösterreich,40919,Steinbach am Ziehberg,MUNICIPALITY
+1037,40920,4,Oberösterreich,40920,Steinbach an der Steyr,MUNICIPALITY
+1038,40921,4,Oberösterreich,40921,Vorderstoder,MUNICIPALITY
+1039,40922,4,Oberösterreich,40922,Wartberg an der Krems,MUNICIPALITY
+1040,40923,4,Oberösterreich,40923,Windischgarsten,MUNICIPALITY
+1041,41001,4,Oberösterreich,41001,Allhaming,MUNICIPALITY
+1042,41002,4,Oberösterreich,41002,Ansfelden,MUNICIPALITY
+1043,41003,4,Oberösterreich,41003,Asten,MUNICIPALITY
+1044,41004,4,Oberösterreich,41004,Eggendorf im Traunkreis,MUNICIPALITY
+1045,41005,4,Oberösterreich,41005,Enns,MUNICIPALITY
+1046,41006,4,Oberösterreich,41006,Hargelsberg,MUNICIPALITY
+1047,41007,4,Oberösterreich,41007,Hörsching,MUNICIPALITY
+1048,41008,4,Oberösterreich,41008,Hofkirchen im Traunkreis,MUNICIPALITY
+1049,41009,4,Oberösterreich,41009,Kematen an der Krems,MUNICIPALITY
+1050,41010,4,Oberösterreich,41010,Kirchberg-Thening,MUNICIPALITY
+1051,41011,4,Oberösterreich,41011,Kronstorf,MUNICIPALITY
+1052,41012,4,Oberösterreich,41012,Leonding,MUNICIPALITY
+1053,41013,4,Oberösterreich,41013,St. Florian,MUNICIPALITY
+1054,41014,4,Oberösterreich,41014,Neuhofen an der Krems,MUNICIPALITY
+1055,41015,4,Oberösterreich,41015,Niederneukirchen,MUNICIPALITY
+1056,41016,4,Oberösterreich,41016,Oftering,MUNICIPALITY
+1057,41017,4,Oberösterreich,41017,Pasching,MUNICIPALITY
+1058,41018,4,Oberösterreich,41018,Piberbach,MUNICIPALITY
+1059,41019,4,Oberösterreich,41019,Pucking,MUNICIPALITY
+1060,41020,4,Oberösterreich,41020,St. Marien,MUNICIPALITY
+1061,41021,4,Oberösterreich,41021,Traun,MUNICIPALITY
+1062,41022,4,Oberösterreich,41022,Wilhering,MUNICIPALITY
+1063,41101,4,Oberösterreich,41101,Allerheiligen im Mühlkreis,MUNICIPALITY
+1064,41102,4,Oberösterreich,41102,Arbing,MUNICIPALITY
+1065,41103,4,Oberösterreich,41103,Baumgartenberg,MUNICIPALITY
+1066,41104,4,Oberösterreich,41104,Dimbach,MUNICIPALITY
+1067,41105,4,Oberösterreich,41105,Grein,MUNICIPALITY
+1068,41106,4,Oberösterreich,41106,Katsdorf,MUNICIPALITY
+1069,41107,4,Oberösterreich,41107,Klam,MUNICIPALITY
+1070,41108,4,Oberösterreich,41108,Bad Kreuzen,MUNICIPALITY
+1071,41109,4,Oberösterreich,41109,Langenstein,MUNICIPALITY
+1072,41110,4,Oberösterreich,41110,Luftenberg an der Donau,MUNICIPALITY
+1073,41111,4,Oberösterreich,41111,Mauthausen,MUNICIPALITY
+1074,41112,4,Oberösterreich,41112,Mitterkirchen im Machland,MUNICIPALITY
+1075,41113,4,Oberösterreich,41113,Münzbach,MUNICIPALITY
+1076,41114,4,Oberösterreich,41114,Naarn im Machlande,MUNICIPALITY
+1077,41115,4,Oberösterreich,41115,Pabneukirchen,MUNICIPALITY
+1078,41116,4,Oberösterreich,41116,Perg,MUNICIPALITY
+1079,41117,4,Oberösterreich,41117,Rechberg,MUNICIPALITY
+1080,41118,4,Oberösterreich,41118,Ried in der Riedmark,MUNICIPALITY
+1081,41119,4,Oberösterreich,41119,St. Georgen am Walde,MUNICIPALITY
+1082,41120,4,Oberösterreich,41120,St. Georgen an der Gusen,MUNICIPALITY
+1083,41121,4,Oberösterreich,41121,St. Nikola an der Donau,MUNICIPALITY
+1084,41122,4,Oberösterreich,41122,St. Thomas am Blasenstein,MUNICIPALITY
+1085,41123,4,Oberösterreich,41123,Saxen,MUNICIPALITY
+1086,41124,4,Oberösterreich,41124,Schwertberg,MUNICIPALITY
+1087,41125,4,Oberösterreich,41125,Waldhausen im Strudengau,MUNICIPALITY
+1088,41126,4,Oberösterreich,41126,Windhaag bei Perg,MUNICIPALITY
+1089,41201,4,Oberösterreich,41201,Andrichsfurt,MUNICIPALITY
+1090,41202,4,Oberösterreich,41202,Antiesenhofen,MUNICIPALITY
+1091,41203,4,Oberösterreich,41203,Aurolzmünster,MUNICIPALITY
+1092,41204,4,Oberösterreich,41204,Eberschwang,MUNICIPALITY
+1093,41205,4,Oberösterreich,41205,Eitzing,MUNICIPALITY
+1094,41206,4,Oberösterreich,41206,Geiersberg,MUNICIPALITY
+1095,41207,4,Oberösterreich,41207,Geinberg,MUNICIPALITY
+1096,41208,4,Oberösterreich,41208,Gurten,MUNICIPALITY
+1097,41209,4,Oberösterreich,41209,Hohenzell,MUNICIPALITY
+1098,41210,4,Oberösterreich,41210,Kirchdorf am Inn,MUNICIPALITY
+1099,41211,4,Oberösterreich,41211,Kirchheim im Innkreis,MUNICIPALITY
+1100,41212,4,Oberösterreich,41212,Lambrechten,MUNICIPALITY
+1101,41213,4,Oberösterreich,41213,Lohnsburg am Kobernaußerwald,MUNICIPALITY
+1102,41214,4,Oberösterreich,41214,Mehrnbach,MUNICIPALITY
+1103,41215,4,Oberösterreich,41215,Mettmach,MUNICIPALITY
+1104,41216,4,Oberösterreich,41216,Mörschwang,MUNICIPALITY
+1105,41217,4,Oberösterreich,41217,Mühlheim am Inn,MUNICIPALITY
+1106,41218,4,Oberösterreich,41218,Neuhofen im Innkreis,MUNICIPALITY
+1107,41219,4,Oberösterreich,41219,Obernberg am Inn,MUNICIPALITY
+1108,41220,4,Oberösterreich,41220,Ort im Innkreis,MUNICIPALITY
+1109,41221,4,Oberösterreich,41221,Pattigham,MUNICIPALITY
+1110,41222,4,Oberösterreich,41222,Peterskirchen,MUNICIPALITY
+1111,41223,4,Oberösterreich,41223,Pramet,MUNICIPALITY
+1112,41224,4,Oberösterreich,41224,Reichersberg,MUNICIPALITY
+1113,41225,4,Oberösterreich,41225,Ried im Innkreis,MUNICIPALITY
+1114,41226,4,Oberösterreich,41226,St. Georgen bei Obernberg am Inn,MUNICIPALITY
+1115,41227,4,Oberösterreich,41227,St. Marienkirchen am Hausruck,MUNICIPALITY
+1116,41228,4,Oberösterreich,41228,St. Martin im Innkreis,MUNICIPALITY
+1117,41229,4,Oberösterreich,41229,Schildorn,MUNICIPALITY
+1118,41230,4,Oberösterreich,41230,Senftenbach,MUNICIPALITY
+1119,41231,4,Oberösterreich,41231,Taiskirchen im Innkreis,MUNICIPALITY
+1120,41232,4,Oberösterreich,41232,Tumeltsham,MUNICIPALITY
+1121,41233,4,Oberösterreich,41233,Utzenaich,MUNICIPALITY
+1122,41234,4,Oberösterreich,41234,Waldzell,MUNICIPALITY
+1123,41235,4,Oberösterreich,41235,Weilbach,MUNICIPALITY
+1124,41236,4,Oberösterreich,41236,Wippenham,MUNICIPALITY
+1125,41304,4,Oberösterreich,41304,Altenfelden,MUNICIPALITY
+1126,41305,4,Oberösterreich,41305,Arnreit,MUNICIPALITY
+1127,41306,4,Oberösterreich,41306,Atzesberg,MUNICIPALITY
+1128,41307,4,Oberösterreich,41307,Auberg,MUNICIPALITY
+1129,41309,4,Oberösterreich,41309,Haslach an der Mühl,MUNICIPALITY
+1130,41311,4,Oberösterreich,41311,Hörbich,MUNICIPALITY
+1131,41312,4,Oberösterreich,41312,Hofkirchen im Mühlkreis,MUNICIPALITY
+1132,41313,4,Oberösterreich,41313,Julbach,MUNICIPALITY
+1133,41314,4,Oberösterreich,41314,Kirchberg ob der Donau,MUNICIPALITY
+1134,41315,4,Oberösterreich,41315,Klaffer am Hochficht,MUNICIPALITY
+1135,41316,4,Oberösterreich,41316,Kleinzell im Mühlkreis,MUNICIPALITY
+1136,41317,4,Oberösterreich,41317,Kollerschlag,MUNICIPALITY
+1137,41318,4,Oberösterreich,41318,Lembach im Mühlkreis,MUNICIPALITY
+1138,41319,4,Oberösterreich,41319,Lichtenau im Mühlkreis,MUNICIPALITY
+1139,41320,4,Oberösterreich,41320,Nebelberg,MUNICIPALITY
+1140,41321,4,Oberösterreich,41321,Neufelden,MUNICIPALITY
+1141,41322,4,Oberösterreich,41322,Niederkappel,MUNICIPALITY
+1142,41323,4,Oberösterreich,41323,Niederwaldkirchen,MUNICIPALITY
+1143,41324,4,Oberösterreich,41324,Oberkappel,MUNICIPALITY
+1144,41325,4,Oberösterreich,41325,Oepping,MUNICIPALITY
+1145,41326,4,Oberösterreich,41326,Peilstein im Mühlviertel,MUNICIPALITY
+1146,41327,4,Oberösterreich,41327,Pfarrkirchen im Mühlkreis,MUNICIPALITY
+1147,41328,4,Oberösterreich,41328,Putzleinsdorf,MUNICIPALITY
+1148,41329,4,Oberösterreich,41329,Neustift im Mühlkreis,MUNICIPALITY
+1149,41331,4,Oberösterreich,41331,St. Johann am Wimberg,MUNICIPALITY
+1150,41332,4,Oberösterreich,41332,St. Martin im Mühlkreis,MUNICIPALITY
+1151,41333,4,Oberösterreich,41333,St. Oswald bei Haslach,MUNICIPALITY
+1152,41334,4,Oberösterreich,41334,St. Peter am Wimberg,MUNICIPALITY
+1153,41336,4,Oberösterreich,41336,St. Ulrich im Mühlkreis,MUNICIPALITY
+1154,41337,4,Oberösterreich,41337,St. Veit im Mühlkreis,MUNICIPALITY
+1155,41338,4,Oberösterreich,41338,Sarleinsbach,MUNICIPALITY
+1156,41341,4,Oberösterreich,41341,Schwarzenberg am Böhmerwald,MUNICIPALITY
+1157,41342,4,Oberösterreich,41342,Ulrichsberg,MUNICIPALITY
+1158,41343,4,Oberösterreich,41343,Aigen-Schlägl,MUNICIPALITY
+1159,41344,4,Oberösterreich,41344,Rohrbach-Berg,MUNICIPALITY
+1160,41345,4,Oberösterreich,41345,Helfenberg,MUNICIPALITY
+1161,41346,4,Oberösterreich,41346,St. Stefan-Afiesl,MUNICIPALITY
+1162,41401,4,Oberösterreich,41401,Altschwendt,MUNICIPALITY
+1163,41402,4,Oberösterreich,41402,Andorf,MUNICIPALITY
+1164,41403,4,Oberösterreich,41403,Brunnenthal,MUNICIPALITY
+1165,41404,4,Oberösterreich,41404,Diersbach,MUNICIPALITY
+1166,41405,4,Oberösterreich,41405,Dorf an der Pram,MUNICIPALITY
+1167,41406,4,Oberösterreich,41406,Eggerding,MUNICIPALITY
+1168,41407,4,Oberösterreich,41407,Engelhartszell,MUNICIPALITY
+1169,41408,4,Oberösterreich,41408,Enzenkirchen,MUNICIPALITY
+1170,41409,4,Oberösterreich,41409,Esternberg,MUNICIPALITY
+1171,41410,4,Oberösterreich,41410,Freinberg,MUNICIPALITY
+1172,41411,4,Oberösterreich,41411,Kopfing im Innkreis,MUNICIPALITY
+1173,41412,4,Oberösterreich,41412,Mayrhof,MUNICIPALITY
+1174,41413,4,Oberösterreich,41413,Münzkirchen,MUNICIPALITY
+1175,41414,4,Oberösterreich,41414,Raab,MUNICIPALITY
+1176,41415,4,Oberösterreich,41415,Rainbach im Innkreis,MUNICIPALITY
+1177,41416,4,Oberösterreich,41416,Riedau,MUNICIPALITY
+1178,41417,4,Oberösterreich,41417,St. Aegidi,MUNICIPALITY
+1179,41418,4,Oberösterreich,41418,St. Florian am Inn,MUNICIPALITY
+1180,41419,4,Oberösterreich,41419,St. Marienkirchen bei Schärding,MUNICIPALITY
+1181,41420,4,Oberösterreich,41420,St. Roman,MUNICIPALITY
+1182,41421,4,Oberösterreich,41421,St. Willibald,MUNICIPALITY
+1183,41422,4,Oberösterreich,41422,Schärding,MUNICIPALITY
+1184,41423,4,Oberösterreich,41423,Schardenberg,MUNICIPALITY
+1185,41424,4,Oberösterreich,41424,Sigharting,MUNICIPALITY
+1186,41425,4,Oberösterreich,41425,Suben,MUNICIPALITY
+1187,41426,4,Oberösterreich,41426,Taufkirchen an der Pram,MUNICIPALITY
+1188,41427,4,Oberösterreich,41427,Vichtenstein,MUNICIPALITY
+1189,41428,4,Oberösterreich,41428,Waldkirchen am Wesen,MUNICIPALITY
+1190,41429,4,Oberösterreich,41429,Wernstein am Inn,MUNICIPALITY
+1191,41430,4,Oberösterreich,41430,Zell an der Pram,MUNICIPALITY
+1192,41501,4,Oberösterreich,41501,Adlwang,MUNICIPALITY
+1193,41502,4,Oberösterreich,41502,Aschach an der Steyr,MUNICIPALITY
+1194,41503,4,Oberösterreich,41503,Bad Hall,MUNICIPALITY
+1195,41504,4,Oberösterreich,41504,Dietach,MUNICIPALITY
+1196,41505,4,Oberösterreich,41505,Gaflenz,MUNICIPALITY
+1197,41506,4,Oberösterreich,41506,Garsten,MUNICIPALITY
+1198,41507,4,Oberösterreich,41507,Großraming,MUNICIPALITY
+1199,41508,4,Oberösterreich,41508,Laussa,MUNICIPALITY
+1200,41509,4,Oberösterreich,41509,Losenstein,MUNICIPALITY
+1201,41510,4,Oberösterreich,41510,Maria Neustift,MUNICIPALITY
+1202,41511,4,Oberösterreich,41511,Pfarrkirchen bei Bad Hall,MUNICIPALITY
+1203,41512,4,Oberösterreich,41512,Reichraming,MUNICIPALITY
+1204,41513,4,Oberösterreich,41513,Rohr im Kremstal,MUNICIPALITY
+1205,41514,4,Oberösterreich,41514,St. Ulrich bei Steyr,MUNICIPALITY
+1206,41515,4,Oberösterreich,41515,Schiedlberg,MUNICIPALITY
+1207,41516,4,Oberösterreich,41516,Sierning,MUNICIPALITY
+1208,41517,4,Oberösterreich,41517,Ternberg,MUNICIPALITY
+1209,41518,4,Oberösterreich,41518,Waldneukirchen,MUNICIPALITY
+1210,41521,4,Oberösterreich,41521,Wolfern,MUNICIPALITY
+1211,41522,4,Oberösterreich,41522,Weyer,MUNICIPALITY
+1212,41601,4,Oberösterreich,41601,Alberndorf in der Riedmark,MUNICIPALITY
+1213,41602,4,Oberösterreich,41602,Altenberg bei Linz,MUNICIPALITY
+1214,41603,4,Oberösterreich,41603,Bad Leonfelden,MUNICIPALITY
+1215,41604,4,Oberösterreich,41604,Eidenberg,MUNICIPALITY
+1216,41605,4,Oberösterreich,41605,Engerwitzdorf,MUNICIPALITY
+1217,41606,4,Oberösterreich,41606,Feldkirchen an der Donau,MUNICIPALITY
+1218,41607,4,Oberösterreich,41607,Gallneukirchen,MUNICIPALITY
+1219,41608,4,Oberösterreich,41608,Goldwörth,MUNICIPALITY
+1220,41609,4,Oberösterreich,41609,Gramastetten,MUNICIPALITY
+1221,41610,4,Oberösterreich,41610,Haibach im Mühlkreis,MUNICIPALITY
+1222,41611,4,Oberösterreich,41611,Hellmonsödt,MUNICIPALITY
+1223,41612,4,Oberösterreich,41612,Herzogsdorf,MUNICIPALITY
+1224,41613,4,Oberösterreich,41613,Kirchschlag bei Linz,MUNICIPALITY
+1225,41614,4,Oberösterreich,41614,Lichtenberg,MUNICIPALITY
+1226,41615,4,Oberösterreich,41615,Oberneukirchen,MUNICIPALITY
+1227,41616,4,Oberösterreich,41616,Ottenschlag im Mühlkreis,MUNICIPALITY
+1228,41617,4,Oberösterreich,41617,Ottensheim,MUNICIPALITY
+1229,41618,4,Oberösterreich,41618,Puchenau,MUNICIPALITY
+1230,41619,4,Oberösterreich,41619,Reichenau im Mühlkreis,MUNICIPALITY
+1231,41620,4,Oberösterreich,41620,Reichenthal,MUNICIPALITY
+1232,41621,4,Oberösterreich,41621,St. Gotthard im Mühlkreis,MUNICIPALITY
+1233,41622,4,Oberösterreich,41622,Schenkenfelden,MUNICIPALITY
+1234,41623,4,Oberösterreich,41623,Sonnberg im Mühlkreis,MUNICIPALITY
+1235,41624,4,Oberösterreich,41624,Steyregg,MUNICIPALITY
+1236,41626,4,Oberösterreich,41626,Walding,MUNICIPALITY
+1237,41627,4,Oberösterreich,41627,Zwettl an der Rodl,MUNICIPALITY
+1238,41628,4,Oberösterreich,41628,Vorderweißenbach,MUNICIPALITY
+1239,41701,4,Oberösterreich,41701,Ampflwang im Hausruckwald,MUNICIPALITY
+1240,41702,4,Oberösterreich,41702,Attersee am Attersee,MUNICIPALITY
+1241,41703,4,Oberösterreich,41703,Attnang-Puchheim,MUNICIPALITY
+1242,41704,4,Oberösterreich,41704,Atzbach,MUNICIPALITY
+1243,41705,4,Oberösterreich,41705,Aurach am Hongar,MUNICIPALITY
+1244,41706,4,Oberösterreich,41706,Berg im Attergau,MUNICIPALITY
+1245,41707,4,Oberösterreich,41707,Desselbrunn,MUNICIPALITY
+1246,41708,4,Oberösterreich,41708,Fornach,MUNICIPALITY
+1247,41709,4,Oberösterreich,41709,Frankenburg am Hausruck,MUNICIPALITY
+1248,41710,4,Oberösterreich,41710,Frankenmarkt,MUNICIPALITY
+1249,41711,4,Oberösterreich,41711,Gampern,MUNICIPALITY
+1250,41712,4,Oberösterreich,41712,Innerschwand am Mondsee,MUNICIPALITY
+1251,41713,4,Oberösterreich,41713,Lenzing an der Ager,MUNICIPALITY
+1252,41714,4,Oberösterreich,41714,Manning,MUNICIPALITY
+1253,41715,4,Oberösterreich,41715,Mondsee,MUNICIPALITY
+1254,41716,4,Oberösterreich,41716,Neukirchen an der Vöckla,MUNICIPALITY
+1255,41717,4,Oberösterreich,41717,Niederthalheim,MUNICIPALITY
+1256,41718,4,Oberösterreich,41718,Nußdorf am Attersee,MUNICIPALITY
+1257,41719,4,Oberösterreich,41719,Oberhofen am Irrsee,MUNICIPALITY
+1258,41720,4,Oberösterreich,41720,Oberndorf bei Schwanenstadt,MUNICIPALITY
+1259,41721,4,Oberösterreich,41721,Oberwang,MUNICIPALITY
+1260,41722,4,Oberösterreich,41722,Ottnang am Hausruck,MUNICIPALITY
+1261,41723,4,Oberösterreich,41723,Pfaffing,MUNICIPALITY
+1262,41724,4,Oberösterreich,41724,Pilsbach,MUNICIPALITY
+1263,41725,4,Oberösterreich,41725,Pitzenberg,MUNICIPALITY
+1264,41726,4,Oberösterreich,41726,Pöndorf,MUNICIPALITY
+1265,41727,4,Oberösterreich,41727,Puchkirchen am Trattberg,MUNICIPALITY
+1266,41728,4,Oberösterreich,41728,Pühret,MUNICIPALITY
+1267,41729,4,Oberösterreich,41729,Redleiten,MUNICIPALITY
+1268,41730,4,Oberösterreich,41730,Redlham,MUNICIPALITY
+1269,41731,4,Oberösterreich,41731,Regau,MUNICIPALITY
+1270,41732,4,Oberösterreich,41732,Rüstorf,MUNICIPALITY
+1271,41733,4,Oberösterreich,41733,Rutzenham,MUNICIPALITY
+1272,41734,4,Oberösterreich,41734,St. Georgen im Attergau,MUNICIPALITY
+1273,41735,4,Oberösterreich,41735,St. Lorenz,MUNICIPALITY
+1274,41736,4,Oberösterreich,41736,Schlatt,MUNICIPALITY
+1275,41737,4,Oberösterreich,41737,Schörfling am Attersee,MUNICIPALITY
+1276,41738,4,Oberösterreich,41738,Schwanenstadt,MUNICIPALITY
+1277,41739,4,Oberösterreich,41739,Seewalchen am Attersee,MUNICIPALITY
+1278,41740,4,Oberösterreich,41740,Steinbach am Attersee,MUNICIPALITY
+1279,41741,4,Oberösterreich,41741,Straß im Attergau,MUNICIPALITY
+1280,41742,4,Oberösterreich,41742,Tiefgraben,MUNICIPALITY
+1281,41743,4,Oberösterreich,41743,Timelkam,MUNICIPALITY
+1282,41744,4,Oberösterreich,41744,Ungenach,MUNICIPALITY
+1283,41745,4,Oberösterreich,41745,Unterach am Attersee,MUNICIPALITY
+1284,41746,4,Oberösterreich,41746,Vöcklabruck,MUNICIPALITY
+1285,41747,4,Oberösterreich,41747,Vöcklamarkt,MUNICIPALITY
+1286,41748,4,Oberösterreich,41748,Weißenkirchen im Attergau,MUNICIPALITY
+1287,41749,4,Oberösterreich,41749,Weyregg am Attersee,MUNICIPALITY
+1288,41750,4,Oberösterreich,41750,Wolfsegg am Hausruck,MUNICIPALITY
+1289,41751,4,Oberösterreich,41751,Zell am Moos,MUNICIPALITY
+1290,41752,4,Oberösterreich,41752,Zell am Pettenfirst,MUNICIPALITY
+1291,41801,4,Oberösterreich,41801,Aichkirchen,MUNICIPALITY
+1292,41802,4,Oberösterreich,41802,Bachmanning,MUNICIPALITY
+1293,41803,4,Oberösterreich,41803,Bad Wimsbach-Neydharting,MUNICIPALITY
+1294,41804,4,Oberösterreich,41804,Buchkirchen,MUNICIPALITY
+1295,41805,4,Oberösterreich,41805,Eberstalzell,MUNICIPALITY
+1296,41806,4,Oberösterreich,41806,Edt bei Lambach,MUNICIPALITY
+1297,41807,4,Oberösterreich,41807,Fischlham,MUNICIPALITY
+1298,41808,4,Oberösterreich,41808,Gunskirchen,MUNICIPALITY
+1299,41809,4,Oberösterreich,41809,Holzhausen,MUNICIPALITY
+1300,41810,4,Oberösterreich,41810,Krenglbach,MUNICIPALITY
+1301,41811,4,Oberösterreich,41811,Lambach,MUNICIPALITY
+1302,41812,4,Oberösterreich,41812,Marchtrenk,MUNICIPALITY
+1303,41813,4,Oberösterreich,41813,Neukirchen bei Lambach,MUNICIPALITY
+1304,41814,4,Oberösterreich,41814,Offenhausen,MUNICIPALITY
+1305,41815,4,Oberösterreich,41815,Pennewang,MUNICIPALITY
+1306,41816,4,Oberösterreich,41816,Pichl bei Wels,MUNICIPALITY
+1307,41817,4,Oberösterreich,41817,Sattledt,MUNICIPALITY
+1308,41818,4,Oberösterreich,41818,Schleißheim,MUNICIPALITY
+1309,41819,4,Oberösterreich,41819,Sipbachzell,MUNICIPALITY
+1310,41820,4,Oberösterreich,41820,Stadl-Paura,MUNICIPALITY
+1311,41821,4,Oberösterreich,41821,Steinerkirchen an der Traun,MUNICIPALITY
+1312,41822,4,Oberösterreich,41822,Steinhaus,MUNICIPALITY
+1313,41823,4,Oberösterreich,41823,Thalheim bei Wels,MUNICIPALITY
+1314,41824,4,Oberösterreich,41824,Weißkirchen an der Traun,MUNICIPALITY
+1315,50101,5,Salzburg,50101,Salzburg,MUNICIPALITY
+1316,50201,5,Salzburg,50201,Abtenau,MUNICIPALITY
+1317,50202,5,Salzburg,50202,Adnet,MUNICIPALITY
+1318,50203,5,Salzburg,50203,Annaberg-Lungötz,MUNICIPALITY
+1319,50204,5,Salzburg,50204,Golling an der Salzach,MUNICIPALITY
+1320,50205,5,Salzburg,50205,Hallein,MUNICIPALITY
+1321,50206,5,Salzburg,50206,Krispl,MUNICIPALITY
+1322,50207,5,Salzburg,50207,Kuchl,MUNICIPALITY
+1323,50208,5,Salzburg,50208,Oberalm,MUNICIPALITY
+1324,50209,5,Salzburg,50209,Puch bei Hallein,MUNICIPALITY
+1325,50210,5,Salzburg,50210,Rußbach am Paß Gschütt,MUNICIPALITY
+1326,50211,5,Salzburg,50211,St. Koloman,MUNICIPALITY
+1327,50212,5,Salzburg,50212,Scheffau am Tennengebirge,MUNICIPALITY
+1328,50213,5,Salzburg,50213,Bad Vigaun,MUNICIPALITY
+1329,50301,5,Salzburg,50301,Anif,MUNICIPALITY
+1330,50302,5,Salzburg,50302,Anthering,MUNICIPALITY
+1331,50303,5,Salzburg,50303,Bergheim,MUNICIPALITY
+1332,50304,5,Salzburg,50304,Berndorf bei Salzburg,MUNICIPALITY
+1333,50305,5,Salzburg,50305,Bürmoos,MUNICIPALITY
+1334,50306,5,Salzburg,50306,Dorfbeuern,MUNICIPALITY
+1335,50307,5,Salzburg,50307,Ebenau,MUNICIPALITY
+1336,50308,5,Salzburg,50308,Elixhausen,MUNICIPALITY
+1337,50309,5,Salzburg,50309,Elsbethen,MUNICIPALITY
+1338,50310,5,Salzburg,50310,Eugendorf,MUNICIPALITY
+1339,50311,5,Salzburg,50311,Faistenau,MUNICIPALITY
+1340,50312,5,Salzburg,50312,Fuschl am See,MUNICIPALITY
+1341,50313,5,Salzburg,50313,Göming,MUNICIPALITY
+1342,50314,5,Salzburg,50314,Grödig,MUNICIPALITY
+1343,50315,5,Salzburg,50315,Großgmain,MUNICIPALITY
+1344,50316,5,Salzburg,50316,Hallwang,MUNICIPALITY
+1345,50317,5,Salzburg,50317,Henndorf am Wallersee,MUNICIPALITY
+1346,50318,5,Salzburg,50318,Hintersee,MUNICIPALITY
+1347,50319,5,Salzburg,50319,Hof bei Salzburg,MUNICIPALITY
+1348,50320,5,Salzburg,50320,Köstendorf,MUNICIPALITY
+1349,50321,5,Salzburg,50321,Koppl,MUNICIPALITY
+1350,50322,5,Salzburg,50322,Lamprechtshausen,MUNICIPALITY
+1351,50323,5,Salzburg,50323,Mattsee,MUNICIPALITY
+1352,50324,5,Salzburg,50324,Neumarkt am Wallersee,MUNICIPALITY
+1353,50325,5,Salzburg,50325,Nußdorf am Haunsberg,MUNICIPALITY
+1354,50326,5,Salzburg,50326,Oberndorf bei Salzburg,MUNICIPALITY
+1355,50327,5,Salzburg,50327,Obertrum am See,MUNICIPALITY
+1356,50328,5,Salzburg,50328,Plainfeld,MUNICIPALITY
+1357,50329,5,Salzburg,50329,St. Georgen bei Salzburg,MUNICIPALITY
+1358,50330,5,Salzburg,50330,St. Gilgen,MUNICIPALITY
+1359,50331,5,Salzburg,50331,Schleedorf,MUNICIPALITY
+1360,50332,5,Salzburg,50332,Seeham,MUNICIPALITY
+1361,50335,5,Salzburg,50335,Straßwalchen,MUNICIPALITY
+1362,50336,5,Salzburg,50336,Strobl,MUNICIPALITY
+1363,50337,5,Salzburg,50337,Thalgau,MUNICIPALITY
+1364,50338,5,Salzburg,50338,Wals-Siezenheim,MUNICIPALITY
+1365,50339,5,Salzburg,50339,Seekirchen am Wallersee,MUNICIPALITY
+1366,50401,5,Salzburg,50401,Altenmarkt im Pongau,MUNICIPALITY
+1367,50402,5,Salzburg,50402,Bad Hofgastein,MUNICIPALITY
+1368,50403,5,Salzburg,50403,Bad Gastein,MUNICIPALITY
+1369,50404,5,Salzburg,50404,Bischofshofen,MUNICIPALITY
+1370,50405,5,Salzburg,50405,Dorfgastein,MUNICIPALITY
+1371,50406,5,Salzburg,50406,Eben im Pongau,MUNICIPALITY
+1372,50407,5,Salzburg,50407,Filzmoos,MUNICIPALITY
+1373,50408,5,Salzburg,50408,Flachau,MUNICIPALITY
+1374,50409,5,Salzburg,50409,Forstau,MUNICIPALITY
+1375,50410,5,Salzburg,50410,Goldegg,MUNICIPALITY
+1376,50411,5,Salzburg,50411,Großarl,MUNICIPALITY
+1377,50412,5,Salzburg,50412,Hüttau,MUNICIPALITY
+1378,50413,5,Salzburg,50413,Hüttschlag,MUNICIPALITY
+1379,50414,5,Salzburg,50414,Kleinarl,MUNICIPALITY
+1380,50415,5,Salzburg,50415,Mühlbach am Hochkönig,MUNICIPALITY
+1381,50416,5,Salzburg,50416,Pfarrwerfen,MUNICIPALITY
+1382,50417,5,Salzburg,50417,Radstadt,MUNICIPALITY
+1383,50418,5,Salzburg,50418,St. Johann im Pongau,MUNICIPALITY
+1384,50419,5,Salzburg,50419,St. Martin am Tennengebirge,MUNICIPALITY
+1385,50420,5,Salzburg,50420,St. Veit im Pongau,MUNICIPALITY
+1386,50421,5,Salzburg,50421,Schwarzach im Pongau,MUNICIPALITY
+1387,50422,5,Salzburg,50422,Untertauern,MUNICIPALITY
+1388,50423,5,Salzburg,50423,Wagrain,MUNICIPALITY
+1389,50424,5,Salzburg,50424,Werfen,MUNICIPALITY
+1390,50425,5,Salzburg,50425,Werfenweng,MUNICIPALITY
+1391,50501,5,Salzburg,50501,Göriach,MUNICIPALITY
+1392,50502,5,Salzburg,50502,Lessach,MUNICIPALITY
+1393,50503,5,Salzburg,50503,Mariapfarr,MUNICIPALITY
+1394,50504,5,Salzburg,50504,Mauterndorf,MUNICIPALITY
+1395,50505,5,Salzburg,50505,Muhr,MUNICIPALITY
+1396,50506,5,Salzburg,50506,Ramingstein,MUNICIPALITY
+1397,50507,5,Salzburg,50507,St. Andrä im Lungau,MUNICIPALITY
+1398,50508,5,Salzburg,50508,St. Margarethen im Lungau,MUNICIPALITY
+1399,50509,5,Salzburg,50509,St. Michael im Lungau,MUNICIPALITY
+1400,50510,5,Salzburg,50510,Tamsweg,MUNICIPALITY
+1401,50511,5,Salzburg,50511,Thomatal,MUNICIPALITY
+1402,50512,5,Salzburg,50512,Tweng,MUNICIPALITY
+1403,50513,5,Salzburg,50513,Unternberg,MUNICIPALITY
+1404,50514,5,Salzburg,50514,Weißpriach,MUNICIPALITY
+1405,50515,5,Salzburg,50515,Zederhaus,MUNICIPALITY
+1406,50601,5,Salzburg,50601,Bramberg am Wildkogel,MUNICIPALITY
+1407,50602,5,Salzburg,50602,Bruck an der Großglocknerstraße,MUNICIPALITY
+1408,50603,5,Salzburg,50603,Dienten am Hochkönig,MUNICIPALITY
+1409,50604,5,Salzburg,50604,Fusch an der Großglocknerstraße,MUNICIPALITY
+1410,50605,5,Salzburg,50605,Hollersbach im Pinzgau,MUNICIPALITY
+1411,50606,5,Salzburg,50606,Kaprun,MUNICIPALITY
+1412,50607,5,Salzburg,50607,Krimml,MUNICIPALITY
+1413,50608,5,Salzburg,50608,Lend,MUNICIPALITY
+1414,50609,5,Salzburg,50609,Leogang,MUNICIPALITY
+1415,50610,5,Salzburg,50610,Lofer,MUNICIPALITY
+1416,50611,5,Salzburg,50611,Maishofen,MUNICIPALITY
+1417,50612,5,Salzburg,50612,Maria Alm am Steinernen Meer,MUNICIPALITY
+1418,50613,5,Salzburg,50613,Mittersill,MUNICIPALITY
+1419,50614,5,Salzburg,50614,Neukirchen am Großvenediger,MUNICIPALITY
+1420,50615,5,Salzburg,50615,Niedernsill,MUNICIPALITY
+1421,50616,5,Salzburg,50616,Piesendorf,MUNICIPALITY
+1422,50617,5,Salzburg,50617,Rauris,MUNICIPALITY
+1423,50618,5,Salzburg,50618,Saalbach-Hinterglemm,MUNICIPALITY
+1424,50619,5,Salzburg,50619,Saalfelden am Steinernen Meer,MUNICIPALITY
+1425,50620,5,Salzburg,50620,St. Martin bei Lofer,MUNICIPALITY
+1426,50621,5,Salzburg,50621,Stuhlfelden,MUNICIPALITY
+1427,50622,5,Salzburg,50622,Taxenbach,MUNICIPALITY
+1428,50623,5,Salzburg,50623,Unken,MUNICIPALITY
+1429,50624,5,Salzburg,50624,Uttendorf,MUNICIPALITY
+1430,50625,5,Salzburg,50625,Viehhofen,MUNICIPALITY
+1431,50626,5,Salzburg,50626,Wald im Pinzgau,MUNICIPALITY
+1432,50627,5,Salzburg,50627,Weißbach bei Lofer,MUNICIPALITY
+1433,50628,5,Salzburg,50628,Zell am See,MUNICIPALITY
+1434,60101,6,Steiermark,60101,Graz,MUNICIPALITY
+1435,60305,6,Steiermark,60305,Frauental an der Laßnitz,MUNICIPALITY
+1436,60318,6,Steiermark,60318,Lannach,MUNICIPALITY
+1437,60323,6,Steiermark,60323,Pölfing-Brunn,MUNICIPALITY
+1438,60324,6,Steiermark,60324,Preding,MUNICIPALITY
+1439,60326,6,Steiermark,60326,Sankt Josef (Weststeiermark),MUNICIPALITY
+1440,60329,6,Steiermark,60329,Sankt Peter im Sulmtal,MUNICIPALITY
+1441,60341,6,Steiermark,60341,Wettmannstätten,MUNICIPALITY
+1442,60344,6,Steiermark,60344,Deutschlandsberg,MUNICIPALITY
+1443,60345,6,Steiermark,60345,Eibiswald,MUNICIPALITY
+1444,60346,6,Steiermark,60346,Groß Sankt Florian,MUNICIPALITY
+1445,60347,6,Steiermark,60347,Sankt Martin im Sulmtal,MUNICIPALITY
+1446,60348,6,Steiermark,60348,Sankt Stefan ob Stainz,MUNICIPALITY
+1447,60349,6,Steiermark,60349,Bad Schwanberg,MUNICIPALITY
+1448,60350,6,Steiermark,60350,Stainz,MUNICIPALITY
+1449,60351,6,Steiermark,60351,Wies,MUNICIPALITY
+1450,60608,6,Steiermark,60608,Feldkirchen bei Graz,MUNICIPALITY
+1451,60611,6,Steiermark,60611,Gössendorf,MUNICIPALITY
+1452,60613,6,Steiermark,60613,Gratkorn,MUNICIPALITY
+1453,60617,6,Steiermark,60617,Hart bei Graz,MUNICIPALITY
+1454,60618,6,Steiermark,60618,Haselsdorf-Tobelbad,MUNICIPALITY
+1455,60619,6,Steiermark,60619,Hausmannstätten,MUNICIPALITY
+1456,60623,6,Steiermark,60623,Kainbach bei Graz,MUNICIPALITY
+1457,60624,6,Steiermark,60624,Kalsdorf bei Graz,MUNICIPALITY
+1458,60626,6,Steiermark,60626,Kumberg,MUNICIPALITY
+1459,60628,6,Steiermark,60628,Laßnitzhöhe,MUNICIPALITY
+1460,60629,6,Steiermark,60629,Lieboch,MUNICIPALITY
+1461,60632,6,Steiermark,60632,Peggau,MUNICIPALITY
+1462,60639,6,Steiermark,60639,Sankt Bartholomä,MUNICIPALITY
+1463,60641,6,Steiermark,60641,Sankt Oswald bei Plankenwarth,MUNICIPALITY
+1464,60642,6,Steiermark,60642,Sankt Radegund bei Graz,MUNICIPALITY
+1465,60645,6,Steiermark,60645,Semriach,MUNICIPALITY
+1466,60646,6,Steiermark,60646,Stattegg,MUNICIPALITY
+1467,60647,6,Steiermark,60647,Stiwoll,MUNICIPALITY
+1468,60648,6,Steiermark,60648,Thal,MUNICIPALITY
+1469,60651,6,Steiermark,60651,Übelbach,MUNICIPALITY
+1470,60653,6,Steiermark,60653,Vasoldsberg,MUNICIPALITY
+1471,60654,6,Steiermark,60654,Weinitzen,MUNICIPALITY
+1472,60655,6,Steiermark,60655,Werndorf,MUNICIPALITY
+1473,60656,6,Steiermark,60656,Wundschuh,MUNICIPALITY
+1474,60659,6,Steiermark,60659,Deutschfeistritz,MUNICIPALITY
+1475,60660,6,Steiermark,60660,Dobl-Zwaring,MUNICIPALITY
+1476,60661,6,Steiermark,60661,Eggersdorf bei Graz,MUNICIPALITY
+1477,60662,6,Steiermark,60662,Fernitz-Mellach,MUNICIPALITY
+1478,60663,6,Steiermark,60663,Frohnleiten,MUNICIPALITY
+1479,60664,6,Steiermark,60664,Gratwein-Straßengel,MUNICIPALITY
+1480,60665,6,Steiermark,60665,Hitzendorf,MUNICIPALITY
+1481,60666,6,Steiermark,60666,Nestelbach bei Graz,MUNICIPALITY
+1482,60667,6,Steiermark,60667,Raaba-Grambach,MUNICIPALITY
+1483,60668,6,Steiermark,60668,Sankt Marein bei Graz,MUNICIPALITY
+1484,60669,6,Steiermark,60669,Seiersberg-Pirka,MUNICIPALITY
+1485,60670,6,Steiermark,60670,Premstätten,MUNICIPALITY
+1486,61001,6,Steiermark,61001,Allerheiligen bei Wildon,MUNICIPALITY
+1487,61002,6,Steiermark,61002,Arnfels,MUNICIPALITY
+1488,61007,6,Steiermark,61007,Empersdorf,MUNICIPALITY
+1489,61008,6,Steiermark,61008,Gabersdorf,MUNICIPALITY
+1490,61012,6,Steiermark,61012,Gralla,MUNICIPALITY
+1491,61013,6,Steiermark,61013,Großklein,MUNICIPALITY
+1492,61016,6,Steiermark,61016,Heimschuh,MUNICIPALITY
+1493,61017,6,Steiermark,61017,Hengsberg,MUNICIPALITY
+1494,61019,6,Steiermark,61019,Kitzeck im Sausal,MUNICIPALITY
+1495,61020,6,Steiermark,61020,Lang,MUNICIPALITY
+1496,61021,6,Steiermark,61021,Lebring-Sankt Margarethen,MUNICIPALITY
+1497,61024,6,Steiermark,61024,Oberhaag,MUNICIPALITY
+1498,61027,6,Steiermark,61027,Ragnitz,MUNICIPALITY
+1499,61030,6,Steiermark,61030,Sankt Andrä-Höch,MUNICIPALITY
+1500,61032,6,Steiermark,61032,Sankt Johann im Saggautal,MUNICIPALITY
+1501,61033,6,Steiermark,61033,Sankt Nikolai im Sausal,MUNICIPALITY
+1502,61043,6,Steiermark,61043,Tillmitsch,MUNICIPALITY
+1503,61045,6,Steiermark,61045,Wagna,MUNICIPALITY
+1504,61049,6,Steiermark,61049,Ehrenhausen an der Weinstraße,MUNICIPALITY
+1505,61050,6,Steiermark,61050,Gamlitz,MUNICIPALITY
+1506,61051,6,Steiermark,61051,Gleinstätten,MUNICIPALITY
+1507,61052,6,Steiermark,61052,Heiligenkreuz am Waasen,MUNICIPALITY
+1508,61053,6,Steiermark,61053,Leibnitz,MUNICIPALITY
+1509,61054,6,Steiermark,61054,Leutschach an der Weinstraße,MUNICIPALITY
+1510,61055,6,Steiermark,61055,Sankt Georgen an der Stiefing,MUNICIPALITY
+1511,61057,6,Steiermark,61057,Schwarzautal,MUNICIPALITY
+1512,61059,6,Steiermark,61059,Wildon,MUNICIPALITY
+1513,61060,6,Steiermark,61060,Sankt Veit in der Südsteiermark,MUNICIPALITY
+1514,61061,6,Steiermark,61061,Straß in Steiermark,MUNICIPALITY
+1515,61101,6,Steiermark,61101,Eisenerz,MUNICIPALITY
+1516,61105,6,Steiermark,61105,Kalwang,MUNICIPALITY
+1517,61106,6,Steiermark,61106,Kammern im Liesingtal,MUNICIPALITY
+1518,61107,6,Steiermark,61107,Kraubath an der Mur,MUNICIPALITY
+1519,61108,6,Steiermark,61108,Leoben,MUNICIPALITY
+1520,61109,6,Steiermark,61109,Mautern in Steiermark,MUNICIPALITY
+1521,61110,6,Steiermark,61110,Niklasdorf,MUNICIPALITY
+1522,61111,6,Steiermark,61111,Proleb,MUNICIPALITY
+1523,61112,6,Steiermark,61112,Radmer,MUNICIPALITY
+1524,61113,6,Steiermark,61113,Sankt Michael in Obersteiermark,MUNICIPALITY
+1525,61114,6,Steiermark,61114,Sankt Peter-Freienstein,MUNICIPALITY
+1526,61115,6,Steiermark,61115,Sankt Stefan ob Leoben,MUNICIPALITY
+1527,61116,6,Steiermark,61116,Traboch,MUNICIPALITY
+1528,61118,6,Steiermark,61118,Vordernberg,MUNICIPALITY
+1529,61119,6,Steiermark,61119,Wald am Schoberpaß,MUNICIPALITY
+1530,61120,6,Steiermark,61120,Trofaiach,MUNICIPALITY
+1531,61203,6,Steiermark,61203,Aigen im Ennstal,MUNICIPALITY
+1532,61204,6,Steiermark,61204,Altaussee,MUNICIPALITY
+1533,61205,6,Steiermark,61205,Altenmarkt bei Sankt Gallen,MUNICIPALITY
+1534,61206,6,Steiermark,61206,Ardning,MUNICIPALITY
+1535,61207,6,Steiermark,61207,Bad Aussee,MUNICIPALITY
+1536,61213,6,Steiermark,61213,Gröbming,MUNICIPALITY
+1537,61215,6,Steiermark,61215,Grundlsee,MUNICIPALITY
+1538,61217,6,Steiermark,61217,Haus,MUNICIPALITY
+1539,61222,6,Steiermark,61222,Lassing,MUNICIPALITY
+1540,61236,6,Steiermark,61236,Ramsau am Dachstein,MUNICIPALITY
+1541,61243,6,Steiermark,61243,Selzthal,MUNICIPALITY
+1542,61247,6,Steiermark,61247,Trieben,MUNICIPALITY
+1543,61251,6,Steiermark,61251,Wildalpen,MUNICIPALITY
+1544,61252,6,Steiermark,61252,Wörschach,MUNICIPALITY
+1545,61253,6,Steiermark,61253,Admont,MUNICIPALITY
+1546,61254,6,Steiermark,61254,Aich,MUNICIPALITY
+1547,61255,6,Steiermark,61255,Bad Mitterndorf,MUNICIPALITY
+1548,61256,6,Steiermark,61256,Gaishorn am See,MUNICIPALITY
+1549,61257,6,Steiermark,61257,Irdning-Donnersbachtal,MUNICIPALITY
+1550,61258,6,Steiermark,61258,Landl,MUNICIPALITY
+1551,61259,6,Steiermark,61259,Liezen,MUNICIPALITY
+1552,61260,6,Steiermark,61260,Michaelerberg-Pruggern,MUNICIPALITY
+1553,61261,6,Steiermark,61261,Mitterberg-Sankt Martin,MUNICIPALITY
+1554,61262,6,Steiermark,61262,Öblarn,MUNICIPALITY
+1555,61263,6,Steiermark,61263,Rottenmann,MUNICIPALITY
+1556,61264,6,Steiermark,61264,Sankt Gallen,MUNICIPALITY
+1557,61265,6,Steiermark,61265,Schladming,MUNICIPALITY
+1558,61266,6,Steiermark,61266,Sölk,MUNICIPALITY
+1559,61267,6,Steiermark,61267,Stainach-Pürgg,MUNICIPALITY
+1560,61410,6,Steiermark,61410,Mühlen,MUNICIPALITY
+1561,61413,6,Steiermark,61413,Niederwölz,MUNICIPALITY
+1562,61425,6,Steiermark,61425,St. Peter am Kammersberg,MUNICIPALITY
+1563,61428,6,Steiermark,61428,Schöder,MUNICIPALITY
+1564,61437,6,Steiermark,61437,Krakau,MUNICIPALITY
+1565,61438,6,Steiermark,61438,Murau,MUNICIPALITY
+1566,61439,6,Steiermark,61439,Neumarkt in der Steiermark,MUNICIPALITY
+1567,61440,6,Steiermark,61440,Oberwölz,MUNICIPALITY
+1568,61441,6,Steiermark,61441,Ranten,MUNICIPALITY
+1569,61442,6,Steiermark,61442,Sankt Georgen am Kreischberg,MUNICIPALITY
+1570,61443,6,Steiermark,61443,Sankt Lambrecht,MUNICIPALITY
+1571,61444,6,Steiermark,61444,Scheifling,MUNICIPALITY
+1572,61445,6,Steiermark,61445,Stadl-Predlitz,MUNICIPALITY
+1573,61446,6,Steiermark,61446,Teufenbach-Katsch,MUNICIPALITY
+1574,61611,6,Steiermark,61611,Krottendorf-Gaisfeld,MUNICIPALITY
+1575,61612,6,Steiermark,61612,Ligist,MUNICIPALITY
+1576,61615,6,Steiermark,61615,Mooskirchen,MUNICIPALITY
+1577,61618,6,Steiermark,61618,Rosental an der Kainach,MUNICIPALITY
+1578,61621,6,Steiermark,61621,Sankt Martin am Wöllmißberg,MUNICIPALITY
+1579,61624,6,Steiermark,61624,Stallhofen,MUNICIPALITY
+1580,61625,6,Steiermark,61625,Voitsberg,MUNICIPALITY
+1581,61626,6,Steiermark,61626,Bärnbach,MUNICIPALITY
+1582,61627,6,Steiermark,61627,Edelschrott,MUNICIPALITY
+1583,61628,6,Steiermark,61628,Geistthal-Södingberg,MUNICIPALITY
+1584,61629,6,Steiermark,61629,Hirschegg-Pack,MUNICIPALITY
+1585,61630,6,Steiermark,61630,Kainach bei Voitsberg,MUNICIPALITY
+1586,61631,6,Steiermark,61631,Köflach,MUNICIPALITY
+1587,61632,6,Steiermark,61632,Maria Lankowitz,MUNICIPALITY
+1588,61633,6,Steiermark,61633,Söding-Sankt Johann,MUNICIPALITY
+1589,61701,6,Steiermark,61701,Albersdorf-Prebuch,MUNICIPALITY
+1590,61708,6,Steiermark,61708,Fischbach,MUNICIPALITY
+1591,61710,6,Steiermark,61710,Floing,MUNICIPALITY
+1592,61711,6,Steiermark,61711,Gasen,MUNICIPALITY
+1593,61716,6,Steiermark,61716,Markt Hartmannsdorf,MUNICIPALITY
+1594,61719,6,Steiermark,61719,Hofstätten an der Raab,MUNICIPALITY
+1595,61727,6,Steiermark,61727,Ludersdorf-Wilfersdorf,MUNICIPALITY
+1596,61728,6,Steiermark,61728,Miesenbach bei Birkfeld,MUNICIPALITY
+1597,61729,6,Steiermark,61729,Mitterdorf an der Raab,MUNICIPALITY
+1598,61730,6,Steiermark,61730,Mortantsch,MUNICIPALITY
+1599,61731,6,Steiermark,61731,Naas,MUNICIPALITY
+1600,61740,6,Steiermark,61740,Puch bei Weiz,MUNICIPALITY
+1601,61741,6,Steiermark,61741,Ratten,MUNICIPALITY
+1602,61743,6,Steiermark,61743,Rettenegg,MUNICIPALITY
+1603,61744,6,Steiermark,61744,St. Kathrein am Hauenstein,MUNICIPALITY
+1604,61745,6,Steiermark,61745,Sankt Kathrein am Offenegg,MUNICIPALITY
+1605,61746,6,Steiermark,61746,St. Margarethen an der Raab,MUNICIPALITY
+1606,61748,6,Steiermark,61748,Sinabelkirchen,MUNICIPALITY
+1607,61750,6,Steiermark,61750,Strallegg,MUNICIPALITY
+1608,61751,6,Steiermark,61751,Thannhausen,MUNICIPALITY
+1609,61756,6,Steiermark,61756,Anger,MUNICIPALITY
+1610,61757,6,Steiermark,61757,Birkfeld,MUNICIPALITY
+1611,61758,6,Steiermark,61758,Fladnitz an der Teichalm,MUNICIPALITY
+1612,61759,6,Steiermark,61759,Gersdorf an der Feistritz,MUNICIPALITY
+1613,61760,6,Steiermark,61760,Gleisdorf,MUNICIPALITY
+1614,61761,6,Steiermark,61761,Gutenberg,MUNICIPALITY
+1615,61762,6,Steiermark,61762,Ilztal,MUNICIPALITY
+1616,61763,6,Steiermark,61763,Passail,MUNICIPALITY
+1617,61764,6,Steiermark,61764,Pischelsdorf am Kulm,MUNICIPALITY
+1618,61765,6,Steiermark,61765,Sankt Ruprecht an der Raab,MUNICIPALITY
+1619,61766,6,Steiermark,61766,Weiz,MUNICIPALITY
+1620,62007,6,Steiermark,62007,Fohnsdorf,MUNICIPALITY
+1621,62008,6,Steiermark,62008,Gaal,MUNICIPALITY
+1622,62010,6,Steiermark,62010,Hohentauern,MUNICIPALITY
+1623,62014,6,Steiermark,62014,Kobenz,MUNICIPALITY
+1624,62021,6,Steiermark,62021,Pusterwald,MUNICIPALITY
+1625,62026,6,Steiermark,62026,Sankt Georgen ob Judenburg,MUNICIPALITY
+1626,62032,6,Steiermark,62032,Sankt Peter ob Judenburg,MUNICIPALITY
+1627,62034,6,Steiermark,62034,Seckau,MUNICIPALITY
+1628,62036,6,Steiermark,62036,Unzmarkt-Frauenburg,MUNICIPALITY
+1629,62038,6,Steiermark,62038,Zeltweg,MUNICIPALITY
+1630,62039,6,Steiermark,62039,Lobmingtal,MUNICIPALITY
+1631,62040,6,Steiermark,62040,Judenburg,MUNICIPALITY
+1632,62041,6,Steiermark,62041,Knittelfeld,MUNICIPALITY
+1633,62042,6,Steiermark,62042,Obdach,MUNICIPALITY
+1634,62043,6,Steiermark,62043,Pöls-Oberkurzheim,MUNICIPALITY
+1635,62044,6,Steiermark,62044,Pölstal,MUNICIPALITY
+1636,62045,6,Steiermark,62045,Sankt Marein-Feistritz,MUNICIPALITY
+1637,62046,6,Steiermark,62046,Sankt Margarethen bei Knittelfeld,MUNICIPALITY
+1638,62047,6,Steiermark,62047,Spielberg,MUNICIPALITY
+1639,62048,6,Steiermark,62048,Weißkirchen in Steiermark,MUNICIPALITY
+1640,62105,6,Steiermark,62105,Breitenau am Hochlantsch,MUNICIPALITY
+1641,62115,6,Steiermark,62115,Krieglach,MUNICIPALITY
+1642,62116,6,Steiermark,62116,Langenwang,MUNICIPALITY
+1643,62125,6,Steiermark,62125,Pernegg an der Mur,MUNICIPALITY
+1644,62128,6,Steiermark,62128,Sankt Lorenzen im Mürztal,MUNICIPALITY
+1645,62131,6,Steiermark,62131,Spital am Semmering,MUNICIPALITY
+1646,62132,6,Steiermark,62132,Stanz im Mürztal,MUNICIPALITY
+1647,62135,6,Steiermark,62135,Turnau,MUNICIPALITY
+1648,62138,6,Steiermark,62138,Aflenz,MUNICIPALITY
+1649,62139,6,Steiermark,62139,Bruck an der Mur,MUNICIPALITY
+1650,62140,6,Steiermark,62140,Kapfenberg,MUNICIPALITY
+1651,62141,6,Steiermark,62141,Kindberg,MUNICIPALITY
+1652,62142,6,Steiermark,62142,Mariazell,MUNICIPALITY
+1653,62143,6,Steiermark,62143,Mürzzuschlag,MUNICIPALITY
+1654,62144,6,Steiermark,62144,Neuberg an der Mürz,MUNICIPALITY
+1655,62145,6,Steiermark,62145,Sankt Barbara im Mürztal,MUNICIPALITY
+1656,62146,6,Steiermark,62146,Sankt Marein im Mürztal,MUNICIPALITY
+1657,62147,6,Steiermark,62147,Thörl,MUNICIPALITY
+1658,62148,6,Steiermark,62148,Tragöß-Sankt Katharein,MUNICIPALITY
+1659,62202,6,Steiermark,62202,Bad Blumau,MUNICIPALITY
+1660,62205,6,Steiermark,62205,Buch-St. Magdalena,MUNICIPALITY
+1661,62206,6,Steiermark,62206,Burgau,MUNICIPALITY
+1662,62209,6,Steiermark,62209,Ebersdorf,MUNICIPALITY
+1663,62211,6,Steiermark,62211,Friedberg,MUNICIPALITY
+1664,62214,6,Steiermark,62214,Greinbach,MUNICIPALITY
+1665,62216,6,Steiermark,62216,Großsteinbach,MUNICIPALITY
+1666,62219,6,Steiermark,62219,Hartberg,MUNICIPALITY
+1667,62220,6,Steiermark,62220,Hartberg Umgebung,MUNICIPALITY
+1668,62226,6,Steiermark,62226,Lafnitz,MUNICIPALITY
+1669,62232,6,Steiermark,62232,Ottendorf an der Rittschein,MUNICIPALITY
+1670,62233,6,Steiermark,62233,Pinggau,MUNICIPALITY
+1671,62235,6,Steiermark,62235,Pöllauberg,MUNICIPALITY
+1672,62242,6,Steiermark,62242,Sankt Jakob im Walde,MUNICIPALITY
+1673,62244,6,Steiermark,62244,Sankt Johann in der Haide,MUNICIPALITY
+1674,62245,6,Steiermark,62245,Sankt Lorenzen am Wechsel,MUNICIPALITY
+1675,62247,6,Steiermark,62247,Schäffern,MUNICIPALITY
+1676,62256,6,Steiermark,62256,Stubenberg,MUNICIPALITY
+1677,62262,6,Steiermark,62262,Wenigzell,MUNICIPALITY
+1678,62264,6,Steiermark,62264,Bad Waltersdorf,MUNICIPALITY
+1679,62265,6,Steiermark,62265,Dechantskirchen,MUNICIPALITY
+1680,62266,6,Steiermark,62266,Feistritztal,MUNICIPALITY
+1681,62268,6,Steiermark,62268,Grafendorf bei Hartberg,MUNICIPALITY
+1682,62269,6,Steiermark,62269,Großwilfersdorf,MUNICIPALITY
+1683,62270,6,Steiermark,62270,Hartl,MUNICIPALITY
+1684,62271,6,Steiermark,62271,Ilz,MUNICIPALITY
+1685,62272,6,Steiermark,62272,Kaindorf,MUNICIPALITY
+1686,62273,6,Steiermark,62273,Bad Loipersdorf,MUNICIPALITY
+1687,62274,6,Steiermark,62274,Neudau,MUNICIPALITY
+1688,62275,6,Steiermark,62275,Pöllau,MUNICIPALITY
+1689,62276,6,Steiermark,62276,Rohr bei Hartberg,MUNICIPALITY
+1690,62277,6,Steiermark,62277,Rohrbach an der Lafnitz,MUNICIPALITY
+1691,62278,6,Steiermark,62278,Vorau,MUNICIPALITY
+1692,62279,6,Steiermark,62279,Waldbach-Mönichwald,MUNICIPALITY
+1693,62280,6,Steiermark,62280,Fürstenfeld,MUNICIPALITY
+1694,62311,6,Steiermark,62311,Edelsbach bei Feldbach,MUNICIPALITY
+1695,62314,6,Steiermark,62314,Eichkögl,MUNICIPALITY
+1696,62326,6,Steiermark,62326,Halbenrain,MUNICIPALITY
+1697,62330,6,Steiermark,62330,Jagerberg,MUNICIPALITY
+1698,62332,6,Steiermark,62332,Kapfenstein,MUNICIPALITY
+1699,62335,6,Steiermark,62335,Klöch,MUNICIPALITY
+1700,62343,6,Steiermark,62343,Mettersdorf am Saßbach,MUNICIPALITY
+1701,62368,6,Steiermark,62368,Tieschen,MUNICIPALITY
+1702,62372,6,Steiermark,62372,Unterlamm,MUNICIPALITY
+1703,62375,6,Steiermark,62375,Bad Gleichenberg,MUNICIPALITY
+1704,62376,6,Steiermark,62376,Bad Radkersburg,MUNICIPALITY
+1705,62377,6,Steiermark,62377,Deutsch Goritz,MUNICIPALITY
+1706,62378,6,Steiermark,62378,Fehring,MUNICIPALITY
+1707,62379,6,Steiermark,62379,Feldbach,MUNICIPALITY
+1708,62380,6,Steiermark,62380,Gnas,MUNICIPALITY
+1709,62381,6,Steiermark,62381,Kirchbach-Zerlach,MUNICIPALITY
+1710,62382,6,Steiermark,62382,Kirchberg an der Raab,MUNICIPALITY
+1711,62383,6,Steiermark,62383,Mureck,MUNICIPALITY
+1712,62384,6,Steiermark,62384,Paldau,MUNICIPALITY
+1713,62385,6,Steiermark,62385,Pirching am Traubenberg,MUNICIPALITY
+1714,62386,6,Steiermark,62386,Riegersburg,MUNICIPALITY
+1715,62387,6,Steiermark,62387,Sankt Anna am Aigen,MUNICIPALITY
+1716,62388,6,Steiermark,62388,Sankt Peter am Ottersbach,MUNICIPALITY
+1717,62389,6,Steiermark,62389,Sankt Stefan im Rosental,MUNICIPALITY
+1718,62390,6,Steiermark,62390,Straden,MUNICIPALITY
+1719,70101,7,Tirol,70101,Innsbruck,MUNICIPALITY
+1720,70201,7,Tirol,70201,Arzl im Pitztal,MUNICIPALITY
+1721,70202,7,Tirol,70202,Haiming,MUNICIPALITY
+1722,70203,7,Tirol,70203,Imst,MUNICIPALITY
+1723,70204,7,Tirol,70204,Imsterberg,MUNICIPALITY
+1724,70205,7,Tirol,70205,Jerzens,MUNICIPALITY
+1725,70206,7,Tirol,70206,Karres,MUNICIPALITY
+1726,70207,7,Tirol,70207,Karrösten,MUNICIPALITY
+1727,70208,7,Tirol,70208,Längenfeld,MUNICIPALITY
+1728,70209,7,Tirol,70209,Mieming,MUNICIPALITY
+1729,70210,7,Tirol,70210,Mils bei Imst,MUNICIPALITY
+1730,70211,7,Tirol,70211,Mötz,MUNICIPALITY
+1731,70212,7,Tirol,70212,Nassereith,MUNICIPALITY
+1732,70213,7,Tirol,70213,Obsteig,MUNICIPALITY
+1733,70214,7,Tirol,70214,Oetz,MUNICIPALITY
+1734,70215,7,Tirol,70215,Rietz,MUNICIPALITY
+1735,70216,7,Tirol,70216,Roppen,MUNICIPALITY
+1736,70217,7,Tirol,70217,St. Leonhard im Pitztal,MUNICIPALITY
+1737,70218,7,Tirol,70218,Sautens,MUNICIPALITY
+1738,70219,7,Tirol,70219,Silz,MUNICIPALITY
+1739,70220,7,Tirol,70220,Sölden,MUNICIPALITY
+1740,70221,7,Tirol,70221,Stams,MUNICIPALITY
+1741,70222,7,Tirol,70222,Tarrenz,MUNICIPALITY
+1742,70223,7,Tirol,70223,Umhausen,MUNICIPALITY
+1743,70224,7,Tirol,70224,Wenns,MUNICIPALITY
+1744,70301,7,Tirol,70301,Absam,MUNICIPALITY
+1745,70302,7,Tirol,70302,Aldrans,MUNICIPALITY
+1746,70303,7,Tirol,70303,Ampass,MUNICIPALITY
+1747,70304,7,Tirol,70304,Axams,MUNICIPALITY
+1748,70305,7,Tirol,70305,Baumkirchen,MUNICIPALITY
+1749,70306,7,Tirol,70306,Birgitz,MUNICIPALITY
+1750,70307,7,Tirol,70307,Ellbögen,MUNICIPALITY
+1751,70308,7,Tirol,70308,Flaurling,MUNICIPALITY
+1752,70309,7,Tirol,70309,Fritzens,MUNICIPALITY
+1753,70310,7,Tirol,70310,Fulpmes,MUNICIPALITY
+1754,70311,7,Tirol,70311,Gnadenwald,MUNICIPALITY
+1755,70312,7,Tirol,70312,Götzens,MUNICIPALITY
+1756,70313,7,Tirol,70313,Gries am Brenner,MUNICIPALITY
+1757,70314,7,Tirol,70314,Gries im Sellrain,MUNICIPALITY
+1758,70315,7,Tirol,70315,Grinzens,MUNICIPALITY
+1759,70317,7,Tirol,70317,Gschnitz,MUNICIPALITY
+1760,70318,7,Tirol,70318,Hatting,MUNICIPALITY
+1761,70319,7,Tirol,70319,Inzing,MUNICIPALITY
+1762,70320,7,Tirol,70320,Kematen in Tirol,MUNICIPALITY
+1763,70322,7,Tirol,70322,Kolsass,MUNICIPALITY
+1764,70323,7,Tirol,70323,Kolsassberg,MUNICIPALITY
+1765,70325,7,Tirol,70325,Lans,MUNICIPALITY
+1766,70326,7,Tirol,70326,Leutasch,MUNICIPALITY
+1767,70328,7,Tirol,70328,Mieders,MUNICIPALITY
+1768,70329,7,Tirol,70329,Mils,MUNICIPALITY
+1769,70331,7,Tirol,70331,Mutters,MUNICIPALITY
+1770,70332,7,Tirol,70332,Natters,MUNICIPALITY
+1771,70333,7,Tirol,70333,Navis,MUNICIPALITY
+1772,70334,7,Tirol,70334,Neustift im Stubaital,MUNICIPALITY
+1773,70335,7,Tirol,70335,Oberhofen im Inntal,MUNICIPALITY
+1774,70336,7,Tirol,70336,Obernberg am Brenner,MUNICIPALITY
+1775,70337,7,Tirol,70337,Oberperfuss,MUNICIPALITY
+1776,70338,7,Tirol,70338,Patsch,MUNICIPALITY
+1777,70339,7,Tirol,70339,Pettnau,MUNICIPALITY
+1778,70340,7,Tirol,70340,Pfaffenhofen,MUNICIPALITY
+1779,70342,7,Tirol,70342,Polling in Tirol,MUNICIPALITY
+1780,70343,7,Tirol,70343,Ranggen,MUNICIPALITY
+1781,70344,7,Tirol,70344,Reith bei Seefeld,MUNICIPALITY
+1782,70345,7,Tirol,70345,Rinn,MUNICIPALITY
+1783,70346,7,Tirol,70346,Rum,MUNICIPALITY
+1784,70347,7,Tirol,70347,St. Sigmund im Sellrain,MUNICIPALITY
+1785,70348,7,Tirol,70348,Scharnitz,MUNICIPALITY
+1786,70349,7,Tirol,70349,Schmirn,MUNICIPALITY
+1787,70350,7,Tirol,70350,Schönberg im Stubaital,MUNICIPALITY
+1788,70351,7,Tirol,70351,Seefeld in Tirol,MUNICIPALITY
+1789,70352,7,Tirol,70352,Sellrain,MUNICIPALITY
+1790,70353,7,Tirol,70353,Sistrans,MUNICIPALITY
+1791,70354,7,Tirol,70354,Hall in Tirol,MUNICIPALITY
+1792,70355,7,Tirol,70355,Steinach am Brenner,MUNICIPALITY
+1793,70356,7,Tirol,70356,Telfes im Stubai,MUNICIPALITY
+1794,70357,7,Tirol,70357,Telfs,MUNICIPALITY
+1795,70358,7,Tirol,70358,Thaur,MUNICIPALITY
+1796,70359,7,Tirol,70359,Trins,MUNICIPALITY
+1797,70360,7,Tirol,70360,Tulfes,MUNICIPALITY
+1798,70361,7,Tirol,70361,Unterperfuss,MUNICIPALITY
+1799,70362,7,Tirol,70362,Vals,MUNICIPALITY
+1800,70364,7,Tirol,70364,Völs,MUNICIPALITY
+1801,70365,7,Tirol,70365,Volders,MUNICIPALITY
+1802,70366,7,Tirol,70366,Wattenberg,MUNICIPALITY
+1803,70367,7,Tirol,70367,Wattens,MUNICIPALITY
+1804,70368,7,Tirol,70368,Wildermieming,MUNICIPALITY
+1805,70369,7,Tirol,70369,Zirl,MUNICIPALITY
+1806,70370,7,Tirol,70370,Matrei am Brenner,MUNICIPALITY
+1807,70401,7,Tirol,70401,Aurach bei Kitzbühel,MUNICIPALITY
+1808,70402,7,Tirol,70402,Brixen im Thale,MUNICIPALITY
+1809,70403,7,Tirol,70403,Fieberbrunn,MUNICIPALITY
+1810,70404,7,Tirol,70404,Going am Wilden Kaiser,MUNICIPALITY
+1811,70405,7,Tirol,70405,Hochfilzen,MUNICIPALITY
+1812,70406,7,Tirol,70406,Hopfgarten im Brixental,MUNICIPALITY
+1813,70407,7,Tirol,70407,Itter,MUNICIPALITY
+1814,70408,7,Tirol,70408,Jochberg,MUNICIPALITY
+1815,70409,7,Tirol,70409,Kirchberg in Tirol,MUNICIPALITY
+1816,70410,7,Tirol,70410,Kirchdorf in Tirol,MUNICIPALITY
+1817,70411,7,Tirol,70411,Kitzbühel,MUNICIPALITY
+1818,70412,7,Tirol,70412,Kössen,MUNICIPALITY
+1819,70413,7,Tirol,70413,Oberndorf in Tirol,MUNICIPALITY
+1820,70414,7,Tirol,70414,Reith bei Kitzbühel,MUNICIPALITY
+1821,70415,7,Tirol,70415,St. Jakob in Haus,MUNICIPALITY
+1822,70416,7,Tirol,70416,St. Johann in Tirol,MUNICIPALITY
+1823,70417,7,Tirol,70417,St. Ulrich am Pillersee,MUNICIPALITY
+1824,70418,7,Tirol,70418,Schwendt,MUNICIPALITY
+1825,70419,7,Tirol,70419,Waidring,MUNICIPALITY
+1826,70420,7,Tirol,70420,Westendorf,MUNICIPALITY
+1827,70501,7,Tirol,70501,Alpbach,MUNICIPALITY
+1828,70502,7,Tirol,70502,Angath,MUNICIPALITY
+1829,70503,7,Tirol,70503,Bad Häring,MUNICIPALITY
+1830,70504,7,Tirol,70504,Brandenberg,MUNICIPALITY
+1831,70505,7,Tirol,70505,Breitenbach am Inn,MUNICIPALITY
+1832,70506,7,Tirol,70506,Brixlegg,MUNICIPALITY
+1833,70508,7,Tirol,70508,Ebbs,MUNICIPALITY
+1834,70509,7,Tirol,70509,Ellmau,MUNICIPALITY
+1835,70510,7,Tirol,70510,Erl,MUNICIPALITY
+1836,70511,7,Tirol,70511,Kirchbichl,MUNICIPALITY
+1837,70512,7,Tirol,70512,Kramsach,MUNICIPALITY
+1838,70513,7,Tirol,70513,Kufstein,MUNICIPALITY
+1839,70514,7,Tirol,70514,Kundl,MUNICIPALITY
+1840,70515,7,Tirol,70515,Langkampfen,MUNICIPALITY
+1841,70516,7,Tirol,70516,Mariastein,MUNICIPALITY
+1842,70517,7,Tirol,70517,Münster,MUNICIPALITY
+1843,70518,7,Tirol,70518,Niederndorf,MUNICIPALITY
+1844,70519,7,Tirol,70519,Niederndorferberg,MUNICIPALITY
+1845,70520,7,Tirol,70520,Radfeld,MUNICIPALITY
+1846,70521,7,Tirol,70521,Rattenberg,MUNICIPALITY
+1847,70522,7,Tirol,70522,Reith im Alpbachtal,MUNICIPALITY
+1848,70523,7,Tirol,70523,Rettenschöss,MUNICIPALITY
+1849,70524,7,Tirol,70524,Scheffau am Wilden Kaiser,MUNICIPALITY
+1850,70525,7,Tirol,70525,Schwoich,MUNICIPALITY
+1851,70526,7,Tirol,70526,Söll,MUNICIPALITY
+1852,70527,7,Tirol,70527,Thiersee,MUNICIPALITY
+1853,70528,7,Tirol,70528,Angerberg,MUNICIPALITY
+1854,70529,7,Tirol,70529,Walchsee,MUNICIPALITY
+1855,70530,7,Tirol,70530,Wildschönau,MUNICIPALITY
+1856,70531,7,Tirol,70531,Wörgl,MUNICIPALITY
+1857,70601,7,Tirol,70601,Faggen,MUNICIPALITY
+1858,70602,7,Tirol,70602,Fendels,MUNICIPALITY
+1859,70603,7,Tirol,70603,Fiss,MUNICIPALITY
+1860,70604,7,Tirol,70604,Fließ,MUNICIPALITY
+1861,70605,7,Tirol,70605,Flirsch,MUNICIPALITY
+1862,70606,7,Tirol,70606,Galtür,MUNICIPALITY
+1863,70607,7,Tirol,70607,Grins,MUNICIPALITY
+1864,70608,7,Tirol,70608,Ischgl,MUNICIPALITY
+1865,70609,7,Tirol,70609,Kappl,MUNICIPALITY
+1866,70610,7,Tirol,70610,Kaunerberg,MUNICIPALITY
+1867,70611,7,Tirol,70611,Kaunertal,MUNICIPALITY
+1868,70612,7,Tirol,70612,Kauns,MUNICIPALITY
+1869,70613,7,Tirol,70613,Ladis,MUNICIPALITY
+1870,70614,7,Tirol,70614,Landeck,MUNICIPALITY
+1871,70615,7,Tirol,70615,Nauders,MUNICIPALITY
+1872,70616,7,Tirol,70616,Pettneu am Arlberg,MUNICIPALITY
+1873,70617,7,Tirol,70617,Pfunds,MUNICIPALITY
+1874,70618,7,Tirol,70618,Pians,MUNICIPALITY
+1875,70619,7,Tirol,70619,Prutz,MUNICIPALITY
+1876,70620,7,Tirol,70620,Ried im Oberinntal,MUNICIPALITY
+1877,70621,7,Tirol,70621,St. Anton am Arlberg,MUNICIPALITY
+1878,70622,7,Tirol,70622,Schönwies,MUNICIPALITY
+1879,70623,7,Tirol,70623,See,MUNICIPALITY
+1880,70624,7,Tirol,70624,Serfaus,MUNICIPALITY
+1881,70625,7,Tirol,70625,Spiss,MUNICIPALITY
+1882,70626,7,Tirol,70626,Stanz bei Landeck,MUNICIPALITY
+1883,70627,7,Tirol,70627,Strengen,MUNICIPALITY
+1884,70628,7,Tirol,70628,Tobadill,MUNICIPALITY
+1885,70629,7,Tirol,70629,Tösens,MUNICIPALITY
+1886,70630,7,Tirol,70630,Zams,MUNICIPALITY
+1887,70701,7,Tirol,70701,Abfaltersbach,MUNICIPALITY
+1888,70702,7,Tirol,70702,Ainet,MUNICIPALITY
+1889,70703,7,Tirol,70703,Amlach,MUNICIPALITY
+1890,70704,7,Tirol,70704,Anras,MUNICIPALITY
+1891,70705,7,Tirol,70705,Assling,MUNICIPALITY
+1892,70706,7,Tirol,70706,Außervillgraten,MUNICIPALITY
+1893,70707,7,Tirol,70707,Dölsach,MUNICIPALITY
+1894,70708,7,Tirol,70708,Gaimberg,MUNICIPALITY
+1895,70709,7,Tirol,70709,Hopfgarten in Defereggen,MUNICIPALITY
+1896,70710,7,Tirol,70710,Innervillgraten,MUNICIPALITY
+1897,70711,7,Tirol,70711,Iselsberg-Stronach,MUNICIPALITY
+1898,70712,7,Tirol,70712,Kals am Großglockner,MUNICIPALITY
+1899,70713,7,Tirol,70713,Kartitsch,MUNICIPALITY
+1900,70714,7,Tirol,70714,Lavant,MUNICIPALITY
+1901,70715,7,Tirol,70715,Leisach,MUNICIPALITY
+1902,70716,7,Tirol,70716,Lienz,MUNICIPALITY
+1903,70717,7,Tirol,70717,Matrei in Osttirol,MUNICIPALITY
+1904,70718,7,Tirol,70718,Nikolsdorf,MUNICIPALITY
+1905,70719,7,Tirol,70719,Nußdorf-Debant,MUNICIPALITY
+1906,70720,7,Tirol,70720,Oberlienz,MUNICIPALITY
+1907,70721,7,Tirol,70721,Obertilliach,MUNICIPALITY
+1908,70723,7,Tirol,70723,Prägraten am Großvenediger,MUNICIPALITY
+1909,70724,7,Tirol,70724,St. Jakob in Defereggen,MUNICIPALITY
+1910,70725,7,Tirol,70725,St. Johann im Walde,MUNICIPALITY
+1911,70726,7,Tirol,70726,St. Veit in Defereggen,MUNICIPALITY
+1912,70727,7,Tirol,70727,Schlaiten,MUNICIPALITY
+1913,70728,7,Tirol,70728,Sillian,MUNICIPALITY
+1914,70729,7,Tirol,70729,Strassen,MUNICIPALITY
+1915,70731,7,Tirol,70731,Thurn,MUNICIPALITY
+1916,70732,7,Tirol,70732,Tristach,MUNICIPALITY
+1917,70733,7,Tirol,70733,Untertilliach,MUNICIPALITY
+1918,70734,7,Tirol,70734,Virgen,MUNICIPALITY
+1919,70735,7,Tirol,70735,Heinfels,MUNICIPALITY
+1920,70801,7,Tirol,70801,Bach,MUNICIPALITY
+1921,70802,7,Tirol,70802,Berwang,MUNICIPALITY
+1922,70803,7,Tirol,70803,Biberwier,MUNICIPALITY
+1923,70804,7,Tirol,70804,Bichlbach,MUNICIPALITY
+1924,70805,7,Tirol,70805,Breitenwang,MUNICIPALITY
+1925,70806,7,Tirol,70806,Ehenbichl,MUNICIPALITY
+1926,70807,7,Tirol,70807,Ehrwald,MUNICIPALITY
+1927,70808,7,Tirol,70808,Elbigenalp,MUNICIPALITY
+1928,70809,7,Tirol,70809,Elmen,MUNICIPALITY
+1929,70810,7,Tirol,70810,Forchach,MUNICIPALITY
+1930,70811,7,Tirol,70811,Grän,MUNICIPALITY
+1931,70812,7,Tirol,70812,Gramais,MUNICIPALITY
+1932,70813,7,Tirol,70813,Häselgehr,MUNICIPALITY
+1933,70814,7,Tirol,70814,Heiterwang,MUNICIPALITY
+1934,70815,7,Tirol,70815,Hinterhornbach,MUNICIPALITY
+1935,70816,7,Tirol,70816,Höfen,MUNICIPALITY
+1936,70817,7,Tirol,70817,Holzgau,MUNICIPALITY
+1937,70818,7,Tirol,70818,Jungholz,MUNICIPALITY
+1938,70819,7,Tirol,70819,Kaisers,MUNICIPALITY
+1939,70820,7,Tirol,70820,Lechaschau,MUNICIPALITY
+1940,70821,7,Tirol,70821,Lermoos,MUNICIPALITY
+1941,70822,7,Tirol,70822,Musau,MUNICIPALITY
+1942,70823,7,Tirol,70823,Namlos,MUNICIPALITY
+1943,70824,7,Tirol,70824,Nesselwängle,MUNICIPALITY
+1944,70825,7,Tirol,70825,Pfafflar,MUNICIPALITY
+1945,70826,7,Tirol,70826,Pflach,MUNICIPALITY
+1946,70827,7,Tirol,70827,Pinswang,MUNICIPALITY
+1947,70828,7,Tirol,70828,Reutte,MUNICIPALITY
+1948,70829,7,Tirol,70829,Schattwald,MUNICIPALITY
+1949,70830,7,Tirol,70830,Stanzach,MUNICIPALITY
+1950,70831,7,Tirol,70831,Steeg,MUNICIPALITY
+1951,70832,7,Tirol,70832,Tannheim,MUNICIPALITY
+1952,70833,7,Tirol,70833,Vils,MUNICIPALITY
+1953,70834,7,Tirol,70834,Vorderhornbach,MUNICIPALITY
+1954,70835,7,Tirol,70835,Wängle,MUNICIPALITY
+1955,70836,7,Tirol,70836,Weißenbach am Lech,MUNICIPALITY
+1956,70837,7,Tirol,70837,Zöblen,MUNICIPALITY
+1957,70901,7,Tirol,70901,Achenkirch,MUNICIPALITY
+1958,70902,7,Tirol,70902,Aschau im Zillertal,MUNICIPALITY
+1959,70903,7,Tirol,70903,Brandberg,MUNICIPALITY
+1960,70904,7,Tirol,70904,Bruck am Ziller,MUNICIPALITY
+1961,70905,7,Tirol,70905,Buch in Tirol,MUNICIPALITY
+1962,70907,7,Tirol,70907,Eben am Achensee,MUNICIPALITY
+1963,70908,7,Tirol,70908,Finkenberg,MUNICIPALITY
+1964,70909,7,Tirol,70909,Fügen,MUNICIPALITY
+1965,70910,7,Tirol,70910,Fügenberg,MUNICIPALITY
+1966,70911,7,Tirol,70911,Gallzein,MUNICIPALITY
+1967,70912,7,Tirol,70912,Gerlos,MUNICIPALITY
+1968,70913,7,Tirol,70913,Gerlosberg,MUNICIPALITY
+1969,70914,7,Tirol,70914,Hainzenberg,MUNICIPALITY
+1970,70915,7,Tirol,70915,Hart im Zillertal,MUNICIPALITY
+1971,70916,7,Tirol,70916,Hippach,MUNICIPALITY
+1972,70917,7,Tirol,70917,Jenbach,MUNICIPALITY
+1973,70918,7,Tirol,70918,Kaltenbach,MUNICIPALITY
+1974,70920,7,Tirol,70920,Mayrhofen,MUNICIPALITY
+1975,70921,7,Tirol,70921,Pill,MUNICIPALITY
+1976,70922,7,Tirol,70922,Ramsau im Zillertal,MUNICIPALITY
+1977,70923,7,Tirol,70923,Ried im Zillertal,MUNICIPALITY
+1978,70924,7,Tirol,70924,Rohrberg,MUNICIPALITY
+1979,70925,7,Tirol,70925,Schlitters,MUNICIPALITY
+1980,70926,7,Tirol,70926,Schwaz,MUNICIPALITY
+1981,70927,7,Tirol,70927,Schwendau,MUNICIPALITY
+1982,70928,7,Tirol,70928,Stans,MUNICIPALITY
+1983,70929,7,Tirol,70929,Steinberg am Rofan,MUNICIPALITY
+1984,70930,7,Tirol,70930,Strass im Zillertal,MUNICIPALITY
+1985,70931,7,Tirol,70931,Stumm,MUNICIPALITY
+1986,70932,7,Tirol,70932,Stummerberg,MUNICIPALITY
+1987,70933,7,Tirol,70933,Terfens,MUNICIPALITY
+1988,70934,7,Tirol,70934,Tux,MUNICIPALITY
+1989,70935,7,Tirol,70935,Uderns,MUNICIPALITY
+1990,70936,7,Tirol,70936,Vomp,MUNICIPALITY
+1991,70937,7,Tirol,70937,Weer,MUNICIPALITY
+1992,70938,7,Tirol,70938,Weerberg,MUNICIPALITY
+1993,70939,7,Tirol,70939,Wiesing,MUNICIPALITY
+1994,70940,7,Tirol,70940,Zell am Ziller,MUNICIPALITY
+1995,70941,7,Tirol,70941,Zellberg,MUNICIPALITY
+1996,80101,8,Vorarlberg,80101,Bartholomäberg,MUNICIPALITY
+1997,80102,8,Vorarlberg,80102,Blons,MUNICIPALITY
+1998,80103,8,Vorarlberg,80103,Bludenz,MUNICIPALITY
+1999,80104,8,Vorarlberg,80104,Bludesch,MUNICIPALITY
+2000,80105,8,Vorarlberg,80105,Brand,MUNICIPALITY
+2001,80106,8,Vorarlberg,80106,Bürs,MUNICIPALITY
+2002,80107,8,Vorarlberg,80107,Bürserberg,MUNICIPALITY
+2003,80108,8,Vorarlberg,80108,Dalaas,MUNICIPALITY
+2004,80109,8,Vorarlberg,80109,Fontanella,MUNICIPALITY
+2005,80110,8,Vorarlberg,80110,Gaschurn,MUNICIPALITY
+2006,80111,8,Vorarlberg,80111,Innerbraz,MUNICIPALITY
+2007,80112,8,Vorarlberg,80112,Klösterle,MUNICIPALITY
+2008,80113,8,Vorarlberg,80113,Lech,MUNICIPALITY
+2009,80114,8,Vorarlberg,80114,Lorüns,MUNICIPALITY
+2010,80115,8,Vorarlberg,80115,Ludesch,MUNICIPALITY
+2011,80116,8,Vorarlberg,80116,Nenzing,MUNICIPALITY
+2012,80117,8,Vorarlberg,80117,Nüziders,MUNICIPALITY
+2013,80118,8,Vorarlberg,80118,Raggal,MUNICIPALITY
+2014,80119,8,Vorarlberg,80119,St. Anton im Montafon,MUNICIPALITY
+2015,80120,8,Vorarlberg,80120,St. Gallenkirch,MUNICIPALITY
+2016,80121,8,Vorarlberg,80121,St. Gerold,MUNICIPALITY
+2017,80122,8,Vorarlberg,80122,Schruns,MUNICIPALITY
+2018,80123,8,Vorarlberg,80123,Silbertal,MUNICIPALITY
+2019,80124,8,Vorarlberg,80124,Sonntag,MUNICIPALITY
+2020,80125,8,Vorarlberg,80125,Stallehr,MUNICIPALITY
+2021,80126,8,Vorarlberg,80126,Thüringen,MUNICIPALITY
+2022,80127,8,Vorarlberg,80127,Thüringerberg,MUNICIPALITY
+2023,80128,8,Vorarlberg,80128,Tschagguns,MUNICIPALITY
+2024,80129,8,Vorarlberg,80129,Vandans,MUNICIPALITY
+2025,80201,8,Vorarlberg,80201,Alberschwende,MUNICIPALITY
+2026,80202,8,Vorarlberg,80202,Andelsbuch,MUNICIPALITY
+2027,80203,8,Vorarlberg,80203,Au,MUNICIPALITY
+2028,80204,8,Vorarlberg,80204,Bezau,MUNICIPALITY
+2029,80205,8,Vorarlberg,80205,Bildstein,MUNICIPALITY
+2030,80206,8,Vorarlberg,80206,Bizau,MUNICIPALITY
+2031,80207,8,Vorarlberg,80207,Bregenz,MUNICIPALITY
+2032,80208,8,Vorarlberg,80208,Buch,MUNICIPALITY
+2033,80209,8,Vorarlberg,80209,Damüls,MUNICIPALITY
+2034,80210,8,Vorarlberg,80210,Doren,MUNICIPALITY
+2035,80211,8,Vorarlberg,80211,Egg,MUNICIPALITY
+2036,80212,8,Vorarlberg,80212,Eichenberg,MUNICIPALITY
+2037,80213,8,Vorarlberg,80213,Fußach,MUNICIPALITY
+2038,80214,8,Vorarlberg,80214,Gaißau,MUNICIPALITY
+2039,80215,8,Vorarlberg,80215,Hard,MUNICIPALITY
+2040,80216,8,Vorarlberg,80216,Hittisau,MUNICIPALITY
+2041,80217,8,Vorarlberg,80217,Höchst,MUNICIPALITY
+2042,80218,8,Vorarlberg,80218,Hörbranz,MUNICIPALITY
+2043,80219,8,Vorarlberg,80219,Hohenweiler,MUNICIPALITY
+2044,80220,8,Vorarlberg,80220,Kennelbach,MUNICIPALITY
+2045,80221,8,Vorarlberg,80221,Krumbach,MUNICIPALITY
+2046,80222,8,Vorarlberg,80222,Langen bei Bregenz,MUNICIPALITY
+2047,80223,8,Vorarlberg,80223,Langenegg,MUNICIPALITY
+2048,80224,8,Vorarlberg,80224,Lauterach,MUNICIPALITY
+2049,80225,8,Vorarlberg,80225,Lingenau,MUNICIPALITY
+2050,80226,8,Vorarlberg,80226,Lochau,MUNICIPALITY
+2051,80227,8,Vorarlberg,80227,Mellau,MUNICIPALITY
+2052,80228,8,Vorarlberg,80228,Mittelberg,MUNICIPALITY
+2053,80229,8,Vorarlberg,80229,Möggers,MUNICIPALITY
+2054,80230,8,Vorarlberg,80230,Reuthe,MUNICIPALITY
+2055,80231,8,Vorarlberg,80231,Riefensberg,MUNICIPALITY
+2056,80232,8,Vorarlberg,80232,Schnepfau,MUNICIPALITY
+2057,80233,8,Vorarlberg,80233,Schoppernau,MUNICIPALITY
+2058,80234,8,Vorarlberg,80234,Schröcken,MUNICIPALITY
+2059,80235,8,Vorarlberg,80235,Schwarzach,MUNICIPALITY
+2060,80236,8,Vorarlberg,80236,Schwarzenberg,MUNICIPALITY
+2061,80237,8,Vorarlberg,80237,Sibratsgfäll,MUNICIPALITY
+2062,80238,8,Vorarlberg,80238,Sulzberg,MUNICIPALITY
+2063,80239,8,Vorarlberg,80239,Warth,MUNICIPALITY
+2064,80240,8,Vorarlberg,80240,Wolfurt,MUNICIPALITY
+2065,80301,8,Vorarlberg,80301,Dornbirn,MUNICIPALITY
+2066,80302,8,Vorarlberg,80302,Hohenems,MUNICIPALITY
+2067,80303,8,Vorarlberg,80303,Lustenau,MUNICIPALITY
+2068,80401,8,Vorarlberg,80401,Altach,MUNICIPALITY
+2069,80402,8,Vorarlberg,80402,Düns,MUNICIPALITY
+2070,80403,8,Vorarlberg,80403,Dünserberg,MUNICIPALITY
+2071,80404,8,Vorarlberg,80404,Feldkirch,MUNICIPALITY
+2072,80405,8,Vorarlberg,80405,Frastanz,MUNICIPALITY
+2073,80406,8,Vorarlberg,80406,Fraxern,MUNICIPALITY
+2074,80407,8,Vorarlberg,80407,Göfis,MUNICIPALITY
+2075,80408,8,Vorarlberg,80408,Götzis,MUNICIPALITY
+2076,80409,8,Vorarlberg,80409,Klaus,MUNICIPALITY
+2077,80410,8,Vorarlberg,80410,Koblach,MUNICIPALITY
+2078,80411,8,Vorarlberg,80411,Laterns,MUNICIPALITY
+2079,80412,8,Vorarlberg,80412,Mäder,MUNICIPALITY
+2080,80413,8,Vorarlberg,80413,Meiningen,MUNICIPALITY
+2081,80414,8,Vorarlberg,80414,Rankweil,MUNICIPALITY
+2082,80415,8,Vorarlberg,80415,Röns,MUNICIPALITY
+2083,80416,8,Vorarlberg,80416,Röthis,MUNICIPALITY
+2084,80417,8,Vorarlberg,80417,Satteins,MUNICIPALITY
+2085,80418,8,Vorarlberg,80418,Schlins,MUNICIPALITY
+2086,80419,8,Vorarlberg,80419,Schnifis,MUNICIPALITY
+2087,80420,8,Vorarlberg,80420,Sulz,MUNICIPALITY
+2088,80421,8,Vorarlberg,80421,Übersaxen,MUNICIPALITY
+2089,80422,8,Vorarlberg,80422,Viktorsberg,MUNICIPALITY
+2090,80423,8,Vorarlberg,80423,Weiler,MUNICIPALITY
+2091,80424,8,Vorarlberg,80424,Zwischenwasser,MUNICIPALITY
+2092,90101,9,Wien,90101,Wien-Innere Stadt,VIENNA_DISTRICT
+2093,90201,9,Wien,90201,Wien-Leopoldstadt,VIENNA_DISTRICT
+2094,90301,9,Wien,90301,Wien-Landstraße,VIENNA_DISTRICT
+2095,90401,9,Wien,90401,Wien-Wieden,VIENNA_DISTRICT
+2096,90501,9,Wien,90501,Wien-Margareten,VIENNA_DISTRICT
+2097,90601,9,Wien,90601,Wien-Mariahilf,VIENNA_DISTRICT
+2098,90701,9,Wien,90701,Wien-Neubau,VIENNA_DISTRICT
+2099,90801,9,Wien,90801,Wien-Josefstadt,VIENNA_DISTRICT
+2100,90901,9,Wien,90901,Wien-Alsergrund,VIENNA_DISTRICT
+2101,91001,9,Wien,91001,Wien-Favoriten,VIENNA_DISTRICT
+2102,91101,9,Wien,91101,Wien-Simmering,VIENNA_DISTRICT
+2103,91201,9,Wien,91201,Wien-Meidling,VIENNA_DISTRICT
+2104,91301,9,Wien,91301,Wien-Hietzing,VIENNA_DISTRICT
+2105,91401,9,Wien,91401,Wien-Penzing,VIENNA_DISTRICT
+2106,91501,9,Wien,91501,Wien-Rudolfsheim-Fünfhaus,VIENNA_DISTRICT
+2107,91601,9,Wien,91601,Wien-Ottakring,VIENNA_DISTRICT
+2108,91701,9,Wien,91701,Wien-Hernals,VIENNA_DISTRICT
+2109,91801,9,Wien,91801,Wien-Währing,VIENNA_DISTRICT
+2110,91901,9,Wien,91901,Wien-Döbling,VIENNA_DISTRICT
+2111,92001,9,Wien,92001,Wien-Brigittenau,VIENNA_DISTRICT
+2112,92101,9,Wien,92101,Wien-Floridsdorf,VIENNA_DISTRICT
+2113,92201,9,Wien,92201,Wien-Donaustadt,VIENNA_DISTRICT
+2114,92301,9,Wien,92301,Wien-Liesing,VIENNA_DISTRICT

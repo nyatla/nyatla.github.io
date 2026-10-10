@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "lv-2026-data-gov-lv-varis-adm-rev1",
+  "sourceArchive": "lv-2026-data-gov-lv-varis-adm-rev1.zip",
+  "sdkVersion": "0.2.4",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "latvia_varis_2026-grid-8192-10000.wgsmapset.glc",
+        "size": 825945,
+        "sha256": "0fca2fde3a55698276ace7e55fa120e7e4b2cdbc74d9af15895229000e80ec08",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "latvia_varis_2026-grid-4096-1000.wgsmapset.glc",
+        "size": 109274,
+        "sha256": "f77dc66c5d38d38e21fe1365008d2ddc02b884165b8507d89dff71ed75846bf6",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "latvia_varis_2026-grid-512-100.wgsmapset.glc",
+        "size": 13525,
+        "sha256": "33139e4a71149b4642bf5813219f41b659cbe73cdbd79cd11faa6f18a573265d",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "latvia_varis_2026.giswordbook",
+        "size": 8037,
+        "sha256": "d8c9d07a0fdf9efc7b08be38dd24f6f5f692b3752f7f5c0b55ccbc1703b065e2"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 5389,
+      "sha256": "807d385c8f96526fa0fa39a0853ba5ad0342beba887ca012cbe813fa262da6ea"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 10210,
+      "sha256": "4771ae9113cca7b7bf72cd052466f54b863a44528e60f1016f4ebe9e545d0e8b"
+    },
+    "names": {
+      "path": "latvia_varis_2026.names.csv",
+      "size": 43420,
+      "sha256": "df79b36764e05b4294bcfa399fb8e08e3875eeecd1d51157098689878100ada5"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "se-2025-scb-se-regso-stat-regso-rev1",
+  "sourceArchive": "se-2025-scb-se-regso-stat-regso-rev1.zip",
+  "sdkVersion": "0.2.4",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "sweden_regso_2025-grid-8192-10000.wgsmapset.glc",
+        "size": 2837833,
+        "sha256": "4011c3fc3578ffab22c4e7bbf0bedd52d1987ebf45f40cf7fe8242ab267fbf76",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "sweden_regso_2025-grid-4096-1000.wgsmapset.glc",
+        "size": 377390,
+        "sha256": "3c9aab74cfaad518e5a52db010edb413152d7e9e7dca70f1c9ec9c89422e6bc0",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "sweden_regso_2025-grid-512-100.wgsmapset.glc",
+        "size": 53267,
+        "sha256": "5e5daabe2ed247119492b76307238af2882153c26f9ecd1dd3d3e38c62fb4eb2",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "sweden_regso_2025.giswordbook",
+        "size": 75805,
+        "sha256": "0f1bf894fde8a214fefb04e16ea882c22dff5fd29db27d15d382894232ceadad"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 5327,
+      "sha256": "dc70f03d190f888e39755be37ff0e7127cf7d26d3ff3f6c626e72c4deaa856d8"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 10776,
+      "sha256": "35f373c118e09098f16f299e8511e5256ad9588bd30a80e89458c48cac848fb9"
+    },
+    "names": {
+      "path": "sweden_regso_2025.names.csv",
+      "size": 251354,
+      "sha256": "716b2f8c7692bea66926ee8cf739d6c114800b8ddbc9434796219267ffc868c4"
+    }
+  }
+}

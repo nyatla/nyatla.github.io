@@ -1,0 +1,2124 @@
+wordbook_code,GRVALUE,BFS_NUMMER,KANTONSNUM,KANTON_NAME,BEZIRKSNUM,BEZIRK_NAME,NAME,OBJEKTART,ICC
+1,1,1,1,Zürich,101,Affoltern,Aeugst am Albis,Gemeindegebiet,CH
+2,2,2,1,Zürich,101,Affoltern,Affoltern am Albis,Gemeindegebiet,CH
+3,3,3,1,Zürich,101,Affoltern,Bonstetten,Gemeindegebiet,CH
+4,4,4,1,Zürich,101,Affoltern,Hausen am Albis,Gemeindegebiet,CH
+5,5,5,1,Zürich,101,Affoltern,Hedingen,Gemeindegebiet,CH
+6,6,6,1,Zürich,101,Affoltern,Kappel am Albis,Gemeindegebiet,CH
+7,7,7,1,Zürich,101,Affoltern,Knonau,Gemeindegebiet,CH
+8,8,8,1,Zürich,101,Affoltern,Maschwanden,Gemeindegebiet,CH
+9,9,9,1,Zürich,101,Affoltern,Mettmenstetten,Gemeindegebiet,CH
+10,10,10,1,Zürich,101,Affoltern,Obfelden,Gemeindegebiet,CH
+11,11,11,1,Zürich,101,Affoltern,Ottenbach,Gemeindegebiet,CH
+12,12,12,1,Zürich,101,Affoltern,Rifferswil,Gemeindegebiet,CH
+13,13,13,1,Zürich,101,Affoltern,Stallikon,Gemeindegebiet,CH
+14,14,14,1,Zürich,101,Affoltern,Wettswil am Albis,Gemeindegebiet,CH
+15,22,22,1,Zürich,102,Andelfingen,Benken (ZH),Gemeindegebiet,CH
+16,23,23,1,Zürich,102,Andelfingen,Berg am Irchel,Gemeindegebiet,CH
+17,24,24,1,Zürich,102,Andelfingen,Buch am Irchel,Gemeindegebiet,CH
+18,25,25,1,Zürich,102,Andelfingen,Dachsen,Gemeindegebiet,CH
+19,26,26,1,Zürich,102,Andelfingen,Dorf,Gemeindegebiet,CH
+20,27,27,1,Zürich,102,Andelfingen,Feuerthalen,Gemeindegebiet,CH
+21,28,28,1,Zürich,102,Andelfingen,Flaach,Gemeindegebiet,CH
+22,29,29,1,Zürich,102,Andelfingen,Flurlingen,Gemeindegebiet,CH
+23,31,31,1,Zürich,102,Andelfingen,Henggart,Gemeindegebiet,CH
+24,33,33,1,Zürich,102,Andelfingen,Kleinandelfingen,Gemeindegebiet,CH
+25,34,34,1,Zürich,102,Andelfingen,Laufen-Uhwiesen,Gemeindegebiet,CH
+26,35,35,1,Zürich,102,Andelfingen,Marthalen,Gemeindegebiet,CH
+27,37,37,1,Zürich,102,Andelfingen,Ossingen,Gemeindegebiet,CH
+28,38,38,1,Zürich,102,Andelfingen,Rheinau,Gemeindegebiet,CH
+29,39,39,1,Zürich,102,Andelfingen,Thalheim an der Thur,Gemeindegebiet,CH
+30,40,40,1,Zürich,102,Andelfingen,Trüllikon,Gemeindegebiet,CH
+31,41,41,1,Zürich,102,Andelfingen,Truttikon,Gemeindegebiet,CH
+32,43,43,1,Zürich,102,Andelfingen,Volken,Gemeindegebiet,CH
+33,51,51,1,Zürich,103,Bülach,Bachenbülach,Gemeindegebiet,CH
+34,52,52,1,Zürich,103,Bülach,Bassersdorf,Gemeindegebiet,CH
+35,53,53,1,Zürich,103,Bülach,Bülach,Gemeindegebiet,CH
+36,54,54,1,Zürich,103,Bülach,Dietlikon,Gemeindegebiet,CH
+37,55,55,1,Zürich,103,Bülach,Eglisau,Gemeindegebiet,CH
+38,56,56,1,Zürich,103,Bülach,Embrach,Gemeindegebiet,CH
+39,57,57,1,Zürich,103,Bülach,Freienstein-Teufen,Gemeindegebiet,CH
+40,58,58,1,Zürich,103,Bülach,Glattfelden,Gemeindegebiet,CH
+41,59,59,1,Zürich,103,Bülach,Hochfelden,Gemeindegebiet,CH
+42,60,60,1,Zürich,103,Bülach,Höri,Gemeindegebiet,CH
+43,61,61,1,Zürich,103,Bülach,Hüntwangen,Gemeindegebiet,CH
+44,62,62,1,Zürich,103,Bülach,Kloten,Gemeindegebiet,CH
+45,63,63,1,Zürich,103,Bülach,Lufingen,Gemeindegebiet,CH
+46,64,64,1,Zürich,103,Bülach,Nürensdorf,Gemeindegebiet,CH
+47,65,65,1,Zürich,103,Bülach,Oberembrach,Gemeindegebiet,CH
+48,66,66,1,Zürich,103,Bülach,Opfikon,Gemeindegebiet,CH
+49,67,67,1,Zürich,103,Bülach,Rafz,Gemeindegebiet,CH
+50,68,68,1,Zürich,103,Bülach,Rorbas,Gemeindegebiet,CH
+51,69,69,1,Zürich,103,Bülach,Wallisellen,Gemeindegebiet,CH
+52,70,70,1,Zürich,103,Bülach,Wasterkingen,Gemeindegebiet,CH
+53,71,71,1,Zürich,103,Bülach,Wil (ZH),Gemeindegebiet,CH
+54,72,72,1,Zürich,103,Bülach,Winkel,Gemeindegebiet,CH
+55,81,81,1,Zürich,104,Dielsdorf,Bachs,Gemeindegebiet,CH
+56,82,82,1,Zürich,104,Dielsdorf,Boppelsen,Gemeindegebiet,CH
+57,83,83,1,Zürich,104,Dielsdorf,Buchs (ZH),Gemeindegebiet,CH
+58,84,84,1,Zürich,104,Dielsdorf,Dällikon,Gemeindegebiet,CH
+59,85,85,1,Zürich,104,Dielsdorf,Dänikon,Gemeindegebiet,CH
+60,86,86,1,Zürich,104,Dielsdorf,Dielsdorf,Gemeindegebiet,CH
+61,87,87,1,Zürich,104,Dielsdorf,Hüttikon,Gemeindegebiet,CH
+62,88,88,1,Zürich,104,Dielsdorf,Neerach,Gemeindegebiet,CH
+63,89,89,1,Zürich,104,Dielsdorf,Niederglatt,Gemeindegebiet,CH
+64,90,90,1,Zürich,104,Dielsdorf,Niederhasli,Gemeindegebiet,CH
+65,91,91,1,Zürich,104,Dielsdorf,Niederweningen,Gemeindegebiet,CH
+66,92,92,1,Zürich,104,Dielsdorf,Oberglatt,Gemeindegebiet,CH
+67,93,93,1,Zürich,104,Dielsdorf,Oberweningen,Gemeindegebiet,CH
+68,94,94,1,Zürich,104,Dielsdorf,Otelfingen,Gemeindegebiet,CH
+69,95,95,1,Zürich,104,Dielsdorf,Regensberg,Gemeindegebiet,CH
+70,96,96,1,Zürich,104,Dielsdorf,Regensdorf,Gemeindegebiet,CH
+71,97,97,1,Zürich,104,Dielsdorf,Rümlang,Gemeindegebiet,CH
+72,98,98,1,Zürich,104,Dielsdorf,Schleinikon,Gemeindegebiet,CH
+73,99,99,1,Zürich,104,Dielsdorf,Schöfflisdorf,Gemeindegebiet,CH
+74,100,100,1,Zürich,104,Dielsdorf,Stadel,Gemeindegebiet,CH
+75,101,101,1,Zürich,104,Dielsdorf,Steinmaur,Gemeindegebiet,CH
+76,102,102,1,Zürich,104,Dielsdorf,Weiach,Gemeindegebiet,CH
+77,111,111,1,Zürich,105,Hinwil,Bäretswil,Gemeindegebiet,CH
+78,112,112,1,Zürich,105,Hinwil,Bubikon,Gemeindegebiet,CH
+79,113,113,1,Zürich,105,Hinwil,Dürnten,Gemeindegebiet,CH
+80,114,114,1,Zürich,105,Hinwil,Fischenthal,Gemeindegebiet,CH
+81,115,115,1,Zürich,105,Hinwil,Gossau (ZH),Gemeindegebiet,CH
+82,116,116,1,Zürich,105,Hinwil,Grüningen,Gemeindegebiet,CH
+83,117,117,1,Zürich,105,Hinwil,Hinwil,Gemeindegebiet,CH
+84,118,118,1,Zürich,105,Hinwil,Rüti (ZH),Gemeindegebiet,CH
+85,119,119,1,Zürich,105,Hinwil,Seegräben,Gemeindegebiet,CH
+86,120,120,1,Zürich,105,Hinwil,Wald (ZH),Gemeindegebiet,CH
+87,121,121,1,Zürich,105,Hinwil,Wetzikon (ZH),Gemeindegebiet,CH
+88,131,131,1,Zürich,106,Horgen,Adliswil,Gemeindegebiet,CH
+89,135,135,1,Zürich,106,Horgen,Kilchberg (ZH),Gemeindegebiet,CH
+90,136,136,1,Zürich,106,Horgen,Langnau am Albis,Gemeindegebiet,CH
+91,137,137,1,Zürich,106,Horgen,Oberrieden,Gemeindegebiet,CH
+92,138,138,1,Zürich,106,Horgen,Richterswil,Gemeindegebiet,CH
+93,139,139,1,Zürich,106,Horgen,Rüschlikon,Gemeindegebiet,CH
+94,141,141,1,Zürich,106,Horgen,Thalwil,Gemeindegebiet,CH
+95,151,151,1,Zürich,107,Meilen,Erlenbach (ZH),Gemeindegebiet,CH
+96,152,152,1,Zürich,107,Meilen,Herrliberg,Gemeindegebiet,CH
+97,153,153,1,Zürich,107,Meilen,Hombrechtikon,Gemeindegebiet,CH
+98,154,154,1,Zürich,107,Meilen,Küsnacht (ZH),Gemeindegebiet,CH
+99,155,155,1,Zürich,107,Meilen,Männedorf,Gemeindegebiet,CH
+100,156,156,1,Zürich,107,Meilen,Meilen,Gemeindegebiet,CH
+101,157,157,1,Zürich,107,Meilen,Oetwil am See,Gemeindegebiet,CH
+102,158,158,1,Zürich,107,Meilen,Stäfa,Gemeindegebiet,CH
+103,159,159,1,Zürich,107,Meilen,Uetikon am See,Gemeindegebiet,CH
+104,160,160,1,Zürich,107,Meilen,Zumikon,Gemeindegebiet,CH
+105,161,161,1,Zürich,107,Meilen,Zollikon,Gemeindegebiet,CH
+106,172,172,1,Zürich,108,Pfäffikon,Fehraltorf,Gemeindegebiet,CH
+107,173,173,1,Zürich,108,Pfäffikon,Hittnau,Gemeindegebiet,CH
+108,176,176,1,Zürich,108,Pfäffikon,Lindau,Gemeindegebiet,CH
+109,177,177,1,Zürich,108,Pfäffikon,Pfäffikon,Gemeindegebiet,CH
+110,178,178,1,Zürich,108,Pfäffikon,Russikon,Gemeindegebiet,CH
+111,180,180,1,Zürich,108,Pfäffikon,Weisslingen,Gemeindegebiet,CH
+112,181,181,1,Zürich,108,Pfäffikon,Wila,Gemeindegebiet,CH
+113,182,182,1,Zürich,108,Pfäffikon,Wildberg,Gemeindegebiet,CH
+114,191,191,1,Zürich,109,Uster,Dübendorf,Gemeindegebiet,CH
+115,192,192,1,Zürich,109,Uster,Egg,Gemeindegebiet,CH
+116,193,193,1,Zürich,109,Uster,Fällanden,Gemeindegebiet,CH
+117,194,194,1,Zürich,109,Uster,Greifensee,Gemeindegebiet,CH
+118,195,195,1,Zürich,109,Uster,Maur,Gemeindegebiet,CH
+119,196,196,1,Zürich,109,Uster,Mönchaltorf,Gemeindegebiet,CH
+120,197,197,1,Zürich,109,Uster,Schwerzenbach,Gemeindegebiet,CH
+121,198,198,1,Zürich,109,Uster,Uster,Gemeindegebiet,CH
+122,199,199,1,Zürich,109,Uster,Volketswil,Gemeindegebiet,CH
+123,200,200,1,Zürich,109,Uster,Wangen-Brüttisellen,Gemeindegebiet,CH
+124,211,211,1,Zürich,110,Winterthur,Altikon,Gemeindegebiet,CH
+125,213,213,1,Zürich,110,Winterthur,Brütten,Gemeindegebiet,CH
+126,214,214,1,Zürich,110,Winterthur,Dägerlen,Gemeindegebiet,CH
+127,215,215,1,Zürich,110,Winterthur,Dättlikon,Gemeindegebiet,CH
+128,216,216,1,Zürich,110,Winterthur,Dinhard,Gemeindegebiet,CH
+129,218,218,1,Zürich,110,Winterthur,Ellikon an der Thur,Gemeindegebiet,CH
+130,219,219,1,Zürich,110,Winterthur,Elsau,Gemeindegebiet,CH
+131,220,220,1,Zürich,110,Winterthur,Hagenbuch,Gemeindegebiet,CH
+132,221,221,1,Zürich,110,Winterthur,Hettlingen,Gemeindegebiet,CH
+133,223,223,1,Zürich,110,Winterthur,Neftenbach,Gemeindegebiet,CH
+134,224,224,1,Zürich,110,Winterthur,Pfungen,Gemeindegebiet,CH
+135,225,225,1,Zürich,110,Winterthur,Rickenbach (ZH),Gemeindegebiet,CH
+136,226,226,1,Zürich,110,Winterthur,Schlatt (ZH),Gemeindegebiet,CH
+137,227,227,1,Zürich,110,Winterthur,Seuzach,Gemeindegebiet,CH
+138,228,228,1,Zürich,110,Winterthur,Turbenthal,Gemeindegebiet,CH
+139,230,230,1,Zürich,110,Winterthur,Winterthur,Gemeindegebiet,CH
+140,231,231,1,Zürich,110,Winterthur,Zell (ZH),Gemeindegebiet,CH
+141,241,241,1,Zürich,111,Dietikon,Aesch (ZH),Gemeindegebiet,CH
+142,242,242,1,Zürich,111,Dietikon,Birmensdorf (ZH),Gemeindegebiet,CH
+143,243,243,1,Zürich,111,Dietikon,Dietikon,Gemeindegebiet,CH
+144,244,244,1,Zürich,111,Dietikon,Geroldswil,Gemeindegebiet,CH
+145,245,245,1,Zürich,111,Dietikon,Oberengstringen,Gemeindegebiet,CH
+146,246,246,1,Zürich,111,Dietikon,Oetwil an der Limmat,Gemeindegebiet,CH
+147,247,247,1,Zürich,111,Dietikon,Schlieren,Gemeindegebiet,CH
+148,248,248,1,Zürich,111,Dietikon,Uitikon,Gemeindegebiet,CH
+149,249,249,1,Zürich,111,Dietikon,Unterengstringen,Gemeindegebiet,CH
+150,250,250,1,Zürich,111,Dietikon,Urdorf,Gemeindegebiet,CH
+151,251,251,1,Zürich,111,Dietikon,Weiningen (ZH),Gemeindegebiet,CH
+152,261,261,1,Zürich,112,Zürich,Zürich,Gemeindegebiet,CH
+153,291,291,1,Zürich,102,Andelfingen,Andelfingen,Gemeindegebiet,CH
+154,292,292,1,Zürich,102,Andelfingen,Stammheim,Gemeindegebiet,CH
+155,293,293,1,Zürich,106,Horgen,Wädenswil,Gemeindegebiet,CH
+156,294,294,1,Zürich,110,Winterthur,Elgg,Gemeindegebiet,CH
+157,295,295,1,Zürich,106,Horgen,Horgen,Gemeindegebiet,CH
+158,296,296,1,Zürich,108,Pfäffikon,Illnau-Effretikon,Gemeindegebiet,CH
+159,297,297,1,Zürich,108,Pfäffikon,Bauma,Gemeindegebiet,CH
+160,298,298,1,Zürich,110,Winterthur,Wiesendangen,Gemeindegebiet,CH
+161,301,301,2,Bern,243,Seeland,Aarberg,Gemeindegebiet,CH
+162,302,302,2,Bern,243,Seeland,Bargen (BE),Gemeindegebiet,CH
+163,303,303,2,Bern,243,Seeland,Grossaffoltern,Gemeindegebiet,CH
+164,304,304,2,Bern,243,Seeland,Kallnach,Gemeindegebiet,CH
+165,305,305,2,Bern,243,Seeland,Kappelen,Gemeindegebiet,CH
+166,306,306,2,Bern,243,Seeland,Lyss,Gemeindegebiet,CH
+167,307,307,2,Bern,246,Bern-Mittelland,Meikirch,Gemeindegebiet,CH
+168,309,309,2,Bern,243,Seeland,Radelfingen,Gemeindegebiet,CH
+169,310,310,2,Bern,243,Seeland,Rapperswil (BE),Gemeindegebiet,CH
+170,311,311,2,Bern,243,Seeland,Schüpfen,Gemeindegebiet,CH
+171,312,312,2,Bern,243,Seeland,Seedorf (BE),Gemeindegebiet,CH
+172,321,321,2,Bern,244,Oberaargau,Aarwangen,Gemeindegebiet,CH
+173,322,322,2,Bern,244,Oberaargau,Auswil,Gemeindegebiet,CH
+174,323,323,2,Bern,244,Oberaargau,Bannwil,Gemeindegebiet,CH
+175,324,324,2,Bern,244,Oberaargau,Bleienbach,Gemeindegebiet,CH
+176,325,325,2,Bern,244,Oberaargau,Busswil bei Melchnau,Gemeindegebiet,CH
+177,326,326,2,Bern,244,Oberaargau,Gondiswil,Gemeindegebiet,CH
+178,329,329,2,Bern,244,Oberaargau,Langenthal,Gemeindegebiet,CH
+179,331,331,2,Bern,244,Oberaargau,Lotzwil,Gemeindegebiet,CH
+180,332,332,2,Bern,244,Oberaargau,Madiswil,Gemeindegebiet,CH
+181,333,333,2,Bern,244,Oberaargau,Melchnau,Gemeindegebiet,CH
+182,335,335,2,Bern,244,Oberaargau,Oeschenbach,Gemeindegebiet,CH
+183,336,336,2,Bern,244,Oberaargau,Reisiswil,Gemeindegebiet,CH
+184,337,337,2,Bern,244,Oberaargau,Roggwil (BE),Gemeindegebiet,CH
+185,338,338,2,Bern,244,Oberaargau,Rohrbach,Gemeindegebiet,CH
+186,339,339,2,Bern,244,Oberaargau,Rohrbachgraben,Gemeindegebiet,CH
+187,340,340,2,Bern,244,Oberaargau,Rütschelen,Gemeindegebiet,CH
+188,341,341,2,Bern,244,Oberaargau,Schwarzhäusern,Gemeindegebiet,CH
+189,342,342,2,Bern,244,Oberaargau,Thunstetten,Gemeindegebiet,CH
+190,344,344,2,Bern,244,Oberaargau,Ursenbach,Gemeindegebiet,CH
+191,345,345,2,Bern,244,Oberaargau,Wynau,Gemeindegebiet,CH
+192,351,351,2,Bern,246,Bern-Mittelland,Bern,Gemeindegebiet,CH
+193,352,352,2,Bern,246,Bern-Mittelland,Bolligen,Gemeindegebiet,CH
+194,353,353,2,Bern,246,Bern-Mittelland,Bremgarten bei Bern,Gemeindegebiet,CH
+195,354,354,2,Bern,246,Bern-Mittelland,Kirchlindach,Gemeindegebiet,CH
+196,355,355,2,Bern,246,Bern-Mittelland,Köniz,Gemeindegebiet,CH
+197,356,356,2,Bern,246,Bern-Mittelland,Muri bei Bern,Gemeindegebiet,CH
+198,357,357,2,Bern,246,Bern-Mittelland,Oberbalm,Gemeindegebiet,CH
+199,358,358,2,Bern,246,Bern-Mittelland,Stettlen,Gemeindegebiet,CH
+200,359,359,2,Bern,246,Bern-Mittelland,Vechigen,Gemeindegebiet,CH
+201,360,360,2,Bern,246,Bern-Mittelland,Wohlen bei Bern,Gemeindegebiet,CH
+202,361,361,2,Bern,246,Bern-Mittelland,Zollikofen,Gemeindegebiet,CH
+203,362,362,2,Bern,246,Bern-Mittelland,Ittigen,Gemeindegebiet,CH
+204,363,363,2,Bern,246,Bern-Mittelland,Ostermundigen,Gemeindegebiet,CH
+205,371,371,2,Bern,242,Biel/Bienne,Biel/Bienne,Gemeindegebiet,CH
+206,372,372,2,Bern,242,Biel/Bienne,Evilard,Gemeindegebiet,CH
+207,381,381,2,Bern,243,Seeland,Arch,Gemeindegebiet,CH
+208,382,382,2,Bern,243,Seeland,Büetigen,Gemeindegebiet,CH
+209,383,383,2,Bern,243,Seeland,Büren an der Aare,Gemeindegebiet,CH
+210,385,385,2,Bern,243,Seeland,Diessbach bei Büren,Gemeindegebiet,CH
+211,386,386,2,Bern,243,Seeland,Dotzigen,Gemeindegebiet,CH
+212,387,387,2,Bern,242,Biel/Bienne,Lengnau (BE),Gemeindegebiet,CH
+213,388,388,2,Bern,243,Seeland,Leuzigen,Gemeindegebiet,CH
+214,389,389,2,Bern,243,Seeland,Meienried,Gemeindegebiet,CH
+215,390,390,2,Bern,242,Biel/Bienne,Meinisberg,Gemeindegebiet,CH
+216,391,391,2,Bern,243,Seeland,Oberwil bei Büren,Gemeindegebiet,CH
+217,392,392,2,Bern,242,Biel/Bienne,Pieterlen,Gemeindegebiet,CH
+218,393,393,2,Bern,243,Seeland,Rüti bei Büren,Gemeindegebiet,CH
+219,394,394,2,Bern,243,Seeland,Wengi,Gemeindegebiet,CH
+220,401,401,2,Bern,245,Emmental,Aefligen,Gemeindegebiet,CH
+221,402,402,2,Bern,245,Emmental,Alchenstorf,Gemeindegebiet,CH
+222,403,403,2,Bern,246,Bern-Mittelland,Bäriswil,Gemeindegebiet,CH
+223,404,404,2,Bern,245,Emmental,Burgdorf,Gemeindegebiet,CH
+224,405,405,2,Bern,245,Emmental,Ersigen,Gemeindegebiet,CH
+225,406,406,2,Bern,245,Emmental,Hasle bei Burgdorf,Gemeindegebiet,CH
+226,407,407,2,Bern,245,Emmental,Heimiswil,Gemeindegebiet,CH
+227,408,408,2,Bern,245,Emmental,Hellsau,Gemeindegebiet,CH
+228,409,409,2,Bern,245,Emmental,Hindelbank,Gemeindegebiet,CH
+229,410,410,2,Bern,245,Emmental,Höchstetten,Gemeindegebiet,CH
+230,411,411,2,Bern,245,Emmental,Kernenried,Gemeindegebiet,CH
+231,412,412,2,Bern,245,Emmental,Kirchberg (BE),Gemeindegebiet,CH
+232,413,413,2,Bern,245,Emmental,Koppigen,Gemeindegebiet,CH
+233,414,414,2,Bern,245,Emmental,Krauchthal,Gemeindegebiet,CH
+234,415,415,2,Bern,245,Emmental,Lyssach,Gemeindegebiet,CH
+235,418,418,2,Bern,245,Emmental,Oberburg,Gemeindegebiet,CH
+236,420,420,2,Bern,245,Emmental,Rüdtligen-Alchenflüh,Gemeindegebiet,CH
+237,421,421,2,Bern,245,Emmental,Rumendingen,Gemeindegebiet,CH
+238,422,422,2,Bern,245,Emmental,Rüti bei Lyssach,Gemeindegebiet,CH
+239,423,423,2,Bern,245,Emmental,Willadingen,Gemeindegebiet,CH
+240,424,424,2,Bern,245,Emmental,Wynigen,Gemeindegebiet,CH
+241,431,431,2,Bern,241,Jura bernois,Corgémont,Gemeindegebiet,CH
+242,432,432,2,Bern,241,Jura bernois,Cormoret,Gemeindegebiet,CH
+243,433,433,2,Bern,241,Jura bernois,Cortébert,Gemeindegebiet,CH
+244,434,434,2,Bern,241,Jura bernois,Courtelary,Gemeindegebiet,CH
+245,435,435,2,Bern,241,Jura bernois,La Ferrière,Gemeindegebiet,CH
+246,437,437,2,Bern,241,Jura bernois,Mont-Tramelan,Gemeindegebiet,CH
+247,438,438,2,Bern,241,Jura bernois,Orvin,Gemeindegebiet,CH
+248,441,441,2,Bern,241,Jura bernois,Renan (BE),Gemeindegebiet,CH
+249,442,442,2,Bern,241,Jura bernois,Romont (BE),Gemeindegebiet,CH
+250,443,443,2,Bern,241,Jura bernois,Saint-Imier,Gemeindegebiet,CH
+251,444,444,2,Bern,241,Jura bernois,Sonceboz-Sombeval,Gemeindegebiet,CH
+252,445,445,2,Bern,241,Jura bernois,Sonvilier,Gemeindegebiet,CH
+253,446,446,2,Bern,241,Jura bernois,Tramelan,Gemeindegebiet,CH
+254,448,448,2,Bern,241,Jura bernois,Villeret,Gemeindegebiet,CH
+255,449,449,2,Bern,241,Jura bernois,Sauge,Gemeindegebiet,CH
+256,450,450,2,Bern,241,Jura bernois,Péry-La Heutte,Gemeindegebiet,CH
+257,491,491,2,Bern,243,Seeland,Brüttelen,Gemeindegebiet,CH
+258,492,492,2,Bern,243,Seeland,Erlach,Gemeindegebiet,CH
+259,493,493,2,Bern,243,Seeland,Finsterhennen,Gemeindegebiet,CH
+260,494,494,2,Bern,243,Seeland,Gals,Gemeindegebiet,CH
+261,495,495,2,Bern,243,Seeland,Gampelen,Gemeindegebiet,CH
+262,496,496,2,Bern,243,Seeland,Ins,Gemeindegebiet,CH
+263,497,497,2,Bern,243,Seeland,Lüscherz,Gemeindegebiet,CH
+264,498,498,2,Bern,243,Seeland,Müntschemier,Gemeindegebiet,CH
+265,499,499,2,Bern,243,Seeland,Siselen,Gemeindegebiet,CH
+266,500,500,2,Bern,243,Seeland,Treiten,Gemeindegebiet,CH
+267,501,501,2,Bern,243,Seeland,Tschugg,Gemeindegebiet,CH
+268,502,502,2,Bern,243,Seeland,Vinelz,Gemeindegebiet,CH
+269,533,533,2,Bern,245,Emmental,Bätterkinden,Gemeindegebiet,CH
+270,535,535,2,Bern,246,Bern-Mittelland,Deisswil bei Münchenbuchsee,Gemeindegebiet,CH
+271,538,538,2,Bern,246,Bern-Mittelland,Fraubrunnen,Gemeindegebiet,CH
+272,540,540,2,Bern,246,Bern-Mittelland,Jegenstorf,Gemeindegebiet,CH
+273,541,541,2,Bern,246,Bern-Mittelland,Iffwil,Gemeindegebiet,CH
+274,543,543,2,Bern,246,Bern-Mittelland,Mattstetten,Gemeindegebiet,CH
+275,544,544,2,Bern,246,Bern-Mittelland,Moosseedorf,Gemeindegebiet,CH
+276,546,546,2,Bern,246,Bern-Mittelland,Münchenbuchsee,Gemeindegebiet,CH
+277,551,551,2,Bern,246,Bern-Mittelland,Urtenen-Schönbühl,Gemeindegebiet,CH
+278,552,552,2,Bern,245,Emmental,Utzenstorf,Gemeindegebiet,CH
+279,553,553,2,Bern,246,Bern-Mittelland,Wiggiswil,Gemeindegebiet,CH
+280,554,554,2,Bern,245,Emmental,Wiler bei Utzenstorf,Gemeindegebiet,CH
+281,556,556,2,Bern,245,Emmental,Zielebach,Gemeindegebiet,CH
+282,557,557,2,Bern,246,Bern-Mittelland,Zuzwil (BE),Gemeindegebiet,CH
+283,561,561,2,Bern,249,Frutigen-Niedersimmental,Adelboden,Gemeindegebiet,CH
+284,562,562,2,Bern,249,Frutigen-Niedersimmental,Aeschi bei Spiez,Gemeindegebiet,CH
+285,563,563,2,Bern,249,Frutigen-Niedersimmental,Frutigen,Gemeindegebiet,CH
+286,564,564,2,Bern,249,Frutigen-Niedersimmental,Kandergrund,Gemeindegebiet,CH
+287,565,565,2,Bern,249,Frutigen-Niedersimmental,Kandersteg,Gemeindegebiet,CH
+288,566,566,2,Bern,249,Frutigen-Niedersimmental,Krattigen,Gemeindegebiet,CH
+289,567,567,2,Bern,249,Frutigen-Niedersimmental,Reichenbach im Kandertal,Gemeindegebiet,CH
+290,571,571,2,Bern,250,Interlaken-Oberhasli,Beatenberg,Gemeindegebiet,CH
+291,572,572,2,Bern,250,Interlaken-Oberhasli,Bönigen,Gemeindegebiet,CH
+292,573,573,2,Bern,250,Interlaken-Oberhasli,Brienz (BE),Gemeindegebiet,CH
+293,574,574,2,Bern,250,Interlaken-Oberhasli,Brienzwiler,Gemeindegebiet,CH
+294,575,575,2,Bern,250,Interlaken-Oberhasli,Därligen,Gemeindegebiet,CH
+295,576,576,2,Bern,250,Interlaken-Oberhasli,Grindelwald,Gemeindegebiet,CH
+296,577,577,2,Bern,250,Interlaken-Oberhasli,Gsteigwiler,Gemeindegebiet,CH
+297,578,578,2,Bern,250,Interlaken-Oberhasli,Gündlischwand,Gemeindegebiet,CH
+298,579,579,2,Bern,250,Interlaken-Oberhasli,Habkern,Gemeindegebiet,CH
+299,580,580,2,Bern,250,Interlaken-Oberhasli,Hofstetten bei Brienz,Gemeindegebiet,CH
+300,581,581,2,Bern,250,Interlaken-Oberhasli,Interlaken,Gemeindegebiet,CH
+301,582,582,2,Bern,250,Interlaken-Oberhasli,Iseltwald,Gemeindegebiet,CH
+302,584,584,2,Bern,250,Interlaken-Oberhasli,Lauterbrunnen,Gemeindegebiet,CH
+303,585,585,2,Bern,250,Interlaken-Oberhasli,Leissigen,Gemeindegebiet,CH
+304,586,586,2,Bern,250,Interlaken-Oberhasli,Lütschental,Gemeindegebiet,CH
+305,587,587,2,Bern,250,Interlaken-Oberhasli,Matten bei Interlaken,Gemeindegebiet,CH
+306,588,588,2,Bern,250,Interlaken-Oberhasli,Niederried bei Interlaken,Gemeindegebiet,CH
+307,589,589,2,Bern,250,Interlaken-Oberhasli,Oberried am Brienzersee,Gemeindegebiet,CH
+308,590,590,2,Bern,250,Interlaken-Oberhasli,Ringgenberg (BE),Gemeindegebiet,CH
+309,591,591,2,Bern,250,Interlaken-Oberhasli,Saxeten,Gemeindegebiet,CH
+310,592,592,2,Bern,250,Interlaken-Oberhasli,Schwanden bei Brienz,Gemeindegebiet,CH
+311,593,593,2,Bern,250,Interlaken-Oberhasli,Unterseen,Gemeindegebiet,CH
+312,594,594,2,Bern,250,Interlaken-Oberhasli,Wilderswil,Gemeindegebiet,CH
+313,602,602,2,Bern,246,Bern-Mittelland,Arni (BE),Gemeindegebiet,CH
+314,603,603,2,Bern,246,Bern-Mittelland,Biglen,Gemeindegebiet,CH
+315,605,605,2,Bern,246,Bern-Mittelland,Bowil,Gemeindegebiet,CH
+316,606,606,2,Bern,246,Bern-Mittelland,Brenzikofen,Gemeindegebiet,CH
+317,607,607,2,Bern,246,Bern-Mittelland,Freimettigen,Gemeindegebiet,CH
+318,608,608,2,Bern,246,Bern-Mittelland,Grosshöchstetten,Gemeindegebiet,CH
+319,609,609,2,Bern,246,Bern-Mittelland,Häutligen,Gemeindegebiet,CH
+320,610,610,2,Bern,246,Bern-Mittelland,Herbligen,Gemeindegebiet,CH
+321,611,611,2,Bern,246,Bern-Mittelland,Kiesen,Gemeindegebiet,CH
+322,612,612,2,Bern,246,Bern-Mittelland,Konolfingen,Gemeindegebiet,CH
+323,613,613,2,Bern,246,Bern-Mittelland,Landiswil,Gemeindegebiet,CH
+324,614,614,2,Bern,246,Bern-Mittelland,Linden,Gemeindegebiet,CH
+325,615,615,2,Bern,246,Bern-Mittelland,Mirchel,Gemeindegebiet,CH
+326,616,616,2,Bern,246,Bern-Mittelland,Münsingen,Gemeindegebiet,CH
+327,617,617,2,Bern,246,Bern-Mittelland,Niederhünigen,Gemeindegebiet,CH
+328,619,619,2,Bern,246,Bern-Mittelland,Oberdiessbach,Gemeindegebiet,CH
+329,620,620,2,Bern,246,Bern-Mittelland,Oberthal,Gemeindegebiet,CH
+330,622,622,2,Bern,246,Bern-Mittelland,Oppligen,Gemeindegebiet,CH
+331,623,623,2,Bern,246,Bern-Mittelland,Rubigen,Gemeindegebiet,CH
+332,626,626,2,Bern,246,Bern-Mittelland,Walkringen,Gemeindegebiet,CH
+333,627,627,2,Bern,246,Bern-Mittelland,Worb,Gemeindegebiet,CH
+334,628,628,2,Bern,246,Bern-Mittelland,Zäziwil,Gemeindegebiet,CH
+335,629,629,2,Bern,246,Bern-Mittelland,Oberhünigen,Gemeindegebiet,CH
+336,630,630,2,Bern,246,Bern-Mittelland,Allmendingen,Gemeindegebiet,CH
+337,632,632,2,Bern,246,Bern-Mittelland,Wichtrach,Gemeindegebiet,CH
+338,662,662,2,Bern,246,Bern-Mittelland,Ferenbalm,Gemeindegebiet,CH
+339,663,663,2,Bern,246,Bern-Mittelland,Frauenkappelen,Gemeindegebiet,CH
+340,665,665,2,Bern,246,Bern-Mittelland,Gurbrü,Gemeindegebiet,CH
+341,666,666,2,Bern,246,Bern-Mittelland,Kriechenwil,Gemeindegebiet,CH
+342,667,667,2,Bern,246,Bern-Mittelland,Laupen,Gemeindegebiet,CH
+343,668,668,2,Bern,246,Bern-Mittelland,Mühleberg,Gemeindegebiet,CH
+344,669,669,2,Bern,246,Bern-Mittelland,Münchenwiler,Gemeindegebiet,CH
+345,670,670,2,Bern,246,Bern-Mittelland,Neuenegg,Gemeindegebiet,CH
+346,671,671,2,Bern,246,Bern-Mittelland,Wileroltigen,Gemeindegebiet,CH
+347,681,681,2,Bern,241,Jura bernois,Belprahon,Gemeindegebiet,CH
+348,683,683,2,Bern,241,Jura bernois,Champoz,Gemeindegebiet,CH
+349,687,687,2,Bern,241,Jura bernois,Corcelles (BE),Gemeindegebiet,CH
+350,690,690,2,Bern,241,Jura bernois,Court,Gemeindegebiet,CH
+351,691,691,2,Bern,241,Jura bernois,Crémines,Gemeindegebiet,CH
+352,692,692,2,Bern,241,Jura bernois,Eschert,Gemeindegebiet,CH
+353,694,694,2,Bern,241,Jura bernois,Grandval,Gemeindegebiet,CH
+354,696,696,2,Bern,241,Jura bernois,Loveresse,Gemeindegebiet,CH
+355,701,701,2,Bern,241,Jura bernois,Perrefitte,Gemeindegebiet,CH
+356,703,703,2,Bern,241,Jura bernois,Reconvilier,Gemeindegebiet,CH
+357,704,704,2,Bern,241,Jura bernois,Roches (BE),Gemeindegebiet,CH
+358,706,706,2,Bern,241,Jura bernois,Saicourt,Gemeindegebiet,CH
+359,707,707,2,Bern,241,Jura bernois,Saules (BE),Gemeindegebiet,CH
+360,708,708,2,Bern,241,Jura bernois,Schelten,Gemeindegebiet,CH
+361,709,709,2,Bern,241,Jura bernois,Seehof,Gemeindegebiet,CH
+362,711,711,2,Bern,241,Jura bernois,Sorvilier,Gemeindegebiet,CH
+363,713,713,2,Bern,241,Jura bernois,Tavannes,Gemeindegebiet,CH
+364,715,715,2,Bern,241,Jura bernois,Rebévelier,Gemeindegebiet,CH
+365,716,716,2,Bern,241,Jura bernois,Petit-Val,Gemeindegebiet,CH
+366,717,717,2,Bern,241,Jura bernois,Valbirse,Gemeindegebiet,CH
+367,723,723,2,Bern,241,Jura bernois,La Neuveville,Gemeindegebiet,CH
+368,724,724,2,Bern,241,Jura bernois,Nods,Gemeindegebiet,CH
+369,726,726,2,Bern,241,Jura bernois,Plateau de Diesse,Gemeindegebiet,CH
+370,731,731,2,Bern,242,Biel/Bienne,Aegerten,Gemeindegebiet,CH
+371,732,732,2,Bern,242,Biel/Bienne,Bellmund,Gemeindegebiet,CH
+372,733,733,2,Bern,242,Biel/Bienne,Brügg,Gemeindegebiet,CH
+373,734,734,2,Bern,243,Seeland,Bühl,Gemeindegebiet,CH
+374,735,735,2,Bern,243,Seeland,Epsach,Gemeindegebiet,CH
+375,736,736,2,Bern,243,Seeland,Hagneck,Gemeindegebiet,CH
+376,737,737,2,Bern,243,Seeland,Hermrigen,Gemeindegebiet,CH
+377,738,738,2,Bern,243,Seeland,Jens,Gemeindegebiet,CH
+378,739,739,2,Bern,242,Biel/Bienne,Ipsach,Gemeindegebiet,CH
+379,740,740,2,Bern,242,Biel/Bienne,Ligerz,Gemeindegebiet,CH
+380,741,741,2,Bern,243,Seeland,Merzligen,Gemeindegebiet,CH
+381,742,742,2,Bern,242,Biel/Bienne,Mörigen,Gemeindegebiet,CH
+382,743,743,2,Bern,242,Biel/Bienne,Nidau,Gemeindegebiet,CH
+383,744,744,2,Bern,242,Biel/Bienne,Orpund,Gemeindegebiet,CH
+384,745,745,2,Bern,242,Biel/Bienne,Port,Gemeindegebiet,CH
+385,746,746,2,Bern,242,Biel/Bienne,Safnern,Gemeindegebiet,CH
+386,747,747,2,Bern,242,Biel/Bienne,Scheuren,Gemeindegebiet,CH
+387,748,748,2,Bern,242,Biel/Bienne,Schwadernau,Gemeindegebiet,CH
+388,749,749,2,Bern,243,Seeland,Studen (BE),Gemeindegebiet,CH
+389,750,750,2,Bern,242,Biel/Bienne,Sutz-Lattrigen,Gemeindegebiet,CH
+390,751,751,2,Bern,243,Seeland,Täuffelen,Gemeindegebiet,CH
+391,754,754,2,Bern,243,Seeland,Walperswil,Gemeindegebiet,CH
+392,755,755,2,Bern,243,Seeland,Worben,Gemeindegebiet,CH
+393,756,756,2,Bern,242,Biel/Bienne,Twann-Tüscherz,Gemeindegebiet,CH
+394,761,761,2,Bern,249,Frutigen-Niedersimmental,Därstetten,Gemeindegebiet,CH
+395,762,762,2,Bern,249,Frutigen-Niedersimmental,Diemtigen,Gemeindegebiet,CH
+396,763,763,2,Bern,249,Frutigen-Niedersimmental,Erlenbach im Simmental,Gemeindegebiet,CH
+397,766,766,2,Bern,249,Frutigen-Niedersimmental,Oberwil im Simmental,Gemeindegebiet,CH
+398,767,767,2,Bern,247,Thun,Reutigen,Gemeindegebiet,CH
+399,768,768,2,Bern,249,Frutigen-Niedersimmental,Spiez,Gemeindegebiet,CH
+400,769,769,2,Bern,249,Frutigen-Niedersimmental,Wimmis,Gemeindegebiet,CH
+401,770,770,2,Bern,247,Thun,Stocken-Höfen,Gemeindegebiet,CH
+402,782,782,2,Bern,250,Interlaken-Oberhasli,Guttannen,Gemeindegebiet,CH
+403,783,783,2,Bern,250,Interlaken-Oberhasli,Hasliberg,Gemeindegebiet,CH
+404,784,784,2,Bern,250,Interlaken-Oberhasli,Innertkirchen,Gemeindegebiet,CH
+405,785,785,2,Bern,250,Interlaken-Oberhasli,Meiringen,Gemeindegebiet,CH
+406,786,786,2,Bern,250,Interlaken-Oberhasli,Schattenhalb,Gemeindegebiet,CH
+407,791,791,2,Bern,248,Obersimmental-Saanen,Boltigen,Gemeindegebiet,CH
+408,792,792,2,Bern,248,Obersimmental-Saanen,Lenk,Gemeindegebiet,CH
+409,793,793,2,Bern,248,Obersimmental-Saanen,St. Stephan,Gemeindegebiet,CH
+410,794,794,2,Bern,248,Obersimmental-Saanen,Zweisimmen,Gemeindegebiet,CH
+411,841,841,2,Bern,248,Obersimmental-Saanen,Gsteig,Gemeindegebiet,CH
+412,842,842,2,Bern,248,Obersimmental-Saanen,Lauenen,Gemeindegebiet,CH
+413,843,843,2,Bern,248,Obersimmental-Saanen,Saanen,Gemeindegebiet,CH
+414,852,852,2,Bern,246,Bern-Mittelland,Guggisberg,Gemeindegebiet,CH
+415,853,853,2,Bern,246,Bern-Mittelland,Rüschegg,Gemeindegebiet,CH
+416,855,855,2,Bern,246,Bern-Mittelland,Schwarzenburg,Gemeindegebiet,CH
+417,861,861,2,Bern,246,Bern-Mittelland,Belp,Gemeindegebiet,CH
+418,863,863,2,Bern,247,Thun,Burgistein,Gemeindegebiet,CH
+419,866,866,2,Bern,246,Bern-Mittelland,Gerzensee,Gemeindegebiet,CH
+420,867,867,2,Bern,247,Thun,Gurzelen,Gemeindegebiet,CH
+421,868,868,2,Bern,246,Bern-Mittelland,Jaberg,Gemeindegebiet,CH
+422,869,869,2,Bern,246,Bern-Mittelland,Kaufdorf,Gemeindegebiet,CH
+423,870,870,2,Bern,246,Bern-Mittelland,Kehrsatz,Gemeindegebiet,CH
+424,872,872,2,Bern,246,Bern-Mittelland,Kirchdorf (BE),Gemeindegebiet,CH
+425,877,877,2,Bern,246,Bern-Mittelland,Niedermuhlern,Gemeindegebiet,CH
+426,879,879,2,Bern,246,Bern-Mittelland,Riggisberg,Gemeindegebiet,CH
+427,880,880,2,Bern,246,Bern-Mittelland,Rüeggisberg,Gemeindegebiet,CH
+428,883,883,2,Bern,247,Thun,Seftigen,Gemeindegebiet,CH
+429,884,884,2,Bern,246,Bern-Mittelland,Toffen,Gemeindegebiet,CH
+430,885,885,2,Bern,247,Thun,Uttigen,Gemeindegebiet,CH
+431,886,886,2,Bern,247,Thun,Wattenwil,Gemeindegebiet,CH
+432,888,888,2,Bern,246,Bern-Mittelland,Wald (BE),Gemeindegebiet,CH
+433,889,889,2,Bern,246,Bern-Mittelland,Thurnen,Gemeindegebiet,CH
+434,901,901,2,Bern,245,Emmental,Eggiwil,Gemeindegebiet,CH
+435,902,902,2,Bern,245,Emmental,Langnau im Emmental,Gemeindegebiet,CH
+436,903,903,2,Bern,245,Emmental,Lauperswil,Gemeindegebiet,CH
+437,904,904,2,Bern,245,Emmental,Röthenbach im Emmental,Gemeindegebiet,CH
+438,905,905,2,Bern,245,Emmental,Rüderswil,Gemeindegebiet,CH
+439,906,906,2,Bern,245,Emmental,Schangnau,Gemeindegebiet,CH
+440,907,907,2,Bern,245,Emmental,Signau,Gemeindegebiet,CH
+441,908,908,2,Bern,245,Emmental,Trub,Gemeindegebiet,CH
+442,909,909,2,Bern,245,Emmental,Trubschachen,Gemeindegebiet,CH
+443,921,921,2,Bern,247,Thun,Amsoldingen,Gemeindegebiet,CH
+444,922,922,2,Bern,247,Thun,Blumenstein,Gemeindegebiet,CH
+445,923,923,2,Bern,247,Thun,Buchholterberg,Gemeindegebiet,CH
+446,924,924,2,Bern,247,Thun,Eriz,Gemeindegebiet,CH
+447,925,925,2,Bern,247,Thun,Fahrni,Gemeindegebiet,CH
+448,927,927,2,Bern,247,Thun,Heiligenschwendi,Gemeindegebiet,CH
+449,928,928,2,Bern,247,Thun,Heimberg,Gemeindegebiet,CH
+450,929,929,2,Bern,247,Thun,Hilterfingen,Gemeindegebiet,CH
+451,931,931,2,Bern,247,Thun,Homberg,Gemeindegebiet,CH
+452,932,932,2,Bern,247,Thun,Horrenbach-Buchen,Gemeindegebiet,CH
+453,934,934,2,Bern,247,Thun,Oberhofen am Thunersee,Gemeindegebiet,CH
+454,935,935,2,Bern,247,Thun,Oberlangenegg,Gemeindegebiet,CH
+455,936,936,2,Bern,247,Thun,Pohlern,Gemeindegebiet,CH
+456,938,938,2,Bern,247,Thun,Sigriswil,Gemeindegebiet,CH
+457,939,939,2,Bern,247,Thun,Steffisburg,Gemeindegebiet,CH
+458,940,940,2,Bern,247,Thun,Teuffenthal (BE),Gemeindegebiet,CH
+459,941,941,2,Bern,247,Thun,Thierachern,Gemeindegebiet,CH
+460,942,942,2,Bern,247,Thun,Thun,Gemeindegebiet,CH
+461,943,943,2,Bern,247,Thun,Uebeschi,Gemeindegebiet,CH
+462,944,944,2,Bern,247,Thun,Uetendorf,Gemeindegebiet,CH
+463,945,945,2,Bern,247,Thun,Unterlangenegg,Gemeindegebiet,CH
+464,946,946,2,Bern,247,Thun,Wachseldorn,Gemeindegebiet,CH
+465,948,948,2,Bern,247,Thun,Forst-Längenbühl,Gemeindegebiet,CH
+466,951,951,2,Bern,245,Emmental,Affoltern im Emmental,Gemeindegebiet,CH
+467,952,952,2,Bern,245,Emmental,Dürrenroth,Gemeindegebiet,CH
+468,953,953,2,Bern,244,Oberaargau,Eriswil,Gemeindegebiet,CH
+469,954,954,2,Bern,244,Oberaargau,Huttwil,Gemeindegebiet,CH
+470,955,955,2,Bern,245,Emmental,Lützelflüh,Gemeindegebiet,CH
+471,956,956,2,Bern,245,Emmental,Rüegsau,Gemeindegebiet,CH
+472,957,957,2,Bern,245,Emmental,Sumiswald,Gemeindegebiet,CH
+473,958,958,2,Bern,245,Emmental,Trachselwald,Gemeindegebiet,CH
+474,959,959,2,Bern,244,Oberaargau,Walterswil (BE),Gemeindegebiet,CH
+475,960,960,2,Bern,244,Oberaargau,Wyssachen,Gemeindegebiet,CH
+476,971,971,2,Bern,244,Oberaargau,Attiswil,Gemeindegebiet,CH
+477,972,972,2,Bern,244,Oberaargau,Berken,Gemeindegebiet,CH
+478,973,973,2,Bern,244,Oberaargau,Bettenhausen,Gemeindegebiet,CH
+479,975,975,2,Bern,244,Oberaargau,Farnern,Gemeindegebiet,CH
+480,976,976,2,Bern,244,Oberaargau,Graben,Gemeindegebiet,CH
+481,977,977,2,Bern,244,Oberaargau,Heimenhausen,Gemeindegebiet,CH
+482,979,979,2,Bern,244,Oberaargau,Herzogenbuchsee,Gemeindegebiet,CH
+483,980,980,2,Bern,244,Oberaargau,Inkwil,Gemeindegebiet,CH
+484,981,981,2,Bern,244,Oberaargau,Niederbipp,Gemeindegebiet,CH
+485,982,982,2,Bern,244,Oberaargau,Niederönz,Gemeindegebiet,CH
+486,983,983,2,Bern,244,Oberaargau,Oberbipp,Gemeindegebiet,CH
+487,985,985,2,Bern,244,Oberaargau,Ochlenberg,Gemeindegebiet,CH
+488,987,987,2,Bern,244,Oberaargau,Rumisberg,Gemeindegebiet,CH
+489,988,988,2,Bern,244,Oberaargau,Seeberg,Gemeindegebiet,CH
+490,989,989,2,Bern,244,Oberaargau,Thörigen,Gemeindegebiet,CH
+491,990,990,2,Bern,244,Oberaargau,Walliswil bei Niederbipp,Gemeindegebiet,CH
+492,991,991,2,Bern,244,Oberaargau,Walliswil bei Wangen,Gemeindegebiet,CH
+493,992,992,2,Bern,244,Oberaargau,Wangen an der Aare,Gemeindegebiet,CH
+494,995,995,2,Bern,244,Oberaargau,Wiedlisbach,Gemeindegebiet,CH
+495,1001,1001,3,Luzern,316,Entlebuch,Doppleschwand,Gemeindegebiet,CH
+496,1002,1002,3,Luzern,316,Entlebuch,Entlebuch,Gemeindegebiet,CH
+497,1004,1004,3,Luzern,316,Entlebuch,Flühli,Gemeindegebiet,CH
+498,1005,1005,3,Luzern,316,Entlebuch,Hasle (LU),Gemeindegebiet,CH
+499,1007,1007,3,Luzern,316,Entlebuch,Romoos,Gemeindegebiet,CH
+500,1008,1008,3,Luzern,316,Entlebuch,Schüpfheim,Gemeindegebiet,CH
+501,1009,1009,3,Luzern,316,Entlebuch,Werthenstein,Gemeindegebiet,CH
+502,1010,1010,3,Luzern,316,Entlebuch,Escholzmatt-Marbach,Gemeindegebiet,CH
+503,1021,1021,3,Luzern,313,Hochdorf,Aesch (LU),Gemeindegebiet,CH
+504,1023,1023,3,Luzern,313,Hochdorf,Ballwil,Gemeindegebiet,CH
+505,1024,1024,3,Luzern,313,Hochdorf,Emmen,Gemeindegebiet,CH
+506,1025,1025,3,Luzern,313,Hochdorf,Ermensee,Gemeindegebiet,CH
+507,1026,1026,3,Luzern,313,Hochdorf,Eschenbach (LU),Gemeindegebiet,CH
+508,1030,1030,3,Luzern,313,Hochdorf,Hitzkirch,Gemeindegebiet,CH
+509,1031,1031,3,Luzern,313,Hochdorf,Hochdorf,Gemeindegebiet,CH
+510,1032,1032,3,Luzern,313,Hochdorf,Hohenrain,Gemeindegebiet,CH
+511,1033,1033,3,Luzern,313,Hochdorf,Inwil,Gemeindegebiet,CH
+512,1037,1037,3,Luzern,313,Hochdorf,Rain,Gemeindegebiet,CH
+513,1039,1039,3,Luzern,313,Hochdorf,Römerswil,Gemeindegebiet,CH
+514,1040,1040,3,Luzern,313,Hochdorf,Rothenburg,Gemeindegebiet,CH
+515,1041,1041,3,Luzern,313,Hochdorf,Schongau,Gemeindegebiet,CH
+516,1051,1051,3,Luzern,312,Luzern-Land,Adligenswil,Gemeindegebiet,CH
+517,1052,1052,3,Luzern,312,Luzern-Land,Buchrain,Gemeindegebiet,CH
+518,1053,1053,3,Luzern,312,Luzern-Land,Dierikon,Gemeindegebiet,CH
+519,1054,1054,3,Luzern,312,Luzern-Land,Ebikon,Gemeindegebiet,CH
+520,1055,1055,3,Luzern,312,Luzern-Land,Gisikon,Gemeindegebiet,CH
+521,1056,1056,3,Luzern,312,Luzern-Land,Greppen,Gemeindegebiet,CH
+522,1058,1058,3,Luzern,312,Luzern-Land,Horw,Gemeindegebiet,CH
+523,1059,1059,3,Luzern,312,Luzern-Land,Kriens,Gemeindegebiet,CH
+524,1061,1061,3,Luzern,311,Luzern-Stadt,Luzern,Gemeindegebiet,CH
+525,1062,1062,3,Luzern,312,Luzern-Land,Malters,Gemeindegebiet,CH
+526,1063,1063,3,Luzern,312,Luzern-Land,Meggen,Gemeindegebiet,CH
+527,1064,1064,3,Luzern,312,Luzern-Land,Meierskappel,Gemeindegebiet,CH
+528,1065,1065,3,Luzern,312,Luzern-Land,Root,Gemeindegebiet,CH
+529,1066,1066,3,Luzern,312,Luzern-Land,Schwarzenberg,Gemeindegebiet,CH
+530,1067,1067,3,Luzern,312,Luzern-Land,Udligenswil,Gemeindegebiet,CH
+531,1068,1068,3,Luzern,312,Luzern-Land,Vitznau,Gemeindegebiet,CH
+532,1069,1069,3,Luzern,312,Luzern-Land,Weggis,Gemeindegebiet,CH
+533,1081,1081,3,Luzern,314,Sursee,Beromünster,Gemeindegebiet,CH
+534,1082,1082,3,Luzern,314,Sursee,Büron,Gemeindegebiet,CH
+535,1083,1083,3,Luzern,314,Sursee,Buttisholz,Gemeindegebiet,CH
+536,1084,1084,3,Luzern,314,Sursee,Eich,Gemeindegebiet,CH
+537,1085,1085,3,Luzern,314,Sursee,Geuensee,Gemeindegebiet,CH
+538,1086,1086,3,Luzern,314,Sursee,Grosswangen,Gemeindegebiet,CH
+539,1088,1088,3,Luzern,314,Sursee,Hildisrieden,Gemeindegebiet,CH
+540,1089,1089,3,Luzern,314,Sursee,Knutwil,Gemeindegebiet,CH
+541,1091,1091,3,Luzern,314,Sursee,Mauensee,Gemeindegebiet,CH
+542,1093,1093,3,Luzern,314,Sursee,Neuenkirch,Gemeindegebiet,CH
+543,1094,1094,3,Luzern,314,Sursee,Nottwil,Gemeindegebiet,CH
+544,1095,1095,3,Luzern,314,Sursee,Oberkirch,Gemeindegebiet,CH
+545,1097,1097,3,Luzern,314,Sursee,Rickenbach (LU),Gemeindegebiet,CH
+546,1098,1098,3,Luzern,314,Sursee,Ruswil,Gemeindegebiet,CH
+547,1099,1099,3,Luzern,314,Sursee,Schenkon,Gemeindegebiet,CH
+548,1100,1100,3,Luzern,314,Sursee,Schlierbach,Gemeindegebiet,CH
+549,1102,1102,3,Luzern,314,Sursee,Sempach,Gemeindegebiet,CH
+550,1103,1103,3,Luzern,314,Sursee,Sursee,Gemeindegebiet,CH
+551,1104,1104,3,Luzern,314,Sursee,Triengen,Gemeindegebiet,CH
+552,1107,1107,3,Luzern,316,Entlebuch,Wolhusen,Gemeindegebiet,CH
+553,1121,1121,3,Luzern,315,Willisau,Alberswil,Gemeindegebiet,CH
+554,1122,1122,3,Luzern,315,Willisau,Altbüron,Gemeindegebiet,CH
+555,1123,1123,3,Luzern,315,Willisau,Altishofen,Gemeindegebiet,CH
+556,1125,1125,3,Luzern,315,Willisau,Dagmersellen,Gemeindegebiet,CH
+557,1127,1127,3,Luzern,315,Willisau,Egolzwil,Gemeindegebiet,CH
+558,1128,1128,3,Luzern,315,Willisau,Ettiswil,Gemeindegebiet,CH
+559,1129,1129,3,Luzern,315,Willisau,Fischbach,Gemeindegebiet,CH
+560,1131,1131,3,Luzern,315,Willisau,Grossdietwil,Gemeindegebiet,CH
+561,1132,1132,3,Luzern,315,Willisau,Hergiswil bei Willisau,Gemeindegebiet,CH
+562,1135,1135,3,Luzern,315,Willisau,Luthern,Gemeindegebiet,CH
+563,1136,1136,3,Luzern,315,Willisau,Menznau,Gemeindegebiet,CH
+564,1137,1137,3,Luzern,315,Willisau,Nebikon,Gemeindegebiet,CH
+565,1139,1139,3,Luzern,315,Willisau,Pfaffnau,Gemeindegebiet,CH
+566,1140,1140,3,Luzern,315,Willisau,Reiden,Gemeindegebiet,CH
+567,1142,1142,3,Luzern,315,Willisau,Roggliswil,Gemeindegebiet,CH
+568,1143,1143,3,Luzern,315,Willisau,Schötz,Gemeindegebiet,CH
+569,1145,1145,3,Luzern,315,Willisau,Ufhusen,Gemeindegebiet,CH
+570,1146,1146,3,Luzern,315,Willisau,Wauwil,Gemeindegebiet,CH
+571,1147,1147,3,Luzern,315,Willisau,Wikon,Gemeindegebiet,CH
+572,1150,1150,3,Luzern,315,Willisau,Zell (LU),Gemeindegebiet,CH
+573,1151,1151,3,Luzern,315,Willisau,Willisau,Gemeindegebiet,CH
+574,1201,1201,4,Uri,,,Altdorf (UR),Gemeindegebiet,CH
+575,1202,1202,4,Uri,,,Andermatt,Gemeindegebiet,CH
+576,1203,1203,4,Uri,,,Attinghausen,Gemeindegebiet,CH
+577,1205,1205,4,Uri,,,Bürglen (UR),Gemeindegebiet,CH
+578,1206,1206,4,Uri,,,Erstfeld,Gemeindegebiet,CH
+579,1207,1207,4,Uri,,,Flüelen,Gemeindegebiet,CH
+580,1208,1208,4,Uri,,,Göschenen,Gemeindegebiet,CH
+581,1209,1209,4,Uri,,,Gurtnellen,Gemeindegebiet,CH
+582,1210,1210,4,Uri,,,Hospental,Gemeindegebiet,CH
+583,1211,1211,4,Uri,,,Isenthal,Gemeindegebiet,CH
+584,1212,1212,4,Uri,,,Realp,Gemeindegebiet,CH
+585,1213,1213,4,Uri,,,Schattdorf,Gemeindegebiet,CH
+586,1214,1214,4,Uri,,,Seedorf (UR),Gemeindegebiet,CH
+587,1215,1215,4,Uri,,,Seelisberg,Gemeindegebiet,CH
+588,1216,1216,4,Uri,,,Silenen,Gemeindegebiet,CH
+589,1217,1217,4,Uri,,,Sisikon,Gemeindegebiet,CH
+590,1218,1218,4,Uri,,,Spiringen,Gemeindegebiet,CH
+591,1219,1219,4,Uri,,,Unterschächen,Gemeindegebiet,CH
+592,1220,1220,4,Uri,,,Wassen,Gemeindegebiet,CH
+593,1301,1301,5,Schwyz,501,Einsiedeln,Einsiedeln,Gemeindegebiet,CH
+594,1311,1311,5,Schwyz,502,Gersau,Gersau,Gemeindegebiet,CH
+595,1321,1321,5,Schwyz,503,Höfe,Feusisberg,Gemeindegebiet,CH
+596,1322,1322,5,Schwyz,503,Höfe,Freienbach,Gemeindegebiet,CH
+597,1323,1323,5,Schwyz,503,Höfe,Wollerau,Gemeindegebiet,CH
+598,1331,1331,5,Schwyz,504,Küssnacht (SZ),Küssnacht (SZ),Gemeindegebiet,CH
+599,1341,1341,5,Schwyz,505,March,Altendorf,Gemeindegebiet,CH
+600,1342,1342,5,Schwyz,505,March,Galgenen,Gemeindegebiet,CH
+601,1343,1343,5,Schwyz,505,March,Innerthal,Gemeindegebiet,CH
+602,1344,1344,5,Schwyz,505,March,Lachen,Gemeindegebiet,CH
+603,1345,1345,5,Schwyz,505,March,Reichenburg,Gemeindegebiet,CH
+604,1346,1346,5,Schwyz,505,March,Schübelbach,Gemeindegebiet,CH
+605,1347,1347,5,Schwyz,505,March,Tuggen,Gemeindegebiet,CH
+606,1348,1348,5,Schwyz,505,March,Vorderthal,Gemeindegebiet,CH
+607,1349,1349,5,Schwyz,505,March,Wangen (SZ),Gemeindegebiet,CH
+608,1361,1361,5,Schwyz,506,Schwyz,Alpthal,Gemeindegebiet,CH
+609,1362,1362,5,Schwyz,506,Schwyz,Arth,Gemeindegebiet,CH
+610,1363,1363,5,Schwyz,506,Schwyz,Illgau,Gemeindegebiet,CH
+611,1364,1364,5,Schwyz,506,Schwyz,Ingenbohl,Gemeindegebiet,CH
+612,1365,1365,5,Schwyz,506,Schwyz,Lauerz,Gemeindegebiet,CH
+613,1366,1366,5,Schwyz,506,Schwyz,Morschach,Gemeindegebiet,CH
+614,1367,1367,5,Schwyz,506,Schwyz,Muotathal,Gemeindegebiet,CH
+615,1368,1368,5,Schwyz,506,Schwyz,Oberiberg,Gemeindegebiet,CH
+616,1369,1369,5,Schwyz,506,Schwyz,Riemenstalden,Gemeindegebiet,CH
+617,1370,1370,5,Schwyz,506,Schwyz,Rothenthurm,Gemeindegebiet,CH
+618,1371,1371,5,Schwyz,506,Schwyz,Sattel,Gemeindegebiet,CH
+619,1372,1372,5,Schwyz,506,Schwyz,Schwyz,Gemeindegebiet,CH
+620,1373,1373,5,Schwyz,506,Schwyz,Steinen,Gemeindegebiet,CH
+621,1374,1374,5,Schwyz,506,Schwyz,Steinerberg,Gemeindegebiet,CH
+622,1375,1375,5,Schwyz,506,Schwyz,Unteriberg,Gemeindegebiet,CH
+623,1401,1401,6,Obwalden,,,Alpnach,Gemeindegebiet,CH
+624,1402,1402,6,Obwalden,,,Engelberg,Gemeindegebiet,CH
+625,1403,1403,6,Obwalden,,,Giswil,Gemeindegebiet,CH
+626,1404,1404,6,Obwalden,,,Kerns,Gemeindegebiet,CH
+627,1405,1405,6,Obwalden,,,Lungern,Gemeindegebiet,CH
+628,1406,1406,6,Obwalden,,,Sachseln,Gemeindegebiet,CH
+629,1407,1407,6,Obwalden,,,Sarnen,Gemeindegebiet,CH
+630,1501,1501,7,Nidwalden,,,Beckenried,Gemeindegebiet,CH
+631,1502,1502,7,Nidwalden,,,Buochs,Gemeindegebiet,CH
+632,1503,1503,7,Nidwalden,,,Dallenwil,Gemeindegebiet,CH
+633,1504,1504,7,Nidwalden,,,Emmetten,Gemeindegebiet,CH
+634,1505,1505,7,Nidwalden,,,Ennetbürgen,Gemeindegebiet,CH
+635,1506,1506,7,Nidwalden,,,Ennetmoos,Gemeindegebiet,CH
+636,1507,1507,7,Nidwalden,,,Hergiswil (NW),Gemeindegebiet,CH
+637,1508,1508,7,Nidwalden,,,Oberdorf (NW),Gemeindegebiet,CH
+638,1509,1509,7,Nidwalden,,,Stans,Gemeindegebiet,CH
+639,1510,1510,7,Nidwalden,,,Stansstad,Gemeindegebiet,CH
+640,1511,1511,7,Nidwalden,,,Wolfenschiessen,Gemeindegebiet,CH
+641,1630,1630,8,Glarus,,,Glarus Nord,Gemeindegebiet,CH
+642,1631,1631,8,Glarus,,,Glarus Süd,Gemeindegebiet,CH
+643,1632,1632,8,Glarus,,,Glarus,Gemeindegebiet,CH
+644,1701,1701,9,Zug,,,Baar,Gemeindegebiet,CH
+645,1702,1702,9,Zug,,,Cham,Gemeindegebiet,CH
+646,1703,1703,9,Zug,,,Hünenberg,Gemeindegebiet,CH
+647,1704,1704,9,Zug,,,Menzingen,Gemeindegebiet,CH
+648,1705,1705,9,Zug,,,Neuheim,Gemeindegebiet,CH
+649,1706,1706,9,Zug,,,Oberägeri,Gemeindegebiet,CH
+650,1707,1707,9,Zug,,,Risch,Gemeindegebiet,CH
+651,1708,1708,9,Zug,,,Steinhausen,Gemeindegebiet,CH
+652,1709,1709,9,Zug,,,Unterägeri,Gemeindegebiet,CH
+653,1710,1710,9,Zug,,,Walchwil,Gemeindegebiet,CH
+654,1711,1711,9,Zug,,,Zug,Gemeindegebiet,CH
+655,2008,2008,10,Fribourg,1001,La Broye,Châtillon (FR),Gemeindegebiet,CH
+656,2011,2011,10,Fribourg,1001,La Broye,Cugy (FR),Gemeindegebiet,CH
+657,2022,2022,10,Fribourg,1001,La Broye,Gletterens,Gemeindegebiet,CH
+658,2025,2025,10,Fribourg,1001,La Broye,Lully (FR),Gemeindegebiet,CH
+659,2029,2029,10,Fribourg,1001,La Broye,Montagny (FR),Gemeindegebiet,CH
+660,2035,2035,10,Fribourg,1001,La Broye,Nuvilly,Gemeindegebiet,CH
+661,2038,2038,10,Fribourg,1001,La Broye,Prévondavaux,Gemeindegebiet,CH
+662,2041,2041,10,Fribourg,1001,La Broye,Saint-Aubin (FR),Gemeindegebiet,CH
+663,2043,2043,10,Fribourg,1001,La Broye,Sévaz,Gemeindegebiet,CH
+664,2044,2044,10,Fribourg,1001,La Broye,Surpierre,Gemeindegebiet,CH
+665,2045,2045,10,Fribourg,1001,La Broye,Vallon,Gemeindegebiet,CH
+666,2050,2050,10,Fribourg,1001,La Broye,Les Montets,Gemeindegebiet,CH
+667,2051,2051,10,Fribourg,1001,La Broye,Delley-Portalban,Gemeindegebiet,CH
+668,2053,2053,10,Fribourg,1001,La Broye,Belmont-Broye,Gemeindegebiet,CH
+669,2054,2054,10,Fribourg,1001,La Broye,Estavayer,Gemeindegebiet,CH
+670,2055,2055,10,Fribourg,1001,La Broye,Cheyres-Châbles,Gemeindegebiet,CH
+671,2056,2056,10,Fribourg,1001,La Broye,Fétigny-Ménières,Gemeindegebiet,CH
+672,2063,2063,10,Fribourg,1002,La Glâne,Billens-Hennens,Gemeindegebiet,CH
+673,2067,2067,10,Fribourg,1002,La Glâne,Le Châtelard,Gemeindegebiet,CH
+674,2068,2068,10,Fribourg,1002,La Glâne,Châtonnaye,Gemeindegebiet,CH
+675,2079,2079,10,Fribourg,1002,La Glâne,Grangettes,Gemeindegebiet,CH
+676,2086,2086,10,Fribourg,1002,La Glâne,Massonnens,Gemeindegebiet,CH
+677,2087,2087,10,Fribourg,1002,La Glâne,Mézières (FR),Gemeindegebiet,CH
+678,2096,2096,10,Fribourg,1002,La Glâne,Romont (FR),Gemeindegebiet,CH
+679,2097,2097,10,Fribourg,1002,La Glâne,Rue,Gemeindegebiet,CH
+680,2099,2099,10,Fribourg,1002,La Glâne,Siviriez,Gemeindegebiet,CH
+681,2102,2102,10,Fribourg,1002,La Glâne,Ursy,Gemeindegebiet,CH
+682,2113,2113,10,Fribourg,1002,La Glâne,Vuisternens-devant-Romont,Gemeindegebiet,CH
+683,2114,2114,10,Fribourg,1002,La Glâne,Villorsonnens,Gemeindegebiet,CH
+684,2115,2115,10,Fribourg,1002,La Glâne,Torny,Gemeindegebiet,CH
+685,2117,2117,10,Fribourg,1002,La Glâne,Villaz,Gemeindegebiet,CH
+686,2121,2121,10,Fribourg,1003,La Gruyère,Haut-Intyamon,Gemeindegebiet,CH
+687,2122,2122,10,Fribourg,1003,La Gruyère,Pont-en-Ogoz,Gemeindegebiet,CH
+688,2123,2123,10,Fribourg,1003,La Gruyère,Botterens,Gemeindegebiet,CH
+689,2124,2124,10,Fribourg,1003,La Gruyère,Broc,Gemeindegebiet,CH
+690,2125,2125,10,Fribourg,1003,La Gruyère,Bulle,Gemeindegebiet,CH
+691,2128,2128,10,Fribourg,1003,La Gruyère,Châtel-sur-Montsalvens,Gemeindegebiet,CH
+692,2129,2129,10,Fribourg,1003,La Gruyère,Corbières,Gemeindegebiet,CH
+693,2130,2130,10,Fribourg,1003,La Gruyère,Crésuz,Gemeindegebiet,CH
+694,2131,2131,10,Fribourg,1003,La Gruyère,Echarlens,Gemeindegebiet,CH
+695,2134,2134,10,Fribourg,1003,La Gruyère,Grandvillard,Gemeindegebiet,CH
+696,2135,2135,10,Fribourg,1003,La Gruyère,Gruyères,Gemeindegebiet,CH
+697,2137,2137,10,Fribourg,1003,La Gruyère,Hauteville,Gemeindegebiet,CH
+698,2138,2138,10,Fribourg,1003,La Gruyère,Jaun,Gemeindegebiet,CH
+699,2140,2140,10,Fribourg,1003,La Gruyère,Marsens,Gemeindegebiet,CH
+700,2143,2143,10,Fribourg,1003,La Gruyère,Morlon,Gemeindegebiet,CH
+701,2145,2145,10,Fribourg,1003,La Gruyère,Le Pâquier (FR),Gemeindegebiet,CH
+702,2147,2147,10,Fribourg,1003,La Gruyère,Pont-la-Ville,Gemeindegebiet,CH
+703,2148,2148,10,Fribourg,1003,La Gruyère,Riaz,Gemeindegebiet,CH
+704,2149,2149,10,Fribourg,1003,La Gruyère,La Roche,Gemeindegebiet,CH
+705,2152,2152,10,Fribourg,1003,La Gruyère,Sâles,Gemeindegebiet,CH
+706,2153,2153,10,Fribourg,1003,La Gruyère,Sorens,Gemeindegebiet,CH
+707,2155,2155,10,Fribourg,1003,La Gruyère,Vaulruz,Gemeindegebiet,CH
+708,2160,2160,10,Fribourg,1003,La Gruyère,Vuadens,Gemeindegebiet,CH
+709,2162,2162,10,Fribourg,1003,La Gruyère,Bas-Intyamon,Gemeindegebiet,CH
+710,2163,2163,10,Fribourg,1003,La Gruyère,Val-de-Charmey,Gemeindegebiet,CH
+711,2173,2173,10,Fribourg,1004,La Sarine,Autigny,Gemeindegebiet,CH
+712,2174,2174,10,Fribourg,1004,La Sarine,Avry,Gemeindegebiet,CH
+713,2175,2175,10,Fribourg,1004,La Sarine,Belfaux,Gemeindegebiet,CH
+714,2177,2177,10,Fribourg,1004,La Sarine,Chénens,Gemeindegebiet,CH
+715,2183,2183,10,Fribourg,1004,La Sarine,Corminboeuf,Gemeindegebiet,CH
+716,2186,2186,10,Fribourg,1004,La Sarine,Cottens (FR),Gemeindegebiet,CH
+717,2194,2194,10,Fribourg,1004,La Sarine,Ferpicloz,Gemeindegebiet,CH
+718,2196,2196,10,Fribourg,1004,La Sarine,Fribourg,Gemeindegebiet,CH
+719,2197,2197,10,Fribourg,1004,La Sarine,Givisiez,Gemeindegebiet,CH
+720,2198,2198,10,Fribourg,1004,La Sarine,Granges-Paccot,Gemeindegebiet,CH
+721,2206,2206,10,Fribourg,1004,La Sarine,Marly,Gemeindegebiet,CH
+722,2208,2208,10,Fribourg,1004,La Sarine,Matran,Gemeindegebiet,CH
+723,2211,2211,10,Fribourg,1004,La Sarine,Neyruz (FR),Gemeindegebiet,CH
+724,2216,2216,10,Fribourg,1004,La Sarine,Pierrafortscha,Gemeindegebiet,CH
+725,2220,2220,10,Fribourg,1004,La Sarine,Le Mouret,Gemeindegebiet,CH
+726,2226,2226,10,Fribourg,1004,La Sarine,Treyvaux,Gemeindegebiet,CH
+727,2228,2228,10,Fribourg,1004,La Sarine,Villars-sur-Glâne,Gemeindegebiet,CH
+728,2230,2230,10,Fribourg,1004,La Sarine,Villarsel-sur-Marly,Gemeindegebiet,CH
+729,2233,2233,10,Fribourg,1004,La Sarine,Hauterive (FR),Gemeindegebiet,CH
+730,2234,2234,10,Fribourg,1004,La Sarine,La Brillaz,Gemeindegebiet,CH
+731,2235,2235,10,Fribourg,1004,La Sarine,La Sonnaz,Gemeindegebiet,CH
+732,2236,2236,10,Fribourg,1004,La Sarine,Gibloux,Gemeindegebiet,CH
+733,2237,2237,10,Fribourg,1004,La Sarine,Prez,Gemeindegebiet,CH
+734,2238,2238,10,Fribourg,1004,La Sarine,Bois-d'Amont,Gemeindegebiet,CH
+735,2239,2239,10,Fribourg,1004,La Sarine,Grolley-Ponthaux,Gemeindegebiet,CH
+736,2250,2250,10,Fribourg,1005,See,Courgevaux,Gemeindegebiet,CH
+737,2254,2254,10,Fribourg,1005,See,Courtepin,Gemeindegebiet,CH
+738,2257,2257,10,Fribourg,1005,See,Cressier (FR),Gemeindegebiet,CH
+739,2258,2258,10,Fribourg,1005,See,Fräschels,Gemeindegebiet,CH
+740,2261,2261,10,Fribourg,1005,See,Greng,Gemeindegebiet,CH
+741,2262,2262,10,Fribourg,1005,See,Gurmels,Gemeindegebiet,CH
+742,2265,2265,10,Fribourg,1005,See,Kerzers,Gemeindegebiet,CH
+743,2266,2266,10,Fribourg,1005,See,Kleinbösingen,Gemeindegebiet,CH
+744,2271,2271,10,Fribourg,1005,See,Meyriez,Gemeindegebiet,CH
+745,2272,2272,10,Fribourg,1005,See,Misery-Courtion,Gemeindegebiet,CH
+746,2274,2274,10,Fribourg,1005,See,Muntelier,Gemeindegebiet,CH
+747,2275,2275,10,Fribourg,1005,See,Murten,Gemeindegebiet,CH
+748,2276,2276,10,Fribourg,1005,See,Ried bei Kerzers,Gemeindegebiet,CH
+749,2284,2284,10,Fribourg,1005,See,Mont-Vully,Gemeindegebiet,CH
+750,2292,2292,10,Fribourg,1006,Sense,Brünisried,Gemeindegebiet,CH
+751,2293,2293,10,Fribourg,1006,Sense,Düdingen,Gemeindegebiet,CH
+752,2294,2294,10,Fribourg,1006,Sense,Giffers,Gemeindegebiet,CH
+753,2295,2295,10,Fribourg,1006,Sense,Bösingen,Gemeindegebiet,CH
+754,2296,2296,10,Fribourg,1006,Sense,Heitenried,Gemeindegebiet,CH
+755,2299,2299,10,Fribourg,1006,Sense,Plaffeien,Gemeindegebiet,CH
+756,2300,2300,10,Fribourg,1006,Sense,Plasselb,Gemeindegebiet,CH
+757,2301,2301,10,Fribourg,1006,Sense,Rechthalten,Gemeindegebiet,CH
+758,2303,2303,10,Fribourg,1006,Sense,St. Silvester,Gemeindegebiet,CH
+759,2304,2304,10,Fribourg,1006,Sense,St. Ursen,Gemeindegebiet,CH
+760,2305,2305,10,Fribourg,1006,Sense,Schmitten (FR),Gemeindegebiet,CH
+761,2306,2306,10,Fribourg,1006,Sense,Tafers,Gemeindegebiet,CH
+762,2307,2307,10,Fribourg,1006,Sense,Tentlingen,Gemeindegebiet,CH
+763,2308,2308,10,Fribourg,1006,Sense,Ueberstorf,Gemeindegebiet,CH
+764,2309,2309,10,Fribourg,1006,Sense,Wünnewil-Flamatt,Gemeindegebiet,CH
+765,2321,2321,10,Fribourg,1007,La Veveyse,Attalens,Gemeindegebiet,CH
+766,2323,2323,10,Fribourg,1007,La Veveyse,Bossonnens,Gemeindegebiet,CH
+767,2325,2325,10,Fribourg,1007,La Veveyse,Châtel-Saint-Denis,Gemeindegebiet,CH
+768,2328,2328,10,Fribourg,1007,La Veveyse,Granges (Veveyse),Gemeindegebiet,CH
+769,2333,2333,10,Fribourg,1007,La Veveyse,Remaufens,Gemeindegebiet,CH
+770,2335,2335,10,Fribourg,1007,La Veveyse,Saint-Martin (FR),Gemeindegebiet,CH
+771,2336,2336,10,Fribourg,1007,La Veveyse,Semsales,Gemeindegebiet,CH
+772,2337,2337,10,Fribourg,1007,La Veveyse,Le Flon,Gemeindegebiet,CH
+773,2338,2338,10,Fribourg,1007,La Veveyse,La Verrerie,Gemeindegebiet,CH
+774,2391,2391,10,Fribourg,1005,See,Staatswald Galm,Kantonsgebiet,CH
+775,2401,2401,11,Solothurn,1101,Gäu,Egerkingen,Gemeindegebiet,CH
+776,2402,2402,11,Solothurn,1101,Gäu,Härkingen,Gemeindegebiet,CH
+777,2403,2403,11,Solothurn,1101,Gäu,Kestenholz,Gemeindegebiet,CH
+778,2404,2404,11,Solothurn,1101,Gäu,Neuendorf,Gemeindegebiet,CH
+779,2405,2405,11,Solothurn,1101,Gäu,Niederbuchsiten,Gemeindegebiet,CH
+780,2406,2406,11,Solothurn,1101,Gäu,Oberbuchsiten,Gemeindegebiet,CH
+781,2407,2407,11,Solothurn,1101,Gäu,Oensingen,Gemeindegebiet,CH
+782,2408,2408,11,Solothurn,1101,Gäu,Wolfwil,Gemeindegebiet,CH
+783,2421,2421,11,Solothurn,1102,Thal,Aedermannsdorf,Gemeindegebiet,CH
+784,2422,2422,11,Solothurn,1102,Thal,Balsthal,Gemeindegebiet,CH
+785,2424,2424,11,Solothurn,1102,Thal,Herbetswil,Gemeindegebiet,CH
+786,2425,2425,11,Solothurn,1102,Thal,Holderbank (SO),Gemeindegebiet,CH
+787,2426,2426,11,Solothurn,1102,Thal,Laupersdorf,Gemeindegebiet,CH
+788,2427,2427,11,Solothurn,1102,Thal,Matzendorf,Gemeindegebiet,CH
+789,2428,2428,11,Solothurn,1102,Thal,Mümliswil-Ramiswil,Gemeindegebiet,CH
+790,2430,2430,11,Solothurn,1102,Thal,Welschenrohr-Gänsbrunnen,Gemeindegebiet,CH
+791,2445,2445,11,Solothurn,1103,Bucheggberg,Biezwil,Gemeindegebiet,CH
+792,2455,2455,11,Solothurn,1103,Bucheggberg,Lüterkofen-Ichertswil,Gemeindegebiet,CH
+793,2457,2457,11,Solothurn,1103,Bucheggberg,Messen,Gemeindegebiet,CH
+794,2461,2461,11,Solothurn,1103,Bucheggberg,Schnottwil,Gemeindegebiet,CH
+795,2463,2463,11,Solothurn,1103,Bucheggberg,Unterramsern,Gemeindegebiet,CH
+796,2464,2464,11,Solothurn,1103,Bucheggberg,Lüsslingen-Nennigkofen,Gemeindegebiet,CH
+797,2465,2465,11,Solothurn,1103,Bucheggberg,Buchegg,Gemeindegebiet,CH
+798,2471,2471,11,Solothurn,1104,Dorneck,Bättwil,Gemeindegebiet,CH
+799,2472,2472,11,Solothurn,1104,Dorneck,Büren (SO),Gemeindegebiet,CH
+800,2473,2473,11,Solothurn,1104,Dorneck,Dornach,Gemeindegebiet,CH
+801,2474,2474,11,Solothurn,1104,Dorneck,Gempen,Gemeindegebiet,CH
+802,2475,2475,11,Solothurn,1104,Dorneck,Hochwald,Gemeindegebiet,CH
+803,2476,2476,11,Solothurn,1104,Dorneck,Hofstetten-Flüh,Gemeindegebiet,CH
+804,2477,2477,11,Solothurn,1104,Dorneck,Metzerlen-Mariastein,Gemeindegebiet,CH
+805,2478,2478,11,Solothurn,1104,Dorneck,Nuglar-St. Pantaleon,Gemeindegebiet,CH
+806,2479,2479,11,Solothurn,1104,Dorneck,Rodersdorf,Gemeindegebiet,CH
+807,2480,2480,11,Solothurn,1104,Dorneck,Seewen,Gemeindegebiet,CH
+808,2481,2481,11,Solothurn,1104,Dorneck,Witterswil,Gemeindegebiet,CH
+809,2491,2491,11,Solothurn,1105,Gösgen,Hauenstein-Ifenthal,Gemeindegebiet,CH
+810,2492,2492,11,Solothurn,1105,Gösgen,Kienberg,Gemeindegebiet,CH
+811,2493,2493,11,Solothurn,1105,Gösgen,Lostorf,Gemeindegebiet,CH
+812,2495,2495,11,Solothurn,1105,Gösgen,Niedergösgen,Gemeindegebiet,CH
+813,2497,2497,11,Solothurn,1105,Gösgen,Obergösgen,Gemeindegebiet,CH
+814,2499,2499,11,Solothurn,1105,Gösgen,Stüsslingen,Gemeindegebiet,CH
+815,2500,2500,11,Solothurn,1105,Gösgen,Trimbach,Gemeindegebiet,CH
+816,2501,2501,11,Solothurn,1105,Gösgen,Winznau,Gemeindegebiet,CH
+817,2502,2502,11,Solothurn,1105,Gösgen,Wisen (SO),Gemeindegebiet,CH
+818,2503,2503,11,Solothurn,1105,Gösgen,Erlinsbach (SO),Gemeindegebiet,CH
+819,2511,2511,11,Solothurn,1106,Wasseramt,Aeschi (SO),Gemeindegebiet,CH
+820,2513,2513,11,Solothurn,1106,Wasseramt,Biberist,Gemeindegebiet,CH
+821,2514,2514,11,Solothurn,1106,Wasseramt,Bolken,Gemeindegebiet,CH
+822,2516,2516,11,Solothurn,1106,Wasseramt,Deitingen,Gemeindegebiet,CH
+823,2517,2517,11,Solothurn,1106,Wasseramt,Derendingen,Gemeindegebiet,CH
+824,2518,2518,11,Solothurn,1106,Wasseramt,Etziken,Gemeindegebiet,CH
+825,2519,2519,11,Solothurn,1106,Wasseramt,Gerlafingen,Gemeindegebiet,CH
+826,2523,2523,11,Solothurn,1106,Wasseramt,Horriwil,Gemeindegebiet,CH
+827,2524,2524,11,Solothurn,1106,Wasseramt,Hüniken,Gemeindegebiet,CH
+828,2525,2525,11,Solothurn,1106,Wasseramt,Kriegstetten,Gemeindegebiet,CH
+829,2526,2526,11,Solothurn,1106,Wasseramt,Lohn-Ammannsegg,Gemeindegebiet,CH
+830,2527,2527,11,Solothurn,1106,Wasseramt,Luterbach,Gemeindegebiet,CH
+831,2528,2528,11,Solothurn,1106,Wasseramt,Obergerlafingen,Gemeindegebiet,CH
+832,2530,2530,11,Solothurn,1106,Wasseramt,Recherswil,Gemeindegebiet,CH
+833,2532,2532,11,Solothurn,1106,Wasseramt,Subingen,Gemeindegebiet,CH
+834,2534,2534,11,Solothurn,1106,Wasseramt,Zuchwil,Gemeindegebiet,CH
+835,2535,2535,11,Solothurn,1106,Wasseramt,Drei Höfe,Gemeindegebiet,CH
+836,2541,2541,11,Solothurn,1107,Lebern,Balm bei Günsberg,Gemeindegebiet,CH
+837,2542,2542,11,Solothurn,1107,Lebern,Bellach,Gemeindegebiet,CH
+838,2543,2543,11,Solothurn,1107,Lebern,Bettlach,Gemeindegebiet,CH
+839,2544,2544,11,Solothurn,1107,Lebern,Feldbrunnen-St. Niklaus,Gemeindegebiet,CH
+840,2545,2545,11,Solothurn,1107,Lebern,Flumenthal,Gemeindegebiet,CH
+841,2546,2546,11,Solothurn,1107,Lebern,Grenchen,Gemeindegebiet,CH
+842,2547,2547,11,Solothurn,1107,Lebern,Günsberg,Gemeindegebiet,CH
+843,2548,2548,11,Solothurn,1107,Lebern,Hubersdorf,Gemeindegebiet,CH
+844,2549,2549,11,Solothurn,1107,Lebern,Kammersrohr,Gemeindegebiet,CH
+845,2550,2550,11,Solothurn,1107,Lebern,Langendorf,Gemeindegebiet,CH
+846,2551,2551,11,Solothurn,1107,Lebern,Lommiswil,Gemeindegebiet,CH
+847,2553,2553,11,Solothurn,1107,Lebern,Oberdorf (SO),Gemeindegebiet,CH
+848,2554,2554,11,Solothurn,1107,Lebern,Riedholz,Gemeindegebiet,CH
+849,2555,2555,11,Solothurn,1107,Lebern,Rüttenen,Gemeindegebiet,CH
+850,2556,2556,11,Solothurn,1107,Lebern,Selzach,Gemeindegebiet,CH
+851,2571,2571,11,Solothurn,1108,Olten,Boningen,Gemeindegebiet,CH
+852,2572,2572,11,Solothurn,1108,Olten,Däniken,Gemeindegebiet,CH
+853,2573,2573,11,Solothurn,1108,Olten,Dulliken,Gemeindegebiet,CH
+854,2574,2574,11,Solothurn,1108,Olten,Eppenberg-Wöschnau,Gemeindegebiet,CH
+855,2575,2575,11,Solothurn,1108,Olten,Fulenbach,Gemeindegebiet,CH
+856,2576,2576,11,Solothurn,1108,Olten,Gretzenbach,Gemeindegebiet,CH
+857,2578,2578,11,Solothurn,1108,Olten,Gunzgen,Gemeindegebiet,CH
+858,2579,2579,11,Solothurn,1108,Olten,Hägendorf,Gemeindegebiet,CH
+859,2580,2580,11,Solothurn,1108,Olten,Kappel (SO),Gemeindegebiet,CH
+860,2581,2581,11,Solothurn,1108,Olten,Olten,Gemeindegebiet,CH
+861,2582,2582,11,Solothurn,1108,Olten,Rickenbach (SO),Gemeindegebiet,CH
+862,2583,2583,11,Solothurn,1108,Olten,Schönenwerd,Gemeindegebiet,CH
+863,2584,2584,11,Solothurn,1108,Olten,Starrkirch-Wil,Gemeindegebiet,CH
+864,2585,2585,11,Solothurn,1108,Olten,Walterswil (SO),Gemeindegebiet,CH
+865,2586,2586,11,Solothurn,1108,Olten,Wangen bei Olten,Gemeindegebiet,CH
+866,2601,2601,11,Solothurn,1109,Solothurn,Solothurn,Gemeindegebiet,CH
+867,2611,2611,11,Solothurn,1110,Thierstein,Bärschwil,Gemeindegebiet,CH
+868,2612,2612,11,Solothurn,1110,Thierstein,Beinwil (SO),Gemeindegebiet,CH
+869,2613,2613,11,Solothurn,1110,Thierstein,Breitenbach,Gemeindegebiet,CH
+870,2614,2614,11,Solothurn,1110,Thierstein,Büsserach,Gemeindegebiet,CH
+871,2615,2615,11,Solothurn,1110,Thierstein,Erschwil,Gemeindegebiet,CH
+872,2616,2616,11,Solothurn,1110,Thierstein,Fehren,Gemeindegebiet,CH
+873,2617,2617,11,Solothurn,1110,Thierstein,Grindel,Gemeindegebiet,CH
+874,2618,2618,11,Solothurn,1110,Thierstein,Himmelried,Gemeindegebiet,CH
+875,2619,2619,11,Solothurn,1110,Thierstein,Kleinlützel,Gemeindegebiet,CH
+876,2620,2620,11,Solothurn,1110,Thierstein,Meltingen,Gemeindegebiet,CH
+877,2621,2621,11,Solothurn,1110,Thierstein,Nunningen,Gemeindegebiet,CH
+878,2622,2622,11,Solothurn,1110,Thierstein,Zullwil,Gemeindegebiet,CH
+879,2701,2701,12,Basel-Stadt,,,Basel,Gemeindegebiet,CH
+880,2702,2702,12,Basel-Stadt,,,Bettingen,Gemeindegebiet,CH
+881,2703,2703,12,Basel-Stadt,,,Riehen,Gemeindegebiet,CH
+882,2761,2761,13,Basel-Landschaft,1301,Arlesheim,Aesch (BL),Gemeindegebiet,CH
+883,2762,2762,13,Basel-Landschaft,1301,Arlesheim,Allschwil,Gemeindegebiet,CH
+884,2763,2763,13,Basel-Landschaft,1301,Arlesheim,Arlesheim,Gemeindegebiet,CH
+885,2764,2764,13,Basel-Landschaft,1301,Arlesheim,Biel-Benken,Gemeindegebiet,CH
+886,2765,2765,13,Basel-Landschaft,1301,Arlesheim,Binningen,Gemeindegebiet,CH
+887,2766,2766,13,Basel-Landschaft,1301,Arlesheim,Birsfelden,Gemeindegebiet,CH
+888,2767,2767,13,Basel-Landschaft,1301,Arlesheim,Bottmingen,Gemeindegebiet,CH
+889,2768,2768,13,Basel-Landschaft,1301,Arlesheim,Ettingen,Gemeindegebiet,CH
+890,2769,2769,13,Basel-Landschaft,1301,Arlesheim,Münchenstein,Gemeindegebiet,CH
+891,2770,2770,13,Basel-Landschaft,1301,Arlesheim,Muttenz,Gemeindegebiet,CH
+892,2771,2771,13,Basel-Landschaft,1301,Arlesheim,Oberwil (BL),Gemeindegebiet,CH
+893,2772,2772,13,Basel-Landschaft,1301,Arlesheim,Pfeffingen,Gemeindegebiet,CH
+894,2773,2773,13,Basel-Landschaft,1301,Arlesheim,Reinach (BL),Gemeindegebiet,CH
+895,2774,2774,13,Basel-Landschaft,1301,Arlesheim,Schönenbuch,Gemeindegebiet,CH
+896,2775,2775,13,Basel-Landschaft,1301,Arlesheim,Therwil,Gemeindegebiet,CH
+897,2781,2781,13,Basel-Landschaft,1302,Laufen,Blauen,Gemeindegebiet,CH
+898,2782,2782,13,Basel-Landschaft,1302,Laufen,Brislach,Gemeindegebiet,CH
+899,2783,2783,13,Basel-Landschaft,1302,Laufen,Burg im Leimental,Gemeindegebiet,CH
+900,2784,2784,13,Basel-Landschaft,1302,Laufen,Dittingen,Gemeindegebiet,CH
+901,2785,2785,13,Basel-Landschaft,1302,Laufen,Duggingen,Gemeindegebiet,CH
+902,2786,2786,13,Basel-Landschaft,1302,Laufen,Grellingen,Gemeindegebiet,CH
+903,2787,2787,13,Basel-Landschaft,1302,Laufen,Laufen,Gemeindegebiet,CH
+904,2788,2788,13,Basel-Landschaft,1302,Laufen,Liesberg,Gemeindegebiet,CH
+905,2789,2789,13,Basel-Landschaft,1302,Laufen,Nenzlingen,Gemeindegebiet,CH
+906,2790,2790,13,Basel-Landschaft,1302,Laufen,Roggenburg,Gemeindegebiet,CH
+907,2791,2791,13,Basel-Landschaft,1302,Laufen,Röschenz,Gemeindegebiet,CH
+908,2792,2792,13,Basel-Landschaft,1302,Laufen,Wahlen,Gemeindegebiet,CH
+909,2793,2793,13,Basel-Landschaft,1302,Laufen,Zwingen,Gemeindegebiet,CH
+910,2821,2821,13,Basel-Landschaft,1303,Liestal,Arisdorf,Gemeindegebiet,CH
+911,2822,2822,13,Basel-Landschaft,1303,Liestal,Augst,Gemeindegebiet,CH
+912,2823,2823,13,Basel-Landschaft,1303,Liestal,Bubendorf,Gemeindegebiet,CH
+913,2824,2824,13,Basel-Landschaft,1303,Liestal,Frenkendorf,Gemeindegebiet,CH
+914,2825,2825,13,Basel-Landschaft,1303,Liestal,Füllinsdorf,Gemeindegebiet,CH
+915,2826,2826,13,Basel-Landschaft,1303,Liestal,Giebenach,Gemeindegebiet,CH
+916,2827,2827,13,Basel-Landschaft,1303,Liestal,Hersberg,Gemeindegebiet,CH
+917,2828,2828,13,Basel-Landschaft,1303,Liestal,Lausen,Gemeindegebiet,CH
+918,2829,2829,13,Basel-Landschaft,1303,Liestal,Liestal,Gemeindegebiet,CH
+919,2830,2830,13,Basel-Landschaft,1303,Liestal,Lupsingen,Gemeindegebiet,CH
+920,2831,2831,13,Basel-Landschaft,1303,Liestal,Pratteln,Gemeindegebiet,CH
+921,2832,2832,13,Basel-Landschaft,1303,Liestal,Ramlinsburg,Gemeindegebiet,CH
+922,2833,2833,13,Basel-Landschaft,1303,Liestal,Seltisberg,Gemeindegebiet,CH
+923,2834,2834,13,Basel-Landschaft,1303,Liestal,Ziefen,Gemeindegebiet,CH
+924,2841,2841,13,Basel-Landschaft,1304,Sissach,Anwil,Gemeindegebiet,CH
+925,2842,2842,13,Basel-Landschaft,1304,Sissach,Böckten,Gemeindegebiet,CH
+926,2843,2843,13,Basel-Landschaft,1304,Sissach,Buckten,Gemeindegebiet,CH
+927,2844,2844,13,Basel-Landschaft,1304,Sissach,Buus,Gemeindegebiet,CH
+928,2845,2845,13,Basel-Landschaft,1304,Sissach,Diepflingen,Gemeindegebiet,CH
+929,2846,2846,13,Basel-Landschaft,1304,Sissach,Gelterkinden,Gemeindegebiet,CH
+930,2847,2847,13,Basel-Landschaft,1304,Sissach,Häfelfingen,Gemeindegebiet,CH
+931,2848,2848,13,Basel-Landschaft,1304,Sissach,Hemmiken,Gemeindegebiet,CH
+932,2849,2849,13,Basel-Landschaft,1304,Sissach,Itingen,Gemeindegebiet,CH
+933,2850,2850,13,Basel-Landschaft,1304,Sissach,Känerkinden,Gemeindegebiet,CH
+934,2851,2851,13,Basel-Landschaft,1304,Sissach,Kilchberg (BL),Gemeindegebiet,CH
+935,2852,2852,13,Basel-Landschaft,1304,Sissach,Läufelfingen,Gemeindegebiet,CH
+936,2853,2853,13,Basel-Landschaft,1304,Sissach,Maisprach,Gemeindegebiet,CH
+937,2854,2854,13,Basel-Landschaft,1304,Sissach,Nusshof,Gemeindegebiet,CH
+938,2855,2855,13,Basel-Landschaft,1304,Sissach,Oltingen,Gemeindegebiet,CH
+939,2856,2856,13,Basel-Landschaft,1304,Sissach,Ormalingen,Gemeindegebiet,CH
+940,2857,2857,13,Basel-Landschaft,1304,Sissach,Rickenbach (BL),Gemeindegebiet,CH
+941,2858,2858,13,Basel-Landschaft,1304,Sissach,Rothenfluh,Gemeindegebiet,CH
+942,2859,2859,13,Basel-Landschaft,1304,Sissach,Rümlingen,Gemeindegebiet,CH
+943,2860,2860,13,Basel-Landschaft,1304,Sissach,Rünenberg,Gemeindegebiet,CH
+944,2861,2861,13,Basel-Landschaft,1304,Sissach,Sissach,Gemeindegebiet,CH
+945,2862,2862,13,Basel-Landschaft,1304,Sissach,Tecknau,Gemeindegebiet,CH
+946,2863,2863,13,Basel-Landschaft,1304,Sissach,Tenniken,Gemeindegebiet,CH
+947,2864,2864,13,Basel-Landschaft,1304,Sissach,Thürnen,Gemeindegebiet,CH
+948,2865,2865,13,Basel-Landschaft,1304,Sissach,Wenslingen,Gemeindegebiet,CH
+949,2866,2866,13,Basel-Landschaft,1304,Sissach,Wintersingen,Gemeindegebiet,CH
+950,2867,2867,13,Basel-Landschaft,1304,Sissach,Wittinsburg,Gemeindegebiet,CH
+951,2868,2868,13,Basel-Landschaft,1304,Sissach,Zeglingen,Gemeindegebiet,CH
+952,2869,2869,13,Basel-Landschaft,1304,Sissach,Zunzgen,Gemeindegebiet,CH
+953,2881,2881,13,Basel-Landschaft,1305,Waldenburg,Arboldswil,Gemeindegebiet,CH
+954,2882,2882,13,Basel-Landschaft,1305,Waldenburg,Bennwil,Gemeindegebiet,CH
+955,2883,2883,13,Basel-Landschaft,1305,Waldenburg,Bretzwil,Gemeindegebiet,CH
+956,2884,2884,13,Basel-Landschaft,1305,Waldenburg,Diegten,Gemeindegebiet,CH
+957,2885,2885,13,Basel-Landschaft,1305,Waldenburg,Eptingen,Gemeindegebiet,CH
+958,2886,2886,13,Basel-Landschaft,1305,Waldenburg,Hölstein,Gemeindegebiet,CH
+959,2887,2887,13,Basel-Landschaft,1305,Waldenburg,Lampenberg,Gemeindegebiet,CH
+960,2888,2888,13,Basel-Landschaft,1305,Waldenburg,Langenbruck,Gemeindegebiet,CH
+961,2889,2889,13,Basel-Landschaft,1305,Waldenburg,Lauwil,Gemeindegebiet,CH
+962,2890,2890,13,Basel-Landschaft,1305,Waldenburg,Liedertswil,Gemeindegebiet,CH
+963,2891,2891,13,Basel-Landschaft,1305,Waldenburg,Niederdorf,Gemeindegebiet,CH
+964,2892,2892,13,Basel-Landschaft,1305,Waldenburg,Oberdorf (BL),Gemeindegebiet,CH
+965,2893,2893,13,Basel-Landschaft,1305,Waldenburg,Reigoldswil,Gemeindegebiet,CH
+966,2894,2894,13,Basel-Landschaft,1305,Waldenburg,Titterten,Gemeindegebiet,CH
+967,2895,2895,13,Basel-Landschaft,1305,Waldenburg,Waldenburg,Gemeindegebiet,CH
+968,2901,2901,14,Schaffhausen,1401,Oberklettgau,Gächlingen,Gemeindegebiet,CH
+969,2903,2903,14,Schaffhausen,1401,Oberklettgau,Löhningen,Gemeindegebiet,CH
+970,2904,2904,14,Schaffhausen,1401,Oberklettgau,Neunkirch,Gemeindegebiet,CH
+971,2914,2914,14,Schaffhausen,1402,Reiat,Büttenhardt,Gemeindegebiet,CH
+972,2915,2915,14,Schaffhausen,1402,Reiat,Dörflingen,Gemeindegebiet,CH
+973,2917,2917,14,Schaffhausen,1402,Reiat,Lohn (SH),Gemeindegebiet,CH
+974,2919,2919,14,Schaffhausen,1402,Reiat,Stetten (SH),Gemeindegebiet,CH
+975,2920,2920,14,Schaffhausen,1402,Reiat,Thayngen,Gemeindegebiet,CH
+976,2931,2931,14,Schaffhausen,1403,Schaffhausen,Bargen (SH),Gemeindegebiet,CH
+977,2932,2932,14,Schaffhausen,1403,Schaffhausen,Beringen,Gemeindegebiet,CH
+978,2933,2933,14,Schaffhausen,1403,Schaffhausen,Buchberg,Gemeindegebiet,CH
+979,2936,2936,14,Schaffhausen,1403,Schaffhausen,Merishausen,Gemeindegebiet,CH
+980,2937,2937,14,Schaffhausen,1403,Schaffhausen,Neuhausen am Rheinfall,Gemeindegebiet,CH
+981,2938,2938,14,Schaffhausen,1403,Schaffhausen,Rüdlingen,Gemeindegebiet,CH
+982,2939,2939,14,Schaffhausen,1403,Schaffhausen,Schaffhausen,Gemeindegebiet,CH
+983,2951,2951,14,Schaffhausen,1404,Schleitheim,Beggingen,Gemeindegebiet,CH
+984,2952,2952,14,Schaffhausen,1404,Schleitheim,Schleitheim,Gemeindegebiet,CH
+985,2953,2953,14,Schaffhausen,1404,Schleitheim,Siblingen,Gemeindegebiet,CH
+986,2961,2961,14,Schaffhausen,1405,Stein,Buch (SH),Gemeindegebiet,CH
+987,2962,2962,14,Schaffhausen,1405,Stein,Hemishofen,Gemeindegebiet,CH
+988,2963,2963,14,Schaffhausen,1405,Stein,Ramsen,Gemeindegebiet,CH
+989,2964,2964,14,Schaffhausen,1405,Stein,Stein am Rhein,Gemeindegebiet,CH
+990,2971,2971,14,Schaffhausen,1406,Unterklettgau,Hallau,Gemeindegebiet,CH
+991,2972,2972,14,Schaffhausen,1406,Unterklettgau,Oberhallau,Gemeindegebiet,CH
+992,2973,2973,14,Schaffhausen,1406,Unterklettgau,Trasadingen,Gemeindegebiet,CH
+993,2974,2974,14,Schaffhausen,1406,Unterklettgau,Wilchingen,Gemeindegebiet,CH
+994,3001,3001,15,Appenzell Ausserrhoden,1501,Hinterland,Herisau,Gemeindegebiet,CH
+995,3002,3002,15,Appenzell Ausserrhoden,1501,Hinterland,Hundwil,Gemeindegebiet,CH
+996,3003,3003,15,Appenzell Ausserrhoden,1501,Hinterland,Schönengrund,Gemeindegebiet,CH
+997,3004,3004,15,Appenzell Ausserrhoden,1501,Hinterland,Schwellbrunn,Gemeindegebiet,CH
+998,3005,3005,15,Appenzell Ausserrhoden,1501,Hinterland,Stein (AR),Gemeindegebiet,CH
+999,3006,3006,15,Appenzell Ausserrhoden,1501,Hinterland,Urnäsch,Gemeindegebiet,CH
+1000,3007,3007,15,Appenzell Ausserrhoden,1501,Hinterland,Waldstatt,Gemeindegebiet,CH
+1001,3021,3021,15,Appenzell Ausserrhoden,1502,Mittelland,Bühler,Gemeindegebiet,CH
+1002,3022,3022,15,Appenzell Ausserrhoden,1502,Mittelland,Gais,Gemeindegebiet,CH
+1003,3023,3023,15,Appenzell Ausserrhoden,1502,Mittelland,Speicher,Gemeindegebiet,CH
+1004,3024,3024,15,Appenzell Ausserrhoden,1502,Mittelland,Teufen (AR),Gemeindegebiet,CH
+1005,3025,3025,15,Appenzell Ausserrhoden,1502,Mittelland,Trogen,Gemeindegebiet,CH
+1006,3031,3031,15,Appenzell Ausserrhoden,1503,Vorderland,Grub (AR),Gemeindegebiet,CH
+1007,3032,3032,15,Appenzell Ausserrhoden,1503,Vorderland,Heiden,Gemeindegebiet,CH
+1008,3033,3033,15,Appenzell Ausserrhoden,1503,Vorderland,Lutzenberg,Gemeindegebiet,CH
+1009,3034,3034,15,Appenzell Ausserrhoden,1503,Vorderland,Rehetobel,Gemeindegebiet,CH
+1010,3035,3035,15,Appenzell Ausserrhoden,1503,Vorderland,Reute (AR),Gemeindegebiet,CH
+1011,3036,3036,15,Appenzell Ausserrhoden,1503,Vorderland,Wald (AR),Gemeindegebiet,CH
+1012,3037,3037,15,Appenzell Ausserrhoden,1503,Vorderland,Walzenhausen,Gemeindegebiet,CH
+1013,3038,3038,15,Appenzell Ausserrhoden,1503,Vorderland,Wolfhalden,Gemeindegebiet,CH
+1014,3101,3101,16,Appenzell Innerrhoden,,,Appenzell,Gemeindegebiet,CH
+1015,3102,3102,16,Appenzell Innerrhoden,,,Gonten,Gemeindegebiet,CH
+1016,3104,3104,16,Appenzell Innerrhoden,,,Schlatt-Haslen,Gemeindegebiet,CH
+1017,3111,3111,16,Appenzell Innerrhoden,,,Oberegg,Gemeindegebiet,CH
+1018,3112,3112,16,Appenzell Innerrhoden,,,Schwende-Rüte,Gemeindegebiet,CH
+1019,3201,3201,17,St. Gallen,1721,St. Gallen,Häggenschwil,Gemeindegebiet,CH
+1020,3202,3202,17,St. Gallen,1721,St. Gallen,Muolen,Gemeindegebiet,CH
+1021,3203,3203,17,St. Gallen,1721,St. Gallen,St. Gallen,Gemeindegebiet,CH
+1022,3204,3204,17,St. Gallen,1721,St. Gallen,Wittenbach,Gemeindegebiet,CH
+1023,3211,3211,17,St. Gallen,1722,Rorschach,Berg (SG),Gemeindegebiet,CH
+1024,3212,3212,17,St. Gallen,1721,St. Gallen,Eggersriet,Gemeindegebiet,CH
+1025,3213,3213,17,St. Gallen,1722,Rorschach,Goldach,Gemeindegebiet,CH
+1026,3214,3214,17,St. Gallen,1722,Rorschach,Mörschwil,Gemeindegebiet,CH
+1027,3215,3215,17,St. Gallen,1722,Rorschach,Rorschach,Gemeindegebiet,CH
+1028,3216,3216,17,St. Gallen,1722,Rorschach,Rorschacherberg,Gemeindegebiet,CH
+1029,3217,3217,17,St. Gallen,1722,Rorschach,Steinach,Gemeindegebiet,CH
+1030,3218,3218,17,St. Gallen,1722,Rorschach,Tübach,Gemeindegebiet,CH
+1031,3219,3219,17,St. Gallen,1722,Rorschach,Untereggen,Gemeindegebiet,CH
+1032,3231,3231,17,St. Gallen,1723,Rheintal,Au (SG),Gemeindegebiet,CH
+1033,3232,3232,17,St. Gallen,1723,Rheintal,Balgach,Gemeindegebiet,CH
+1034,3233,3233,17,St. Gallen,1723,Rheintal,Berneck,Gemeindegebiet,CH
+1035,3234,3234,17,St. Gallen,1723,Rheintal,Diepoldsau,Gemeindegebiet,CH
+1036,3235,3235,17,St. Gallen,1723,Rheintal,Rheineck,Gemeindegebiet,CH
+1037,3236,3236,17,St. Gallen,1723,Rheintal,St. Margrethen,Gemeindegebiet,CH
+1038,3237,3237,17,St. Gallen,1722,Rorschach,Thal,Gemeindegebiet,CH
+1039,3238,3238,17,St. Gallen,1723,Rheintal,Widnau,Gemeindegebiet,CH
+1040,3251,3251,17,St. Gallen,1723,Rheintal,Altstätten,Gemeindegebiet,CH
+1041,3252,3252,17,St. Gallen,1723,Rheintal,Eichberg,Gemeindegebiet,CH
+1042,3253,3253,17,St. Gallen,1723,Rheintal,Marbach (SG),Gemeindegebiet,CH
+1043,3254,3254,17,St. Gallen,1723,Rheintal,Oberriet (SG),Gemeindegebiet,CH
+1044,3255,3255,17,St. Gallen,1723,Rheintal,Rebstein,Gemeindegebiet,CH
+1045,3256,3256,17,St. Gallen,1723,Rheintal,Rüthi (SG),Gemeindegebiet,CH
+1046,3271,3271,17,St. Gallen,1724,Werdenberg,Buchs (SG),Gemeindegebiet,CH
+1047,3272,3272,17,St. Gallen,1724,Werdenberg,Gams,Gemeindegebiet,CH
+1048,3273,3273,17,St. Gallen,1724,Werdenberg,Grabs,Gemeindegebiet,CH
+1049,3274,3274,17,St. Gallen,1724,Werdenberg,Sennwald,Gemeindegebiet,CH
+1050,3275,3275,17,St. Gallen,1724,Werdenberg,Sevelen,Gemeindegebiet,CH
+1051,3276,3276,17,St. Gallen,1724,Werdenberg,Wartau,Gemeindegebiet,CH
+1052,3291,3291,17,St. Gallen,1725,Sarganserland,Bad Ragaz,Gemeindegebiet,CH
+1053,3292,3292,17,St. Gallen,1725,Sarganserland,Flums,Gemeindegebiet,CH
+1054,3293,3293,17,St. Gallen,1725,Sarganserland,Mels,Gemeindegebiet,CH
+1055,3294,3294,17,St. Gallen,1725,Sarganserland,Pfäfers,Gemeindegebiet,CH
+1056,3295,3295,17,St. Gallen,1725,Sarganserland,Quarten,Gemeindegebiet,CH
+1057,3296,3296,17,St. Gallen,1725,Sarganserland,Sargans,Gemeindegebiet,CH
+1058,3297,3297,17,St. Gallen,1725,Sarganserland,Vilters-Wangs,Gemeindegebiet,CH
+1059,3298,3298,17,St. Gallen,1725,Sarganserland,Walenstadt,Gemeindegebiet,CH
+1060,3311,3311,17,St. Gallen,1726,See-Gaster,Amden,Gemeindegebiet,CH
+1061,3312,3312,17,St. Gallen,1726,See-Gaster,Benken (SG),Gemeindegebiet,CH
+1062,3313,3313,17,St. Gallen,1726,See-Gaster,Kaltbrunn,Gemeindegebiet,CH
+1063,3315,3315,17,St. Gallen,1726,See-Gaster,Schänis,Gemeindegebiet,CH
+1064,3316,3316,17,St. Gallen,1726,See-Gaster,Weesen,Gemeindegebiet,CH
+1065,3338,3338,17,St. Gallen,1726,See-Gaster,Schmerikon,Gemeindegebiet,CH
+1066,3339,3339,17,St. Gallen,1726,See-Gaster,Uznach,Gemeindegebiet,CH
+1067,3340,3340,17,St. Gallen,1726,See-Gaster,Rapperswil-Jona,Gemeindegebiet,CH
+1068,3341,3341,17,St. Gallen,1726,See-Gaster,Gommiswald,Gemeindegebiet,CH
+1069,3342,3342,17,St. Gallen,1726,See-Gaster,Eschenbach (SG),Gemeindegebiet,CH
+1070,3352,3352,17,St. Gallen,1727,Toggenburg,Ebnat-Kappel,Gemeindegebiet,CH
+1071,3359,3359,17,St. Gallen,1727,Toggenburg,Wildhaus-Alt St. Johann,Gemeindegebiet,CH
+1072,3360,3360,17,St. Gallen,1727,Toggenburg,Nesslau,Gemeindegebiet,CH
+1073,3374,3374,17,St. Gallen,1727,Toggenburg,Lichtensteig,Gemeindegebiet,CH
+1074,3379,3379,17,St. Gallen,1727,Toggenburg,Wattwil,Gemeindegebiet,CH
+1075,3392,3392,17,St. Gallen,1727,Toggenburg,Kirchberg (SG),Gemeindegebiet,CH
+1076,3393,3393,17,St. Gallen,1727,Toggenburg,Lütisburg,Gemeindegebiet,CH
+1077,3394,3394,17,St. Gallen,1727,Toggenburg,Mosnang,Gemeindegebiet,CH
+1078,3395,3395,17,St. Gallen,1727,Toggenburg,Bütschwil-Ganterschwil,Gemeindegebiet,CH
+1079,3396,3396,17,St. Gallen,1727,Toggenburg,Neckertal,Gemeindegebiet,CH
+1080,3401,3401,17,St. Gallen,1728,Wil,Degersheim,Gemeindegebiet,CH
+1081,3402,3402,17,St. Gallen,1728,Wil,Flawil,Gemeindegebiet,CH
+1082,3405,3405,17,St. Gallen,1728,Wil,Jonschwil,Gemeindegebiet,CH
+1083,3407,3407,17,St. Gallen,1728,Wil,Oberuzwil,Gemeindegebiet,CH
+1084,3408,3408,17,St. Gallen,1728,Wil,Uzwil,Gemeindegebiet,CH
+1085,3422,3422,17,St. Gallen,1728,Wil,Niederbüren,Gemeindegebiet,CH
+1086,3423,3423,17,St. Gallen,1728,Wil,Niederhelfenschwil,Gemeindegebiet,CH
+1087,3424,3424,17,St. Gallen,1728,Wil,Oberbüren,Gemeindegebiet,CH
+1088,3426,3426,17,St. Gallen,1728,Wil,Zuzwil (SG),Gemeindegebiet,CH
+1089,3427,3427,17,St. Gallen,1728,Wil,Wil (SG),Gemeindegebiet,CH
+1090,3441,3441,17,St. Gallen,1721,St. Gallen,Andwil (SG),Gemeindegebiet,CH
+1091,3442,3442,17,St. Gallen,1721,St. Gallen,Gaiserwald,Gemeindegebiet,CH
+1092,3443,3443,17,St. Gallen,1721,St. Gallen,Gossau (SG),Gemeindegebiet,CH
+1093,3444,3444,17,St. Gallen,1721,St. Gallen,Waldkirch,Gemeindegebiet,CH
+1094,3506,3506,18,Graubünden,1841,Albula,Vaz/Obervaz,Gemeindegebiet,CH
+1095,3513,3513,18,Graubünden,1841,Albula,Lantsch/Lenz,Gemeindegebiet,CH
+1096,3514,3514,18,Graubünden,1841,Albula,Schmitten (GR),Gemeindegebiet,CH
+1097,3542,3542,18,Graubünden,1841,Albula,Albula/Alvra,Gemeindegebiet,CH
+1098,3543,3543,18,Graubünden,1841,Albula,Surses,Gemeindegebiet,CH
+1099,3544,3544,18,Graubünden,1841,Albula,Bergün Filisur,Gemeindegebiet,CH
+1100,3551,3551,18,Graubünden,1842,Bernina,Brusio,Gemeindegebiet,CH
+1101,3561,3561,18,Graubünden,1842,Bernina,Poschiavo,Gemeindegebiet,CH
+1102,3572,3572,18,Graubünden,1850,Surselva,Falera,Gemeindegebiet,CH
+1103,3575,3575,18,Graubünden,1850,Surselva,Laax,Gemeindegebiet,CH
+1104,3581,3581,18,Graubünden,1850,Surselva,Sagogn,Gemeindegebiet,CH
+1105,3582,3582,18,Graubünden,1850,Surselva,Schluein,Gemeindegebiet,CH
+1106,3603,3603,18,Graubünden,1850,Surselva,Vals,Gemeindegebiet,CH
+1107,3618,3618,18,Graubünden,1850,Surselva,Lumnezia,Gemeindegebiet,CH
+1108,3619,3619,18,Graubünden,1850,Surselva,Ilanz/Glion,Gemeindegebiet,CH
+1109,3633,3633,18,Graubünden,1851,Viamala,Fürstenau,Gemeindegebiet,CH
+1110,3637,3637,18,Graubünden,1851,Viamala,Rothenbrunnen,Gemeindegebiet,CH
+1111,3638,3638,18,Graubünden,1851,Viamala,Scharans,Gemeindegebiet,CH
+1112,3640,3640,18,Graubünden,1851,Viamala,Sils im Domleschg,Gemeindegebiet,CH
+1113,3661,3661,18,Graubünden,1851,Viamala,Cazis,Gemeindegebiet,CH
+1114,3662,3662,18,Graubünden,1851,Viamala,Flerden,Gemeindegebiet,CH
+1115,3663,3663,18,Graubünden,1851,Viamala,Masein,Gemeindegebiet,CH
+1116,3668,3668,18,Graubünden,1851,Viamala,Thusis,Gemeindegebiet,CH
+1117,3669,3669,18,Graubünden,1851,Viamala,Tschappina,Gemeindegebiet,CH
+1118,3670,3670,18,Graubünden,1851,Viamala,Urmein,Gemeindegebiet,CH
+1119,3672,3672,18,Graubünden,1850,Surselva,Safiental,Gemeindegebiet,CH
+1120,3673,3673,18,Graubünden,1851,Viamala,Domleschg,Gemeindegebiet,CH
+1121,3681,3681,18,Graubünden,1851,Viamala,Avers,Gemeindegebiet,CH
+1122,3695,3695,18,Graubünden,1851,Viamala,Sufers,Gemeindegebiet,CH
+1123,3701,3701,18,Graubünden,1851,Viamala,Andeer,Gemeindegebiet,CH
+1124,3711,3711,18,Graubünden,1851,Viamala,Rongellen,Gemeindegebiet,CH
+1125,3712,3712,18,Graubünden,1851,Viamala,Zillis-Reischen,Gemeindegebiet,CH
+1126,3713,3713,18,Graubünden,1851,Viamala,Ferrera,Gemeindegebiet,CH
+1127,3714,3714,18,Graubünden,1851,Viamala,Rheinwald,Gemeindegebiet,CH
+1128,3715,3715,18,Graubünden,1851,Viamala,Muntogna da Schons,Gemeindegebiet,CH
+1129,3721,3721,18,Graubünden,1844,Imboden,Bonaduz,Gemeindegebiet,CH
+1130,3722,3722,18,Graubünden,1844,Imboden,Domat/Ems,Gemeindegebiet,CH
+1131,3723,3723,18,Graubünden,1844,Imboden,Rhäzüns,Gemeindegebiet,CH
+1132,3731,3731,18,Graubünden,1844,Imboden,Felsberg,Gemeindegebiet,CH
+1133,3732,3732,18,Graubünden,1844,Imboden,Flims,Gemeindegebiet,CH
+1134,3733,3733,18,Graubünden,1844,Imboden,Tamins,Gemeindegebiet,CH
+1135,3734,3734,18,Graubünden,1844,Imboden,Trin,Gemeindegebiet,CH
+1136,3746,3746,18,Graubünden,1843,Engiadina Bassa/Val Müstair,Zernez,Gemeindegebiet,CH
+1137,3752,3752,18,Graubünden,1843,Engiadina Bassa/Val Müstair,Samnaun,Gemeindegebiet,CH
+1138,3762,3762,18,Graubünden,1843,Engiadina Bassa/Val Müstair,Scuol,Gemeindegebiet,CH
+1139,3764,3764,18,Graubünden,1843,Engiadina Bassa/Val Müstair,Valsot,Gemeindegebiet,CH
+1140,3781,3781,18,Graubünden,1846,Maloja,Bever,Gemeindegebiet,CH
+1141,3782,3782,18,Graubünden,1846,Maloja,Celerina/Schlarigna,Gemeindegebiet,CH
+1142,3783,3783,18,Graubünden,1846,Maloja,Madulain,Gemeindegebiet,CH
+1143,3784,3784,18,Graubünden,1846,Maloja,Pontresina,Gemeindegebiet,CH
+1144,3785,3785,18,Graubünden,1846,Maloja,La Punt Chamues-ch,Gemeindegebiet,CH
+1145,3786,3786,18,Graubünden,1846,Maloja,Samedan,Gemeindegebiet,CH
+1146,3787,3787,18,Graubünden,1846,Maloja,St. Moritz,Gemeindegebiet,CH
+1147,3788,3788,18,Graubünden,1846,Maloja,S-chanf,Gemeindegebiet,CH
+1148,3789,3789,18,Graubünden,1846,Maloja,Sils im Engadin/Segl,Gemeindegebiet,CH
+1149,3790,3790,18,Graubünden,1846,Maloja,Silvaplana,Gemeindegebiet,CH
+1150,3791,3791,18,Graubünden,1846,Maloja,Zuoz,Gemeindegebiet,CH
+1151,3792,3792,18,Graubünden,1846,Maloja,Bregaglia,Gemeindegebiet,CH
+1152,3804,3804,18,Graubünden,1847,Moesa,Buseno,Gemeindegebiet,CH
+1153,3805,3805,18,Graubünden,1847,Moesa,Castaneda,Gemeindegebiet,CH
+1154,3808,3808,18,Graubünden,1847,Moesa,Rossa,Gemeindegebiet,CH
+1155,3810,3810,18,Graubünden,1847,Moesa,Santa Maria in Calanca,Gemeindegebiet,CH
+1156,3821,3821,18,Graubünden,1847,Moesa,Lostallo,Gemeindegebiet,CH
+1157,3822,3822,18,Graubünden,1847,Moesa,Mesocco,Gemeindegebiet,CH
+1158,3823,3823,18,Graubünden,1847,Moesa,Soazza,Gemeindegebiet,CH
+1159,3831,3831,18,Graubünden,1847,Moesa,Cama,Gemeindegebiet,CH
+1160,3832,3832,18,Graubünden,1847,Moesa,Grono,Gemeindegebiet,CH
+1161,3834,3834,18,Graubünden,1847,Moesa,Roveredo (GR),Gemeindegebiet,CH
+1162,3835,3835,18,Graubünden,1847,Moesa,San Vittore,Gemeindegebiet,CH
+1163,3837,3837,18,Graubünden,1847,Moesa,Calanca,Gemeindegebiet,CH
+1164,3847,3847,18,Graubünden,1843,Engiadina Bassa/Val Müstair,Val Müstair,Gemeindegebiet,CH
+1165,3851,3851,18,Graubünden,1849,Prättigau/Davos,Davos,Gemeindegebiet,CH
+1166,3861,3861,18,Graubünden,1849,Prättigau/Davos,Fideris,Gemeindegebiet,CH
+1167,3862,3862,18,Graubünden,1849,Prättigau/Davos,Furna,Gemeindegebiet,CH
+1168,3863,3863,18,Graubünden,1849,Prättigau/Davos,Jenaz,Gemeindegebiet,CH
+1169,3871,3871,18,Graubünden,1849,Prättigau/Davos,Klosters,Gemeindegebiet,CH
+1170,3881,3881,18,Graubünden,1849,Prättigau/Davos,Conters im Prättigau,Gemeindegebiet,CH
+1171,3882,3882,18,Graubünden,1849,Prättigau/Davos,Küblis,Gemeindegebiet,CH
+1172,3891,3891,18,Graubünden,1849,Prättigau/Davos,Luzein,Gemeindegebiet,CH
+1173,3901,3901,18,Graubünden,1848,Plessur,Chur,Gemeindegebiet,CH
+1174,3911,3911,18,Graubünden,1848,Plessur,Churwalden,Gemeindegebiet,CH
+1175,3921,3921,18,Graubünden,1848,Plessur,Arosa,Gemeindegebiet,CH
+1176,3945,3945,18,Graubünden,1845,Landquart,Trimmis,Gemeindegebiet,CH
+1177,3946,3946,18,Graubünden,1845,Landquart,Untervaz,Gemeindegebiet,CH
+1178,3947,3947,18,Graubünden,1845,Landquart,Zizers,Gemeindegebiet,CH
+1179,3951,3951,18,Graubünden,1845,Landquart,Fläsch,Gemeindegebiet,CH
+1180,3952,3952,18,Graubünden,1845,Landquart,Jenins,Gemeindegebiet,CH
+1181,3953,3953,18,Graubünden,1845,Landquart,Maienfeld,Gemeindegebiet,CH
+1182,3954,3954,18,Graubünden,1845,Landquart,Malans,Gemeindegebiet,CH
+1183,3955,3955,18,Graubünden,1845,Landquart,Landquart,Gemeindegebiet,CH
+1184,3961,3961,18,Graubünden,1849,Prättigau/Davos,Grüsch,Gemeindegebiet,CH
+1185,3962,3962,18,Graubünden,1849,Prättigau/Davos,Schiers,Gemeindegebiet,CH
+1186,3972,3972,18,Graubünden,1849,Prättigau/Davos,Seewis im Prättigau,Gemeindegebiet,CH
+1187,3981,3981,18,Graubünden,1850,Surselva,Breil/Brigels,Gemeindegebiet,CH
+1188,3982,3982,18,Graubünden,1850,Surselva,Disentis/Mustér,Gemeindegebiet,CH
+1189,3983,3983,18,Graubünden,1850,Surselva,Medel (Lucmagn),Gemeindegebiet,CH
+1190,3985,3985,18,Graubünden,1850,Surselva,Sumvitg,Gemeindegebiet,CH
+1191,3986,3986,18,Graubünden,1850,Surselva,Tujetsch,Gemeindegebiet,CH
+1192,3987,3987,18,Graubünden,1850,Surselva,Trun,Gemeindegebiet,CH
+1193,3988,3988,18,Graubünden,1850,Surselva,Obersaxen Mundaun,Gemeindegebiet,CH
+1194,4001,4001,19,Aargau,1901,Aarau,Aarau,Gemeindegebiet,CH
+1195,4002,4002,19,Aargau,1901,Aarau,Biberstein,Gemeindegebiet,CH
+1196,4003,4003,19,Aargau,1901,Aarau,Buchs (AG),Gemeindegebiet,CH
+1197,4004,4004,19,Aargau,1901,Aarau,Densbüren,Gemeindegebiet,CH
+1198,4005,4005,19,Aargau,1901,Aarau,Erlinsbach (AG),Gemeindegebiet,CH
+1199,4006,4006,19,Aargau,1901,Aarau,Gränichen,Gemeindegebiet,CH
+1200,4007,4007,19,Aargau,1901,Aarau,Hirschthal,Gemeindegebiet,CH
+1201,4008,4008,19,Aargau,1901,Aarau,Küttigen,Gemeindegebiet,CH
+1202,4009,4009,19,Aargau,1901,Aarau,Muhen,Gemeindegebiet,CH
+1203,4010,4010,19,Aargau,1901,Aarau,Oberentfelden,Gemeindegebiet,CH
+1204,4012,4012,19,Aargau,1901,Aarau,Suhr,Gemeindegebiet,CH
+1205,4013,4013,19,Aargau,1901,Aarau,Unterentfelden,Gemeindegebiet,CH
+1206,4021,4021,19,Aargau,1902,Baden,Baden,Gemeindegebiet,CH
+1207,4022,4022,19,Aargau,1902,Baden,Bellikon,Gemeindegebiet,CH
+1208,4023,4023,19,Aargau,1902,Baden,Bergdietikon,Gemeindegebiet,CH
+1209,4024,4024,19,Aargau,1902,Baden,Birmenstorf (AG),Gemeindegebiet,CH
+1210,4026,4026,19,Aargau,1902,Baden,Ennetbaden,Gemeindegebiet,CH
+1211,4027,4027,19,Aargau,1902,Baden,Fislisbach,Gemeindegebiet,CH
+1212,4028,4028,19,Aargau,1902,Baden,Freienwil,Gemeindegebiet,CH
+1213,4029,4029,19,Aargau,1902,Baden,Gebenstorf,Gemeindegebiet,CH
+1214,4030,4030,19,Aargau,1902,Baden,Killwangen,Gemeindegebiet,CH
+1215,4031,4031,19,Aargau,1902,Baden,Künten,Gemeindegebiet,CH
+1216,4032,4032,19,Aargau,1902,Baden,Mägenwil,Gemeindegebiet,CH
+1217,4033,4033,19,Aargau,1902,Baden,Mellingen,Gemeindegebiet,CH
+1218,4034,4034,19,Aargau,1902,Baden,Neuenhof,Gemeindegebiet,CH
+1219,4035,4035,19,Aargau,1902,Baden,Niederrohrdorf,Gemeindegebiet,CH
+1220,4037,4037,19,Aargau,1902,Baden,Oberrohrdorf,Gemeindegebiet,CH
+1221,4038,4038,19,Aargau,1902,Baden,Obersiggenthal,Gemeindegebiet,CH
+1222,4039,4039,19,Aargau,1902,Baden,Remetschwil,Gemeindegebiet,CH
+1223,4040,4040,19,Aargau,1902,Baden,Spreitenbach,Gemeindegebiet,CH
+1224,4041,4041,19,Aargau,1902,Baden,Stetten (AG),Gemeindegebiet,CH
+1225,4044,4044,19,Aargau,1902,Baden,Untersiggenthal,Gemeindegebiet,CH
+1226,4045,4045,19,Aargau,1902,Baden,Wettingen,Gemeindegebiet,CH
+1227,4046,4046,19,Aargau,1902,Baden,Wohlenschwil,Gemeindegebiet,CH
+1228,4047,4047,19,Aargau,1902,Baden,Würenlingen,Gemeindegebiet,CH
+1229,4048,4048,19,Aargau,1902,Baden,Würenlos,Gemeindegebiet,CH
+1230,4049,4049,19,Aargau,1902,Baden,Ehrendingen,Gemeindegebiet,CH
+1231,4061,4061,19,Aargau,1903,Bremgarten,Arni (AG),Gemeindegebiet,CH
+1232,4062,4062,19,Aargau,1903,Bremgarten,Berikon,Gemeindegebiet,CH
+1233,4063,4063,19,Aargau,1903,Bremgarten,Bremgarten (AG),Gemeindegebiet,CH
+1234,4064,4064,19,Aargau,1903,Bremgarten,Büttikon,Gemeindegebiet,CH
+1235,4065,4065,19,Aargau,1903,Bremgarten,Dottikon,Gemeindegebiet,CH
+1236,4066,4066,19,Aargau,1903,Bremgarten,Eggenwil,Gemeindegebiet,CH
+1237,4067,4067,19,Aargau,1903,Bremgarten,Fischbach-Göslikon,Gemeindegebiet,CH
+1238,4068,4068,19,Aargau,1903,Bremgarten,Hägglingen,Gemeindegebiet,CH
+1239,4071,4071,19,Aargau,1903,Bremgarten,Jonen,Gemeindegebiet,CH
+1240,4072,4072,19,Aargau,1903,Bremgarten,Niederwil (AG),Gemeindegebiet,CH
+1241,4073,4073,19,Aargau,1903,Bremgarten,Oberlunkhofen,Gemeindegebiet,CH
+1242,4074,4074,19,Aargau,1903,Bremgarten,Oberwil-Lieli,Gemeindegebiet,CH
+1243,4075,4075,19,Aargau,1903,Bremgarten,Rudolfstetten-Friedlisberg,Gemeindegebiet,CH
+1244,4076,4076,19,Aargau,1903,Bremgarten,Sarmenstorf,Gemeindegebiet,CH
+1245,4077,4077,19,Aargau,1903,Bremgarten,Tägerig,Gemeindegebiet,CH
+1246,4078,4078,19,Aargau,1903,Bremgarten,Uezwil,Gemeindegebiet,CH
+1247,4079,4079,19,Aargau,1903,Bremgarten,Unterlunkhofen,Gemeindegebiet,CH
+1248,4080,4080,19,Aargau,1903,Bremgarten,Villmergen,Gemeindegebiet,CH
+1249,4081,4081,19,Aargau,1903,Bremgarten,Widen,Gemeindegebiet,CH
+1250,4082,4082,19,Aargau,1903,Bremgarten,Wohlen (AG),Gemeindegebiet,CH
+1251,4083,4083,19,Aargau,1903,Bremgarten,Zufikon,Gemeindegebiet,CH
+1252,4084,4084,19,Aargau,1903,Bremgarten,Islisberg,Gemeindegebiet,CH
+1253,4091,4091,19,Aargau,1904,Brugg,Auenstein,Gemeindegebiet,CH
+1254,4092,4092,19,Aargau,1904,Brugg,Birr,Gemeindegebiet,CH
+1255,4093,4093,19,Aargau,1904,Brugg,Birrhard,Gemeindegebiet,CH
+1256,4095,4095,19,Aargau,1904,Brugg,Brugg,Gemeindegebiet,CH
+1257,4099,4099,19,Aargau,1904,Brugg,Habsburg,Gemeindegebiet,CH
+1258,4100,4100,19,Aargau,1904,Brugg,Hausen (AG),Gemeindegebiet,CH
+1259,4104,4104,19,Aargau,1904,Brugg,Lupfig,Gemeindegebiet,CH
+1260,4105,4105,19,Aargau,1904,Brugg,Mandach,Gemeindegebiet,CH
+1261,4106,4106,19,Aargau,1904,Brugg,Mönthal,Gemeindegebiet,CH
+1262,4107,4107,19,Aargau,1904,Brugg,Mülligen,Gemeindegebiet,CH
+1263,4110,4110,19,Aargau,1904,Brugg,Remigen,Gemeindegebiet,CH
+1264,4111,4111,19,Aargau,1904,Brugg,Riniken,Gemeindegebiet,CH
+1265,4112,4112,19,Aargau,1904,Brugg,Rüfenach,Gemeindegebiet,CH
+1266,4117,4117,19,Aargau,1904,Brugg,Thalheim (AG),Gemeindegebiet,CH
+1267,4120,4120,19,Aargau,1904,Brugg,Veltheim (AG),Gemeindegebiet,CH
+1268,4121,4121,19,Aargau,1904,Brugg,Villigen,Gemeindegebiet,CH
+1269,4123,4123,19,Aargau,1904,Brugg,Windisch,Gemeindegebiet,CH
+1270,4124,4124,19,Aargau,1904,Brugg,Bözberg,Gemeindegebiet,CH
+1271,4125,4125,19,Aargau,1904,Brugg,Schinznach,Gemeindegebiet,CH
+1272,4131,4131,19,Aargau,1905,Kulm,Beinwil am See,Gemeindegebiet,CH
+1273,4132,4132,19,Aargau,1905,Kulm,Birrwil,Gemeindegebiet,CH
+1274,4134,4134,19,Aargau,1905,Kulm,Dürrenäsch,Gemeindegebiet,CH
+1275,4135,4135,19,Aargau,1905,Kulm,Gontenschwil,Gemeindegebiet,CH
+1276,4136,4136,19,Aargau,1905,Kulm,Holziken,Gemeindegebiet,CH
+1277,4137,4137,19,Aargau,1905,Kulm,Leimbach (AG),Gemeindegebiet,CH
+1278,4138,4138,19,Aargau,1905,Kulm,Leutwil,Gemeindegebiet,CH
+1279,4139,4139,19,Aargau,1905,Kulm,Menziken,Gemeindegebiet,CH
+1280,4140,4140,19,Aargau,1905,Kulm,Oberkulm,Gemeindegebiet,CH
+1281,4141,4141,19,Aargau,1905,Kulm,Reinach (AG),Gemeindegebiet,CH
+1282,4142,4142,19,Aargau,1905,Kulm,Schlossrued,Gemeindegebiet,CH
+1283,4143,4143,19,Aargau,1905,Kulm,Schmiedrued,Gemeindegebiet,CH
+1284,4144,4144,19,Aargau,1905,Kulm,Schöftland,Gemeindegebiet,CH
+1285,4145,4145,19,Aargau,1905,Kulm,Teufenthal (AG),Gemeindegebiet,CH
+1286,4146,4146,19,Aargau,1905,Kulm,Unterkulm,Gemeindegebiet,CH
+1287,4147,4147,19,Aargau,1905,Kulm,Zetzwil,Gemeindegebiet,CH
+1288,4161,4161,19,Aargau,1906,Laufenburg,Eiken,Gemeindegebiet,CH
+1289,4163,4163,19,Aargau,1906,Laufenburg,Frick,Gemeindegebiet,CH
+1290,4164,4164,19,Aargau,1906,Laufenburg,Gansingen,Gemeindegebiet,CH
+1291,4165,4165,19,Aargau,1906,Laufenburg,Gipf-Oberfrick,Gemeindegebiet,CH
+1292,4169,4169,19,Aargau,1906,Laufenburg,Kaisten,Gemeindegebiet,CH
+1293,4170,4170,19,Aargau,1906,Laufenburg,Laufenburg,Gemeindegebiet,CH
+1294,4172,4172,19,Aargau,1906,Laufenburg,Münchwilen (AG),Gemeindegebiet,CH
+1295,4173,4173,19,Aargau,1906,Laufenburg,Oberhof,Gemeindegebiet,CH
+1296,4175,4175,19,Aargau,1906,Laufenburg,Oeschgen,Gemeindegebiet,CH
+1297,4176,4176,19,Aargau,1906,Laufenburg,Schwaderloch,Gemeindegebiet,CH
+1298,4177,4177,19,Aargau,1906,Laufenburg,Sisseln,Gemeindegebiet,CH
+1299,4181,4181,19,Aargau,1906,Laufenburg,Wittnau,Gemeindegebiet,CH
+1300,4182,4182,19,Aargau,1906,Laufenburg,Wölflinswil,Gemeindegebiet,CH
+1301,4183,4183,19,Aargau,1906,Laufenburg,Zeihen,Gemeindegebiet,CH
+1302,4184,4184,19,Aargau,1906,Laufenburg,Mettauertal,Gemeindegebiet,CH
+1303,4185,4185,19,Aargau,1906,Laufenburg,Böztal,Gemeindegebiet,CH
+1304,4186,4186,19,Aargau,1906,Laufenburg,Herznach-Ueken,Gemeindegebiet,CH
+1305,4191,4191,19,Aargau,1907,Lenzburg,Ammerswil,Gemeindegebiet,CH
+1306,4192,4192,19,Aargau,1907,Lenzburg,Boniswil,Gemeindegebiet,CH
+1307,4193,4193,19,Aargau,1907,Lenzburg,Brunegg,Gemeindegebiet,CH
+1308,4194,4194,19,Aargau,1907,Lenzburg,Dintikon,Gemeindegebiet,CH
+1309,4195,4195,19,Aargau,1907,Lenzburg,Egliswil,Gemeindegebiet,CH
+1310,4196,4196,19,Aargau,1907,Lenzburg,Fahrwangen,Gemeindegebiet,CH
+1311,4197,4197,19,Aargau,1907,Lenzburg,Hallwil,Gemeindegebiet,CH
+1312,4198,4198,19,Aargau,1907,Lenzburg,Hendschiken,Gemeindegebiet,CH
+1313,4199,4199,19,Aargau,1907,Lenzburg,Holderbank (AG),Gemeindegebiet,CH
+1314,4200,4200,19,Aargau,1907,Lenzburg,Hunzenschwil,Gemeindegebiet,CH
+1315,4201,4201,19,Aargau,1907,Lenzburg,Lenzburg,Gemeindegebiet,CH
+1316,4202,4202,19,Aargau,1907,Lenzburg,Meisterschwanden,Gemeindegebiet,CH
+1317,4203,4203,19,Aargau,1907,Lenzburg,Möriken-Wildegg,Gemeindegebiet,CH
+1318,4204,4204,19,Aargau,1907,Lenzburg,Niederlenz,Gemeindegebiet,CH
+1319,4205,4205,19,Aargau,1907,Lenzburg,Othmarsingen,Gemeindegebiet,CH
+1320,4206,4206,19,Aargau,1907,Lenzburg,Rupperswil,Gemeindegebiet,CH
+1321,4207,4207,19,Aargau,1907,Lenzburg,Schafisheim,Gemeindegebiet,CH
+1322,4208,4208,19,Aargau,1907,Lenzburg,Seengen,Gemeindegebiet,CH
+1323,4209,4209,19,Aargau,1907,Lenzburg,Seon,Gemeindegebiet,CH
+1324,4210,4210,19,Aargau,1907,Lenzburg,Staufen,Gemeindegebiet,CH
+1325,4221,4221,19,Aargau,1908,Muri,Abtwil,Gemeindegebiet,CH
+1326,4222,4222,19,Aargau,1908,Muri,Aristau,Gemeindegebiet,CH
+1327,4223,4223,19,Aargau,1908,Muri,Auw,Gemeindegebiet,CH
+1328,4224,4224,19,Aargau,1908,Muri,Beinwil (Freiamt),Gemeindegebiet,CH
+1329,4226,4226,19,Aargau,1908,Muri,Besenbüren,Gemeindegebiet,CH
+1330,4227,4227,19,Aargau,1908,Muri,Bettwil,Gemeindegebiet,CH
+1331,4228,4228,19,Aargau,1908,Muri,Boswil,Gemeindegebiet,CH
+1332,4229,4229,19,Aargau,1908,Muri,Bünzen,Gemeindegebiet,CH
+1333,4230,4230,19,Aargau,1908,Muri,Buttwil,Gemeindegebiet,CH
+1334,4231,4231,19,Aargau,1908,Muri,Dietwil,Gemeindegebiet,CH
+1335,4232,4232,19,Aargau,1908,Muri,Geltwil,Gemeindegebiet,CH
+1336,4233,4233,19,Aargau,1908,Muri,Kallern,Gemeindegebiet,CH
+1337,4234,4234,19,Aargau,1908,Muri,Merenschwand,Gemeindegebiet,CH
+1338,4235,4235,19,Aargau,1908,Muri,Mühlau,Gemeindegebiet,CH
+1339,4236,4236,19,Aargau,1908,Muri,Muri (AG),Gemeindegebiet,CH
+1340,4237,4237,19,Aargau,1908,Muri,Oberrüti,Gemeindegebiet,CH
+1341,4238,4238,19,Aargau,1908,Muri,Rottenschwil,Gemeindegebiet,CH
+1342,4239,4239,19,Aargau,1908,Muri,Sins,Gemeindegebiet,CH
+1343,4240,4240,19,Aargau,1908,Muri,Waltenschwil,Gemeindegebiet,CH
+1344,4251,4251,19,Aargau,1909,Rheinfelden,Hellikon,Gemeindegebiet,CH
+1345,4252,4252,19,Aargau,1909,Rheinfelden,Kaiseraugst,Gemeindegebiet,CH
+1346,4253,4253,19,Aargau,1909,Rheinfelden,Magden,Gemeindegebiet,CH
+1347,4254,4254,19,Aargau,1909,Rheinfelden,Möhlin,Gemeindegebiet,CH
+1348,4255,4255,19,Aargau,1909,Rheinfelden,Mumpf,Gemeindegebiet,CH
+1349,4256,4256,19,Aargau,1909,Rheinfelden,Obermumpf,Gemeindegebiet,CH
+1350,4257,4257,19,Aargau,1909,Rheinfelden,Olsberg,Gemeindegebiet,CH
+1351,4258,4258,19,Aargau,1909,Rheinfelden,Rheinfelden,Gemeindegebiet,CH
+1352,4259,4259,19,Aargau,1909,Rheinfelden,Schupfart,Gemeindegebiet,CH
+1353,4260,4260,19,Aargau,1909,Rheinfelden,Stein (AG),Gemeindegebiet,CH
+1354,4261,4261,19,Aargau,1909,Rheinfelden,Wallbach,Gemeindegebiet,CH
+1355,4262,4262,19,Aargau,1909,Rheinfelden,Wegenstetten,Gemeindegebiet,CH
+1356,4263,4263,19,Aargau,1909,Rheinfelden,Zeiningen,Gemeindegebiet,CH
+1357,4264,4264,19,Aargau,1909,Rheinfelden,Zuzgen,Gemeindegebiet,CH
+1358,4271,4271,19,Aargau,1910,Zofingen,Aarburg,Gemeindegebiet,CH
+1359,4273,4273,19,Aargau,1910,Zofingen,Bottenwil,Gemeindegebiet,CH
+1360,4274,4274,19,Aargau,1910,Zofingen,Brittnau,Gemeindegebiet,CH
+1361,4275,4275,19,Aargau,1910,Zofingen,Kirchleerau,Gemeindegebiet,CH
+1362,4276,4276,19,Aargau,1910,Zofingen,Kölliken,Gemeindegebiet,CH
+1363,4277,4277,19,Aargau,1910,Zofingen,Moosleerau,Gemeindegebiet,CH
+1364,4279,4279,19,Aargau,1910,Zofingen,Murgenthal,Gemeindegebiet,CH
+1365,4280,4280,19,Aargau,1910,Zofingen,Oftringen,Gemeindegebiet,CH
+1366,4281,4281,19,Aargau,1910,Zofingen,Reitnau,Gemeindegebiet,CH
+1367,4282,4282,19,Aargau,1910,Zofingen,Rothrist,Gemeindegebiet,CH
+1368,4283,4283,19,Aargau,1910,Zofingen,Safenwil,Gemeindegebiet,CH
+1369,4284,4284,19,Aargau,1910,Zofingen,Staffelbach,Gemeindegebiet,CH
+1370,4285,4285,19,Aargau,1910,Zofingen,Strengelbach,Gemeindegebiet,CH
+1371,4286,4286,19,Aargau,1910,Zofingen,Uerkheim,Gemeindegebiet,CH
+1372,4287,4287,19,Aargau,1910,Zofingen,Vordemwald,Gemeindegebiet,CH
+1373,4288,4288,19,Aargau,1910,Zofingen,Wiliberg,Gemeindegebiet,CH
+1374,4289,4289,19,Aargau,1910,Zofingen,Zofingen,Gemeindegebiet,CH
+1375,4303,4303,19,Aargau,1911,Zurzach,Böttstein,Gemeindegebiet,CH
+1376,4304,4304,19,Aargau,1911,Zurzach,Döttingen,Gemeindegebiet,CH
+1377,4305,4305,19,Aargau,1911,Zurzach,Endingen,Gemeindegebiet,CH
+1378,4306,4306,19,Aargau,1911,Zurzach,Fisibach,Gemeindegebiet,CH
+1379,4307,4307,19,Aargau,1911,Zurzach,Full-Reuenthal,Gemeindegebiet,CH
+1380,4309,4309,19,Aargau,1911,Zurzach,Klingnau,Gemeindegebiet,CH
+1381,4310,4310,19,Aargau,1911,Zurzach,Koblenz,Gemeindegebiet,CH
+1382,4311,4311,19,Aargau,1911,Zurzach,Leibstadt,Gemeindegebiet,CH
+1383,4312,4312,19,Aargau,1911,Zurzach,Lengnau (AG),Gemeindegebiet,CH
+1384,4313,4313,19,Aargau,1911,Zurzach,Leuggern,Gemeindegebiet,CH
+1385,4314,4314,19,Aargau,1911,Zurzach,Mellikon,Gemeindegebiet,CH
+1386,4318,4318,19,Aargau,1911,Zurzach,Schneisingen,Gemeindegebiet,CH
+1387,4319,4319,19,Aargau,1911,Zurzach,Siglistorf,Gemeindegebiet,CH
+1388,4320,4320,19,Aargau,1911,Zurzach,Tegerfelden,Gemeindegebiet,CH
+1389,4324,4324,19,Aargau,1911,Zurzach,Zurzach,Gemeindegebiet,CH
+1390,4401,4401,20,Thurgau,2011,Arbon,Arbon,Gemeindegebiet,CH
+1391,4406,4406,20,Thurgau,2011,Arbon,Dozwil,Gemeindegebiet,CH
+1392,4411,4411,20,Thurgau,2011,Arbon,Egnach,Gemeindegebiet,CH
+1393,4416,4416,20,Thurgau,2011,Arbon,Hefenhofen,Gemeindegebiet,CH
+1394,4421,4421,20,Thurgau,2011,Arbon,Horn,Gemeindegebiet,CH
+1395,4426,4426,20,Thurgau,2011,Arbon,Kesswil,Gemeindegebiet,CH
+1396,4431,4431,20,Thurgau,2011,Arbon,Roggwil (TG),Gemeindegebiet,CH
+1397,4436,4436,20,Thurgau,2011,Arbon,Romanshorn,Gemeindegebiet,CH
+1398,4441,4441,20,Thurgau,2011,Arbon,Salmsach,Gemeindegebiet,CH
+1399,4446,4446,20,Thurgau,2011,Arbon,Sommeri,Gemeindegebiet,CH
+1400,4451,4451,20,Thurgau,2011,Arbon,Uttwil,Gemeindegebiet,CH
+1401,4461,4461,20,Thurgau,2011,Arbon,Amriswil,Gemeindegebiet,CH
+1402,4471,4471,20,Thurgau,2015,Weinfelden,Bischofszell,Gemeindegebiet,CH
+1403,4476,4476,20,Thurgau,2015,Weinfelden,Erlen,Gemeindegebiet,CH
+1404,4486,4486,20,Thurgau,2015,Weinfelden,Hauptwil-Gottshaus,Gemeindegebiet,CH
+1405,4495,4495,20,Thurgau,2015,Weinfelden,Hohentannen,Gemeindegebiet,CH
+1406,4501,4501,20,Thurgau,2015,Weinfelden,Kradolf-Schönenberg,Gemeindegebiet,CH
+1407,4506,4506,20,Thurgau,2015,Weinfelden,Sulgen,Gemeindegebiet,CH
+1408,4511,4511,20,Thurgau,2015,Weinfelden,Zihlschlacht-Sitterdorf,Gemeindegebiet,CH
+1409,4536,4536,20,Thurgau,2012,Frauenfeld,Basadingen-Schlattingen,Gemeindegebiet,CH
+1410,4545,4545,20,Thurgau,2012,Frauenfeld,Diessenhofen,Gemeindegebiet,CH
+1411,4546,4546,20,Thurgau,2012,Frauenfeld,Schlatt (TG),Gemeindegebiet,CH
+1412,4551,4551,20,Thurgau,2014,Münchwilen,Aadorf,Gemeindegebiet,CH
+1413,4561,4561,20,Thurgau,2012,Frauenfeld,Felben-Wellhausen,Gemeindegebiet,CH
+1414,4566,4566,20,Thurgau,2012,Frauenfeld,Frauenfeld,Gemeindegebiet,CH
+1415,4571,4571,20,Thurgau,2012,Frauenfeld,Gachnang,Gemeindegebiet,CH
+1416,4590,4590,20,Thurgau,2012,Frauenfeld,Hüttlingen,Gemeindegebiet,CH
+1417,4591,4591,20,Thurgau,2012,Frauenfeld,Matzingen,Gemeindegebiet,CH
+1418,4601,4601,20,Thurgau,2012,Frauenfeld,Neunforn,Gemeindegebiet,CH
+1419,4606,4606,20,Thurgau,2012,Frauenfeld,Stettfurt,Gemeindegebiet,CH
+1420,4611,4611,20,Thurgau,2012,Frauenfeld,Thundorf,Gemeindegebiet,CH
+1421,4616,4616,20,Thurgau,2012,Frauenfeld,Uesslingen-Buch,Gemeindegebiet,CH
+1422,4621,4621,20,Thurgau,2012,Frauenfeld,Warth-Weiningen,Gemeindegebiet,CH
+1423,4641,4641,20,Thurgau,2013,Kreuzlingen,Altnau,Gemeindegebiet,CH
+1424,4643,4643,20,Thurgau,2013,Kreuzlingen,Bottighofen,Gemeindegebiet,CH
+1425,4646,4646,20,Thurgau,2013,Kreuzlingen,Ermatingen,Gemeindegebiet,CH
+1426,4651,4651,20,Thurgau,2013,Kreuzlingen,Gottlieben,Gemeindegebiet,CH
+1427,4656,4656,20,Thurgau,2013,Kreuzlingen,Güttingen,Gemeindegebiet,CH
+1428,4666,4666,20,Thurgau,2013,Kreuzlingen,Kemmental,Gemeindegebiet,CH
+1429,4671,4671,20,Thurgau,2013,Kreuzlingen,Kreuzlingen,Gemeindegebiet,CH
+1430,4681,4681,20,Thurgau,2013,Kreuzlingen,Langrickenbach,Gemeindegebiet,CH
+1431,4683,4683,20,Thurgau,2013,Kreuzlingen,Lengwil,Gemeindegebiet,CH
+1432,4691,4691,20,Thurgau,2013,Kreuzlingen,Münsterlingen,Gemeindegebiet,CH
+1433,4696,4696,20,Thurgau,2013,Kreuzlingen,Tägerwilen,Gemeindegebiet,CH
+1434,4701,4701,20,Thurgau,2013,Kreuzlingen,Wäldi,Gemeindegebiet,CH
+1435,4711,4711,20,Thurgau,2015,Weinfelden,Affeltrangen,Gemeindegebiet,CH
+1436,4716,4716,20,Thurgau,2014,Münchwilen,Bettwiesen,Gemeindegebiet,CH
+1437,4721,4721,20,Thurgau,2014,Münchwilen,Bichelsee-Balterswil,Gemeindegebiet,CH
+1438,4723,4723,20,Thurgau,2014,Münchwilen,Braunau,Gemeindegebiet,CH
+1439,4724,4724,20,Thurgau,2014,Münchwilen,Eschlikon,Gemeindegebiet,CH
+1440,4726,4726,20,Thurgau,2014,Münchwilen,Fischingen,Gemeindegebiet,CH
+1441,4741,4741,20,Thurgau,2014,Münchwilen,Lommis,Gemeindegebiet,CH
+1442,4746,4746,20,Thurgau,2014,Münchwilen,Münchwilen (TG),Gemeindegebiet,CH
+1443,4751,4751,20,Thurgau,2014,Münchwilen,Rickenbach (TG),Gemeindegebiet,CH
+1444,4756,4756,20,Thurgau,2015,Weinfelden,Schönholzerswilen,Gemeindegebiet,CH
+1445,4761,4761,20,Thurgau,2014,Münchwilen,Sirnach,Gemeindegebiet,CH
+1446,4776,4776,20,Thurgau,2014,Münchwilen,Tobel-Tägerschen,Gemeindegebiet,CH
+1447,4781,4781,20,Thurgau,2014,Münchwilen,Wängi,Gemeindegebiet,CH
+1448,4786,4786,20,Thurgau,2014,Münchwilen,Wilen (TG),Gemeindegebiet,CH
+1449,4791,4791,20,Thurgau,2015,Weinfelden,Wuppenau,Gemeindegebiet,CH
+1450,4801,4801,20,Thurgau,2012,Frauenfeld,Berlingen,Gemeindegebiet,CH
+1451,4806,4806,20,Thurgau,2012,Frauenfeld,Eschenz,Gemeindegebiet,CH
+1452,4811,4811,20,Thurgau,2012,Frauenfeld,Herdern,Gemeindegebiet,CH
+1453,4816,4816,20,Thurgau,2012,Frauenfeld,Homburg,Gemeindegebiet,CH
+1454,4821,4821,20,Thurgau,2012,Frauenfeld,Hüttwilen,Gemeindegebiet,CH
+1455,4826,4826,20,Thurgau,2012,Frauenfeld,Mammern,Gemeindegebiet,CH
+1456,4831,4831,20,Thurgau,2012,Frauenfeld,Müllheim,Gemeindegebiet,CH
+1457,4841,4841,20,Thurgau,2012,Frauenfeld,Pfyn,Gemeindegebiet,CH
+1458,4846,4846,20,Thurgau,2013,Kreuzlingen,Raperswilen,Gemeindegebiet,CH
+1459,4851,4851,20,Thurgau,2013,Kreuzlingen,Salenstein,Gemeindegebiet,CH
+1460,4864,4864,20,Thurgau,2012,Frauenfeld,Steckborn,Gemeindegebiet,CH
+1461,4871,4871,20,Thurgau,2012,Frauenfeld,Wagenhausen,Gemeindegebiet,CH
+1462,4881,4881,20,Thurgau,2015,Weinfelden,Amlikon-Bissegg,Gemeindegebiet,CH
+1463,4891,4891,20,Thurgau,2015,Weinfelden,Berg (TG),Gemeindegebiet,CH
+1464,4901,4901,20,Thurgau,2015,Weinfelden,Birwinken,Gemeindegebiet,CH
+1465,4911,4911,20,Thurgau,2015,Weinfelden,Bürglen (TG),Gemeindegebiet,CH
+1466,4921,4921,20,Thurgau,2015,Weinfelden,Bussnang,Gemeindegebiet,CH
+1467,4941,4941,20,Thurgau,2015,Weinfelden,Märstetten,Gemeindegebiet,CH
+1468,4946,4946,20,Thurgau,2015,Weinfelden,Weinfelden,Gemeindegebiet,CH
+1469,4951,4951,20,Thurgau,2015,Weinfelden,Wigoltingen,Gemeindegebiet,CH
+1470,5001,5001,21,Ticino,2101,Bellinzona,Arbedo-Castione,Gemeindegebiet,CH
+1471,5002,5002,21,Ticino,2101,Bellinzona,Bellinzona,Gemeindegebiet,CH
+1472,5003,5003,21,Ticino,2101,Bellinzona,Cadenazzo,Gemeindegebiet,CH
+1473,5009,5009,21,Ticino,2101,Bellinzona,Isone,Gemeindegebiet,CH
+1474,5010,5010,21,Ticino,2101,Bellinzona,Lumino,Gemeindegebiet,CH
+1475,5017,5017,21,Ticino,2101,Bellinzona,Sant'Antonino,Gemeindegebiet,CH
+1476,5048,5048,21,Ticino,2102,Blenio,Acquarossa,Gemeindegebiet,CH
+1477,5049,5049,21,Ticino,2102,Blenio,Blenio,Gemeindegebiet,CH
+1478,5050,5050,21,Ticino,2102,Blenio,Serravalle,Gemeindegebiet,CH
+1479,5061,5061,21,Ticino,2103,Leventina,Airolo,Gemeindegebiet,CH
+1480,5063,5063,21,Ticino,2103,Leventina,Bedretto,Gemeindegebiet,CH
+1481,5071,5071,21,Ticino,2103,Leventina,Dalpe,Gemeindegebiet,CH
+1482,5072,5072,21,Ticino,2103,Leventina,Faido,Gemeindegebiet,CH
+1483,5073,5073,21,Ticino,2103,Leventina,Giornico,Gemeindegebiet,CH
+1484,5076,5076,21,Ticino,2103,Leventina,Personico,Gemeindegebiet,CH
+1485,5077,5077,21,Ticino,2103,Leventina,Pollegio,Gemeindegebiet,CH
+1486,5079,5079,21,Ticino,2103,Leventina,Quinto,Gemeindegebiet,CH
+1487,5091,5091,21,Ticino,2104,Locarno,Ascona,Gemeindegebiet,CH
+1488,5096,5096,21,Ticino,2104,Locarno,Brione sopra Minusio,Gemeindegebiet,CH
+1489,5097,5097,21,Ticino,2104,Locarno,Brissago,Gemeindegebiet,CH
+1490,5108,5108,21,Ticino,2104,Locarno,Gordola,Gemeindegebiet,CH
+1491,5112,5112,21,Ticino,2104,Locarno,Lavertezzo,Gemeindegebiet,CH
+1492,5113,5113,21,Ticino,2104,Locarno,Locarno,Gemeindegebiet,CH
+1493,5115,5115,21,Ticino,2104,Locarno,Losone,Gemeindegebiet,CH
+1494,5117,5117,21,Ticino,2104,Locarno,Mergoscia,Gemeindegebiet,CH
+1495,5118,5118,21,Ticino,2104,Locarno,Minusio,Gemeindegebiet,CH
+1496,5120,5120,21,Ticino,2104,Locarno,Muralto,Gemeindegebiet,CH
+1497,5121,5121,21,Ticino,2104,Locarno,Orselina,Gemeindegebiet,CH
+1498,5125,5125,21,Ticino,2104,Locarno,Ronco sopra Ascona,Gemeindegebiet,CH
+1499,5131,5131,21,Ticino,2104,Locarno,Tenero-Contra,Gemeindegebiet,CH
+1500,5136,5136,21,Ticino,2104,Locarno,Onsernone,Gemeindegebiet,CH
+1501,5138,5138,21,Ticino,2104,Locarno,Cugnasco-Gerra,Gemeindegebiet,CH
+1502,5141,5141,21,Ticino,2105,Lugano,Agno,Gemeindegebiet,CH
+1503,5143,5143,21,Ticino,2105,Lugano,Aranno,Gemeindegebiet,CH
+1504,5144,5144,21,Ticino,2105,Lugano,Arogno,Gemeindegebiet,CH
+1505,5148,5148,21,Ticino,2105,Lugano,Bedano,Gemeindegebiet,CH
+1506,5151,5151,21,Ticino,2105,Lugano,Bioggio,Gemeindegebiet,CH
+1507,5154,5154,21,Ticino,2105,Lugano,Bissone,Gemeindegebiet,CH
+1508,5160,5160,21,Ticino,2105,Lugano,Brusino Arsizio,Gemeindegebiet,CH
+1509,5161,5161,21,Ticino,2105,Lugano,Cademario,Gemeindegebiet,CH
+1510,5162,5162,21,Ticino,2105,Lugano,Cadempino,Gemeindegebiet,CH
+1511,5167,5167,21,Ticino,2105,Lugano,Canobbio,Gemeindegebiet,CH
+1512,5171,5171,21,Ticino,2105,Lugano,Caslano,Gemeindegebiet,CH
+1513,5176,5176,21,Ticino,2105,Lugano,Comano,Gemeindegebiet,CH
+1514,5180,5180,21,Ticino,2105,Lugano,Cureglia,Gemeindegebiet,CH
+1515,5186,5186,21,Ticino,2105,Lugano,Grancia,Gemeindegebiet,CH
+1516,5187,5187,21,Ticino,2105,Lugano,Gravesano,Gemeindegebiet,CH
+1517,5189,5189,21,Ticino,2105,Lugano,Lamone,Gemeindegebiet,CH
+1518,5192,5192,21,Ticino,2105,Lugano,Lugano,Gemeindegebiet,CH
+1519,5193,5193,21,Ticino,2105,Lugano,Magliaso,Gemeindegebiet,CH
+1520,5194,5194,21,Ticino,2105,Lugano,Manno,Gemeindegebiet,CH
+1521,5196,5196,21,Ticino,2105,Lugano,Massagno,Gemeindegebiet,CH
+1522,5198,5198,21,Ticino,2105,Lugano,Melide,Gemeindegebiet,CH
+1523,5199,5199,21,Ticino,2105,Lugano,Mezzovico-Vira,Gemeindegebiet,CH
+1524,5203,5203,21,Ticino,2105,Lugano,Morcote,Gemeindegebiet,CH
+1525,5205,5205,21,Ticino,2105,Lugano,Muzzano,Gemeindegebiet,CH
+1526,5206,5206,21,Ticino,2105,Lugano,Neggio,Gemeindegebiet,CH
+1527,5208,5208,21,Ticino,2105,Lugano,Origlio,Gemeindegebiet,CH
+1528,5210,5210,21,Ticino,2105,Lugano,Paradiso,Gemeindegebiet,CH
+1529,5212,5212,21,Ticino,2105,Lugano,Ponte Capriasca,Gemeindegebiet,CH
+1530,5214,5214,21,Ticino,2105,Lugano,Porza,Gemeindegebiet,CH
+1531,5216,5216,21,Ticino,2105,Lugano,Pura,Gemeindegebiet,CH
+1532,5221,5221,21,Ticino,2105,Lugano,Savosa,Gemeindegebiet,CH
+1533,5225,5225,21,Ticino,2105,Lugano,Sorengo,Gemeindegebiet,CH
+1534,5226,5226,21,Ticino,2105,Lugano,Capriasca,Gemeindegebiet,CH
+1535,5227,5227,21,Ticino,2105,Lugano,Torricella-Taverne,Gemeindegebiet,CH
+1536,5230,5230,21,Ticino,2105,Lugano,Vernate,Gemeindegebiet,CH
+1537,5231,5231,21,Ticino,2105,Lugano,Vezia,Gemeindegebiet,CH
+1538,5233,5233,21,Ticino,2105,Lugano,Vico Morcote,Gemeindegebiet,CH
+1539,5236,5236,21,Ticino,2105,Lugano,Collina d'Oro,Gemeindegebiet,CH
+1540,5237,5237,21,Ticino,2105,Lugano,Alto Malcantone,Gemeindegebiet,CH
+1541,5238,5238,21,Ticino,2105,Lugano,Monteceneri,Gemeindegebiet,CH
+1542,5239,5239,21,Ticino,2105,Lugano,Tresa,Gemeindegebiet,CH
+1543,5240,5240,21,Ticino,2105,Lugano,Val Mara,Gemeindegebiet,CH
+1544,5242,5242,21,Ticino,2106,Mendrisio,Balerna,Gemeindegebiet,CH
+1545,5249,5249,21,Ticino,2106,Mendrisio,Castel San Pietro,Gemeindegebiet,CH
+1546,5250,5250,21,Ticino,2106,Mendrisio,Chiasso,Gemeindegebiet,CH
+1547,5251,5251,21,Ticino,2106,Mendrisio,Coldrerio,Gemeindegebiet,CH
+1548,5254,5254,21,Ticino,2106,Mendrisio,Mendrisio,Gemeindegebiet,CH
+1549,5257,5257,21,Ticino,2106,Mendrisio,Morbio Inferiore,Gemeindegebiet,CH
+1550,5260,5260,21,Ticino,2106,Mendrisio,Novazzano,Gemeindegebiet,CH
+1551,5263,5263,21,Ticino,2106,Mendrisio,Riva San Vitale,Gemeindegebiet,CH
+1552,5266,5266,21,Ticino,2106,Mendrisio,Stabio,Gemeindegebiet,CH
+1553,5268,5268,21,Ticino,2106,Mendrisio,Vacallo,Gemeindegebiet,CH
+1554,5269,5269,21,Ticino,2106,Mendrisio,Breggia,Gemeindegebiet,CH
+1555,5281,5281,21,Ticino,2107,Riviera,Biasca,Gemeindegebiet,CH
+1556,5287,5287,21,Ticino,2107,Riviera,Riviera,Gemeindegebiet,CH
+1557,5304,5304,21,Ticino,2108,Vallemaggia,Bosco/Gurin,Gemeindegebiet,CH
+1558,5307,5307,21,Ticino,2108,Vallemaggia,Campo (Vallemaggia),Gemeindegebiet,CH
+1559,5309,5309,21,Ticino,2108,Vallemaggia,Cerentino,Gemeindegebiet,CH
+1560,5310,5310,21,Ticino,2108,Vallemaggia,Cevio,Gemeindegebiet,CH
+1561,5315,5315,21,Ticino,2108,Vallemaggia,Linescio,Gemeindegebiet,CH
+1562,5317,5317,21,Ticino,2108,Vallemaggia,Maggia,Gemeindegebiet,CH
+1563,5323,5323,21,Ticino,2108,Vallemaggia,Lavizzara,Gemeindegebiet,CH
+1564,5324,5324,21,Ticino,2108,Vallemaggia,Avegno Gordevio,Gemeindegebiet,CH
+1565,5391,5391,21,Ticino,2101,Bellinzona,Comunanza Cadenazzo/Monteceneri,Kommunanz,CH
+1566,5394,5394,21,Ticino,2105,Lugano,Comunanza Capriasca/Lugano,Kommunanz,CH
+1567,5395,5395,21,Ticino,2105,Lugano,Lema,Gemeindegebiet,CH
+1568,5396,5396,21,Ticino,2104,Locarno,Terre di Pedemonte,Gemeindegebiet,CH
+1569,5397,5397,21,Ticino,2104,Locarno,Centovalli,Gemeindegebiet,CH
+1570,5398,5398,21,Ticino,2104,Locarno,Gambarogno,Gemeindegebiet,CH
+1571,5399,5399,21,Ticino,2104,Locarno,Verzasca,Gemeindegebiet,CH
+1572,5401,5401,22,Vaud,2221,Aigle,Aigle,Gemeindegebiet,CH
+1573,5402,5402,22,Vaud,2221,Aigle,Bex,Gemeindegebiet,CH
+1574,5403,5403,22,Vaud,2221,Aigle,Chessel,Gemeindegebiet,CH
+1575,5404,5404,22,Vaud,2221,Aigle,Corbeyrier,Gemeindegebiet,CH
+1576,5405,5405,22,Vaud,2221,Aigle,Gryon,Gemeindegebiet,CH
+1577,5406,5406,22,Vaud,2221,Aigle,Lavey-Morcles,Gemeindegebiet,CH
+1578,5407,5407,22,Vaud,2221,Aigle,Leysin,Gemeindegebiet,CH
+1579,5408,5408,22,Vaud,2221,Aigle,Noville,Gemeindegebiet,CH
+1580,5409,5409,22,Vaud,2221,Aigle,Ollon,Gemeindegebiet,CH
+1581,5410,5410,22,Vaud,2221,Aigle,Ormont-Dessous,Gemeindegebiet,CH
+1582,5411,5411,22,Vaud,2221,Aigle,Ormont-Dessus,Gemeindegebiet,CH
+1583,5412,5412,22,Vaud,2221,Aigle,Rennaz,Gemeindegebiet,CH
+1584,5413,5413,22,Vaud,2221,Aigle,Roche (VD),Gemeindegebiet,CH
+1585,5414,5414,22,Vaud,2221,Aigle,Villeneuve (VD),Gemeindegebiet,CH
+1586,5415,5415,22,Vaud,2221,Aigle,Yvorne,Gemeindegebiet,CH
+1587,5422,5422,22,Vaud,2227,Morges,Aubonne,Gemeindegebiet,CH
+1588,5423,5423,22,Vaud,2227,Morges,Ballens,Gemeindegebiet,CH
+1589,5424,5424,22,Vaud,2227,Morges,Berolle,Gemeindegebiet,CH
+1590,5425,5425,22,Vaud,2227,Morges,Bière,Gemeindegebiet,CH
+1591,5426,5426,22,Vaud,2227,Morges,Bougy-Villars,Gemeindegebiet,CH
+1592,5427,5427,22,Vaud,2227,Morges,Féchy,Gemeindegebiet,CH
+1593,5428,5428,22,Vaud,2227,Morges,Gimel,Gemeindegebiet,CH
+1594,5429,5429,22,Vaud,2228,Nyon,Longirod,Gemeindegebiet,CH
+1595,5430,5430,22,Vaud,2228,Nyon,Marchissy,Gemeindegebiet,CH
+1596,5431,5431,22,Vaud,2227,Morges,Mollens (VD),Gemeindegebiet,CH
+1597,5434,5434,22,Vaud,2228,Nyon,Saint-George,Gemeindegebiet,CH
+1598,5435,5435,22,Vaud,2227,Morges,Saint-Livres,Gemeindegebiet,CH
+1599,5436,5436,22,Vaud,2227,Morges,Saint-Oyens,Gemeindegebiet,CH
+1600,5437,5437,22,Vaud,2227,Morges,Saubraz,Gemeindegebiet,CH
+1601,5451,5451,22,Vaud,2222,Broye-Vully,Avenches,Gemeindegebiet,CH
+1602,5456,5456,22,Vaud,2222,Broye-Vully,Cudrefin,Gemeindegebiet,CH
+1603,5458,5458,22,Vaud,2222,Broye-Vully,Faoug,Gemeindegebiet,CH
+1604,5464,5464,22,Vaud,2222,Broye-Vully,Vully-les-Lacs,Gemeindegebiet,CH
+1605,5471,5471,22,Vaud,2223,Gros-de-Vaud,Bettens,Gemeindegebiet,CH
+1606,5472,5472,22,Vaud,2223,Gros-de-Vaud,Bournens,Gemeindegebiet,CH
+1607,5473,5473,22,Vaud,2223,Gros-de-Vaud,Boussens,Gemeindegebiet,CH
+1608,5474,5474,22,Vaud,2227,Morges,La Chaux (Cossonay),Gemeindegebiet,CH
+1609,5475,5475,22,Vaud,2227,Morges,Chavannes-le-Veyron,Gemeindegebiet,CH
+1610,5476,5476,22,Vaud,2227,Morges,Chevilly,Gemeindegebiet,CH
+1611,5477,5477,22,Vaud,2227,Morges,Cossonay,Gemeindegebiet,CH
+1612,5479,5479,22,Vaud,2227,Morges,Cuarnens,Gemeindegebiet,CH
+1613,5480,5480,22,Vaud,2223,Gros-de-Vaud,Daillens,Gemeindegebiet,CH
+1614,5481,5481,22,Vaud,2227,Morges,Dizy,Gemeindegebiet,CH
+1615,5482,5482,22,Vaud,2227,Morges,Eclépens,Gemeindegebiet,CH
+1616,5483,5483,22,Vaud,2227,Morges,Ferreyres,Gemeindegebiet,CH
+1617,5484,5484,22,Vaud,2227,Morges,Gollion,Gemeindegebiet,CH
+1618,5485,5485,22,Vaud,2227,Morges,Grancy,Gemeindegebiet,CH
+1619,5486,5486,22,Vaud,2227,Morges,L'Isle,Gemeindegebiet,CH
+1620,5487,5487,22,Vaud,2223,Gros-de-Vaud,Lussery-Villars,Gemeindegebiet,CH
+1621,5488,5488,22,Vaud,2227,Morges,Mauraz,Gemeindegebiet,CH
+1622,5489,5489,22,Vaud,2223,Gros-de-Vaud,Mex (VD),Gemeindegebiet,CH
+1623,5490,5490,22,Vaud,2227,Morges,Moiry,Gemeindegebiet,CH
+1624,5491,5491,22,Vaud,2227,Morges,Mont-la-Ville,Gemeindegebiet,CH
+1625,5492,5492,22,Vaud,2227,Morges,Montricher,Gemeindegebiet,CH
+1626,5493,5493,22,Vaud,2227,Morges,Orny,Gemeindegebiet,CH
+1627,5495,5495,22,Vaud,2223,Gros-de-Vaud,Penthalaz,Gemeindegebiet,CH
+1628,5496,5496,22,Vaud,2223,Gros-de-Vaud,Penthaz,Gemeindegebiet,CH
+1629,5497,5497,22,Vaud,2227,Morges,Pompaples,Gemeindegebiet,CH
+1630,5498,5498,22,Vaud,2227,Morges,La Sarraz,Gemeindegebiet,CH
+1631,5499,5499,22,Vaud,2227,Morges,Senarclens,Gemeindegebiet,CH
+1632,5501,5501,22,Vaud,2223,Gros-de-Vaud,Sullens,Gemeindegebiet,CH
+1633,5503,5503,22,Vaud,2223,Gros-de-Vaud,Vufflens-la-Ville,Gemeindegebiet,CH
+1634,5511,5511,22,Vaud,2223,Gros-de-Vaud,Assens,Gemeindegebiet,CH
+1635,5512,5512,22,Vaud,2223,Gros-de-Vaud,Bercher,Gemeindegebiet,CH
+1636,5514,5514,22,Vaud,2223,Gros-de-Vaud,Bottens,Gemeindegebiet,CH
+1637,5515,5515,22,Vaud,2223,Gros-de-Vaud,Bretigny-sur-Morrens,Gemeindegebiet,CH
+1638,5516,5516,22,Vaud,2223,Gros-de-Vaud,Cugy (VD),Gemeindegebiet,CH
+1639,5518,5518,22,Vaud,2223,Gros-de-Vaud,Echallens,Gemeindegebiet,CH
+1640,5520,5520,22,Vaud,2223,Gros-de-Vaud,Essertines-sur-Yverdon,Gemeindegebiet,CH
+1641,5521,5521,22,Vaud,2223,Gros-de-Vaud,Etagnières,Gemeindegebiet,CH
+1642,5522,5522,22,Vaud,2223,Gros-de-Vaud,Fey,Gemeindegebiet,CH
+1643,5523,5523,22,Vaud,2223,Gros-de-Vaud,Froideville,Gemeindegebiet,CH
+1644,5527,5527,22,Vaud,2223,Gros-de-Vaud,Morrens (VD),Gemeindegebiet,CH
+1645,5529,5529,22,Vaud,2223,Gros-de-Vaud,Oulens-sous-Echallens,Gemeindegebiet,CH
+1646,5530,5530,22,Vaud,2223,Gros-de-Vaud,Pailly,Gemeindegebiet,CH
+1647,5531,5531,22,Vaud,2223,Gros-de-Vaud,Penthéréaz,Gemeindegebiet,CH
+1648,5533,5533,22,Vaud,2223,Gros-de-Vaud,Poliez-Pittet,Gemeindegebiet,CH
+1649,5534,5534,22,Vaud,2223,Gros-de-Vaud,Rueyres,Gemeindegebiet,CH
+1650,5535,5535,22,Vaud,2223,Gros-de-Vaud,Saint-Barthélemy (VD),Gemeindegebiet,CH
+1651,5537,5537,22,Vaud,2223,Gros-de-Vaud,Villars-le-Terroir,Gemeindegebiet,CH
+1652,5539,5539,22,Vaud,2223,Gros-de-Vaud,Vuarrens,Gemeindegebiet,CH
+1653,5540,5540,22,Vaud,2223,Gros-de-Vaud,Montilliez,Gemeindegebiet,CH
+1654,5541,5541,22,Vaud,2223,Gros-de-Vaud,Goumoëns,Gemeindegebiet,CH
+1655,5551,5551,22,Vaud,2224,Jura-Nord vaudois,Bonvillars,Gemeindegebiet,CH
+1656,5552,5552,22,Vaud,2224,Jura-Nord vaudois,Bullet,Gemeindegebiet,CH
+1657,5553,5553,22,Vaud,2224,Jura-Nord vaudois,Champagne,Gemeindegebiet,CH
+1658,5554,5554,22,Vaud,2224,Jura-Nord vaudois,Concise,Gemeindegebiet,CH
+1659,5555,5555,22,Vaud,2224,Jura-Nord vaudois,Corcelles-près-Concise,Gemeindegebiet,CH
+1660,5556,5556,22,Vaud,2224,Jura-Nord vaudois,Fiez,Gemeindegebiet,CH
+1661,5557,5557,22,Vaud,2224,Jura-Nord vaudois,Fontaines-sur-Grandson,Gemeindegebiet,CH
+1662,5559,5559,22,Vaud,2224,Jura-Nord vaudois,Giez,Gemeindegebiet,CH
+1663,5560,5560,22,Vaud,2224,Jura-Nord vaudois,Grandevent,Gemeindegebiet,CH
+1664,5561,5561,22,Vaud,2224,Jura-Nord vaudois,Grandson,Gemeindegebiet,CH
+1665,5562,5562,22,Vaud,2224,Jura-Nord vaudois,Mauborget,Gemeindegebiet,CH
+1666,5563,5563,22,Vaud,2224,Jura-Nord vaudois,Mutrux,Gemeindegebiet,CH
+1667,5564,5564,22,Vaud,2224,Jura-Nord vaudois,Novalles,Gemeindegebiet,CH
+1668,5565,5565,22,Vaud,2224,Jura-Nord vaudois,Onnens (VD),Gemeindegebiet,CH
+1669,5566,5566,22,Vaud,2224,Jura-Nord vaudois,Provence,Gemeindegebiet,CH
+1670,5568,5568,22,Vaud,2224,Jura-Nord vaudois,Sainte-Croix,Gemeindegebiet,CH
+1671,5571,5571,22,Vaud,2224,Jura-Nord vaudois,Tévenon,Gemeindegebiet,CH
+1672,5581,5581,22,Vaud,2226,Lavaux-Oron,Belmont-sur-Lausanne,Gemeindegebiet,CH
+1673,5582,5582,22,Vaud,2225,Lausanne,Cheseaux-sur-Lausanne,Gemeindegebiet,CH
+1674,5583,5583,22,Vaud,2229,Ouest lausannois,Crissier,Gemeindegebiet,CH
+1675,5584,5584,22,Vaud,2225,Lausanne,Epalinges,Gemeindegebiet,CH
+1676,5585,5585,22,Vaud,2225,Lausanne,Jouxtens-Mézery,Gemeindegebiet,CH
+1677,5586,5586,22,Vaud,2225,Lausanne,Lausanne,Gemeindegebiet,CH
+1678,5587,5587,22,Vaud,2225,Lausanne,Le Mont-sur-Lausanne,Gemeindegebiet,CH
+1679,5588,5588,22,Vaud,2226,Lavaux-Oron,Paudex,Gemeindegebiet,CH
+1680,5589,5589,22,Vaud,2229,Ouest lausannois,Prilly,Gemeindegebiet,CH
+1681,5590,5590,22,Vaud,2226,Lavaux-Oron,Pully,Gemeindegebiet,CH
+1682,5591,5591,22,Vaud,2229,Ouest lausannois,Renens (VD),Gemeindegebiet,CH
+1683,5592,5592,22,Vaud,2225,Lausanne,Romanel-sur-Lausanne,Gemeindegebiet,CH
+1684,5601,5601,22,Vaud,2226,Lavaux-Oron,Chexbres,Gemeindegebiet,CH
+1685,5604,5604,22,Vaud,2226,Lavaux-Oron,Forel (Lavaux),Gemeindegebiet,CH
+1686,5606,5606,22,Vaud,2226,Lavaux-Oron,Lutry,Gemeindegebiet,CH
+1687,5607,5607,22,Vaud,2226,Lavaux-Oron,Puidoux,Gemeindegebiet,CH
+1688,5609,5609,22,Vaud,2226,Lavaux-Oron,Rivaz,Gemeindegebiet,CH
+1689,5610,5610,22,Vaud,2226,Lavaux-Oron,Saint-Saphorin (Lavaux),Gemeindegebiet,CH
+1690,5611,5611,22,Vaud,2226,Lavaux-Oron,Savigny,Gemeindegebiet,CH
+1691,5613,5613,22,Vaud,2226,Lavaux-Oron,Bourg-en-Lavaux,Gemeindegebiet,CH
+1692,5621,5621,22,Vaud,2227,Morges,Aclens,Gemeindegebiet,CH
+1693,5622,5622,22,Vaud,2227,Morges,Bremblens,Gemeindegebiet,CH
+1694,5623,5623,22,Vaud,2227,Morges,Buchillon,Gemeindegebiet,CH
+1695,5624,5624,22,Vaud,2229,Ouest lausannois,Bussigny,Gemeindegebiet,CH
+1696,5627,5627,22,Vaud,2229,Ouest lausannois,Chavannes-près-Renens,Gemeindegebiet,CH
+1697,5628,5628,22,Vaud,2227,Morges,Chigny,Gemeindegebiet,CH
+1698,5629,5629,22,Vaud,2227,Morges,Clarmont,Gemeindegebiet,CH
+1699,5631,5631,22,Vaud,2227,Morges,Denens,Gemeindegebiet,CH
+1700,5632,5632,22,Vaud,2227,Morges,Denges,Gemeindegebiet,CH
+1701,5633,5633,22,Vaud,2227,Morges,Echandens,Gemeindegebiet,CH
+1702,5634,5634,22,Vaud,2227,Morges,Echichens,Gemeindegebiet,CH
+1703,5635,5635,22,Vaud,2229,Ouest lausannois,Ecublens (VD),Gemeindegebiet,CH
+1704,5636,5636,22,Vaud,2227,Morges,Etoy,Gemeindegebiet,CH
+1705,5637,5637,22,Vaud,2227,Morges,Lavigny,Gemeindegebiet,CH
+1706,5638,5638,22,Vaud,2227,Morges,Lonay,Gemeindegebiet,CH
+1707,5639,5639,22,Vaud,2227,Morges,Lully (VD),Gemeindegebiet,CH
+1708,5640,5640,22,Vaud,2227,Morges,Lussy-sur-Morges,Gemeindegebiet,CH
+1709,5642,5642,22,Vaud,2227,Morges,Morges,Gemeindegebiet,CH
+1710,5643,5643,22,Vaud,2227,Morges,Préverenges,Gemeindegebiet,CH
+1711,5645,5645,22,Vaud,2227,Morges,Romanel-sur-Morges,Gemeindegebiet,CH
+1712,5646,5646,22,Vaud,2227,Morges,Saint-Prex,Gemeindegebiet,CH
+1713,5648,5648,22,Vaud,2229,Ouest lausannois,Saint-Sulpice (VD),Gemeindegebiet,CH
+1714,5649,5649,22,Vaud,2227,Morges,Tolochenaz,Gemeindegebiet,CH
+1715,5650,5650,22,Vaud,2227,Morges,Vaux-sur-Morges,Gemeindegebiet,CH
+1716,5651,5651,22,Vaud,2229,Ouest lausannois,Villars-Sainte-Croix,Gemeindegebiet,CH
+1717,5652,5652,22,Vaud,2227,Morges,Villars-sous-Yens,Gemeindegebiet,CH
+1718,5653,5653,22,Vaud,2227,Morges,Vufflens-le-Château,Gemeindegebiet,CH
+1719,5654,5654,22,Vaud,2227,Morges,Vullierens,Gemeindegebiet,CH
+1720,5655,5655,22,Vaud,2227,Morges,Yens,Gemeindegebiet,CH
+1721,5656,5656,22,Vaud,2227,Morges,Hautemorges,Gemeindegebiet,CH
+1722,5661,5661,22,Vaud,2223,Gros-de-Vaud,Boulens,Gemeindegebiet,CH
+1723,5663,5663,22,Vaud,2222,Broye-Vully,Bussy-sur-Moudon,Gemeindegebiet,CH
+1724,5665,5665,22,Vaud,2222,Broye-Vully,Chavannes-sur-Moudon,Gemeindegebiet,CH
+1725,5669,5669,22,Vaud,2222,Broye-Vully,Curtilles,Gemeindegebiet,CH
+1726,5671,5671,22,Vaud,2222,Broye-Vully,Dompierre (VD),Gemeindegebiet,CH
+1727,5673,5673,22,Vaud,2222,Broye-Vully,Hermenches,Gemeindegebiet,CH
+1728,5674,5674,22,Vaud,2222,Broye-Vully,Lovatens,Gemeindegebiet,CH
+1729,5675,5675,22,Vaud,2222,Broye-Vully,Lucens,Gemeindegebiet,CH
+1730,5678,5678,22,Vaud,2222,Broye-Vully,Moudon,Gemeindegebiet,CH
+1731,5680,5680,22,Vaud,2223,Gros-de-Vaud,Ogens,Gemeindegebiet,CH
+1732,5683,5683,22,Vaud,2222,Broye-Vully,Prévonloup,Gemeindegebiet,CH
+1733,5684,5684,22,Vaud,2222,Broye-Vully,Rossenges,Gemeindegebiet,CH
+1734,5688,5688,22,Vaud,2222,Broye-Vully,Syens,Gemeindegebiet,CH
+1735,5690,5690,22,Vaud,2222,Broye-Vully,Villars-le-Comte,Gemeindegebiet,CH
+1736,5692,5692,22,Vaud,2222,Broye-Vully,Vucherens,Gemeindegebiet,CH
+1737,5693,5693,22,Vaud,2223,Gros-de-Vaud,Montanaire,Gemeindegebiet,CH
+1738,5701,5701,22,Vaud,2228,Nyon,Arnex-sur-Nyon,Gemeindegebiet,CH
+1739,5702,5702,22,Vaud,2228,Nyon,Arzier-Le Muids,Gemeindegebiet,CH
+1740,5703,5703,22,Vaud,2228,Nyon,Bassins,Gemeindegebiet,CH
+1741,5704,5704,22,Vaud,2228,Nyon,Begnins,Gemeindegebiet,CH
+1742,5705,5705,22,Vaud,2228,Nyon,Bogis-Bossey,Gemeindegebiet,CH
+1743,5706,5706,22,Vaud,2228,Nyon,Borex,Gemeindegebiet,CH
+1744,5707,5707,22,Vaud,2228,Nyon,Chavannes-de-Bogis,Gemeindegebiet,CH
+1745,5708,5708,22,Vaud,2228,Nyon,Chavannes-des-Bois,Gemeindegebiet,CH
+1746,5709,5709,22,Vaud,2228,Nyon,Chéserex,Gemeindegebiet,CH
+1747,5710,5710,22,Vaud,2228,Nyon,Coinsins,Gemeindegebiet,CH
+1748,5711,5711,22,Vaud,2228,Nyon,Commugny,Gemeindegebiet,CH
+1749,5712,5712,22,Vaud,2228,Nyon,Coppet,Gemeindegebiet,CH
+1750,5713,5713,22,Vaud,2228,Nyon,Crans (VD),Gemeindegebiet,CH
+1751,5714,5714,22,Vaud,2228,Nyon,Crassier,Gemeindegebiet,CH
+1752,5715,5715,22,Vaud,2228,Nyon,Duillier,Gemeindegebiet,CH
+1753,5716,5716,22,Vaud,2228,Nyon,Eysins,Gemeindegebiet,CH
+1754,5717,5717,22,Vaud,2228,Nyon,Founex,Gemeindegebiet,CH
+1755,5718,5718,22,Vaud,2228,Nyon,Genolier,Gemeindegebiet,CH
+1756,5719,5719,22,Vaud,2228,Nyon,Gingins,Gemeindegebiet,CH
+1757,5720,5720,22,Vaud,2228,Nyon,Givrins,Gemeindegebiet,CH
+1758,5721,5721,22,Vaud,2228,Nyon,Gland,Gemeindegebiet,CH
+1759,5722,5722,22,Vaud,2228,Nyon,Grens,Gemeindegebiet,CH
+1760,5723,5723,22,Vaud,2228,Nyon,Mies,Gemeindegebiet,CH
+1761,5724,5724,22,Vaud,2228,Nyon,Nyon,Gemeindegebiet,CH
+1762,5725,5725,22,Vaud,2228,Nyon,Prangins,Gemeindegebiet,CH
+1763,5726,5726,22,Vaud,2228,Nyon,La Rippe,Gemeindegebiet,CH
+1764,5727,5727,22,Vaud,2228,Nyon,Saint-Cergue,Gemeindegebiet,CH
+1765,5728,5728,22,Vaud,2228,Nyon,Signy-Avenex,Gemeindegebiet,CH
+1766,5729,5729,22,Vaud,2228,Nyon,Tannay,Gemeindegebiet,CH
+1767,5730,5730,22,Vaud,2228,Nyon,Trélex,Gemeindegebiet,CH
+1768,5731,5731,22,Vaud,2228,Nyon,Le Vaud,Gemeindegebiet,CH
+1769,5732,5732,22,Vaud,2228,Nyon,Vich,Gemeindegebiet,CH
+1770,5741,5741,22,Vaud,2224,Jura-Nord vaudois,L'Abergement,Gemeindegebiet,CH
+1771,5742,5742,22,Vaud,2224,Jura-Nord vaudois,Agiez,Gemeindegebiet,CH
+1772,5743,5743,22,Vaud,2224,Jura-Nord vaudois,Arnex-sur-Orbe,Gemeindegebiet,CH
+1773,5744,5744,22,Vaud,2224,Jura-Nord vaudois,Ballaigues,Gemeindegebiet,CH
+1774,5745,5745,22,Vaud,2224,Jura-Nord vaudois,Baulmes,Gemeindegebiet,CH
+1775,5746,5746,22,Vaud,2224,Jura-Nord vaudois,Bavois,Gemeindegebiet,CH
+1776,5747,5747,22,Vaud,2224,Jura-Nord vaudois,Bofflens,Gemeindegebiet,CH
+1777,5748,5748,22,Vaud,2224,Jura-Nord vaudois,Bretonnières,Gemeindegebiet,CH
+1778,5749,5749,22,Vaud,2224,Jura-Nord vaudois,Chavornay,Gemeindegebiet,CH
+1779,5750,5750,22,Vaud,2224,Jura-Nord vaudois,Les Clées,Gemeindegebiet,CH
+1780,5752,5752,22,Vaud,2224,Jura-Nord vaudois,Croy,Gemeindegebiet,CH
+1781,5754,5754,22,Vaud,2224,Jura-Nord vaudois,Juriens,Gemeindegebiet,CH
+1782,5755,5755,22,Vaud,2224,Jura-Nord vaudois,Lignerolle,Gemeindegebiet,CH
+1783,5756,5756,22,Vaud,2224,Jura-Nord vaudois,Montcherand,Gemeindegebiet,CH
+1784,5757,5757,22,Vaud,2224,Jura-Nord vaudois,Orbe,Gemeindegebiet,CH
+1785,5758,5758,22,Vaud,2224,Jura-Nord vaudois,La Praz,Gemeindegebiet,CH
+1786,5759,5759,22,Vaud,2224,Jura-Nord vaudois,Premier,Gemeindegebiet,CH
+1787,5760,5760,22,Vaud,2224,Jura-Nord vaudois,Rances,Gemeindegebiet,CH
+1788,5761,5761,22,Vaud,2224,Jura-Nord vaudois,Romainmôtier-Envy,Gemeindegebiet,CH
+1789,5762,5762,22,Vaud,2224,Jura-Nord vaudois,Sergey,Gemeindegebiet,CH
+1790,5763,5763,22,Vaud,2224,Jura-Nord vaudois,Valeyres-sous-Rances,Gemeindegebiet,CH
+1791,5764,5764,22,Vaud,2224,Jura-Nord vaudois,Vallorbe,Gemeindegebiet,CH
+1792,5765,5765,22,Vaud,2224,Jura-Nord vaudois,Vaulion,Gemeindegebiet,CH
+1793,5766,5766,22,Vaud,2224,Jura-Nord vaudois,Vuiteboeuf,Gemeindegebiet,CH
+1794,5785,5785,22,Vaud,2222,Broye-Vully,Corcelles-le-Jorat,Gemeindegebiet,CH
+1795,5790,5790,22,Vaud,2226,Lavaux-Oron,Maracon,Gemeindegebiet,CH
+1796,5792,5792,22,Vaud,2226,Lavaux-Oron,Montpreveyres,Gemeindegebiet,CH
+1797,5798,5798,22,Vaud,2222,Broye-Vully,Ropraz,Gemeindegebiet,CH
+1798,5799,5799,22,Vaud,2226,Lavaux-Oron,Servion,Gemeindegebiet,CH
+1799,5803,5803,22,Vaud,2222,Broye-Vully,Vulliens,Gemeindegebiet,CH
+1800,5804,5804,22,Vaud,2223,Gros-de-Vaud,Jorat-Menthue,Gemeindegebiet,CH
+1801,5805,5805,22,Vaud,2226,Lavaux-Oron,Oron,Gemeindegebiet,CH
+1802,5806,5806,22,Vaud,2226,Lavaux-Oron,Jorat-Mézières,Gemeindegebiet,CH
+1803,5812,5812,22,Vaud,2222,Broye-Vully,Champtauroz,Gemeindegebiet,CH
+1804,5813,5813,22,Vaud,2222,Broye-Vully,Chevroux,Gemeindegebiet,CH
+1805,5816,5816,22,Vaud,2222,Broye-Vully,Corcelles-près-Payerne,Gemeindegebiet,CH
+1806,5817,5817,22,Vaud,2222,Broye-Vully,Grandcour,Gemeindegebiet,CH
+1807,5819,5819,22,Vaud,2222,Broye-Vully,Henniez,Gemeindegebiet,CH
+1808,5821,5821,22,Vaud,2222,Broye-Vully,Missy,Gemeindegebiet,CH
+1809,5822,5822,22,Vaud,2222,Broye-Vully,Payerne,Gemeindegebiet,CH
+1810,5827,5827,22,Vaud,2222,Broye-Vully,Trey,Gemeindegebiet,CH
+1811,5828,5828,22,Vaud,2222,Broye-Vully,Treytorrens (Payerne),Gemeindegebiet,CH
+1812,5830,5830,22,Vaud,2222,Broye-Vully,Villarzel,Gemeindegebiet,CH
+1813,5831,5831,22,Vaud,2222,Broye-Vully,Valbroye,Gemeindegebiet,CH
+1814,5841,5841,22,Vaud,2230,Riviera-Pays-d'Enhaut,Château-d'Oex,Gemeindegebiet,CH
+1815,5842,5842,22,Vaud,2230,Riviera-Pays-d'Enhaut,Rossinière,Gemeindegebiet,CH
+1816,5843,5843,22,Vaud,2230,Riviera-Pays-d'Enhaut,Rougemont,Gemeindegebiet,CH
+1817,5851,5851,22,Vaud,2227,Morges,Allaman,Gemeindegebiet,CH
+1818,5852,5852,22,Vaud,2228,Nyon,Bursinel,Gemeindegebiet,CH
+1819,5853,5853,22,Vaud,2228,Nyon,Bursins,Gemeindegebiet,CH
+1820,5854,5854,22,Vaud,2228,Nyon,Burtigny,Gemeindegebiet,CH
+1821,5855,5855,22,Vaud,2228,Nyon,Dully,Gemeindegebiet,CH
+1822,5856,5856,22,Vaud,2228,Nyon,Essertines-sur-Rolle,Gemeindegebiet,CH
+1823,5857,5857,22,Vaud,2228,Nyon,Gilly,Gemeindegebiet,CH
+1824,5858,5858,22,Vaud,2228,Nyon,Luins,Gemeindegebiet,CH
+1825,5859,5859,22,Vaud,2228,Nyon,Mont-sur-Rolle,Gemeindegebiet,CH
+1826,5860,5860,22,Vaud,2228,Nyon,Perroy,Gemeindegebiet,CH
+1827,5861,5861,22,Vaud,2228,Nyon,Rolle,Gemeindegebiet,CH
+1828,5862,5862,22,Vaud,2228,Nyon,Tartegnin,Gemeindegebiet,CH
+1829,5863,5863,22,Vaud,2228,Nyon,Vinzel,Gemeindegebiet,CH
+1830,5871,5871,22,Vaud,2224,Jura-Nord vaudois,L'Abbaye,Gemeindegebiet,CH
+1831,5872,5872,22,Vaud,2224,Jura-Nord vaudois,Le Chenit,Gemeindegebiet,CH
+1832,5873,5873,22,Vaud,2224,Jura-Nord vaudois,Le Lieu,Gemeindegebiet,CH
+1833,5882,5882,22,Vaud,2230,Riviera-Pays-d'Enhaut,Chardonne,Gemeindegebiet,CH
+1834,5883,5883,22,Vaud,2230,Riviera-Pays-d'Enhaut,Corseaux,Gemeindegebiet,CH
+1835,5884,5884,22,Vaud,2230,Riviera-Pays-d'Enhaut,Corsier-sur-Vevey,Gemeindegebiet,CH
+1836,5885,5885,22,Vaud,2230,Riviera-Pays-d'Enhaut,Jongny,Gemeindegebiet,CH
+1837,5886,5886,22,Vaud,2230,Riviera-Pays-d'Enhaut,Montreux,Gemeindegebiet,CH
+1838,5889,5889,22,Vaud,2230,Riviera-Pays-d'Enhaut,La Tour-de-Peilz,Gemeindegebiet,CH
+1839,5890,5890,22,Vaud,2230,Riviera-Pays-d'Enhaut,Vevey,Gemeindegebiet,CH
+1840,5891,5891,22,Vaud,2230,Riviera-Pays-d'Enhaut,Veytaux,Gemeindegebiet,CH
+1841,5892,5892,22,Vaud,2230,Riviera-Pays-d'Enhaut,Blonay - Saint-Légier,Gemeindegebiet,CH
+1842,5902,5902,22,Vaud,2224,Jura-Nord vaudois,Belmont-sur-Yverdon,Gemeindegebiet,CH
+1843,5903,5903,22,Vaud,2224,Jura-Nord vaudois,Bioley-Magnoux,Gemeindegebiet,CH
+1844,5904,5904,22,Vaud,2224,Jura-Nord vaudois,Chamblon,Gemeindegebiet,CH
+1845,5905,5905,22,Vaud,2224,Jura-Nord vaudois,Champvent,Gemeindegebiet,CH
+1846,5907,5907,22,Vaud,2224,Jura-Nord vaudois,Chavannes-le-Chêne,Gemeindegebiet,CH
+1847,5908,5908,22,Vaud,2224,Jura-Nord vaudois,Chêne-Pâquier,Gemeindegebiet,CH
+1848,5909,5909,22,Vaud,2224,Jura-Nord vaudois,Cheseaux-Noréaz,Gemeindegebiet,CH
+1849,5910,5910,22,Vaud,2224,Jura-Nord vaudois,Cronay,Gemeindegebiet,CH
+1850,5911,5911,22,Vaud,2224,Jura-Nord vaudois,Cuarny,Gemeindegebiet,CH
+1851,5912,5912,22,Vaud,2224,Jura-Nord vaudois,Démoret,Gemeindegebiet,CH
+1852,5913,5913,22,Vaud,2224,Jura-Nord vaudois,Donneloye,Gemeindegebiet,CH
+1853,5914,5914,22,Vaud,2224,Jura-Nord vaudois,Ependes (VD),Gemeindegebiet,CH
+1854,5919,5919,22,Vaud,2224,Jura-Nord vaudois,Mathod,Gemeindegebiet,CH
+1855,5921,5921,22,Vaud,2224,Jura-Nord vaudois,Molondin,Gemeindegebiet,CH
+1856,5922,5922,22,Vaud,2224,Jura-Nord vaudois,Montagny-près-Yverdon,Gemeindegebiet,CH
+1857,5923,5923,22,Vaud,2223,Gros-de-Vaud,Oppens,Gemeindegebiet,CH
+1858,5924,5924,22,Vaud,2224,Jura-Nord vaudois,Orges,Gemeindegebiet,CH
+1859,5925,5925,22,Vaud,2224,Jura-Nord vaudois,Orzens,Gemeindegebiet,CH
+1860,5926,5926,22,Vaud,2224,Jura-Nord vaudois,Pomy,Gemeindegebiet,CH
+1861,5928,5928,22,Vaud,2224,Jura-Nord vaudois,Rovray,Gemeindegebiet,CH
+1862,5929,5929,22,Vaud,2224,Jura-Nord vaudois,Suchy,Gemeindegebiet,CH
+1863,5930,5930,22,Vaud,2224,Jura-Nord vaudois,Suscévaz,Gemeindegebiet,CH
+1864,5931,5931,22,Vaud,2224,Jura-Nord vaudois,Treycovagnes,Gemeindegebiet,CH
+1865,5932,5932,22,Vaud,2224,Jura-Nord vaudois,Ursins,Gemeindegebiet,CH
+1866,5933,5933,22,Vaud,2224,Jura-Nord vaudois,Valeyres-sous-Montagny,Gemeindegebiet,CH
+1867,5934,5934,22,Vaud,2224,Jura-Nord vaudois,Valeyres-sous-Ursins,Gemeindegebiet,CH
+1868,5935,5935,22,Vaud,2224,Jura-Nord vaudois,Villars-Epeney,Gemeindegebiet,CH
+1869,5937,5937,22,Vaud,2224,Jura-Nord vaudois,Vugelles-La Mothe,Gemeindegebiet,CH
+1870,5938,5938,22,Vaud,2224,Jura-Nord vaudois,Yverdon-les-Bains,Gemeindegebiet,CH
+1871,5939,5939,22,Vaud,2224,Jura-Nord vaudois,Yvonand,Gemeindegebiet,CH
+1872,6002,6002,23,Valais,2301,Brig,Brig-Glis,Gemeindegebiet,CH
+1873,6004,6004,23,Valais,2301,Brig,Eggerberg,Gemeindegebiet,CH
+1874,6007,6007,23,Valais,2301,Brig,Naters,Gemeindegebiet,CH
+1875,6008,6008,23,Valais,2301,Brig,Ried-Brig,Gemeindegebiet,CH
+1876,6009,6009,23,Valais,2301,Brig,Simplon,Gemeindegebiet,CH
+1877,6010,6010,23,Valais,2301,Brig,Termen,Gemeindegebiet,CH
+1878,6011,6011,23,Valais,2301,Brig,Zwischbergen,Gemeindegebiet,CH
+1879,6021,6021,23,Valais,2302,Conthey,Ardon,Gemeindegebiet,CH
+1880,6022,6022,23,Valais,2302,Conthey,Chamoson,Gemeindegebiet,CH
+1881,6023,6023,23,Valais,2302,Conthey,Conthey,Gemeindegebiet,CH
+1882,6024,6024,23,Valais,2302,Conthey,Nendaz,Gemeindegebiet,CH
+1883,6025,6025,23,Valais,2302,Conthey,Vétroz,Gemeindegebiet,CH
+1884,6032,6032,23,Valais,2303,Entremont,Bourg-Saint-Pierre,Gemeindegebiet,CH
+1885,6033,6033,23,Valais,2303,Entremont,Liddes,Gemeindegebiet,CH
+1886,6034,6034,23,Valais,2303,Entremont,Orsières,Gemeindegebiet,CH
+1887,6035,6035,23,Valais,2303,Entremont,Sembrancher,Gemeindegebiet,CH
+1888,6037,6037,23,Valais,2303,Entremont,Val de Bagnes,Gemeindegebiet,CH
+1889,6052,6052,23,Valais,2304,Goms,Bellwald,Gemeindegebiet,CH
+1890,6054,6054,23,Valais,2304,Goms,Binn,Gemeindegebiet,CH
+1891,6056,6056,23,Valais,2304,Goms,Ernen,Gemeindegebiet,CH
+1892,6057,6057,23,Valais,2304,Goms,Fiesch,Gemeindegebiet,CH
+1893,6058,6058,23,Valais,2304,Goms,Fieschertal,Gemeindegebiet,CH
+1894,6061,6061,23,Valais,2304,Goms,Lax,Gemeindegebiet,CH
+1895,6076,6076,23,Valais,2304,Goms,Obergoms,Gemeindegebiet,CH
+1896,6077,6077,23,Valais,2304,Goms,Goms,Gemeindegebiet,CH
+1897,6082,6082,23,Valais,2305,Hérens,Ayent,Gemeindegebiet,CH
+1898,6083,6083,23,Valais,2305,Hérens,Evolène,Gemeindegebiet,CH
+1899,6084,6084,23,Valais,2305,Hérens,Hérémence,Gemeindegebiet,CH
+1900,6087,6087,23,Valais,2305,Hérens,Saint-Martin (VS),Gemeindegebiet,CH
+1901,6089,6089,23,Valais,2305,Hérens,Vex,Gemeindegebiet,CH
+1902,6090,6090,23,Valais,2305,Hérens,Mont-Noble,Gemeindegebiet,CH
+1903,6101,6101,23,Valais,2306,Leuk,Agarn,Gemeindegebiet,CH
+1904,6102,6102,23,Valais,2306,Leuk,Albinen,Gemeindegebiet,CH
+1905,6104,6104,23,Valais,2306,Leuk,Ergisch,Gemeindegebiet,CH
+1906,6109,6109,23,Valais,2306,Leuk,Inden,Gemeindegebiet,CH
+1907,6110,6110,23,Valais,2306,Leuk,Leuk,Gemeindegebiet,CH
+1908,6111,6111,23,Valais,2306,Leuk,Leukerbad,Gemeindegebiet,CH
+1909,6112,6112,23,Valais,2306,Leuk,Oberems,Gemeindegebiet,CH
+1910,6113,6113,23,Valais,2306,Leuk,Salgesch,Gemeindegebiet,CH
+1911,6116,6116,23,Valais,2306,Leuk,Varen,Gemeindegebiet,CH
+1912,6117,6117,23,Valais,2306,Leuk,Guttet-Feschel,Gemeindegebiet,CH
+1913,6118,6118,23,Valais,2306,Leuk,Gampel-Bratsch,Gemeindegebiet,CH
+1914,6119,6119,23,Valais,2306,Leuk,Turtmann-Unterems,Gemeindegebiet,CH
+1915,6131,6131,23,Valais,2307,Martigny,Bovernier,Gemeindegebiet,CH
+1916,6133,6133,23,Valais,2307,Martigny,Fully,Gemeindegebiet,CH
+1917,6134,6134,23,Valais,2307,Martigny,Isérables,Gemeindegebiet,CH
+1918,6135,6135,23,Valais,2307,Martigny,Leytron,Gemeindegebiet,CH
+1919,6136,6136,23,Valais,2307,Martigny,Martigny,Gemeindegebiet,CH
+1920,6137,6137,23,Valais,2307,Martigny,Martigny-Combe,Gemeindegebiet,CH
+1921,6139,6139,23,Valais,2307,Martigny,Riddes,Gemeindegebiet,CH
+1922,6140,6140,23,Valais,2307,Martigny,Saillon,Gemeindegebiet,CH
+1923,6141,6141,23,Valais,2307,Martigny,Saxon,Gemeindegebiet,CH
+1924,6142,6142,23,Valais,2307,Martigny,Trient,Gemeindegebiet,CH
+1925,6151,6151,23,Valais,2308,Monthey,Champéry,Gemeindegebiet,CH
+1926,6152,6152,23,Valais,2308,Monthey,Collombey-Muraz,Gemeindegebiet,CH
+1927,6153,6153,23,Valais,2308,Monthey,Monthey,Gemeindegebiet,CH
+1928,6154,6154,23,Valais,2308,Monthey,Port-Valais,Gemeindegebiet,CH
+1929,6155,6155,23,Valais,2308,Monthey,Saint-Gingolph,Gemeindegebiet,CH
+1930,6156,6156,23,Valais,2308,Monthey,Troistorrents,Gemeindegebiet,CH
+1931,6157,6157,23,Valais,2308,Monthey,Val-d'Illiez,Gemeindegebiet,CH
+1932,6158,6158,23,Valais,2308,Monthey,Vionnaz,Gemeindegebiet,CH
+1933,6159,6159,23,Valais,2308,Monthey,Vouvry,Gemeindegebiet,CH
+1934,6172,6172,23,Valais,2309,Raron,Bister,Gemeindegebiet,CH
+1935,6173,6173,23,Valais,2309,Raron,Bitsch,Gemeindegebiet,CH
+1936,6177,6177,23,Valais,2309,Raron,Grengiols,Gemeindegebiet,CH
+1937,6181,6181,23,Valais,2309,Raron,Riederalp,Gemeindegebiet,CH
+1938,6191,6191,23,Valais,2309,Raron,Ausserberg,Gemeindegebiet,CH
+1939,6192,6192,23,Valais,2309,Raron,Blatten,Gemeindegebiet,CH
+1940,6193,6193,23,Valais,2309,Raron,Bürchen,Gemeindegebiet,CH
+1941,6194,6194,23,Valais,2309,Raron,Eischoll,Gemeindegebiet,CH
+1942,6195,6195,23,Valais,2309,Raron,Ferden,Gemeindegebiet,CH
+1943,6197,6197,23,Valais,2309,Raron,Kippel,Gemeindegebiet,CH
+1944,6198,6198,23,Valais,2309,Raron,Niedergesteln,Gemeindegebiet,CH
+1945,6199,6199,23,Valais,2309,Raron,Raron,Gemeindegebiet,CH
+1946,6201,6201,23,Valais,2309,Raron,Unterbäch,Gemeindegebiet,CH
+1947,6202,6202,23,Valais,2309,Raron,Wiler (Lötschen),Gemeindegebiet,CH
+1948,6203,6203,23,Valais,2309,Raron,Mörel-Filet,Gemeindegebiet,CH
+1949,6204,6204,23,Valais,2309,Raron,Steg-Hohtenn,Gemeindegebiet,CH
+1950,6205,6205,23,Valais,2309,Raron,Bettmeralp,Gemeindegebiet,CH
+1951,6211,6211,23,Valais,2310,Saint-Maurice,Collonges,Gemeindegebiet,CH
+1952,6212,6212,23,Valais,2310,Saint-Maurice,Dorénaz,Gemeindegebiet,CH
+1953,6213,6213,23,Valais,2310,Saint-Maurice,Evionnaz,Gemeindegebiet,CH
+1954,6214,6214,23,Valais,2310,Saint-Maurice,Finhaut,Gemeindegebiet,CH
+1955,6215,6215,23,Valais,2310,Saint-Maurice,Massongex,Gemeindegebiet,CH
+1956,6217,6217,23,Valais,2310,Saint-Maurice,Saint-Maurice,Gemeindegebiet,CH
+1957,6218,6218,23,Valais,2310,Saint-Maurice,Salvan,Gemeindegebiet,CH
+1958,6219,6219,23,Valais,2310,Saint-Maurice,Vernayaz,Gemeindegebiet,CH
+1959,6220,6220,23,Valais,2310,Saint-Maurice,Vérossaz,Gemeindegebiet,CH
+1960,6232,6232,23,Valais,2311,Sierre,Chalais,Gemeindegebiet,CH
+1961,6235,6235,23,Valais,2311,Sierre,Chippis,Gemeindegebiet,CH
+1962,6238,6238,23,Valais,2311,Sierre,Grône,Gemeindegebiet,CH
+1963,6239,6239,23,Valais,2311,Sierre,Icogne,Gemeindegebiet,CH
+1964,6240,6240,23,Valais,2311,Sierre,Lens,Gemeindegebiet,CH
+1965,6246,6246,23,Valais,2311,Sierre,Saint-Léonard,Gemeindegebiet,CH
+1966,6248,6248,23,Valais,2311,Sierre,Sierre,Gemeindegebiet,CH
+1967,6252,6252,23,Valais,2311,Sierre,Anniviers,Gemeindegebiet,CH
+1968,6253,6253,23,Valais,2311,Sierre,Crans-Montana,Gemeindegebiet,CH
+1969,6254,6254,23,Valais,2311,Sierre,Noble-Contrée,Gemeindegebiet,CH
+1970,6261,6261,23,Valais,2312,Sion,Arbaz,Gemeindegebiet,CH
+1971,6263,6263,23,Valais,2312,Sion,Grimisuat,Gemeindegebiet,CH
+1972,6265,6265,23,Valais,2312,Sion,Savièse,Gemeindegebiet,CH
+1973,6266,6266,23,Valais,2312,Sion,Sion,Gemeindegebiet,CH
+1974,6267,6267,23,Valais,2312,Sion,Veysonnaz,Gemeindegebiet,CH
+1975,6281,6281,23,Valais,2313,Visp,Baltschieder,Gemeindegebiet,CH
+1976,6282,6282,23,Valais,2313,Visp,Eisten,Gemeindegebiet,CH
+1977,6283,6283,23,Valais,2313,Visp,Embd,Gemeindegebiet,CH
+1978,6285,6285,23,Valais,2313,Visp,Grächen,Gemeindegebiet,CH
+1979,6286,6286,23,Valais,2313,Visp,Lalden,Gemeindegebiet,CH
+1980,6287,6287,23,Valais,2313,Visp,Randa,Gemeindegebiet,CH
+1981,6288,6288,23,Valais,2313,Visp,Saas-Almagell,Gemeindegebiet,CH
+1982,6289,6289,23,Valais,2313,Visp,Saas-Balen,Gemeindegebiet,CH
+1983,6290,6290,23,Valais,2313,Visp,Saas-Fee,Gemeindegebiet,CH
+1984,6291,6291,23,Valais,2313,Visp,Saas-Grund,Gemeindegebiet,CH
+1985,6292,6292,23,Valais,2313,Visp,St. Niklaus,Gemeindegebiet,CH
+1986,6293,6293,23,Valais,2313,Visp,Stalden (VS),Gemeindegebiet,CH
+1987,6294,6294,23,Valais,2313,Visp,Staldenried,Gemeindegebiet,CH
+1988,6295,6295,23,Valais,2313,Visp,Täsch,Gemeindegebiet,CH
+1989,6296,6296,23,Valais,2313,Visp,Törbel,Gemeindegebiet,CH
+1990,6297,6297,23,Valais,2313,Visp,Visp,Gemeindegebiet,CH
+1991,6298,6298,23,Valais,2313,Visp,Visperterminen,Gemeindegebiet,CH
+1992,6299,6299,23,Valais,2313,Visp,Zeneggen,Gemeindegebiet,CH
+1993,6300,6300,23,Valais,2313,Visp,Zermatt,Gemeindegebiet,CH
+1994,6404,6404,24,Neuchâtel,,,Boudry,Gemeindegebiet,CH
+1995,6408,6408,24,Neuchâtel,,,Cortaillod,Gemeindegebiet,CH
+1996,6413,6413,24,Neuchâtel,,,Rochefort,Gemeindegebiet,CH
+1997,6416,6416,24,Neuchâtel,,,Milvignes,Gemeindegebiet,CH
+1998,6417,6417,24,Neuchâtel,,,La Grande Béroche,Gemeindegebiet,CH
+1999,6421,6421,24,Neuchâtel,,,La Chaux-de-Fonds,Gemeindegebiet,CH
+2000,6422,6422,24,Neuchâtel,,,Les Planchettes,Gemeindegebiet,CH
+2001,6423,6423,24,Neuchâtel,,,La Sagne,Gemeindegebiet,CH
+2002,6432,6432,24,Neuchâtel,,,La Brévine,Gemeindegebiet,CH
+2003,6433,6433,24,Neuchâtel,,,Brot-Plamboz,Gemeindegebiet,CH
+2004,6434,6434,24,Neuchâtel,,,Le Cerneux-Péquignot,Gemeindegebiet,CH
+2005,6435,6435,24,Neuchâtel,,,La Chaux-du-Milieu,Gemeindegebiet,CH
+2006,6436,6436,24,Neuchâtel,,,Le Locle,Gemeindegebiet,CH
+2007,6437,6437,24,Neuchâtel,,,Les Ponts-de-Martel,Gemeindegebiet,CH
+2008,6451,6451,24,Neuchâtel,,,Cornaux,Gemeindegebiet,CH
+2009,6452,6452,24,Neuchâtel,,,Cressier (NE),Gemeindegebiet,CH
+2010,6455,6455,24,Neuchâtel,,,Le Landeron,Gemeindegebiet,CH
+2011,6456,6456,24,Neuchâtel,,,Lignières,Gemeindegebiet,CH
+2012,6458,6458,24,Neuchâtel,,,Neuchâtel,Gemeindegebiet,CH
+2013,6487,6487,24,Neuchâtel,,,Val-de-Ruz,Gemeindegebiet,CH
+2014,6504,6504,24,Neuchâtel,,,La Côte-aux-Fées,Gemeindegebiet,CH
+2015,6511,6511,24,Neuchâtel,,,Les Verrières,Gemeindegebiet,CH
+2016,6512,6512,24,Neuchâtel,,,Val-de-Travers,Gemeindegebiet,CH
+2017,6513,6513,24,Neuchâtel,,,Laténa,Gemeindegebiet,CH
+2018,6601,6601,25,Genève,,,Aire-la-Ville,Gemeindegebiet,CH
+2019,6602,6602,25,Genève,,,Anières,Gemeindegebiet,CH
+2020,6603,6603,25,Genève,,,Avully,Gemeindegebiet,CH
+2021,6604,6604,25,Genève,,,Avusy,Gemeindegebiet,CH
+2022,6605,6605,25,Genève,,,Bardonnex,Gemeindegebiet,CH
+2023,6606,6606,25,Genève,,,Bellevue,Gemeindegebiet,CH
+2024,6607,6607,25,Genève,,,Bernex,Gemeindegebiet,CH
+2025,6608,6608,25,Genève,,,Carouge (GE),Gemeindegebiet,CH
+2026,6609,6609,25,Genève,,,Cartigny,Gemeindegebiet,CH
+2027,6610,6610,25,Genève,,,Céligny,Gemeindegebiet,CH
+2028,6611,6611,25,Genève,,,Chancy,Gemeindegebiet,CH
+2029,6612,6612,25,Genève,,,Chêne-Bougeries,Gemeindegebiet,CH
+2030,6613,6613,25,Genève,,,Chêne-Bourg,Gemeindegebiet,CH
+2031,6614,6614,25,Genève,,,Choulex,Gemeindegebiet,CH
+2032,6615,6615,25,Genève,,,Collex-Bossy,Gemeindegebiet,CH
+2033,6616,6616,25,Genève,,,Collonge-Bellerive,Gemeindegebiet,CH
+2034,6617,6617,25,Genève,,,Cologny,Gemeindegebiet,CH
+2035,6618,6618,25,Genève,,,Confignon,Gemeindegebiet,CH
+2036,6619,6619,25,Genève,,,Corsier (GE),Gemeindegebiet,CH
+2037,6620,6620,25,Genève,,,Dardagny,Gemeindegebiet,CH
+2038,6621,6621,25,Genève,,,Genève,Gemeindegebiet,CH
+2039,6622,6622,25,Genève,,,Genthod,Gemeindegebiet,CH
+2040,6623,6623,25,Genève,,,Le Grand-Saconnex,Gemeindegebiet,CH
+2041,6624,6624,25,Genève,,,Gy,Gemeindegebiet,CH
+2042,6625,6625,25,Genève,,,Hermance,Gemeindegebiet,CH
+2043,6626,6626,25,Genève,,,Jussy,Gemeindegebiet,CH
+2044,6627,6627,25,Genève,,,Laconnex,Gemeindegebiet,CH
+2045,6628,6628,25,Genève,,,Lancy,Gemeindegebiet,CH
+2046,6629,6629,25,Genève,,,Meinier,Gemeindegebiet,CH
+2047,6630,6630,25,Genève,,,Meyrin,Gemeindegebiet,CH
+2048,6631,6631,25,Genève,,,Onex,Gemeindegebiet,CH
+2049,6632,6632,25,Genève,,,Perly-Certoux,Gemeindegebiet,CH
+2050,6633,6633,25,Genève,,,Plan-les-Ouates,Gemeindegebiet,CH
+2051,6634,6634,25,Genève,,,Pregny-Chambésy,Gemeindegebiet,CH
+2052,6635,6635,25,Genève,,,Presinge,Gemeindegebiet,CH
+2053,6636,6636,25,Genève,,,Puplinge,Gemeindegebiet,CH
+2054,6637,6637,25,Genève,,,Russin,Gemeindegebiet,CH
+2055,6638,6638,25,Genève,,,Satigny,Gemeindegebiet,CH
+2056,6639,6639,25,Genève,,,Soral,Gemeindegebiet,CH
+2057,6640,6640,25,Genève,,,Thônex,Gemeindegebiet,CH
+2058,6641,6641,25,Genève,,,Troinex,Gemeindegebiet,CH
+2059,6642,6642,25,Genève,,,Vandoeuvres,Gemeindegebiet,CH
+2060,6643,6643,25,Genève,,,Vernier,Gemeindegebiet,CH
+2061,6644,6644,25,Genève,,,Versoix,Gemeindegebiet,CH
+2062,6645,6645,25,Genève,,,Veyrier,Gemeindegebiet,CH
+2063,6702,6702,26,Jura,2601,Delémont,Boécourt,Gemeindegebiet,CH
+2064,6703,6703,26,Jura,2601,Delémont,Bourrignon,Gemeindegebiet,CH
+2065,6704,6704,26,Jura,2601,Delémont,Châtillon (JU),Gemeindegebiet,CH
+2066,6706,6706,26,Jura,2601,Delémont,Courchapoix,Gemeindegebiet,CH
+2067,6708,6708,26,Jura,2601,Delémont,Courrendlin,Gemeindegebiet,CH
+2068,6709,6709,26,Jura,2601,Delémont,Courroux,Gemeindegebiet,CH
+2069,6710,6710,26,Jura,2601,Delémont,Courtételle,Gemeindegebiet,CH
+2070,6711,6711,26,Jura,2601,Delémont,Delémont,Gemeindegebiet,CH
+2071,6712,6712,26,Jura,2601,Delémont,Develier,Gemeindegebiet,CH
+2072,6713,6713,26,Jura,2601,Delémont,Ederswiler,Gemeindegebiet,CH
+2073,6715,6715,26,Jura,2601,Delémont,Mervelier,Gemeindegebiet,CH
+2074,6716,6716,26,Jura,2601,Delémont,Mettembert,Gemeindegebiet,CH
+2075,6718,6718,26,Jura,2601,Delémont,Movelier,Gemeindegebiet,CH
+2076,6719,6719,26,Jura,2601,Delémont,Pleigne,Gemeindegebiet,CH
+2077,6721,6721,26,Jura,2601,Delémont,Rossemaison,Gemeindegebiet,CH
+2078,6722,6722,26,Jura,2601,Delémont,Saulcy,Gemeindegebiet,CH
+2079,6724,6724,26,Jura,2601,Delémont,Soyhières,Gemeindegebiet,CH
+2080,6729,6729,26,Jura,2601,Delémont,Haute-Sorne,Gemeindegebiet,CH
+2081,6730,6730,26,Jura,2601,Delémont,Val Terbi,Gemeindegebiet,CH
+2082,6741,6741,26,Jura,2602,Les Franches-Montagnes,Le Bémont (JU),Gemeindegebiet,CH
+2083,6742,6742,26,Jura,2602,Les Franches-Montagnes,Les Bois,Gemeindegebiet,CH
+2084,6743,6743,26,Jura,2602,Les Franches-Montagnes,Les Breuleux,Gemeindegebiet,CH
+2085,6745,6745,26,Jura,2602,Les Franches-Montagnes,Les Enfers,Gemeindegebiet,CH
+2086,6748,6748,26,Jura,2602,Les Franches-Montagnes,Les Genevez (JU),Gemeindegebiet,CH
+2087,6750,6750,26,Jura,2602,Les Franches-Montagnes,Lajoux (JU),Gemeindegebiet,CH
+2088,6751,6751,26,Jura,2602,Les Franches-Montagnes,Montfaucon,Gemeindegebiet,CH
+2089,6753,6753,26,Jura,2602,Les Franches-Montagnes,Muriaux,Gemeindegebiet,CH
+2090,6754,6754,26,Jura,2602,Les Franches-Montagnes,Le Noirmont,Gemeindegebiet,CH
+2091,6757,6757,26,Jura,2602,Les Franches-Montagnes,Saignelégier,Gemeindegebiet,CH
+2092,6758,6758,26,Jura,2602,Les Franches-Montagnes,Saint-Brais,Gemeindegebiet,CH
+2093,6759,6759,26,Jura,2602,Les Franches-Montagnes,Soubey,Gemeindegebiet,CH
+2094,6771,6771,26,Jura,2603,Porrentruy,Alle,Gemeindegebiet,CH
+2095,6774,6774,26,Jura,2603,Porrentruy,Boncourt,Gemeindegebiet,CH
+2096,6778,6778,26,Jura,2603,Porrentruy,Bure,Gemeindegebiet,CH
+2097,6781,6781,26,Jura,2603,Porrentruy,Coeuve,Gemeindegebiet,CH
+2098,6782,6782,26,Jura,2603,Porrentruy,Cornol,Gemeindegebiet,CH
+2099,6783,6783,26,Jura,2603,Porrentruy,Courchavon,Gemeindegebiet,CH
+2100,6784,6784,26,Jura,2603,Porrentruy,Courgenay,Gemeindegebiet,CH
+2101,6785,6785,26,Jura,2603,Porrentruy,Courtedoux,Gemeindegebiet,CH
+2102,6789,6789,26,Jura,2603,Porrentruy,Fahy,Gemeindegebiet,CH
+2103,6790,6790,26,Jura,2603,Porrentruy,Fontenais,Gemeindegebiet,CH
+2104,6792,6792,26,Jura,2603,Porrentruy,Grandfontaine,Gemeindegebiet,CH
+2105,6800,6800,26,Jura,2603,Porrentruy,Porrentruy,Gemeindegebiet,CH
+2106,6806,6806,26,Jura,2603,Porrentruy,Vendlincourt,Gemeindegebiet,CH
+2107,6807,6807,26,Jura,2603,Porrentruy,Basse-Allaine,Gemeindegebiet,CH
+2108,6808,6808,26,Jura,2603,Porrentruy,Clos du Doubs,Gemeindegebiet,CH
+2109,6809,6809,26,Jura,2603,Porrentruy,Haute-Ajoie,Gemeindegebiet,CH
+2110,6810,6810,26,Jura,2603,Porrentruy,La Baroche,Gemeindegebiet,CH
+2111,6811,6811,26,Jura,2603,Porrentruy,Damphreux-Lugnez,Gemeindegebiet,CH
+2112,6812,6812,26,Jura,2603,Porrentruy,Basse-Vendline,Gemeindegebiet,CH
+2113,6831,6831,26,Jura,2604,Moutier,Moutier,Gemeindegebiet,CH
+2114,9040,9040,1,Zürich,,,Greifensee,Kantonsgebiet,CH
+2115,9051,9051,1,Zürich,,,Zürichsee (ZH),Kantonsgebiet,CH
+2116,9073,9073,2,Bern,,,Thunersee,Kantonsgebiet,CH
+2117,9089,9089,2,Bern,,,Brienzersee,Kantonsgebiet,CH
+2118,9149,9149,2,Bern,,,Bielersee (BE),Kantonsgebiet,CH
+2119,9150,9150,24,Neuchâtel,,,Bielersee (NE),Kantonsgebiet,CH
+2120,9152,9152,2,Bern,,,Lac de Neuchâtel (BE),Kantonsgebiet,CH
+2121,9155,9155,24,Neuchâtel,,,Lac de Neuchâtel (NE),Kantonsgebiet,CH
+2122,9328,9328,17,St. Gallen,,,Bodensee (SG),Kantonsgebiet,CH
+2123,9329,9329,20,Thurgau,,,Bodensee (TG),Kantonsgebiet,CH

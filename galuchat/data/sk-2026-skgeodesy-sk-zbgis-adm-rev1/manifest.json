@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "sk-2026-skgeodesy-sk-zbgis-adm-rev1",
+  "sourceArchive": "sk-2026-skgeodesy-sk-zbgis-adm-rev1.zip",
+  "sdkVersion": "0.2.4",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "slovakia_zbgis_2026-grid-8192-10000.wgsmapset.glc",
+        "size": 1403486,
+        "sha256": "c869942f424da4dfa2e0dc1c3a822e517347aae404abf1594765ef1bdf31ffa6",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "slovakia_zbgis_2026-grid-4096-1000.wgsmapset.glc",
+        "size": 204620,
+        "sha256": "980f1d181b7a6b51bd28e08b127ede1ac8449eb1fd80a65243d3c6c462ca2901",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "slovakia_zbgis_2026-grid-512-100.wgsmapset.glc",
+        "size": 29047,
+        "sha256": "16be96d59a50e30d64d4fa87b966d58d91db12789800262398b9279d3d95e5fd",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "slovakia_zbgis_2026.giswordbook",
+        "size": 43616,
+        "sha256": "3fa75c2bf78c8f3363c0b8198f694b59975c7c92b58f1f21abf30161d188e014"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 5009,
+      "sha256": "642f1a43d169f54e6be373f870198e8212836dcc10c4c1e4c140ba6c729de740"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 11401,
+      "sha256": "9f5e820699789da7dd1ce2902a85349aa8907beff00279636810b530b9277607"
+    },
+    "names": {
+      "path": "slovakia_zbgis_2026.names.csv",
+      "size": 210325,
+      "sha256": "dae60bfb88ccca722a1b6f88068112768df3d55c9a1fc7a1b46dc24f8ff9d908"
+    }
+  }
+}

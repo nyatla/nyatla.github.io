@@ -35,15 +35,20 @@
     section > p { max-width: 48em; }
     .demo + .demo { margin-top: 30px; }
     .demo p { margin-bottom: 8px; }
-    .dataset-table-wrap { margin-top: 22px; overflow-x: auto; }
-    .dataset-table { width: 100%; min-width: 800px; border-collapse: collapse; font-size: 14px; }
+    .dataset-country-group { margin-top: 28px; }
+    .dataset-country-group h3 { margin-bottom: 10px; }
+    .dataset-table-wrap { overflow-x: auto; }
+    .dataset-table { width: 100%; min-width: 640px; table-layout: fixed; border-collapse: collapse; font-size: 14px; }
+    .dataset-table col:nth-child(1) { width: 34%; }
+    .dataset-table col:nth-child(2) { width: 24%; }
+    .dataset-table col:nth-child(3) { width: 20%; }
+    .dataset-table col:nth-child(4) { width: 22%; }
     .dataset-table th, .dataset-table td { padding: 10px 8px; border-bottom: 1px solid #e1e5e8; text-align: left; vertical-align: top; }
-    .dataset-table thead th { white-space: nowrap; }
+    .dataset-table thead th { color: #4a535b; font-size: 12px; font-weight: 500; }
     .dataset-table tbody th { font-weight: 400; }
     .dataset-name { display: block; font-weight: 600; }
-    .dataset-file { display: block; color: #4a535b; font-size: 12px; overflow-wrap: anywhere; }
     .dataset-size { white-space: nowrap; }
-    .dataset-links a { display: block; }
+    .dataset-links a { display: inline-block; margin-right: 12px; white-space: nowrap; }
     .dataset-note { margin-top: 14px; color: #4a535b; font-size: 13px; }
     footer { padding: 24px 0 48px; border-top: 1px solid #d6dce1; color: #4a535b; font-size: 13px; }
     footer p { margin-bottom: 4px; }
@@ -86,11 +91,17 @@
       <section id="about">
         <h2><ml-text ja="概要" en="Overview"></ml-text></h2>
         <h3><ml-text ja="何を解決するのか" en="The problem it solves"></ml-text></h3>
-        <p><ml-text ja="逆ジオコーディングにおける通信環境と外部GISサービスへの依存をなくします。座標を外部へ送信せずに処理できるため、オフライン環境や閉域ネットワークでも運用できます。" en="Galuchat GIS SDK removes reverse geocoding's dependence on network connectivity and external GIS services. It processes coordinates without sending them outside the device, enabling use in offline and closed-network environments."></ml-text></p>
+        <p><ml-text ja="経緯度から行政区域や統計区域を調べる機能を、GISサーバーを運用せずにアプリや機器へ組み込めます。データとSDKを配置すれば、地名検索のために外部サービスへ座標を送る必要はなく、オフラインや閉域環境でも利用できます。" en="You can add coordinate-based administrative and statistical area lookups to apps and devices without operating a GIS server. Once the data and SDK are in place, place-name lookups need no external service requests, enabling use in offline and closed-network environments."></ml-text></p>
+        <p><ml-text ja="利用する地域・年版・区域の粒度を選べるため、用途に合うデータを固定して、位置ログへの地名付与や地域別集計に使えます。" en="Choose the geographic coverage, edition, and area granularity for your use case, then keep that dataset fixed for tasks such as labeling location logs and aggregating records by region."></ml-text></p>
         <h3 class="about-subsection"><ml-text ja="どのように実現しているのか" en="How it works"></ml-text></h3>
-        <p><ml-text ja="区域コードを記録した地図を圧縮して保存します。地点を調べるときは、経緯度に対応するコードを読み出し、地名辞書で地名に変換します。指定した範囲の区域も画像として読み出せるため、地図全体をメモリに展開せずに区域の形を表示できます。" en="The SDK stores a compressed map of region codes. To look up a point, it reads the code at the given coordinates and converts it to a place name using a name dictionary. It can also read regions in a specified area as an image, so you can display their shapes without loading the entire map into memory."></ml-text></p>
+        <p><ml-text ja="配布前に区域を格子化し、各画素の区域コードを圧縮して保存します。利用時は経緯度に対応するコードを読み出し、地名辞書で名称に変換します。近くの代表地点を探すのではなく、選んだ区域データに基づいて地点を分類する仕組みです。" en="Before distribution, areas are rasterized onto a grid and the region code for each pixel is stored in compressed form. At runtime, the SDK reads the code at the given coordinates and resolves its name through a dictionary. It classifies a point using the selected area dataset rather than finding a nearby representative location."></ml-text></p>
+        <p><ml-text ja="同じデータから区域を地図として描画することもできます。描画に必要な範囲を読み出せるため、地図全体を展開する必要はありません。共通の地図・辞書をJavaScript・Java・Python・C++で利用できます。" en="The same data can also render the areas as a map. Only the range needed for rendering has to be decoded, without expanding the entire map. The map and dictionary files can be shared across JavaScript, Java, Python, and C++."></ml-text></p>
+        <h3 class="about-subsection"><ml-text ja="データサイズはどのくらいなのか" en="How large are the datasets?"></ml-text></h3>
+        <p><ml-text ja="日本行政区域2026の場合、画素間隔0.001度の地図は約479 KiB、UTF-8の地名辞書は約31 KiBで、合わせて約510 KiBです。画素間隔0.0001度の高解像度版では、地図単体で約4.47 MiBになります。" en="For Japan's 2026 administrative areas, the map with a pixel spacing of 0.001 degrees is about 479 KiB and the UTF-8 place-name dictionary is about 31 KiB, totaling about 510 KiB. The higher-resolution map with a pixel spacing of 0.0001 degrees is about 4.47 MiB on its own."></ml-text></p>
+        <p><ml-text ja="必要な区域の細かさと解像度に応じてデータを選択できます。地域・解像度ごとのサイズは、データセット一覧で確認できます。" en="Choose a dataset with the area granularity and resolution you need. See the dataset list for map sizes by region and resolution."></ml-text></p>
         <h3 class="about-subsection"><ml-text ja="精度はどのくらいなのか" en="How accurate is it?"></ml-text></h3>
-        <p><ml-text ja="逆ジオコーディングのデータとして使用した場合、ラスタ化による区域判定のずれは境界付近で最大約1画素です。高解像度版では1画素が緯度・経度とも0.0001度で、緯度方向の約11mに相当します。" en="For reverse geocoding, rasterization can cause region-classification differences of up to about one pixel near boundaries. In the high-resolution version, one pixel is 0.0001 degrees in both latitude and longitude, or about 11 m in the latitude direction."></ml-text></p>
+        <p><ml-text ja="区域判定の細かさは、採用した原典とラスタ化の解像度に依存します。高解像度版の画素間隔0.0001度は、緯度方向で約11 mに相当しますが、これは原典の位置精度や判定誤差を保証する値ではありません。" en="The detail of area classification depends on the source data and rasterization resolution. A pixel spacing of 0.0001 degrees in a high-resolution map corresponds to about 11 m in the latitude direction, but it does not guarantee the source data's positional accuracy or a particular classification error bound."></ml-text></p>
+        <p><ml-text ja="境界付近では原典のベクトル区域と判定が異なる場合があり、細い区域や小さな島などは粗い解像度では画素として選ばれないことがあります。地域の分類や集計に利用する際は、対象区域・基準時点・解像度を確認してください。" en="Near boundaries, classifications may differ from the source vector areas. Narrow areas and small islands may not be represented by any pixels at coarser resolutions. Check the area coverage, reference date, and resolution before using a dataset for regional classification or aggregation."></ml-text></p>
       </section>
       <section id="try">
         <h2><ml-text ja="実際に試す" en="Try it for yourself"></ml-text></h2>
@@ -122,118 +133,932 @@
       </section>
       <section id="datasets">
         <h2><ml-text ja="利用できるデータ" en="Available datasets"></ml-text></h2>
-        <p><ml-text ja="行政区域、町丁・字等の小地域、村里界など、地域と区域の細かさが異なる16種類のデータセットがあります。用途に合う地域と年版を選べます。" en="Explore 16 datasets covering administrative areas, town blocks, village boundaries, and other levels of geographic detail. Choose the region and edition that fit your use."></ml-text></p>
-        <div class="dataset-table-wrap">
-          <table class="dataset-table">
-            <thead>
-              <tr>
-                <th scope="col"><ml-text ja="データセット" en="Dataset"></ml-text></th>
-                <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
-                <th scope="col"><ml-text ja="地図サイズ（Bytes）" en="Map size (Bytes)"></ml-text></th>
-                <th scope="col"><ml-text ja="リンク" en="Links"></ml-text></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/jp-2024-mlit-go-jp-n03-adm.ja.md">日本の行政区域 — 2024年版</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/jp-2024-mlit-go-jp-n03-adm.md">Japan administrative areas — 2024</a></span></ml-block><code class="dataset-file">jp-2024-mlit-go-jp-n03-adm.zip</code></th>
-                <td>0.01 / 0.001 / 0.0001</td>
-                <td class="dataset-size">52,952～4,694,115</td>
-                <td class="dataset-links"><a href="./maps/?dataset=jp-2024-mlit-go-jp-n03-adm"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2024-mlit-go-jp-n03-adm/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2024-mlit-go-jp-n03-adm/NOTICE.md">NOTICE</a></td>
-              </tr>
-              <tr>
-                <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/jp-2025-mlit-go-jp-n03-adm.ja.md">日本の行政区域 — 2025年版</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/jp-2025-mlit-go-jp-n03-adm.md">Japan administrative areas — 2025</a></span></ml-block><code class="dataset-file">jp-2025-mlit-go-jp-n03-adm.zip</code></th>
-                <td>0.01 / 0.001 / 0.0001</td>
-                <td class="dataset-size">52,956～4,692,464</td>
-                <td class="dataset-links"><a href="./maps/?dataset=jp-2025-mlit-go-jp-n03-adm"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2025-mlit-go-jp-n03-adm/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2025-mlit-go-jp-n03-adm/NOTICE.md">NOTICE</a></td>
-              </tr>
-              <tr>
-                <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/jp-2026-mlit-go-jp-n03-adm.ja.md">日本の行政区域 — 2026年版</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/jp-2026-mlit-go-jp-n03-adm.md">Japan administrative areas — 2026</a></span></ml-block><code class="dataset-file">jp-2026-mlit-go-jp-n03-adm.zip</code></th>
-                <td>0.01 / 0.001 / 0.0001</td>
-                <td class="dataset-size">52,958～4,691,841</td>
-                <td class="dataset-links"><a href="./maps/?dataset=jp-2026-mlit-go-jp-n03-adm"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2026-mlit-go-jp-n03-adm/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2026-mlit-go-jp-n03-adm/NOTICE.md">NOTICE</a></td>
-              </tr>
-              <tr>
-                <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/jp-2020-e-stat-go-jp-a002005212020-stat-small-area.ja.md">日本の町丁・字等境界 — 2020年版</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/jp-2020-e-stat-go-jp-a002005212020-stat-small-area.md">Japan town-block and small-area boundaries — 2020</a></span></ml-block><code class="dataset-file">jp-2020-e-stat-go-jp-a002005212020-stat-small-area.zip</code></th>
-                <td>0.0002 / 0.0001</td>
-                <td class="dataset-size">13,574,152～23,800,183</td>
-                <td class="dataset-links"><a href="./maps/?dataset=jp-2020-e-stat-go-jp-a002005212020-stat-small-area"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2020-e-stat-go-jp-a002005212020-stat-small-area/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2020-e-stat-go-jp-a002005212020-stat-small-area/NOTICE.md">NOTICE</a></td>
-              </tr>
-              <tr>
-                <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/jp-2026-nyatla-jp-estat-coastline.ja.md">日本の海岸線反映区域 — 2026年・2020年</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/jp-2026-nyatla-jp-estat-coastline.md">Japan coastline-adjusted areas — 2026 and 2020</a></span></ml-block><code class="dataset-file">jp-2026-nyatla-jp-estat-coastline.zip</code></th>
-                <td>0.0001</td>
-                <td class="dataset-size">25,237,707</td>
-                <td class="dataset-links"><a href="./maps/?dataset=jp-2026-nyatla-jp-estat-coastline"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2026-nyatla-jp-estat-coastline/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2026-nyatla-jp-estat-coastline/NOTICE.md">NOTICE</a></td>
-              </tr>
-              <tr>
-                <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/tw-2026-maps-nlsc-gov-tw-village-adm.ja.md">台湾の村里界 — 2026年版</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/tw-2026-maps-nlsc-gov-tw-village-adm.md">Taiwan village boundaries — 2026</a></span></ml-block><code class="dataset-file">tw-2026-maps-nlsc-gov-tw-village-adm.zip</code></th>
-                <td>0.01 / 0.001 / 0.0001</td>
-                <td class="dataset-size">26,329～1,333,304</td>
-                <td class="dataset-links"><a href="./maps/?dataset=tw-2026-maps-nlsc-gov-tw-village-adm"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/tw-2026-maps-nlsc-gov-tw-village-adm/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/tw-2026-maps-nlsc-gov-tw-village-adm/NOTICE.md">NOTICE</a></td>
-              </tr>
-              <tr>
-                <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc.ja.md">英国の地方自治体地区 — 2025年版</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc.md">UK local authority districts — 2025</a></span></ml-block><code class="dataset-file">gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc.zip</code></th>
-                <td>0.01 / 0.001 / 0.0001</td>
-                <td class="dataset-size">20,290～2,340,486</td>
-                <td class="dataset-links"><a href="./maps/?dataset=gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc/NOTICE.md">NOTICE</a></td>
-              </tr>
-              <tr>
-                <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/us-2025-census-gov-tl-county-adm2.ja.md">米国のCounty境界 — 2025年版</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/us-2025-census-gov-tl-county-adm2.md">U.S. county boundaries — 2025</a></span></ml-block><code class="dataset-file">us-2025-census-gov-tl-county-adm2.zip</code></th>
-                <td>0.01 / 0.001 / 0.0001</td>
-                <td class="dataset-size">170,120～7,457,348</td>
-                <td class="dataset-links"><a href="./maps/?dataset=us-2025-census-gov-tl-county-adm2"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/us-2025-census-gov-tl-county-adm2/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/us-2025-census-gov-tl-county-adm2/NOTICE.md">NOTICE</a></td>
-              </tr>
-              <tr>
-                <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/us-2025-census-gov-tl-state-adm1.ja.md">米国のState境界 — 2025年版</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/us-2025-census-gov-tl-state-adm1.md">U.S. state boundaries — 2025</a></span></ml-block><code class="dataset-file">us-2025-census-gov-tl-state-adm1.zip</code></th>
-                <td>0.01 / 0.001 / 0.0001</td>
-                <td class="dataset-size">28,148～2,075,732</td>
-                <td class="dataset-links"><a href="./maps/?dataset=us-2025-census-gov-tl-state-adm1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/us-2025-census-gov-tl-state-adm1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/us-2025-census-gov-tl-state-adm1/NOTICE.md">NOTICE</a></td>
-              </tr>
-              <tr>
-                <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/ca-2021-statcan-gc-ca-csd-cbf-stat-csd.ja.md">カナダのCensus Subdivision — 2021年版</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/ca-2021-statcan-gc-ca-csd-cbf-stat-csd.md">Canada census subdivisions — 2021</a></span></ml-block><code class="dataset-file">ca-2021-statcan-gc-ca-csd-cbf-stat-csd.zip</code></th>
-                <td>0.01 / 0.001 / 0.0001</td>
-                <td class="dataset-size">256,077～25,471,687</td>
-                <td class="dataset-links"><a href="./maps/?dataset=ca-2021-statcan-gc-ca-csd-cbf-stat-csd"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/ca-2021-statcan-gc-ca-csd-cbf-stat-csd/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/ca-2021-statcan-gc-ca-csd-cbf-stat-csd/NOTICE.md">NOTICE</a></td>
-              </tr>
-              <tr>
-                <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/world-2024-geoboundaries-org-cgaz-adm.ja.md">世界の行政区域 — 2024年版</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/world-2024-geoboundaries-org-cgaz-adm.md">Administrative areas worldwide — 2024</a></span></ml-block><code class="dataset-file">world-2024-geoboundaries-org-cgaz-adm.zip</code></th>
-                <td>0.01 / 0.001</td>
-                <td class="dataset-size">2,945,679～21,438,685</td>
-                <td class="dataset-links"><a href="./maps/?dataset=world-2024-geoboundaries-org-cgaz-adm"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/world-2024-geoboundaries-org-cgaz-adm/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/world-2024-geoboundaries-org-cgaz-adm/NOTICE.md">NOTICE</a></td>
-              </tr>
-              <tr>
-                <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/au-2021-abs-gov-au-sal-stat-sal.ja.md">オーストラリアのSuburb・Locality — 2021年版</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/au-2021-abs-gov-au-sal-stat-sal.md">Australia suburbs and localities — 2021</a></span></ml-block><code class="dataset-file">au-2021-abs-gov-au-sal-stat-sal.zip</code></th>
-                <td>0.01 / 0.001 / 0.0001</td>
-                <td class="dataset-size">323,511～14,123,355</td>
-                <td class="dataset-links"><a href="./maps/?dataset=au-2021-abs-gov-au-sal-stat-sal"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/au-2021-abs-gov-au-sal-stat-sal/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/au-2021-abs-gov-au-sal-stat-sal/NOTICE.md">NOTICE</a></td>
-              </tr>
-              <tr>
-                <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/de-2026-gdz-bkg-bund-de-vg250-adm.ja.md">ドイツの行政区域 — 2026年版</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/de-2026-gdz-bkg-bund-de-vg250-adm.md">Germany administrative areas — 2026</a></span></ml-block><code class="dataset-file">de-2026-gdz-bkg-bund-de-vg250-adm.zip</code></th>
-                <td>0.01 / 0.001 / 0.0001</td>
-                <td class="dataset-size">127,652～7,252,797</td>
-                <td class="dataset-links"><a href="./maps/?dataset=de-2026-gdz-bkg-bund-de-vg250-adm"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/de-2026-gdz-bkg-bund-de-vg250-adm/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/de-2026-gdz-bkg-bund-de-vg250-adm/NOTICE.md">NOTICE</a></td>
-              </tr>
-              <tr>
-                <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/fr-2026-cartes-gouv-fr-admin-express-cog-adm.ja.md">フランスの行政区域 — 2026年版</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/fr-2026-cartes-gouv-fr-admin-express-cog-adm.md">France administrative areas — 2026</a></span></ml-block><code class="dataset-file">fr-2026-cartes-gouv-fr-admin-express-cog-adm.zip</code></th>
-                <td>0.01 / 0.001 / 0.0001</td>
-                <td class="dataset-size">307,747～16,357,916</td>
-                <td class="dataset-links"><a href="./maps/?dataset=fr-2026-cartes-gouv-fr-admin-express-cog-adm"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/fr-2026-cartes-gouv-fr-admin-express-cog-adm/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/fr-2026-cartes-gouv-fr-admin-express-cog-adm/NOTICE.md">NOTICE</a></td>
-              </tr>
-              <tr>
-                <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/nl-2026-cbs-nl-wijkbuurtkaart-adm.ja.md">オランダの自治体区域 — 2026年版</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/nl-2026-cbs-nl-wijkbuurtkaart-adm.md">Netherlands municipalities — 2026</a></span></ml-block><code class="dataset-file">nl-2026-cbs-nl-wijkbuurtkaart-adm.zip</code></th>
-                <td>0.01 / 0.001 / 0.0001</td>
-                <td class="dataset-size">9,004～580,369</td>
-                <td class="dataset-links"><a href="./maps/?dataset=nl-2026-cbs-nl-wijkbuurtkaart-adm"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/nl-2026-cbs-nl-wijkbuurtkaart-adm/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/nl-2026-cbs-nl-wijkbuurtkaart-adm/NOTICE.md">NOTICE</a></td>
-              </tr>
-              <tr>
-                <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/nl-2026-cbs-nl-wijkbuurtkaart-stat-buurt.ja.md">オランダのWijk・Buurt — 2026年版</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/nl-2026-cbs-nl-wijkbuurtkaart-stat-buurt.md">Netherlands Wijk and Buurt areas — 2026</a></span></ml-block><code class="dataset-file">nl-2026-cbs-nl-wijkbuurtkaart-stat-buurt.zip</code></th>
-                <td>0.01 / 0.001 / 0.0001</td>
-                <td class="dataset-size">50,932～2,613,934</td>
-                <td class="dataset-links"><a href="./maps/?dataset=nl-2026-cbs-nl-wijkbuurtkaart-stat-buurt"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/nl-2026-cbs-nl-wijkbuurtkaart-stat-buurt/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/nl-2026-cbs-nl-wijkbuurtkaart-stat-buurt/NOTICE.md">NOTICE</a></td>
-              </tr>
-            </tbody>
-          </table>
+        <p><ml-text ja="行政区域、町丁・字等の小地域、村里界など、地域と区域の細かさが異なる45種類のデータセットがあります。用途に合う地域と年版を選べます。" en="Explore 45 datasets covering administrative areas, town blocks, village boundaries, and other levels of geographic detail. Choose the region and edition that fit your use."></ml-text></p>
+        <div class="dataset-country-group" id="datasets-jp">
+          <h3 id="country-jp"><ml-text ja="日本" en="Japan"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-jp">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/jp-2024-mlit-go-jp-n03-adm-rev1.ja.md">行政区域 — 2024</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/jp-2024-mlit-go-jp-n03-adm-rev1.md">Administrative areas — 2024</a></span></ml-block></th>
+                  <td>0.01 / 0.001 / 0.0001</td>
+                  <td class="dataset-size">51.7 KiB～4.48 MiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=jp-2024-mlit-go-jp-n03-adm-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2024-mlit-go-jp-n03-adm-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2024-mlit-go-jp-n03-adm-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/jp-2025-mlit-go-jp-n03-adm-rev1.ja.md">行政区域 — 2025</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/jp-2025-mlit-go-jp-n03-adm-rev1.md">Administrative areas — 2025</a></span></ml-block></th>
+                  <td>0.01 / 0.001 / 0.0001</td>
+                  <td class="dataset-size">51.7 KiB～4.48 MiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=jp-2025-mlit-go-jp-n03-adm-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2025-mlit-go-jp-n03-adm-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2025-mlit-go-jp-n03-adm-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/jp-2026-mlit-go-jp-n03-adm-rev1.ja.md">行政区域 — 2026</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/jp-2026-mlit-go-jp-n03-adm-rev1.md">Administrative areas — 2026</a></span></ml-block></th>
+                  <td>0.01 / 0.001 / 0.0001</td>
+                  <td class="dataset-size">51.7 KiB～4.47 MiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=jp-2026-mlit-go-jp-n03-adm-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2026-mlit-go-jp-n03-adm-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2026-mlit-go-jp-n03-adm-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/jp-2020-e-stat-go-jp-a002005212020-stat-small-area-rev1.ja.md">町丁・字等境界 — 2020</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/jp-2020-e-stat-go-jp-a002005212020-stat-small-area-rev1.md">Town-block and small-area boundaries — 2020</a></span></ml-block></th>
+                  <td>0.0002 / 0.0001</td>
+                  <td class="dataset-size">12.9 MiB～22.7 MiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=jp-2020-e-stat-go-jp-a002005212020-stat-small-area-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2020-e-stat-go-jp-a002005212020-stat-small-area-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2020-e-stat-go-jp-a002005212020-stat-small-area-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/jp-2026-nyatla-jp-estat-coastline-rev1.ja.md">海岸線反映区域 — 2026・2020</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/jp-2026-nyatla-jp-estat-coastline-rev1.md">Coastline-adjusted areas — 2026 and 2020</a></span></ml-block></th>
+                  <td>0.0001</td>
+                  <td class="dataset-size">24.1 MiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=jp-2026-nyatla-jp-estat-coastline-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2026-nyatla-jp-estat-coastline-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2026-nyatla-jp-estat-coastline-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-        <p class="dataset-note"><ml-text ja="解像度は利用できる地図の画素間隔です。サイズは地図ファイル単体の最小～最大値で、地名辞書やZIP全体は含みません。" en="Resolution lists the available map pixel sizes. Size is the minimum to maximum for individual map files; it excludes the place-name dictionary and the full ZIP archive."></ml-text></p>
+        <div class="dataset-country-group" id="datasets-tw">
+          <h3 id="country-tw"><ml-text ja="台湾" en="Taiwan"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-tw">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/tw-2026-maps-nlsc-gov-tw-village-adm-rev1.ja.md">村里界 — 2026</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/tw-2026-maps-nlsc-gov-tw-village-adm-rev1.md">Village boundaries — 2026</a></span></ml-block></th>
+                  <td>0.01 / 0.001 / 0.0001</td>
+                  <td class="dataset-size">25.7 KiB～1.27 MiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=tw-2026-maps-nlsc-gov-tw-village-adm-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/tw-2026-maps-nlsc-gov-tw-village-adm-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/tw-2026-maps-nlsc-gov-tw-village-adm-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-gb">
+          <h3 id="country-gb"><ml-text ja="英国" en="United Kingdom"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-gb">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc-rev1.ja.md">地方自治体地区 — 2025</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc-rev1.md">Local authority districts — 2025</a></span></ml-block></th>
+                  <td>0.01 / 0.001 / 0.0001</td>
+                  <td class="dataset-size">19.8 KiB～2.23 MiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-us">
+          <h3 id="country-us"><ml-text ja="米国" en="United States"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-us">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/us-2025-census-gov-tl-county-adm2-rev1.ja.md">County境界 — 2025</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/us-2025-census-gov-tl-county-adm2-rev1.md">County boundaries — 2025</a></span></ml-block></th>
+                  <td>0.01 / 0.001 / 0.0001</td>
+                  <td class="dataset-size">166 KiB～7.11 MiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=us-2025-census-gov-tl-county-adm2-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/us-2025-census-gov-tl-county-adm2-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/us-2025-census-gov-tl-county-adm2-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/us-2025-census-gov-tl-state-adm1-rev1.ja.md">State境界 — 2025</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/us-2025-census-gov-tl-state-adm1-rev1.md">State boundaries — 2025</a></span></ml-block></th>
+                  <td>0.01 / 0.001 / 0.0001</td>
+                  <td class="dataset-size">27.5 KiB～1.98 MiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=us-2025-census-gov-tl-state-adm1-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/us-2025-census-gov-tl-state-adm1-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/us-2025-census-gov-tl-state-adm1-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-ca">
+          <h3 id="country-ca"><ml-text ja="カナダ" en="Canada"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-ca">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/ca-2021-statcan-gc-ca-csd-cbf-stat-csd-rev1.ja.md">Census Subdivision — 2021</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/ca-2021-statcan-gc-ca-csd-cbf-stat-csd-rev1.md">Census subdivisions — 2021</a></span></ml-block></th>
+                  <td>0.01 / 0.001 / 0.0001</td>
+                  <td class="dataset-size">250 KiB～24.3 MiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=ca-2021-statcan-gc-ca-csd-cbf-stat-csd-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/ca-2021-statcan-gc-ca-csd-cbf-stat-csd-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/ca-2021-statcan-gc-ca-csd-cbf-stat-csd-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-au">
+          <h3 id="country-au"><ml-text ja="オーストラリア" en="Australia"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-au">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/au-2021-abs-gov-au-sal-stat-sal-rev1.ja.md">Suburb・Locality — 2021</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/au-2021-abs-gov-au-sal-stat-sal-rev1.md">Suburbs and localities — 2021</a></span></ml-block></th>
+                  <td>0.01 / 0.001 / 0.0001</td>
+                  <td class="dataset-size">316 KiB～13.5 MiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=au-2021-abs-gov-au-sal-stat-sal-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/au-2021-abs-gov-au-sal-stat-sal-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/au-2021-abs-gov-au-sal-stat-sal-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-de">
+          <h3 id="country-de"><ml-text ja="ドイツ" en="Germany"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-de">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/de-2026-gdz-bkg-bund-de-vg250-adm-rev1.ja.md">行政区域 — 2026</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/de-2026-gdz-bkg-bund-de-vg250-adm-rev1.md">Administrative areas — 2026</a></span></ml-block></th>
+                  <td>0.01 / 0.001 / 0.0001</td>
+                  <td class="dataset-size">125 KiB～6.92 MiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=de-2026-gdz-bkg-bund-de-vg250-adm-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/de-2026-gdz-bkg-bund-de-vg250-adm-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/de-2026-gdz-bkg-bund-de-vg250-adm-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-fr">
+          <h3 id="country-fr"><ml-text ja="フランス" en="France"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-fr">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/fr-2026-cartes-gouv-fr-admin-express-cog-adm-rev1.ja.md">行政区域 — 2026</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/fr-2026-cartes-gouv-fr-admin-express-cog-adm-rev1.md">Administrative areas — 2026</a></span></ml-block></th>
+                  <td>0.01 / 0.001 / 0.0001</td>
+                  <td class="dataset-size">301 KiB～15.6 MiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=fr-2026-cartes-gouv-fr-admin-express-cog-adm-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/fr-2026-cartes-gouv-fr-admin-express-cog-adm-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/fr-2026-cartes-gouv-fr-admin-express-cog-adm-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-nl">
+          <h3 id="country-nl"><ml-text ja="オランダ" en="Netherlands"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-nl">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/nl-2026-cbs-nl-wijkbuurtkaart-adm-rev1.ja.md">自治体区域 — 2026</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/nl-2026-cbs-nl-wijkbuurtkaart-adm-rev1.md">Municipalities — 2026</a></span></ml-block></th>
+                  <td>0.01 / 0.001 / 0.0001</td>
+                  <td class="dataset-size">8.79 KiB～567 KiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=nl-2026-cbs-nl-wijkbuurtkaart-adm-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/nl-2026-cbs-nl-wijkbuurtkaart-adm-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/nl-2026-cbs-nl-wijkbuurtkaart-adm-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/nl-2026-cbs-nl-wijkbuurtkaart-stat-buurt-rev1.ja.md">Wijk・Buurt — 2026</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/nl-2026-cbs-nl-wijkbuurtkaart-stat-buurt-rev1.md">Wijk and Buurt areas — 2026</a></span></ml-block></th>
+                  <td>0.01 / 0.001 / 0.0001</td>
+                  <td class="dataset-size">49.7 KiB～2.49 MiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=nl-2026-cbs-nl-wijkbuurtkaart-stat-buurt-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/nl-2026-cbs-nl-wijkbuurtkaart-stat-buurt-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/nl-2026-cbs-nl-wijkbuurtkaart-stat-buurt-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-es">
+          <h3 id="country-es"><ml-text ja="スペイン" en="Spain"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-es">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/es-2026-cnig-es-lilim-adm-rev1.ja.md">行政区域 — 2026</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/es-2026-cnig-es-lilim-adm-rev1.md">Administrative areas — 2026</a></span></ml-block></th><td>0.01 / 0.001 / 0.0001</td><td class="dataset-size">118 KiB～5.88 MiB</td><td class="dataset-links"><a href="./maps/?dataset=es-2026-cnig-es-lilim-adm-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/es-2026-cnig-es-lilim-adm-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/es-2026-cnig-es-lilim-adm-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-nz">
+          <h3 id="country-nz"><ml-text ja="ニュージーランド" en="New Zealand"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-nz">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/nz-2026-stats-govt-nz-sa2-stat-sa2-rev1.ja.md">Statistical Area 2 — 2026</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/nz-2026-stats-govt-nz-sa2-stat-sa2-rev1.md">Statistical Area 2 — 2026</a></span></ml-block></th><td>0.01 / 0.001 / 0.0001</td><td class="dataset-size">33.2 KiB～2.19 MiB</td><td class="dataset-links"><a href="./maps/?dataset=nz-2026-stats-govt-nz-sa2-stat-sa2-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/nz-2026-stats-govt-nz-sa2-stat-sa2-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/nz-2026-stats-govt-nz-sa2-stat-sa2-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-kr">
+          <h3 id="country-kr"><ml-text ja="韓国" en="South Korea"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-kr">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/kr-2025-sgis-mods-go-kr-admin-boundary-adm-rev1.ja.md">行政洞境界 — 2025年第2四半期</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/kr-2025-sgis-mods-go-kr-admin-boundary-adm-rev1.md">Administrative dongs — 2025 Q2</a></span></ml-block></th><td>0.01 / 0.001 / 0.0001</td><td class="dataset-size">34.3 KiB～2.18 MiB</td><td class="dataset-links"><a href="./maps/?dataset=kr-2025-sgis-mods-go-kr-admin-boundary-adm-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/kr-2025-sgis-mods-go-kr-admin-boundary-adm-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/kr-2025-sgis-mods-go-kr-admin-boundary-adm-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-at">
+          <h3 id="country-at"><ml-text ja="オーストリア" en="Austria"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-at">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/at-2026-data-statistik-gv-at-gem-adm-rev1.ja.md">自治体・ウィーン区 — 2026</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/at-2026-data-statistik-gv-at-gem-adm-rev1.md">Municipalities and Vienna districts — 2026</a></span></ml-block></th><td>0.01 / 0.001 / 0.0001</td><td class="dataset-size">27.0 KiB～1.54 MiB</td><td class="dataset-links"><a href="./maps/?dataset=at-2026-data-statistik-gv-at-gem-adm-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/at-2026-data-statistik-gv-at-gem-adm-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/at-2026-data-statistik-gv-at-gem-adm-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-be">
+          <h3 id="country-be"><ml-text ja="ベルギー" en="Belgium"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-be">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/be-2026-statbel-fgov-be-statistical-sectors-stat-sector-rev1.ja.md">統計区 — 2026</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/be-2026-statbel-fgov-be-statistical-sectors-stat-sector-rev1.md">Statistical sectors — 2026</a></span></ml-block></th><td>0.01 / 0.001 / 0.0001</td><td class="dataset-size">52.6 KiB～3.12 MiB</td><td class="dataset-links"><a href="./maps/?dataset=be-2026-statbel-fgov-be-statistical-sectors-stat-sector-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/be-2026-statbel-fgov-be-statistical-sectors-stat-sector-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/be-2026-statbel-fgov-be-statistical-sectors-stat-sector-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-ch">
+          <h3 id="country-ch"><ml-text ja="スイス" en="Switzerland"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-ch">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/ch-2026-swisstopo-admin-ch-swissboundaries3d-adm-rev1.ja.md">基礎区域 — 2026</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/ch-2026-swisstopo-admin-ch-swissboundaries3d-adm-rev1.md">Base areas — 2026</a></span></ml-block></th><td>0.01 / 0.001 / 0.0001</td><td class="dataset-size">19.1 KiB～1018 KiB</td><td class="dataset-links"><a href="./maps/?dataset=ch-2026-swisstopo-admin-ch-swissboundaries3d-adm-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/ch-2026-swisstopo-admin-ch-swissboundaries3d-adm-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/ch-2026-swisstopo-admin-ch-swissboundaries3d-adm-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-cz">
+          <h3 id="country-cz"><ml-text ja="チェコ" en="Czechia"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-cz">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/cz-2026-cuzk-gov-cz-ruian-adm-rev1.ja.md">自治体区域 — 2026</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/cz-2026-cuzk-gov-cz-ruian-adm-rev1.md">Municipalities — 2026</a></span></ml-block></th><td>0.01 / 0.001 / 0.0001</td><td class="dataset-size">53.6 KiB～2.85 MiB</td><td class="dataset-links"><a href="./maps/?dataset=cz-2026-cuzk-gov-cz-ruian-adm-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/cz-2026-cuzk-gov-cz-ruian-adm-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/cz-2026-cuzk-gov-cz-ruian-adm-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-dk">
+          <h3 id="country-dk"><ml-text ja="デンマーク" en="Denmark"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-dk">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/dk-2026-datafordeler-dk-dagi-adm-rev1.ja.md">自治体区域 — 2026</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/dk-2026-datafordeler-dk-dagi-adm-rev1.md">Municipalities — 2026</a></span></ml-block></th><td>0.01 / 0.001 / 0.0001</td><td class="dataset-size">5.7 KiB～511 KiB</td><td class="dataset-links"><a href="./maps/?dataset=dk-2026-datafordeler-dk-dagi-adm-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/dk-2026-datafordeler-dk-dagi-adm-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/dk-2026-datafordeler-dk-dagi-adm-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-ee">
+          <h3 id="country-ee"><ml-text ja="エストニア" en="Estonia"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-ee">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/ee-2026-geoportaal-maaamet-ee-asustusyksus-adm-rev1.ja.md">居住区域 — 2026</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/ee-2026-geoportaal-maaamet-ee-asustusyksus-adm-rev1.md">Settlement units — 2026</a></span></ml-block></th><td>0.01 / 0.001 / 0.0001</td><td class="dataset-size">44.3 KiB～1.82 MiB</td><td class="dataset-links"><a href="./maps/?dataset=ee-2026-geoportaal-maaamet-ee-asustusyksus-adm-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/ee-2026-geoportaal-maaamet-ee-asustusyksus-adm-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/ee-2026-geoportaal-maaamet-ee-asustusyksus-adm-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-fi">
+          <h3 id="country-fi"><ml-text ja="フィンランド" en="Finland"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-fi">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/fi-2026-maanmittauslaitos-fi-kuntajako-adm-rev1.ja.md">自治体区域 — 2026</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/fi-2026-maanmittauslaitos-fi-kuntajako-adm-rev1.md">Municipal divisions — 2026</a></span></ml-block></th><td>0.01 / 0.001 / 0.0001</td><td class="dataset-size">20.3 KiB～1.26 MiB</td><td class="dataset-links"><a href="./maps/?dataset=fi-2026-maanmittauslaitos-fi-kuntajako-adm-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/fi-2026-maanmittauslaitos-fi-kuntajako-adm-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/fi-2026-maanmittauslaitos-fi-kuntajako-adm-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-hr">
+          <h3 id="country-hr"><ml-text ja="クロアチア" en="Croatia"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-hr">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/hr-2026-dgu-gov-hr-au-adm-rev1.ja.md">集落区域 — 2026</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/hr-2026-dgu-gov-hr-au-adm-rev1.md">Settlements — 2026</a></span></ml-block></th><td>0.01 / 0.001 / 0.0001</td><td class="dataset-size">56.1 KiB～2.35 MiB</td><td class="dataset-links"><a href="./maps/?dataset=hr-2026-dgu-gov-hr-au-adm-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/hr-2026-dgu-gov-hr-au-adm-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/hr-2026-dgu-gov-hr-au-adm-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-it">
+          <h3 id="country-it"><ml-text ja="イタリア" en="Italy"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-it">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/it-2026-istat-it-limiti-adm-rev1.ja.md">自治体区域 — 2026</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/it-2026-istat-it-limiti-adm-rev1.md">Municipalities — 2026</a></span></ml-block></th><td>0.01 / 0.001 / 0.0001</td><td class="dataset-size">95.5 KiB～5.17 MiB</td><td class="dataset-links"><a href="./maps/?dataset=it-2026-istat-it-limiti-adm-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/it-2026-istat-it-limiti-adm-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/it-2026-istat-it-limiti-adm-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-lt">
+          <h3 id="country-lt"><ml-text ja="リトアニア" en="Lithuania"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-lt">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/lt-2026-geoportal-lt-au-adm-rev1.ja.md">行政単位 — 2026</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/lt-2026-geoportal-lt-au-adm-rev1.md">Administrative units — 2026</a></span></ml-block></th><td>0.01 / 0.001 / 0.0001</td><td class="dataset-size">12.7 KiB～791 KiB</td><td class="dataset-links"><a href="./maps/?dataset=lt-2026-geoportal-lt-au-adm-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/lt-2026-geoportal-lt-au-adm-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/lt-2026-geoportal-lt-au-adm-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-lv">
+          <h3 id="country-lv"><ml-text ja="ラトビア" en="Latvia"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-lv">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/lv-2026-data-gov-lv-varis-adm-rev1.ja.md">行政区域 — 2026</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/lv-2026-data-gov-lv-varis-adm-rev1.md">Administrative areas — 2026</a></span></ml-block></th><td>0.01 / 0.001 / 0.0001</td><td class="dataset-size">13.2 KiB～807 KiB</td><td class="dataset-links"><a href="./maps/?dataset=lv-2026-data-gov-lv-varis-adm-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/lv-2026-data-gov-lv-varis-adm-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/lv-2026-data-gov-lv-varis-adm-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-ro">
+          <h3 id="country-ro"><ml-text ja="ルーマニア" en="Romania"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-ro">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/ro-2025-ancpi-ro-uat-adm-rev1.ja.md">地方行政区域 — 2025</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/ro-2025-ancpi-ro-uat-adm-rev1.md">Local administrative areas — 2025</a></span></ml-block></th><td>0.01 / 0.001 / 0.0001</td><td class="dataset-size">57.6 KiB～3.09 MiB</td><td class="dataset-links"><a href="./maps/?dataset=ro-2025-ancpi-ro-uat-adm-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/ro-2025-ancpi-ro-uat-adm-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/ro-2025-ancpi-ro-uat-adm-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-se">
+          <h3 id="country-se"><ml-text ja="スウェーデン" en="Sweden"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-se">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/se-2025-scb-se-regso-stat-regso-rev1.ja.md">RegSO統計区域 — 2025</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/se-2025-scb-se-regso-stat-regso-rev1.md">RegSO statistical areas — 2025</a></span></ml-block></th><td>0.01 / 0.001 / 0.0001</td><td class="dataset-size">52.0 KiB～2.71 MiB</td><td class="dataset-links"><a href="./maps/?dataset=se-2025-scb-se-regso-stat-regso-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/se-2025-scb-se-regso-stat-regso-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/se-2025-scb-se-regso-stat-regso-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-ci">
+          <h3 id="country-ci"><ml-text ja="コートジボワール" en="Côte d’Ivoire"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-ci">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/ci-2021-anstat-ci-sprefectures-adm-rev1.ja.md">副県区域 — RGPH 2021由来</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/ci-2021-anstat-ci-sprefectures-adm-rev1.md">Sub-prefecture boundaries — RGPH 2021-derived</a></span></ml-block></th>
+                  <td>0.01 / 0.001 / 0.0001</td>
+                  <td class="dataset-size">19.1 KiB～919 KiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=ci-2021-anstat-ci-sprefectures-adm-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/ci-2021-anstat-ci-sprefectures-adm-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/ci-2021-anstat-ci-sprefectures-adm-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-cy">
+          <h3 id="country-cy"><ml-text ja="キプロス" en="Cyprus"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-cy">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/cy-2024-data-gov-cy-administrative-units-adm-rev1.ja.md">行政区域 — 2024年8月</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/cy-2024-data-gov-cy-administrative-units-adm-rev1.md">Administrative units — August 2024</a></span></ml-block></th>
+                  <td>0.01 / 0.001 / 0.0001</td>
+                  <td class="dataset-size">5.42 KiB～370 KiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=cy-2024-data-gov-cy-administrative-units-adm-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/cy-2024-data-gov-cy-administrative-units-adm-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/cy-2024-data-gov-cy-administrative-units-adm-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-qa">
+          <h3 id="country-qa"><ml-text ja="カタール" en="Qatar"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-qa">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/qa-2015-data-gov-qa-npc-od-c0-00621-adm1-rev1.ja.md">自治体区域 — 2015年国勢調査付属</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/qa-2015-data-gov-qa-npc-od-c0-00621-adm1-rev1.md">Municipalities — 2015 census source</a></span></ml-block></th>
+                  <td>0.01 / 0.001 / 0.0001</td>
+                  <td class="dataset-size">0.937 KiB～57.1 KiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=qa-2015-data-gov-qa-npc-od-c0-00621-adm1-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/qa-2015-data-gov-qa-npc-od-c0-00621-adm1-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/qa-2015-data-gov-qa-npc-od-c0-00621-adm1-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-sg">
+          <h3 id="country-sg"><ml-text ja="シンガポール" en="Singapore"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-sg">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/sg-2019-data-gov-sg-master-plan-subzone-no-sea-rev1.ja.md">計画区域（No Sea） — Master Plan 2019</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/sg-2019-data-gov-sg-master-plan-subzone-no-sea-rev1.md">Planning subzones (no sea) — Master Plan 2019</a></span></ml-block></th>
+                  <td>0.01 / 0.001 / 0.0001</td>
+                  <td class="dataset-size">1.21 KiB～50.1 KiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=sg-2019-data-gov-sg-master-plan-subzone-no-sea-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/sg-2019-data-gov-sg-master-plan-subzone-no-sea-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/sg-2019-data-gov-sg-master-plan-subzone-no-sea-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-lu">
+          <h3 id="country-lu"><ml-text ja="ルクセンブルク" en="Luxembourg"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-lu">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/lu-2026-data-public-lu-limadmin-cadastral-section-rev1.ja.md">地籍区域 — 2026-10-05版</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/lu-2026-data-public-lu-limadmin-cadastral-section-rev1.md">Cadastral sections — 2026-10-05 edition</a></span></ml-block></th>
+                  <td>0.01 / 0.001 / 0.0001</td>
+                  <td class="dataset-size">3.17 KiB～169 KiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=lu-2026-data-public-lu-limadmin-cadastral-section-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/lu-2026-data-public-lu-limadmin-cadastral-section-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/lu-2026-data-public-lu-limadmin-cadastral-section-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-br">
+          <h3 id="country-br"><ml-text ja="ブラジル" en="Brazil"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-br">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/br-2022-ibge-gov-br-distritos-adm-rev1.ja.md">IBGE地区区域 — 2022年国勢調査</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/br-2022-ibge-gov-br-distritos-adm-rev1.md">IBGE district boundaries — 2022 census</a></span></ml-block></th>
+                  <td>0.01 / 0.001 / 0.0001</td>
+                  <td class="dataset-size">368 KiB～21.3 MiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=br-2022-ibge-gov-br-distritos-adm-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/br-2022-ibge-gov-br-distritos-adm-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/br-2022-ibge-gov-br-distritos-adm-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-cl">
+          <h3 id="country-cl"><ml-text ja="チリ" en="Chile"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-cl">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/cl-2023-ine-gob-cl-apc-stat-distrito-censal-rev1.ja.md">国勢調査地区 — APC 2023</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/cl-2023-ine-gob-cl-apc-stat-distrito-censal-rev1.md">Census districts — APC 2023</a></span></ml-block></th>
+                  <td>0.01 / 0.001 / 0.0001</td>
+                  <td class="dataset-size">69.7 KiB～7.23 MiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=cl-2023-ine-gob-cl-apc-stat-distrito-censal-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/cl-2023-ine-gob-cl-apc-stat-distrito-censal-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/cl-2023-ine-gob-cl-apc-stat-distrito-censal-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-si">
+          <h3 id="country-si"><ml-text ja="スロベニア" en="Slovenia"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-si">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/si-2026-ipi-eprostor-gov-si-rpe-adm-rev1.ja.md">集落区域 — 2026-09-27配布版</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/si-2026-ipi-eprostor-gov-si-rpe-adm-rev1.md">Settlement boundaries — 2026-09-27 distribution</a></span></ml-block></th>
+                  <td>0.01 / 0.001 / 0.0001</td>
+                  <td class="dataset-size">29.7 KiB～1.33 MiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=si-2026-ipi-eprostor-gov-si-rpe-adm-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/si-2026-ipi-eprostor-gov-si-rpe-adm-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/si-2026-ipi-eprostor-gov-si-rpe-adm-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-lr">
+          <h3 id="country-lr"><ml-text ja="リベリア" en="Liberia"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-lr">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/lr-2022-lisgis-gov-lr-geography-adm-rev1.ja.md">Clan区域 — 2022</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/lr-2022-lisgis-gov-lr-geography-adm-rev1.md">Clan boundaries — 2022</a></span></ml-block></th>
+                  <td>0.01 / 0.001 / 0.0001</td>
+                  <td class="dataset-size">13.6 KiB～589 KiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=lr-2022-lisgis-gov-lr-geography-adm-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/lr-2022-lisgis-gov-lr-geography-adm-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/lr-2022-lisgis-gov-lr-geography-adm-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-is">
+          <h3 id="country-is"><ml-text ja="アイスランド" en="Iceland"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-is">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/is-2022-natt-is-is-au-lmi-adm1-rev1.ja.md">自治体区域 — INSPIRE 2022</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/is-2022-natt-is-is-au-lmi-adm1-rev1.md">Municipalities — INSPIRE 2022</a></span></ml-block></th>
+                  <td>0.01 / 0.001 / 0.0001</td>
+                  <td class="dataset-size">6.89 KiB～625 KiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=is-2022-natt-is-is-au-lmi-adm1-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/is-2022-natt-is-is-au-lmi-adm1-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/is-2022-natt-is-is-au-lmi-adm1-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-me">
+          <h3 id="country-me"><ml-text ja="モンテネグロ" en="Montenegro"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-me">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/me-undated-opendata-gov-me-opstine-adm1-rev1.ja.md">自治体区域 — 基準年不詳</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/me-undated-opendata-gov-me-opstine-adm1-rev1.md">Municipalities — reference year unknown</a></span></ml-block></th>
+                  <td>0.01 / 0.001 / 0.0001</td>
+                  <td class="dataset-size">1.49 KiB～82.5 KiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=me-undated-opendata-gov-me-opstine-adm1-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/me-undated-opendata-gov-me-opstine-adm1-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/me-undated-opendata-gov-me-opstine-adm1-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-sk">
+          <h3 id="country-sk"><ml-text ja="スロバキア" en="Slovakia"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-sk">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/sk-2026-skgeodesy-sk-zbgis-adm-rev1.ja.md">自治体相当区域 — 2026・一部2024</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/sk-2026-skgeodesy-sk-zbgis-adm-rev1.md">Municipality-level areas — 2026 / some 2024</a></span></ml-block></th>
+                  <td>0.01 / 0.001 / 0.0001</td>
+                  <td class="dataset-size">28.4 KiB～1.34 MiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=sk-2026-skgeodesy-sk-zbgis-adm-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/sk-2026-skgeodesy-sk-zbgis-adm-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/sk-2026-skgeodesy-sk-zbgis-adm-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-rs">
+          <h3 id="country-rs"><ml-text ja="セルビア" en="Serbia"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-rs">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/rs-undated-data-gov-rs-hypso-struct-settl-adm-rev1.ja.md">集落区域 — 基準年不詳</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/rs-undated-data-gov-rs-hypso-struct-settl-adm-rev1.md">Settlement boundaries — reference year unknown</a></span></ml-block></th>
+                  <td>0.01 / 0.001 / 0.0001</td>
+                  <td class="dataset-size">43.1 KiB～2.08 MiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=rs-undated-data-gov-rs-hypso-struct-settl-adm-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/rs-undated-data-gov-rs-hypso-struct-settl-adm-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/rs-undated-data-gov-rs-hypso-struct-settl-adm-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="dataset-country-group" id="datasets-world">
+          <h3 id="country-world"><ml-text ja="世界" en="World"></ml-text></h3>
+          <div class="dataset-table-wrap">
+            <table class="dataset-table" aria-labelledby="country-world">
+              <colgroup><col><col><col><col></colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><ml-text ja="データ" en="Dataset"></ml-text></th>
+                  <th scope="col"><ml-text ja="解像度（度/画素）" en="Resolution (degrees/pixel)"></ml-text></th>
+                  <th scope="col"><ml-text ja="地図サイズ" en="Map size"></ml-text></th>
+                  <th scope="col"><ml-text ja="詳細" en="Details"></ml-text></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><ml-block class="dataset-name"><span data-lang="ja"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/world-2024-geoboundaries-org-cgaz-adm-rev1.ja.md">行政区域 — 2024</a></span><span data-lang="en"><a href="https://github.com/nyatla/galuchat-gis-sdk/blob/master/doc/dataset_guide/world-2024-geoboundaries-org-cgaz-adm-rev1.md">Administrative areas — 2024</a></span></ml-block></th>
+                  <td>0.01 / 0.001</td>
+                  <td class="dataset-size">2.81 MiB～20.4 MiB</td>
+                  <td class="dataset-links"><a href="./maps/?dataset=world-2024-geoboundaries-org-cgaz-adm-rev1"><ml-text ja="地図で見る" en="View map"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/world-2024-geoboundaries-org-cgaz-adm-rev1/data-spec.md"><ml-text ja="データ仕様" en="Data spec"></ml-text></a><a href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/world-2024-geoboundaries-org-cgaz-adm-rev1/NOTICE.md">NOTICE</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p class="dataset-note"><ml-text ja="解像度は利用できる地図の画素間隔です。サイズは地図ファイル単体の最小～最大値で、地名辞書やZIP全体は含みません。KiB・MiBは1024進の単位です。" en="Resolution lists the available map pixel sizes. Size is the minimum to maximum for individual map files; it excludes the place-name dictionary and the full ZIP archive. KiB and MiB use binary units (1 KiB = 1,024 bytes)."></ml-text></p>
       </section>
     </main>
     <footer>

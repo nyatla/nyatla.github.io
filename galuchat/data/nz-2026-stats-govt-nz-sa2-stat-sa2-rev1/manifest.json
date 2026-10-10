@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "nz-2026-stats-govt-nz-sa2-stat-sa2-rev1",
+  "sourceArchive": "nz-2026-stats-govt-nz-sa2-stat-sa2-rev1.zip",
+  "sdkVersion": "0.2.4",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "statsnz-sa2-2026-grid-8192-10000.wgsmapset.glc",
+        "size": 2299340,
+        "sha256": "981bbbc4e500c03966160cb670984a9c8eee97987180defcdaf47bd9882fd74e",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "statsnz-sa2-2026-grid-4096-1000.wgsmapset.glc",
+        "size": 280095,
+        "sha256": "daedef6432b4446591c988d7b05dbe0287466e8dc6345eba953d474128e32f81",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "statsnz-sa2-2026-grid-512-100.wgsmapset.glc",
+        "size": 34045,
+        "sha256": "99d093e44dd74dea0286b3f436386d6c2f39653665edec9d0e0e2fcc2a7f35f0",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "statsnz-sa2-2026.giswordbook",
+        "size": 41633,
+        "sha256": "641b3a03e443ae6f549570ff2af0e1e8f65cd8beb1773ed0d695a4cda087c6bf"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 4935,
+      "sha256": "f868bb389132ea0663d190a34216f33905c5cfca75ca29a061795d75b279460c"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 10813,
+      "sha256": "ffc7d4d80c111f264ea90359194105b763eed3b21df7d974dfff7e4ae8d3ed43"
+    },
+    "names": {
+      "path": "statsnz-sa2-2026.names.csv",
+      "size": 231580,
+      "sha256": "fb62fa06d173ac5f42b0b2480caf7cc27fddfcf8cdfaf6252fecfb640f7ae9db"
+    }
+  }
+}

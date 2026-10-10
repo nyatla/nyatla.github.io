@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "lt-2026-geoportal-lt-au-adm-rev1",
+  "sourceArchive": "lt-2026-geoportal-lt-au-adm-rev1.zip",
+  "sdkVersion": "0.2.4",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "lithuania_au_2026-grid-8192-10000.wgsmapset.glc",
+        "size": 809553,
+        "sha256": "91a128b7e3509f9a7e66b814c2b26ca13e89b74a4260229fccc6999bdfff48de",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "lithuania_au_2026-grid-4096-1000.wgsmapset.glc",
+        "size": 107342,
+        "sha256": "44c1d1fd894857c944ffdb2231774e400e40a8c0cdb6333d498f2fac9da9dde5",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "lithuania_au_2026-grid-512-100.wgsmapset.glc",
+        "size": 13031,
+        "sha256": "5456250c92ca4e68e83c24c69344f7c5d1505ea3aa3c8e99552966b238557ee8",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "lithuania_au_2026.giswordbook",
+        "size": 9256,
+        "sha256": "9e8d1d24bef3e5027353941aa1f2f3bd30ff9453a0e14a634ee15e43349ddd09"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 6478,
+      "sha256": "7d6e6e6324ae89ba62f4825291739a2edfba8eab89289e3412c59cd29ed136b8"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 14986,
+      "sha256": "e36006da5ad2f96ff99e3b0b881e13863879e46f4895b37b2598a9972f9517fa"
+    },
+    "names": {
+      "path": "lithuania_au_2026.names.csv",
+      "size": 49165,
+      "sha256": "d0369c4b270b2a8c04d9b0e65eeff1fc575ff59abc3216c0e2487f9982e579a1"
+    }
+  }
+}

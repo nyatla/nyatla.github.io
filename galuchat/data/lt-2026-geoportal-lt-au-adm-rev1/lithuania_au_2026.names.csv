@@ -1,0 +1,594 @@
+wordbook_code,GRVALUE,AREA_TYPE,COUNTY_CODE,COUNTY_NAME,MUNICIPALITY_CODE,MUNICIPALITY_NAME,ELDERSHIP_CODE,ELDERSHIP_NAME,LOCAL_ID
+1,11,MUNICIPALITY_ONLY,1,Alytaus apskr.,11,Alytaus m. sav.,,,11
+2,12,MUNICIPALITY_ONLY,2,Kauno apskr.,12,Birštono sav.,,,12
+3,13,MUNICIPALITY_ONLY,10,Vilniaus apskr.,13,Vilniaus m. sav.,,,13
+4,15,MUNICIPALITY_ONLY,1,Alytaus apskr.,15,Druskininkų sav.,,,15
+5,18,MUNICIPALITY_ONLY,4,Marijampolės apskr.,18,Marijampolės sav.,,,18
+6,19,MUNICIPALITY_ONLY,2,Kauno apskr.,19,Kauno m. sav.,,,19
+7,21,MUNICIPALITY_ONLY,3,Klaipėdos apskr.,21,Klaipėdos m. sav.,,,21
+8,23,MUNICIPALITY_ONLY,3,Klaipėdos apskr.,23,Neringos sav.,,,23
+9,25,MUNICIPALITY_ONLY,3,Klaipėdos apskr.,25,Palangos m. sav.,,,25
+10,27,MUNICIPALITY_ONLY,5,Panevėžio apskr.,27,Panevėžio m. sav.,,,27
+11,29,MUNICIPALITY_ONLY,6,Šiaulių apskr.,29,Šiaulių m. sav.,,,29
+12,30,MUNICIPALITY_ONLY,9,Utenos apskr.,30,Visagino sav.,,,30
+13,32,MUNICIPALITY_ONLY,6,Šiaulių apskr.,32,Akmenės r. sav.,,,32
+14,33,MUNICIPALITY_ONLY,1,Alytaus apskr.,33,Alytaus r. sav.,,,33
+15,34,MUNICIPALITY_ONLY,9,Utenos apskr.,34,Anykščių r. sav.,,,34
+16,36,MUNICIPALITY_ONLY,5,Panevėžio apskr.,36,Biržų r. sav.,,,36
+17,38,MUNICIPALITY_ONLY,1,Alytaus apskr.,38,Varėnos r. sav.,,,38
+18,39,MUNICIPALITY_ONLY,4,Marijampolės apskr.,39,Vilkaviškio r. sav.,,,39
+19,41,MUNICIPALITY_ONLY,10,Vilniaus apskr.,41,Vilniaus r. sav.,,,41
+20,42,MUNICIPALITY_ONLY,10,Vilniaus apskr.,42,Elektrėnų sav.,,,42
+21,43,MUNICIPALITY_ONLY,9,Utenos apskr.,43,Zarasų r. sav.,,,43
+22,45,MUNICIPALITY_ONLY,9,Utenos apskr.,45,Ignalinos r. sav.,,,45
+23,46,MUNICIPALITY_ONLY,2,Kauno apskr.,46,Jonavos r. sav.,,,46
+24,47,MUNICIPALITY_ONLY,6,Šiaulių apskr.,47,Joniškio r. sav.,,,47
+25,48,MUNICIPALITY_ONLY,4,Marijampolės apskr.,48,Kalvarijos sav.,,,48
+26,49,MUNICIPALITY_ONLY,2,Kauno apskr.,49,Kaišiadorių r. sav.,,,49
+27,52,MUNICIPALITY_ONLY,2,Kauno apskr.,52,Kauno r. sav.,,,52
+28,53,MUNICIPALITY_ONLY,2,Kauno apskr.,53,Kėdainių r. sav.,,,53
+29,54,MUNICIPALITY_ONLY,6,Šiaulių apskr.,54,Kelmės r. sav.,,,54
+30,55,MUNICIPALITY_ONLY,3,Klaipėdos apskr.,55,Klaipėdos r. sav.,,,55
+31,56,MUNICIPALITY_ONLY,3,Klaipėdos apskr.,56,Kretingos r. sav.,,,56
+32,57,MUNICIPALITY_ONLY,5,Panevėžio apskr.,57,Kupiškio r. sav.,,,57
+33,58,MUNICIPALITY_ONLY,4,Marijampolės apskr.,58,Kazlų Rūdos sav.,,,58
+34,59,MUNICIPALITY_ONLY,1,Alytaus apskr.,59,Lazdijų r. sav.,,,59
+35,61,MUNICIPALITY_ONLY,8,Telšių apskr.,61,Mažeikių r. sav.,,,61
+36,62,MUNICIPALITY_ONLY,9,Utenos apskr.,62,Molėtų r. sav.,,,62
+37,63,MUNICIPALITY_ONLY,7,Tauragės apskr.,63,Pagėgių sav.,,,63
+38,65,MUNICIPALITY_ONLY,6,Šiaulių apskr.,65,Pakruojo r. sav.,,,65
+39,66,MUNICIPALITY_ONLY,5,Panevėžio apskr.,66,Panevėžio r. sav.,,,66
+40,67,MUNICIPALITY_ONLY,5,Panevėžio apskr.,67,Pasvalio r. sav.,,,67
+41,68,MUNICIPALITY_ONLY,8,Telšių apskr.,68,Plungės r. sav.,,,68
+42,69,MUNICIPALITY_ONLY,2,Kauno apskr.,69,Prienų r. sav.,,,69
+43,71,MUNICIPALITY_ONLY,6,Šiaulių apskr.,71,Radviliškio r. sav.,,,71
+44,72,MUNICIPALITY_ONLY,2,Kauno apskr.,72,Raseinių r. sav.,,,72
+45,73,MUNICIPALITY_ONLY,5,Panevėžio apskr.,73,Rokiškio r. sav.,,,73
+46,74,MUNICIPALITY_ONLY,8,Telšių apskr.,74,Rietavo sav.,,,74
+47,75,MUNICIPALITY_ONLY,3,Klaipėdos apskr.,75,Skuodo r. sav.,,,75
+48,77,MUNICIPALITY_ONLY,7,Tauragės apskr.,77,Tauragės r. sav.,,,77
+49,78,MUNICIPALITY_ONLY,8,Telšių apskr.,78,Telšių r. sav.,,,78
+50,79,MUNICIPALITY_ONLY,10,Vilniaus apskr.,79,Trakų r. sav.,,,79
+51,81,MUNICIPALITY_ONLY,10,Vilniaus apskr.,81,Ukmergės r. sav.,,,81
+52,82,MUNICIPALITY_ONLY,9,Utenos apskr.,82,Utenos r. sav.,,,82
+53,84,MUNICIPALITY_ONLY,4,Marijampolės apskr.,84,Šakių r. sav.,,,84
+54,85,MUNICIPALITY_ONLY,10,Vilniaus apskr.,85,Šalčininkų r. sav.,,,85
+55,86,MUNICIPALITY_ONLY,10,Vilniaus apskr.,86,Švenčionių r. sav.,,,86
+56,87,MUNICIPALITY_ONLY,7,Tauragės apskr.,87,Šilalės r. sav.,,,87
+57,88,MUNICIPALITY_ONLY,3,Klaipėdos apskr.,88,Šilutės r. sav.,,,88
+58,89,MUNICIPALITY_ONLY,10,Vilniaus apskr.,89,Širvintų r. sav.,,,89
+59,91,MUNICIPALITY_ONLY,6,Šiaulių apskr.,91,Šiaulių r. sav.,,,91
+60,94,MUNICIPALITY_ONLY,7,Tauragės apskr.,94,Jurbarko r. sav.,,,94
+61,1201,ELDERSHIP,2,Kauno apskr.,12,Birštono sav.,1201,Birštono sen.,1201
+62,1301,ELDERSHIP,10,Vilniaus apskr.,13,Vilniaus m. sav.,1301,Antakalnio sen.,1301
+63,1302,ELDERSHIP,10,Vilniaus apskr.,13,Vilniaus m. sav.,1302,Fabijoniškių sen.,1302
+64,1303,ELDERSHIP,10,Vilniaus apskr.,13,Vilniaus m. sav.,1303,Justiniškių sen.,1303
+65,1304,ELDERSHIP,10,Vilniaus apskr.,13,Vilniaus m. sav.,1304,Karoliniškių sen.,1304
+66,1305,ELDERSHIP,10,Vilniaus apskr.,13,Vilniaus m. sav.,1305,Lazdynų sen.,1305
+67,1306,ELDERSHIP,10,Vilniaus apskr.,13,Vilniaus m. sav.,1306,Naujamiesčio sen.,1306
+68,1307,ELDERSHIP,10,Vilniaus apskr.,13,Vilniaus m. sav.,1307,Naujininkų sen.,1307
+69,1308,ELDERSHIP,10,Vilniaus apskr.,13,Vilniaus m. sav.,1308,Naujosios Vilnios sen.,1308
+70,1309,ELDERSHIP,10,Vilniaus apskr.,13,Vilniaus m. sav.,1309,Panerių sen.,1309
+71,1310,ELDERSHIP,10,Vilniaus apskr.,13,Vilniaus m. sav.,1310,Pašilaičių sen.,1310
+72,1311,ELDERSHIP,10,Vilniaus apskr.,13,Vilniaus m. sav.,1311,Pilaitės sen.,1311
+73,1312,ELDERSHIP,10,Vilniaus apskr.,13,Vilniaus m. sav.,1312,Rasų sen.,1312
+74,1313,ELDERSHIP,10,Vilniaus apskr.,13,Vilniaus m. sav.,1313,Verkių sen.,1313
+75,1314,ELDERSHIP,10,Vilniaus apskr.,13,Vilniaus m. sav.,1314,Senamiesčio sen.,1314
+76,1315,ELDERSHIP,10,Vilniaus apskr.,13,Vilniaus m. sav.,1315,Šeškinės sen.,1315
+77,1316,ELDERSHIP,10,Vilniaus apskr.,13,Vilniaus m. sav.,1316,Šnipiškių sen.,1316
+78,1317,ELDERSHIP,10,Vilniaus apskr.,13,Vilniaus m. sav.,1317,Vilkpėdės sen.,1317
+79,1318,ELDERSHIP,10,Vilniaus apskr.,13,Vilniaus m. sav.,1318,Viršuliškių sen.,1318
+80,1319,ELDERSHIP,10,Vilniaus apskr.,13,Vilniaus m. sav.,1319,Žirmūnų sen.,1319
+81,1320,ELDERSHIP,10,Vilniaus apskr.,13,Vilniaus m. sav.,1320,Žvėryno sen.,1320
+82,1321,ELDERSHIP,10,Vilniaus apskr.,13,Vilniaus m. sav.,1321,Grigiškių sen.,1321
+83,1545,ELDERSHIP,1,Alytaus apskr.,15,Druskininkų sav.,1545,Leipalingio sen.,1545
+84,1570,ELDERSHIP,1,Alytaus apskr.,15,Druskininkų sav.,1570,Viečiūnų sen.,1570
+85,1830,ELDERSHIP,4,Marijampolės apskr.,18,Marijampolės sav.,1830,Igliaukos sen.,1830
+86,1842,ELDERSHIP,4,Marijampolės apskr.,18,Marijampolės sav.,1842,Liudvinavo sen.,1842
+87,1867,ELDERSHIP,4,Marijampolės apskr.,18,Marijampolės sav.,1867,Sasnavos sen.,1867
+88,1904,ELDERSHIP,2,Kauno apskr.,19,Kauno m. sav.,1904,Dainavos sen.,1904
+89,1908,ELDERSHIP,2,Kauno apskr.,19,Kauno m. sav.,1908,Aleksoto sen.,1908
+90,1909,ELDERSHIP,2,Kauno apskr.,19,Kauno m. sav.,1909,Eigulių sen.,1909
+91,1910,ELDERSHIP,2,Kauno apskr.,19,Kauno m. sav.,1910,Vilijampolės sen.,1910
+92,1911,ELDERSHIP,2,Kauno apskr.,19,Kauno m. sav.,1911,Šilainių sen.,1911
+93,2901,ELDERSHIP,6,Šiaulių apskr.,29,Šiaulių m. sav.,2901,Rėkyvos sen.,2901
+94,2902,ELDERSHIP,6,Šiaulių apskr.,29,Šiaulių m. sav.,2902,Medelyno sen.,2902
+95,3204,ELDERSHIP,6,Šiaulių apskr.,32,Akmenės r. sav.,3204,Akmenės sen.,3204
+96,3242,ELDERSHIP,6,Šiaulių apskr.,32,Akmenės r. sav.,3242,Kruopių sen.,3242
+97,3245,ELDERSHIP,6,Šiaulių apskr.,32,Akmenės r. sav.,3245,Naujosios Akmenės kaimiškoji sen.,3245
+98,3249,ELDERSHIP,6,Šiaulių apskr.,32,Akmenės r. sav.,3249,Papilės sen.,3249
+99,3252,ELDERSHIP,6,Šiaulių apskr.,32,Akmenės r. sav.,3252,Ventos sen.,3252
+100,3260,ELDERSHIP,6,Šiaulių apskr.,32,Akmenės r. sav.,3260,Naujosios Akmenės miesto sen.,3260
+101,3301,ELDERSHIP,1,Alytaus apskr.,33,Alytaus r. sav.,3301,Alytaus sen.,3301
+102,3302,ELDERSHIP,1,Alytaus apskr.,33,Alytaus r. sav.,3302,Alovės sen.,3302
+103,3310,ELDERSHIP,1,Alytaus apskr.,33,Alytaus r. sav.,3310,Butrimonių sen.,3310
+104,3317,ELDERSHIP,1,Alytaus apskr.,33,Alytaus r. sav.,3317,Daugų sen.,3317
+105,3330,ELDERSHIP,1,Alytaus apskr.,33,Alytaus r. sav.,3330,Krokialaukio sen.,3330
+106,3338,ELDERSHIP,1,Alytaus apskr.,33,Alytaus r. sav.,3338,Miroslavo sen.,3338
+107,3342,ELDERSHIP,1,Alytaus apskr.,33,Alytaus r. sav.,3342,Nemunaičio sen.,3342
+108,3348,ELDERSHIP,1,Alytaus apskr.,33,Alytaus r. sav.,3348,Pivašiūnų sen.,3348
+109,3353,ELDERSHIP,1,Alytaus apskr.,33,Alytaus r. sav.,3353,Punios sen.,3353
+110,3359,ELDERSHIP,1,Alytaus apskr.,33,Alytaus r. sav.,3359,Raitininkų sen.,3359
+111,3380,ELDERSHIP,1,Alytaus apskr.,33,Alytaus r. sav.,3380,Simno sen.,3380
+112,3408,ELDERSHIP,9,Utenos apskr.,34,Anykščių r. sav.,3408,Anykščių sen.,3408
+113,3410,ELDERSHIP,9,Utenos apskr.,34,Anykščių r. sav.,3410,Andrioniškio sen.,3410
+114,3413,ELDERSHIP,9,Utenos apskr.,34,Anykščių r. sav.,3413,Viešintų sen.,3413
+115,3418,ELDERSHIP,9,Utenos apskr.,34,Anykščių r. sav.,3418,Debeikių sen.,3418
+116,3422,ELDERSHIP,9,Utenos apskr.,34,Anykščių r. sav.,3422,Kavarsko sen.,3422
+117,3426,ELDERSHIP,9,Utenos apskr.,34,Anykščių r. sav.,3426,Kurklių sen.,3426
+118,3442,ELDERSHIP,9,Utenos apskr.,34,Anykščių r. sav.,3442,Svėdasų sen.,3442
+119,3449,ELDERSHIP,9,Utenos apskr.,34,Anykščių r. sav.,3449,Skiemonių sen.,3449
+120,3462,ELDERSHIP,9,Utenos apskr.,34,Anykščių r. sav.,3462,Traupio sen.,3462
+121,3469,ELDERSHIP,9,Utenos apskr.,34,Anykščių r. sav.,3469,Troškūnų sen.,3469
+122,3601,ELDERSHIP,5,Panevėžio apskr.,36,Biržų r. sav.,3601,Biržų miesto sen.,3601
+123,3604,ELDERSHIP,5,Panevėžio apskr.,36,Biržų r. sav.,3604,Širvėnos sen.,3604
+124,3609,ELDERSHIP,5,Panevėžio apskr.,36,Biržų r. sav.,3609,Vabalninko sen.,3609
+125,3640,ELDERSHIP,5,Panevėžio apskr.,36,Biržų r. sav.,3640,Nemunėlio Radviliškio sen.,3640
+126,3648,ELDERSHIP,5,Panevėžio apskr.,36,Biržų r. sav.,3648,Pabiržės sen.,3648
+127,3649,ELDERSHIP,5,Panevėžio apskr.,36,Biržų r. sav.,3649,Pačeriaukštės sen.,3649
+128,3651,ELDERSHIP,5,Panevėžio apskr.,36,Biržų r. sav.,3651,Papilio sen.,3651
+129,3654,ELDERSHIP,5,Panevėžio apskr.,36,Biržų r. sav.,3654,Parovėjos sen.,3654
+130,3805,ELDERSHIP,1,Alytaus apskr.,38,Varėnos r. sav.,3805,Valkininkų sen.,3805
+131,3808,ELDERSHIP,1,Alytaus apskr.,38,Varėnos r. sav.,3808,Varėnos sen.,3808
+132,3813,ELDERSHIP,1,Alytaus apskr.,38,Varėnos r. sav.,3813,Vydenių sen.,3813
+133,3826,ELDERSHIP,1,Alytaus apskr.,38,Varėnos r. sav.,3826,Kaniavos sen.,3826
+134,3838,ELDERSHIP,1,Alytaus apskr.,38,Varėnos r. sav.,3838,Marcinkonių sen.,3838
+135,3842,ELDERSHIP,1,Alytaus apskr.,38,Varėnos r. sav.,3842,Matuizų sen.,3842
+136,3847,ELDERSHIP,1,Alytaus apskr.,38,Varėnos r. sav.,3847,Merkinės sen.,3847
+137,3879,ELDERSHIP,1,Alytaus apskr.,38,Varėnos r. sav.,3879,Jakėnų sen.,3879
+138,3910,ELDERSHIP,4,Marijampolės apskr.,39,Vilkaviškio r. sav.,3910,Vilkaviškio miesto sen.,3910
+139,3914,ELDERSHIP,4,Marijampolės apskr.,39,Vilkaviškio r. sav.,3914,Bartninkų sen.,3914
+140,3920,ELDERSHIP,4,Marijampolės apskr.,39,Vilkaviškio r. sav.,3920,Vištyčio sen.,3920
+141,3926,ELDERSHIP,4,Marijampolės apskr.,39,Vilkaviškio r. sav.,3926,Gižų sen.,3926
+142,3930,ELDERSHIP,4,Marijampolės apskr.,39,Vilkaviškio r. sav.,3930,Gražiškių sen.,3930
+143,3935,ELDERSHIP,4,Marijampolės apskr.,39,Vilkaviškio r. sav.,3935,Klausučių sen.,3935
+144,3938,ELDERSHIP,4,Marijampolės apskr.,39,Vilkaviškio r. sav.,3938,Keturvalakių sen.,3938
+145,3942,ELDERSHIP,4,Marijampolės apskr.,39,Vilkaviškio r. sav.,3942,Kybartų sen.,3942
+146,3956,ELDERSHIP,4,Marijampolės apskr.,39,Vilkaviškio r. sav.,3956,Pajevonio sen.,3956
+147,3960,ELDERSHIP,4,Marijampolės apskr.,39,Vilkaviškio r. sav.,3960,Pilviškių sen.,3960
+148,3977,ELDERSHIP,4,Marijampolės apskr.,39,Vilkaviškio r. sav.,3977,Šeimenos sen.,3977
+149,3979,ELDERSHIP,4,Marijampolės apskr.,39,Vilkaviškio r. sav.,3979,Virbalio sen.,3979
+150,4101,ELDERSHIP,10,Vilniaus apskr.,41,Vilniaus r. sav.,4101,Nemenčinės miesto sen.,4101
+151,4102,ELDERSHIP,10,Vilniaus apskr.,41,Vilniaus r. sav.,4102,Avižienių sen.,4102
+152,4107,ELDERSHIP,10,Vilniaus apskr.,41,Vilniaus r. sav.,4107,Buivydžių sen.,4107
+153,4110,ELDERSHIP,10,Vilniaus apskr.,41,Vilniaus r. sav.,4110,Bezdonių sen.,4110
+154,4112,ELDERSHIP,10,Vilniaus apskr.,41,Vilniaus r. sav.,4112,Zujūnų sen.,4112
+155,4115,ELDERSHIP,10,Vilniaus apskr.,41,Vilniaus r. sav.,4115,Pagirių sen.,4115
+156,4122,ELDERSHIP,10,Vilniaus apskr.,41,Vilniaus r. sav.,4122,Šatrininkų sen.,4122
+157,4128,ELDERSHIP,10,Vilniaus apskr.,41,Vilniaus r. sav.,4128,Dūkštų sen.,4128
+158,4139,ELDERSHIP,10,Vilniaus apskr.,41,Vilniaus r. sav.,4139,Kalvelių sen.,4139
+159,4142,ELDERSHIP,10,Vilniaus apskr.,41,Vilniaus r. sav.,4142,Lavoriškių sen.,4142
+160,4145,ELDERSHIP,10,Vilniaus apskr.,41,Vilniaus r. sav.,4145,Maišiagalos sen.,4145
+161,4146,ELDERSHIP,10,Vilniaus apskr.,41,Vilniaus r. sav.,4146,Marijampolio sen.,4146
+162,4148,ELDERSHIP,10,Vilniaus apskr.,41,Vilniaus r. sav.,4148,Mickūnų sen.,4148
+163,4151,ELDERSHIP,10,Vilniaus apskr.,41,Vilniaus r. sav.,4151,Medininkų sen.,4151
+164,4154,ELDERSHIP,10,Vilniaus apskr.,41,Vilniaus r. sav.,4154,Nemenčinės sen.,4154
+165,4157,ELDERSHIP,10,Vilniaus apskr.,41,Vilniaus r. sav.,4157,Nemėžio sen.,4157
+166,4160,ELDERSHIP,10,Vilniaus apskr.,41,Vilniaus r. sav.,4160,Paberžės sen.,4160
+167,4168,ELDERSHIP,10,Vilniaus apskr.,41,Vilniaus r. sav.,4168,Riešės sen.,4168
+168,4171,ELDERSHIP,10,Vilniaus apskr.,41,Vilniaus r. sav.,4171,Rudaminos sen.,4171
+169,4174,ELDERSHIP,10,Vilniaus apskr.,41,Vilniaus r. sav.,4174,Rukainių sen.,4174
+170,4178,ELDERSHIP,10,Vilniaus apskr.,41,Vilniaus r. sav.,4178,Sudervės sen.,4178
+171,4181,ELDERSHIP,10,Vilniaus apskr.,41,Vilniaus r. sav.,4181,Sužionių sen.,4181
+172,4194,ELDERSHIP,10,Vilniaus apskr.,41,Vilniaus r. sav.,4194,Juodšilių sen.,4194
+173,4209,ELDERSHIP,10,Vilniaus apskr.,42,Elektrėnų sav.,4209,Gilučių sen.,4209
+174,4215,ELDERSHIP,10,Vilniaus apskr.,42,Elektrėnų sav.,4215,Elektrėnų sen.,4215
+175,4216,ELDERSHIP,10,Vilniaus apskr.,42,Elektrėnų sav.,4216,Pastrėvio sen.,4216
+176,4218,ELDERSHIP,10,Vilniaus apskr.,42,Elektrėnų sav.,4218,Vievio sen.,4218
+177,4219,ELDERSHIP,10,Vilniaus apskr.,42,Elektrėnų sav.,4219,Kazokiškių sen.,4219
+178,4230,ELDERSHIP,10,Vilniaus apskr.,42,Elektrėnų sav.,4230,Kietaviškių sen.,4230
+179,4287,ELDERSHIP,10,Vilniaus apskr.,42,Elektrėnų sav.,4287,Semeliškių sen.,4287
+180,4288,ELDERSHIP,10,Vilniaus apskr.,42,Elektrėnų sav.,4288,Beižionių sen.,4288
+181,4328,ELDERSHIP,9,Utenos apskr.,43,Zarasų r. sav.,4328,Dusetų sen.,4328
+182,4330,ELDERSHIP,9,Utenos apskr.,43,Zarasų r. sav.,4330,Zarasų sen.,4330
+183,4332,ELDERSHIP,9,Utenos apskr.,43,Zarasų r. sav.,4332,Imbrado sen.,4332
+184,4348,ELDERSHIP,9,Utenos apskr.,43,Zarasų r. sav.,4348,Salako sen.,4348
+185,4371,ELDERSHIP,9,Utenos apskr.,43,Zarasų r. sav.,4371,Turmanto sen.,4371
+186,4501,ELDERSHIP,9,Utenos apskr.,45,Ignalinos r. sav.,4501,Ignalinos miesto sen.,4501
+187,4504,ELDERSHIP,9,Utenos apskr.,45,Ignalinos r. sav.,4504,Vidiškių sen.,4504
+188,4520,ELDERSHIP,9,Utenos apskr.,45,Ignalinos r. sav.,4520,Didžiasalio sen.,4520
+189,4522,ELDERSHIP,9,Utenos apskr.,45,Ignalinos r. sav.,4522,Dūkšto sen.,4522
+190,4525,ELDERSHIP,9,Utenos apskr.,45,Ignalinos r. sav.,4525,Ignalinos sen.,4525
+191,4528,ELDERSHIP,9,Utenos apskr.,45,Ignalinos r. sav.,4528,Kazitiškio sen.,4528
+192,4534,ELDERSHIP,9,Utenos apskr.,45,Ignalinos r. sav.,4534,Linkmenų sen.,4534
+193,4537,ELDERSHIP,9,Utenos apskr.,45,Ignalinos r. sav.,4537,Mielagėnų sen.,4537
+194,4542,ELDERSHIP,9,Utenos apskr.,45,Ignalinos r. sav.,4542,Naujojo Daugėliškio sen.,4542
+195,4549,ELDERSHIP,9,Utenos apskr.,45,Ignalinos r. sav.,4549,Rimšės sen.,4549
+196,4559,ELDERSHIP,9,Utenos apskr.,45,Ignalinos r. sav.,4559,Tverečiaus sen.,4559
+197,4562,ELDERSHIP,9,Utenos apskr.,45,Ignalinos r. sav.,4562,Ceikinių sen.,4562
+198,4601,ELDERSHIP,2,Kauno apskr.,46,Jonavos r. sav.,4601,Jonavos sen.,4601
+199,4607,ELDERSHIP,2,Kauno apskr.,46,Jonavos r. sav.,4607,Bukonių sen.,4607
+200,4613,ELDERSHIP,2,Kauno apskr.,46,Jonavos r. sav.,4613,Šveicarijos sen.,4613
+201,4624,ELDERSHIP,2,Kauno apskr.,46,Jonavos r. sav.,4624,Žeimių sen.,4624
+202,4635,ELDERSHIP,2,Kauno apskr.,46,Jonavos r. sav.,4635,Kulvos sen.,4635
+203,4657,ELDERSHIP,2,Kauno apskr.,46,Jonavos r. sav.,4657,Upninkų sen.,4657
+204,4668,ELDERSHIP,2,Kauno apskr.,46,Jonavos r. sav.,4668,Užusalių sen.,4668
+205,4677,ELDERSHIP,2,Kauno apskr.,46,Jonavos r. sav.,4677,Šilų sen.,4677
+206,4713,ELDERSHIP,6,Šiaulių apskr.,47,Joniškio r. sav.,4713,Gataučių sen.,4713
+207,4720,ELDERSHIP,6,Šiaulių apskr.,47,Joniškio r. sav.,4720,Gaižaičių sen.,4720
+208,4726,ELDERSHIP,6,Šiaulių apskr.,47,Joniškio r. sav.,4726,Žagarės sen.,4726
+209,4731,ELDERSHIP,6,Šiaulių apskr.,47,Joniškio r. sav.,4731,Kriukų sen.,4731
+210,4735,ELDERSHIP,6,Šiaulių apskr.,47,Joniškio r. sav.,4735,Kepalių sen.,4735
+211,4744,ELDERSHIP,6,Šiaulių apskr.,47,Joniškio r. sav.,4744,Rudiškių sen.,4744
+212,4747,ELDERSHIP,6,Šiaulių apskr.,47,Joniškio r. sav.,4747,Satkūnų sen.,4747
+213,4751,ELDERSHIP,6,Šiaulių apskr.,47,Joniškio r. sav.,4751,Saugėlaukio sen.,4751
+214,4756,ELDERSHIP,6,Šiaulių apskr.,47,Joniškio r. sav.,4756,Skaistgirio sen.,4756
+215,4760,ELDERSHIP,6,Šiaulių apskr.,47,Joniškio r. sav.,4760,Joniškio sen.,4760
+216,4814,ELDERSHIP,4,Marijampolės apskr.,48,Kalvarijos sav.,4814,Akmenynų sen.,4814
+217,4834,ELDERSHIP,4,Marijampolės apskr.,48,Kalvarijos sav.,4834,Kalvarijos sen.,4834
+218,4839,ELDERSHIP,4,Marijampolės apskr.,48,Kalvarijos sav.,4839,Liubavo sen.,4839
+219,4862,ELDERSHIP,4,Marijampolės apskr.,48,Kalvarijos sav.,4862,Sangrūdos sen.,4862
+220,4909,ELDERSHIP,2,Kauno apskr.,49,Kaišiadorių r. sav.,4909,Žaslių sen.,4909
+221,4913,ELDERSHIP,2,Kauno apskr.,49,Kaišiadorių r. sav.,4913,Žiežmarių apylinkės sen.,4913
+222,4915,ELDERSHIP,2,Kauno apskr.,49,Kaišiadorių r. sav.,4915,Žiežmarių sen.,4915
+223,4917,ELDERSHIP,2,Kauno apskr.,49,Kaišiadorių r. sav.,4917,Kaišiadorių miesto sen.,4917
+224,4921,ELDERSHIP,2,Kauno apskr.,49,Kaišiadorių r. sav.,4921,Kaišiadorių apylinkės sen.,4921
+225,4937,ELDERSHIP,2,Kauno apskr.,49,Kaišiadorių r. sav.,4937,Kruonio sen.,4937
+226,4940,ELDERSHIP,2,Kauno apskr.,49,Kaišiadorių r. sav.,4940,Nemaitonių sen.,4940
+227,4942,ELDERSHIP,2,Kauno apskr.,49,Kaišiadorių r. sav.,4942,Palomenės sen.,4942
+228,4946,ELDERSHIP,2,Kauno apskr.,49,Kaišiadorių r. sav.,4946,Paparčių sen.,4946
+229,4952,ELDERSHIP,2,Kauno apskr.,49,Kaišiadorių r. sav.,4952,Rumšiškių sen.,4952
+230,4953,ELDERSHIP,2,Kauno apskr.,49,Kaišiadorių r. sav.,4953,Pravieniškių sen.,4953
+231,5203,ELDERSHIP,2,Kauno apskr.,52,Kauno r. sav.,5203,Alšėnų sen.,5203
+232,5207,ELDERSHIP,2,Kauno apskr.,52,Kauno r. sav.,5207,Babtų sen.,5207
+233,5209,ELDERSHIP,2,Kauno apskr.,52,Kauno r. sav.,5209,Ežerėlio sen.,5209
+234,5210,ELDERSHIP,2,Kauno apskr.,52,Kauno r. sav.,5210,Batniavos sen.,5210
+235,5215,ELDERSHIP,2,Kauno apskr.,52,Kauno r. sav.,5215,Vandžiogalos sen.,5215
+236,5218,ELDERSHIP,2,Kauno apskr.,52,Kauno r. sav.,5218,Vilkijos apylinkių sen.,5218
+237,5219,ELDERSHIP,2,Kauno apskr.,52,Kauno r. sav.,5219,Vilkijos sen.,5219
+238,5221,ELDERSHIP,2,Kauno apskr.,52,Kauno r. sav.,5221,Garliavos apylinkių sen.,5221
+239,5223,ELDERSHIP,2,Kauno apskr.,52,Kauno r. sav.,5223,Garliavos sen.,5223
+240,5226,ELDERSHIP,2,Kauno apskr.,52,Kauno r. sav.,5226,Domeikavos sen.,5226
+241,5229,ELDERSHIP,2,Kauno apskr.,52,Kauno r. sav.,5229,Zapyškio sen.,5229
+242,5233,ELDERSHIP,2,Kauno apskr.,52,Kauno r. sav.,5233,Karmėlavos sen.,5233
+243,5236,ELDERSHIP,2,Kauno apskr.,52,Kauno r. sav.,5236,Kačerginės sen.,5236
+244,5241,ELDERSHIP,2,Kauno apskr.,52,Kauno r. sav.,5241,Kulautuvos sen.,5241
+245,5243,ELDERSHIP,2,Kauno apskr.,52,Kauno r. sav.,5243,Linksmakalnio sen.,5243
+246,5245,ELDERSHIP,2,Kauno apskr.,52,Kauno r. sav.,5245,Ringaudų sen.,5245
+247,5247,ELDERSHIP,2,Kauno apskr.,52,Kauno r. sav.,5247,Neveronių sen.,5247
+248,5257,ELDERSHIP,2,Kauno apskr.,52,Kauno r. sav.,5257,Lapių sen.,5257
+249,5259,ELDERSHIP,2,Kauno apskr.,52,Kauno r. sav.,5259,Raudondvario sen.,5259
+250,5262,ELDERSHIP,2,Kauno apskr.,52,Kauno r. sav.,5262,Rokų sen.,5262
+251,5267,ELDERSHIP,2,Kauno apskr.,52,Kauno r. sav.,5267,Samylų sen.,5267
+252,5272,ELDERSHIP,2,Kauno apskr.,52,Kauno r. sav.,5272,Taurakiemio sen.,5272
+253,5277,ELDERSHIP,2,Kauno apskr.,52,Kauno r. sav.,5277,Užliedžių sen.,5277
+254,5282,ELDERSHIP,2,Kauno apskr.,52,Kauno r. sav.,5282,Čekiškės sen.,5282
+255,5290,ELDERSHIP,2,Kauno apskr.,52,Kauno r. sav.,5290,Akademijos sen.,5290
+256,5301,ELDERSHIP,2,Kauno apskr.,53,Kėdainių r. sav.,5301,Kėdainių miesto sen.,5301
+257,5302,ELDERSHIP,2,Kauno apskr.,53,Kėdainių r. sav.,5302,Vilainių sen.,5302
+258,5305,ELDERSHIP,2,Kauno apskr.,53,Kėdainių r. sav.,5305,Gudžiūnų sen.,5305
+259,5313,ELDERSHIP,2,Kauno apskr.,53,Kėdainių r. sav.,5313,Dotnuvos sen.,5313
+260,5317,ELDERSHIP,2,Kauno apskr.,53,Kėdainių r. sav.,5317,Josvainių sen.,5317
+261,5325,ELDERSHIP,2,Kauno apskr.,53,Kėdainių r. sav.,5325,Krakių sen.,5325
+262,5349,ELDERSHIP,2,Kauno apskr.,53,Kėdainių r. sav.,5349,Pelėdnagių sen.,5349
+263,5352,ELDERSHIP,2,Kauno apskr.,53,Kėdainių r. sav.,5352,Pernaravos sen.,5352
+264,5355,ELDERSHIP,2,Kauno apskr.,53,Kėdainių r. sav.,5355,Surviliškio sen.,5355
+265,5370,ELDERSHIP,2,Kauno apskr.,53,Kėdainių r. sav.,5370,Truskavos sen.,5370
+266,5377,ELDERSHIP,2,Kauno apskr.,53,Kėdainių r. sav.,5377,Šėtos sen.,5377
+267,5401,ELDERSHIP,6,Šiaulių apskr.,54,Kelmės r. sav.,5401,Kelmės sen.,5401
+268,5405,ELDERSHIP,6,Šiaulių apskr.,54,Kelmės r. sav.,5405,Vaiguvos sen.,5405
+269,5409,ELDERSHIP,6,Šiaulių apskr.,54,Kelmės r. sav.,5409,Kukečių sen.,5409
+270,5419,ELDERSHIP,6,Šiaulių apskr.,54,Kelmės r. sav.,5419,Kelmės apylinkių sen.,5419
+271,5425,ELDERSHIP,6,Šiaulių apskr.,54,Kelmės r. sav.,5425,Kražių sen.,5425
+272,5437,ELDERSHIP,6,Šiaulių apskr.,54,Kelmės r. sav.,5437,Liolių sen.,5437
+273,5456,ELDERSHIP,6,Šiaulių apskr.,54,Kelmės r. sav.,5456,Pakražančio sen.,5456
+274,5473,ELDERSHIP,6,Šiaulių apskr.,54,Kelmės r. sav.,5473,Tytuvėnų sen.,5473
+275,5475,ELDERSHIP,6,Šiaulių apskr.,54,Kelmės r. sav.,5475,Tytuvėnų apylinkių sen.,5475
+276,5477,ELDERSHIP,6,Šiaulių apskr.,54,Kelmės r. sav.,5477,Užvenčio sen.,5477
+277,5480,ELDERSHIP,6,Šiaulių apskr.,54,Kelmės r. sav.,5480,Šaukėnų sen.,5480
+278,5501,ELDERSHIP,3,Klaipėdos apskr.,55,Klaipėdos r. sav.,5501,Gargždų sen.,5501
+279,5504,ELDERSHIP,3,Klaipėdos apskr.,55,Klaipėdos r. sav.,5504,Agluonėnų sen.,5504
+280,5510,ELDERSHIP,3,Klaipėdos apskr.,55,Klaipėdos r. sav.,5510,Judrėnų sen.,5510
+281,5513,ELDERSHIP,3,Klaipėdos apskr.,55,Klaipėdos r. sav.,5513,Vėžaičių sen.,5513
+282,5518,ELDERSHIP,3,Klaipėdos apskr.,55,Klaipėdos r. sav.,5518,Veiviržėnų sen.,5518
+283,5525,ELDERSHIP,3,Klaipėdos apskr.,55,Klaipėdos r. sav.,5525,Dauparų-Kvietinių sen.,5525
+284,5536,ELDERSHIP,3,Klaipėdos apskr.,55,Klaipėdos r. sav.,5536,Dovilų sen.,5536
+285,5547,ELDERSHIP,3,Klaipėdos apskr.,55,Klaipėdos r. sav.,5547,Kretingalės sen.,5547
+286,5566,ELDERSHIP,3,Klaipėdos apskr.,55,Klaipėdos r. sav.,5566,Priekulės sen.,5566
+287,5570,ELDERSHIP,3,Klaipėdos apskr.,55,Klaipėdos r. sav.,5570,Sendvario sen.,5570
+288,5581,ELDERSHIP,3,Klaipėdos apskr.,55,Klaipėdos r. sav.,5581,Endriejavo sen.,5581
+289,5601,ELDERSHIP,3,Klaipėdos apskr.,56,Kretingos r. sav.,5601,Kretingos miesto sen.,5601
+290,5610,ELDERSHIP,3,Klaipėdos apskr.,56,Kretingos r. sav.,5610,Salantų miesto sen.,5610
+291,5618,ELDERSHIP,3,Klaipėdos apskr.,56,Kretingos r. sav.,5618,Darbėnų sen.,5618
+292,5623,ELDERSHIP,3,Klaipėdos apskr.,56,Kretingos r. sav.,5623,Žalgirio sen.,5623
+293,5634,ELDERSHIP,3,Klaipėdos apskr.,56,Kretingos r. sav.,5634,Imbarės sen.,5634
+294,5645,ELDERSHIP,3,Klaipėdos apskr.,56,Kretingos r. sav.,5645,Kartenos sen.,5645
+295,5651,ELDERSHIP,3,Klaipėdos apskr.,56,Kretingos r. sav.,5651,Kretingos sen.,5651
+296,5656,ELDERSHIP,3,Klaipėdos apskr.,56,Kretingos r. sav.,5656,Kūlupėnų sen.,5656
+297,5711,ELDERSHIP,5,Panevėžio apskr.,57,Kupiškio r. sav.,5711,Alizavos sen.,5711
+298,5719,ELDERSHIP,5,Panevėžio apskr.,57,Kupiškio r. sav.,5719,Kupiškio sen.,5719
+299,5744,ELDERSHIP,5,Panevėžio apskr.,57,Kupiškio r. sav.,5744,Noriūnų sen.,5744
+300,5777,ELDERSHIP,5,Panevėžio apskr.,57,Kupiškio r. sav.,5777,Skapiškio sen.,5777
+301,5785,ELDERSHIP,5,Panevėžio apskr.,57,Kupiškio r. sav.,5785,Subačiaus sen.,5785
+302,5795,ELDERSHIP,5,Panevėžio apskr.,57,Kupiškio r. sav.,5795,Šimonių sen.,5795
+303,5832,ELDERSHIP,4,Marijampolės apskr.,58,Kazlų Rūdos sav.,5832,Kazlų Rūdos sen.,5832
+304,5833,ELDERSHIP,4,Marijampolės apskr.,58,Kazlų Rūdos sav.,5833,Plutiškių sen.,5833
+305,5867,ELDERSHIP,4,Marijampolės apskr.,58,Kazlų Rūdos sav.,5867,Antanavo sen.,5867
+306,5894,ELDERSHIP,4,Marijampolės apskr.,58,Kazlų Rūdos sav.,5894,Jankų sen.,5894
+307,5901,ELDERSHIP,1,Alytaus apskr.,59,Lazdijų r. sav.,5901,Lazdijų miesto sen.,5901
+308,5908,ELDERSHIP,1,Alytaus apskr.,59,Lazdijų r. sav.,5908,Būdviečio sen.,5908
+309,5925,ELDERSHIP,1,Alytaus apskr.,59,Lazdijų r. sav.,5925,Kapčiamiesčio sen.,5925
+310,5930,ELDERSHIP,1,Alytaus apskr.,59,Lazdijų r. sav.,5930,Krosnos sen.,5930
+311,5937,ELDERSHIP,1,Alytaus apskr.,59,Lazdijų r. sav.,5937,Kučiūnų sen.,5937
+312,5940,ELDERSHIP,1,Alytaus apskr.,59,Lazdijų r. sav.,5940,Lazdijų sen.,5940
+313,5950,ELDERSHIP,1,Alytaus apskr.,59,Lazdijų r. sav.,5950,Noragėlių sen.,5950
+314,5969,ELDERSHIP,1,Alytaus apskr.,59,Lazdijų r. sav.,5969,Seirijų sen.,5969
+315,5979,ELDERSHIP,1,Alytaus apskr.,59,Lazdijų r. sav.,5979,Šventežerio sen.,5979
+316,5990,ELDERSHIP,1,Alytaus apskr.,59,Lazdijų r. sav.,5990,Šeštokų sen.,5990
+317,6107,ELDERSHIP,8,Telšių apskr.,61,Mažeikių r. sav.,6107,Židikų sen.,6107
+318,6111,ELDERSHIP,8,Telšių apskr.,61,Mažeikių r. sav.,6111,Mažeikių sen.,6111
+319,6112,ELDERSHIP,8,Telšių apskr.,61,Mažeikių r. sav.,6112,Laižuvos sen.,6112
+320,6119,ELDERSHIP,8,Telšių apskr.,61,Mažeikių r. sav.,6119,Mažeikių apylinkės sen.,6119
+321,6120,ELDERSHIP,8,Telšių apskr.,61,Mažeikių r. sav.,6120,Viekšnių sen.,6120
+322,6124,ELDERSHIP,8,Telšių apskr.,61,Mažeikių r. sav.,6124,Reivyčių sen.,6124
+323,6135,ELDERSHIP,8,Telšių apskr.,61,Mažeikių r. sav.,6135,Sedos sen.,6135
+324,6146,ELDERSHIP,8,Telšių apskr.,61,Mažeikių r. sav.,6146,Tirkšlių sen.,6146
+325,6168,ELDERSHIP,8,Telšių apskr.,61,Mažeikių r. sav.,6168,Šerkšnėnų sen.,6168
+326,6204,ELDERSHIP,9,Utenos apskr.,62,Molėtų r. sav.,6204,Alantos sen.,6204
+327,6213,ELDERSHIP,9,Utenos apskr.,62,Molėtų r. sav.,6213,Balninkų sen.,6213
+328,6219,ELDERSHIP,9,Utenos apskr.,62,Molėtų r. sav.,6219,Videniškių sen.,6219
+329,6230,ELDERSHIP,9,Utenos apskr.,62,Molėtų r. sav.,6230,Giedraičių sen.,6230
+330,6237,ELDERSHIP,9,Utenos apskr.,62,Molėtų r. sav.,6237,Dubingių sen.,6237
+331,6246,ELDERSHIP,9,Utenos apskr.,62,Molėtų r. sav.,6246,Inturkės sen.,6246
+332,6250,ELDERSHIP,9,Utenos apskr.,62,Molėtų r. sav.,6250,Joniškio sen.,6250
+333,6258,ELDERSHIP,9,Utenos apskr.,62,Molėtų r. sav.,6258,Luokesos sen.,6258
+334,6262,ELDERSHIP,9,Utenos apskr.,62,Molėtų r. sav.,6262,Mindūnų sen.,6262
+335,6285,ELDERSHIP,9,Utenos apskr.,62,Molėtų r. sav.,6285,Suginčių sen.,6285
+336,6296,ELDERSHIP,9,Utenos apskr.,62,Molėtų r. sav.,6296,Čiulėnų sen.,6296
+337,6308,ELDERSHIP,7,Tauragės apskr.,63,Pagėgių sav.,6308,Lumpėnų sen.,6308
+338,6309,ELDERSHIP,7,Tauragės apskr.,63,Pagėgių sav.,6309,Vilkyškių sen.,6309
+339,6360,ELDERSHIP,7,Tauragės apskr.,63,Pagėgių sav.,6360,Pagėgių sen.,6360
+340,6361,ELDERSHIP,7,Tauragės apskr.,63,Pagėgių sav.,6361,Natkiškių sen.,6361
+341,6378,ELDERSHIP,7,Tauragės apskr.,63,Pagėgių sav.,6378,Stoniškių sen.,6378
+342,6504,ELDERSHIP,6,Šiaulių apskr.,65,Pakruojo r. sav.,6504,Guostagalio sen.,6504
+343,6512,ELDERSHIP,6,Šiaulių apskr.,65,Pakruojo r. sav.,6512,Žeimelio sen.,6512
+344,6518,ELDERSHIP,6,Šiaulių apskr.,65,Pakruojo r. sav.,6518,Klovainių sen.,6518
+345,6529,ELDERSHIP,6,Šiaulių apskr.,65,Pakruojo r. sav.,6529,Lygumų sen.,6529
+346,6536,ELDERSHIP,6,Šiaulių apskr.,65,Pakruojo r. sav.,6536,Linkuvos sen.,6536
+347,6546,ELDERSHIP,6,Šiaulių apskr.,65,Pakruojo r. sav.,6546,Pakruojo sen.,6546
+348,6558,ELDERSHIP,6,Šiaulių apskr.,65,Pakruojo r. sav.,6558,Pašvitinio sen.,6558
+349,6568,ELDERSHIP,6,Šiaulių apskr.,65,Pakruojo r. sav.,6568,Rozalimo sen.,6568
+350,6608,ELDERSHIP,5,Panevėžio apskr.,66,Panevėžio r. sav.,6608,Vadoklių sen.,6608
+351,6616,ELDERSHIP,5,Panevėžio apskr.,66,Panevėžio r. sav.,6616,Velžio sen.,6616
+352,6625,ELDERSHIP,5,Panevėžio apskr.,66,Panevėžio r. sav.,6625,Karsakiškio sen.,6625
+353,6630,ELDERSHIP,5,Panevėžio apskr.,66,Panevėžio r. sav.,6630,Krekenavos sen.,6630
+354,6637,ELDERSHIP,5,Panevėžio apskr.,66,Panevėžio r. sav.,6637,Miežiškių sen.,6637
+355,6642,ELDERSHIP,5,Panevėžio apskr.,66,Panevėžio r. sav.,6642,Naujamiesčio sen.,6642
+356,6647,ELDERSHIP,5,Panevėžio apskr.,66,Panevėžio r. sav.,6647,Panevėžio sen.,6647
+357,6661,ELDERSHIP,5,Panevėžio apskr.,66,Panevėžio r. sav.,6661,Raguvos sen.,6661
+358,6664,ELDERSHIP,5,Panevėžio apskr.,66,Panevėžio r. sav.,6664,Ramygalos sen.,6664
+359,6679,ELDERSHIP,5,Panevėžio apskr.,66,Panevėžio r. sav.,6679,Smilgių sen.,6679
+360,6690,ELDERSHIP,5,Panevėžio apskr.,66,Panevėžio r. sav.,6690,Upytės sen.,6690
+361,6695,ELDERSHIP,5,Panevėžio apskr.,66,Panevėžio r. sav.,6695,Paįstrio sen.,6695
+362,6701,ELDERSHIP,5,Panevėžio apskr.,67,Pasvalio r. sav.,6701,Pasvalio miesto sen.,6701
+363,6704,ELDERSHIP,5,Panevėžio apskr.,67,Pasvalio r. sav.,6704,Joniškėlio miesto sen.,6704
+364,6706,ELDERSHIP,5,Panevėžio apskr.,67,Pasvalio r. sav.,6706,Vaškų sen.,6706
+365,6715,ELDERSHIP,5,Panevėžio apskr.,67,Pasvalio r. sav.,6715,Daujėnų sen.,6715
+366,6724,ELDERSHIP,5,Panevėžio apskr.,67,Pasvalio r. sav.,6724,Joniškėlio apylinkių sen.,6724
+367,6738,ELDERSHIP,5,Panevėžio apskr.,67,Pasvalio r. sav.,6738,Krinčino sen.,6738
+368,6749,ELDERSHIP,5,Panevėžio apskr.,67,Pasvalio r. sav.,6749,Pasvalio apylinkių sen.,6749
+369,6752,ELDERSHIP,5,Panevėžio apskr.,67,Pasvalio r. sav.,6752,Pumpėnų sen.,6752
+370,6754,ELDERSHIP,5,Panevėžio apskr.,67,Pasvalio r. sav.,6754,Pušaloto sen.,6754
+371,6773,ELDERSHIP,5,Panevėžio apskr.,67,Pasvalio r. sav.,6773,Saločių sen.,6773
+372,6780,ELDERSHIP,5,Panevėžio apskr.,67,Pasvalio r. sav.,6780,Namišių sen.,6780
+373,6801,ELDERSHIP,8,Telšių apskr.,68,Plungės r. sav.,6801,Plungės miesto sen.,6801
+374,6807,ELDERSHIP,8,Telšių apskr.,68,Plungės r. sav.,6807,Alsėdžių sen.,6807
+375,6809,ELDERSHIP,8,Telšių apskr.,68,Plungės r. sav.,6809,Babrungo sen.,6809
+376,6819,ELDERSHIP,8,Telšių apskr.,68,Plungės r. sav.,6819,Žemaičių Kalvarijos sen.,6819
+377,6826,ELDERSHIP,8,Telšių apskr.,68,Plungės r. sav.,6826,Žlibinų sen.,6826
+378,6837,ELDERSHIP,8,Telšių apskr.,68,Plungės r. sav.,6837,Kulių sen.,6837
+379,6855,ELDERSHIP,8,Telšių apskr.,68,Plungės r. sav.,6855,Nausodžio sen.,6855
+380,6860,ELDERSHIP,8,Telšių apskr.,68,Plungės r. sav.,6860,Paukštakių sen.,6860
+381,6866,ELDERSHIP,8,Telšių apskr.,68,Plungės r. sav.,6866,Platelių sen.,6866
+382,6883,ELDERSHIP,8,Telšių apskr.,68,Plungės r. sav.,6883,Stalgėnų sen.,6883
+383,6895,ELDERSHIP,8,Telšių apskr.,68,Plungės r. sav.,6895,Šateikių sen.,6895
+384,6901,ELDERSHIP,2,Kauno apskr.,69,Prienų r. sav.,6901,Prienų sen.,6901
+385,6908,ELDERSHIP,2,Kauno apskr.,69,Prienų r. sav.,6908,Balbieriškio sen.,6908
+386,6925,ELDERSHIP,2,Kauno apskr.,69,Prienų r. sav.,6925,Veiverių sen.,6925
+387,6930,ELDERSHIP,2,Kauno apskr.,69,Prienų r. sav.,6930,Jiezno sen.,6930
+388,6935,ELDERSHIP,2,Kauno apskr.,69,Prienų r. sav.,6935,Išlaužo sen.,6935
+389,6950,ELDERSHIP,2,Kauno apskr.,69,Prienų r. sav.,6950,Naujosios Ūtos sen.,6950
+390,6961,ELDERSHIP,2,Kauno apskr.,69,Prienų r. sav.,6961,Pakuonio sen.,6961
+391,6973,ELDERSHIP,2,Kauno apskr.,69,Prienų r. sav.,6973,Stakliškių sen.,6973
+392,6984,ELDERSHIP,2,Kauno apskr.,69,Prienų r. sav.,6984,Šilavoto sen.,6984
+393,7108,ELDERSHIP,6,Šiaulių apskr.,71,Radviliškio r. sav.,7108,Aukštelkų sen.,7108
+394,7113,ELDERSHIP,6,Šiaulių apskr.,71,Radviliškio r. sav.,7113,Baisogalos sen.,7113
+395,7115,ELDERSHIP,6,Šiaulių apskr.,71,Radviliškio r. sav.,7115,Grinkiškio sen.,7115
+396,7127,ELDERSHIP,6,Šiaulių apskr.,71,Radviliškio r. sav.,7127,Pakalniškių sen.,7127
+397,7135,ELDERSHIP,6,Šiaulių apskr.,71,Radviliškio r. sav.,7135,Radviliškio sen.,7135
+398,7149,ELDERSHIP,6,Šiaulių apskr.,71,Radviliškio r. sav.,7149,Sidabravo sen.,7149
+399,7154,ELDERSHIP,6,Šiaulių apskr.,71,Radviliškio r. sav.,7154,Skėmių sen.,7154
+400,7160,ELDERSHIP,6,Šiaulių apskr.,71,Radviliškio r. sav.,7160,Radviliškio miesto sen.,7160
+401,7161,ELDERSHIP,6,Šiaulių apskr.,71,Radviliškio r. sav.,7161,Šeduvos miesto sen.,7161
+402,7172,ELDERSHIP,6,Šiaulių apskr.,71,Radviliškio r. sav.,7172,Šaukoto sen.,7172
+403,7184,ELDERSHIP,6,Šiaulių apskr.,71,Radviliškio r. sav.,7184,Šiaulėnų sen.,7184
+404,7187,ELDERSHIP,6,Šiaulių apskr.,71,Radviliškio r. sav.,7187,Tyrulių sen.,7187
+405,7201,ELDERSHIP,2,Kauno apskr.,72,Raseinių r. sav.,7201,Raseinių miesto sen.,7201
+406,7205,ELDERSHIP,2,Kauno apskr.,72,Raseinių r. sav.,7205,Ariogalos miesto sen.,7205
+407,7209,ELDERSHIP,2,Kauno apskr.,72,Raseinių r. sav.,7209,Ariogalos sen.,7209
+408,7213,ELDERSHIP,2,Kauno apskr.,72,Raseinių r. sav.,7213,Betygalos sen.,7213
+409,7219,ELDERSHIP,2,Kauno apskr.,72,Raseinių r. sav.,7219,Viduklės sen.,7219
+410,7226,ELDERSHIP,2,Kauno apskr.,72,Raseinių r. sav.,7226,Girkalnio sen.,7226
+411,7245,ELDERSHIP,2,Kauno apskr.,72,Raseinių r. sav.,7245,Kalnujų sen.,7245
+412,7251,ELDERSHIP,2,Kauno apskr.,72,Raseinių r. sav.,7251,Nemakščių sen.,7251
+413,7262,ELDERSHIP,2,Kauno apskr.,72,Raseinių r. sav.,7262,Pagojukų sen.,7262
+414,7273,ELDERSHIP,2,Kauno apskr.,72,Raseinių r. sav.,7273,Paliepių sen.,7273
+415,7284,ELDERSHIP,2,Kauno apskr.,72,Raseinių r. sav.,7284,Raseinių sen.,7284
+416,7295,ELDERSHIP,2,Kauno apskr.,72,Raseinių r. sav.,7295,Šiluvos sen.,7295
+417,7301,ELDERSHIP,5,Panevėžio apskr.,73,Rokiškio r. sav.,7301,Rokiškio miesto sen.,7301
+418,7312,ELDERSHIP,5,Panevėžio apskr.,73,Rokiškio r. sav.,7312,Kazliškio sen.,7312
+419,7315,ELDERSHIP,5,Panevėžio apskr.,73,Rokiškio r. sav.,7315,Kamajų sen.,7315
+420,7319,ELDERSHIP,5,Panevėžio apskr.,73,Rokiškio r. sav.,7319,Kriaunų sen.,7319
+421,7326,ELDERSHIP,5,Panevėžio apskr.,73,Rokiškio r. sav.,7326,Obelių sen.,7326
+422,7329,ELDERSHIP,5,Panevėžio apskr.,73,Rokiškio r. sav.,7329,Pandėlio sen.,7329
+423,7331,ELDERSHIP,5,Panevėžio apskr.,73,Rokiškio r. sav.,7331,Panemunėlio sen.,7331
+424,7345,ELDERSHIP,5,Panevėžio apskr.,73,Rokiškio r. sav.,7345,Rokiškio kaimiškoji sen.,7345
+425,7375,ELDERSHIP,5,Panevėžio apskr.,73,Rokiškio r. sav.,7375,Jūžintų sen.,7375
+426,7386,ELDERSHIP,5,Panevėžio apskr.,73,Rokiškio r. sav.,7386,Juodupės sen.,7386
+427,7401,ELDERSHIP,8,Telšių apskr.,74,Rietavo sav.,7401,Rietavo miesto sen.,7401
+428,7440,ELDERSHIP,8,Telšių apskr.,74,Rietavo sav.,7440,Medingėnų sen.,7440
+429,7475,ELDERSHIP,8,Telšių apskr.,74,Rietavo sav.,7475,Rietavo sen.,7475
+430,7483,ELDERSHIP,8,Telšių apskr.,74,Rietavo sav.,7483,Daugėdų sen.,7483
+431,7489,ELDERSHIP,8,Telšių apskr.,74,Rietavo sav.,7489,Tverų sen.,7489
+432,7501,ELDERSHIP,3,Klaipėdos apskr.,75,Skuodo r. sav.,7501,Skuodo miesto sen.,7501
+433,7508,ELDERSHIP,3,Klaipėdos apskr.,75,Skuodo r. sav.,7508,Aleksandrijos sen.,7508
+434,7512,ELDERSHIP,3,Klaipėdos apskr.,75,Skuodo r. sav.,7512,Barstyčių sen.,7512
+435,7524,ELDERSHIP,3,Klaipėdos apskr.,75,Skuodo r. sav.,7524,Ylakių sen.,7524
+436,7535,ELDERSHIP,3,Klaipėdos apskr.,75,Skuodo r. sav.,7535,Lenkimų sen.,7535
+437,7546,ELDERSHIP,3,Klaipėdos apskr.,75,Skuodo r. sav.,7546,Mosėdžio sen.,7546
+438,7557,ELDERSHIP,3,Klaipėdos apskr.,75,Skuodo r. sav.,7557,Notėnų sen.,7557
+439,7579,ELDERSHIP,3,Klaipėdos apskr.,75,Skuodo r. sav.,7579,Skuodo sen.,7579
+440,7580,ELDERSHIP,3,Klaipėdos apskr.,75,Skuodo r. sav.,7580,Šačių sen.,7580
+441,7701,ELDERSHIP,7,Tauragės apskr.,77,Tauragės r. sav.,7701,Tauragės miesto sen.,7701
+442,7712,ELDERSHIP,7,Tauragės apskr.,77,Tauragės r. sav.,7712,Batakių sen.,7712
+443,7724,ELDERSHIP,7,Tauragės apskr.,77,Tauragės r. sav.,7724,Gaurės sen.,7724
+444,7737,ELDERSHIP,7,Tauragės apskr.,77,Tauragės r. sav.,7737,Žygaičių sen.,7737
+445,7748,ELDERSHIP,7,Tauragės apskr.,77,Tauragės r. sav.,7748,Lauksargių sen.,7748
+446,7757,ELDERSHIP,7,Tauragės apskr.,77,Tauragės r. sav.,7757,Mažonų sen.,7757
+447,7778,ELDERSHIP,7,Tauragės apskr.,77,Tauragės r. sav.,7778,Skaudvilės sen.,7778
+448,7794,ELDERSHIP,7,Tauragės apskr.,77,Tauragės r. sav.,7794,Tauragės sen.,7794
+449,7810,ELDERSHIP,8,Telšių apskr.,78,Telšių r. sav.,7810,Telšių miesto sen.,7810
+450,7811,ELDERSHIP,8,Telšių apskr.,78,Telšių r. sav.,7811,Varnių sen.,7811
+451,7815,ELDERSHIP,8,Telšių apskr.,78,Telšių r. sav.,7815,Viešvėnų sen.,7815
+452,7819,ELDERSHIP,8,Telšių apskr.,78,Telšių r. sav.,7819,Gadūnavo sen.,7819
+453,7824,ELDERSHIP,8,Telšių apskr.,78,Telšių r. sav.,7824,Degaičių sen.,7824
+454,7829,ELDERSHIP,8,Telšių apskr.,78,Telšių r. sav.,7829,Žarėnų sen.,7829
+455,7836,ELDERSHIP,8,Telšių apskr.,78,Telšių r. sav.,7836,Luokės sen.,7836
+456,7847,ELDERSHIP,8,Telšių apskr.,78,Telšių r. sav.,7847,Nevarėnų sen.,7847
+457,7869,ELDERSHIP,8,Telšių apskr.,78,Telšių r. sav.,7869,Ryškėnų sen.,7869
+458,7874,ELDERSHIP,8,Telšių apskr.,78,Telšių r. sav.,7874,Tryškių sen.,7874
+459,7881,ELDERSHIP,8,Telšių apskr.,78,Telšių r. sav.,7881,Upynos sen.,7881
+460,7904,ELDERSHIP,10,Vilniaus apskr.,79,Trakų r. sav.,7904,Aukštadvario sen.,7904
+461,7910,ELDERSHIP,10,Vilniaus apskr.,79,Trakų r. sav.,7910,Lentvario sen.,7910
+462,7927,ELDERSHIP,10,Vilniaus apskr.,79,Trakų r. sav.,7927,Grendavės sen.,7927
+463,7969,ELDERSHIP,10,Vilniaus apskr.,79,Trakų r. sav.,7969,Onuškio sen.,7969
+464,7973,ELDERSHIP,10,Vilniaus apskr.,79,Trakų r. sav.,7973,Paluknio sen.,7973
+465,7981,ELDERSHIP,10,Vilniaus apskr.,79,Trakų r. sav.,7981,Rūdiškių sen.,7981
+466,7990,ELDERSHIP,10,Vilniaus apskr.,79,Trakų r. sav.,7990,Senųjų Trakų sen.,7990
+467,7994,ELDERSHIP,10,Vilniaus apskr.,79,Trakų r. sav.,7994,Trakų sen.,7994
+468,8101,ELDERSHIP,10,Vilniaus apskr.,81,Ukmergės r. sav.,8101,Ukmergės miesto sen.,8101
+469,8112,ELDERSHIP,10,Vilniaus apskr.,81,Ukmergės r. sav.,8112,Vidiškių sen.,8112
+470,8118,ELDERSHIP,10,Vilniaus apskr.,81,Ukmergės r. sav.,8118,Veprių sen.,8118
+471,8124,ELDERSHIP,10,Vilniaus apskr.,81,Ukmergės r. sav.,8124,Deltuvos sen.,8124
+472,8129,ELDERSHIP,10,Vilniaus apskr.,81,Ukmergės r. sav.,8129,Želvos sen.,8129
+473,8133,ELDERSHIP,10,Vilniaus apskr.,81,Ukmergės r. sav.,8133,Žemaitkiemio sen.,8133
+474,8150,ELDERSHIP,10,Vilniaus apskr.,81,Ukmergės r. sav.,8150,Lyduokių sen.,8150
+475,8161,ELDERSHIP,10,Vilniaus apskr.,81,Ukmergės r. sav.,8161,Pabaisko sen.,8161
+476,8172,ELDERSHIP,10,Vilniaus apskr.,81,Ukmergės r. sav.,8172,Siesikų sen.,8172
+477,8177,ELDERSHIP,10,Vilniaus apskr.,81,Ukmergės r. sav.,8177,Taujėnų sen.,8177
+478,8185,ELDERSHIP,10,Vilniaus apskr.,81,Ukmergės r. sav.,8185,Pivonijos sen.,8185
+479,8190,ELDERSHIP,10,Vilniaus apskr.,81,Ukmergės r. sav.,8190,Šešuolių sen.,8190
+480,8201,ELDERSHIP,9,Utenos apskr.,82,Utenos r. sav.,8201,Utenos miesto sen.,8201
+481,8206,ELDERSHIP,9,Utenos apskr.,82,Utenos r. sav.,8206,Vyžuonų sen.,8206
+482,8212,ELDERSHIP,9,Utenos apskr.,82,Utenos r. sav.,8212,Daugailių sen.,8212
+483,8223,ELDERSHIP,9,Utenos apskr.,82,Utenos r. sav.,8223,Kuktiškių sen.,8223
+484,8226,ELDERSHIP,9,Utenos apskr.,82,Utenos r. sav.,8226,Leliūnų sen.,8226
+485,8248,ELDERSHIP,9,Utenos apskr.,82,Utenos r. sav.,8248,Saldutiškio sen.,8248
+486,8260,ELDERSHIP,9,Utenos apskr.,82,Utenos r. sav.,8260,Sudeikių sen.,8260
+487,8271,ELDERSHIP,9,Utenos apskr.,82,Utenos r. sav.,8271,Tauragnų sen.,8271
+488,8274,ELDERSHIP,9,Utenos apskr.,82,Utenos r. sav.,8274,Utenos sen.,8274
+489,8276,ELDERSHIP,9,Utenos apskr.,82,Utenos r. sav.,8276,Užpalių sen.,8276
+490,8405,ELDERSHIP,4,Marijampolės apskr.,84,Šakių r. sav.,8405,Barzdų sen.,8405
+491,8409,ELDERSHIP,4,Marijampolės apskr.,84,Šakių r. sav.,8409,Kudirkos Naumiesčio sen.,8409
+492,8413,ELDERSHIP,4,Marijampolės apskr.,84,Šakių r. sav.,8413,Gelgaudiškio sen.,8413
+493,8417,ELDERSHIP,4,Marijampolės apskr.,84,Šakių r. sav.,8417,Griškabūdžio sen.,8417
+494,8430,ELDERSHIP,4,Marijampolės apskr.,84,Šakių r. sav.,8430,Kidulių sen.,8430
+495,8435,ELDERSHIP,4,Marijampolės apskr.,84,Šakių r. sav.,8435,Kriūkų sen.,8435
+496,8443,ELDERSHIP,4,Marijampolės apskr.,84,Šakių r. sav.,8443,Lukšių sen.,8443
+497,8449,ELDERSHIP,4,Marijampolės apskr.,84,Šakių r. sav.,8449,Lekėčių sen.,8449
+498,8455,ELDERSHIP,4,Marijampolės apskr.,84,Šakių r. sav.,8455,Plokščių sen.,8455
+499,8471,ELDERSHIP,4,Marijampolės apskr.,84,Šakių r. sav.,8471,Sintautų sen.,8471
+500,8475,ELDERSHIP,4,Marijampolės apskr.,84,Šakių r. sav.,8475,Slavikų sen.,8475
+501,8479,ELDERSHIP,4,Marijampolės apskr.,84,Šakių r. sav.,8479,Sudargo sen.,8479
+502,8483,ELDERSHIP,4,Marijampolės apskr.,84,Šakių r. sav.,8483,Šakių sen.,8483
+503,8497,ELDERSHIP,4,Marijampolės apskr.,84,Šakių r. sav.,8497,Žvirgždaičių sen.,8497
+504,8503,ELDERSHIP,10,Vilniaus apskr.,85,Šalčininkų r. sav.,8503,Baltosios Vokės sen.,8503
+505,8505,ELDERSHIP,10,Vilniaus apskr.,85,Šalčininkų r. sav.,8505,Akmenynės sen.,8505
+506,8509,ELDERSHIP,10,Vilniaus apskr.,85,Šalčininkų r. sav.,8509,Butrimonių sen.,8509
+507,8514,ELDERSHIP,10,Vilniaus apskr.,85,Šalčininkų r. sav.,8514,Gerviškių sen.,8514
+508,8519,ELDERSHIP,10,Vilniaus apskr.,85,Šalčininkų r. sav.,8519,Dainavos sen.,8519
+509,8527,ELDERSHIP,10,Vilniaus apskr.,85,Šalčininkų r. sav.,8527,Dieveniškių sen.,8527
+510,8534,ELDERSHIP,10,Vilniaus apskr.,85,Šalčininkų r. sav.,8534,Kalesninkų sen.,8534
+511,8550,ELDERSHIP,10,Vilniaus apskr.,85,Šalčininkų r. sav.,8550,Pabarės sen.,8550
+512,8554,ELDERSHIP,10,Vilniaus apskr.,85,Šalčininkų r. sav.,8554,Poškonių sen.,8554
+513,8563,ELDERSHIP,10,Vilniaus apskr.,85,Šalčininkų r. sav.,8563,Turgelių sen.,8563
+514,8575,ELDERSHIP,10,Vilniaus apskr.,85,Šalčininkų r. sav.,8575,Šalčininkų sen.,8575
+515,8580,ELDERSHIP,10,Vilniaus apskr.,85,Šalčininkų r. sav.,8580,Eišiškių sen.,8580
+516,8593,ELDERSHIP,10,Vilniaus apskr.,85,Šalčininkų r. sav.,8593,Jašiūnų sen.,8593
+517,8601,ELDERSHIP,10,Vilniaus apskr.,86,Švenčionių r. sav.,8601,Švenčionių sen.,8601
+518,8604,ELDERSHIP,10,Vilniaus apskr.,86,Švenčionių r. sav.,8604,Adutiškio sen.,8604
+519,8613,ELDERSHIP,10,Vilniaus apskr.,86,Švenčionių r. sav.,8613,Kaltanėnų sen.,8613
+520,8615,ELDERSHIP,10,Vilniaus apskr.,86,Švenčionių r. sav.,8615,Labanoro sen.,8615
+521,8629,ELDERSHIP,10,Vilniaus apskr.,86,Švenčionių r. sav.,8629,Magūnų sen.,8629
+522,8644,ELDERSHIP,10,Vilniaus apskr.,86,Švenčionių r. sav.,8644,Pabradės sen.,8644
+523,8657,ELDERSHIP,10,Vilniaus apskr.,86,Švenčionių r. sav.,8657,Sarių sen.,8657
+524,8659,ELDERSHIP,10,Vilniaus apskr.,86,Švenčionių r. sav.,8659,Svirkų sen.,8659
+525,8662,ELDERSHIP,10,Vilniaus apskr.,86,Švenčionių r. sav.,8662,Strūnaičio sen.,8662
+526,8669,ELDERSHIP,10,Vilniaus apskr.,86,Švenčionių r. sav.,8669,Cirkliškio sen.,8669
+527,8671,ELDERSHIP,10,Vilniaus apskr.,86,Švenčionių r. sav.,8671,Švenčionėlių sen.,8671
+528,8701,ELDERSHIP,7,Tauragės apskr.,87,Šilalės r. sav.,8701,Šilalės miesto sen.,8701
+529,8703,ELDERSHIP,7,Tauragės apskr.,87,Šilalės r. sav.,8703,Bijotų sen.,8703
+530,8705,ELDERSHIP,7,Tauragės apskr.,87,Šilalės r. sav.,8705,Bilionių sen.,8705
+531,8707,ELDERSHIP,7,Tauragės apskr.,87,Šilalės r. sav.,8707,Didkiemio sen.,8707
+532,8711,ELDERSHIP,7,Tauragės apskr.,87,Šilalės r. sav.,8711,Kaltinėnų sen.,8711
+533,8715,ELDERSHIP,7,Tauragės apskr.,87,Šilalės r. sav.,8715,Kvėdarnos sen.,8715
+534,8719,ELDERSHIP,7,Tauragės apskr.,87,Šilalės r. sav.,8719,Laukuvos sen.,8719
+535,8736,ELDERSHIP,7,Tauragės apskr.,87,Šilalės r. sav.,8736,Pajūrio sen.,8736
+536,8741,ELDERSHIP,7,Tauragės apskr.,87,Šilalės r. sav.,8741,Palentinio sen.,8741
+537,8749,ELDERSHIP,7,Tauragės apskr.,87,Šilalės r. sav.,8749,Tenenių sen.,8749
+538,8769,ELDERSHIP,7,Tauragės apskr.,87,Šilalės r. sav.,8769,Upynos sen.,8769
+539,8770,ELDERSHIP,7,Tauragės apskr.,87,Šilalės r. sav.,8770,Šilalės kaimiškoji sen.,8770
+540,8771,ELDERSHIP,7,Tauragės apskr.,87,Šilalės r. sav.,8771,Traksėdžio sen.,8771
+541,8777,ELDERSHIP,7,Tauragės apskr.,87,Šilalės r. sav.,8777,Žadeikių sen.,8777
+542,8801,ELDERSHIP,3,Klaipėdos apskr.,88,Šilutės r. sav.,8801,Šilutės sen.,8801
+543,8806,ELDERSHIP,3,Klaipėdos apskr.,88,Šilutės r. sav.,8806,Vainuto sen.,8806
+544,8813,ELDERSHIP,3,Klaipėdos apskr.,88,Šilutės r. sav.,8813,Gardamo sen.,8813
+545,8820,ELDERSHIP,3,Klaipėdos apskr.,88,Šilutės r. sav.,8820,Žemaičių Naumiesčio sen.,8820
+546,8840,ELDERSHIP,3,Klaipėdos apskr.,88,Šilutės r. sav.,8840,Katyčių sen.,8840
+547,8850,ELDERSHIP,3,Klaipėdos apskr.,88,Šilutės r. sav.,8850,Kintų sen.,8850
+548,8866,ELDERSHIP,3,Klaipėdos apskr.,88,Šilutės r. sav.,8866,Rusnės sen.,8866
+549,8872,ELDERSHIP,3,Klaipėdos apskr.,88,Šilutės r. sav.,8872,Saugų sen.,8872
+550,8884,ELDERSHIP,3,Klaipėdos apskr.,88,Šilutės r. sav.,8884,Usėnų sen.,8884
+551,8888,ELDERSHIP,3,Klaipėdos apskr.,88,Šilutės r. sav.,8888,Švėkšnos sen.,8888
+552,8897,ELDERSHIP,3,Klaipėdos apskr.,88,Šilutės r. sav.,8897,Juknaičių sen.,8897
+553,8904,ELDERSHIP,10,Vilniaus apskr.,89,Širvintų r. sav.,8904,Alionių sen.,8904
+554,8910,ELDERSHIP,10,Vilniaus apskr.,89,Širvintų r. sav.,8910,Kernavės sen.,8910
+555,8923,ELDERSHIP,10,Vilniaus apskr.,89,Širvintų r. sav.,8923,Gelvonų sen.,8923
+556,8934,ELDERSHIP,10,Vilniaus apskr.,89,Širvintų r. sav.,8934,Zibalų sen.,8934
+557,8967,ELDERSHIP,10,Vilniaus apskr.,89,Širvintų r. sav.,8967,Musninkų sen.,8967
+558,8978,ELDERSHIP,10,Vilniaus apskr.,89,Širvintų r. sav.,8978,Čiobiškio sen.,8978
+559,8982,ELDERSHIP,10,Vilniaus apskr.,89,Širvintų r. sav.,8982,Širvintų sen.,8982
+560,8989,ELDERSHIP,10,Vilniaus apskr.,89,Širvintų r. sav.,8989,Jauniūnų sen.,8989
+561,9101,ELDERSHIP,6,Šiaulių apskr.,91,Šiaulių r. sav.,9101,Kuršėnų miesto sen.,9101
+562,9107,ELDERSHIP,6,Šiaulių apskr.,91,Šiaulių r. sav.,9107,Bubių sen.,9107
+563,9108,ELDERSHIP,6,Šiaulių apskr.,91,Šiaulių r. sav.,9108,Ginkūnų sen.,9108
+564,9109,ELDERSHIP,6,Šiaulių apskr.,91,Šiaulių r. sav.,9109,Gruzdžių sen.,9109
+565,9113,ELDERSHIP,6,Šiaulių apskr.,91,Šiaulių r. sav.,9113,Kairių sen.,9113
+566,9120,ELDERSHIP,6,Šiaulių apskr.,91,Šiaulių r. sav.,9120,Kužių sen.,9120
+567,9132,ELDERSHIP,6,Šiaulių apskr.,91,Šiaulių r. sav.,9132,Kuršėnų kaimiškoji sen.,9132
+568,9148,ELDERSHIP,6,Šiaulių apskr.,91,Šiaulių r. sav.,9148,Meškuičių sen.,9148
+569,9164,ELDERSHIP,6,Šiaulių apskr.,91,Šiaulių r. sav.,9164,Raudėnų sen.,9164
+570,9182,ELDERSHIP,6,Šiaulių apskr.,91,Šiaulių r. sav.,9182,Šakynos sen.,9182
+571,9193,ELDERSHIP,6,Šiaulių apskr.,91,Šiaulių r. sav.,9193,Šiaulių kaimiškoji sen.,9193
+572,9418,ELDERSHIP,7,Tauragės apskr.,94,Jurbarko r. sav.,9418,Veliuonos sen.,9418
+573,9422,ELDERSHIP,7,Tauragės apskr.,94,Jurbarko r. sav.,9422,Viešvilės sen.,9422
+574,9435,ELDERSHIP,7,Tauragės apskr.,94,Jurbarko r. sav.,9435,Girdžių sen.,9435
+575,9450,ELDERSHIP,7,Tauragės apskr.,94,Jurbarko r. sav.,9450,Raudonės sen.,9450
+576,9460,ELDERSHIP,7,Tauragės apskr.,94,Jurbarko r. sav.,9460,Skirsnemunės sen.,9460
+577,9469,ELDERSHIP,7,Tauragės apskr.,94,Jurbarko r. sav.,9469,Seredžiaus sen.,9469
+578,9475,ELDERSHIP,7,Tauragės apskr.,94,Jurbarko r. sav.,9475,Smalininkų sen.,9475
+579,9480,ELDERSHIP,7,Tauragės apskr.,94,Jurbarko r. sav.,9480,Šimkaičių sen.,9480
+580,9485,ELDERSHIP,7,Tauragės apskr.,94,Jurbarko r. sav.,9485,Eržvilko sen.,9485
+581,9490,ELDERSHIP,7,Tauragės apskr.,94,Jurbarko r. sav.,9490,Juodaičių sen.,9490
+582,9494,ELDERSHIP,7,Tauragės apskr.,94,Jurbarko r. sav.,9494,Jurbarko miesto sen.,9494
+583,9497,ELDERSHIP,7,Tauragės apskr.,94,Jurbarko r. sav.,9497,Jurbarkų sen.,9497
+584,9498,ELDERSHIP,1,Alytaus apskr.,59,Lazdijų r. sav.,9498,Veisiejų sen.,9498
+585,9499,ELDERSHIP,3,Klaipėdos apskr.,56,Kretingos r. sav.,9499,Vydmantų sen.,9499
+586,9500,ELDERSHIP,10,Vilniaus apskr.,89,Širvintų r. sav.,9500,Širvintų miesto sen.,9500
+587,9502,ELDERSHIP,4,Marijampolės apskr.,18,Marijampolės sav.,9502,Marijampolės miesto sen.,9502
+588,9503,ELDERSHIP,4,Marijampolės apskr.,18,Marijampolės sav.,9503,Mokolų sen.,9503
+589,9504,ELDERSHIP,4,Marijampolės apskr.,18,Marijampolės sav.,9504,Patašinės sen.,9504
+590,9505,ELDERSHIP,2,Kauno apskr.,19,Kauno m. sav.,9505,Žemosios Fredos sen.,9505
+591,9506,ELDERSHIP,2,Kauno apskr.,19,Kauno m. sav.,9506,Centro-Žaliakalnio sen.,9506
+592,9507,ELDERSHIP,2,Kauno apskr.,19,Kauno m. sav.,9507,Panemunės-Šančių sen.,9507
+593,9508,ELDERSHIP,2,Kauno apskr.,19,Kauno m. sav.,9508,Petrašiūnų-Gričiupio sen.,9508

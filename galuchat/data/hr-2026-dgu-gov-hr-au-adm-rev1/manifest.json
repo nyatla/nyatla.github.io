@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "hr-2026-dgu-gov-hr-au-adm-rev1",
+  "sourceArchive": "hr-2026-dgu-gov-hr-au-adm-rev1.zip",
+  "sdkVersion": "0.2.4",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "croatia_au_2026-grid-8192-10000.wgsmapset.glc",
+        "size": 2462537,
+        "sha256": "7364f84a4e2e39a9f371c29f12ebdafb4cadcdce2e8783fde8db88592cbe4ebc",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "croatia_au_2026-grid-4096-1000.wgsmapset.glc",
+        "size": 374273,
+        "sha256": "02662094b1f7cd26feae8a2e7774e762974720c9fc8c476fd133d47c48ad4157",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "croatia_au_2026-grid-512-100.wgsmapset.glc",
+        "size": 57497,
+        "sha256": "8e840f86a5512044972e2a36410cbf48bdb534f7aab33d9c472da4b08118f4ae",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "croatia_au_2026.giswordbook",
+        "size": 124455,
+        "sha256": "f97fba1cb5a8fdd0ca4fc20ac6bd41c496c97f65667d51241fd8013521461f4e"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 5945,
+      "sha256": "00feb4f8d6a37013c21a7830b098e7737e8ada0d5b59344b6f89e81cfc2e82e5"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 11195,
+      "sha256": "df416f75219f2519eaca77030cce815456d60035b179faae19cf1f7dd01341aa"
+    },
+    "names": {
+      "path": "croatia_au_2026.names.csv",
+      "size": 503192,
+      "sha256": "c5e32f4cc0d6cb4c5a2d63bfb0551642205cd3e9f02d0292a5e4930936151303"
+    }
+  }
+}

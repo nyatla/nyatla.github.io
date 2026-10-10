@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "ch-2026-swisstopo-admin-ch-swissboundaries3d-adm-rev1",
+  "sourceArchive": "ch-2026-swisstopo-admin-ch-swissboundaries3d-adm-rev1.zip",
+  "sdkVersion": "0.2.4",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "switzerland_swissboundaries3d_2026-grid-8192-10000.wgsmapset.glc",
+        "size": 1042590,
+        "sha256": "34904e02f8bad95f2eb2cf1631670560953ccf5b2c061bfad525f00554068d43",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "switzerland_swissboundaries3d_2026-grid-4096-1000.wgsmapset.glc",
+        "size": 144600,
+        "sha256": "1db93093674caf20183eeeb425d51d698e6d19d49c488aeaa0324fd764f81b89",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "switzerland_swissboundaries3d_2026-grid-512-100.wgsmapset.glc",
+        "size": 19570,
+        "sha256": "71ee41c1858e1f79cfedceb9cb2d054eb7a1c99c09ce6e452b5e6bf396e46f39",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "switzerland_swissboundaries3d_2026.giswordbook",
+        "size": 38596,
+        "sha256": "d18a6633250962399a4fd1e92830015adeb20891b7b0a0678b6eac32f2274af3"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 3977,
+      "sha256": "bfab17cb86a9bbf94fd0d7a6f20bee386460636ad3b0d65fe3d53bc708886989"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 9029,
+      "sha256": "d0bdb6a11fa34ac9d2512590f98401c4e0a35b315a460bbc7420ab3fb86ffca6"
+    },
+    "names": {
+      "path": "switzerland_swissboundaries3d_2026.names.csv",
+      "size": 142510,
+      "sha256": "5178c553eb6242e0069a9ac91cd6f7ff0b8930e0f5b35c585a67e24f7ced6356"
+    }
+  }
+}

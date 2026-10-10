@@ -1,0 +1,424 @@
+wordbook_code,GID,GRVALUE,PROV_CODE,PROV_NAME,GEM_CODE,GEM_NAME,WATER
+1,1,1,PV20,Groningen,GM0014,Groningen,NEE
+2,2,2,PV24,Flevoland,GM0034,Almere,JA
+3,3,3,PV24,Flevoland,GM0034,Almere,NEE
+4,4,4,PV20,Groningen,GM0037,Stadskanaal,NEE
+5,5,5,PV20,Groningen,GM0047,Veendam,NEE
+6,6,6,PV24,Flevoland,GM0050,Zeewolde,JA
+7,7,7,PV24,Flevoland,GM0050,Zeewolde,NEE
+8,8,8,PV21,Fryslân,GM0059,Achtkarspelen,NEE
+9,9,9,PV21,Fryslân,GM0060,Ameland,JA
+10,10,10,PV21,Fryslân,GM0060,Ameland,NEE
+11,11,11,PV21,Fryslân,GM0072,Harlingen,JA
+12,12,12,PV21,Fryslân,GM0072,Harlingen,NEE
+13,13,13,PV21,Fryslân,GM0074,Heerenveen,NEE
+14,14,14,PV21,Fryslân,GM0080,Leeuwarden,NEE
+15,15,15,PV21,Fryslân,GM0085,Ooststellingwerf,NEE
+16,16,16,PV21,Fryslân,GM0086,Opsterland,NEE
+17,17,17,PV21,Fryslân,GM0088,Schiermonnikoog,JA
+18,18,18,PV21,Fryslân,GM0088,Schiermonnikoog,NEE
+19,19,19,PV21,Fryslân,GM0090,Smallingerland,NEE
+20,20,20,PV21,Fryslân,GM0093,Terschelling,JA
+21,21,21,PV21,Fryslân,GM0093,Terschelling,NEE
+22,22,22,PV21,Fryslân,GM0096,Vlieland,JA
+23,23,23,PV21,Fryslân,GM0096,Vlieland,NEE
+24,24,24,PV21,Fryslân,GM0098,Weststellingwerf,NEE
+25,25,25,PV22,Drenthe,GM0106,Assen,NEE
+26,26,26,PV22,Drenthe,GM0109,Coevorden,NEE
+27,27,27,PV22,Drenthe,GM0114,Emmen,NEE
+28,28,28,PV22,Drenthe,GM0118,Hoogeveen,NEE
+29,29,29,PV22,Drenthe,GM0119,Meppel,NEE
+30,30,30,PV23,Overijssel,GM0141,Almelo,NEE
+31,31,31,PV23,Overijssel,GM0147,Borne,NEE
+32,32,32,PV23,Overijssel,GM0148,Dalfsen,NEE
+33,33,33,PV23,Overijssel,GM0150,Deventer,NEE
+34,34,34,PV23,Overijssel,GM0153,Enschede,NEE
+35,35,35,PV23,Overijssel,GM0158,Haaksbergen,NEE
+36,36,36,PV23,Overijssel,GM0160,Hardenberg,NEE
+37,37,37,PV23,Overijssel,GM0163,Hellendoorn,NEE
+38,38,38,PV23,Overijssel,GM0164,Hengelo (O.),NEE
+39,39,39,PV23,Overijssel,GM0166,Kampen,JA
+40,40,40,PV23,Overijssel,GM0166,Kampen,NEE
+41,41,41,PV23,Overijssel,GM0168,Losser,NEE
+42,42,42,PV24,Flevoland,GM0171,Noordoostpolder,JA
+43,43,43,PV24,Flevoland,GM0171,Noordoostpolder,NEE
+44,44,44,PV23,Overijssel,GM0173,Oldenzaal,NEE
+45,45,45,PV23,Overijssel,GM0175,Ommen,NEE
+46,46,46,PV23,Overijssel,GM0177,Raalte,NEE
+47,47,47,PV23,Overijssel,GM0180,Staphorst,NEE
+48,48,48,PV23,Overijssel,GM0183,Tubbergen,NEE
+49,49,49,PV24,Flevoland,GM0184,Urk,JA
+50,50,50,PV24,Flevoland,GM0184,Urk,NEE
+51,51,51,PV23,Overijssel,GM0189,Wierden,NEE
+52,52,52,PV23,Overijssel,GM0193,Zwolle,NEE
+53,53,53,PV25,Gelderland,GM0197,Aalten,NEE
+54,54,54,PV25,Gelderland,GM0200,Apeldoorn,NEE
+55,55,55,PV25,Gelderland,GM0202,Arnhem,NEE
+56,56,56,PV25,Gelderland,GM0203,Barneveld,NEE
+57,57,57,PV25,Gelderland,GM0209,Beuningen,NEE
+58,58,58,PV25,Gelderland,GM0213,Brummen,NEE
+59,59,59,PV25,Gelderland,GM0214,Buren,NEE
+60,60,60,PV25,Gelderland,GM0216,Culemborg,NEE
+61,61,61,PV25,Gelderland,GM0221,Doesburg,NEE
+62,62,62,PV25,Gelderland,GM0222,Doetinchem,NEE
+63,63,63,PV25,Gelderland,GM0225,Druten,NEE
+64,64,64,PV25,Gelderland,GM0226,Duiven,NEE
+65,65,65,PV25,Gelderland,GM0228,Ede,NEE
+66,66,66,PV25,Gelderland,GM0230,Elburg,JA
+67,67,67,PV25,Gelderland,GM0230,Elburg,NEE
+68,68,68,PV25,Gelderland,GM0232,Epe,NEE
+69,69,69,PV25,Gelderland,GM0233,Ermelo,JA
+70,70,70,PV25,Gelderland,GM0233,Ermelo,NEE
+71,71,71,PV25,Gelderland,GM0243,Harderwijk,JA
+72,72,72,PV25,Gelderland,GM0243,Harderwijk,NEE
+73,73,73,PV25,Gelderland,GM0244,Hattem,NEE
+74,74,74,PV25,Gelderland,GM0246,Heerde,NEE
+75,75,75,PV25,Gelderland,GM0252,Heumen,NEE
+76,76,76,PV25,Gelderland,GM0262,Lochem,NEE
+77,77,77,PV25,Gelderland,GM0263,Maasdriel,NEE
+78,78,78,PV25,Gelderland,GM0267,Nijkerk,JA
+79,79,79,PV25,Gelderland,GM0267,Nijkerk,NEE
+80,80,80,PV25,Gelderland,GM0268,Nijmegen,NEE
+81,81,81,PV25,Gelderland,GM0269,Oldebroek,JA
+82,82,82,PV25,Gelderland,GM0269,Oldebroek,NEE
+83,83,83,PV25,Gelderland,GM0273,Putten,JA
+84,84,84,PV25,Gelderland,GM0273,Putten,NEE
+85,85,85,PV25,Gelderland,GM0274,Renkum,NEE
+86,86,86,PV25,Gelderland,GM0275,Rheden,NEE
+87,87,87,PV25,Gelderland,GM0277,Rozendaal,NEE
+88,88,88,PV25,Gelderland,GM0279,Scherpenzeel,NEE
+89,89,89,PV25,Gelderland,GM0281,Tiel,NEE
+90,90,90,PV25,Gelderland,GM0285,Voorst,NEE
+91,91,91,PV25,Gelderland,GM0289,Wageningen,NEE
+92,92,92,PV25,Gelderland,GM0293,Westervoort,NEE
+93,93,93,PV25,Gelderland,GM0294,Winterswijk,NEE
+94,94,94,PV25,Gelderland,GM0296,Wijchen,NEE
+95,95,95,PV25,Gelderland,GM0297,Zaltbommel,NEE
+96,96,96,PV25,Gelderland,GM0299,Zevenaar,NEE
+97,97,97,PV25,Gelderland,GM0301,Zutphen,NEE
+98,98,98,PV25,Gelderland,GM0302,Nunspeet,JA
+99,99,99,PV25,Gelderland,GM0302,Nunspeet,NEE
+100,100,100,PV24,Flevoland,GM0303,Dronten,JA
+101,101,101,PV24,Flevoland,GM0303,Dronten,NEE
+102,102,102,PV26,Utrecht,GM0307,Amersfoort,NEE
+103,103,103,PV26,Utrecht,GM0308,Baarn,NEE
+104,104,104,PV26,Utrecht,GM0310,De Bilt,NEE
+105,105,105,PV26,Utrecht,GM0312,Bunnik,NEE
+106,106,106,PV26,Utrecht,GM0313,Bunschoten,JA
+107,107,107,PV26,Utrecht,GM0313,Bunschoten,NEE
+108,108,108,PV26,Utrecht,GM0317,Eemnes,JA
+109,109,109,PV26,Utrecht,GM0317,Eemnes,NEE
+110,110,110,PV26,Utrecht,GM0321,Houten,NEE
+111,111,111,PV26,Utrecht,GM0327,Leusden,NEE
+112,112,112,PV26,Utrecht,GM0331,Lopik,NEE
+113,113,113,PV26,Utrecht,GM0335,Montfoort,NEE
+114,114,114,PV26,Utrecht,GM0339,Renswoude,NEE
+115,115,115,PV26,Utrecht,GM0340,Rhenen,NEE
+116,116,116,PV26,Utrecht,GM0342,Soest,NEE
+117,117,117,PV26,Utrecht,GM0344,Utrecht,NEE
+118,118,118,PV26,Utrecht,GM0345,Veenendaal,NEE
+119,119,119,PV26,Utrecht,GM0351,Woudenberg,NEE
+120,120,120,PV26,Utrecht,GM0352,Wijk bij Duurstede,NEE
+121,121,121,PV26,Utrecht,GM0353,IJsselstein,NEE
+122,122,122,PV26,Utrecht,GM0355,Zeist,NEE
+123,123,123,PV26,Utrecht,GM0356,Nieuwegein,NEE
+124,124,124,PV27,Noord-Holland,GM0358,Aalsmeer,NEE
+125,125,125,PV27,Noord-Holland,GM0361,Alkmaar,NEE
+126,126,126,PV27,Noord-Holland,GM0362,Amstelveen,NEE
+127,127,127,PV27,Noord-Holland,GM0363,Amsterdam,JA
+128,128,128,PV27,Noord-Holland,GM0363,Amsterdam,NEE
+129,129,129,PV27,Noord-Holland,GM0373,Bergen (NH.),JA
+130,130,130,PV27,Noord-Holland,GM0373,Bergen (NH.),NEE
+131,131,131,PV27,Noord-Holland,GM0375,Beverwijk,JA
+132,132,132,PV27,Noord-Holland,GM0375,Beverwijk,NEE
+133,133,133,PV27,Noord-Holland,GM0376,Blaricum,JA
+134,134,134,PV27,Noord-Holland,GM0376,Blaricum,NEE
+135,135,135,PV27,Noord-Holland,GM0377,Bloemendaal,JA
+136,136,136,PV27,Noord-Holland,GM0377,Bloemendaal,NEE
+137,137,137,PV27,Noord-Holland,GM0383,Castricum,JA
+138,138,138,PV27,Noord-Holland,GM0383,Castricum,NEE
+139,139,139,PV27,Noord-Holland,GM0384,Diemen,JA
+140,140,140,PV27,Noord-Holland,GM0384,Diemen,NEE
+141,141,141,PV27,Noord-Holland,GM0385,Edam-Volendam,JA
+142,142,142,PV27,Noord-Holland,GM0385,Edam-Volendam,NEE
+143,143,143,PV27,Noord-Holland,GM0388,Enkhuizen,JA
+144,144,144,PV27,Noord-Holland,GM0388,Enkhuizen,NEE
+145,145,145,PV27,Noord-Holland,GM0392,Haarlem,NEE
+146,146,146,PV27,Noord-Holland,GM0394,Haarlemmermeer,NEE
+147,147,147,PV27,Noord-Holland,GM0396,Heemskerk,JA
+148,148,148,PV27,Noord-Holland,GM0396,Heemskerk,NEE
+149,149,149,PV27,Noord-Holland,GM0397,Heemstede,NEE
+150,150,150,PV27,Noord-Holland,GM0399,Heiloo,NEE
+151,151,151,PV27,Noord-Holland,GM0400,Den Helder,JA
+152,152,152,PV27,Noord-Holland,GM0400,Den Helder,NEE
+153,153,153,PV27,Noord-Holland,GM0402,Hilversum,NEE
+154,154,154,PV27,Noord-Holland,GM0405,Hoorn,JA
+155,155,155,PV27,Noord-Holland,GM0405,Hoorn,NEE
+156,156,156,PV27,Noord-Holland,GM0406,Huizen,JA
+157,157,157,PV27,Noord-Holland,GM0406,Huizen,NEE
+158,158,158,PV27,Noord-Holland,GM0415,Landsmeer,NEE
+159,159,159,PV27,Noord-Holland,GM0417,Laren (NH.),NEE
+160,160,160,PV27,Noord-Holland,GM0420,Medemblik,JA
+161,161,161,PV27,Noord-Holland,GM0420,Medemblik,NEE
+162,162,162,PV27,Noord-Holland,GM0431,Oostzaan,NEE
+163,163,163,PV27,Noord-Holland,GM0432,Opmeer,NEE
+164,164,164,PV27,Noord-Holland,GM0437,Ouder-Amstel,NEE
+165,165,165,PV27,Noord-Holland,GM0439,Purmerend,NEE
+166,166,166,PV27,Noord-Holland,GM0441,Schagen,JA
+167,167,167,PV27,Noord-Holland,GM0441,Schagen,NEE
+168,168,168,PV27,Noord-Holland,GM0448,Texel,JA
+169,169,169,PV27,Noord-Holland,GM0448,Texel,NEE
+170,170,170,PV27,Noord-Holland,GM0450,Uitgeest,NEE
+171,171,171,PV27,Noord-Holland,GM0451,Uithoorn,NEE
+172,172,172,PV27,Noord-Holland,GM0453,Velsen,JA
+173,173,173,PV27,Noord-Holland,GM0453,Velsen,NEE
+174,174,174,PV27,Noord-Holland,GM0473,Zandvoort,JA
+175,175,175,PV27,Noord-Holland,GM0473,Zandvoort,NEE
+176,176,176,PV27,Noord-Holland,GM0479,Zaanstad,NEE
+177,177,177,PV28,Zuid-Holland,GM0482,Alblasserdam,NEE
+178,178,178,PV28,Zuid-Holland,GM0484,Alphen aan den Rijn,NEE
+179,179,179,PV28,Zuid-Holland,GM0489,Barendrecht,NEE
+180,180,180,PV27,Noord-Holland,GM0498,Drechterland,JA
+181,181,181,PV27,Noord-Holland,GM0498,Drechterland,NEE
+182,182,182,PV28,Zuid-Holland,GM0502,Capelle aan den IJssel,NEE
+183,183,183,PV28,Zuid-Holland,GM0503,Delft,NEE
+184,184,184,PV28,Zuid-Holland,GM0505,Dordrecht,JA
+185,185,185,PV28,Zuid-Holland,GM0505,Dordrecht,NEE
+186,186,186,PV28,Zuid-Holland,GM0512,Gorinchem,NEE
+187,187,187,PV28,Zuid-Holland,GM0513,Gouda,NEE
+188,188,188,PV28,Zuid-Holland,GM0518,'s-Gravenhage,JA
+189,189,189,PV28,Zuid-Holland,GM0518,'s-Gravenhage,NEE
+190,190,190,PV28,Zuid-Holland,GM0523,Hardinxveld-Giessendam,NEE
+191,191,191,PV28,Zuid-Holland,GM0531,Hendrik-Ido-Ambacht,NEE
+192,192,192,PV27,Noord-Holland,GM0532,Stede Broec,JA
+193,193,193,PV27,Noord-Holland,GM0532,Stede Broec,NEE
+194,194,194,PV28,Zuid-Holland,GM0534,Hillegom,NEE
+195,195,195,PV28,Zuid-Holland,GM0537,Katwijk,JA
+196,196,196,PV28,Zuid-Holland,GM0537,Katwijk,NEE
+197,197,197,PV28,Zuid-Holland,GM0542,Krimpen aan den IJssel,NEE
+198,198,198,PV28,Zuid-Holland,GM0546,Leiden,NEE
+199,199,199,PV28,Zuid-Holland,GM0547,Leiderdorp,NEE
+200,200,200,PV28,Zuid-Holland,GM0553,Lisse,NEE
+201,201,201,PV28,Zuid-Holland,GM0556,Maassluis,NEE
+202,202,202,PV28,Zuid-Holland,GM0569,Nieuwkoop,NEE
+203,203,203,PV28,Zuid-Holland,GM0575,Noordwijk,JA
+204,204,204,PV28,Zuid-Holland,GM0575,Noordwijk,NEE
+205,205,205,PV28,Zuid-Holland,GM0579,Oegstgeest,NEE
+206,206,206,PV26,Utrecht,GM0589,Oudewater,NEE
+207,207,207,PV28,Zuid-Holland,GM0590,Papendrecht,NEE
+208,208,208,PV28,Zuid-Holland,GM0597,Ridderkerk,NEE
+209,209,209,PV28,Zuid-Holland,GM0599,Rotterdam,JA
+210,210,210,PV28,Zuid-Holland,GM0599,Rotterdam,NEE
+211,211,211,PV28,Zuid-Holland,GM0603,Rijswijk (ZH.),NEE
+212,212,212,PV28,Zuid-Holland,GM0606,Schiedam,NEE
+213,213,213,PV28,Zuid-Holland,GM0610,Sliedrecht,NEE
+214,214,214,PV28,Zuid-Holland,GM0613,Albrandswaard,NEE
+215,215,215,PV28,Zuid-Holland,GM0622,Vlaardingen,NEE
+216,216,216,PV28,Zuid-Holland,GM0626,Voorschoten,NEE
+217,217,217,PV28,Zuid-Holland,GM0627,Waddinxveen,NEE
+218,218,218,PV28,Zuid-Holland,GM0629,Wassenaar,JA
+219,219,219,PV28,Zuid-Holland,GM0629,Wassenaar,NEE
+220,220,220,PV26,Utrecht,GM0632,Woerden,NEE
+221,221,221,PV28,Zuid-Holland,GM0637,Zoetermeer,NEE
+222,222,222,PV28,Zuid-Holland,GM0638,Zoeterwoude,NEE
+223,223,223,PV28,Zuid-Holland,GM0642,Zwijndrecht,NEE
+224,224,224,PV29,Zeeland,GM0654,Borsele,JA
+225,225,225,PV29,Zeeland,GM0654,Borsele,NEE
+226,226,226,PV29,Zeeland,GM0664,Goes,JA
+227,227,227,PV29,Zeeland,GM0664,Goes,NEE
+228,228,228,PV25,Gelderland,GM0668,West Maas en Waal,NEE
+229,229,229,PV29,Zeeland,GM0677,Hulst,JA
+230,230,230,PV29,Zeeland,GM0677,Hulst,NEE
+231,231,231,PV29,Zeeland,GM0678,Kapelle,JA
+232,232,232,PV29,Zeeland,GM0678,Kapelle,NEE
+233,233,233,PV29,Zeeland,GM0687,Middelburg (Z.),JA
+234,234,234,PV29,Zeeland,GM0687,Middelburg (Z.),NEE
+235,235,235,PV29,Zeeland,GM0703,Reimerswaal,JA
+236,236,236,PV29,Zeeland,GM0703,Reimerswaal,NEE
+237,237,237,PV29,Zeeland,GM0715,Terneuzen,JA
+238,238,238,PV29,Zeeland,GM0715,Terneuzen,NEE
+239,239,239,PV29,Zeeland,GM0716,Tholen,JA
+240,240,240,PV29,Zeeland,GM0716,Tholen,NEE
+241,241,241,PV29,Zeeland,GM0717,Veere,JA
+242,242,242,PV29,Zeeland,GM0717,Veere,NEE
+243,243,243,PV29,Zeeland,GM0718,Vlissingen,JA
+244,244,244,PV29,Zeeland,GM0718,Vlissingen,NEE
+245,245,245,PV26,Utrecht,GM0736,De Ronde Venen,NEE
+246,246,246,PV21,Fryslân,GM0737,Tytsjerksteradiel,NEE
+247,247,247,PV30,Noord-Brabant,GM0743,Asten,NEE
+248,248,248,PV30,Noord-Brabant,GM0744,Baarle-Nassau,NEE
+249,249,249,PV30,Noord-Brabant,GM0748,Bergen op Zoom,NEE
+250,250,250,PV30,Noord-Brabant,GM0753,Best,NEE
+251,251,251,PV30,Noord-Brabant,GM0755,Boekel,NEE
+252,252,252,PV30,Noord-Brabant,GM0757,Boxtel,NEE
+253,253,253,PV30,Noord-Brabant,GM0758,Breda,NEE
+254,254,254,PV30,Noord-Brabant,GM0762,Deurne,NEE
+255,255,255,PV20,Groningen,GM0765,Pekela,NEE
+256,256,256,PV30,Noord-Brabant,GM0766,Dongen,NEE
+257,257,257,PV30,Noord-Brabant,GM0770,Eersel,NEE
+258,258,258,PV30,Noord-Brabant,GM0772,Eindhoven,NEE
+259,259,259,PV30,Noord-Brabant,GM0777,Etten-Leur,NEE
+260,260,260,PV30,Noord-Brabant,GM0779,Geertruidenberg,NEE
+261,261,261,PV30,Noord-Brabant,GM0784,Gilze en Rijen,NEE
+262,262,262,PV30,Noord-Brabant,GM0785,Goirle,NEE
+263,263,263,PV30,Noord-Brabant,GM0794,Helmond,NEE
+264,264,264,PV30,Noord-Brabant,GM0796,'s-Hertogenbosch,NEE
+265,265,265,PV30,Noord-Brabant,GM0797,Heusden,NEE
+266,266,266,PV30,Noord-Brabant,GM0798,Hilvarenbeek,NEE
+267,267,267,PV30,Noord-Brabant,GM0809,Loon op Zand,NEE
+268,268,268,PV30,Noord-Brabant,GM0820,"Nuenen, Gerwen en Nederwetten",NEE
+269,269,269,PV30,Noord-Brabant,GM0823,Oirschot,NEE
+270,270,270,PV30,Noord-Brabant,GM0824,Oisterwijk,NEE
+271,271,271,PV30,Noord-Brabant,GM0826,Oosterhout,NEE
+272,272,272,PV30,Noord-Brabant,GM0828,Oss,NEE
+273,273,273,PV30,Noord-Brabant,GM0840,Rucphen,NEE
+274,274,274,PV30,Noord-Brabant,GM0845,Sint-Michielsgestel,NEE
+275,275,275,PV30,Noord-Brabant,GM0847,Someren,NEE
+276,276,276,PV30,Noord-Brabant,GM0848,Son en Breugel,NEE
+277,277,277,PV30,Noord-Brabant,GM0851,Steenbergen,JA
+278,278,278,PV30,Noord-Brabant,GM0851,Steenbergen,NEE
+279,279,279,PV27,Noord-Holland,GM0852,Waterland,JA
+280,280,280,PV27,Noord-Holland,GM0852,Waterland,NEE
+281,281,281,PV30,Noord-Brabant,GM0855,Tilburg,NEE
+282,282,282,PV30,Noord-Brabant,GM0858,Valkenswaard,NEE
+283,283,283,PV30,Noord-Brabant,GM0861,Veldhoven,NEE
+284,284,284,PV30,Noord-Brabant,GM0865,Vught,NEE
+285,285,285,PV30,Noord-Brabant,GM0866,Waalre,NEE
+286,286,286,PV30,Noord-Brabant,GM0867,Waalwijk,NEE
+287,287,287,PV30,Noord-Brabant,GM0873,Woensdrecht,NEE
+288,288,288,PV30,Noord-Brabant,GM0879,Zundert,NEE
+289,289,289,PV27,Noord-Holland,GM0880,Wormerland,NEE
+290,290,290,PV31,Limburg,GM0882,Landgraaf,NEE
+291,291,291,PV31,Limburg,GM0888,Beek (L.),NEE
+292,292,292,PV31,Limburg,GM0889,Beesel,NEE
+293,293,293,PV31,Limburg,GM0893,Bergen (L.),NEE
+294,294,294,PV31,Limburg,GM0899,Brunssum,NEE
+295,295,295,PV31,Limburg,GM0907,Gennep,NEE
+296,296,296,PV31,Limburg,GM0917,Heerlen,NEE
+297,297,297,PV31,Limburg,GM0928,Kerkrade,NEE
+298,298,298,PV31,Limburg,GM0935,Maastricht,NEE
+299,299,299,PV31,Limburg,GM0938,Meerssen,NEE
+300,300,300,PV31,Limburg,GM0944,Mook en Middelaar,NEE
+301,301,301,PV31,Limburg,GM0946,Nederweert,NEE
+302,302,302,PV31,Limburg,GM0957,Roermond,NEE
+303,303,303,PV31,Limburg,GM0965,Simpelveld,NEE
+304,304,304,PV31,Limburg,GM0971,Stein (L.),NEE
+305,305,305,PV31,Limburg,GM0981,Vaals,NEE
+306,306,306,PV31,Limburg,GM0983,Venlo,NEE
+307,307,307,PV31,Limburg,GM0984,Venray,NEE
+308,308,308,PV31,Limburg,GM0986,Voerendaal,NEE
+309,309,309,PV31,Limburg,GM0988,Weert,NEE
+310,310,310,PV31,Limburg,GM0994,Valkenburg aan de Geul,NEE
+311,311,311,PV24,Flevoland,GM0995,Lelystad,JA
+312,312,312,PV24,Flevoland,GM0995,Lelystad,NEE
+313,313,313,PV31,Limburg,GM1507,Horst aan de Maas,NEE
+314,314,314,PV25,Gelderland,GM1509,Oude IJsselstreek,NEE
+315,315,315,PV28,Zuid-Holland,GM1525,Teylingen,NEE
+316,316,316,PV26,Utrecht,GM1581,Utrechtse Heuvelrug,NEE
+317,317,317,PV25,Gelderland,GM1586,Oost Gelre,NEE
+318,318,318,PV27,Noord-Holland,GM1598,Koggenland,JA
+319,319,319,PV27,Noord-Holland,GM1598,Koggenland,NEE
+320,320,320,PV28,Zuid-Holland,GM1621,Lansingerland,NEE
+321,321,321,PV31,Limburg,GM1640,Leudal,NEE
+322,322,322,PV31,Limburg,GM1641,Maasgouw,NEE
+323,323,323,PV30,Noord-Brabant,GM1652,Gemert-Bakel,NEE
+324,324,324,PV30,Noord-Brabant,GM1655,Halderberge,NEE
+325,325,325,PV30,Noord-Brabant,GM1658,Heeze-Leende,NEE
+326,326,326,PV30,Noord-Brabant,GM1659,Laarbeek,NEE
+327,327,327,PV30,Noord-Brabant,GM1667,Reusel-De Mierden,NEE
+328,328,328,PV31,Limburg,GM1669,Roerdalen,NEE
+329,329,329,PV30,Noord-Brabant,GM1674,Roosendaal,NEE
+330,330,330,PV29,Zeeland,GM1676,Schouwen-Duiveland,JA
+331,331,331,PV29,Zeeland,GM1676,Schouwen-Duiveland,NEE
+332,332,332,PV22,Drenthe,GM1680,Aa en Hunze,NEE
+333,333,333,PV22,Drenthe,GM1681,Borger-Odoorn,NEE
+334,334,334,PV22,Drenthe,GM1690,De Wolden,NEE
+335,335,335,PV29,Zeeland,GM1695,Noord-Beveland,JA
+336,336,336,PV29,Zeeland,GM1695,Noord-Beveland,NEE
+337,337,337,PV27,Noord-Holland,GM1696,Wijdemeren,NEE
+338,338,338,PV22,Drenthe,GM1699,Noordenveld,NEE
+339,339,339,PV23,Overijssel,GM1700,Twenterand,NEE
+340,340,340,PV22,Drenthe,GM1701,Westerveld,NEE
+341,341,341,PV25,Gelderland,GM1705,Lingewaard,NEE
+342,342,342,PV30,Noord-Brabant,GM1706,Cranendonck,NEE
+343,343,343,PV23,Overijssel,GM1708,Steenwijkerland,JA
+344,344,344,PV23,Overijssel,GM1708,Steenwijkerland,NEE
+345,345,345,PV30,Noord-Brabant,GM1709,Moerdijk,JA
+346,346,346,PV30,Noord-Brabant,GM1709,Moerdijk,NEE
+347,347,347,PV31,Limburg,GM1711,Echt-Susteren,NEE
+348,348,348,PV29,Zeeland,GM1714,Sluis,JA
+349,349,349,PV29,Zeeland,GM1714,Sluis,NEE
+350,350,350,PV30,Noord-Brabant,GM1719,Drimmelen,NEE
+351,351,351,PV30,Noord-Brabant,GM1721,Bernheze,NEE
+352,352,352,PV30,Noord-Brabant,GM1723,Alphen-Chaam,NEE
+353,353,353,PV30,Noord-Brabant,GM1724,Bergeijk,NEE
+354,354,354,PV30,Noord-Brabant,GM1728,Bladel,NEE
+355,355,355,PV31,Limburg,GM1729,Gulpen-Wittem,NEE
+356,356,356,PV22,Drenthe,GM1730,Tynaarlo,NEE
+357,357,357,PV22,Drenthe,GM1731,Midden-Drenthe,NEE
+358,358,358,PV25,Gelderland,GM1734,Overbetuwe,NEE
+359,359,359,PV23,Overijssel,GM1735,Hof van Twente,NEE
+360,360,360,PV25,Gelderland,GM1740,Neder-Betuwe,NEE
+361,361,361,PV23,Overijssel,GM1742,Rijssen-Holten,NEE
+362,362,362,PV30,Noord-Brabant,GM1771,Geldrop-Mierlo,NEE
+363,363,363,PV23,Overijssel,GM1773,Olst-Wijhe,NEE
+364,364,364,PV23,Overijssel,GM1774,Dinkelland,NEE
+365,365,365,PV28,Zuid-Holland,GM1783,Westland,JA
+366,366,366,PV28,Zuid-Holland,GM1783,Westland,NEE
+367,367,367,PV28,Zuid-Holland,GM1842,Midden-Delfland,NEE
+368,368,368,PV25,Gelderland,GM1859,Berkelland,NEE
+369,369,369,PV25,Gelderland,GM1876,Bronckhorst,NEE
+370,370,370,PV31,Limburg,GM1883,Sittard-Geleen,NEE
+371,371,371,PV28,Zuid-Holland,GM1884,Kaag en Braassem,NEE
+372,372,372,PV21,Fryslân,GM1891,Dantumadiel,NEE
+373,373,373,PV28,Zuid-Holland,GM1892,Zuidplas,NEE
+374,374,374,PV31,Limburg,GM1894,Peel en Maas,NEE
+375,375,375,PV20,Groningen,GM1895,Oldambt,JA
+376,376,376,PV20,Groningen,GM1895,Oldambt,NEE
+377,377,377,PV23,Overijssel,GM1896,Zwartewaterland,JA
+378,378,378,PV23,Overijssel,GM1896,Zwartewaterland,NEE
+379,379,379,PV21,Fryslân,GM1900,Súdwest-Fryslân,JA
+380,380,380,PV21,Fryslân,GM1900,Súdwest-Fryslân,NEE
+381,381,381,PV28,Zuid-Holland,GM1901,Bodegraven-Reeuwijk,NEE
+382,382,382,PV31,Limburg,GM1903,Eijsden-Margraten,NEE
+383,383,383,PV26,Utrecht,GM1904,Stichtse Vecht,NEE
+384,384,384,PV27,Noord-Holland,GM1911,Hollands Kroon,JA
+385,385,385,PV27,Noord-Holland,GM1911,Hollands Kroon,NEE
+386,386,386,PV28,Zuid-Holland,GM1916,Leidschendam-Voorburg,NEE
+387,387,387,PV28,Zuid-Holland,GM1924,Goeree-Overflakkee,JA
+388,388,388,PV28,Zuid-Holland,GM1924,Goeree-Overflakkee,NEE
+389,389,389,PV28,Zuid-Holland,GM1926,Pijnacker-Nootdorp,NEE
+390,390,390,PV28,Zuid-Holland,GM1930,Nissewaard,JA
+391,391,391,PV28,Zuid-Holland,GM1930,Nissewaard,NEE
+392,392,392,PV28,Zuid-Holland,GM1931,Krimpenerwaard,NEE
+393,393,393,PV21,Fryslân,GM1940,De Fryske Marren,JA
+394,394,394,PV21,Fryslân,GM1940,De Fryske Marren,NEE
+395,395,395,PV27,Noord-Holland,GM1942,Gooise Meren,JA
+396,396,396,PV27,Noord-Holland,GM1942,Gooise Meren,NEE
+397,397,397,PV25,Gelderland,GM1945,Berg en Dal,NEE
+398,398,398,PV30,Noord-Brabant,GM1948,Meierijstad,NEE
+399,399,399,PV21,Fryslân,GM1949,Waadhoeke,JA
+400,400,400,PV21,Fryslân,GM1949,Waadhoeke,NEE
+401,401,401,PV20,Groningen,GM1950,Westerwolde,NEE
+402,402,402,PV20,Groningen,GM1952,Midden-Groningen,NEE
+403,403,403,PV31,Limburg,GM1954,Beekdaelen,NEE
+404,404,404,PV25,Gelderland,GM1955,Montferland,NEE
+405,405,405,PV30,Noord-Brabant,GM1959,Altena,NEE
+406,406,406,PV25,Gelderland,GM1960,West Betuwe,NEE
+407,407,407,PV26,Utrecht,GM1961,Vijfheerenlanden,NEE
+408,408,408,PV28,Zuid-Holland,GM1963,Hoeksche Waard,JA
+409,409,409,PV28,Zuid-Holland,GM1963,Hoeksche Waard,NEE
+410,410,410,PV20,Groningen,GM1966,Het Hogeland,JA
+411,411,411,PV20,Groningen,GM1966,Het Hogeland,NEE
+412,412,412,PV20,Groningen,GM1969,Westerkwartier,JA
+413,413,413,PV20,Groningen,GM1969,Westerkwartier,NEE
+414,414,414,PV21,Fryslân,GM1970,Noardeast-Fryslân,JA
+415,415,415,PV21,Fryslân,GM1970,Noardeast-Fryslân,NEE
+416,416,416,PV28,Zuid-Holland,GM1978,Molenlanden,NEE
+417,417,417,PV20,Groningen,GM1979,Eemsdelta,JA
+418,418,418,PV20,Groningen,GM1979,Eemsdelta,NEE
+419,419,419,PV27,Noord-Holland,GM1980,Dijk en Waard,NEE
+420,420,420,PV30,Noord-Brabant,GM1982,Land van Cuijk,NEE
+421,421,421,PV30,Noord-Brabant,GM1991,Maashorst,NEE
+422,422,422,PV28,Zuid-Holland,GM1992,Voorne aan Zee,JA
+423,423,423,PV28,Zuid-Holland,GM1992,Voorne aan Zee,NEE

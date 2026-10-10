@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "fi-2026-maanmittauslaitos-fi-kuntajako-adm-rev1",
+  "sourceArchive": "fi-2026-maanmittauslaitos-fi-kuntajako-adm-rev1.zip",
+  "sdkVersion": "0.2.4",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "finland_kuntajako_2026-grid-8192-10000.wgsmapset.glc",
+        "size": 1317525,
+        "sha256": "c8fd8c21599a49a81d5335b4d0fd514fb0f1b31b978373060b8d3e38f7b9d98b",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "finland_kuntajako_2026-grid-4096-1000.wgsmapset.glc",
+        "size": 160893,
+        "sha256": "0f5b3203c79c7fefeeb2105eebf8dde4a646f1932c73329fc57f6b937916889d",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "finland_kuntajako_2026-grid-512-100.wgsmapset.glc",
+        "size": 20837,
+        "sha256": "6fc94cf215c7b4de9d9edbc3eedf06df43c89ffaae15d68c71c6f137102bb16b",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "finland_kuntajako_2026.giswordbook",
+        "size": 4709,
+        "sha256": "a6e3d8a22ecfbfbf16ccd002095f78af6a849fbf174f16f66b37a0e4b07ec7f7"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 5324,
+      "sha256": "297361f714966e68040254db984906cc8f769b0a53692f60a6187a98896072df"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 10548,
+      "sha256": "976decd1d00cc19ec00b02b1565b4c6bcb5c4442824b36244caa9dbbfb068e50"
+    },
+    "names": {
+      "path": "finland_kuntajako_2026.names.csv",
+      "size": 18311,
+      "sha256": "1cdf74f84fc6b37061e7e15879818106cfddae86fd16432df5236dfddecba588"
+    }
+  }
+}

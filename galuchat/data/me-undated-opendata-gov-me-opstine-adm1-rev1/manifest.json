@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "me-undated-opendata-gov-me-opstine-adm1-rev1",
+  "sourceArchive": "me-undated-opendata-gov-me-opstine-adm1-rev1.zip",
+  "sdkVersion": "0.2.4",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "montenegro_opstine_undated-grid-8192-10000.wgsmapset.glc",
+        "size": 84478,
+        "sha256": "4968cacfeb30b559736d3c6b44fb2b08f8a012ff58731b6cbc3614b27af6f934",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "montenegro_opstine_undated-grid-4096-1000.wgsmapset.glc",
+        "size": 10288,
+        "sha256": "3b710758e2744db352347dc77489202e0f6e5cfb348b90c96e9b1a7cd63f95a7",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "montenegro_opstine_undated-grid-512-100.wgsmapset.glc",
+        "size": 1522,
+        "sha256": "8235497feef9d16103533f488b30e582ceb5766385639850a0a9293e7562f619",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "montenegro_opstine_undated.giswordbook",
+        "size": 609,
+        "sha256": "d847584b66f0022096abb00c7564aa3d4f09d10e112d07e3b9964d48cb4c5a6a"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 4601,
+      "sha256": "f6e49e858bcae4238b15c8cf3d873bc2cac5abcd6fdc2350785c445aa87ca3c6"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 10936,
+      "sha256": "d5a04d39f1a59614011a737f08a03a0513f8c9be249675ca626add98ce96b79d"
+    },
+    "names": {
+      "path": "montenegro_opstine_undated.names.csv",
+      "size": 473,
+      "sha256": "8d67660234d1e6d2c56e53c022ba86e20f287b2c4cc15bdde92a3cdff7c357bf"
+    }
+  }
+}

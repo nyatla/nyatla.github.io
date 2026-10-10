@@ -15,8 +15,8 @@ const SYSTEM_LIMITS = Object.freeze({
 });
 
 const datasets = {
-  "jp-2026-mlit-go-jp-n03-adm": {
-    manifestUrl: `${DATA_ROOT}/jp-2026-mlit-go-jp-n03-adm/manifest.json`,
+  "jp-2026-mlit-go-jp-n03-adm-rev1": {
+    manifestUrl: `${DATA_ROOT}/jp-2026-mlit-go-jp-n03-adm-rev1/manifest.json`,
     title: "日本行政区域（国土数値情報 N03 / 2026）",
     description: "国土数値情報N03をGaluchat用に加工した行政区域データ",
     area: { west: 122.9326, south: 20.4227, east: 153.9868, north: 45.5573 },
@@ -33,12 +33,12 @@ const datasets = {
       sourceUrl: "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2026.html",
       attribution: "「国土数値情報（行政区域データ）」（国土交通省）をもとにGaluchat用に加工して作成",
       approval: "測量法に基づく国土地理院長承認（使用）R 8JHs 319",
-      noticeUrl: `${DATA_ROOT}/jp-2026-mlit-go-jp-n03-adm/NOTICE.md`,
+      noticeUrl: `${DATA_ROOT}/jp-2026-mlit-go-jp-n03-adm-rev1/NOTICE.md`,
     },
     maps: [],
   },
-  "jp-2020-e-stat-go-jp-a002005212020-stat-small-area": {
-    manifestUrl: `${DATA_ROOT}/jp-2020-e-stat-go-jp-a002005212020-stat-small-area/manifest.json`,
+  "jp-2020-e-stat-go-jp-a002005212020-stat-small-area-rev1": {
+    manifestUrl: `${DATA_ROOT}/jp-2020-e-stat-go-jp-a002005212020-stat-small-area-rev1/manifest.json`,
     title: "e-Stat 令和2年国勢調査 町丁・字等境界",
     description: "e-Statの町丁・字等境界をGaluchat用に加工した境界データ",
     area: { west: 122.9338, south: 20.425, east: 153.9829, north: 45.5231 },
@@ -54,12 +54,12 @@ const datasets = {
       sourceName: "令和2年国勢調査 町丁・字等境界データ",
       sourceUrl: "https://www.e-stat.go.jp/gis/statmap-search?page=1&type=2&aggregateUnitForBoundary=A&toukeiCode=00200521&toukeiYear=2020&serveyId=A002005212020&coordsys=1&format=shape&datum=2011",
       attribution: "「令和2年国勢調査 町丁・字等境界データ」（総務省統計局、e-Stat）をGaluchat用に加工して作成",
-      noticeUrl: `${DATA_ROOT}/jp-2020-e-stat-go-jp-a002005212020-stat-small-area/NOTICE.md`,
+      noticeUrl: `${DATA_ROOT}/jp-2020-e-stat-go-jp-a002005212020-stat-small-area-rev1/NOTICE.md`,
     },
     maps: [],
   },
-  "tw-2026-maps-nlsc-gov-tw-village-adm": {
-    manifestUrl: `${DATA_ROOT}/tw-2026-maps-nlsc-gov-tw-village-adm/manifest.json`,
+  "tw-2026-maps-nlsc-gov-tw-village-adm-rev1": {
+    manifestUrl: `${DATA_ROOT}/tw-2026-maps-nlsc-gov-tw-village-adm-rev1/manifest.json`,
     title: "台湾 村里界（NLSC / 2026）",
     description: "內政部國土測繪中心の村里界圖をGaluchat用に加工した行政区域データ",
     area: { west: 114.3593, south: 10.3713, east: 124.5613, north: 26.3854 },
@@ -75,12 +75,12 @@ const datasets = {
       sourceName: "內政部國土測繪中心 村里界圖(TWD97經緯度)",
       sourceUrl: "https://data.gov.tw/dataset/7438",
       attribution: "內政部國土測繪中心 2026 村里界圖(TWD97經緯度)（2026-08-17版）。此開放資料依政府資料開放授權條款第1版進行公眾釋出。",
-      noticeUrl: `${DATA_ROOT}/tw-2026-maps-nlsc-gov-tw-village-adm/NOTICE.md`,
+      noticeUrl: `${DATA_ROOT}/tw-2026-maps-nlsc-gov-tw-village-adm-rev1/NOTICE.md`,
     },
     maps: [],
   },
-  "gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc": {
-    manifestUrl: `${DATA_ROOT}/gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc/manifest.json`,
+  "gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc-rev1": {
+    manifestUrl: `${DATA_ROOT}/gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc-rev1/manifest.json`,
     title: "英国 Local Authority Districts（ONS / 2025）",
     description: "ONS Local Authority Districts (December 2025) UK BFCをGaluchat用に加工した行政区域データ",
     area: { west: -8.65, south: 49.8647, east: 1.7638, north: 60.8609 },
@@ -97,12 +97,12 @@ const datasets = {
       sourceName: "ONS Local Authority Districts (December 2025) Boundaries UK BFC",
       sourceUrl: "https://www.data.gov.uk/dataset/aa5a9ccf-fbea-43cb-81cc-fdc04d89f128/local-authority-districts-december-2025-boundaries-uk-bfc",
       attribution: "Source: Office for National Statistics licensed under the Open Government Licence v.3.0. Contains OS data © Crown copyright and database right 2026.",
-      noticeUrl: `${DATA_ROOT}/gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc/NOTICE.md`,
+      noticeUrl: `${DATA_ROOT}/gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc-rev1/NOTICE.md`,
     },
     maps: [],
   },
-  "us-2025-census-gov-tl-county-adm2": {
-    manifestUrl: `${DATA_ROOT}/us-2025-census-gov-tl-county-adm2/manifest.json`,
+  "us-2025-census-gov-tl-county-adm2-rev1": {
+    manifestUrl: `${DATA_ROOT}/us-2025-census-gov-tl-county-adm2-rev1/manifest.json`,
     title: "米国 County and Equivalent Entities（Census TIGER/Line / 2025）",
     description: "U.S. Census Bureau 2025 TIGER/Line County and Equivalent EntitiesをGaluchat用に加工した行政区域データ",
     area: { west: -179.2311, south: 18.8655, east: 179.8598, north: 71.4399 },
@@ -120,12 +120,12 @@ const datasets = {
       sourceName: "U.S. Census Bureau 2025 TIGER/Line County and Equivalent Entities",
       sourceUrl: "https://www2.census.gov/geo/tiger/TIGER2025/COUNTY/tl_2025_us_county.zip",
       attribution: "Source: U.S. Census Bureau, 2025 TIGER/Line® Shapefiles, County and Equivalent Entities. Derived and processed by the Galuchat project; not endorsed by the U.S. Census Bureau.",
-      noticeUrl: `${DATA_ROOT}/us-2025-census-gov-tl-county-adm2/NOTICE.md`,
+      noticeUrl: `${DATA_ROOT}/us-2025-census-gov-tl-county-adm2-rev1/NOTICE.md`,
     },
     maps: [],
   },
-  "world-2024-geoboundaries-org-cgaz-adm": {
-    manifestUrl: `${DATA_ROOT}/world-2024-geoboundaries-org-cgaz-adm/manifest.json`,
+  "world-2024-geoboundaries-org-cgaz-adm-rev1": {
+    manifestUrl: `${DATA_ROOT}/world-2024-geoboundaries-org-cgaz-adm-rev1/manifest.json`,
     title: "世界行政区域（geoBoundaries CGAZ）",
     description: "geoBoundaries CGAZの利用可能な最詳細行政区域をGaluchat用に加工した世界行政区域データ",
     area: { west: -180, south: -89.999, east: 180.001, north: 83.617 },
@@ -141,7 +141,7 @@ const datasets = {
       sourceName: "geoBoundaries CGAZ best-available administrative areas",
       sourceUrl: "https://www.geoboundaries.org/globalDownloads.html",
       attribution: "Contains information from geoBoundaries, produced by the William & Mary geoLab and the geoBoundaries community, licensed under CC BY 4.0. Adapted for Galuchat.",
-      noticeUrl: `${DATA_ROOT}/world-2024-geoboundaries-org-cgaz-adm/NOTICE.md`,
+      noticeUrl: `${DATA_ROOT}/world-2024-geoboundaries-org-cgaz-adm-rev1/NOTICE.md`,
     },
     maps: [],
   },
@@ -150,64 +150,144 @@ const datasets = {
 // The map page owns the published dataset list. Keep the reverse-geocoder's
 // existing detailed metadata, and add the remaining datasets from that list.
 const additionalDatasetDetails = {
-  "jp-2024-mlit-go-jp-n03-adm": {
+  "jp-2024-mlit-go-jp-n03-adm-rev1": {
     area: { west: 122.9326, south: 20.4227, east: 153.9868, north: 45.5573 },
     sourceName: "国土数値情報 行政区域データ N03-2024",
     sourceUrl: "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2024.html",
   },
-  "jp-2025-mlit-go-jp-n03-adm": {
+  "jp-2025-mlit-go-jp-n03-adm-rev1": {
     area: { west: 122.9326, south: 20.4227, east: 153.9868, north: 45.5573 },
     sourceName: "国土数値情報 行政区域データ N03-2025",
     sourceUrl: "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html",
   },
-  "jp-2026-nyatla-jp-estat-coastline": {
+  "jp-2026-nyatla-jp-estat-coastline-rev1": {
     area: { west: 122.9326, south: 20.4227, east: 153.9868, north: 45.5573 },
     sourceName: "国土数値情報 行政区域データ N03-2026",
     sourceUrl: "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2026.html",
     attribution: "国土交通省の行政区域データと総務省統計局・e-Statの町丁・字等境界データをGaluchat用に加工・統合。利用条件と承認表示の適用範囲はNOTICEを参照してください。",
   },
-  "us-2025-census-gov-tl-state-adm1": {
+  "us-2025-census-gov-tl-state-adm1-rev1": {
     area: { west: -179.2311, south: 18.8655, east: 179.8598, north: 71.4399 },
     sourceName: "U.S. Census Bureau 2025 TIGER/Line State and Equivalent Entities",
     sourceUrl: "https://www2.census.gov/geo/tiger/TIGER2025/STATE/tl_2025_us_state.zip",
   },
-  "ca-2021-statcan-gc-ca-csd-cbf-stat-csd": {
+  "ca-2021-statcan-gc-ca-csd-cbf-stat-csd-rev1": {
     area: { west: -141.0181, south: 41.6813, east: -52.6193, north: 83.1372 },
     sourceName: "Statistics Canada 2021 Census Subdivision Cartographic Boundary File",
     sourceUrl: "https://www12.statcan.gc.ca/census-recensement/2021/geo/sip-pis/boundary-limites/index2021-eng.cfm?year=21",
   },
-  "au-2021-abs-gov-au-sal-stat-sal": {
+  "au-2021-abs-gov-au-sal-stat-sal-rev1": {
     area: { west: 96.817, south: -43.7405, east: 167.9981, north: -9.1421 },
     sourceName: "ABS ASGS Edition 3 Suburbs and Localities 2021",
     sourceUrl: "https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs/edition-3-july-2021-june-2026/access-and-downloads/digital-boundary-files",
   },
-  "de-2026-gdz-bkg-bund-de-vg250-adm": {
+  "de-2026-gdz-bkg-bund-de-vg250-adm-rev1": {
     area: { west: 5.8663, south: 47.2701, east: 15.0419, north: 55.0589 },
     sourceName: "BKG Verwaltungsgebiete 1:250 000 VG250",
     sourceUrl: "https://gdz.bkg.bund.de/index.php/default/open-data/verwaltungsgebiete-1-250-000-stand-01-01-vg250-01-01.html",
     attribution: "© BKG 2026 dl-de/by-2-0, Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_vg_nuts.pdf. Derived and processed by Galuchat. Not endorsed by BKG.",
   },
-  "fr-2026-cartes-gouv-fr-admin-express-cog-adm": {
+  "fr-2026-cartes-gouv-fr-admin-express-cog-adm-rev1": {
     area: { west: -61.8098, south: -21.3896, east: 55.8368, north: 51.0893 },
     sourceName: "IGN ADMIN EXPRESS COG 4.0 (2026-01-01)",
     sourceUrl: "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS",
     attribution: "Source: IGN, ADMIN EXPRESS COG 4.0, edition 2026-01-01. Derived and processed by Galuchat. Not endorsed by IGN or INSEE.",
   },
-  "nl-2026-cbs-nl-wijkbuurtkaart-adm": {
+  "nl-2026-cbs-nl-wijkbuurtkaart-adm-rev1": {
     area: { west: 3.3079, south: 50.7504, east: 7.2276, north: 53.5765 },
     sourceName: "CBS・Kadaster Wijk- en Buurtkaart 2026 (Gemeenten)",
     sourceUrl: "https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2026",
   },
-  "nl-2026-cbs-nl-wijkbuurtkaart-stat-buurt": {
+  "nl-2026-cbs-nl-wijkbuurtkaart-stat-buurt-rev1": {
     area: { west: 3.3079, south: 50.7504, east: 7.2276, north: 53.5765 },
     sourceName: "CBS・Kadaster Wijk- en Buurtkaart 2026 (Buurten)",
     sourceUrl: "https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/wijk-en-buurtkaart-2026",
+  },
+  "es-2026-cnig-es-lilim-adm-rev1": {
+    area: { west: -18.2, south: 27.6, east: 4.4, north: 43.9 },
+    sourceName: "IGN/CNIG Base de Datos de Divisiones Administrativas de España (BDDAE)",
+    sourceUrl: "https://centrodedescargas.cnig.es/CentroDescargas/catalogo.do?Serie=LILIM",
+  },
+  "nz-2026-stats-govt-nz-sa2-stat-sa2-rev1": {
+    area: { west: 165.8, south: -52.7, east: 179.1, north: -29.2 },
+    sourceName: "Stats NZ Statistical Area 2 2026",
+    sourceUrl: "https://datafinder.stats.govt.nz/layer/123515-statistical-area-2-2026/",
+  },
+  "kr-2025-sgis-mods-go-kr-admin-boundary-adm-rev1": {
+    area: { west: 125.1, south: 33.1, east: 131.9, north: 38.7 },
+    sourceName: "National Data Agency SGIS administrative-area statistics and boundaries (2025-06-30)",
+    sourceUrl: "https://www.data.go.kr/data/15129688/fileData.do",
+  },
+  "at-2026-data-statistik-gv-at-gem-adm-rev1": {
+    area: { west: 9.5, south: 46.3, east: 17.2, north: 49.1 },
+    sourceName: "Statistik Austria municipalities and Vienna districts",
+    sourceUrl: "https://data.statistik.gv.at/web/meta.jsp?dataset=OGDEXT_GEM_1",
+  },
+  "be-2026-statbel-fgov-be-statistical-sectors-stat-sector-rev1": {
+    area: { west: 2.5, south: 49.5, east: 6.5, north: 51.6 },
+    sourceName: "Statbel statistical sectors 2026",
+    sourceUrl: "https://statbel.fgov.be/fr/open-data/secteurs-statistiques-2026",
+  },
+  "ch-2026-swisstopo-admin-ch-swissboundaries3d-adm-rev1": {
+    area: { west: 5.9, south: 45.8, east: 10.5, north: 47.9 },
+    sourceName: "swisstopo swissBOUNDARIES3D",
+    sourceUrl: "https://www.swisstopo.admin.ch/en/landscape-model-swissboundaries3d",
+  },
+  "cz-2026-cuzk-gov-cz-ruian-adm-rev1": {
+    area: { west: 12.1, south: 48.5, east: 18.9, north: 51.1 },
+    sourceName: "ČÚZK RÚIAN municipalities and military areas",
+    sourceUrl: "https://services.cuzk.gov.cz/",
+  },
+  "dk-2026-datafordeler-dk-dagi-adm-rev1": {
+    area: { west: 8.0, south: 54.5, east: 15.2, north: 57.8 },
+    sourceName: "Datafordeler DAGI municipalities",
+    sourceUrl: "https://datafordeler.dk/dataoversigt/danmarks-administrative-geografiske-inddeling-dagi/dagi-fildownload/",
+  },
+  "ee-2026-geoportaal-maaamet-ee-asustusyksus-adm-rev1": {
+    area: { west: 21.5, south: 57.5, east: 28.3, north: 59.9 },
+    sourceName: "Estonian settlement units",
+    sourceUrl: "https://geoportaal.maaamet.ee/est/ruumiandmed/haldus-ja-asustusjaotus-p119.html",
+  },
+  "fi-2026-maanmittauslaitos-fi-kuntajako-adm-rev1": {
+    area: { west: 19.0, south: 59.5, east: 31.6, north: 70.2 },
+    sourceName: "National Land Survey of Finland municipal divisions",
+    sourceUrl: "https://www.maanmittauslaitos.fi/en/maps-and-spatial-data/datasets-and-interfaces/product-descriptions/division-administrative-areas-vector",
+  },
+  "hr-2026-dgu-gov-hr-au-adm-rev1": {
+    area: { west: 13.4, south: 42.4, east: 19.5, north: 46.6 },
+    sourceName: "Croatian State Geodetic Administration settlements",
+    sourceUrl: "https://dgu.gov.hr/otvoreni-podaci/6596",
+  },
+  "it-2026-istat-it-limiti-adm-rev1": {
+    area: { west: 6.6, south: 35.5, east: 18.6, north: 47.1 },
+    sourceName: "ISTAT administrative boundaries",
+    sourceUrl: "https://www.istat.it/notizia/confini-delle-unita-amministrative-a-fini-statistici-al-1-gennaio-2018-2/",
+  },
+  "lt-2026-geoportal-lt-au-adm-rev1": {
+    area: { west: 20.8, south: 53.8, east: 26.9, north: 56.5 },
+    sourceName: "Lithuanian INSPIRE administrative units",
+    sourceUrl: "https://www.geoportal.lt/metadata-catalog/catalog/search/resource/details.page?uuid=%7B4795E964-7EAC-42BC-8692-376F676AAE1F%7D",
+  },
+  "lv-2026-data-gov-lv-varis-adm-rev1": {
+    area: { west: 20.9, south: 55.6, east: 28.3, north: 58.1 },
+    sourceName: "Latvian address-register administrative areas (VARIS)",
+    sourceUrl: "https://data.gov.lv/dati/eng/dataset/varis-atvertie-dati",
+  },
+  "ro-2025-ancpi-ro-uat-adm-rev1": {
+    area: { west: 20.2, south: 43.6, east: 29.8, north: 48.3 },
+    sourceName: "ANCPI local administrative areas",
+    sourceUrl: "https://geoportal.ancpi.ro/portal/apps/webappviewer/index.html?id=faeba2d173374445b1f13512bd477bb2",
+  },
+  "se-2025-scb-se-regso-stat-regso-rev1": {
+    area: { west: 10.9, south: 55.3, east: 24.2, north: 69.1 },
+    sourceName: "SCB RegSO statistical areas",
+    sourceUrl: "https://www.scb.se/vara-tjanster/oppna-data/oppna-geodata/regso/",
   },
 };
 
 for (const config of window.GaluchatMapDatasets) {
   if (datasets[config.id]) continue;
-  const detail = additionalDatasetDetails[config.id];
+  const detail = additionalDatasetDetails[config.id] ?? config.reverseGeocoding;
   if (!detail) throw new Error(`reverse-geocoding metadata is missing: ${config.id}`);
   datasets[config.id] = {
     manifestUrl: `${DATA_ROOT}/${config.id}/manifest.json`,
@@ -288,14 +368,9 @@ async function initialize() {
   submitButton.disabled = true;
   refreshCoordinateRows();
   await loadDatasetManifests();
-  for (const [id, dataset] of Object.entries(datasets)) {
-    const option = document.createElement("option");
-    option.value = id;
-    option.textContent = datasetTitle(id);
-    datasetSelect.append(option);
-  }
+  GaluchatDatasetSelect.populate(datasetSelect);
 
-  datasetSelect.value = "jp-2026-mlit-go-jp-n03-adm";
+  datasetSelect.value = "jp-2026-mlit-go-jp-n03-adm-rev1";
   updateMapOptions("unit-inv-10000");
 
   renderHistory();
@@ -309,7 +384,7 @@ window.addEventListener("machml:localechange", updateLocale);
 
 function updateLocale() {
   clearHistoryButton.title = localize("検索結果を消去", "Clear search results");
-  for (const option of datasetSelect.options) option.textContent = datasetTitle(option.value);
+  GaluchatDatasetSelect.updateLocale(datasetSelect);
   refreshCoordinateRows();
   renderHistory();
   if (isInitialized) {
@@ -1433,7 +1508,7 @@ function buildApiSpec() {
   return {
     ok: true,
     version: "galuchat-webmcp/0;GaluchatJavaScript/0.5.2",
-    default_dataset_id: "jp-2026-mlit-go-jp-n03-adm",
+    default_dataset_id: "jp-2026-mlit-go-jp-n03-adm-rev1",
     limits: { ...SYSTEM_LIMITS },
     datasets: Object.entries(datasets).map(([id, dataset]) => ({
       id,

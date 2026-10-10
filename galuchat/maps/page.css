@@ -25,6 +25,7 @@ p { margin: 0 0 12px; }
 .data-info p { max-width: 55em; }
 .data-info p[hidden] { display: none; }
 .data-links { margin-top: 16px; }
+#follow-location[aria-pressed="true"] { color: #fff; background: #175582; border-color: #175582; }
 footer { padding: 22px 0 38px; border-top: 1px solid #d6dce1; color: #4a535b; font-size: 13px; }
 footer p { margin: 0; }
 @media (max-width: 620px) {

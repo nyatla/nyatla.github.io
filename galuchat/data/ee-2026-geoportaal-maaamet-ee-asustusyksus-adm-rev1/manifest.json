@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "ee-2026-geoportaal-maaamet-ee-asustusyksus-adm-rev1",
+  "sourceArchive": "ee-2026-geoportaal-maaamet-ee-asustusyksus-adm-rev1.zip",
+  "sdkVersion": "0.2.4",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "estonia_asustusyksus_2026-grid-8192-10000.wgsmapset.glc",
+        "size": 1909870,
+        "sha256": "48c45f8a5c36ce327abb2128180f39b55ef6a9d27a38edfd850602cb59721622",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "estonia_asustusyksus_2026-grid-4096-1000.wgsmapset.glc",
+        "size": 291458,
+        "sha256": "1b8fba9469b8548a7b685e73e087f10c783725a4b77b018e0edc8fa658cd9c3e",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "estonia_asustusyksus_2026-grid-512-100.wgsmapset.glc",
+        "size": 45319,
+        "sha256": "fb67ee7fbb841f9cad5545b9f9d82db31454db7758e7c707f1adbc83cb28c7fa",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "estonia_asustusyksus_2026.giswordbook",
+        "size": 90257,
+        "sha256": "37a059a65bceff6dac9af42661dccbe5f191b75f94be9eb45ca2e6415c5cdc56"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 3647,
+      "sha256": "9e61eebc56dfa12d9d0e1494216e5973e529982ccb644f8442fb467cbfa71e51"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 8802,
+      "sha256": "be21ff5e914f7e189316f23c41359ad37acf1862e7bf6407eac6c5189852b704"
+    },
+    "names": {
+      "path": "estonia_asustusyksus_2026.names.csv",
+      "size": 327164,
+      "sha256": "feb185e4df915c51aa3221387c4f6e7339ec328865086a0df46231b258f5f615"
+    }
+  }
+}

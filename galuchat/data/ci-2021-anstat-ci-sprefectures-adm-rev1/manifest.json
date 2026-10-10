@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "ci-2021-anstat-ci-sprefectures-adm-rev1",
+  "sourceArchive": "ci-2021-anstat-ci-sprefectures-adm-rev1.zip",
+  "sdkVersion": "0.2.4",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "ivory_coast_anstat_2021-grid-8192-10000.wgsmapset.glc",
+        "size": 941082,
+        "sha256": "b286cc3b4e4d5d7ca5129bf3b2829b2fc2c402997e52eb5346b58b8e9ef50361",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "ivory_coast_anstat_2021-grid-4096-1000.wgsmapset.glc",
+        "size": 132346,
+        "sha256": "55767580248aa3f29e83f5d8340b7ea211ccaf98a7af65584938514dde2667e5",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "ivory_coast_anstat_2021-grid-512-100.wgsmapset.glc",
+        "size": 19592,
+        "sha256": "b22e4e64ccfb898cee537b09537548eab06305adf9e55d9f340276326fce499f",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "ivory_coast_anstat_2021.giswordbook",
+        "size": 5476,
+        "sha256": "ad9846555ee89ede2acea5dc6644126696f478c36de875a9442364a8db9af743"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 3839,
+      "sha256": "0870a5c17483d3ffde8a03bfc22ee44546c08e7778ec1d2b46f700a1e7eba86a"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 10594,
+      "sha256": "291ab391f721c31355d43c1bcb58a41870aa4e189c302c69add57a97e1969b4c"
+    },
+    "names": {
+      "path": "ivory_coast_anstat_2021.names.csv",
+      "size": 42145,
+      "sha256": "5599a3708ea61e7b599f4b75e32875bb01b292ba5c89f0a5be5e2d0a64a10cc4"
+    }
+  }
+}

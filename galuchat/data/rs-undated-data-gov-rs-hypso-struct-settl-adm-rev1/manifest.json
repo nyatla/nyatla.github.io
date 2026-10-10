@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "rs-undated-data-gov-rs-hypso-struct-settl-adm-rev1",
+  "sourceArchive": "rs-undated-data-gov-rs-hypso-struct-settl-adm-rev1.zip",
+  "sdkVersion": "0.2.4",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "serbia_hypso_struct_settl-grid-8192-10000.wgsmapset.glc",
+        "size": 2177521,
+        "sha256": "31330991e829f7769ce879c6fa7c142a7d77d92d00b38a592292886420fa63f0",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "serbia_hypso_struct_settl-grid-4096-1000.wgsmapset.glc",
+        "size": 307745,
+        "sha256": "0edde102f7b633ab16b3b19a6334505f6bc7e139a6fb30be3792e29727eb042c",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "serbia_hypso_struct_settl-grid-512-100.wgsmapset.glc",
+        "size": 44149,
+        "sha256": "0394741eae0a506ffff1b60b2059cea37f281a3f050577d9262149f55fd71830",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "serbia_hypso_struct_settl.giswordbook",
+        "size": 34347,
+        "sha256": "d658f02d27bafcba97ee20fab29204fc94ffd30c3ffcaeb6f149f78ae8caea8c"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 6688,
+      "sha256": "a82dfa81b3da8ad3e20da0024a768e285644d00d7cfd53c245a0796cd47d3175"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 11292,
+      "sha256": "2a05483cfdbbdc0c8a8cdfbb54dfe36cf617875d978bd438aa73bd240668e162"
+    },
+    "names": {
+      "path": "serbia_hypso_struct_settl.names.csv",
+      "size": 372893,
+      "sha256": "82dbd36d5bc12b925e587c3868ec20e26ee39f1bdcea41bc1665cd745f0180c5"
+    }
+  }
+}

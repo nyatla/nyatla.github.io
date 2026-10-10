@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "be-2026-statbel-fgov-be-statistical-sectors-stat-sector-rev1",
+  "sourceArchive": "be-2026-statbel-fgov-be-statistical-sectors-stat-sector-rev1.zip",
+  "sdkVersion": "0.2.4",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "belgium_statbel_2026-grid-8192-10000.wgsmapset.glc",
+        "size": 3276001,
+        "sha256": "7d19239df9eab977248c815cf97d40e0fa781366daa5c0f52b1bcc19bd99198e",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "belgium_statbel_2026-grid-4096-1000.wgsmapset.glc",
+        "size": 475667,
+        "sha256": "246d4bdd671c4dbf90b00952ef2e6576a029a9478a52d9f31febc5f9de2e7c85",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "belgium_statbel_2026-grid-512-100.wgsmapset.glc",
+        "size": 53880,
+        "sha256": "73a63516ebfc61f1484b63ec8dccc239fe39e4232b996bfbeb247739ae760663",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "belgium_statbel_2026.giswordbook",
+        "size": 521178,
+        "sha256": "f3012b7d98876d1d2d4c63626ababcd4804bc336380336c73b3f435c7dc0b99c"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 6383,
+      "sha256": "2044cde376a957a774950a421361f8efdc198bbf2729b60eb141659a436fbc4f"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 13180,
+      "sha256": "35f074417330fa41d929289688559870c2939bbe154e8fbed89d24dc131ff160"
+    },
+    "names": {
+      "path": "belgium_statbel_2026.names.csv",
+      "size": 6345057,
+      "sha256": "4f02f4d18c453bdd33ce89180958375b17c56ddec4aa2411b1640c5da9c5303c"
+    },
+    "licenses": [
+      {
+        "path": "Licence open data_FR.pdf",
+        "size": 117500,
+        "sha256": "41f36f2e5fa4bb630cb408567d28b08970b826b99957bee8e0ab694180603776"
+      },
+      {
+        "path": "Licence open data_NL.pdf",
+        "size": 102734,
+        "sha256": "aaf6847a894359bfc455d272673017248771137f7b502902debcbfbe6d784ae6"
+      }
+    ]
+  }
+}

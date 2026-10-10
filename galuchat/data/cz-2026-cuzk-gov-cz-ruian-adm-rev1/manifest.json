@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "cz-2026-cuzk-gov-cz-ruian-adm-rev1",
+  "sourceArchive": "cz-2026-cuzk-gov-cz-ruian-adm-rev1.zip",
+  "sdkVersion": "0.2.4",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "czechia_ruian_2026-grid-8192-10000.wgsmapset.glc",
+        "size": 2989596,
+        "sha256": "9d323b4387f6b42e1df15263cfdc2d5dae9c11ca78375ebcd8b3b181cdbce013",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "czechia_ruian_2026-grid-4096-1000.wgsmapset.glc",
+        "size": 411067,
+        "sha256": "3ada793e775ab790641cf92460ad76469edf13b9056187e40a0d85ab5b54e8ad",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "czechia_ruian_2026-grid-512-100.wgsmapset.glc",
+        "size": 54863,
+        "sha256": "16b6e672ef21ffae3b0d2f3c2cffc9c741938908f5f8f780f5c2bc8070987b3e",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "czechia_ruian_2026.giswordbook",
+        "size": 136441,
+        "sha256": "0f57717c1b211e3ca47f1c1156ca665c88e074445ef9e45afc9fe5b0221b89c4"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 4997,
+      "sha256": "ac46febc27a569f019248e5d84a73e6e7d6d4b80996e0dfb8a2529d958a7e61c"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 9885,
+      "sha256": "48ee5a6a1cc338f39c8862aba8df136c2f7f2ed7952d08374fdbdcf88bf00449"
+    },
+    "names": {
+      "path": "czechia_ruian_2026.names.csv",
+      "size": 432539,
+      "sha256": "380a502d1fe7239bda4b0ad17c3d9dee80f9ed4906ddd65278172e08e9468e4b"
+    }
+  }
+}

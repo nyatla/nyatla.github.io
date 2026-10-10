@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "at-2026-data-statistik-gv-at-gem-adm-rev1",
+  "sourceArchive": "at-2026-data-statistik-gv-at-gem-adm-rev1.zip",
+  "sdkVersion": "0.2.4",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "austria_gem_2026-grid-8192-10000.wgsmapset.glc",
+        "size": 1616981,
+        "sha256": "f02053418af6615a13e7f977e50d57deef69f27b79251f0aec66faf0df60c3b8",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "austria_gem_2026-grid-4096-1000.wgsmapset.glc",
+        "size": 215588,
+        "sha256": "bdb980548a675c88eb47be55bcbd4a2c8c17a73eee67f61e8e76b115b4fb86be",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "austria_gem_2026-grid-512-100.wgsmapset.glc",
+        "size": 27650,
+        "sha256": "46a23348bce6d7eb696984f890e41cf988164ed2d3ae95c73a8ce0c171798d43",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "austria_gem_2026.giswordbook",
+        "size": 31627,
+        "sha256": "7debad5f53159361b8b2cb67049411c007a0f837c214b9381270793a7091ad2b"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 5578,
+      "sha256": "e627e01d10be1475449751c9cd3eefe9cf2c3cadda9e340bba55a248de9dabc2"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 9972,
+      "sha256": "31fe76865cad7f1025ade2a083093a4433783e8ff97fc6c93f4d893b4a36bb94"
+    },
+    "names": {
+      "path": "austria_gem_2026.names.csv",
+      "size": 123038,
+      "sha256": "b769bfdbd31d64ed31a2762b81d7942e7e45744ce36c2d317cab45c1dfd4db2a"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "dk-2026-datafordeler-dk-dagi-adm-rev1",
+  "sourceArchive": "dk-2026-datafordeler-dk-dagi-adm-rev1.zip",
+  "sdkVersion": "0.2.4",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "denmark_dagi_2026-grid-8192-10000.wgsmapset.glc",
+        "size": 523678,
+        "sha256": "612364579690a6188badb358b65c61b5218bd024a94c8a717e3d6fe415822d8d",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "denmark_dagi_2026-grid-4096-1000.wgsmapset.glc",
+        "size": 55544,
+        "sha256": "c6a67b2f26bcf4824a62aa8fc87277b4026af661d31ae037f70032e258129301",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "denmark_dagi_2026-grid-512-100.wgsmapset.glc",
+        "size": 5851,
+        "sha256": "2077a23efbeed4dc71bbff08260e6c337bad034e71eda986d79312f8a0221e48",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "denmark_dagi_2026.giswordbook",
+        "size": 2237,
+        "sha256": "42814668329531003d0cd5fc7ed9cea470b02387c1f7fac883492f21c39348d1"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 3712,
+      "sha256": "eacc33e41c80b7ad3f513b3c1d0e87d70e494e5dd70a01bf7b8ed4bfe77aae67"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 8426,
+      "sha256": "837246e4a895313df9f17293dcee95e2f858a8212fb3b014ece49c6c754bf3ce"
+    },
+    "names": {
+      "path": "denmark_dagi_2026.names.csv",
+      "size": 4711,
+      "sha256": "704c00e367a75c1c02ead75664f62dcbd7c72c227a4599aaa3719db74907fba6"
+    }
+  }
+}

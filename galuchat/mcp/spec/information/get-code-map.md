@@ -20,7 +20,7 @@ Status: Implemented
     "east": 140.0263,
     "north": 35.6792
   },
-  "dataset": "jp-2026-mlit-go-jp-n03-adm",
+  "dataset": "jp-2026-mlit-go-jp-n03-adm-rev1",
   "map": "unit-inv-10000"
 }
 ```
@@ -40,7 +40,7 @@ Status: Implemented
     "height": 2
   },
   "anchor": "center",
-  "dataset": "jp-2026-mlit-go-jp-n03-adm",
+  "dataset": "jp-2026-mlit-go-jp-n03-adm-rev1",
   "map": "unit-inv-10000"
 }
 ```
@@ -97,7 +97,7 @@ north:  bottom = base.y - height
 
 ```json
 {
-  "dataset": "jp-2026-mlit-go-jp-n03-adm",
+  "dataset": "jp-2026-mlit-go-jp-n03-adm-rev1",
   "map": "unit-inv-10000",
   "resolution": {
     "lon": 0.0001,

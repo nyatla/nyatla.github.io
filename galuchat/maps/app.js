@@ -2,14 +2,14 @@
 
 const datasets = window.GaluchatMapDatasets;
 const datasetById = new Map(datasets.map((dataset) => [dataset.id, dataset]));
-const defaultDatasetId = "jp-2026-mlit-go-jp-n03-adm";
+const defaultDatasetId = "jp-2026-mlit-go-jp-n03-adm-rev1";
 const formerDatasetIds = {
-  "jp-admin-n03-2026": "jp-2026-mlit-go-jp-n03-adm",
-  "jp-estat-r2ka-2020": "jp-2020-e-stat-go-jp-a002005212020-stat-small-area",
-  "tw-admin-nlsc-village-2026": "tw-2026-maps-nlsc-gov-tw-village-adm",
-  "uk-admin-ons-lad-2025": "gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc",
-  "us-admin-census-county-2025": "us-2025-census-gov-tl-county-adm2",
-  "world-geoboundaries-cgaz": "world-2024-geoboundaries-org-cgaz-adm",
+  "jp-admin-n03-2026": "jp-2026-mlit-go-jp-n03-adm-rev1",
+  "jp-estat-r2ka-2020": "jp-2020-e-stat-go-jp-a002005212020-stat-small-area-rev1",
+  "tw-admin-nlsc-village-2026": "tw-2026-maps-nlsc-gov-tw-village-adm-rev1",
+  "uk-admin-ons-lad-2025": "gb-2025-geoportal-statistics-gov-uk-lad-adm-bfc-rev1",
+  "us-admin-census-county-2025": "us-2025-census-gov-tl-county-adm2-rev1",
+  "world-geoboundaries-cgaz": "world-2024-geoboundaries-org-cgaz-adm-rev1",
 };
 const select = document.querySelector("#dataset-select");
 const description = document.querySelector("#dataset-description");
@@ -27,6 +27,7 @@ const zoomLabel = document.querySelector("#zoom-label");
 const zoomOutButton = document.querySelector("#zoom-out");
 const zoomInButton = document.querySelector("#zoom-in");
 const homeButton = document.querySelector("#home");
+const followButton = document.querySelector("#follow-location");
 const retryButton = document.querySelector("#retry");
 const sampleLocations = document.querySelector("#sample-locations");
 const githubDocsRoot = "https://github.com/nyatla/nyatla.github.io/blob/master/galuchat";
@@ -36,12 +37,14 @@ let activeSource = null;
 let loadVersion = 0;
 let loadController = null;
 let phase = "loading";
+let following = false;
+let locationWatchId = null;
+let locationVersion = 0;
+let lastLocation = null;
+let locationPlace = null;
+let locationState = "";
 
-for (const dataset of datasets) {
-  const option = document.createElement("option");
-  option.value = dataset.id;
-  select.append(option);
-}
+GaluchatDatasetSelect.populate(select);
 select.addEventListener("change", () => openDataset(select.value, true));
 window.addEventListener("popstate", () => openDataset(datasetFromUrl(), false));
 window.addEventListener("machml:localechange", updateLocale);
@@ -51,6 +54,8 @@ homeButton.addEventListener("click", () => {
   if (activeMap && activeSource) moveTo(datasetById.get(select.value).center);
 });
 retryButton.addEventListener("click", () => openDataset(select.value, false));
+followButton.addEventListener("click", () => following ? stopFollowing() : startFollowing());
+window.addEventListener("pagehide", () => stopFollowing());
 
 select.value = datasetFromUrl();
 updateLocale();
@@ -66,15 +71,12 @@ function localized(pair) {
 
 function datasetFromUrl() {
   const requested = new URL(location.href).searchParams.get("dataset");
-  const id = formerDatasetIds[requested] ?? requested;
+  const id = formerDatasetIds[requested] ?? window.GaluchatDatasetAliases[requested] ?? requested;
   return datasetById.has(id) ? id : defaultDatasetId;
 }
 
 function updateLocale() {
-  const index = localeIndex();
-  for (const option of select.options) {
-    option.textContent = datasetById.get(option.value).title[index];
-  }
+  GaluchatDatasetSelect.updateLocale(select);
   renderDatasetInfo(datasetById.get(select.value || defaultDatasetId));
   renderStatus();
   updateZoom();
@@ -107,6 +109,7 @@ function datasetAssetUrl(dataset, filename) {
 }
 
 async function openDataset(id, updateUrl) {
+  stopFollowing();
   const dataset = datasetById.get(id) ?? datasetById.get(defaultDatasetId);
   select.value = dataset.id;
   if (updateUrl) {
@@ -179,11 +182,27 @@ async function openDataset(id, updateUrl) {
     map.addEventListener("placechange", (event) => {
       if (version !== loadVersion) return;
       placeName.classList.remove("error");
-      placeName.textContent = event.detail.name;
+      placeName.textContent = following && locationPlace ? currentLocationName() : event.detail.name;
     });
-    map.addEventListener("maprender", updateZoom);
+    map.addEventListener("maprender", () => {
+      updateZoom();
+      if (version === loadVersion && following && lastLocation) updateFollowingView();
+    });
     map.addEventListener("zoomchange", updateZoom);
     map.canvas.addEventListener("wheel", (event) => map.zoomByWheel(event), { passive: false });
+    let dragStart = null;
+    map.canvas.addEventListener("pointerdown", (event) => {
+      dragStart = { id: event.pointerId, x: event.clientX, y: event.clientY };
+    });
+    map.canvas.addEventListener("pointermove", (event) => {
+      if (following && dragStart?.id === event.pointerId
+        && Math.hypot(event.clientX - dragStart.x, event.clientY - dragStart.y) >= 4) {
+        stopFollowing();
+      }
+    });
+    for (const type of ["pointerup", "pointercancel", "lostpointercapture"]) {
+      map.canvas.addEventListener(type, () => { dragStart = null; });
+    }
     renderSamples(dataset);
     map.render();
     setEnabled(true);
@@ -220,6 +239,7 @@ function renderSamples(dataset) {
 
 function moveTo(center) {
   if (!activeMap || !activeSource) return;
+  stopFollowing();
   const dataset = datasetById.get(select.value);
   activeSource.setZoomLevelIndex(dataset.initialLevelIndex);
   activeMap.setView({
@@ -228,17 +248,87 @@ function moveTo(center) {
   });
 }
 
+function startFollowing() {
+  if (!activeMap || !activeSource || phase !== "ready") return;
+  if (!window.isSecureContext) {
+    locationState = "insecure";
+    renderStatus();
+    return;
+  }
+  if (!navigator.geolocation) {
+    locationState = "unsupported";
+    renderStatus();
+    return;
+  }
+
+  following = true;
+  locationState = "waiting";
+  const version = ++locationVersion;
+  renderStatus();
+  try {
+    locationWatchId = navigator.geolocation.watchPosition((position) => {
+      if (!following || version !== locationVersion) return;
+      lastLocation = { lon: position.coords.longitude, lat: position.coords.latitude };
+      locationPlace = activeSource.resolvePlaceAt(lastLocation.lon, lastLocation.lat);
+      locationState = "";
+      updateFollowingView();
+      renderStatus();
+    }, (error) => {
+      if (!following || version !== locationVersion) return;
+      stopFollowing();
+      locationState = error.code === 1 ? "denied" : error.code === 3 ? "timeout" : "unavailable";
+      renderStatus();
+    }, { enableHighAccuracy: true, maximumAge: 5000, timeout: 15000 });
+  } catch (_error) {
+    stopFollowing();
+    locationState = "unavailable";
+    renderStatus();
+  }
+}
+
+function stopFollowing() {
+  ++locationVersion;
+  if (locationWatchId !== null) navigator.geolocation?.clearWatch(locationWatchId);
+  locationWatchId = null;
+  following = false;
+  lastLocation = null;
+  locationPlace = null;
+  locationState = "";
+  renderStatus();
+}
+
+function updateFollowingView() {
+  if (!following || !lastLocation || !activeMap || !activeSource) return;
+  const center = activeSource.snapCenter(lastLocation);
+  const selectedCode = locationPlace?.code ?? null;
+  if (activeMap.center.lon !== center.lon || activeMap.center.lat !== center.lat
+    || activeMap.selectedCode !== selectedCode) {
+    activeMap.setView({ center, selectedCode });
+  }
+}
+
+function currentLocationName() {
+  return locationPlace?.code > 0
+    ? locationPlace.name
+    : localized(["対象範囲外または区域データなし", "Outside coverage or no region data"]);
+}
+
 function setEnabled(enabled) {
   zoomOutButton.disabled = !enabled;
   zoomInButton.disabled = !enabled;
   homeButton.disabled = !enabled;
+  followButton.disabled = !enabled;
   for (const button of sampleLocations.querySelectorAll("button")) button.disabled = !enabled;
 }
 
 function renderStatus() {
   const japanese = localeIndex() === 0;
-  runtimeState.hidden = phase === "ready";
-  runtimeState.classList.toggle("error", phase === "error");
+  followButton.textContent = following
+    ? localized(["追従を停止", "Stop following"])
+    : localized(["現在地を追従", "Follow my location"]);
+  followButton.setAttribute("aria-pressed", String(following));
+  runtimeState.hidden = phase === "ready" && !locationState;
+  runtimeState.classList.toggle("error", phase === "error" || (locationState !== "" && locationState !== "waiting"));
   placeName.classList.toggle("error", phase === "error");
   if (phase === "loading") {
     runtimeState.textContent = japanese ? "データを読み込み中" : "Loading data";
@@ -247,8 +337,18 @@ function renderStatus() {
     runtimeState.textContent = japanese ? "読み込みエラー" : "Load error";
     placeName.textContent = japanese ? "データを読み込めませんでした。再試行してください。" : "Could not load the data. Please retry.";
   } else {
-    runtimeState.textContent = "";
-    placeName.textContent = activeMap?.currentPlace?.name || (japanese ? "地図をクリックして区域を選択" : "Click the map to select a region");
+    const messages = {
+      waiting: ["現在地を取得しています…", "Getting your location…"],
+      denied: ["位置情報の利用が許可されていません。", "Location permission was denied."],
+      timeout: ["現在地の取得がタイムアウトしました。もう一度お試しください。", "Location request timed out. Please try again."],
+      unavailable: ["現在地を取得できませんでした。もう一度お試しください。", "Could not get your location. Please try again."],
+      unsupported: ["このブラウザは位置情報の取得に対応していません。", "Geolocation is unavailable in this browser."],
+      insecure: ["現在地の取得にはHTTPS接続が必要です。", "Geolocation requires a secure HTTPS connection."],
+    };
+    runtimeState.textContent = locationState ? localized(messages[locationState]) : "";
+    placeName.textContent = following && locationPlace
+      ? currentLocationName()
+      : activeMap?.currentPlace?.name || (japanese ? "地図をクリックして区域を選択" : "Click the map to select a region");
   }
   if (sampleLocations.firstElementChild?.tagName === "SPAN") {
     sampleLocations.firstElementChild.textContent = japanese ? "移動先:" : "Jump to:";

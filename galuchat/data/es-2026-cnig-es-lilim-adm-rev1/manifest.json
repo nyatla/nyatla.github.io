@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "es-2026-cnig-es-lilim-adm-rev1",
+  "sourceArchive": "es-2026-cnig-es-lilim-adm-rev1.zip",
+  "sdkVersion": "0.2.4",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "spain_bddae_2026-grid-8192-10000.wgsmapset.glc",
+        "size": 6166448,
+        "sha256": "5f031744d142fa4f44e4758a8029c81c379c0b195873bf73ae51e6c7f5d35d52",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 1024,
+        "path": "spain_bddae_2026-grid-1024-1000.wgsmapset.glc",
+        "size": 891861,
+        "sha256": "410dd256c9738bf1a46634d505606abdfce07c2eb807bf920112bd2ae95fd2a7",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "spain_bddae_2026-grid-512-100.wgsmapset.glc",
+        "size": 121149,
+        "sha256": "1096c39133cc2e205241a8ee3da6ac29eb3302b969c9d560e8751f17ef766ee6",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "spain_bddae_2026.giswordbook",
+        "size": 112683,
+        "sha256": "2545d909a5f747d64483d8356de9fb1273cba752b46e06ee416886ba8252f185"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 5236,
+      "sha256": "a722011e410d947678e4ce42cec68dc2479b16b806a5af248eef102ce2ebcbe5"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 12772,
+      "sha256": "30bda86db449080b498f189adb3083eee10bcc0974372021ec1ddb6330a1ccc1"
+    },
+    "names": {
+      "path": "spain_bddae_2026.names.csv",
+      "size": 958662,
+      "sha256": "905ed58f25aa8ba4f070255abdd93d390b82222b32ef55c78b50cf4a668f5a99"
+    }
+  }
+}

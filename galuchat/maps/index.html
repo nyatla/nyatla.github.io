@@ -6,7 +6,7 @@
   <meta name="description" content="Galuchat GIS SDKの地図データを切り替えて、区域と地名をブラウザで調べます。" data-description-ja="Galuchat GIS SDKの地図データを切り替えて、区域と地名をブラウザで調べます。" data-description-en="Switch Galuchat GIS SDK datasets and explore regions and place names in your browser.">
   <title>Galuchat GIS SDK — 地図</title>
   <link rel="stylesheet" href="../assets/machml-switch.css">
-  <link rel="stylesheet" href="./page.css">
+  <link rel="stylesheet" href="./page.css?v=27">
   <link rel="stylesheet" href="../assets/map-view.css">
   <script src="../assets/machml.min.js"></script>
   <script src="../assets/machml-switch.js"></script>
@@ -46,6 +46,7 @@
           <button id="zoom-out" type="button" disabled aria-label="縮小" data-aria-ja="縮小" data-aria-en="Zoom out">−</button>
           <button id="zoom-in" type="button" disabled aria-label="拡大" data-aria-ja="拡大" data-aria-en="Zoom in">＋</button>
           <button id="home" type="button" disabled><ml-text ja="初期位置" en="Home"></ml-text></button>
+          <button id="follow-location" type="button" disabled aria-pressed="false"><ml-text ja="現在地を追従" en="Follow my location"></ml-text></button>
           <button id="retry" type="button" hidden><ml-text ja="再試行" en="Retry"></ml-text></button>
         </div>
         <div id="map-shell" class="map-view__shell"></div>
@@ -60,7 +61,7 @@
         <p id="source-credit"></p>
         <p id="approval" hidden></p>
         <p id="data-caveat" hidden></p>
-        <p class="data-links"><a id="data-spec-link" href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2026-mlit-go-jp-n03-adm/data-spec.md"><ml-text ja="データ仕様（data-spec）" en="Dataset specification (data-spec)"></ml-text></a><span aria-hidden="true"> · </span><a id="notice-link" href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2026-mlit-go-jp-n03-adm/NOTICE.md"><ml-text ja="この地図のNOTICE（出典・利用条件）" en="NOTICE for this map (source and terms)"></ml-text></a><span aria-hidden="true"> · </span><a id="license-link" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+        <p class="data-links"><a id="data-spec-link" href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2026-mlit-go-jp-n03-adm-rev1/data-spec.md"><ml-text ja="データ仕様（data-spec）" en="Dataset specification (data-spec)"></ml-text></a><span aria-hidden="true"> · </span><a id="notice-link" href="https://github.com/nyatla/nyatla.github.io/blob/master/galuchat/data/jp-2026-mlit-go-jp-n03-adm-rev1/NOTICE.md"><ml-text ja="この地図のNOTICE（出典・利用条件）" en="NOTICE for this map (source and terms)"></ml-text></a><span aria-hidden="true"> · </span><a id="license-link" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
       </section>
     </main>
 
@@ -69,7 +70,8 @@
     </footer>
   </div>
   <script src="../assets/galuchat.min.js"></script>
-  <script src="./config.js"></script>
-  <script src="./app.js"></script>
+  <script src="./config.js?v=29"></script>
+  <script src="../assets/dataset-select.js?v=3"></script>
+  <script src="./app.js?v=29"></script>
 </body>
 </html>

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "br-2022-ibge-gov-br-distritos-adm-rev1",
+  "sourceArchive": "br-2022-ibge-gov-br-distritos-adm-rev1.zip",
+  "sdkVersion": "0.2.4",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "brazil_distritos_2022-grid-8192-10000.wgsmapset.glc",
+        "size": 22338775,
+        "sha256": "c2df006fc3bde4120fc35a794b28f9c5b32e7f6f947228474aa8121e1676c1f9",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "brazil_distritos_2022-grid-4096-1000.wgsmapset.glc",
+        "size": 2887927,
+        "sha256": "6fe4f697a2744945cb745fe1ae2cc2f1ee5dd4dc3b712485b69c156615027ce0",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "brazil_distritos_2022-grid-512-100.wgsmapset.glc",
+        "size": 377343,
+        "sha256": "5d82e1b7503fd0c82a46465308d380f7e853bb843f3c879eecd9acc7f5f3642b",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "brazil_distritos_2022.giswordbook",
+        "size": 152631,
+        "sha256": "2f3e2d2b62b9205ad50247598823c09dfb325af081c567a7aa684c39f17707a8"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 6920,
+      "sha256": "804f2f3e28078d9b6c0a98c4e45ada268cd963cfc0fa621ac3cb70cf5bac4ebd"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 13977,
+      "sha256": "2d61369e04523dea5dbb1d0fcf7966dee1bcde1ca82657fdf9ce6f2ce0cae521"
+    },
+    "names": {
+      "path": "brazil_distritos_2022.names.csv",
+      "size": 1021293,
+      "sha256": "d1ef2011a7428baf7ddee9b5b688a5a4b9695dc4ed263329dfc57bb3f5e20ea3"
+    }
+  }
+}

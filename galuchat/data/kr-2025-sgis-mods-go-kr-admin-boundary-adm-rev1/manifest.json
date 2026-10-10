@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "type": "galuchat-gis-dataset-subset",
+  "id": "kr-2025-sgis-mods-go-kr-admin-boundary-adm-rev1",
+  "sourceArchive": "kr-2025-sgis-mods-go-kr-admin-boundary-adm-rev1.zip",
+  "sdkVersion": "0.2.4",
+  "formats": {
+    "wgsmapset": 3,
+    "imageChunk": "GI01",
+    "gisWordBook": 0
+  },
+  "files": {
+    "maps": [
+      {
+        "id": "unit-inv-10000",
+        "unitInv": 10000,
+        "cellSize": 8192,
+        "path": "sgis-admin-2025-grid-8192-10000.wgsmapset.glc",
+        "size": 2290573,
+        "sha256": "8495bc5459b26e89a291e7328c6dad22e7487eae456d1195ba26f9c497c09a70",
+        "default": false
+      },
+      {
+        "id": "unit-inv-1000",
+        "unitInv": 1000,
+        "cellSize": 4096,
+        "path": "sgis-admin-2025-grid-4096-1000.wgsmapset.glc",
+        "size": 289432,
+        "sha256": "3f91533d081fe42c412c1ecbb6f55e6bbdcd06ec7a683be3202223f21075d055",
+        "default": true
+      },
+      {
+        "id": "unit-inv-100",
+        "unitInv": 100,
+        "cellSize": 512,
+        "path": "sgis-admin-2025-grid-512-100.wgsmapset.glc",
+        "size": 35096,
+        "sha256": "eeac52e16b96cac123ecc21139378116b31b348d5285f357baaa6eff6301d6c9",
+        "default": false
+      }
+    ],
+    "wordbooks": [
+      {
+        "id": "utf8",
+        "textEncoding": "utf8",
+        "tokenEncoding": "utf-8",
+        "default": true,
+        "path": "sgis-admin-2025.giswordbook",
+        "size": 25334,
+        "sha256": "a47bd6350d394acf9e32f0050e1c5f0d5aeb8097b632b28bf0d5a95b914aeeee"
+      }
+    ],
+    "notice": {
+      "path": "NOTICE.md",
+      "size": 4398,
+      "sha256": "1dfa839f449271a67b9528e22f21f128e5236ef25e068c87e657453cb4be24bc"
+    },
+    "dataSpec": {
+      "path": "data-spec.md",
+      "size": 9979,
+      "sha256": "221b55c4c51d9ef1439706a2c9e0a7714a4784ee240a27de7de745e416c8eb65"
+    },
+    "names": {
+      "path": "sgis-admin-2025.names.csv",
+      "size": 242081,
+      "sha256": "5eb761a3e483a80d8cfafadab944dd18e6ef11432f10311a121d3017e4b88cca"
+    }
+  }
+}
